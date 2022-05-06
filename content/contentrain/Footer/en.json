@@ -40,7 +40,13 @@
       },
       {
         "ID": "8bee6650-6ad9-4016-9523-5ba478a0e0d5",
-        "icon": [],
+        "icon": {
+          "ID": "d5c64513-11b9-4907-8b7c-734de9ce063f",
+          "name": "medium",
+          "color": "",
+          "line": true,
+          "createdAt": 1651826386794
+        },
         "link": "",
         "createdAt": 1651826288608
       }
