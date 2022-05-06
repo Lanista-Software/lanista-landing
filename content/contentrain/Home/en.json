@@ -18,13 +18,14 @@
         "ID": "fa53e2e8-8eca-4f2a-9ed0-fdf856569539",
         "images": [],
         "buttons": [],
-        "section": "design",
+        "section": "developmentProcess",
         "form": [],
         "brandTitle": [],
         "brandList": [],
         "accordion": [],
         "cards": [],
-        "createdAt": 1651827337675
+        "createdAt": 1651827337675,
+        "updatedAt": 1651828221500
       },
       {
         "ID": "4a6ed1aa-3afe-45f7-9798-553c50e18892",
