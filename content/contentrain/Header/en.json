@@ -33,7 +33,14 @@
         "createdAt": 1651819289487
       }
     ],
-    "buttons": [],
+    "buttons": [
+      {
+        "ID": "422f8087-163b-4350-b87e-31715e8206e9",
+        "label": "Start a project",
+        "link": "",
+        "createdAt": 1651819361857
+      }
+    ],
     "createdAt": 1651818957484,
     "ID": "55bf07d8-7ff9-4065-8e2f-7de2f61cc1c5"
   }
