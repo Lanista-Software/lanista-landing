@@ -16,7 +16,13 @@
       },
       {
         "ID": "80dda212-8a65-4179-acb9-3bd971a9898c",
-        "icon": [],
+        "icon": {
+          "ID": "f42d54be-dbfa-4588-810e-686e08eb1ba5",
+          "name": "twitter",
+          "color": "",
+          "line": true,
+          "createdAt": 1651826347749
+        },
         "link": "",
         "createdAt": 1651826286091
       },
