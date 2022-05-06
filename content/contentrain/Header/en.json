@@ -13,6 +13,12 @@
         "link": "/services",
         "name": "Services",
         "createdAt": 1651819250821
+      },
+      {
+        "ID": "71ee65aa-0115-434e-944a-c404ae9e646c",
+        "link": "/team",
+        "name": "Team",
+        "createdAt": 1651819263431
       }
     ],
     "buttons": [],
