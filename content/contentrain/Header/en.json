@@ -19,6 +19,12 @@
         "link": "/team",
         "name": "Team",
         "createdAt": 1651819263431
+      },
+      {
+        "ID": "85ba5adb-40ac-4dbb-be6a-91284097113a",
+        "link": "/projects",
+        "name": "Projects",
+        "createdAt": 1651819278058
       }
     ],
     "buttons": [],
