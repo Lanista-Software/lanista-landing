@@ -4,7 +4,13 @@
     "socialLinks": [
       {
         "ID": "7da92911-ae37-49f5-8540-dde4032da7f1",
-        "icon": [],
+        "icon": {
+          "ID": "341d52cb-12c5-4f30-94ec-dc1e6735fcb6",
+          "name": "linkedin-box",
+          "color": "",
+          "line": true,
+          "createdAt": 1651826320153
+        },
         "link": "",
         "createdAt": 1651826284731
       },
