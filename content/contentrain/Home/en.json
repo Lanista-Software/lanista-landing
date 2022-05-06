@@ -155,7 +155,15 @@
         "buttons": [],
         "section": "message",
         "form": [],
-        "brandTitle": [],
+        "brandTitle": {
+          "ID": "c0f3b4b2-d010-4355-9dd7-028556377a32",
+          "title": "Drop your message",
+          "subtitle": "",
+          "description": "",
+          "maxSize": false,
+          "hideDescription": false,
+          "createdAt": 1651828527544
+        },
         "brandList": [],
         "accordion": [],
         "cards": [],
