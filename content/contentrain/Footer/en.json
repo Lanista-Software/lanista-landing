@@ -28,7 +28,13 @@
       },
       {
         "ID": "956947b6-ab71-482d-b9d3-1658f7fef5b6",
-        "icon": [],
+        "icon": {
+          "ID": "66536b97-43af-4495-a62c-b875c1b14b42",
+          "name": "instagram",
+          "color": "",
+          "line": true,
+          "createdAt": 1651826368864
+        },
         "link": "",
         "createdAt": 1651826287382
       },
