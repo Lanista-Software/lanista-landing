@@ -114,7 +114,15 @@
         "buttons": [],
         "section": "awesomeWorks",
         "form": [],
-        "brandTitle": [],
+        "brandTitle": {
+          "ID": "7da4edc7-6106-4d2f-95a8-64e5ddeb9c27",
+          "title": "How we create awesome works in Lanista Labs",
+          "subtitle": "",
+          "description": "",
+          "maxSize": false,
+          "hideDescription": false,
+          "createdAt": 1651828494701
+        },
         "brandList": [],
         "accordion": [],
         "cards": [],
