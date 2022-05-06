@@ -93,7 +93,18 @@
         },
         "brandList": [],
         "accordion": [],
-        "cards": [],
+        "cards": [
+          {
+            "ID": "d0b12559-2421-49e2-ab5d-ead608200910",
+            "title": "Want to work with us?",
+            "subtitle": "",
+            "description": "",
+            "icon": [],
+            "image": [],
+            "button": [],
+            "createdAt": 1651828479342
+          }
+        ],
         "createdAt": 1651827378526,
         "updatedAt": 1651827466446
       },
