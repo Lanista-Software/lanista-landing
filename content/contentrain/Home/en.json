@@ -23,7 +23,18 @@
         "brandTitle": [],
         "brandList": [],
         "accordion": [],
-        "cards": [],
+        "cards": [
+          {
+            "ID": "95130a81-1755-4940-ad6f-aca342a5d723",
+            "title": "Ui/Ux design",
+            "subtitle": "",
+            "description": "",
+            "icon": [],
+            "image": [],
+            "button": [],
+            "createdAt": 1651828367545
+          }
+        ],
         "createdAt": 1651827337675,
         "updatedAt": 1651828221500
       },
