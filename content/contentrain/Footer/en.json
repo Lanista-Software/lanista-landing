@@ -1,7 +1,14 @@
 [
   {
     "ID": "f9e7f721-5c9d-4aa7-9acb-3bc1a8d87367",
-    "socialLinks": [],
+    "socialLinks": [
+      {
+        "ID": "7da92911-ae37-49f5-8540-dde4032da7f1",
+        "icon": [],
+        "link": "",
+        "createdAt": 1651826284731
+      }
+    ],
     "text": "All rights reserved 2021",
     "logo": [],
     "createdAt": 1651826270613
