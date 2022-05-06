@@ -125,7 +125,18 @@
         },
         "brandList": [],
         "accordion": [],
-        "cards": [],
+        "cards": [
+          {
+            "ID": "02d7437e-ff62-4490-9eb7-25c6d59a8e8a",
+            "title": "Subbedd Subtitle Editor",
+            "subtitle": "",
+            "description": "",
+            "icon": [],
+            "image": [],
+            "button": [],
+            "createdAt": 1651828507006
+          }
+        ],
         "createdAt": 1651827493854
       },
       {
