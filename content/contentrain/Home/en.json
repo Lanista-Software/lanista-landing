@@ -332,7 +332,14 @@
               "createdAt": 1652076687084
             }
           ],
-          "buttons": [],
+          "buttons": [
+            {
+              "ID": "d093da5f-5908-4cb2-aaa5-5d769d068fbd",
+              "label": "Send",
+              "iconName": "",
+              "createdAt": 1652076716859
+            }
+          ],
           "createdAt": 1652076600687,
           "ID": "9fb4a673-8155-4bbb-8de5-5c14eb3d2317"
         },
