@@ -198,7 +198,12 @@
               "line": true,
               "createdAt": 1652075494769
             },
-            "image": [],
+            "image": {
+              "ID": "1c08dd2f-a563-479f-90f4-dc9bf21da232",
+              "src": [],
+              "alt": "consult",
+              "createdAt": 1652078013054
+            },
             "button": {
               "ID": "1a5daa44-2f42-483e-a85a-df47e977e289",
               "label": "Start a project",
