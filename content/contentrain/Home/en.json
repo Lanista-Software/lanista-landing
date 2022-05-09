@@ -133,7 +133,14 @@
             "title": "Project Consult",
             "subtitle": "",
             "description": "",
-            "icon": [],
+            "icon": {
+              "ID": "ccea625e-7c3c-43a6-98b8-f166327c78a2",
+              "name": "layout",
+              "color": "",
+              "link": "",
+              "line": true,
+              "createdAt": 1652075494769
+            },
             "image": [],
             "button": {
               "ID": "1a5daa44-2f42-483e-a85a-df47e977e289",
