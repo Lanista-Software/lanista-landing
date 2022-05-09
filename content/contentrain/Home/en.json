@@ -234,7 +234,14 @@
       },
       {
         "ID": "4a6ed1aa-3afe-45f7-9798-553c50e18892",
-        "images": [],
+        "images": [
+          {
+            "ID": "3d1663c6-bf06-4da8-9d4e-801b0a45396e",
+            "src": [],
+            "alt": "company-1",
+            "createdAt": 1652078080637
+          }
+        ],
         "buttons": [],
         "section": "workWith",
         "form": [],
