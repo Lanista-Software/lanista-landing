@@ -313,7 +313,18 @@
         },
         "brandList": [],
         "accordion": [],
-        "cards": [],
+        "cards": [
+          {
+            "ID": "09ae8828-2350-42fb-bd2c-a5debcfaf6f0",
+            "title": "Adress",
+            "subtitle": "",
+            "description": "Bardakçı Mah. Teknokent Sokak No : 1 İç Kapı : 9 Tuşba / Van",
+            "icon": [],
+            "image": [],
+            "button": [],
+            "createdAt": 1652076425634
+          }
+        ],
         "createdAt": 1651827549146
       }
     ],
