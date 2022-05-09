@@ -300,7 +300,12 @@
         "images": [],
         "buttons": [],
         "section": "message",
-        "form": [],
+        "form": {
+          "inputs": [],
+          "buttons": [],
+          "createdAt": 1652076600687,
+          "ID": "9fb4a673-8155-4bbb-8de5-5c14eb3d2317"
+        },
         "brandTitle": {
           "ID": "c0f3b4b2-d010-4355-9dd7-028556377a32",
           "title": "Drop your message",
