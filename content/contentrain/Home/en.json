@@ -188,11 +188,12 @@
             "ID": "d0b12559-2421-49e2-ab5d-ead608200910",
             "title": "Want to work with us?",
             "subtitle": "",
-            "description": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
             "icon": [],
             "image": [],
             "button": [],
-            "createdAt": 1651828479342
+            "createdAt": 1651828479342,
+            "updatedAt": 1652075906304
           }
         ],
         "createdAt": 1651827378526,
