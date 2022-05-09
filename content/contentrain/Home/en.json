@@ -74,7 +74,14 @@
             "title": "Frontend Development",
             "subtitle": "",
             "description": "",
-            "icon": [],
+            "icon": {
+              "ID": "32c7cfc5-8af1-4f13-8463-084909836f17",
+              "name": "layout",
+              "color": "",
+              "link": "",
+              "line": true,
+              "createdAt": 1652075454008
+            },
             "image": [],
             "button": {
               "ID": "ca68e280-c25f-4d8c-aeeb-4e07a478d9ce",
