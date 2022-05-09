@@ -45,7 +45,14 @@
             "title": "Ui/Ux design",
             "subtitle": "",
             "description": "",
-            "icon": [],
+            "icon": {
+              "ID": "087b1ccc-86f3-4cb0-9852-4f7fb5ed007a",
+              "name": "shape-2",
+              "color": "",
+              "link": "",
+              "line": false,
+              "createdAt": 1652075374593
+            },
             "image": [],
             "button": {
               "ID": "d38499ac-9146-44b5-9826-27e2dcc38050",
