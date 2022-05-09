@@ -333,6 +333,16 @@
             "image": [],
             "button": [],
             "createdAt": 1652076442439
+          },
+          {
+            "ID": "0dca75eb-63c8-44b9-8af7-e86a18c7951f",
+            "title": "Mail",
+            "subtitle": "",
+            "description": "info@lanista.com.tr",
+            "icon": [],
+            "image": [],
+            "button": [],
+            "createdAt": 1652076466011
           }
         ],
         "createdAt": 1651827549146
