@@ -105,7 +105,7 @@
             "ID": "acb55f04-e256-4ec7-bd60-5976c172295c",
             "title": "Backend Development",
             "subtitle": "",
-            "description": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
             "icon": {
               "ID": "7c8027ba-0f5d-493e-a5d1-dbe2521bd6a6",
               "name": "layout",
@@ -128,7 +128,8 @@
               "link": "",
               "createdAt": 1652075311183
             },
-            "createdAt": 1651828389183
+            "createdAt": 1651828389183,
+            "updatedAt": 1652075536622
           },
           {
             "ID": "9a3f684f-9bde-4903-8cf6-b74092fa2705",
