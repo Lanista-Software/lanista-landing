@@ -246,6 +246,12 @@
             "src": [],
             "alt": "company-2",
             "createdAt": 1652078086406
+          },
+          {
+            "ID": "4279c84b-a938-4210-a77d-251f05ef4935",
+            "src": [],
+            "alt": "company-3",
+            "createdAt": 1652078091029
           }
         ],
         "buttons": [],
