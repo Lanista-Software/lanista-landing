@@ -7,7 +7,15 @@
         "images": [
           {
             "ID": "728d98d2-7e79-4a14-a316-a034de67e4d2",
-            "src": [],
+            "src": {
+              "ID": "b9aa0445-2211-43a6-820d-efd1f42710e0",
+              "webp": "",
+              "png": "/images/hero.png",
+              "jpeg": "",
+              "svg": "",
+              "gif": "",
+              "createdAt": 1652077840736
+            },
             "alt": "hero",
             "createdAt": 1652077446368
           }
