@@ -104,7 +104,14 @@
             "title": "Backend Development",
             "subtitle": "",
             "description": "",
-            "icon": [],
+            "icon": {
+              "ID": "7c8027ba-0f5d-493e-a5d1-dbe2521bd6a6",
+              "name": "layout",
+              "color": "",
+              "link": "",
+              "line": true,
+              "createdAt": 1652075479601
+            },
             "image": [],
             "button": {
               "ID": "093a55c0-1c22-4f0b-be88-5ea6b1ddbc93",
