@@ -135,7 +135,7 @@
             "ID": "9a3f684f-9bde-4903-8cf6-b74092fa2705",
             "title": "Project Consult",
             "subtitle": "",
-            "description": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
             "icon": {
               "ID": "ccea625e-7c3c-43a6-98b8-f166327c78a2",
               "name": "layout",
@@ -158,7 +158,8 @@
               "link": "",
               "createdAt": 1652075329482
             },
-            "createdAt": 1651828392680
+            "createdAt": 1651828392680,
+            "updatedAt": 1652075541766
           }
         ],
         "createdAt": 1651827337675,
