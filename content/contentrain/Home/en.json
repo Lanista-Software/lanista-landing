@@ -114,7 +114,15 @@
             },
             "image": {
               "ID": "81a35ab6-7bf3-4ec4-a044-d14bd77b8209",
-              "src": [],
+              "src": {
+                "ID": "b1027a42-a99c-46ba-a3c5-4c12f413cfd1",
+                "webp": "",
+                "png": "/images/frontend.png",
+                "jpeg": "",
+                "gif": "",
+                "svg": "",
+                "createdAt": 1652077975488
+              },
               "alt": "frontend",
               "createdAt": 1652077960983
             },
