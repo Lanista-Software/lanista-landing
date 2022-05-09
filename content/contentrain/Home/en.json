@@ -194,8 +194,9 @@
               "name": "team",
               "color": "",
               "link": "",
-              "line": false,
-              "createdAt": 1652075914282
+              "line": true,
+              "createdAt": 1652075914282,
+              "updatedAt": 1652075918972
             },
             "image": [],
             "button": [],
