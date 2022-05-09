@@ -305,10 +305,11 @@
           "ID": "c0f3b4b2-d010-4355-9dd7-028556377a32",
           "title": "Drop your message",
           "subtitle": "",
-          "description": "",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius mi amet nunc, urna. ",
           "maxSize": false,
           "hideDescription": false,
-          "createdAt": 1651828527544
+          "createdAt": 1651828527544,
+          "updatedAt": 1652076260814
         },
         "brandList": [],
         "accordion": [],
