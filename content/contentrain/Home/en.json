@@ -308,6 +308,13 @@
               "placeholder": "Jack Ellison",
               "type": "text",
               "createdAt": 1652076640212
+            },
+            {
+              "ID": "f0898299-ffa5-4187-832e-e83f72e45517",
+              "label": "Email",
+              "placeholder": "j.ellison@example.com",
+              "type": "",
+              "createdAt": 1652076652051
             }
           ],
           "buttons": [],
