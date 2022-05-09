@@ -94,7 +94,13 @@
             "button": {
               "ID": "093a55c0-1c22-4f0b-be88-5ea6b1ddbc93",
               "label": "Start a project",
-              "icon": [],
+              "icon": {
+                "ID": "c802a34a-f08c-47a6-b45f-8f498067bb46",
+                "name": "arrow-right-up",
+                "color": "",
+                "line": false,
+                "createdAt": 1652075320657
+              },
               "link": "",
               "createdAt": 1652075311183
             },
