@@ -279,7 +279,15 @@
           },
           {
             "ID": "dec1d11f-a5ae-4000-b4c1-9cfcb23db4f8",
-            "src": [],
+            "src": {
+              "ID": "7204ba5d-095e-48f2-afdf-4b1a8877eb53",
+              "webp": "",
+              "png": "/images/company-4.png",
+              "jpeg": "",
+              "svg": "",
+              "gif": "",
+              "createdAt": 1652078148185
+            },
             "alt": "company-4",
             "createdAt": 1652078095359
           },
