@@ -112,7 +112,12 @@
               "line": true,
               "createdAt": 1652075454008
             },
-            "image": [],
+            "image": {
+              "ID": "81a35ab6-7bf3-4ec4-a044-d14bd77b8209",
+              "src": [],
+              "alt": "frontend",
+              "createdAt": 1652077960983
+            },
             "button": {
               "ID": "ca68e280-c25f-4d8c-aeeb-4e07a478d9ce",
               "label": "Start a project",
