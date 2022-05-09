@@ -157,7 +157,15 @@
             },
             "image": {
               "ID": "b35765bf-d98a-459d-9a99-845f61da4981",
-              "src": [],
+              "src": {
+                "ID": "cb60a4e3-6226-4aef-9e9c-1fe31cffbf43",
+                "webp": "",
+                "png": "/images/backend.png",
+                "jpeg": "",
+                "gif": "",
+                "svg": "",
+                "createdAt": 1652078001499
+              },
               "alt": "backend",
               "createdAt": 1652077986748
             },
