@@ -324,8 +324,9 @@
               "name": "map-2",
               "color": "",
               "link": "",
-              "line": false,
-              "createdAt": 1652076493226
+              "line": true,
+              "createdAt": 1652076493226,
+              "updatedAt": 1652076544574
             },
             "image": [],
             "button": [],
