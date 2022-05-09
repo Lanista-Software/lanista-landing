@@ -301,7 +301,15 @@
         "buttons": [],
         "section": "message",
         "form": {
-          "inputs": [],
+          "inputs": [
+            {
+              "ID": "e37cba25-a9c4-44e9-a773-004ba2acb066",
+              "label": "Name",
+              "placeholder": "Jack Ellison",
+              "type": "text",
+              "createdAt": 1652076640212
+            }
+          ],
           "buttons": [],
           "createdAt": 1652076600687,
           "ID": "9fb4a673-8155-4bbb-8de5-5c14eb3d2317"
