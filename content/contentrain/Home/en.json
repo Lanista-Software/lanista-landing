@@ -202,7 +202,13 @@
             "button": {
               "ID": "028f7953-8df2-4d5f-b53e-8d4f4dd0b965",
               "label": "Drop your CV",
-              "icon": [],
+              "icon": {
+                "ID": "bbe0d1ab-1e70-40eb-8b3a-c6cc24b8d28b",
+                "name": "arrow-right-up",
+                "color": "",
+                "line": true,
+                "createdAt": 1652075952898
+              },
               "link": "",
               "createdAt": 1652075936486
             },
