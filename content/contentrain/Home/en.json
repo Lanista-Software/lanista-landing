@@ -353,7 +353,14 @@
             "title": "Mail",
             "subtitle": "",
             "description": "info@lanista.com.tr",
-            "icon": [],
+            "icon": {
+              "ID": "01ca04e6-9848-4323-99a3-5c4ff009142d",
+              "name": "mail",
+              "color": "",
+              "link": "",
+              "line": true,
+              "createdAt": 1652076530570
+            },
             "image": [],
             "button": [],
             "createdAt": 1652076466011
