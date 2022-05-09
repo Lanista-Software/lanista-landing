@@ -390,7 +390,12 @@
             "subtitle": "Design & Development",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
             "icon": [],
-            "image": [],
+            "image": {
+              "ID": "78102184-267a-4dce-a88f-9b8bc9b034dd",
+              "src": [],
+              "alt": "subbedd",
+              "createdAt": 1652078186024
+            },
             "button": {
               "ID": "2e9697d6-3ed3-44f6-abca-e5d238ed8f89",
               "label": "See live project",
