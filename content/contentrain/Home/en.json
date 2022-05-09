@@ -175,10 +175,11 @@
           "ID": "102c6576-90fd-492e-96a3-29480f191198",
           "title": "How we create awesome works in Lanista Labs",
           "subtitle": "",
-          "description": "",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
           "maxSize": false,
           "hideDescription": false,
-          "createdAt": 1651828459949
+          "createdAt": 1651828459949,
+          "updatedAt": 1652075873713
         },
         "brandList": [],
         "accordion": [],
