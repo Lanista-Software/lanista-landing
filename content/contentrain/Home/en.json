@@ -75,7 +75,7 @@
             "ID": "e74c5fdc-ed8f-490f-b172-4e81e07d5f19",
             "title": "Frontend Development",
             "subtitle": "",
-            "description": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
             "icon": {
               "ID": "32c7cfc5-8af1-4f13-8463-084909836f17",
               "name": "layout",
@@ -98,7 +98,8 @@
               "link": "",
               "createdAt": 1652075290943
             },
-            "createdAt": 1651828385525
+            "createdAt": 1651828385525,
+            "updatedAt": 1652075531014
           },
           {
             "ID": "acb55f04-e256-4ec7-bd60-5976c172295c",
