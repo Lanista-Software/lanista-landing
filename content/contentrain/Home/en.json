@@ -69,7 +69,12 @@
               "createdAt": 1652075374593,
               "updatedAt": 1652075462451
             },
-            "image": [],
+            "image": {
+              "ID": "25540bdd-a0b1-4dda-b2f1-f5dc820b3d74",
+              "src": [],
+              "alt": "design",
+              "createdAt": 1652077861443
+            },
             "button": {
               "ID": "d38499ac-9146-44b5-9826-27e2dcc38050",
               "label": "Start a project",
