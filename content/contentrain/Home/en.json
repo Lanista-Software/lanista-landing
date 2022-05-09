@@ -248,7 +248,13 @@
             "button": {
               "ID": "2e9697d6-3ed3-44f6-abca-e5d238ed8f89",
               "label": "See live project",
-              "icon": [],
+              "icon": {
+                "ID": "40db942b-2400-478e-8d6e-43e45fac7ee8",
+                "name": "arrow-right-up",
+                "color": "",
+                "line": true,
+                "createdAt": 1652076056156
+              },
               "link": "",
               "createdAt": 1652076043186
             },
