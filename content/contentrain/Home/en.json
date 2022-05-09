@@ -336,7 +336,14 @@
             "title": "Phone",
             "subtitle": "",
             "description": "0 432 502 85 00",
-            "icon": [],
+            "icon": {
+              "ID": "3e166d74-4ca2-4718-b120-08e4f72dfdd3",
+              "name": "phone",
+              "color": "",
+              "link": "",
+              "line": false,
+              "createdAt": 1652076509785
+            },
             "image": [],
             "button": [],
             "createdAt": 1652076442439
