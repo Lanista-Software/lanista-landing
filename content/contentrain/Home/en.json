@@ -241,12 +241,13 @@
           {
             "ID": "02d7437e-ff62-4490-9eb7-25c6d59a8e8a",
             "title": "Subbedd Subtitle Editor",
-            "subtitle": "",
-            "description": "",
+            "subtitle": "Design & Development",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
             "icon": [],
             "image": [],
             "button": [],
-            "createdAt": 1651828507006
+            "createdAt": 1651828507006,
+            "updatedAt": 1652076024805
           },
           {
             "ID": "f2e4e6a6-3a56-456f-9074-ccf3a25e58d4",
