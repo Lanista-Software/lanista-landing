@@ -71,7 +71,15 @@
             },
             "image": {
               "ID": "25540bdd-a0b1-4dda-b2f1-f5dc820b3d74",
-              "src": [],
+              "src": {
+                "ID": "4ee5b41b-f0d5-4d70-9429-be99e740f1bd",
+                "webp": "",
+                "png": "/images/design.png",
+                "jpeg": "",
+                "gif": "",
+                "svg": "",
+                "createdAt": 1652077944679
+              },
               "alt": "design",
               "createdAt": 1652077861443
             },
