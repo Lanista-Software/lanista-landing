@@ -319,7 +319,14 @@
             "title": "Adress",
             "subtitle": "",
             "description": "Bardakçı Mah. Teknokent Sokak No : 1 İç Kapı : 9 Tuşba / Van",
-            "icon": [],
+            "icon": {
+              "ID": "8f3cd83b-c294-4d44-a1a6-1a404f93ad90",
+              "name": "map-2",
+              "color": "",
+              "link": "",
+              "line": false,
+              "createdAt": 1652076493226
+            },
             "image": [],
             "button": [],
             "createdAt": 1652076425634
