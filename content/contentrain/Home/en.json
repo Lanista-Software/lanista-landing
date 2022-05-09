@@ -313,8 +313,9 @@
               "ID": "f0898299-ffa5-4187-832e-e83f72e45517",
               "label": "Email",
               "placeholder": "j.ellison@example.com",
-              "type": "",
-              "createdAt": 1652076652051
+              "type": "text",
+              "createdAt": 1652076652051,
+              "updatedAt": 1652076694003
             },
             {
               "ID": "5a7a479a-280b-4e1a-86fb-faed6908cc24",
