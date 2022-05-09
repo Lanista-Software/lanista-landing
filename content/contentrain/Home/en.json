@@ -4,7 +4,14 @@
     "brandSection": [
       {
         "ID": "c5a694f9-6f48-42a6-a6b5-6486c6be6f1d",
-        "images": [],
+        "images": [
+          {
+            "ID": "728d98d2-7e79-4a14-a316-a034de67e4d2",
+            "src": [],
+            "alt": "hero",
+            "createdAt": 1652077446368
+          }
+        ],
         "buttons": [
           {
             "ID": "34ee83f8-9a16-44ef-953d-ac1176ab317a",
