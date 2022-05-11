@@ -1,10 +1,10 @@
 <template>
-  <div class="main">
+  <div class="main pt-[98px]">
     <div class="lanista-container">
       <Header />
     </div>
-    <div class="page-content pt-24"><nuxt /></div>
-    <div class="lanista-container pb-2 pt-20">
+    <div class="page-content mb-auto"><nuxt /></div>
+    <div class="lanista-container pb-2 pt-20 w-full">
       <Footer />
     </div>
   </div>
