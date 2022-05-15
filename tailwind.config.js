@@ -22,6 +22,7 @@ module.exports = {
         black: color.black,
         section: '#FFFFFF0A',
         heading: '#FFFFFFCC',
+        chip: '#eb525f1a',
         // "heading-color": color.info[800],
         // bodyColor: color.info[600],
         // borderColor:color.info[200],
@@ -88,9 +89,6 @@ module.exports = {
       // })
     },
     colors: color,
-    fontFamily: {
-      inter: ['"Inter"', 'sans-serif'],
-    },
   },
   variants: {
     extend: {

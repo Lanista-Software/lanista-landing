@@ -19,7 +19,7 @@
         <nav
           v-for="item in headerData.navigation"
           :key="item.ID"
-          class="lanista-header-nav hidden md:flex mx-2 relative cursor-pointer"
+          class="lanista-header-nav hidden lg:flex mx-2 relative cursor-pointer"
         >
           <nuxt-link
             exact-active-class="text-secondary font-semibold"
@@ -31,11 +31,16 @@
         </nav>
       </div>
       <div>
-        <lui-button rounded size="lg" variant="secondary">
+        <lui-button
+          rounded
+          size="lg"
+          variant="secondary"
+          class="hidden lg:block"
+        >
           Start a project
         </lui-button>
       </div>
-      <!-- <div class="flex flex-row">
+      <div class="flex flex-row lg:hidden">
         <lui-button
           aria-label="menu"
           icon="menu"
@@ -44,10 +49,9 @@
           filter="darker"
           size="sm"
           rounded
-          class="lg:hidden"
           @click="hamburgerMenu = !hamburgerMenu"
         />
-      </div> -->
+      </div>
     </div>
   </header>
 </template>
