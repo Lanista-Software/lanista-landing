@@ -184,6 +184,52 @@
         </div>
       </div>
     </section>
+    <section id="workWith">
+      <div class="head lanista-container__large flex flex-row pt-24 pb-20">
+        <h1 class="text-white w-2/5 text-4xl leading-10">
+          How we create awesome works in Lanista Labs
+        </h1>
+        <p class="text-heading w-3/5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius mi
+          amet nunc, urna. Augue and donec volutpat placerat enim urna blandit
+          dictum donec tempus.
+        </p>
+      </div>
+      <div class="photos">
+        <div class="lanista-container__large">
+          <div class="flex flex-row h-[420px] pb-4">
+            <nuxt-img src="/images/company-1.png" class="w-2/3 pr-4"></nuxt-img>
+            <nuxt-img src="/images/company-2.png" class="w-1/3"></nuxt-img>
+          </div>
+          <div class="flex flex-row h-[420px] pb-4">
+            <div
+              class="w-1/3 bg-secondary rounded-sm flex flex-col justify-center px-10"
+            >
+              <lui-icon size="3x" name="team" line></lui-icon>
+              <h1 class="pb-2 text-4xl font-semibold">Want to work with us?</h1>
+              <p class="pb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                velit felis duis vestibulum ullamcorper. Amet id semper
+              </p>
+              <div>
+                <lui-button
+                  rounded
+                  size="lg"
+                  variant="primary"
+                  icon="arrow-right-up"
+                  >Drop your CV</lui-button
+                >
+              </div>
+            </div>
+            <nuxt-img src="/images/company-3.png" class="w-2/3 pl-4"></nuxt-img>
+          </div>
+          <div class="flex flex-row h-[420px]">
+            <nuxt-img src="/images/company-4.png" class="w-2/3 pr-4"></nuxt-img>
+            <nuxt-img src="/images/company-5.png" class="w-1/3"></nuxt-img>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -197,7 +243,7 @@ export default {
   @apply container mx-auto px-8;
 }
 .lanista-container__large {
-  @apply container mx-auto;
+  @apply mx-auto px-16;
 }
 .content {
   background-image: url('/images/hero.png');
