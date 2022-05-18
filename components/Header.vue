@@ -46,8 +46,8 @@
           icon="menu"
           type="text"
           variant="info"
-          filter="darker"
-          size="sm"
+          filter="lighter"
+          size="lg"
           rounded
           @click="hamburgerMenu = !hamburgerMenu"
         />

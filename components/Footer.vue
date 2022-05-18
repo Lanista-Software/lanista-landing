@@ -16,7 +16,9 @@
         <lui-icon class="text-white" :name="item.icon.name" line size="xl" />
       </a>
     </div>
-    <div class="footer-middle text-white flex justify-center items-center">
+    <div
+      class="footer-middle text-white md:flex justify-center items-center hidden"
+    >
       <p>{{ footerData.info }}</p>
     </div>
     <div class="footer-right flex justify-center items-center">

@@ -50,7 +50,7 @@ export default {
     prop.string('type', 'default', ['default', 'outline']),
   ],
   inheritAttrs: false,
-  setup(props) {
+  setup(props, { slots }) {
     const computedClasses = computed(() => {
       const classes = {
         backgroundColor:
@@ -134,12 +134,13 @@ export default {
             : props.size === 'md'
             ? 'mr-1'
             : 'mr-1.5',
-        marginIcon:
-          props.size === 'sm'
-            ? 'ml-0.5'
-            : props.size === 'md'
-            ? 'ml-1'
-            : 'ml-1.5',
+        marginIcon: !slots.default
+          ? 'm-0'
+          : props.size === 'sm'
+          ? 'ml-0.5'
+          : props.size === 'md'
+          ? 'ml-1'
+          : 'ml-1.5',
         lineHeight:
           props.size === 'sm'
             ? 'leading-3'

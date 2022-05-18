@@ -37,6 +37,9 @@ module.exports = {
         info: color.info,
         secondary: color.secondary,
       },
+      screens: {
+        '2xl': '1296px',
+      },
       boxShadow: {
         DEFAULT: '0px 0px 16px rgba(0,0,0,0.1)',
         sm: '0px 4px 6px rgba(0,0,0,0.08)',
