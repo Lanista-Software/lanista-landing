@@ -37,7 +37,7 @@
           variant="secondary"
           class="hidden lg:block"
         >
-          Start a project
+          {{ headerData.buttons[0].label }}
         </lui-button>
       </div>
       <div class="flex flex-row lg:hidden">

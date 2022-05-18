@@ -1,12 +1,12 @@
 <template>
   <div
-    class="lanista-container__small flex md:flex-row flex-col bg-primary rounded-md justify-between items-center py-4"
+    class="lanista-container__small flex lg:flex-row flex-col bg-primary rounded-lg justify-between items-center py-4"
   >
-    <div class="text-side flex flex-col justify-center">
+    <div class="text-side flex flex-col justify-center lg:w-1/2">
       <div class="pb-6">
         <lui-chip
           rounded
-          size="md"
+          size="lg"
           class="bg-chip justify-center items-center text-secondary"
           >{{ subtitle }}</lui-chip
         >
@@ -15,20 +15,24 @@
         size="2xs"
         display
         level="3"
-        class="text-white font-semibold md:w-4/5"
+        class="text-white font-semibold"
       >
         {{ title }}
       </lui-heading>
-      <lui-text class="text-heading md:w-1/2 py-8">
+      <lui-text class="text-heading py-8">
         {{ description }}
       </lui-text>
       <div>
-        <lui-button rounded variant="secondary" type="outline"
+        <lui-button
+          rounded
+          variant="secondary"
+          type="outline"
+          :icon="buttonIcon"
           >{{ buttonLabel }}
         </lui-button>
       </div>
     </div>
-    <div class="image-side md:py-24 pt-8">
+    <div class="image-side lg:py-24 pt-8">
       <nuxt-img :src="imgSrc" :alt="imgAlt"></nuxt-img>
     </div>
   </div>
@@ -62,12 +66,16 @@ export default {
       type: String,
       default: 'See live project',
     },
+    buttonIcon: {
+      type: String,
+      default: '',
+    },
   },
 }
 </script>
 
 <style scoped>
 .lanista-container__small {
-  @apply container mx-auto md:px-28 px-4;
+  @apply container mx-auto lg:px-28 px-4;
 }
 </style>

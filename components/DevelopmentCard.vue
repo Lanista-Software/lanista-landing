@@ -1,11 +1,11 @@
 <template>
   <div class="lanista-container__small">
-    <div class="flex md:flex-row flex-col justify-between">
-      <div class="flex flex-col">
+    <div class="flex lg:flex-row flex-col justify-between">
+      <div class="flex flex-col lg:w-1/3">
         <div class="pb-8">
           <lui-avatar
             rounded
-            size="md"
+            size="lg"
             :icon="icon"
             variant="secondary"
             filter="lighter"
@@ -16,15 +16,15 @@
           level="2"
           display
           size="2xs"
-          class="text-white font-semibold md:pb-20 pb-4"
+          class="text-white font-semibold lg:pb-20 pb-4"
           >{{ title }}
         </lui-heading>
       </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col lg:pt-24 lg:w-3/5">
         <lui-text class="text-heading pb-8">
           {{ description }}
         </lui-text>
-        <div class="md:pb-16 pb-8">
+        <div class="lg:pb-16 pb-8">
           <lui-button
             rounded
             size="lg"
@@ -83,6 +83,6 @@ export default {
 
 <style scoped>
 .lanista-container__small {
-  @apply container mx-auto px-28;
+  @apply container mx-auto xl:px-28;
 }
 </style>
