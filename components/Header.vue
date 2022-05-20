@@ -52,6 +52,13 @@
           @click="hamburgerMenu = !hamburgerMenu"
         />
       </div>
+      <transition name="fade-menu">
+        <HamburgerMenu
+          v-show="hamburgerMenu"
+          :is-active="hamburgerMenu"
+          :nav-list="headerData.navigation"
+        />
+      </transition>
     </div>
   </header>
 </template>
