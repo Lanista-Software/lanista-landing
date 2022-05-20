@@ -42,6 +42,27 @@
       }
     ],
     "createdAt": 1651818957484,
-    "ID": "55bf07d8-7ff9-4065-8e2f-7de2f61cc1c5"
+    "ID": "55bf07d8-7ff9-4065-8e2f-7de2f61cc1c5",
+    "socialLinks": [
+      {
+        "ID": "8d78699a-8681-4f62-b822-d42fc7699210",
+        "name": "linkedin-box",
+        "url": "https://www.linkedin.com/company/lanista-software/",
+        "createdAt": 1653032673955,
+        "updatedAt": 1653032733268
+      },
+      {
+        "ID": "b3f804b5-9411-4315-b99e-d90ad50d4b58",
+        "name": "twitter",
+        "url": "https://twitter.com/lanistasoftware",
+        "createdAt": 1653032803013
+      },
+      {
+        "ID": "4eb3bce7-c205-46cf-86ca-5f9a548f8fd8",
+        "name": "instagram",
+        "url": "https://www.instagram.com/lanistasoftware",
+        "createdAt": 1653032846037
+      }
+    ]
   }
 ]
