@@ -12,7 +12,7 @@
             <nuxt-img
               class="lanista-header__logo"
               src="/lanista-logo.svg"
-              alt="deneme"
+              alt="lanista logo"
             />
           </a>
         </div>
@@ -86,14 +86,6 @@ export default {
     socialLinkList: {
       type: Array,
       default: () => [],
-    },
-    imgSrc: {
-      type: String,
-      default: '',
-    },
-    imgAlt: {
-      type: String,
-      default: '',
     },
     logo: {
       type: Object,

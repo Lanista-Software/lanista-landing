@@ -57,6 +57,8 @@
           v-show="hamburgerMenu"
           :is-active="hamburgerMenu"
           :nav-list="headerData.navigation"
+          :social-link-list="headerData.socialLinks"
+          @closeMenu="handleCloseMenu"
         />
       </transition>
     </div>
@@ -85,7 +87,11 @@ export default {
       },
     }
   },
-  methods: {},
+  methods: {
+    handleCloseMenu() {
+      this.hamburgerMenu = !this.hamburgerMenu
+    },
+  },
 }
 </script>
 
