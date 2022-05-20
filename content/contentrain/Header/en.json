@@ -50,6 +50,12 @@
         "url": "https://www.linkedin.com/company/lanista-software/",
         "createdAt": 1653032673955,
         "updatedAt": 1653032733268
+      },
+      {
+        "ID": "b3f804b5-9411-4315-b99e-d90ad50d4b58",
+        "name": "twitter",
+        "url": "https://twitter.com/lanistasoftware",
+        "createdAt": 1653032803013
       }
     ]
   }
