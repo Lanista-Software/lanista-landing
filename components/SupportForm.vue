@@ -1,7 +1,7 @@
 <template>
   <div>
     <lui-card
-      class="mt-8 md:w-[514px] md:mx-auto relative bg-section"
+      class="mt-8 md:w-[514px] xl:ml-auto xl:mr-0 md:mx-auto relative bg-section"
       bg-variant="primary"
       rounded
     >

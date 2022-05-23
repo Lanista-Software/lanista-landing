@@ -69,9 +69,8 @@
         />
       </div>
     </section>
-    <section v-if="Object.keys(findData('workWith')).length > 0" id="workWith">
+    <section v-if="Object.keys(findData('workWith')).length > 0" id="team">
       <div
-        id="team"
         class="head lanista-container__large flex lg:flex-row flex-col pt-24 lg:pb-20 pb-8"
       >
         <lui-heading class="text-white font-semibold pb-4" size="xl" level="2">
@@ -87,15 +86,15 @@
             <nuxt-img
               :src="findData('workWith').images[0].src.png"
               :alt="findData('workWith').images[0].alt"
-              class="lanista__img lg:w-2/3 lg:pr-4 pb-4 lg:pb-0"
+              class="lanista__img lg:w-2/3 lg:pr-4 pb-4 lg:pb-0 aspect-auto"
             ></nuxt-img>
             <nuxt-img
               :src="findData('workWith').images[1].src.png"
               :alt="findData('workWith').images[1].alt"
-              class="lanista__img lg:w-1/3"
+              class="lanista__img lg:w-1/3 aspect-auto"
             ></nuxt-img>
           </div>
-          <div class="flex lg:flex-row flex-col">
+          <div class="flex lg:flex-row flex-col max-h-min">
             <div
               class="lg:w-1/3 bg-secondary rounded-lg flex flex-col justify-center px-10 pt-6"
             >
@@ -111,7 +110,7 @@
                 class="pb-2 font-semibold"
                 >{{ findData('workWith').cards[0].title }}</lui-heading
               >
-              <lui-text class="pb-8">
+              <lui-text class="pb-8 lg:hidden xl:block">
                 {{ findData('workWith').cards[0].description }}
               </lui-text>
               <div class="pb-6">
@@ -127,14 +126,14 @@
             <nuxt-img
               :src="findData('workWith').images[2].src.png"
               :alt="findData('workWith').images[2].alt"
-              class="lanista__img lg:w-2/3 lg:pl-4 pt-4 lg:pt-0"
+              class="lanista__img lg:w-2/3 lg:pl-4 pt-4 lg:pt-0 aspect-auto"
             ></nuxt-img>
           </div>
           <div class="flex lg:flex-row flex-col">
             <nuxt-img
               :src="findData('workWith').images[3].src.png"
               :alt="findData('workWith').images[3].alt"
-              class="lanista__img lg:w-2/3 lg:pr-4 pb-4 lg:pb-0"
+              class="lanista__img lg:w-2/3 lg:pr-4 pb-4 lg:pb-0 aspect-auto"
             ></nuxt-img>
             <nuxt-img
               :src="findData('workWith').images[4].src.png"
@@ -147,11 +146,10 @@
     </section>
     <section
       v-if="Object.keys(findData('awesomeWorks')).length > 0"
-      id="awesomeWorks"
+      id="projects"
       class="bg-section"
     >
       <div
-        id="projects"
         class="head lanista-container__large flex lg:flex-row flex-col pt-24 lg:pb-16 pb-10"
       >
         <lui-heading
@@ -191,9 +189,8 @@
         </lui-button>
       </div>
     </section>
-    <section v-if="Object.keys(findData('message')).length > 0" id="message">
+    <section v-if="Object.keys(findData('message')).length > 0" id="contact">
       <div
-        id="contact"
         class="container mx-auto px-4 flex lg:flex-row flex-col-reverse justify-between items-center lg:py-24"
       >
         <div
@@ -234,7 +231,9 @@
             </div>
           </div>
         </div>
-        <div class="lg:w-3/5 w-full pb-8 lg:pb-0 md:px-20"><SupportForm /></div>
+        <div class="lg:w-3/5 w-full pb-8 lg:pb-0 md:px-20 xl:px-0">
+          <SupportForm />
+        </div>
         <div class="lg:hidden text-white pt-11">
           <lui-heading level="2" size="xl" class="pb-2 font-semibold">{{
             findData('message').brandTitle.title
@@ -279,6 +278,6 @@ export default {
   background-size: contain;
 }
 .lanista__img {
-  @apply h-48 lg:h-auto;
+  @apply h-48 md:h-auto;
 }
 </style>
