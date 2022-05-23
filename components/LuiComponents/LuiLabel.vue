@@ -1,8 +1,5 @@
 <template>
-  <label
-    v-bind="$attrs"
-    :class="computedClasses"
-  >
+  <label v-bind="$attrs" :class="computedClasses">
     <slot />
   </label>
 </template>
@@ -14,7 +11,7 @@ export default {
   mixins: [prop.size('sm', ['sm', 'lg'])],
   inheritAttrs: false,
   computed: {
-      computedClasses() {
+    computedClasses() {
       const styles = {
         display: 'inline-block',
         margin: 'mb-1',
@@ -23,7 +20,7 @@ export default {
         lineHeight: this.size === 'sm' ? 'leading-4.5' : '',
       }
       return generateClasses([{ ...styles }])
-    }
+    },
   },
 }
 </script>
