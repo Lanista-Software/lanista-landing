@@ -24,9 +24,10 @@
       },
       {
         "ID": "85ba5adb-40ac-4dbb-be6a-91284097113a",
-        "link": "/projects",
+        "link": "#projects",
         "name": "Projects",
-        "createdAt": 1651819278058
+        "createdAt": 1651819278058,
+        "updatedAt": 1653281166997
       },
       {
         "ID": "40308a45-2ec0-4ca0-967c-f76af9468523",
