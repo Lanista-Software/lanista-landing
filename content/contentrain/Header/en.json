@@ -17,9 +17,10 @@
       },
       {
         "ID": "71ee65aa-0115-434e-944a-c404ae9e646c",
-        "link": "/team",
+        "link": "#team",
         "name": "Team",
-        "createdAt": 1651819263431
+        "createdAt": 1651819263431,
+        "updatedAt": 1653281159094
       },
       {
         "ID": "85ba5adb-40ac-4dbb-be6a-91284097113a",
