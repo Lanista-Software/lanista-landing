@@ -50,7 +50,7 @@
     </section>
     <section
       v-if="Object.keys(findData('developmentProcess')).length > 0"
-      id="developmentProcess"
+      id="services"
       class="bg-section pt-24"
     >
       <div
@@ -71,6 +71,7 @@
     </section>
     <section v-if="Object.keys(findData('workWith')).length > 0" id="workWith">
       <div
+        id="team"
         class="head lanista-container__large flex lg:flex-row flex-col pt-24 lg:pb-20 pb-8"
       >
         <lui-heading class="text-white font-semibold pb-4" size="xl" level="2">
@@ -150,6 +151,7 @@
       class="bg-section"
     >
       <div
+        id="projects"
         class="head lanista-container__large flex lg:flex-row flex-col pt-24 lg:pb-16 pb-10"
       >
         <lui-heading
@@ -191,6 +193,7 @@
     </section>
     <section v-if="Object.keys(findData('message')).length > 0" id="message">
       <div
+        id="contact"
         class="container mx-auto px-4 flex lg:flex-row flex-col-reverse justify-between items-center lg:py-24"
       >
         <div

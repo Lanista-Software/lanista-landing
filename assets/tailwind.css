@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 html {
-  @apply text-[14px] sm:text-[16px];
+  @apply text-[14px] sm:text-[16px] scroll-smooth;
 }
 * {
   font-family: 'Work Sans', sans-serif;
