@@ -33,12 +33,13 @@
         "form": [],
         "brandTitle": {
           "ID": "5f7ae321-fb7b-400d-a6cf-3399e0be067a",
-          "title": "We create high quality dijital products for everyone.",
+          "title": "We create / high quality / dijital products / for everyone.",
           "subtitle": "Think , create, develop!",
           "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look. ",
           "maxSize": false,
           "hideDescription": false,
-          "createdAt": 1651828425658
+          "createdAt": 1651828425658,
+          "updatedAt": 1653290965979
         },
         "brandList": [],
         "accordion": [],
