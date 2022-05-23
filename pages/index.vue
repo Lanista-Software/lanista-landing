@@ -21,8 +21,10 @@
             display
             class="text-white font-semibold pt-6 pb-8 hidden lg:flex"
           >
-            We create high quality<br />
-            dijital products for everyone.
+            {{ splitText(findData('hero').brandTitle.title)[0] }}
+            {{ splitText(findData('hero').brandTitle.title)[1] }}<br />
+            {{ splitText(findData('hero').brandTitle.title)[2] }}
+            {{ splitText(findData('hero').brandTitle.title)[3] }}
           </lui-heading>
           <lui-heading
             level="1"
@@ -30,10 +32,10 @@
             display
             class="text-white font-semibold pt-6 pb-8 lg:hidden w-2/3"
           >
-            We create<br />
-            high quality<br />
-            dijital products<br />
-            for everyone.
+            {{ splitText(findData('hero').brandTitle.title)[0] }}<br />
+            {{ splitText(findData('hero').brandTitle.title)[1] }}<br />
+            {{ splitText(findData('hero').brandTitle.title)[2] }}<br />
+            {{ splitText(findData('hero').brandTitle.title)[3] }}
           </lui-heading>
           <lui-text class="text-heading pb-8 lg:w-3/5">
             {{ findData('hero').brandTitle.description }}
@@ -260,6 +262,10 @@ export default {
         (d) => d.section.toLowerCase() === sectionName.toLowerCase()
       )
       return filteredData[0]
+    },
+    splitText(text) {
+      const splittedText = text.split(' / ')
+      return splittedText
     },
   },
 }
