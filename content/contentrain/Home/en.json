@@ -425,7 +425,7 @@
             "ID": "f2e4e6a6-3a56-456f-9074-ccf3a25e58d4",
             "title": "Contentrain",
             "subtitle": "Design & Development",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius mi amet nunc, urna. ",
+            "description": "Contentrain is free Git-based Headless CMS that was created for the developer and content editor experience first.\n",
             "icon": [],
             "image": {
               "ID": "51440b97-0efd-4c6f-afb4-bedb8716ee43",
@@ -455,7 +455,7 @@
               "createdAt": 1652076122729
             },
             "createdAt": 1651828513658,
-            "updatedAt": 1652076104523
+            "updatedAt": 1653550700798
           }
         ],
         "createdAt": 1651827493854
