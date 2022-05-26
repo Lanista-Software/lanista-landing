@@ -147,7 +147,7 @@
             "ID": "acb55f04-e256-4ec7-bd60-5976c172295c",
             "title": "Backend Development",
             "subtitle": "",
-            "description": "With our team specializing in Javascript programming language in backend development, we use modern popular frameworks like Express JS, NestJS on NodeJS runtime.\n\nWe Use\nMySQL,RabbitMQ, Elasticsearch, AWS, NodeJs, MongoDB, Redis, Docker",
+            "description": "Our team specializes in javascript programming language in backend development. We use modern popular frameworks like Express JS, NestJS on NodeJS Runtime.\n\nHere are some of the technologies we are using;\nMySQL,RabbitMQ, Elasticsearch, AWS, NodeJs, MongoDB, Redis, Docker",
             "icon": {
               "ID": "7c8027ba-0f5d-493e-a5d1-dbe2521bd6a6",
               "name": "layout",
@@ -184,7 +184,7 @@
               "createdAt": 1652075311183
             },
             "createdAt": 1651828389183,
-            "updatedAt": 1653298851827
+            "updatedAt": 1653550130387
           },
           {
             "ID": "9a3f684f-9bde-4903-8cf6-b74092fa2705",
