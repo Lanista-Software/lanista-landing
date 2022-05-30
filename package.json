@@ -17,6 +17,7 @@
     "@nuxtjs/composition-api": "^0.32.0",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.19.3",
+    "firebase": "^9.8.2",
     "nuxt": "^2.15.8",
     "remixicon": "^2.5.0",
     "vue": "^2.6.14",
