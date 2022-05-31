@@ -31,14 +31,15 @@
         </nav>
       </div>
       <div>
-        <lui-button
-          rounded
-          size="lg"
-          variant="secondary"
-          class="hidden lg:block"
-        >
-          {{ headerData.buttons[0].label }}
-        </lui-button>
+        <nuxt-link :to="headerData.buttons[0].link">
+          <lui-button
+            rounded
+            size="lg"
+            variant="secondary"
+            class="hidden lg:block"
+            >{{ headerData.buttons[0].label }}
+          </lui-button>
+        </nuxt-link>
       </div>
       <div class="flex flex-row lg:hidden">
         <lui-button

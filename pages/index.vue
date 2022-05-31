@@ -40,12 +40,14 @@
           <lui-text class="text-heading pb-8 lg:w-3/5">
             {{ findData('hero').brandTitle.description }}
           </lui-text>
-          <lui-button
-            rounded
-            variant="secondary"
-            size="lg"
-            :icon="findData('hero').buttons[0].iconName"
-            >{{ findData('hero').buttons[0].label }}</lui-button
+          <nuxt-link :to="findData('hero').buttons[0].link">
+            <lui-button
+              rounded
+              variant="secondary"
+              size="lg"
+              :icon="findData('hero').buttons[0].iconName"
+              >{{ findData('hero').buttons[0].label }}</lui-button
+            ></nuxt-link
           >
         </div>
       </div>
@@ -66,6 +68,7 @@
           :description="item.description"
           :button-label="item.button.label"
           :button-icon="item.button.icon.name"
+          :button-link="item.button.link"
           :img-src="item.image.src.png"
           :img-alt="item.image.alt"
         />
@@ -178,6 +181,7 @@
           :description="item.description"
           :button-label="item.button.label"
           :button-icon="item.button.icon.name"
+          :button-link="item.button.link"
           :img-src="item.image.src.png"
           :img-alt="item.image.alt"
         />

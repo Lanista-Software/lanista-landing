@@ -25,14 +25,16 @@
           {{ description }}
         </lui-text>
         <div class="lg:pb-16 pb-8">
-          <lui-button
-            rounded
-            size="lg"
-            variant="secondary"
-            class="flex"
-            type="outline"
-            :icon="buttonIcon"
-            >{{ buttonLabel }}</lui-button
+          <nuxt-link :to="buttonLink">
+            <lui-button
+              rounded
+              size="lg"
+              variant="secondary"
+              class="flex"
+              type="outline"
+              :icon="buttonIcon"
+              >{{ buttonLabel }}</lui-button
+            ></nuxt-link
           >
         </div>
         <div>
@@ -64,6 +66,10 @@ export default {
       default: 'Strat a project',
     },
     buttonIcon: {
+      type: String,
+      default: '',
+    },
+    buttonLink: {
       type: String,
       default: '',
     },

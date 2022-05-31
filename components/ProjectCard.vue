@@ -28,6 +28,7 @@
           variant="secondary"
           type="outline"
           :icon="buttonIcon"
+          @click="buttonLink"
           >{{ buttonLabel }}
         </lui-button>
       </div>
@@ -67,6 +68,10 @@ export default {
       default: 'See live project',
     },
     buttonIcon: {
+      type: String,
+      default: '',
+    },
+    buttonLink: {
       type: String,
       default: '',
     },
