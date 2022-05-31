@@ -25,8 +25,9 @@
             "ID": "34ee83f8-9a16-44ef-953d-ac1176ab317a",
             "label": "Start a project",
             "iconName": "arrow-right-up",
-            "link": "",
-            "createdAt": 1652075247859
+            "link": "#contact",
+            "createdAt": 1652075247859,
+            "updatedAt": 1653985688717
           }
         ],
         "section": "hero",
