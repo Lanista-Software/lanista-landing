@@ -75,10 +75,14 @@
       <div
         class="head lanista-container__large flex lg:flex-row flex-col pt-24 lg:pb-20 pb-8"
       >
-        <lui-heading class="text-white font-semibold pb-4" size="xl" level="2">
+        <lui-heading
+          class="text-white font-semibold pb-4 lg:pb-0"
+          size="xl"
+          level="2"
+        >
           {{ findData('workWith').brandTitle.title }}
         </lui-heading>
-        <lui-text class="text-heading">
+        <lui-text class="text-heading pl-32">
           {{ findData('workWith').brandTitle.description }}
         </lui-text>
       </div>
@@ -88,17 +92,17 @@
             <nuxt-img
               :src="findData('workWith').images[0].src.png"
               :alt="findData('workWith').images[0].alt"
-              class="lanista__img lg:w-2/3 lg:pr-4 pb-4 lg:pb-0 aspect-auto"
+              class="lanista__img lg:w-3/5 lg:pr-4 pb-4 lg:pb-0 aspect-auto"
             ></nuxt-img>
             <nuxt-img
               :src="findData('workWith').images[1].src.png"
               :alt="findData('workWith').images[1].alt"
-              class="lanista__img lg:w-1/3 aspect-auto"
+              class="lanista__img lg:w-2/5 aspect-auto"
             ></nuxt-img>
           </div>
           <div class="flex lg:flex-row flex-col max-h-min">
             <div
-              class="lg:w-1/3 bg-secondary rounded-lg flex flex-col justify-center px-10 pt-6"
+              class="lg:w-2/5 bg-secondary rounded-lg flex flex-col justify-center px-10 pt-6"
             >
               <lui-icon
                 size="3x"
@@ -128,19 +132,19 @@
             <nuxt-img
               :src="findData('workWith').images[2].src.png"
               :alt="findData('workWith').images[2].alt"
-              class="lanista__img lg:w-2/3 lg:pl-4 pt-4 lg:pt-0 aspect-auto"
+              class="lanista__img lg:w-3/5 lg:pl-4 pt-4 lg:pt-0 aspect-auto"
             ></nuxt-img>
           </div>
           <div class="flex lg:flex-row flex-col">
             <nuxt-img
               :src="findData('workWith').images[3].src.png"
               :alt="findData('workWith').images[3].alt"
-              class="lanista__img lg:w-2/3 lg:pr-4 pb-4 lg:pb-0 aspect-auto"
+              class="lanista__img lg:w-3/5 lg:pr-4 pb-4 lg:pb-0 aspect-auto"
             ></nuxt-img>
             <nuxt-img
               :src="findData('workWith').images[4].src.png"
               :alt="findData('workWith').images[4].alt"
-              class="lanista__img lg:w-1/3"
+              class="lanista__img lg:w-2/5"
             ></nuxt-img>
           </div>
         </div>
@@ -161,7 +165,7 @@
         >
           {{ findData('awesomeWorks').brandTitle.title }}
         </lui-heading>
-        <lui-text class="text-heading">
+        <lui-text class="text-heading pl-32">
           {{ findData('awesomeWorks').brandTitle.description }}
         </lui-text>
       </div>
@@ -218,7 +222,7 @@
             <div class="top-0">
               <lui-avatar
                 rounded
-                size="lg"
+                size="md"
                 :icon="item.icon.name"
                 variant="secondary"
                 filter="lighter"

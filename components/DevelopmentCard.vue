@@ -5,7 +5,7 @@
         <div class="pb-8">
           <lui-avatar
             rounded
-            size="lg"
+            size="md"
             :icon="icon"
             variant="secondary"
             filter="lighter"
@@ -36,9 +36,7 @@
           >
         </div>
         <div>
-          <lui-chip rounded class="bg-chip">
-            <nuxt-img :src="imgSrc" :alt="imgAlt" class="p-8"></nuxt-img>
-          </lui-chip>
+          <nuxt-img :src="imgSrc" :alt="imgAlt" class="p-8"></nuxt-img>
         </div>
       </div>
     </div>

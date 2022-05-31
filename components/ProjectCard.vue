@@ -2,7 +2,7 @@
   <div
     class="lanista-container__small flex lg:flex-row flex-col bg-primary rounded-lg justify-between items-center py-4"
   >
-    <div class="text-side flex flex-col justify-center lg:w-1/2">
+    <div class="text-side flex flex-col justify-center lg:w-2/5">
       <div class="pb-6">
         <lui-chip
           rounded
@@ -32,7 +32,7 @@
         </lui-button>
       </div>
     </div>
-    <div class="image-side lg:py-24 pt-8">
+    <div class="image-side lg:py-24 pt-8 lg:pl-24">
       <nuxt-img :src="imgSrc" :alt="imgAlt"></nuxt-img>
     </div>
   </div>
