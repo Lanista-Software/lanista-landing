@@ -25,8 +25,9 @@
             "ID": "34ee83f8-9a16-44ef-953d-ac1176ab317a",
             "label": "Start a project",
             "iconName": "arrow-right-up",
-            "link": "",
-            "createdAt": 1652075247859
+            "link": "#contact",
+            "createdAt": 1652075247859,
+            "updatedAt": 1653985688717
           }
         ],
         "section": "hero",
@@ -94,8 +95,9 @@
                 "line": false,
                 "createdAt": 1652075282086
               },
-              "link": "",
-              "createdAt": 1652075271031
+              "link": "#contact",
+              "createdAt": 1652075271031,
+              "updatedAt": 1653985715892
             },
             "createdAt": 1651828367545,
             "updatedAt": 1653550090245
@@ -137,8 +139,9 @@
                 "line": false,
                 "createdAt": 1652075298010
               },
-              "link": "",
-              "createdAt": 1652075290943
+              "link": "#contact",
+              "createdAt": 1652075290943,
+              "updatedAt": 1653985725166
             },
             "createdAt": 1651828385525,
             "updatedAt": 1653550115522
@@ -180,8 +183,9 @@
                 "line": false,
                 "createdAt": 1652075320657
               },
-              "link": "",
-              "createdAt": 1652075311183
+              "link": "#contact",
+              "createdAt": 1652075311183,
+              "updatedAt": 1653985741171
             },
             "createdAt": 1651828389183,
             "updatedAt": 1653550130387
@@ -223,8 +227,9 @@
                 "line": false,
                 "createdAt": 1652075341812
               },
-              "link": "",
-              "createdAt": 1652075329482
+              "link": "#contact",
+              "createdAt": 1652075329482,
+              "updatedAt": 1653985757550
             },
             "createdAt": 1651828392680,
             "updatedAt": 1652075541766
