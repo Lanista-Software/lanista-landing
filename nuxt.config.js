@@ -56,9 +56,9 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-  // siteMap: {
-  //   hostName: 'https://lanista.com.tr/',
-  // },
+  sitemap: {
+    hostname: 'https://lanista.com.tr/',
+  },
   // googleAnalytics: {
   //   id: 'UA-XXX-X',
   //   autoTracking: {
