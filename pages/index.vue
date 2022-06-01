@@ -85,7 +85,7 @@
         >
           {{ findData('workWith').brandTitle.title }}
         </lui-heading>
-        <lui-text class="text-heading pl-32">
+        <lui-text class="text-heading lg:pl-32">
           {{ findData('workWith').brandTitle.description }}
         </lui-text>
       </div>
@@ -168,7 +168,7 @@
         >
           {{ findData('awesomeWorks').brandTitle.title }}
         </lui-heading>
-        <lui-text class="text-heading pl-32">
+        <lui-text class="text-heading lg:pl-32">
           {{ findData('awesomeWorks').brandTitle.description }}
         </lui-text>
       </div>

@@ -46,11 +46,22 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    icon: {
+      icon: [
+        {
+          src: 'static/lanista-logo.svg',
+          sizes: '32x32',
+          type: 'image/svg',
+          purpose: 'maskable any',
+        },
+      ],
+    },
     manifest: {
       name: 'Lanista Software',
       short_name: 'Lanista',
       lang: 'en',
       useWebmanifestExtension: false,
+      theme_color: '#001733',
     },
     meta: {
       name: 'Lanista Software',
