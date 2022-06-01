@@ -23,14 +23,15 @@
         {{ description }}
       </lui-text>
       <div>
-        <lui-button
-          rounded
-          variant="secondary"
-          type="outline"
-          :icon="buttonIcon"
-          @click="buttonLink"
-          >{{ buttonLabel }}
-        </lui-button>
+        <a :href="buttonLink" target="_blank">
+          <lui-button
+            rounded
+            variant="secondary"
+            type="outline"
+            :icon="buttonIcon"
+            >{{ buttonLabel }}
+          </lui-button>
+        </a>
       </div>
     </div>
     <div class="image-side lg:py-24 pt-8 lg:pl-24">

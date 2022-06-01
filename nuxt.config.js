@@ -31,6 +31,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
     '@nuxtjs/composition-api/module',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -40,18 +41,30 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxt/image',
+    '@nuxtjs/sitemap',
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
+      name: 'Lanista Software',
+      short_name: 'Lanista',
       lang: 'en',
+      useWebmanifestExtension: false,
     },
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-
+  // siteMap: {
+  //   hostName: 'https://lanista.com.tr/',
+  // },
+  // googleAnalytics: {
+  //   id: 'UA-XXX-X',
+  //   autoTracking: {
+  //     screenview: true,
+  //   },
+  // },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
