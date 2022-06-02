@@ -10,6 +10,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'theme-color', content: '#001733' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/lanista-logo.svg' }],
   },
@@ -40,6 +41,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/gtm',
+    '@nuxtjs/robots',
     '@nuxt/image',
     '@nuxtjs/sitemap',
   ],
@@ -88,12 +91,15 @@ export default {
   sitemap: {
     hostname: 'https://lanista.com.tr/',
   },
-  // googleAnalytics: {
-  //   id: 'UA-XXX-X',
-  //   autoTracking: {
-  //     screenview: true,
-  //   },
+  // gtm: {
+  //   id: 'GTM-xxxxxxx',
   // },
+  googleAnalytics: {
+    id: 'G-EN9EYP19LG',
+    autoTracking: {
+      screenview: true,
+    },
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
@@ -105,4 +111,10 @@ export default {
       },
     },
   },
+  robots: [
+    {
+      UserAgent: '*',
+      Disallow: '/_nuxt/',
+    },
+  ],
 }
