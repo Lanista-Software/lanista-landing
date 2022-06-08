@@ -543,7 +543,13 @@
               "updatedAt": 1652076544574
             },
             "image": [],
-            "button": [],
+            "button": {
+              "ID": "31bd1cb7-a8e6-411e-9b5d-082604de463f",
+              "label": "",
+              "icon": [],
+              "link": "https://goo.gl/maps/A8tH52EwpPoE1Hwb6",
+              "createdAt": 1654691288359
+            },
             "createdAt": 1652076425634
           },
           {
@@ -561,7 +567,13 @@
               "updatedAt": 1652076537261
             },
             "image": [],
-            "button": [],
+            "button": {
+              "ID": "148a6983-80cf-4542-bac3-c38c6468204d",
+              "label": "",
+              "icon": [],
+              "link": "tel:04325028500",
+              "createdAt": 1654691315779
+            },
             "createdAt": 1652076442439
           },
           {
@@ -578,7 +590,13 @@
               "createdAt": 1652076530570
             },
             "image": [],
-            "button": [],
+            "button": {
+              "ID": "6ec05bc4-5606-419d-b0f9-a7c23840d492",
+              "label": "",
+              "icon": [],
+              "link": "mailto:info@lanista.com.tr",
+              "createdAt": 1654691334670
+            },
             "createdAt": 1652076466011
           }
         ],
