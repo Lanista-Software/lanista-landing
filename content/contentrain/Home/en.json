@@ -590,7 +590,13 @@
               "createdAt": 1652076530570
             },
             "image": [],
-            "button": [],
+            "button": {
+              "ID": "6ec05bc4-5606-419d-b0f9-a7c23840d492",
+              "label": "",
+              "icon": [],
+              "link": "mailto:info@lanista.com.tr",
+              "createdAt": 1654691334670
+            },
             "createdAt": 1652076466011
           }
         ],
