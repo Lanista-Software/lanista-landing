@@ -4,10 +4,7 @@
   >
     <div class="lanista-header lanista-container py-6">
       <div class="lanista-header__logo-container">
-        <nuxt-link
-          class="lanista-header__logo-link flex justify-center items-center"
-          to="/"
-        >
+        <nuxt-link class="flex justify-center items-center" to="/">
           <nuxt-img
             class="lanista-header__logo w-8"
             src="/lanista-logo.svg"

@@ -22,7 +22,7 @@
       <p>{{ footerData.info }}</p>
     </div>
     <div class="footer-right flex justify-center items-center">
-      <nuxt-img src="/lanista-logo-lg.svg" />
+      <nuxt-img src="/lanista-logo-lg.svg" alt="lanista logo" />
     </div>
   </div>
 </template>

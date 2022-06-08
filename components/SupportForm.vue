@@ -36,7 +36,7 @@
           >Message</lui-label
         >
         <lui-textarea
-          id="message"
+          id="userMessage"
           v-model="message"
           placeholder="Need some help"
           size="lg"
