@@ -41,7 +41,6 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/gtm',
     '@nuxtjs/robots',
     '@nuxt/image',
     '@nuxtjs/sitemap',
