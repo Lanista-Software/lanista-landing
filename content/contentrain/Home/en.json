@@ -61,7 +61,7 @@
             "ID": "95130a81-1755-4940-ad6f-aca342a5d723",
             "title": "Ui/Ux Design",
             "subtitle": "",
-            "description": "<p>We are committed to creating designs that appeal to the user according to the principles of universal design! Our design team is using it; Figma, Zeplin, Adobe illustrator, Adobe Photoshop\\n</p>",
+            "description": "<p>We are committed to creating designs that appeal to the user according to the principles of universal design! Our design team is using it; Figma, Zeplin, Adobe illustrator, Adobe Photoshop</p>",
             "icon": {
               "ID": "087b1ccc-86f3-4cb0-9852-4f7fb5ed007a",
               "name": "shape-2",
@@ -100,7 +100,7 @@
               "updatedAt": 1653985715892
             },
             "createdAt": 1651828367545,
-            "updatedAt": 1654495114574
+            "updatedAt": 1654767066344
           },
           {
             "ID": "e74c5fdc-ed8f-490f-b172-4e81e07d5f19",
