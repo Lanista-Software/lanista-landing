@@ -85,7 +85,15 @@
       "useWebmanifestExtension": false,
       "name": "Lanista Software",
       "shortName": "Lanista",
-      "icons": [],
+      "icons": [
+        {
+          "ID": "bb0ead4f-6db3-4703-87f0-4d84090f73f2",
+          "src": "static/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "createdAt": 1654769220188
+        }
+      ],
       "createdAt": 1654769178675
     },
     "metaData": {},
