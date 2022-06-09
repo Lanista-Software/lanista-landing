@@ -1,6 +1,10 @@
 [
   {
-    "icon": {},
+    "icon": {
+      "icons": [],
+      "createdAt": 1654768710292,
+      "ID": "d2885973-473b-4165-a7b7-b676e7d87f1e"
+    },
     "manifest": {},
     "metaData": {},
     "createdAt": 1654768698244,
