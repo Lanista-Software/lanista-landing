@@ -1,7 +1,16 @@
 [
   {
     "icon": {
-      "icons": [],
+      "icons": [
+        {
+          "ID": "58632c10-913a-42f5-abbc-0da30ddcca01",
+          "src": "static/icons/icon-48x48.png",
+          "sizes": "48x48",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654768803294
+        }
+      ],
       "createdAt": 1654768710292,
       "ID": "d2885973-473b-4165-a7b7-b676e7d87f1e"
     },
