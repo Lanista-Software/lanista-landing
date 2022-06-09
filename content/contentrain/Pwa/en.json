@@ -112,7 +112,7 @@
       "nativeUI": true,
       "favicon": true,
       "mobileAppIOS": true,
-      "viewport": "width=device-width, initial-scale=1",
+      "viewport": "'width=device-width, initial-scale=1'",
       "ogTitle": "Lanista Software",
       "ogDescription": "Lanista Software",
       "twitterCard": "twitter card",
@@ -122,7 +122,7 @@
       "ogType": "website",
       "ogWidth": "1200",
       "ogHeight": "630",
-      "updatedAt": 1654769720466
+      "updatedAt": 1654769779384
     },
     "createdAt": 1654768698244,
     "ID": "f6e13a16-2b31-49e8-af70-bdc0e5424894"
