@@ -1,3 +1,5 @@
+import pwaData from './content/contentrain/Pwa/en.json'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -52,99 +54,101 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     icon: {
-      icons: [
-        {
-          src: 'static/icons/icon-48x48.png',
-          sizes: '48x48',
-          type: 'image/png',
-          purpose: 'maskable any',
-        },
-        {
-          src: 'static/icons/icon-72x72.png',
-          sizes: '72x72',
-          type: 'image/png',
-          purpose: 'maskable any',
-        },
-        {
-          src: 'static/icons/icon-96x96.png',
-          sizes: '96x96',
-          type: 'image/png',
-          purpose: 'maskable any',
-        },
-        {
-          src: 'static/icons/icon-128x128.png',
-          sizes: '128x128',
-          type: 'image/png',
-          purpose: 'maskable any',
-        },
-        {
-          src: 'static/icons/icon-144x144.png',
-          sizes: '144x144',
-          type: 'image/png',
-          purpose: 'maskable any',
-        },
-        {
-          src: 'static/icons/icon-152x152.png',
-          sizes: '152x152',
-          type: 'image/png',
-          purpose: 'maskable any',
-        },
-        {
-          src: 'static/icons/icon-192x192.png',
-          sizes: '192x192',
-          type: 'image/png',
-          purpose: 'maskable any',
-        },
-        {
-          src: 'static/icons/icon-384x384.png',
-          sizes: '384x384',
-          type: 'image/png',
-          purpose: 'maskable any',
-        },
-        {
-          src: 'static/icons/icon-512x512.png',
-          sizes: '512x512',
-          type: 'image/png',
-          purpose: 'maskable any',
-        },
-      ],
+      icons: [pwaData[0].icon.icons],
+      // [
+      //   {
+      //     src: 'static/icons/icon-48x48.png',
+      //     sizes: '48x48',
+      //     type: 'image/png',
+      //     purpose: 'maskable any',
+      //   },
+      //   {
+      //     src: 'static/icons/icon-72x72.png',
+      //     sizes: '72x72',
+      //     type: 'image/png',
+      //     purpose: 'maskable any',
+      //   },
+      //   {
+      //     src: 'static/icons/icon-96x96.png',
+      //     sizes: '96x96',
+      //     type: 'image/png',
+      //     purpose: 'maskable any',
+      //   },
+      //   {
+      //     src: 'static/icons/icon-128x128.png',
+      //     sizes: '128x128',
+      //     type: 'image/png',
+      //     purpose: 'maskable any',
+      //   },
+      //   {
+      //     src: 'static/icons/icon-144x144.png',
+      //     sizes: '144x144',
+      //     type: 'image/png',
+      //     purpose: 'maskable any',
+      //   },
+      //   {
+      //     src: 'static/icons/icon-152x152.png',
+      //     sizes: '152x152',
+      //     type: 'image/png',
+      //     purpose: 'maskable any',
+      //   },
+      //   {
+      //     src: 'static/icons/icon-192x192.png',
+      //     sizes: '192x192',
+      //     type: 'image/png',
+      //     purpose: 'maskable any',
+      //   },
+      //   {
+      //     src: 'static/icons/icon-384x384.png',
+      //     sizes: '384x384',
+      //     type: 'image/png',
+      //     purpose: 'maskable any',
+      //   },
+      //   {
+      //     src: 'static/icons/icon-512x512.png',
+      //     sizes: '512x512',
+      //     type: 'image/png',
+      //     purpose: 'maskable any',
+      //   },
+      // ],
     },
-    manifest: {
-      name: 'Lanista Software',
-      short_name: 'Lanista',
-      lang: 'en',
-      useWebmanifestExtension: false,
-      theme_color: '#001733',
-      icons: [
-        {
-          src: 'static/icons/icon-192x192.png',
-          sizes: '192x192',
-          type: 'image/png',
-        },
-        {
-          src: 'static/icons/icon-512x512.png',
-          sizes: '512x512',
-          type: 'image/png',
-        },
-      ],
-    },
+    manifest: pwaData[0].manifest,
+    // {
+    //   name: 'Lanista Software',
+    //   short_name: 'Lanista',
+    //   lang: 'en',
+    //   useWebmanifestExtension: false,
+    //   theme_color: '#001733',
+    //   icons: [
+    //     {
+    //       src: 'static/icons/icon-192x192.png',
+    //       sizes: '192x192',
+    //       type: 'image/png',
+    //     },
+    //     {
+    //       src: 'static/icons/icon-512x512.png',
+    //       sizes: '512x512',
+    //       type: 'image/png',
+    //     },
+    //   ],
+    // },
     meta: {
-      name: 'Lanista Software',
-      author: 'Lanista Software',
-      description: 'Lanista Software',
-      mobileApp: true,
-      nativeUI: true,
-      favicon: true,
-      mobileAppIOS: true,
-      viewport: 'width=device-width, initial-scale=1',
-      'og:title': 'Lanista Software',
-      'og:description': 'Lanista Software',
-      'og:url': 'https://lanista.com.tr/',
-      'og:type': 'website',
-      'og:image:width': '1200',
-      'og:image:height': '630',
-      'twitter:card': 'twitter card',
-      'twitter:site': 'https://twitter.com/lanistasoftware',
+      name: pwaData[0].metaData.name,
+      author: pwaData[0].metaData.author,
+      description: pwaData[0].metaData.description,
+      mobileApp: pwaData[0].metaData.mobileApp,
+      nativeUI: pwaData[0].metaData.nativeUI,
+      favicon: pwaData[0].metaData.favicon,
+      mobileAppIOS: pwaData[0].metaData.mobileAppIOS,
+      viewport: pwaData[0].metaData.viewport,
+      'og:title': pwaData[0].metaData.ogTitle,
+      'og:description': pwaData[0].metaData.ogDescription,
+      'og:url': pwaData[0].metaData.ogUrl,
+      'og:type': pwaData[0].metaData.ogType,
+      'og:image:width': pwaData[0].metaData.ogWidth,
+      'og:image:height': pwaData[0].metaData.ogHeight,
+      'twitter:card': pwaData[0].metaData.twitterCard,
+      'twitter:site': pwaData[0].metaData.twitterSite,
     },
   },
 
