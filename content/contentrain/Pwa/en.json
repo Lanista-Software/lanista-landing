@@ -117,7 +117,12 @@
       "ogDescription": "Lanista Software",
       "twitterCard": "twitter card",
       "twitterSite": "https://twitter.com/lanistasoftware",
-      "createdAt": 1654769331021
+      "createdAt": 1654769331021,
+      "ogUrl": "https://lanista.com.tr/",
+      "ogType": "website",
+      "ogWidth": "1200",
+      "ogHeight": "630",
+      "updatedAt": 1654769720466
     },
     "createdAt": 1654768698244,
     "ID": "f6e13a16-2b31-49e8-af70-bdc0e5424894"
