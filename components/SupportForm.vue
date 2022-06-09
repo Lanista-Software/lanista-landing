@@ -59,6 +59,7 @@
           block
           class="mt-6"
           size="lg"
+          variant="secondary"
           :disabled="spinner"
           @click.stop.prevent="checkAndSubmit"
         >

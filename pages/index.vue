@@ -30,7 +30,7 @@
             level="1"
             size="2xs"
             display
-            class="text-white font-semibold pt-6 pb-8 lg:hidden w-2/3"
+            class="text-white font-semibold pt-6 pb-8 lg:hidden"
           >
             {{ splitText(findData('hero').brandTitle.title)[0] }}<br />
             {{ splitText(findData('hero').brandTitle.title)[1] }}<br />
@@ -91,21 +91,25 @@
       </div>
       <div class="photos">
         <div class="lanista-container__large pb-24 space-y-4">
-          <div class="flex lg:flex-row flex-col">
-            <nuxt-img
-              :src="findData('workWith').images[0].src.png"
-              :alt="findData('workWith').images[0].alt"
-              class="lanista__img lg:w-3/5 lg:pr-4 pb-4 lg:pb-0 aspect-auto"
-            ></nuxt-img>
-            <nuxt-img
-              :src="findData('workWith').images[1].src.png"
-              :alt="findData('workWith').images[1].alt"
-              class="lanista__img lg:w-2/5 aspect-auto"
-            ></nuxt-img>
+          <div class="flex md:flex-row flex-col">
+            <div class="md:pr-4 pb-4 md:pb-0">
+              <nuxt-img
+                :src="findData('workWith').images[0].src.png"
+                :alt="findData('workWith').images[0].alt"
+                class="w-full h-auto"
+              ></nuxt-img>
+            </div>
+            <div>
+              <nuxt-img
+                :src="findData('workWith').images[1].src.png"
+                :alt="findData('workWith').images[1].alt"
+                class="w-full h-auto"
+              ></nuxt-img>
+            </div>
           </div>
-          <div class="flex lg:flex-row flex-col max-h-min">
+          <div class="flex md:flex-row flex-col max-h-min">
             <div
-              class="lg:w-2/5 bg-secondary rounded-lg flex flex-col justify-center px-10 pt-6"
+              class="md:w-2/5 bg-secondary rounded-lg flex flex-col justify-center px-10 pt-6"
             >
               <lui-icon
                 size="3x"
@@ -116,10 +120,19 @@
                 size="2xs"
                 display
                 level="3"
-                class="pb-2 font-semibold"
+                class="pb-2 font-semibold hidden lg:block"
                 >{{ findData('workWith').cards[0].title }}</lui-heading
               >
-              <lui-text class="pb-8 lg:hidden xl:block">
+              <lui-heading
+                size="lg"
+                level="3"
+                class="pb-2 font-semibold lg:hidden block"
+                >{{ findData('workWith').cards[0].title }}</lui-heading
+              >
+              <lui-text class="pb-8 hidden xl:block">
+                {{ findData('workWith').cards[0].description }}
+              </lui-text>
+              <lui-text class="pb-8 md:hidden !text-[14px]">
                 {{ findData('workWith').cards[0].description }}
               </lui-text>
               <div class="pb-6">
@@ -132,23 +145,29 @@
                 >
               </div>
             </div>
-            <nuxt-img
-              :src="findData('workWith').images[2].src.png"
-              :alt="findData('workWith').images[2].alt"
-              class="lanista__img lg:w-3/5 lg:pl-4 pt-4 lg:pt-0 aspect-auto"
-            ></nuxt-img>
+            <div class="md:w-3/5 md:pl-4 pt-4 md:pt-0">
+              <nuxt-img
+                :src="findData('workWith').images[2].src.png"
+                :alt="findData('workWith').images[2].alt"
+                class="w-full h-auto"
+              ></nuxt-img>
+            </div>
           </div>
-          <div class="flex lg:flex-row flex-col">
-            <nuxt-img
-              :src="findData('workWith').images[3].src.png"
-              :alt="findData('workWith').images[3].alt"
-              class="lanista__img lg:w-3/5 lg:pr-4 pb-4 lg:pb-0 aspect-auto"
-            ></nuxt-img>
-            <nuxt-img
-              :src="findData('workWith').images[4].src.png"
-              :alt="findData('workWith').images[4].alt"
-              class="lanista__img lg:w-2/5"
-            ></nuxt-img>
+          <div class="flex md:flex-row flex-col">
+            <div class="md:pr-4 pb-4 md:pb-0">
+              <nuxt-img
+                :src="findData('workWith').images[3].src.png"
+                :alt="findData('workWith').images[3].alt"
+                class="w-full h-auto"
+              ></nuxt-img>
+            </div>
+            <div>
+              <nuxt-img
+                :src="findData('workWith').images[4].src.png"
+                :alt="findData('workWith').images[4].alt"
+                class="w-full h-auto"
+              ></nuxt-img>
+            </div>
           </div>
         </div>
       </div>
@@ -292,8 +311,5 @@ export default {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
-}
-.lanista__img {
-  @apply h-48 md:h-auto;
 }
 </style>

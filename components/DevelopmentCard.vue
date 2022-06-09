@@ -36,7 +36,7 @@
           >
         </div>
         <div class="bg-primary rounded-2xl">
-          <nuxt-img :src="imgSrc" :alt="imgAlt" class="p-8"></nuxt-img>
+          <nuxt-img :src="imgSrc" :alt="imgAlt" class="p-8 w-full"></nuxt-img>
         </div>
       </div>
     </div>
