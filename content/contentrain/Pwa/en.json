@@ -78,7 +78,16 @@
       "createdAt": 1654768710292,
       "ID": "d2885973-473b-4165-a7b7-b676e7d87f1e"
     },
-    "manifest": {},
+    "manifest": {
+      "ID": "f9c42b59-662f-4aa8-883d-f8bb23c454ca",
+      "lang": "en",
+      "themeColor": "#001733",
+      "useWebmanifestExtension": false,
+      "name": "Lanista Software",
+      "shortName": "Lanista",
+      "icons": [],
+      "createdAt": 1654769178675
+    },
     "metaData": {},
     "createdAt": 1654768698244,
     "ID": "f6e13a16-2b31-49e8-af70-bdc0e5424894"
