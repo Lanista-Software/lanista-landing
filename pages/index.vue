@@ -253,7 +253,7 @@
               </lui-avatar>
             </div>
             <div class="pl-4">
-              <lui-heading level="4" size="sm" class="pb-2 font-semibold"
+              <lui-heading level="3" size="sm" class="pb-2 font-semibold"
                 >{{ item.title }}
               </lui-heading>
               <a :href="item.button.link">{{ item.description }}</a>
