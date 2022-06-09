@@ -1,0 +1,130 @@
+[
+  {
+    "icon": {
+      "icons": [
+        {
+          "ID": "58632c10-913a-42f5-abbc-0da30ddcca01",
+          "src": "static/icons/icon-48x48.png",
+          "sizes": "48x48",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654768803294
+        },
+        {
+          "ID": "9d2f461c-ca4b-405f-949c-7e8f6694be0f",
+          "src": "static/icons/icon-72x72.png",
+          "sizes": "72x72",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654768827194
+        },
+        {
+          "ID": "59729b52-ff15-43b9-ba99-43f270586288",
+          "src": "static/icons/icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654768908765
+        },
+        {
+          "ID": "4d19d2ba-fbf8-4cf9-8b2d-585a263db6f7",
+          "src": "static/icons/icon-128x128.png",
+          "sizes": "128x128",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654768947023
+        },
+        {
+          "ID": "a77d2f1c-ce1b-48a7-9da4-e27d7a5dd193",
+          "src": "static/icons/icon-144x144.png",
+          "sizes": "144x144",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654768985405
+        },
+        {
+          "ID": "cf990e7a-a26b-4e22-8402-f7d1f4911768",
+          "src": "static/icons/icon-152x152.png",
+          "sizes": "152x152",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654769009432
+        },
+        {
+          "ID": "5ce3d1ba-4fde-4e6f-abd2-465f02be7282",
+          "src": "static/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654769044160
+        },
+        {
+          "ID": "151987d7-82dc-4aad-b0ec-884e4c7ca997",
+          "src": "static/icons/icon-384x384.png",
+          "sizes": "384x384",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654769075927
+        },
+        {
+          "ID": "a1bf649a-8ada-45ba-8e23-15e804beca99",
+          "src": "static/icons/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654769098517
+        }
+      ],
+      "createdAt": 1654768710292,
+      "ID": "d2885973-473b-4165-a7b7-b676e7d87f1e"
+    },
+    "manifest": {
+      "ID": "f9c42b59-662f-4aa8-883d-f8bb23c454ca",
+      "lang": "en",
+      "themeColor": "#001733",
+      "useWebmanifestExtension": false,
+      "name": "Lanista Software",
+      "shortName": "Lanista",
+      "icons": [
+        {
+          "ID": "bb0ead4f-6db3-4703-87f0-4d84090f73f2",
+          "src": "static/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "createdAt": 1654769220188
+        },
+        {
+          "ID": "5d796b57-0cf2-418b-9e0c-76ea228ec1da",
+          "src": "static/icons/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "createdAt": 1654769243740
+        }
+      ],
+      "createdAt": 1654769178675
+    },
+    "metaData": {
+      "ID": "4af6b686-0a70-4789-a4b2-a6eac1f435ff",
+      "name": "Lanista Software",
+      "author": "Lanista Software",
+      "description": "Lanista Software",
+      "mobileApp": true,
+      "nativeUI": true,
+      "favicon": true,
+      "mobileAppIOS": true,
+      "viewport": "'width=device-width, initial-scale=1'",
+      "ogTitle": "Lanista Software",
+      "ogDescription": "Lanista Software",
+      "twitterCard": "twitter card",
+      "twitterSite": "https://twitter.com/lanistasoftware",
+      "createdAt": 1654769331021,
+      "ogUrl": "https://lanista.com.tr/",
+      "ogType": "website",
+      "ogWidth": "1200",
+      "ogHeight": "630",
+      "updatedAt": 1654769805832
+    },
+    "createdAt": 1654768698244,
+    "ID": "f6e13a16-2b31-49e8-af70-bdc0e5424894"
+  }
+]
