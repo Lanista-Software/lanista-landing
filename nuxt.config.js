@@ -19,7 +19,10 @@ export default {
   css: ['~/assets/tailwind.css', 'remixicon/fonts/remixicon.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~plugins/firebase.js', ssr: false }],
+  plugins: [
+    { src: '~plugins/directives.js', ssr: false },
+    { src: '~plugins/firebase.js', ssr: false },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -118,6 +121,18 @@ export default {
       lang: 'en',
       useWebmanifestExtension: false,
       theme_color: '#001733',
+      icons: [
+        {
+          src: '/static/lanista-logo.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: '/static/lanista-logo.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+      ],
     },
     meta: {
       name: 'Lanista Software',

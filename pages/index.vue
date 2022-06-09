@@ -19,7 +19,7 @@
             level="1"
             size="md"
             display
-            class="text-white font-semibold pt-6 pb-8 hidden lg:flex"
+            class="text-white font-semibold pt-6 pb-8 hidden lg:flex leading-[5.5rem]"
           >
             {{ splitText(findData('hero').brandTitle.title)[0] }}
             {{ splitText(findData('hero').brandTitle.title)[1] }}<br />
@@ -214,7 +214,7 @@
               class="pb-2 font-semibold"
               >{{ findData('message').brandTitle.title }}</lui-heading
             >
-            <lui-text class="pb-12"
+            <lui-text class="pb-12 text-heading"
               >{{ findData('message').brandTitle.description }}
             </lui-text>
           </div>
@@ -237,7 +237,7 @@
               <lui-heading level="4" size="sm" class="pb-2 font-semibold"
                 >{{ item.title }}
               </lui-heading>
-              <lui-text>{{ item.description }} </lui-text>
+              <a :href="item.button.link">{{ item.description }}</a>
             </div>
           </div>
         </div>
@@ -248,7 +248,9 @@
           <lui-heading level="2" size="xl" class="pb-2 font-semibold">{{
             findData('message').brandTitle.title
           }}</lui-heading>
-          <lui-text>{{ findData('message').brandTitle.description }} </lui-text>
+          <lui-text class="text-heading"
+            >{{ findData('message').brandTitle.description }}
+          </lui-text>
         </div>
       </div>
     </section>

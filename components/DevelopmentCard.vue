@@ -20,10 +20,8 @@
           >{{ title }}
         </lui-heading>
       </div>
-      <div class="flex flex-col lg:pt-24 lg:w-3/5">
-        <lui-text class="text-heading pb-8">
-          {{ description }}
-        </lui-text>
+      <div class="flex flex-col lg:pt-20 lg:w-3/5">
+        <div class="text-heading pb-8" v-html="description"></div>
         <div class="lg:pb-16 pb-8">
           <nuxt-link :to="buttonLink">
             <lui-button
@@ -37,7 +35,7 @@
             ></nuxt-link
           >
         </div>
-        <div>
+        <div class="bg-primary rounded-2xl">
           <nuxt-img :src="imgSrc" :alt="imgAlt" class="p-8"></nuxt-img>
         </div>
       </div>

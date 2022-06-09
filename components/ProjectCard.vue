@@ -4,12 +4,9 @@
   >
     <div class="text-side flex flex-col justify-center lg:w-2/5">
       <div class="pb-6">
-        <lui-chip
-          rounded
-          size="lg"
-          class="bg-chip justify-center items-center text-secondary"
-          >{{ subtitle }}</lui-chip
-        >
+        <lui-chip rounded size="lg" variant="secondary" filter="lighter">{{
+          subtitle
+        }}</lui-chip>
       </div>
       <lui-heading
         size="2xs"
