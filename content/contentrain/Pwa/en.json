@@ -65,6 +65,14 @@
           "type": "image/png",
           "purpose": "maskable any",
           "createdAt": 1654769075927
+        },
+        {
+          "ID": "a1bf649a-8ada-45ba-8e23-15e804beca99",
+          "src": "static/icons/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable any",
+          "createdAt": 1654769098517
         }
       ],
       "createdAt": 1654768710292,
