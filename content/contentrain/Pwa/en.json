@@ -103,7 +103,22 @@
       ],
       "createdAt": 1654769178675
     },
-    "metaData": {},
+    "metaData": {
+      "ID": "4af6b686-0a70-4789-a4b2-a6eac1f435ff",
+      "name": "Lanista Software",
+      "author": "Lanista Software",
+      "description": "Lanista Software",
+      "mobileApp": true,
+      "nativeUI": true,
+      "favicon": true,
+      "mobileAppIOS": true,
+      "viewport": "width=device-width, initial-scale=1",
+      "ogTitle": "Lanista Software",
+      "ogDescription": "Lanista Software",
+      "twitterCard": "twitter card",
+      "twitterSite": "https://twitter.com/lanistasoftware",
+      "createdAt": 1654769331021
+    },
     "createdAt": 1654768698244,
     "ID": "f6e13a16-2b31-49e8-af70-bdc0e5424894"
   }
