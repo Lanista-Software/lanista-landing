@@ -1,8 +1,10 @@
 <template>
   <div
-    class="lanista-container__small flex lg:flex-row flex-col bg-primary rounded-lg justify-between items-center py-4"
+    class="lanista-container__small flex lg:flex-row flex-col bg-primary rounded-lg justify-between items-center pt-7 lg:pt-0"
   >
-    <div class="text-side flex flex-col justify-center lg:w-2/5">
+    <div
+      class="text-side flex flex-col justify-center xl:w-2/5 lg:py-24 lg:pr-12 lg:w-4/5"
+    >
       <div class="pb-6">
         <lui-chip rounded size="lg" variant="secondary" filter="lighter">{{
           subtitle
@@ -31,7 +33,7 @@
         </a>
       </div>
     </div>
-    <div class="image-side lg:py-24 pt-8 lg:pl-24">
+    <div class="image-side xl:py-24 pt-8 xl:pl-24">
       <nuxt-img :src="imgSrc" :alt="imgAlt"></nuxt-img>
     </div>
   </div>

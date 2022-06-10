@@ -19,7 +19,7 @@
             level="1"
             size="md"
             display
-            class="text-white font-semibold pt-6 pb-8 hidden lg:flex leading-[5.5rem]"
+            class="text-white font-semibold pt-6 pb-8 hidden lg:block leading-[5.5rem]"
           >
             {{ splitText(findData('hero').brandTitle.title)[0] }}
             {{ splitText(findData('hero').brandTitle.title)[1] }}<br />
@@ -30,7 +30,7 @@
             level="1"
             size="2xs"
             display
-            class="text-white font-semibold pt-6 pb-8 lg:hidden"
+            class="text-white font-semibold pt-6 pb-8 xl:hidden"
           >
             {{ splitText(findData('hero').brandTitle.title)[0] }}<br />
             {{ splitText(findData('hero').brandTitle.title)[1] }}<br />

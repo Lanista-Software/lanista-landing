@@ -12,7 +12,7 @@
         :aria-label="item.name"
         rel="noopener noreferrer"
         class="mr-4 mt-2"
-      >
+        >{{ item.name }}
         <lui-icon class="text-white" :name="item.icon.name" line size="xl" />
       </a>
     </div>
