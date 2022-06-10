@@ -6,9 +6,14 @@
       class="text-side flex flex-col justify-center xl:w-2/5 lg:py-24 lg:pr-12 lg:w-4/5"
     >
       <div class="pb-6">
-        <lui-chip rounded size="lg" variant="secondary" filter="lighter">{{
-          subtitle
-        }}</lui-chip>
+        <lui-chip
+          rounded
+          size="lg"
+          variant="secondary"
+          filter="lighter"
+          class="!text-[14px]"
+          >{{ subtitle }}</lui-chip
+        >
       </div>
       <lui-heading
         size="2xs"
@@ -34,7 +39,7 @@
       </div>
     </div>
     <div class="image-side xl:py-24 pt-8 xl:pl-24">
-      <nuxt-img :src="imgSrc" :alt="imgAlt"></nuxt-img>
+      <nuxt-img :src="imgSrc" :alt="imgAlt" provider="static"></nuxt-img>
     </div>
   </div>
 </template>

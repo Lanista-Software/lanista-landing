@@ -12,7 +12,7 @@
             size="lg"
             variant="secondary"
             filter="lighter"
-            class="text-semibold"
+            class="text-semibold !text-[14px]"
             >{{ findData('hero').brandTitle.subtitle }}</lui-chip
           >
           <lui-heading
@@ -97,6 +97,8 @@
                 :src="findData('workWith').images[0].src.png"
                 :alt="findData('workWith').images[0].alt"
                 class="w-full h-auto"
+                provider="static"
+                format="webp"
               ></nuxt-img>
             </div>
             <div>
@@ -104,6 +106,8 @@
                 :src="findData('workWith').images[1].src.png"
                 :alt="findData('workWith').images[1].alt"
                 class="w-full h-auto"
+                provider="static"
+                format="webp"
               ></nuxt-img>
             </div>
           </div>
@@ -150,6 +154,8 @@
                 :src="findData('workWith').images[2].src.png"
                 :alt="findData('workWith').images[2].alt"
                 class="w-full h-auto"
+                provider="static"
+                format="webp"
               ></nuxt-img>
             </div>
           </div>
@@ -159,6 +165,8 @@
                 :src="findData('workWith').images[3].src.png"
                 :alt="findData('workWith').images[3].alt"
                 class="w-full h-auto"
+                provider="static"
+                format="webp"
               ></nuxt-img>
             </div>
             <div>
@@ -166,6 +174,8 @@
                 :src="findData('workWith').images[4].src.png"
                 :alt="findData('workWith').images[4].alt"
                 class="w-full h-auto"
+                provider="static"
+                format="webp"
               ></nuxt-img>
             </div>
           </div>
@@ -256,7 +266,9 @@
               <lui-heading level="3" size="sm" class="pb-2 font-semibold"
                 >{{ item.title }}
               </lui-heading>
-              <a :href="item.button.link">{{ item.description }}</a>
+              <a :href="item.button.link" target="_blank">{{
+                item.description
+              }}</a>
             </div>
           </div>
         </div>
