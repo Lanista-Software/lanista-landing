@@ -23,16 +23,17 @@
       <div class="flex flex-col lg:pt-20 lg:w-3/5">
         <div class="text-heading pb-8" v-html="description"></div>
         <div class="lg:pb-16 pb-8">
-          <nuxt-link :to="buttonLink">
-            <lui-button
-              rounded
-              size="lg"
-              variant="secondary"
-              class="flex"
-              type="outline"
-              :icon="buttonIcon"
-              >{{ buttonLabel }}</lui-button
-            ></nuxt-link
+          <lui-button
+            rounded
+            size="lg"
+            variant="secondary"
+            class="flex"
+            type="outline"
+            :icon="buttonIcon"
+          >
+            <nuxt-link :to="buttonLink">{{
+              buttonLabel
+            }}</nuxt-link></lui-button
           >
         </div>
         <div class="bg-primary rounded-2xl">

@@ -27,18 +27,16 @@
         {{ description }}
       </lui-text>
       <div>
-        <a :href="buttonLink" target="_blank">
-          <lui-button
-            rounded
-            variant="secondary"
-            type="outline"
-            :icon="buttonIcon"
-            >{{ buttonLabel }}
-          </lui-button>
-        </a>
+        <lui-button
+          rounded
+          variant="secondary"
+          type="outline"
+          :icon="buttonIcon"
+          ><a :href="buttonLink" target="_blank">{{ buttonLabel }}</a>
+        </lui-button>
       </div>
     </div>
-    <div class="image-side xl:py-24 pt-8 xl:pl-24">
+    <div class="image-side xl:py-24 pt-8 pb-4 md:pb-0 xl:pl-24">
       <nuxt-img :src="imgSrc" :alt="imgAlt" provider="static"></nuxt-img>
     </div>
   </div>

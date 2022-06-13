@@ -40,14 +40,14 @@
           <lui-text class="text-heading pb-8 lg:w-3/5">
             {{ findData('hero').brandTitle.description }}
           </lui-text>
-          <nuxt-link :to="findData('hero').buttons[0].link">
-            <lui-button
-              rounded
-              variant="secondary"
-              size="lg"
-              :icon="findData('hero').buttons[0].iconName"
-              >{{ findData('hero').buttons[0].label }}</lui-button
-            ></nuxt-link
+          <lui-button
+            rounded
+            variant="secondary"
+            size="lg"
+            :icon="findData('hero').buttons[0].iconName"
+            ><nuxt-link :to="findData('hero').buttons[0].link">{{
+              findData('hero').buttons[0].label
+            }}</nuxt-link></lui-button
           >
         </div>
       </div>
