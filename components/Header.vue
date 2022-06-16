@@ -4,22 +4,19 @@
   >
     <div class="lanista-header lanista-container py-6">
       <div class="lanista-header__logo-container">
-        <a
-          class="lanista-header__logo-link flex justify-center items-center"
-          href="/"
-        >
+        <nuxt-link class="flex justify-center items-center" to="/">
           <nuxt-img
             class="lanista-header__logo w-8"
             src="/lanista-logo.svg"
             alt="lanista logo"
           />
-        </a>
+        </nuxt-link>
       </div>
       <div class="flex">
         <nav
           v-for="item in headerData.navigation"
           :key="item.ID"
-          class="lanista-header-nav hidden md:flex mx-2 relative cursor-pointer"
+          class="lanista-header-nav hidden lg:flex mx-2 relative cursor-pointer"
         >
           <nuxt-link
             exact-active-class="text-secondary font-semibold"
@@ -31,23 +28,37 @@
         </nav>
       </div>
       <div>
-        <lui-button rounded size="lg" variant="secondary">
-          Start a project
-        </lui-button>
+        <nuxt-link :to="headerData.buttons[0].link">
+          <lui-button
+            rounded
+            size="lg"
+            variant="secondary"
+            class="hidden lg:block"
+            >{{ headerData.buttons[0].label }}
+          </lui-button>
+        </nuxt-link>
       </div>
-      <!-- <div class="flex flex-row">
+      <div class="flex flex-row lg:hidden">
         <lui-button
           aria-label="menu"
           icon="menu"
           type="text"
           variant="info"
-          filter="darker"
-          size="sm"
+          filter="lighter"
+          size="lg"
           rounded
-          class="lg:hidden"
           @click="hamburgerMenu = !hamburgerMenu"
         />
-      </div> -->
+      </div>
+      <transition name="fade-menu">
+        <HamburgerMenu
+          v-show="hamburgerMenu"
+          :is-active="hamburgerMenu"
+          :nav-list="headerData.navigation"
+          :social-link-list="headerData.socialLinks"
+          @closeMenu="handleCloseMenu"
+        />
+      </transition>
     </div>
   </header>
 </template>
@@ -74,7 +85,11 @@ export default {
       },
     }
   },
-  methods: {},
+  methods: {
+    handleCloseMenu() {
+      this.hamburgerMenu = !this.hamburgerMenu
+    },
+  },
 }
 </script>
 

@@ -10,38 +10,64 @@
       },
       {
         "ID": "5d3d6ea8-d753-4927-8b7b-8b9ea3f19db2",
-        "link": "/services",
+        "link": "#services",
         "name": "Services",
-        "createdAt": 1651819250821
+        "createdAt": 1651819250821,
+        "updatedAt": 1653281148827
       },
       {
         "ID": "71ee65aa-0115-434e-944a-c404ae9e646c",
-        "link": "/team",
+        "link": "#team",
         "name": "Team",
-        "createdAt": 1651819263431
+        "createdAt": 1651819263431,
+        "updatedAt": 1653281159094
       },
       {
         "ID": "85ba5adb-40ac-4dbb-be6a-91284097113a",
-        "link": "/projects",
+        "link": "#projects",
         "name": "Projects",
-        "createdAt": 1651819278058
+        "createdAt": 1651819278058,
+        "updatedAt": 1653281166997
       },
       {
         "ID": "40308a45-2ec0-4ca0-967c-f76af9468523",
-        "link": "/contact",
+        "link": "#contact",
         "name": "Contact",
-        "createdAt": 1651819289487
+        "createdAt": 1651819289487,
+        "updatedAt": 1653281176019
       }
     ],
     "buttons": [
       {
         "ID": "422f8087-163b-4350-b87e-31715e8206e9",
         "label": "Start a project",
-        "link": "",
-        "createdAt": 1651819361857
+        "link": "#contact",
+        "createdAt": 1651819361857,
+        "updatedAt": 1653985665122
       }
     ],
     "createdAt": 1651818957484,
-    "ID": "55bf07d8-7ff9-4065-8e2f-7de2f61cc1c5"
+    "ID": "55bf07d8-7ff9-4065-8e2f-7de2f61cc1c5",
+    "socialLinks": [
+      {
+        "ID": "8d78699a-8681-4f62-b822-d42fc7699210",
+        "name": "linkedin-box",
+        "url": "https://www.linkedin.com/company/lanista-software/",
+        "createdAt": 1653032673955,
+        "updatedAt": 1653032733268
+      },
+      {
+        "ID": "b3f804b5-9411-4315-b99e-d90ad50d4b58",
+        "name": "twitter",
+        "url": "https://twitter.com/lanistasoftware",
+        "createdAt": 1653032803013
+      },
+      {
+        "ID": "4eb3bce7-c205-46cf-86ca-5f9a548f8fd8",
+        "name": "instagram",
+        "url": "https://www.instagram.com/lanistasoftware",
+        "createdAt": 1653032846037
+      }
+    ]
   }
 ]

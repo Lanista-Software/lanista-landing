@@ -22,6 +22,7 @@ module.exports = {
         black: color.black,
         section: '#FFFFFF0A',
         heading: '#FFFFFFCC',
+        chip: '#eb525f1a',
         // "heading-color": color.info[800],
         // bodyColor: color.info[600],
         // borderColor:color.info[200],
@@ -35,6 +36,9 @@ module.exports = {
         success: color.success,
         info: color.info,
         secondary: color.secondary,
+      },
+      screens: {
+        '2xl': '1296px',
       },
       boxShadow: {
         DEFAULT: '0px 0px 16px rgba(0,0,0,0.1)',
@@ -55,10 +59,10 @@ module.exports = {
         xl: '.75rem', // xl olmalı
         '2xl': '1rem', // olmamalı 2xl olmalı.
       },
-      lineHeight: {
-        3.5: '0.875rem', // button da kullanildi deigecek mi ?
-        4.5: '1.125rem', // button da kullanildi deigecek mi ?
-      },
+      // lineHeight: {
+      //   3.5: '0.875rem', // button da kullanildi deigecek mi ?
+      //   4.5: '1.125rem', // button da kullanildi deigecek mi ?
+      // },
       // typography: (theme) => ({
       //   DEFAULT: {
       //     css: {
@@ -88,9 +92,6 @@ module.exports = {
       // })
     },
     colors: color,
-    fontFamily: {
-      inter: ['"Inter"', 'sans-serif'],
-    },
   },
   variants: {
     extend: {

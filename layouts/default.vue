@@ -1,10 +1,10 @@
 <template>
-  <div class="main pt-[98px]">
-    <div class="lanista-container">
+  <div class="main pt-24">
+    <div class="lanista-container__header md:pb-14">
       <Header />
     </div>
     <div class="page-content mb-auto"><nuxt /></div>
-    <div class="lanista-container pb-2 pt-20 w-full">
+    <div class="lanista-container pb-2 pt-4 w-full h-16">
       <Footer />
     </div>
   </div>
@@ -15,5 +15,8 @@ export default {}
 <style lang="postcss">
 .lanista-container {
   @apply container mx-auto px-4;
+}
+.lanista-container__header {
+  @apply container mx-auto;
 }
 </style>

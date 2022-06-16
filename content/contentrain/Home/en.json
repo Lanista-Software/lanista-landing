@@ -25,20 +25,22 @@
             "ID": "34ee83f8-9a16-44ef-953d-ac1176ab317a",
             "label": "Start a project",
             "iconName": "arrow-right-up",
-            "link": "",
-            "createdAt": 1652075247859
+            "link": "#contact",
+            "createdAt": 1652075247859,
+            "updatedAt": 1653985688717
           }
         ],
         "section": "hero",
         "form": [],
         "brandTitle": {
           "ID": "5f7ae321-fb7b-400d-a6cf-3399e0be067a",
-          "title": "We create high quality dijital products for everyone.",
+          "title": "We create / high quality / dijital products / for everyone.",
           "subtitle": "Think , create, develop!",
           "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look. ",
           "maxSize": false,
           "hideDescription": false,
-          "createdAt": 1651828425658
+          "createdAt": 1651828425658,
+          "updatedAt": 1653290965979
         },
         "brandList": [],
         "accordion": [],
@@ -57,9 +59,9 @@
         "cards": [
           {
             "ID": "95130a81-1755-4940-ad6f-aca342a5d723",
-            "title": "Ui/Ux design",
+            "title": "Ui/Ux Design",
             "subtitle": "",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
+            "description": "<p>We are committed to creating designs that appeal to the user according to the principles of universal design! Our design team is using it; Figma, Zeplin, Adobe illustrator, Adobe Photoshop</p>",
             "icon": {
               "ID": "087b1ccc-86f3-4cb0-9852-4f7fb5ed007a",
               "name": "shape-2",
@@ -93,17 +95,18 @@
                 "line": false,
                 "createdAt": 1652075282086
               },
-              "link": "",
-              "createdAt": 1652075271031
+              "link": "#contact",
+              "createdAt": 1652075271031,
+              "updatedAt": 1653985715892
             },
             "createdAt": 1651828367545,
-            "updatedAt": 1652075523863
+            "updatedAt": 1654767066344
           },
           {
             "ID": "e74c5fdc-ed8f-490f-b172-4e81e07d5f19",
             "title": "Frontend Development",
             "subtitle": "",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
+            "description": "Frontend\nWith our team specializing in javascript programming language in frontend development. We use modern popular frameworks like Vue, React, Next and Nuxt for the web.\n\nHere are some of the technologies we are using;\nVue, Webpack, Git, Formatters, Storybook, React, Sass, Gulp, Linters, Yarn, Jest",
             "icon": {
               "ID": "32c7cfc5-8af1-4f13-8463-084909836f17",
               "name": "layout",
@@ -136,17 +139,18 @@
                 "line": false,
                 "createdAt": 1652075298010
               },
-              "link": "",
-              "createdAt": 1652075290943
+              "link": "#contact",
+              "createdAt": 1652075290943,
+              "updatedAt": 1653985725166
             },
             "createdAt": 1651828385525,
-            "updatedAt": 1652075531014
+            "updatedAt": 1653550115522
           },
           {
             "ID": "acb55f04-e256-4ec7-bd60-5976c172295c",
             "title": "Backend Development",
             "subtitle": "",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
+            "description": "Our team specializes in javascript programming language in backend development. We use modern popular frameworks like Express JS, NestJS on NodeJS Runtime.\n\nHere are some of the technologies we are using;\nMySQL,RabbitMQ, Elasticsearch, AWS, NodeJs, MongoDB, Redis, Docker",
             "icon": {
               "ID": "7c8027ba-0f5d-493e-a5d1-dbe2521bd6a6",
               "name": "layout",
@@ -179,11 +183,12 @@
                 "line": false,
                 "createdAt": 1652075320657
               },
-              "link": "",
-              "createdAt": 1652075311183
+              "link": "#contact",
+              "createdAt": 1652075311183,
+              "updatedAt": 1653985741171
             },
             "createdAt": 1651828389183,
-            "updatedAt": 1652075536622
+            "updatedAt": 1653550130387
           },
           {
             "ID": "9a3f684f-9bde-4903-8cf6-b74092fa2705",
@@ -222,8 +227,9 @@
                 "line": false,
                 "createdAt": 1652075341812
               },
-              "link": "",
-              "createdAt": 1652075329482
+              "link": "#contact",
+              "createdAt": 1652075329482,
+              "updatedAt": 1653985757550
             },
             "createdAt": 1651828392680,
             "updatedAt": 1652075541766
@@ -313,11 +319,11 @@
           "ID": "102c6576-90fd-492e-96a3-29480f191198",
           "title": "How we create awesome works in Lanista Labs",
           "subtitle": "",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
+          "description": "Creating digital products is our job! We are here to create a mobile application or a website. We will support you with our unique design!",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828459949,
-          "updatedAt": 1652075873713
+          "updatedAt": 1653550182896
         },
         "brandList": [],
         "accordion": [],
@@ -326,7 +332,7 @@
             "ID": "d0b12559-2421-49e2-ab5d-ead608200910",
             "title": "Want to work with us?",
             "subtitle": "",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
+            "description": "You will be working in a team that supports each other in all areas and has a real team spirit! Take a look at the job that suits you!",
             "icon": {
               "ID": "eb44582b-3149-4f6b-9b2e-2b76d3127be3",
               "name": "team",
@@ -351,7 +357,7 @@
               "createdAt": 1652075936486
             },
             "createdAt": 1651828479342,
-            "updatedAt": 1652075906304
+            "updatedAt": 1653550203659
           }
         ],
         "createdAt": 1651827378526,
@@ -373,13 +379,13 @@
         "form": [],
         "brandTitle": {
           "ID": "7da4edc7-6106-4d2f-95a8-64e5ddeb9c27",
-          "title": "How we create awesome works in Lanista Labs",
+          "title": "How we create awesome works in Lanista Labs?",
           "subtitle": "",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
+          "description": "Creating digital products is our job! We are here to create a mobile application or a website. We will support you with our unique design!\n",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828494701,
-          "updatedAt": 1652075978497
+          "updatedAt": 1653550227720
         },
         "brandList": [],
         "accordion": [],
@@ -414,8 +420,9 @@
                 "line": true,
                 "createdAt": 1652076056156
               },
-              "link": "",
-              "createdAt": 1652076043186
+              "link": "https://subbedd.com/",
+              "createdAt": 1652076043186,
+              "updatedAt": 1653987391543
             },
             "createdAt": 1651828507006,
             "updatedAt": 1652076024805
@@ -424,7 +431,7 @@
             "ID": "f2e4e6a6-3a56-456f-9074-ccf3a25e58d4",
             "title": "Contentrain",
             "subtitle": "Design & Development",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius mi amet nunc, urna. ",
+            "description": "Contentrain is free Git-based Headless CMS that was created for the developer and content editor experience first.\n",
             "icon": [],
             "image": {
               "ID": "51440b97-0efd-4c6f-afb4-bedb8716ee43",
@@ -450,11 +457,12 @@
                 "line": true,
                 "createdAt": 1652076134654
               },
-              "link": "",
-              "createdAt": 1652076122729
+              "link": "https://contentrain.io/",
+              "createdAt": 1652076122729,
+              "updatedAt": 1653987458801
             },
             "createdAt": 1651828513658,
-            "updatedAt": 1652076104523
+            "updatedAt": 1653550700798
           }
         ],
         "createdAt": 1651827493854
@@ -511,11 +519,11 @@
           "ID": "c0f3b4b2-d010-4355-9dd7-028556377a32",
           "title": "Drop your message",
           "subtitle": "",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius mi amet nunc, urna. ",
+          "description": "Whether you are a potential user who has questions about our product or you are already using Contentrain. Our team is ready to answer your questions!",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828527544,
-          "updatedAt": 1652076260814
+          "updatedAt": 1653550622394
         },
         "brandList": [],
         "accordion": [],
@@ -535,7 +543,13 @@
               "updatedAt": 1652076544574
             },
             "image": [],
-            "button": [],
+            "button": {
+              "ID": "31bd1cb7-a8e6-411e-9b5d-082604de463f",
+              "label": "",
+              "icon": [],
+              "link": "https://goo.gl/maps/A8tH52EwpPoE1Hwb6",
+              "createdAt": 1654691288359
+            },
             "createdAt": 1652076425634
           },
           {
@@ -553,7 +567,13 @@
               "updatedAt": 1652076537261
             },
             "image": [],
-            "button": [],
+            "button": {
+              "ID": "148a6983-80cf-4542-bac3-c38c6468204d",
+              "label": "",
+              "icon": [],
+              "link": "tel:04325028500",
+              "createdAt": 1654691315779
+            },
             "createdAt": 1652076442439
           },
           {
@@ -570,7 +590,13 @@
               "createdAt": 1652076530570
             },
             "image": [],
-            "button": [],
+            "button": {
+              "ID": "6ec05bc4-5606-419d-b0f9-a7c23840d492",
+              "label": "",
+              "icon": [],
+              "link": "mailto:info@lanista.com.tr",
+              "createdAt": 1654691334670
+            },
             "createdAt": 1652076466011
           }
         ],

@@ -1,8 +1,8 @@
 <template>
-  <div class="footer mt-12 flex justify-between items-center">
+  <div class="footer px-8 flex justify-between items-center">
     <div
       v-if="Object.keys(footerData.socialLinks).length > 0"
-      class="footer-left"
+      class="footer-left flex justify-center items-center"
     >
       <a
         v-for="(item, i) in footerData.socialLinks"
@@ -12,15 +12,17 @@
         :aria-label="item.name"
         rel="noopener noreferrer"
         class="mr-4 mt-2"
-      >
+        >{{ item.name }}
         <lui-icon class="text-white" :name="item.icon.name" line size="xl" />
       </a>
     </div>
-    <div class="footer-middle text-white">
+    <div
+      class="footer-middle text-white md:flex justify-center items-center hidden"
+    >
       <p>{{ footerData.info }}</p>
     </div>
-    <div class="footer-right">
-      <nuxt-img src="/lanista-logo-lg.svg" />
+    <div class="footer-right flex justify-center items-center">
+      <nuxt-img src="/lanista-logo-lg.svg" alt="lanista logo" />
     </div>
   </div>
 </template>
