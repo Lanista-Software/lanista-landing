@@ -394,7 +394,7 @@
             "ID": "02d7437e-ff62-4490-9eb7-25c6d59a8e8a",
             "title": "Subbedd Subtitle Editor",
             "subtitle": "Design & Development",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
+            "description": "<p>Subbedd allows its users to reach other parts of the world without giving up their habits. It's free and interactive. Subbedd will be ready for you to enjoy soon. Meanwhile, you can make requests and play your part in its making. Share the channel or the video you want to see on Subbedd now!</p><p><br></p>",
             "icon": [],
             "image": {
               "ID": "78102184-267a-4dce-a88f-9b8bc9b034dd",
@@ -425,7 +425,7 @@
               "updatedAt": 1653987391543
             },
             "createdAt": 1651828507006,
-            "updatedAt": 1652076024805
+            "updatedAt": 1655370296412
           },
           {
             "ID": "f2e4e6a6-3a56-456f-9074-ccf3a25e58d4",
