@@ -6,13 +6,65 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'lanista-landing',
+    title: 'Lanista Software',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
       { name: 'theme-color', content: '#001733' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { property: 'og:title', hid: 'og:title', content: 'Lanista' },
+      {
+        property: 'og:description',
+        hid: 'og:description',
+        content: 'Lanista Software - Think, Create, Develop',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://lanista.com.tr/',
+      },
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        property: 'og:image:width',
+        content: '1200',
+      },
+      {
+        property: 'og:image:height',
+        content: '630',
+      },
+      {
+        property: 'twitter:title',
+        hid: 'twitter:title',
+        content: 'Lanista Software - Think, Create, Develop',
+      },
+      {
+        property: 'twitter:description',
+        hid: 'twitter:description',
+        content: 'Lanista Software',
+      },
+      {
+        property: 'twitter:site',
+        hid: 'twitter:site',
+        content: '@lanistasoftware',
+      },
+      {
+        property: 'twitter:creator',
+        hid: 'twitter:creator',
+        content: 'lanista_software',
+      },
+      {
+        property: 'twitter:url',
+        hid: 'twitter:url',
+        content: 'https://lanista.com.tr/',
+      },
+      {
+        property: 'twitter:domain',
+        hid: 'twitter:domain',
+        content: 'lanista.com.tr',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/lanista-logo.svg' }],
   },
