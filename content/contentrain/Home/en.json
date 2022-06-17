@@ -519,11 +519,11 @@
           "ID": "c0f3b4b2-d010-4355-9dd7-028556377a32",
           "title": "Drop your message",
           "subtitle": "",
-          "description": "Whether you are a potential user who has questions about our product or you are already using Contentrain. Our team is ready to answer your questions!",
+          "description": "Do you have an idea to change the world? Let's talk about it! Please leave us your informations and we'll get back to you as soon as possible.",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828527544,
-          "updatedAt": 1653550622394
+          "updatedAt": 1655453938294
         },
         "brandList": [],
         "accordion": [],
