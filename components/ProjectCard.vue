@@ -34,7 +34,7 @@
         </lui-button>
       </div>
     </div>
-    <div class="image-side xl:py-24 pt-8 pb-4 md:pb-0 xl:pl-24">
+    <div class="image-side xl:py-24 pt-8 pb-4 md:pb-0 xl:pl-24 lg:w-2/3">
       <nuxt-img :src="imgSrc" :alt="imgAlt" provider="static"></nuxt-img>
     </div>
   </div>
