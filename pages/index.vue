@@ -30,7 +30,7 @@
             level="1"
             size="2xs"
             display
-            class="text-white font-semibold pt-6 pb-8 xl:hidden"
+            class="text-white font-semibold pt-6 pb-8 lg:hidden"
           >
             {{ splitText(findData('hero').brandTitle.title)[0] }}<br />
             {{ splitText(findData('hero').brandTitle.title)[1] }}<br />
@@ -76,16 +76,16 @@
     </section>
     <section v-if="Object.keys(findData('workWith')).length > 0" id="team">
       <div
-        class="head lanista-container__large flex lg:flex-row flex-col pt-24 lg:pb-20 pb-8"
+        class="head lanista-container__large flex lg:flex-row space-x-24 flex-col pt-24 lg:pb-20 pb-8"
       >
         <lui-heading
-          class="text-white font-semibold pb-4 lg:pb-0"
+          class="text-white font-semibold pb-4 lg:pb-0 lg:w-1/3"
           size="xl"
           level="2"
         >
           {{ findData('workWith').brandTitle.title }}
         </lui-heading>
-        <lui-text class="text-heading lg:pl-32">
+        <lui-text class="text-heading lg:w-2/3">
           {{ findData('workWith').brandTitle.description }}
         </lui-text>
       </div>
@@ -188,16 +188,16 @@
       class="bg-section"
     >
       <div
-        class="head lanista-container__large flex lg:flex-row flex-col pt-24 lg:pb-16 pb-10"
+        class="head lanista-container__large flex lg:flex-row space-x-24 flex-col pt-24 lg:pb-16 pb-10"
       >
         <lui-heading
-          class="text-white font-semibold pb-4 lg:pb-0"
+          class="text-white font-semibold pb-4 lg:pb-0 lg:w-1/3"
           size="xl"
           level="2"
         >
           {{ findData('awesomeWorks').brandTitle.title }}
         </lui-heading>
-        <lui-text class="text-heading lg:pl-32">
+        <lui-text class="text-heading lg:w-2/3">
           {{ findData('awesomeWorks').brandTitle.description }}
         </lui-text>
       </div>
