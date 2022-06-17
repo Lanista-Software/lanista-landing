@@ -431,7 +431,7 @@
             "ID": "f2e4e6a6-3a56-456f-9074-ccf3a25e58d4",
             "title": "Contentrain",
             "subtitle": "Design & Development",
-            "description": "",
+            "description": "<p><span style=\"color: rgb(33, 41, 60);\">Contentrain is a Git-based Headless CMS that was focused on developer and content editor experience which provide seamless integration with Jamstack web apps.</span></p>",
             "icon": [],
             "image": {
               "ID": "51440b97-0efd-4c6f-afb4-bedb8716ee43",
@@ -462,7 +462,7 @@
               "updatedAt": 1653987458801
             },
             "createdAt": 1651828513658,
-            "updatedAt": 1655455539517
+            "updatedAt": 1655455552116
           }
         ],
         "createdAt": 1651827493854
