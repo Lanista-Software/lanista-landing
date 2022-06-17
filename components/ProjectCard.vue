@@ -23,9 +23,7 @@
       >
         {{ title }}
       </lui-heading>
-      <lui-text class="text-heading py-8">
-        {{ description }}
-      </lui-text>
+      <lui-text class="text-heading py-8" v-html="description"></lui-text>
       <div>
         <lui-button
           rounded
