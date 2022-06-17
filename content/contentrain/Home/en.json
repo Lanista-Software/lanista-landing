@@ -106,7 +106,7 @@
             "ID": "e74c5fdc-ed8f-490f-b172-4e81e07d5f19",
             "title": "Frontend Development",
             "subtitle": "",
-            "description": "Frontend\nWith our team specializing in javascript programming language in frontend development. We use modern popular frameworks like Vue, React, Next and Nuxt for the web.\n\nHere are some of the technologies we are using;\nVue, Webpack, Git, Formatters, Storybook, React, Sass, Gulp, Linters, Yarn, Jest",
+            "description": "<p>In the area of Frontend Development our team is specialized in Javascript. Here are some of the technologies we are using; Vue, React, Next, Nuxt, Webpack, Git, Frontmatter, Storybook, Github, Sass, Gulp, Linters, Yarn, Jest</p>",
             "icon": {
               "ID": "32c7cfc5-8af1-4f13-8463-084909836f17",
               "name": "layout",
@@ -144,7 +144,7 @@
               "updatedAt": 1653985725166
             },
             "createdAt": 1651828385525,
-            "updatedAt": 1653550115522
+            "updatedAt": 1655452506195
           },
           {
             "ID": "acb55f04-e256-4ec7-bd60-5976c172295c",
