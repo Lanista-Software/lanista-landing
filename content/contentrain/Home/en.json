@@ -194,7 +194,7 @@
             "ID": "9a3f684f-9bde-4903-8cf6-b74092fa2705",
             "title": "Project Consult",
             "subtitle": "",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
+            "description": "<p>What do you want to build? Maybe you don't know where to start your project, or you don't know what technologies you need. Don't worry, we can help you measure your project and give you the right direction.</p>",
             "icon": {
               "ID": "ccea625e-7c3c-43a6-98b8-f166327c78a2",
               "name": "layout",
@@ -232,7 +232,7 @@
               "updatedAt": 1653985757550
             },
             "createdAt": 1651828392680,
-            "updatedAt": 1652075541766
+            "updatedAt": 1655452847613
           }
         ],
         "createdAt": 1651827337675,
