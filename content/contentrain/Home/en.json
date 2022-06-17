@@ -381,11 +381,11 @@
           "ID": "7da4edc7-6106-4d2f-95a8-64e5ddeb9c27",
           "title": "See what we have created so far!",
           "subtitle": "",
-          "description": "Here you can see some of digital products we have created for our clients. We'll update here soon.",
+          "description": "Here you can see some of the digital products we have created for our clients. We'll update here very soon with another awesome projects. If you have a project in your mind, let's talk! ",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828494701,
-          "updatedAt": 1655453336748
+          "updatedAt": 1655454983298
         },
         "brandList": [],
         "accordion": [],
@@ -428,41 +428,39 @@
             "updatedAt": 1655370296412
           },
           {
-            "ID": "f2e4e6a6-3a56-456f-9074-ccf3a25e58d4",
+            "ID": "8f6180cc-c439-4151-9beb-728f5279c4a7",
             "title": "Contentrain",
             "subtitle": "Design & Development",
-            "description": "<p><span style=\"color: rgb(33, 41, 60);\">Contentrain is a Git-based Headless CMS that was focused on developer and content editor experience which provide seamless integration with Jamstack web apps.</span></p>",
+            "description": "<p>Contentrain is a Git-based Headless CMS that was focused on developer and content editor experience which provide seamless integration with Jamstack web apps.</p>",
             "icon": [],
             "image": {
-              "ID": "51440b97-0efd-4c6f-afb4-bedb8716ee43",
+              "ID": "c0f65a0e-5e67-4712-a1df-7c64036b315c",
               "src": {
-                "ID": "afd0fd1e-28f9-4ff2-8149-8891b9ca2dd6",
+                "ID": "e27365e2-db52-4dc2-96d2-e7a3344dd2c1",
                 "webp": "",
                 "png": "/images/comingsoon.png",
                 "jpeg": "",
                 "gif": "",
                 "svg": "",
-                "createdAt": 1652078235837
+                "createdAt": 1655455784403
               },
               "alt": "contentrain",
-              "createdAt": 1652078223879
+              "createdAt": 1655455779061
             },
             "button": {
-              "ID": "6d5153a6-eb26-4853-9f62-3577694c0cb2",
+              "ID": "9bd60f02-2e7c-4316-9d48-7fbb8c9fd352",
               "label": "See live project",
               "icon": {
-                "ID": "bc32a7a6-9dff-4abd-93b5-a41a31108cd0",
+                "ID": "691ce2cd-49ba-4025-a173-19cdf8b04efd",
                 "name": "arrow-right-up",
                 "color": "",
                 "line": true,
-                "createdAt": 1652076134654
+                "createdAt": 1655455825134
               },
               "link": "https://contentrain.io/",
-              "createdAt": 1652076122729,
-              "updatedAt": 1653987458801
+              "createdAt": 1655455808270
             },
-            "createdAt": 1651828513658,
-            "updatedAt": 1655370022030
+            "createdAt": 1655455757405
           }
         ],
         "createdAt": 1651827493854
