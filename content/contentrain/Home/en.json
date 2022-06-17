@@ -61,7 +61,7 @@
             "ID": "95130a81-1755-4940-ad6f-aca342a5d723",
             "title": "Ui/Ux Design",
             "subtitle": "",
-            "description": "<p>We are committed to creating designs that appeal to the user according to the principles of universal design! Our design team is using it; Figma, Zeplin, Adobe illustrator, Adobe Photoshop</p>",
+            "description": "<p>You need an excellent UI /UX process to explain your brand or project to the world! We use Figma, Adobe XD, Zeplin, Adobe Illustrator, Adobe Photoshop for our design process.</p>",
             "icon": {
               "ID": "087b1ccc-86f3-4cb0-9852-4f7fb5ed007a",
               "name": "shape-2",
@@ -100,13 +100,13 @@
               "updatedAt": 1653985715892
             },
             "createdAt": 1651828367545,
-            "updatedAt": 1654767066344
+            "updatedAt": 1655451438350
           },
           {
             "ID": "e74c5fdc-ed8f-490f-b172-4e81e07d5f19",
             "title": "Frontend Development",
             "subtitle": "",
-            "description": "Frontend\nWith our team specializing in javascript programming language in frontend development. We use modern popular frameworks like Vue, React, Next and Nuxt for the web.\n\nHere are some of the technologies we are using;\nVue, Webpack, Git, Formatters, Storybook, React, Sass, Gulp, Linters, Yarn, Jest",
+            "description": "<p>In the area of Frontend Development our team is specialized in Javascript. Here are some of the technologies we are using; Vue, React, Next, Nuxt, Webpack, Git, Frontmatter, Storybook, Github, Sass, Gulp, Linters, Yarn, Jest</p>",
             "icon": {
               "ID": "32c7cfc5-8af1-4f13-8463-084909836f17",
               "name": "layout",
@@ -144,13 +144,13 @@
               "updatedAt": 1653985725166
             },
             "createdAt": 1651828385525,
-            "updatedAt": 1653550115522
+            "updatedAt": 1655452506195
           },
           {
             "ID": "acb55f04-e256-4ec7-bd60-5976c172295c",
             "title": "Backend Development",
             "subtitle": "",
-            "description": "Our team specializes in javascript programming language in backend development. We use modern popular frameworks like Express JS, NestJS on NodeJS Runtime.\n\nHere are some of the technologies we are using;\nMySQL,RabbitMQ, Elasticsearch, AWS, NodeJs, MongoDB, Redis, Docker",
+            "description": "<p>In the area of Backend Development our team is specialized in Javascript. Here are some of the technologies we are using; ExpressJS, NestJS, NodeJS, MySQL, RabbitMQ, Elasticsearch, AWS, MongoDB, Redis, Docker</p>",
             "icon": {
               "ID": "7c8027ba-0f5d-493e-a5d1-dbe2521bd6a6",
               "name": "layout",
@@ -188,13 +188,13 @@
               "updatedAt": 1653985741171
             },
             "createdAt": 1651828389183,
-            "updatedAt": 1653550130387
+            "updatedAt": 1655452623919
           },
           {
             "ID": "9a3f684f-9bde-4903-8cf6-b74092fa2705",
             "title": "Project Consult",
             "subtitle": "",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
+            "description": "<p>What do you want to build? Maybe you don't know where to start your project, or you don't know what technologies you need. Don't worry, we can help you measure your project and give you the right direction.</p>",
             "icon": {
               "ID": "ccea625e-7c3c-43a6-98b8-f166327c78a2",
               "name": "layout",
@@ -232,7 +232,7 @@
               "updatedAt": 1653985757550
             },
             "createdAt": 1651828392680,
-            "updatedAt": 1652075541766
+            "updatedAt": 1655452847613
           }
         ],
         "createdAt": 1651827337675,
@@ -319,11 +319,11 @@
           "ID": "102c6576-90fd-492e-96a3-29480f191198",
           "title": "How we create awesome works in Lanista Labs",
           "subtitle": "",
-          "description": "Creating digital products is our job! We are here to create a mobile application or a website. We will support you with our unique design!",
+          "description": "Creating digital products is our passion! We are here to create any size of web apps, websites or digital products. Our team has expertise about Frontend Development, Backend Development and UI/UX Design.",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828459949,
-          "updatedAt": 1653550182896
+          "updatedAt": 1655453082725
         },
         "brandList": [],
         "accordion": [],
@@ -379,13 +379,13 @@
         "form": [],
         "brandTitle": {
           "ID": "7da4edc7-6106-4d2f-95a8-64e5ddeb9c27",
-          "title": "How we create awesome works in Lanista Labs?",
+          "title": "See what we have created so far!",
           "subtitle": "",
-          "description": "Creating digital products is our job! We are here to create a mobile application or a website. We will support you with our unique design!\n",
+          "description": "Here you can see some of digital products we have created for our clients. We'll update here soon.",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828494701,
-          "updatedAt": 1653550227720
+          "updatedAt": 1655453336748
         },
         "brandList": [],
         "accordion": [],
@@ -394,7 +394,7 @@
             "ID": "02d7437e-ff62-4490-9eb7-25c6d59a8e8a",
             "title": "Subbedd Subtitle Editor",
             "subtitle": "Design & Development",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id vulputate magna vel libero accumsan nisl. Sociis fringilla tempor ut et mattis auctor condimentum sit at.",
+            "description": "<p>Subbedd allows its users to reach other parts of the world without giving up their habits. It's free and interactive. Subbedd will be ready for you to enjoy soon. Meanwhile, you can make requests and play your part in its making. Share the channel or the video you want to see on Subbedd now!</p><p><br></p>",
             "icon": [],
             "image": {
               "ID": "78102184-267a-4dce-a88f-9b8bc9b034dd",
@@ -425,13 +425,13 @@
               "updatedAt": 1653987391543
             },
             "createdAt": 1651828507006,
-            "updatedAt": 1652076024805
+            "updatedAt": 1655370296412
           },
           {
             "ID": "f2e4e6a6-3a56-456f-9074-ccf3a25e58d4",
             "title": "Contentrain",
             "subtitle": "Design & Development",
-            "description": "Contentrain is free Git-based Headless CMS that was created for the developer and content editor experience first.\n",
+            "description": "<p><span style=\"color: rgb(33, 41, 60);\">Contentrain is a Git-based Headless CMS that was focused on developer and content editor experience which provide seamless integration with Jamstack web apps.</span></p>",
             "icon": [],
             "image": {
               "ID": "51440b97-0efd-4c6f-afb4-bedb8716ee43",
@@ -462,7 +462,7 @@
               "updatedAt": 1653987458801
             },
             "createdAt": 1651828513658,
-            "updatedAt": 1653550700798
+            "updatedAt": 1655370022030
           }
         ],
         "createdAt": 1651827493854
@@ -519,11 +519,11 @@
           "ID": "c0f3b4b2-d010-4355-9dd7-028556377a32",
           "title": "Drop your message",
           "subtitle": "",
-          "description": "Whether you are a potential user who has questions about our product or you are already using Contentrain. Our team is ready to answer your questions!",
+          "description": "Do you have an idea to change the world? Let's talk about it! Please leave us your informations and we'll get back to you as soon as possible.",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828527544,
-          "updatedAt": 1653550622394
+          "updatedAt": 1655453977871
         },
         "brandList": [],
         "accordion": [],
