@@ -76,7 +76,7 @@
     </section>
     <section v-if="Object.keys(findData('workWith')).length > 0" id="team">
       <div
-        class="head lanista-container__large flex lg:flex-row space-x-24 flex-col pt-24 lg:pb-20 pb-8"
+        class="head lanista-container__large flex lg:flex-row lg:space-x-24 flex-col pt-24 lg:pb-20 pb-8"
       >
         <lui-heading
           class="text-white font-semibold pb-4 lg:pb-0 lg:w-1/3"
@@ -188,7 +188,7 @@
       class="bg-section"
     >
       <div
-        class="head lanista-container__large flex lg:flex-row space-x-24 flex-col pt-24 lg:pb-16 pb-10"
+        class="head lanista-container__large flex lg:flex-row lg:space-x-24 flex-col pt-24 lg:pb-16 pb-10"
       >
         <lui-heading
           class="text-white font-semibold pb-4 lg:pb-0 lg:w-1/3"
