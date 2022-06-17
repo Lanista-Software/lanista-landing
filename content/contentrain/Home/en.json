@@ -450,7 +450,13 @@
             "button": {
               "ID": "9bd60f02-2e7c-4316-9d48-7fbb8c9fd352",
               "label": "See live project",
-              "icon": [],
+              "icon": {
+                "ID": "691ce2cd-49ba-4025-a173-19cdf8b04efd",
+                "name": "arrow-right-up",
+                "color": "",
+                "line": true,
+                "createdAt": 1655455825134
+              },
               "link": "https://contentrain.io/",
               "createdAt": 1655455808270
             },
