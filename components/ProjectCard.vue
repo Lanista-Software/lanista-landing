@@ -23,7 +23,7 @@
       >
         {{ title }}
       </lui-heading>
-      <lui-text class="text-heading py-8" v-html="description"></lui-text>
+      <lui-text class="text-heading lg:py-8" v-html="description"></lui-text>
       <div>
         <lui-button
           rounded
@@ -34,7 +34,7 @@
         </lui-button>
       </div>
     </div>
-    <div class="image-side xl:py-24 pt-8 pb-4 md:pb-0 xl:pl-24 lg:w-2/3">
+    <div class="image-side xl:py-24 py-8 xl:pl-24 lg:w-2/3">
       <nuxt-img :src="imgSrc" :alt="imgAlt" provider="static"></nuxt-img>
     </div>
   </div>
