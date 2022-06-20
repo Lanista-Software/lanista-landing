@@ -1,6 +1,11 @@
 [
   {
-    "logo": {},
+    "logo": {
+      "ID": "9588c7dc-adda-40ef-a621-6a57a673d957",
+      "link": "/",
+      "images": [],
+      "createdAt": 1655734598045
+    },
     "navigation": [
       {
         "ID": "1f64dbcd-4022-466f-9254-5ad909ed2e2b",
