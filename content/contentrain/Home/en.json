@@ -372,8 +372,9 @@
             "ID": "58ed4a7c-100f-48c9-ae4a-62c9abbf0a86",
             "label": "See more projects",
             "iconName": "arrow-right-up",
-            "link": "",
-            "createdAt": 1652076213791
+            "link": "https://www.linkedin.com/company/lanista-software/",
+            "createdAt": 1652076213791,
+            "updatedAt": 1657026817260
           }
         ],
         "section": "awesomeWorks",
