@@ -6,35 +6,41 @@
         "ID": "1f64dbcd-4022-466f-9254-5ad909ed2e2b",
         "link": "/",
         "name": "Home",
-        "createdAt": 1651819234850
+        "createdAt": 1651819234850,
+        "id": "hero",
+        "updatedAt": 1657026553947
       },
       {
         "ID": "5d3d6ea8-d753-4927-8b7b-8b9ea3f19db2",
         "link": "#services",
         "name": "Services",
         "createdAt": 1651819250821,
-        "updatedAt": 1653281148827
+        "updatedAt": 1657026561954,
+        "id": "services"
       },
       {
         "ID": "71ee65aa-0115-434e-944a-c404ae9e646c",
         "link": "#team",
         "name": "Team",
         "createdAt": 1651819263431,
-        "updatedAt": 1653281159094
+        "updatedAt": 1657026572929,
+        "id": "team"
       },
       {
         "ID": "85ba5adb-40ac-4dbb-be6a-91284097113a",
         "link": "#projects",
         "name": "Projects",
         "createdAt": 1651819278058,
-        "updatedAt": 1653281166997
+        "updatedAt": 1657026582247,
+        "id": "projects"
       },
       {
         "ID": "40308a45-2ec0-4ca0-967c-f76af9468523",
         "link": "#contact",
         "name": "Contact",
         "createdAt": 1651819289487,
-        "updatedAt": 1653281176019
+        "updatedAt": 1657026590391,
+        "id": "contact"
       }
     ],
     "buttons": [
@@ -68,6 +74,7 @@
         "url": "https://www.instagram.com/lanistasoftware",
         "createdAt": 1653032846037
       }
-    ]
+    ],
+    "updatedAt": 1655711847016
   }
 ]
