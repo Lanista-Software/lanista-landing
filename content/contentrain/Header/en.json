@@ -7,40 +7,40 @@
         "link": "/",
         "name": "Home",
         "createdAt": 1651819234850,
-        "id": "hero",
-        "updatedAt": 1657026553947
+        "id": "nav-hero",
+        "updatedAt": 1657031209139
       },
       {
         "ID": "5d3d6ea8-d753-4927-8b7b-8b9ea3f19db2",
         "link": "#services",
         "name": "Services",
         "createdAt": 1651819250821,
-        "updatedAt": 1657026561954,
-        "id": "services"
+        "updatedAt": 1657031214799,
+        "id": "nav-services"
       },
       {
         "ID": "71ee65aa-0115-434e-944a-c404ae9e646c",
         "link": "#team",
         "name": "Team",
         "createdAt": 1651819263431,
-        "updatedAt": 1657026572929,
-        "id": "team"
+        "updatedAt": 1657031220848,
+        "id": "nav-team"
       },
       {
         "ID": "85ba5adb-40ac-4dbb-be6a-91284097113a",
         "link": "#projects",
         "name": "Projects",
         "createdAt": 1651819278058,
-        "updatedAt": 1657026582247,
-        "id": "projects"
+        "updatedAt": 1657031227169,
+        "id": "nav-projects"
       },
       {
         "ID": "40308a45-2ec0-4ca0-967c-f76af9468523",
         "link": "#contact",
         "name": "Contact",
         "createdAt": 1651819289487,
-        "updatedAt": 1657026590391,
-        "id": "contact"
+        "updatedAt": 1657031232644,
+        "id": "nav-contact"
       }
     ],
     "buttons": [
