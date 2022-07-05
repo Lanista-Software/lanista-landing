@@ -297,6 +297,20 @@ export default {
       pageData,
     }
   },
+  data() {
+    return {
+      sections: ['hero', 'services', 'team', 'projects', 'contact'],
+    }
+  },
+  mounted() {
+    let el
+    let observer
+    this.sections.forEach((section) => {
+      el = document.getElementById(section)
+      observer = new IntersectionObserver(this.callback)
+      observer.observe(el)
+    })
+  },
   methods: {
     findData(sectionName) {
       const filteredData = this.pageData[0].brandSection.filter(
@@ -307,6 +321,26 @@ export default {
     splitText(text) {
       const splittedText = text.split(' / ')
       return splittedText
+    },
+    callback(entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.setNavActiveClass(entry.target.id)
+        }
+      })
+    },
+    setNavActiveClass(id) {
+      this.sections.forEach((section) => {
+        const el = document.getElementById(`nav-${section}`)
+        if (id === section) {
+          el.classList.add(...['border-b-2', 'border-black'])
+          if (section !== 'hero') {
+            this.$router.push(`#${section}`)
+          }
+        } else {
+          el.classList.remove(...['border-b-2', 'border-black'])
+        }
+      })
     },
   },
 }

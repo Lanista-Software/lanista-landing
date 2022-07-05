@@ -19,6 +19,7 @@
           class="lanista-header-nav hidden lg:flex mx-2 relative cursor-pointer"
         >
           <nuxt-link
+            :id="item.id"
             exact-active-class="text-secondary font-semibold"
             :to="item.link"
             class="lanista-header-nav-item mr-2 ml-2 text-white"
