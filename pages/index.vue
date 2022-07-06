@@ -2,10 +2,9 @@
   <div class="home">
     <section
       v-if="Object.keys(findData('hero')).length > 0"
-      id="hero"
       class="lg:pb-32 pb-16"
     >
-      <div class="lanista-container__small content">
+      <div id="hero" class="lanista-container__small content">
         <div class="py-16">
           <lui-chip
             rounded
@@ -45,20 +44,19 @@
             variant="secondary"
             size="lg"
             :icon="findData('hero').buttons[0].iconName"
-            ><nuxt-link :to="findData('hero').buttons[0].link">{{
-              findData('hero').buttons[0].label
-            }}</nuxt-link></lui-button
+            @click="scrollToContact"
+            >{{ findData('hero').buttons[0].label }}</lui-button
           >
         </div>
       </div>
     </section>
     <section
       v-if="Object.keys(findData('developmentProcess')).length > 0"
-      id="services"
       class="bg-section pt-24"
     >
       <div
         v-for="item in findData('developmentProcess').cards"
+        id="services"
         :key="item.ID"
         class="px-4 pb-24"
       >
@@ -74,8 +72,9 @@
         />
       </div>
     </section>
-    <section v-if="Object.keys(findData('workWith')).length > 0" id="team">
+    <section v-if="Object.keys(findData('workWith')).length > 0">
       <div
+        id="team"
         class="head lanista-container__large flex lg:flex-row lg:space-x-24 flex-col pt-24 lg:pb-20 pb-8"
       >
         <lui-heading
@@ -184,10 +183,10 @@
     </section>
     <section
       v-if="Object.keys(findData('awesomeWorks')).length > 0"
-      id="projects"
       class="bg-section"
     >
       <div
+        id="projects"
         class="head lanista-container__large flex lg:flex-row lg:space-x-24 flex-col pt-24 lg:pb-16 pb-10"
       >
         <lui-heading
@@ -228,8 +227,9 @@
         </lui-button>
       </div>
     </section>
-    <section v-if="Object.keys(findData('message')).length > 0" id="contact">
+    <section v-if="Object.keys(findData('message')).length > 0">
       <div
+        id="contact"
         class="container mx-auto px-4 flex lg:flex-row flex-col-reverse justify-between items-center lg:py-24"
       >
         <div
@@ -307,7 +307,9 @@ export default {
     let observer
     this.sections.forEach((section) => {
       el = document.getElementById(section)
-      observer = new IntersectionObserver(this.callback)
+      observer = new IntersectionObserver(this.callback, {
+        rootMargin: '100px',
+      })
       observer.observe(el)
     })
   },
@@ -333,14 +335,15 @@ export default {
       this.sections.forEach((section) => {
         const el = document.getElementById(`nav-${section}`)
         if (id === section) {
-          el.classList.add(...['border-b-2', 'border-black'])
-          if (section !== 'hero') {
-            this.$router.push(`#${section}`)
-          }
+          el.classList.add(...['text-secondary', 'font-semibold'])
         } else {
-          el.classList.remove(...['border-b-2', 'border-black'])
+          el.classList.remove(...['text-secondary', 'font-semibold'])
         }
       })
+    },
+    scrollToContact() {
+      const contactDiv = document.querySelector('#contact')
+      contactDiv.scrollIntoView({ behavior: 'smooth' })
     },
   },
 }

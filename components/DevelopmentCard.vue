@@ -30,10 +30,9 @@
             class="flex"
             type="outline"
             :icon="buttonIcon"
+            @click="scrollToContact"
           >
-            <nuxt-link :to="buttonLink">{{
-              buttonLabel
-            }}</nuxt-link></lui-button
+            {{ buttonLabel }}</lui-button
           >
         </div>
         <div class="bg-primary rounded-2xl">
@@ -84,6 +83,12 @@ export default {
     imgAlt: {
       type: String,
       default: 'lanista development process',
+    },
+  },
+  methods: {
+    scrollToContact() {
+      const contactDiv = document.querySelector('#contact')
+      contactDiv.scrollIntoView({ behavior: 'smooth' })
     },
   },
 }
