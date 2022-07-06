@@ -225,10 +225,10 @@
           variant="secondary"
           :icon="findData('awesomeWorks').buttons[0].iconName"
           line
-          ><a :href="findData('awesomeWorks').buttons[0].link">{{
-            findData('awesomeWorks').buttons[0].label
-          }}</a>
-        </lui-button>
+          ><a :href="findData('awesomeWorks').buttons[0].link"
+            >{{ findData('awesomeWorks').buttons[0].label }}
+          </a></lui-button
+        >
       </div>
     </section>
     <section v-if="Object.keys(findData('message')).length > 0" id="contact">
