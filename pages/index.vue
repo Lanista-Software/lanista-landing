@@ -144,7 +144,9 @@
                   size="lg"
                   variant="primary"
                   :icon="findData('workWith').cards[0].button.icon.name"
-                  >{{ findData('workWith').cards[0].button.label }}</lui-button
+                  ><a :href="findData('workWith').cards[0].button.link">{{
+                    findData('workWith').cards[0].button.label
+                  }}</a></lui-button
                 >
               </div>
             </div>
@@ -223,7 +225,9 @@
           variant="secondary"
           :icon="findData('awesomeWorks').buttons[0].iconName"
           line
-          >{{ findData('awesomeWorks').buttons[0].label }}
+          ><a :href="findData('awesomeWorks').buttons[0].link">{{
+            findData('awesomeWorks').buttons[0].label
+          }}</a>
         </lui-button>
       </div>
     </section>
