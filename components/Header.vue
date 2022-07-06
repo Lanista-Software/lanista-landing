@@ -18,25 +18,24 @@
           :key="item.ID"
           class="lanista-header-nav hidden lg:flex mx-2 relative cursor-pointer"
         >
-          <nuxt-link
-            exact-active-class="text-secondary font-semibold"
-            :to="item.link"
-            class="lanista-header-nav-item mr-2 ml-2 text-white"
+          <span
+            :id="item.id"
+            class="lanista-header-nav-item mr-2 ml-2 text-white cursor-pointer"
+            @click="scrollToSection(item.link)"
           >
-            <span>{{ item.name }}</span>
-          </nuxt-link>
+            {{ item.name }}
+          </span>
         </nav>
       </div>
       <div>
-        <nuxt-link :to="headerData.buttons[0].link">
-          <lui-button
-            rounded
-            size="lg"
-            variant="secondary"
-            class="hidden lg:block"
-            >{{ headerData.buttons[0].label }}
-          </lui-button>
-        </nuxt-link>
+        <lui-button
+          rounded
+          size="lg"
+          variant="secondary"
+          class="hidden lg:block"
+          @click="scrollToSection(headerData.buttons[0].link)"
+          >{{ headerData.buttons[0].label }}
+        </lui-button>
       </div>
       <div class="flex flex-row lg:hidden">
         <lui-button
@@ -88,6 +87,13 @@ export default {
   methods: {
     handleCloseMenu() {
       this.hamburgerMenu = !this.hamburgerMenu
+    },
+    scrollToSection(id) {
+      const section = document.querySelector(id)
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
     },
   },
 }

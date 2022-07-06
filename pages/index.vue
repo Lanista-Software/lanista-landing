@@ -6,7 +6,7 @@
       class="lg:pb-32 pb-16"
     >
       <div class="lanista-container__small content">
-        <div class="py-16">
+        <div class="pb-16 pt-32">
           <lui-chip
             rounded
             size="lg"
@@ -45,9 +45,8 @@
             variant="secondary"
             size="lg"
             :icon="findData('hero').buttons[0].iconName"
-            ><nuxt-link :to="findData('hero').buttons[0].link">{{
-              findData('hero').buttons[0].label
-            }}</nuxt-link></lui-button
+            @click="scrollToContact"
+            >{{ findData('hero').buttons[0].label }}</lui-button
           >
         </div>
       </div>
@@ -145,7 +144,9 @@
                   size="lg"
                   variant="primary"
                   :icon="findData('workWith').cards[0].button.icon.name"
-                  >{{ findData('workWith').cards[0].button.label }}</lui-button
+                  ><a :href="findData('workWith').cards[0].button.link">{{
+                    findData('workWith').cards[0].button.label
+                  }}</a></lui-button
                 >
               </div>
             </div>
@@ -224,8 +225,10 @@
           variant="secondary"
           :icon="findData('awesomeWorks').buttons[0].iconName"
           line
-          >{{ findData('awesomeWorks').buttons[0].label }}
-        </lui-button>
+          ><a :href="findData('awesomeWorks').buttons[0].link"
+            >{{ findData('awesomeWorks').buttons[0].label }}
+          </a></lui-button
+        >
       </div>
     </section>
     <section v-if="Object.keys(findData('message')).length > 0" id="contact">
@@ -297,6 +300,22 @@ export default {
       pageData,
     }
   },
+  data() {
+    return {
+      sections: ['hero', 'services', 'team', 'projects', 'contact'],
+    }
+  },
+  mounted() {
+    let el
+    let observer
+    this.sections.forEach((section) => {
+      el = document.getElementById(section)
+      observer = new IntersectionObserver(this.callback, {
+        threshold: 0.1,
+      })
+      observer.observe(el)
+    })
+  },
   methods: {
     findData(sectionName) {
       const filteredData = this.pageData[0].brandSection.filter(
@@ -307,6 +326,27 @@ export default {
     splitText(text) {
       const splittedText = text.split(' / ')
       return splittedText
+    },
+    callback(entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.setNavActiveClass(entry.target.id)
+        }
+      })
+    },
+    setNavActiveClass(id) {
+      this.sections.forEach((section) => {
+        const el = document.getElementById(`nav-${section}`)
+        if (id === section) {
+          el.classList.add(...['text-secondary', 'font-semibold'])
+        } else {
+          el.classList.remove(...['text-secondary', 'font-semibold'])
+        }
+      })
+    },
+    scrollToContact() {
+      const contactDiv = document.querySelector('#contact')
+      contactDiv.scrollIntoView({ behavior: 'smooth' })
     },
   },
 }

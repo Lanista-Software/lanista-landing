@@ -30,10 +30,9 @@
             class="flex"
             type="outline"
             :icon="buttonIcon"
+            @click="scrollToSection(buttonLink)"
           >
-            <nuxt-link :to="buttonLink">{{
-              buttonLabel
-            }}</nuxt-link></lui-button
+            {{ buttonLabel }}</lui-button
           >
         </div>
         <div class="bg-primary rounded-2xl">
@@ -84,6 +83,16 @@ export default {
     imgAlt: {
       type: String,
       default: 'lanista development process',
+    },
+  },
+  methods: {
+    scrollToSection(id) {
+      const section = document.querySelector(id)
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+        inline: 'nearest',
+      })
     },
   },
 }

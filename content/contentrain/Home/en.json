@@ -35,12 +35,12 @@
         "brandTitle": {
           "ID": "5f7ae321-fb7b-400d-a6cf-3399e0be067a",
           "title": "We create / high quality / dijital products / for everyone.",
-          "subtitle": "Think , create, develop!",
+          "subtitle": "Think, create, develop!",
           "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look. ",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828425658,
-          "updatedAt": 1653290965979
+          "updatedAt": 1657094101532
         },
         "brandList": [],
         "accordion": [],
@@ -353,8 +353,9 @@
                 "line": true,
                 "createdAt": 1652075952898
               },
-              "link": "",
-              "createdAt": 1652075936486
+              "link": "mailto:kariyer@lanista.com.tr",
+              "createdAt": 1652075936486,
+              "updatedAt": 1657026768329
             },
             "createdAt": 1651828479342,
             "updatedAt": 1653550203659
@@ -371,8 +372,9 @@
             "ID": "58ed4a7c-100f-48c9-ae4a-62c9abbf0a86",
             "label": "See more projects",
             "iconName": "arrow-right-up",
-            "link": "",
-            "createdAt": 1652076213791
+            "link": "https://www.linkedin.com/company/lanista-software/",
+            "createdAt": 1652076213791,
+            "updatedAt": 1657026817260
           }
         ],
         "section": "awesomeWorks",
