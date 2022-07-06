@@ -30,7 +30,7 @@
             class="flex"
             type="outline"
             :icon="buttonIcon"
-            @click="scrollToContact"
+            @click="scrollToSection(buttonLink)"
           >
             {{ buttonLabel }}</lui-button
           >
@@ -86,9 +86,13 @@ export default {
     },
   },
   methods: {
-    scrollToContact() {
-      const contactDiv = document.querySelector('#contact')
-      contactDiv.scrollIntoView({ behavior: 'smooth' })
+    scrollToSection(id) {
+      const section = document.querySelector(id)
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+        inline: 'nearest',
+      })
     },
   },
 }

@@ -2,10 +2,11 @@
   <div class="home">
     <section
       v-if="Object.keys(findData('hero')).length > 0"
+      id="hero"
       class="lg:pb-32 pb-16"
     >
-      <div id="hero" class="lanista-container__small content">
-        <div class="py-16">
+      <div class="lanista-container__small content">
+        <div class="pb-16 pt-32">
           <lui-chip
             rounded
             size="lg"
@@ -52,11 +53,11 @@
     </section>
     <section
       v-if="Object.keys(findData('developmentProcess')).length > 0"
+      id="services"
       class="bg-section pt-24"
     >
       <div
         v-for="item in findData('developmentProcess').cards"
-        id="services"
         :key="item.ID"
         class="px-4 pb-24"
       >
@@ -72,9 +73,8 @@
         />
       </div>
     </section>
-    <section v-if="Object.keys(findData('workWith')).length > 0">
+    <section v-if="Object.keys(findData('workWith')).length > 0" id="team">
       <div
-        id="team"
         class="head lanista-container__large flex lg:flex-row lg:space-x-24 flex-col pt-24 lg:pb-20 pb-8"
       >
         <lui-heading
@@ -183,10 +183,10 @@
     </section>
     <section
       v-if="Object.keys(findData('awesomeWorks')).length > 0"
+      id="projects"
       class="bg-section"
     >
       <div
-        id="projects"
         class="head lanista-container__large flex lg:flex-row lg:space-x-24 flex-col pt-24 lg:pb-16 pb-10"
       >
         <lui-heading
@@ -227,9 +227,8 @@
         </lui-button>
       </div>
     </section>
-    <section v-if="Object.keys(findData('message')).length > 0">
+    <section v-if="Object.keys(findData('message')).length > 0" id="contact">
       <div
-        id="contact"
         class="container mx-auto px-4 flex lg:flex-row flex-col-reverse justify-between items-center lg:py-24"
       >
         <div
@@ -308,7 +307,7 @@ export default {
     this.sections.forEach((section) => {
       el = document.getElementById(section)
       observer = new IntersectionObserver(this.callback, {
-        rootMargin: '100px',
+        threshold: 0.1,
       })
       observer.observe(el)
     })

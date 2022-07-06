@@ -33,7 +33,7 @@
           size="lg"
           variant="secondary"
           class="hidden lg:block"
-          @click="scrollToContact"
+          @click="scrollToSection(headerData.buttons[0].link)"
           >{{ headerData.buttons[0].label }}
         </lui-button>
       </div>
@@ -88,13 +88,12 @@ export default {
     handleCloseMenu() {
       this.hamburgerMenu = !this.hamburgerMenu
     },
-    scrollToContact() {
-      const contactDiv = document.querySelector('#contact')
-      contactDiv.scrollIntoView({ behavior: 'smooth' })
-    },
     scrollToSection(id) {
       const section = document.querySelector(id)
-      section.scrollIntoView({ behavior: 'smooth' })
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
     },
   },
 }

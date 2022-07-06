@@ -1,6 +1,6 @@
 <template>
   <div class="main pt-24">
-    <div class="lanista-container__header md:pb-14">
+    <div class="lanista-container__header">
       <Header />
     </div>
     <div class="page-content mb-auto"><nuxt /></div>
