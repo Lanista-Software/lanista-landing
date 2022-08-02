@@ -23,11 +23,12 @@ export default {
           this.size === 'default'
             ? this.findFontSize(this.level, this.display)
             : this.findFontSize(this.size, this.display),
-        lineHeight: this.display
-          ? ''
-          : this.size === 'default'
-          ? this.findLineHeight(this.level)
-          : this.findLineHeight(this.size),
+        lineHeight: 'leading-normal',
+        // lineHeight: this.display
+        //   ? ''
+        //   : this.size === 'default'
+        //   ? this.findLineHeight(this.level)
+        //   : this.findLineHeight(this.size),
 
         // fontSize:
         //   this.display === false
