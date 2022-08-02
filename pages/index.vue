@@ -1,12 +1,12 @@
 <template>
-  <div class="home">
+  <div class="home !leading-normal">
     <section
       v-if="Object.keys(findData('hero')).length > 0"
       id="hero"
-      class="lg:pb-32 pb-16"
+      class="lg:pb-32 pb-16 pt-4"
     >
       <div class="lanista-container__small content">
-        <div class="pb-16 pt-32">
+        <div class="pb-16 lg:pt-32 pt-8">
           <lui-chip
             rounded
             size="lg"
@@ -30,7 +30,7 @@
             level="1"
             size="2xs"
             display
-            class="text-white font-semibold pt-6 pb-8 lg:hidden"
+            class="text-white font-semibold pt-2 pb-3 lg:hidden"
           >
             {{ splitText(findData('hero').brandTitle.title)[0] }}<br />
             {{ splitText(findData('hero').brandTitle.title)[1] }}<br />

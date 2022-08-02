@@ -63,16 +63,17 @@ export default {
             : this.size === 'md'
             ? 'text-base'
             : 'text-xl',
-        lineHeight:
-          this.size === '2xs'
-            ? 'leading-3'
-            : this.size === 'xs'
-            ? 'leading-3.5'
-            : this.size === 'sm'
-            ? 'leading-4.5'
-            : this.size === 'md'
-            ? ''
-            : '',
+        lineHeight: 'leading-normal',
+        // lineHeight:
+        //   this.size === '2xs'
+        //     ? 'leading-3'
+        //     : this.size === 'xs'
+        //     ? 'leading-3.5'
+        //     : this.size === 'sm'
+        //     ? 'leading-4.5'
+        //     : this.size === 'md'
+        //     ? ''
+        //     : '',
       }
       return generateClasses([{ ...classes }])
     },
