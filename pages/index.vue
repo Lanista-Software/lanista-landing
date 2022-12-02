@@ -95,7 +95,7 @@
               <nuxt-img
                 :src="findData('workWith').images[0].src.png"
                 :alt="findData('workWith').images[0].alt"
-                class="w-full h-auto"
+                class="w-full h-auto rounded-lg"
                 provider="static"
                 format="webp"
               ></nuxt-img>
@@ -104,7 +104,7 @@
               <nuxt-img
                 :src="findData('workWith').images[1].src.png"
                 :alt="findData('workWith').images[1].alt"
-                class="w-full h-auto"
+                class="w-full h-auto rounded-lg"
                 provider="static"
                 format="webp"
               ></nuxt-img>
@@ -154,7 +154,7 @@
               <nuxt-img
                 :src="findData('workWith').images[2].src.png"
                 :alt="findData('workWith').images[2].alt"
-                class="w-full h-auto"
+                class="w-full h-auto rounded-lg"
                 provider="static"
                 format="webp"
               ></nuxt-img>
@@ -165,7 +165,7 @@
               <nuxt-img
                 :src="findData('workWith').images[3].src.png"
                 :alt="findData('workWith').images[3].alt"
-                class="w-full h-auto"
+                class="w-full h-auto rounded-lg"
                 provider="static"
                 format="webp"
               ></nuxt-img>
@@ -174,7 +174,7 @@
               <nuxt-img
                 :src="findData('workWith').images[4].src.png"
                 :alt="findData('workWith').images[4].alt"
-                class="w-full h-auto"
+                class="w-full h-auto rounded-lg"
                 provider="static"
                 format="webp"
               ></nuxt-img>
