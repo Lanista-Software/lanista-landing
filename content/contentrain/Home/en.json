@@ -239,7 +239,14 @@
             "title": "Deneme",
             "subtitle": "Denemememe",
             "description": "<p>İçerik denemesi</p>",
-            "icon": [],
+            "icon": {
+              "ID": "aadbae9e-5a76-4ee0-bfde-988cb44e4f2d",
+              "name": "layout",
+              "color": "",
+              "link": "",
+              "line": true,
+              "createdAt": 1681104715405
+            },
             "image": [],
             "button": [],
             "createdAt": 1681104692759
