@@ -12,7 +12,7 @@ jobs:
       - run: yarn && yarn build && yarn generate
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          node-version: '${{ secrets.NODE_VERSION }}'
+          node-version: '16.20.0'
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LANISTA_47890 }}'
           projectId: lanista-47890
