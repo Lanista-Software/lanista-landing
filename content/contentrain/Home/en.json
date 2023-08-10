@@ -34,13 +34,13 @@
         "form": [],
         "brandTitle": {
           "ID": "5f7ae321-fb7b-400d-a6cf-3399e0be067a",
-          "title": "We create / high quality / dijital products / for everyone.",
+          "title": "We create / high quality / dijital products / for everyone",
           "subtitle": "Think, create, develop!",
           "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look. ",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828425658,
-          "updatedAt": 1657094101532
+          "updatedAt": 1658141332732
         },
         "brandList": [],
         "accordion": [],
@@ -61,7 +61,7 @@
             "ID": "95130a81-1755-4940-ad6f-aca342a5d723",
             "title": "Ui/Ux Design",
             "subtitle": "",
-            "description": "<p>You need an excellent UI /UX process to explain your brand or project to the world! We use Figma, Adobe XD, Zeplin, Adobe Illustrator, Adobe Photoshop for our design process.</p>",
+            "description": "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">We strive to stay ahead of the curve by using cutting-edge technologies and design trends to provide our clients with the best possible solutions for their user experience needs.</span></p>",
             "icon": {
               "ID": "087b1ccc-86f3-4cb0-9852-4f7fb5ed007a",
               "name": "shape-2",
@@ -100,13 +100,13 @@
               "updatedAt": 1653985715892
             },
             "createdAt": 1651828367545,
-            "updatedAt": 1655451438350
+            "updatedAt": 1681282192696
           },
           {
             "ID": "e74c5fdc-ed8f-490f-b172-4e81e07d5f19",
             "title": "Frontend Development",
             "subtitle": "",
-            "description": "<p>In the area of Frontend Development our team is specialized in Javascript. Here are some of the technologies we are using; Vue, React, Next, Nuxt, Webpack, Git, Frontmatter, Storybook, Github, Sass, Gulp, Linters, Yarn, Jest</p>",
+            "description": "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Our frontend development team leverages the latest technologies to create visually stunning and engaging websites that deliver an exceptional user experience. We work closely with you to understand your business needs and create custom solutions that help you stand out in a crowded market.&nbsp;</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">We are specialized in Javascript, here are some of the technologies we are using; Vue, React, Next, Nuxt, Webpack, Git, Frontmatter, Storybook, Github, Sass, Gulp, Linters, Yarn, Jest</span></p><p><br></p><p><br></p>",
             "icon": {
               "ID": "32c7cfc5-8af1-4f13-8463-084909836f17",
               "name": "layout",
@@ -144,13 +144,13 @@
               "updatedAt": 1653985725166
             },
             "createdAt": 1651828385525,
-            "updatedAt": 1655452506195
+            "updatedAt": 1681282262449
           },
           {
             "ID": "acb55f04-e256-4ec7-bd60-5976c172295c",
             "title": "Backend Development",
             "subtitle": "",
-            "description": "<p>In the area of Backend Development our team is specialized in Javascript. Here are some of the technologies we are using; ExpressJS, NestJS, NodeJS, MySQL, RabbitMQ, Elasticsearch, AWS, MongoDB, Redis, Docker</p>",
+            "description": "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Our Backend Development team specialize in utilizing cutting-edge technologies to build scalable, secure, and high-performing software applications. We are experienced in developing complex systems that support large-scale businesses, and we are committed to delivering solutions that meet your unique requirements.</span></p>",
             "icon": {
               "ID": "7c8027ba-0f5d-493e-a5d1-dbe2521bd6a6",
               "name": "layout",
@@ -188,13 +188,13 @@
               "updatedAt": 1653985741171
             },
             "createdAt": 1651828389183,
-            "updatedAt": 1655452623919
+            "updatedAt": 1681282299253
           },
           {
             "ID": "9a3f684f-9bde-4903-8cf6-b74092fa2705",
             "title": "Project Consult",
             "subtitle": "",
-            "description": "<p>What do you want to build? Maybe you don't know where to start your project, or you don't know what technologies you need. Don't worry, we can help you measure your project and give you the right direction.</p>",
+            "description": "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Our project consultancy services are created to help you navigate complex software development projects. We offer expert advice on technology stacks, development methodologies, and project management techniques to ensure that your project is completed on time and within budget. With our support, you can be sure that your project is in good hands.</span></p>",
             "icon": {
               "ID": "ccea625e-7c3c-43a6-98b8-f166327c78a2",
               "name": "layout",
@@ -232,7 +232,7 @@
               "updatedAt": 1653985757550
             },
             "createdAt": 1651828392680,
-            "updatedAt": 1655452847613
+            "updatedAt": 1681282314564
           }
         ],
         "createdAt": 1651827337675,
@@ -521,11 +521,11 @@
           "ID": "c0f3b4b2-d010-4355-9dd7-028556377a32",
           "title": "Drop your message",
           "subtitle": "",
-          "description": "Do you have an idea to change the world? Let's talk about it! Please leave us your informations and we'll get back to you as soon as possible.",
+          "description": "Share your innovative ideas with us and we'll work together to turn them into reality. Leave your contact information and we'll be in touch soon.",
           "maxSize": false,
           "hideDescription": false,
           "createdAt": 1651828527544,
-          "updatedAt": 1655453977871
+          "updatedAt": 1681282593037
         },
         "brandList": [],
         "accordion": [],
