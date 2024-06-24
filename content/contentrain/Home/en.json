@@ -106,7 +106,7 @@
             "ID": "e74c5fdc-ed8f-490f-b172-4e81e07d5f19",
             "title": "Frontend Development",
             "subtitle": "",
-            "description": "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Our frontend development team leverages the latest technologies to create visually stunning and engaging websites that deliver an exceptional user experience. We work closely with you to understand your business needs and create custom solutions that help you stand out in a crowded market.&nbsp;</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">We are specialized in Javascript, here are some of the technologies we are using; Vue, React, Next, Nuxt, Webpack, Git, Frontmatter, Storybook, Github, Sass, Gulp, Linters, Yarn, Jest</span></p><p><br></p><p><br></p>",
+            "description": "<p>Every design needs to be web-ready. We manage everything from minor updates to full-scale rebuilds, using advanced techniques like SPA, SSR, and SSG to improve SEO performance and user experience. Our tech stack includes Jamstack for optimizing the resource usage and providing a more environmentally friendly solution. Making the world a better place, one line of code at a time.</p>",
             "icon": {
               "ID": "32c7cfc5-8af1-4f13-8463-084909836f17",
               "name": "layout",
@@ -144,7 +144,7 @@
               "updatedAt": 1653985725166
             },
             "createdAt": 1651828385525,
-            "updatedAt": 1681282262449
+            "updatedAt": 1719239624473
           },
           {
             "ID": "acb55f04-e256-4ec7-bd60-5976c172295c",
