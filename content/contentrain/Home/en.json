@@ -150,7 +150,7 @@
             "ID": "acb55f04-e256-4ec7-bd60-5976c172295c",
             "title": "Backend Development",
             "subtitle": "",
-            "description": "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Our Backend Development team specialize in utilizing cutting-edge technologies to build scalable, secure, and high-performing software applications. We are experienced in developing complex systems that support large-scale businesses, and we are committed to delivering solutions that meet your unique requirements.</span></p>",
+            "description": "<p>Every web-ready design needs a powerful backend. Our team build secure and high-performant backend systems for web apps, mobile apps, SaaS products, and enterprise systems. Years of experience in custom software solutions to align with the needs of your workflow and product without creating technical debt as you grow.</p>",
             "icon": {
               "ID": "7c8027ba-0f5d-493e-a5d1-dbe2521bd6a6",
               "name": "layout",
@@ -188,7 +188,7 @@
               "updatedAt": 1653985741171
             },
             "createdAt": 1651828389183,
-            "updatedAt": 1681282299253
+            "updatedAt": 1719239512139
           },
           {
             "ID": "9a3f684f-9bde-4903-8cf6-b74092fa2705",
