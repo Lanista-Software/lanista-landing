@@ -59,9 +59,9 @@
         "cards": [
           {
             "ID": "95130a81-1755-4940-ad6f-aca342a5d723",
-            "title": "Ui/Ux Design",
+            "title": "MVP(Minimum Viable Product) Development",
             "subtitle": "",
-            "description": "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">We strive to stay ahead of the curve by using cutting-edge technologies and design trends to provide our clients with the best possible solutions for their user experience needs.</span></p>",
+            "description": "<p>Since day one, we have supported numerous startups during their early stages by providing essential development support. Our services include creating functional prototypes to test and refine your ideas, helping you bring your vision to life quickly. You can also safely test your spin-off strategy for your enterprise with our robust MVP development services. Fail Fast!</p>",
             "icon": {
               "ID": "087b1ccc-86f3-4cb0-9852-4f7fb5ed007a",
               "name": "shape-2",
@@ -100,7 +100,7 @@
               "updatedAt": 1653985715892
             },
             "createdAt": 1651828367545,
-            "updatedAt": 1681282192696
+            "updatedAt": 1719239412824
           },
           {
             "ID": "e74c5fdc-ed8f-490f-b172-4e81e07d5f19",
