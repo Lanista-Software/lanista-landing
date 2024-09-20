@@ -27,7 +27,7 @@ onMounted(() => {
                 <NuxtLink to="/#test" class="flex w-28 md:w-36 items-center space-x-2">
                     <AtomsLogo />
                 </NuxtLink>
-                <div class="flex flex-1 items-center justify-center">
+                <div class="flex-1 items-center justify-center hidden lg:flex">
                     <MolAppNav direction="horizontal" :menuItems="menuItems" />
                 </div>
                 <!-- Sağ taraf: Dil Seçimi ve Menü İkonu -->

@@ -23,7 +23,7 @@ onMounted(() => {
             });
         },
         {
-            threshold: 0.5, // Elementin %50'si görünür olduğunda tetiklenir
+            threshold: 1,
         }
     );
 
@@ -41,7 +41,7 @@ onBeforeUnmount(() => {
 </script>
 <template>
     <section :id="id" ref="observerTarget">
-        <AtomsContainer class="py-20 min-h-screen flex items-center justify-center">
+        <AtomsContainer class="py-20 flex items-center justify-center">
             <slot></slot>
         </AtomsContainer>
     </section>

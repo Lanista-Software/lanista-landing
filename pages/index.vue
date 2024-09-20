@@ -10,10 +10,7 @@
 
         <!-- Services Section -->
         <AtomsIntersectionObserver id="services">
-            <div class="text-center">
-                <h2 class="text-4xl font-bold text-primary-500 mb-4">Services</h2>
-                <p class="text-lg text-gray-700">Discover our services!</p>
-            </div>
+            <TemplatesAppServices />
         </AtomsIntersectionObserver>
 
         <!-- Process Section -->

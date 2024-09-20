@@ -16,7 +16,7 @@ module.exports = {
         'white': colors.white,
         'black': colors.black,
         "heading-text": colors.slate[900],
-        "body-text": colors.slate[800],
+        "body-text": colors.slate[600],
         "border-color": colors.slate[200],
         "muted-text": colors.slate[600],
         "disabled-text": colors.slate[400],

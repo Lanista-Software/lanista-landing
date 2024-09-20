@@ -7,7 +7,7 @@ const localePath = useLocalePath();
         <h1 class="text-heading-text text-4xl lg:text-5xl font-space font-bold mt-8 max-content">
             We create high quality dijital products for everyone.
         </h1>
-        <p class="text-body-text text-lg md:text-xl mt-6 max-content">
+        <p class="text-body-text font-normal text-lg md:text-xl mt-6 max-content">
             We help companies and startups make their products better every day. So we create high quality digital
             products for a professional look.
         </p>
