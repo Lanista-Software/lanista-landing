@@ -4,7 +4,9 @@
 <template>
   <main>
     <MolAppHeader />
-    <NuxtPage />
+    <div>
+      <NuxtPage />
+    </div>
   </main>
 </template>
 <style lang="postcss">
@@ -16,5 +18,4 @@ html {
 body {
   @apply bg-white text-body-text;
 }
-
 </style>

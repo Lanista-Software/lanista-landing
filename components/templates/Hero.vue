@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const localePath = useLocalePath();
 </script>
 <template>
     <div class="text-center pt-20">
@@ -12,8 +11,12 @@ const localePath = useLocalePath();
             products for a professional look.
         </p>
         <div class="pt-8 flex items-center justify-center max-content">
-            <NuxtLink :to="localePath('#contact')">
-                <LuiButton rounded="full" color="danger" to="/contact">Let's discuss your project</LuiButton>
+            <NuxtLink to="#home">
+                <LuiButton rounded="full" color="danger" to="/contact">Let's discuss your project
+                    <template #append>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </template>
+                </LuiButton>
             </NuxtLink>
         </div>
         <div class="flex items-center justify-evenly pt-14 lg:pt-20 flex-wrap gap-4">
