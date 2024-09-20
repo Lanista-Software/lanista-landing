@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
@@ -22,11 +22,25 @@ export default defineNuxtConfig({
     dir: 'public',
   },
   i18n: {
-    vueI18n: './i18n.config.ts' // if you are using custom path, default
+    locales: ['en', 'tr'],
+    defaultLocale: 'en',
+    vueI18n: './i18n.config.ts', // if you are using custom path, default
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      alwaysRedirect: true,
+    },
   },
   eslint: {
     config: {
       stylistic: true,
     }
-  }
+  },
+  //add scroll behavior
+  router: {
+    options: {
+      hashMode: true,
+      scrollBehaviorType: 'smooth',
+    },
+  },
 })

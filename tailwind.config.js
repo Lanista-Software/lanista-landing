@@ -2,14 +2,14 @@ import { luiPlugin } from "@lui-ui/lui-tailwindcss";
 const colors = require('tailwindcss/colors');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./app.vue",
-    "./error.vue",
-  ],
+  // content: [
+  //   "./components/**/*.{js,vue,ts}",
+  //   "./layouts/**/*.vue",
+  //   "./pages/**/*.vue",
+  //   "./plugins/**/*.{js,ts}",
+  //   "./app.vue",
+  //   "./error.vue",
+  // ],
   theme: {
     extend: {
       colors: {
@@ -36,8 +36,8 @@ module.exports = {
           900: '#040B11',
           950: '#02060A',
         },
-        'warning': colors.amber,
-        'secondary': colors.slate,
+        warning: colors.amber,
+        secondary: colors.slate,
         danger: {
           50: '#FEF4F5',
           100: '#FBE2E4',
@@ -64,7 +64,7 @@ module.exports = {
           900: '#14532D',
           950: '#052E16', // Green için 950 tonu eklendi
         },
-        'info': colors.cyan,
+        info: colors.cyan,
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
