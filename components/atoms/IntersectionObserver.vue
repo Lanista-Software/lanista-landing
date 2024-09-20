@@ -41,6 +41,8 @@ onBeforeUnmount(() => {
 </script>
 <template>
     <section :id="id" ref="observerTarget">
-        <slot></slot>
+        <AtomsContainer class="py-20 min-h-screen flex items-center justify-center">
+            <slot></slot>
+        </AtomsContainer>
     </section>
 </template>
