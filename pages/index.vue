@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { AppCardProps } from '~/components/mol/AppCard.vue';
+import type { WorksCardProps } from '~/components/mol/WorksCard.vue';
 import type { CardSectionProps } from '~/components/templates/CardSection.vue';
 import type { TabItem, TabSectionProps } from '~/components/templates/TabSection.vue';
 
@@ -76,6 +77,7 @@ const serviceCardProps: CardSectionProps = {
     view: 'grid',
     title: 'Here are the technologies that we have expertise',
     description: 'We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo numquam quia quos velit mollitia. Maiores voluptatem dolor aspernatur.',
+    cardComponent: 'app'
 }
 const processItems: AppCardProps[] = [
     {
@@ -113,10 +115,10 @@ const processCardProps: CardSectionProps = {
     items: processItems,
     view: 'triple',
     title: 'Here are the  technologies that we have expertise',
-    description: 'We follow a structured approach to ensure your project is delivered on time and within budget. Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+    description: 'We follow a structured approach to ensure your project is delivered on time and within budget. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    cardComponent: 'app'
 }
-// tab items icine link ekleyerek property ekleyerek yeniden yaz
-const tabItems : TabItem[] = [
+const tabItems: TabItem[] = [
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
         title: "Vue.js",
@@ -259,6 +261,85 @@ const tabSectionProps: TabSectionProps = {
     title: 'Here are the technologies that we have expertise',
     description: 'We use the latest technologies to build high-quality digital products.'
 }
+const works: WorksCardProps[] = [
+    {
+        title: 'Project Title 1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
+        image: {
+            url: 'https://placehold.co/600x400',
+            alt: 'Project Title 1'
+        },
+        link: '/project-1',
+        category: 'Web Development'
+    },
+    {
+        title: 'Project Title 2',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
+        image: {
+            url: 'https://placehold.co/600x400',
+            alt: 'Project Title 2'
+        },
+        link: '/project-2',
+        category: 'Mobile Development'
+    },
+    {
+        title: 'Project Title 3',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
+        image: {
+            url: 'https://placehold.co/600x400',
+            alt: 'Project Title 3'
+        },
+        link: '/project-3',
+        category: 'UI/UX Design'
+    },
+    {
+        title: 'Project Title 4',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
+        image: {
+            url: 'https://placehold.co/600x400',
+            alt: 'Project Title 4'
+        },
+        link: '/project-4',
+        category: 'Web Development'
+    },
+    {
+        title: 'Project Title 5',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
+        image: {
+            url: 'https://placehold.co/600x400',
+            alt: 'Project Title 5'
+        },
+        link: '/project-5',
+        category: 'Mobile Development'
+    },
+    {
+        title: 'Project Title 6',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
+        image: {
+            url: 'https://placehold.co/600x400',
+            alt: 'Project Title 6'
+        },
+        link: '/project-6',
+        category: 'UI/UX Design'
+    },
+    {
+        title: 'Project Title 7',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
+        image: {
+            url: 'https://placehold.co/600x400',
+            alt: 'Project Title 7'
+        },
+        link: '/project-7',
+        category: 'Web Development'
+    },
+] 
+const worksSectionProps: CardSectionProps = {
+    items: works,
+    view: 'single',
+    title: 'Here are the technologies that we have expertise',
+    description: 'We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo numquam quia quos velit mollitia. Maiores voluptatem dolor aspernatur.',
+    cardComponent: 'works'
+}
 </script>
 <template>
     <div class="min-h-screen">
@@ -279,13 +360,16 @@ const tabSectionProps: TabSectionProps = {
         <AtomsIntersectionObserver id="technologies">
             <TemplatesTabSection v-bind="tabSectionProps" />
         </AtomsIntersectionObserver>
-
         <!-- Works Section -->
         <AtomsIntersectionObserver id="works">
-            <div class="text-center">
-                <h2 class="text-4xl font-bold text-primary-500 mb-4">Works</h2>
-                <p class="text-lg text-gray-700">Check out our works!</p>
-            </div>
+            <TemplatesCardSection v-bind="worksSectionProps">
+                <template #button>
+                    <NuxtLink to="#home">
+                        <LuiButton variant="link" color="primary" to="/contact">Show more projects
+                        </LuiButton>
+                    </NuxtLink>
+                </template>
+            </TemplatesCardSection>
         </AtomsIntersectionObserver>
     </div>
 </template>

@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import type { AppCardProps } from '../mol/AppCard.vue';
+import type { WorksCardProps } from '../mol/WorksCard.vue';
 export type CardSectionProps =  {
-    items: AppCardProps[];
+    items: AppCardProps[] | WorksCardProps[];
     view: 'grid' | 'single' | 'triple';
     title: string;
     description: string;
+    cardComponent: 'works' | 'app';
 }
 
 
@@ -31,7 +33,8 @@ const getCardClass = (index: number) => {
     <MolAppSectionLayout :title="title" :description="description">
         <div class="grid grid-cols-1 lg:grid-cols-6 gap-8 w-full">
             <div v-for="(item, index) in items" :key="index" :class="getCardClass(index)">
-                <MolAppCard :item="item" />
+                <MolAppCard v-if="cardComponent === 'app'" :item="item" />
+                <MolWorksCard v-else-if="cardComponent === 'works'" :item="item as WorksCardProps" />
             </div>
         </div>
         <template #button>

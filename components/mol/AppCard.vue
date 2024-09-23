@@ -13,9 +13,9 @@ const props = defineProps<{
 }>();
 </script>
 <template>
-    <div class="border border-border-color p-8 rounded-xl shadow-sm">
-        <div v-if="item.image" class="h-64 rounded-md overflow-hidden">
-            <img class="w-full h-full object-cover" :src="item.image.url" :alt="item.image.alt">
+    <div class="border border-border-color p-6 rounded-3xl shadow-sm">
+        <div v-if="item.image" class="h-64 rounded-3xl overflow-hidden">
+            <img class="w-full rounded-xl h-full object-cover" :src="item.image.url" :alt="item.image.alt">
         </div>
         <div v-else-if="item.icon" class="">
             <LuiAvatar filter="lighten" color="success"  size="xl" rounded="full">
