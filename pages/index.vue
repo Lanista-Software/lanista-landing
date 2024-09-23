@@ -124,42 +124,42 @@ const tabItems: TabItem[] = [
         title: "Vue.js",
         description: "Vue.js is a progressive JavaScript framework used for building user interfaces, especially single-page applications. It is designed to be incrementally adoptable and integrates well with other libraries.",
         category: "Frontend Development",
-        link: "/vue"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         title: "React.js",
         description: "React.js is a JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a large community of developers. React is known for its fast rendering and virtual DOM.",
         category: "Frontend Development",
-        link: "/react"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",
         title: "Nuxt.js",
         description: "Nuxt.js is a framework built on top of Vue.js that simplifies the development of server-rendered applications and static websites. It offers powerful features like SSR, static site generation, and improved SEO support.",
         category: "Frontend Development",
-        link: "/nuxt"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
         title: "Next.js",
         description: "Next.js is a React framework that enables functionality such as server-side rendering and static website generation for building high-performance, SEO-friendly applications.",
         category: "Frontend Development",
-        link: "/next"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg",
         title: "Astro",
         description: "Astro is a new frontend framework for building fast, content-focused websites. It uses an innovative approach to page rendering called partial hydration, which makes websites faster by reducing the JavaScript sent to the browser.",
         category: "Frontend Development",
-        link: "/astro"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
         title: "Svelte",
         description: "Svelte is a modern JavaScript framework that shifts much of the work to the compile step instead of the runtime. This results in smaller bundle sizes and faster load times, making it an excellent choice for building fast web applications.",
         category: "Frontend Development",
-        link: "/svelte"
+        link: "https://vuejs.org/",
     },
     // Backend JS 
     {
@@ -167,35 +167,35 @@ const tabItems: TabItem[] = [
         title: "Node.js",
         description: "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript on the server, enabling you to build scalable and high-performance applications.",
         category: "Backend Development",
-        link: "/node"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
         title: "Express.js",
         description: "Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications. It is designed to create APIs and web servers quickly and easily.",
         category: "Backend Development",
-        link: "/express"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg",
         title: "Nest.js",
         description: "Nest.js is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications. It uses TypeScript and is heavily inspired by Angular, providing a solid architectural design for your applications.",
         category: "Backend Development",
-        link: "/nest"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/koa/koa-original.svg",
         title: "Koa.js",
         description: "Koa.js is a modern web framework for Node.js that aims to be smaller, more expressive, and more robust. It uses async functions to eliminate callbacks and increase error-handling capabilities.",
         category: "Backend Development",
-        link: "/koa"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
         title: "GraphQL",
         description: "GraphQL is a query language for APIs and a runtime for executing those queries. It provides a more efficient and powerful alternative to REST by allowing clients to request only the data they need.",
         category: "Backend Development",
-        link: "/graphql"
+        link: "https://vuejs.org/",
     },
     // Mobile 
     {
@@ -203,28 +203,28 @@ const tabItems: TabItem[] = [
         title: "React Native",
         description: "React Native is a framework for building native mobile applications using JavaScript and React. It allows you to write once and run on multiple platforms, saving time and effort in developing mobile apps.",
         category: "Mobile Development",
-        link: "/react-native"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
         title: "Flutter",
         description: "Flutter is Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. It offers a rich set of pre-built widgets and tools for creating beautiful apps.",
         category: "Mobile Development",
-        link: "/flutter"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg",
         title: "Ionic",
         description: "Ionic is a popular open-source framework for building cross-platform mobile applications using web technologies like HTML, CSS, and JavaScript. It provides a library of mobile-optimized UI components and tools for creating high-quality apps.",
         category: "Mobile Development",
-        link: "/ionic"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/capacitor/capacitor-original.svg",
         title: "Capacitor",
         description: "Capacitor is a cross-platform runtime that allows you to build web applications that run natively on iOS, Android, and Electron. It provides a consistent API for accessing native features and plugins across platforms.",
         category: "Mobile Development",
-        link: "/capacitor"
+        link: "https://vuejs.org/",
     },
     // Design
     {
@@ -232,28 +232,28 @@ const tabItems: TabItem[] = [
         title: "Sketch",
         description: "Sketch is a popular design tool for creating user interfaces, websites, and icons. It offers a wide range of features like artboards, symbols, and libraries to streamline the design process.",
         category: "UI/UX Design",
-        link: "/sketch"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
         title: "Figma",
         description: "Figma is a cloud-based design tool that allows real-time collaboration between designers and developers. It offers features like prototyping, vector editing, and design systems to create interactive and responsive designs.",
         category: "UI/UX Design",
-        link: "/figma"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adobexd/adobexd-plain.svg",
         title: "Adobe XD",
         description: "Adobe XD is a vector-based design tool for creating user interfaces, websites, and mobile apps. It offers features like artboards, responsive resizing, and prototyping to design and test interactive experiences.",
         category: "UI/UX Design",
-        link: "/adobe-xd"
+        link: "https://vuejs.org/",
     },
     {
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/invision/invision-original.svg",
         title: "InVision",
         description: "InVision is a digital product design platform that allows you to create interactive prototypes and collaborate with stakeholders. It offers features like design systems, user testing, and version control to streamline the design process.",
         category: "UI/UX Design",
-        link: "/invision"
+        link: "https://vuejs.org/",
     },
 ]
 const tabSectionProps: TabSectionProps = {
@@ -269,7 +269,7 @@ const works: WorksCardProps[] = [
             url: 'https://placehold.co/600x400',
             alt: 'Project Title 1'
         },
-        link: '/project-1',
+        link: "https://vuejs.org/",
         category: 'Web Development'
     },
     {
@@ -279,7 +279,7 @@ const works: WorksCardProps[] = [
             url: 'https://placehold.co/600x400',
             alt: 'Project Title 2'
         },
-        link: '/project-2',
+        link: "https://vuejs.org/",
         category: 'Mobile Development'
     },
     {
@@ -289,7 +289,7 @@ const works: WorksCardProps[] = [
             url: 'https://placehold.co/600x400',
             alt: 'Project Title 3'
         },
-        link: '/project-3',
+        link: "https://vuejs.org/",
         category: 'UI/UX Design'
     },
     {
@@ -299,7 +299,7 @@ const works: WorksCardProps[] = [
             url: 'https://placehold.co/600x400',
             alt: 'Project Title 4'
         },
-        link: '/project-4',
+        link: "https://vuejs.org/",
         category: 'Web Development'
     },
     {
@@ -309,7 +309,7 @@ const works: WorksCardProps[] = [
             url: 'https://placehold.co/600x400',
             alt: 'Project Title 5'
         },
-        link: '/project-5',
+        link: "https://vuejs.org/",
         category: 'Mobile Development'
     },
     {
@@ -319,7 +319,7 @@ const works: WorksCardProps[] = [
             url: 'https://placehold.co/600x400',
             alt: 'Project Title 6'
         },
-        link: '/project-6',
+        link: "https://vuejs.org/",
         category: 'UI/UX Design'
     },
     {
@@ -329,10 +329,10 @@ const works: WorksCardProps[] = [
             url: 'https://placehold.co/600x400',
             alt: 'Project Title 7'
         },
-        link: '/project-7',
+        link: "https://vuejs.org/",
         category: 'Web Development'
     },
-] 
+]
 const worksSectionProps: CardSectionProps = {
     items: works,
     view: 'single',
