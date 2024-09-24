@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import type { AppCardProps } from '../mol/AppCard.vue';
+import type { TestimonialCardProps } from '../mol/TestimonialCard.vue';
 import type { WorksCardProps } from '../mol/WorksCard.vue';
 export type CardSectionProps =  {
-    items: AppCardProps[] | WorksCardProps[];
+    items: AppCardProps[] | WorksCardProps[] | TestimonialCardProps[];
     view: 'grid' | 'single' | 'triple';
     title: string;
     description: string;
-    cardComponent: 'works' | 'app';
+    cardComponent: 'works' | 'app' | 'testimonial';
 }
 
 
@@ -35,6 +36,7 @@ const getCardClass = (index: number) => {
             <div v-for="(item, index) in items" :key="index" :class="getCardClass(index)">
                 <MolAppCard v-if="cardComponent === 'app'" :item="item" />
                 <MolWorksCard v-else-if="cardComponent === 'works'" :item="item as WorksCardProps" />
+                <MolTestimonialCard v-else-if="cardComponent === 'testimonial'" :item="item as TestimonialCardProps" />
             </div>
         </div>
         <template #button>

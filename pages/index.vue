@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { AppCardProps } from '~/components/mol/AppCard.vue';
+import type { TestimonialCardProps } from '~/components/mol/TestimonialCard.vue';
 import type { WorksCardProps } from '~/components/mol/WorksCard.vue';
 import type { CardSectionProps } from '~/components/templates/CardSection.vue';
 import type { TabItem, TabSectionProps } from '~/components/templates/TabSection.vue';
@@ -264,7 +265,7 @@ const tabSectionProps: TabSectionProps = {
 const works: WorksCardProps[] = [
     {
         title: 'Project Title 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
         image: {
             url: 'https://placehold.co/600x400',
             alt: 'Project Title 1'
@@ -340,6 +341,42 @@ const worksSectionProps: CardSectionProps = {
     description: 'We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo numquam quia quos velit mollitia. Maiores voluptatem dolor aspernatur.',
     cardComponent: 'works'
 }
+const testimonials: TestimonialCardProps[] = [
+    {
+        name: 'John Doe',
+        title: 'CEO, Company Name',
+        image: {
+            url: 'https://randomuser.me/api/portraits/men/80.jpg',
+            alt: 'John Doe'
+        },
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    },
+    {
+        name: 'Jane Doe',
+        title: 'CTO, Company Name',
+        image: {
+            url: 'https://randomuser.me/api/portraits/women/78.jpg',
+            alt: 'Jane Doe'
+        },
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    },
+    {
+        name: 'John Smith',
+        title: 'COO, Company Name',
+        image: {
+            url: 'https://randomuser.me/api/portraits/men/85.jpg',
+            alt: 'John Smith'
+        },
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    },
+]
+const testimonialsSectionProps: CardSectionProps = {
+    items: testimonials,
+    view: 'triple',
+    title: 'Here are the technologies that we have expertise',
+    description: 'We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    cardComponent: 'testimonial'
+}
 </script>
 <template>
     <div class="min-h-screen">
@@ -351,7 +388,6 @@ const worksSectionProps: CardSectionProps = {
         <AtomsIntersectionObserver id="services">
             <TemplatesCardSection v-bind="serviceCardProps" />
         </AtomsIntersectionObserver>
-
         <!-- Process Section -->
         <AtomsIntersectionObserver id="process">
             <TemplatesCardSection v-bind="processCardProps" />
@@ -370,6 +406,17 @@ const worksSectionProps: CardSectionProps = {
                     </NuxtLink>
                 </template>
             </TemplatesCardSection>
+        </AtomsIntersectionObserver>
+        <!-- Testimonials Section -->
+        <AtomsIntersectionObserver id="testimonials">
+            <TemplatesCardSection v-bind="testimonialsSectionProps">
+                <template #button>
+                    <span></span>
+                </template>
+            </TemplatesCardSection>
+        </AtomsIntersectionObserver>
+        <AtomsIntersectionObserver id="banner">
+            <TemplatesBanner title="We create high quality dijital products." description="We help companies and startups make their products better every day. So we create high quality digital products for a professional look." />
         </AtomsIntersectionObserver>
     </div>
 </template>

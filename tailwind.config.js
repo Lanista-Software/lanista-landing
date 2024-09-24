@@ -12,6 +12,9 @@ module.exports = {
   // ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(180deg, #1F338D 0%, #020821 100%)',
+      },
       colors: {
         'white': colors.white,
         'black': colors.black,

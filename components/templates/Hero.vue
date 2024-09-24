@@ -24,7 +24,16 @@
         </div>
         <div class="flex items-center justify-evenly pt-14 lg:pt-20 flex-wrap gap-4">
             <!-- Logo section -->
-            <img v-for="i in 5" :key="i" src="/images/popile.png" alt="Logo 1" class="w-auto h-8">
+            <NuxtImg 
+            v-for="i in 5" 
+            :key="i" 
+            src="/images/popile.png" 
+            alt="Logo 1"
+            class="w-auto h-8"
+            loading="lazy"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+            format="webp"
+            />
         </div>
     </section>
 </template>
