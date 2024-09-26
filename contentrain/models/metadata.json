@@ -70,5 +70,13 @@
     "type": "JSON",
     "createdBy": "user",
     "isServerless": false
+  },
+  {
+    "name": "Hero",
+    "modelId": "hero",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
   }
 ]
