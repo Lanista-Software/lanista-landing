@@ -58,5 +58,22 @@
     "system": true,
     "defaultField": false,
     "modelId": "processes"
+  },
+  {
+    "name": "title",
+    "fieldId": "title",
+    "modelId": "processes",
+    "componentId": "single-line-text",
+    "options": {
+      "title-field": {
+        "value": true
+      }
+    },
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "string"
   }
 ]
