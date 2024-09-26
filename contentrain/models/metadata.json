@@ -10,7 +10,7 @@
   {
     "name": "wqeqwe",
     "modelId": "wqeqwe",
-    "localization": false,
+    "localization": true,
     "type": "JSON",
     "createdBy": "user",
     "isServerless": false
