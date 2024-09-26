@@ -72,7 +72,7 @@
     "isServerless": false
   },
   {
-    "name": "Hero",
+    "name": "HeroLogos",
     "modelId": "hero",
     "localization": true,
     "type": "JSON",
