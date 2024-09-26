@@ -14,5 +14,13 @@
     "type": "JSON",
     "createdBy": "user",
     "isServerless": false
+  },
+  {
+    "name": "TabItems",
+    "modelId": "tabitems",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
   }
 ]
