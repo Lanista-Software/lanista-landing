@@ -58,5 +58,22 @@
     "system": true,
     "defaultField": false,
     "modelId": "sections"
+  },
+  {
+    "name": "title",
+    "fieldId": "title",
+    "modelId": "sections",
+    "componentId": "single-line-text",
+    "options": {
+      "title-field": {
+        "value": true
+      }
+    },
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "string"
   }
 ]
