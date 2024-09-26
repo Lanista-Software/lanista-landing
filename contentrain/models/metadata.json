@@ -1,6 +1,6 @@
 [
   {
-    "name": "Services",
+    "name": "ServicesItems",
     "modelId": "services",
     "localization": true,
     "type": "JSON",
