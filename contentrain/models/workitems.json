@@ -119,5 +119,18 @@
       }
     },
     "fieldType": "relation"
+  },
+  {
+    "name": "link",
+    "fieldId": "link",
+    "modelId": "workitems",
+    "componentId": "url",
+    "options": {},
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "string"
   }
 ]
