@@ -106,5 +106,22 @@
     "options": {},
     "validations": {},
     "fieldType": "string"
+  },
+  {
+    "name": "name",
+    "fieldId": "name",
+    "modelId": "sections",
+    "componentId": "single-line-text",
+    "options": {
+      "title-field": {
+        "value": true
+      }
+    },
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "string"
   }
 ]
