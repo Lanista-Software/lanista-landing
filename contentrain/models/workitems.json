@@ -84,5 +84,18 @@
     "options": {},
     "validations": {},
     "fieldType": "media"
+  },
+  {
+    "name": "description",
+    "fieldId": "description",
+    "modelId": "workitems",
+    "componentId": "single-line-text",
+    "options": {},
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "string"
   }
 ]
