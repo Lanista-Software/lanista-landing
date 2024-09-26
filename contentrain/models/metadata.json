@@ -62,5 +62,13 @@
     "type": "JSON",
     "createdBy": "user",
     "isServerless": false
+  },
+  {
+    "name": "Sections",
+    "modelId": "sections",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
   }
 ]
