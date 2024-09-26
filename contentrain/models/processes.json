@@ -88,5 +88,27 @@
       }
     },
     "fieldType": "string"
+  },
+  {
+    "name": "icon",
+    "fieldId": "icon",
+    "modelId": "processes",
+    "componentId": "single-line-text",
+    "options": {
+      "default-value": {
+        "value": true,
+        "form": {
+          "single-line-text": {
+            "value": "ri-search-eye-line"
+          }
+        }
+      }
+    },
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "string"
   }
 ]
