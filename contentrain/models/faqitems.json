@@ -77,7 +77,7 @@
     "fieldType": "string"
   },
   {
-    "name": "answe",
+    "name": "answer",
     "fieldId": "answe",
     "modelId": "faqitems",
     "componentId": "multi-line-text",
