@@ -14,8 +14,8 @@
             products for a professional look.
         </p>
         <div class="pt-8 flex items-center justify-center max-content">
-            <NuxtLink to="#home">
-                <LuiButton rounded="full" color="danger" to="/contact">Let's discuss your project
+            <NuxtLink to="#contact">
+                <LuiButton rounded="full" color="danger">Let's discuss your project
                     <template #append>
                         <i class="ri-arrow-right-up-line"></i>
                     </template>

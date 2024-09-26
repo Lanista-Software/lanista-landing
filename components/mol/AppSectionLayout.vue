@@ -17,7 +17,7 @@ defineProps<AppSectionLayoutProps>();
         </div>
         <slot></slot>
         <div class="pt-16 flex items-center justify-center">
-            <slot name="button">
+            <slot name="button-slot">
             </slot>
         </div>
     </div>

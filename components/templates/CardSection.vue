@@ -40,9 +40,9 @@ const getCardClass = (index: number) => {
             </div>
         </div>
         <template #button>
-            <slot name="button">
+            <slot name="button-slot">
                 <NuxtLink to="#home">
-                    <LuiButton rounded="full" color="danger" to="/contact">Let's discuss your project
+                    <LuiButton rounded="full" color="danger">Let's discuss your project
                         <template #append>
                             <i class="ri-arrow-right-up-line"></i>
                         </template>

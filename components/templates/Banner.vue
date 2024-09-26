@@ -15,7 +15,7 @@ defineProps<BannerProps>();
                 <p class="text-secondary-200 font-normal text-lg font-inter mt-2">{{ description }}</p>
             </div>
             <div class="w-full md:w-1/2 md:flex md:items-center md:justify-end">
-                <NuxtLink to="/contact">
+                <NuxtLink to="#contact">
                     <LuiButton color="danger" rounded="full" size="lg">
                         Let's discuss your project
                         <template #append>

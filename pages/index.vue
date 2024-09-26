@@ -379,44 +379,47 @@ const testimonialsSectionProps: CardSectionProps = {
 }
 </script>
 <template>
-    <div class="min-h-screen">
+    <div>
         <!-- Home Section -->
-        <AtomsIntersectionObserver id="home">
+        <MolAppSection id="home">
             <TemplatesHero />
-        </AtomsIntersectionObserver>
+        </MolAppSection>
         <!-- Services Section -->
-        <AtomsIntersectionObserver id="services">
+        <MolAppSection id="services">
             <TemplatesCardSection v-bind="serviceCardProps" />
-        </AtomsIntersectionObserver>
+        </MolAppSection>
         <!-- Process Section -->
-        <AtomsIntersectionObserver id="process">
+        <MolAppSection id="process">
             <TemplatesCardSection v-bind="processCardProps" />
-        </AtomsIntersectionObserver>
+        </MolAppSection>
         <!-- Technologies Section -->
-        <AtomsIntersectionObserver id="technologies">
+        <MolAppSection id="technologies">
             <TemplatesTabSection v-bind="tabSectionProps" />
-        </AtomsIntersectionObserver>
+        </MolAppSection>
         <!-- Works Section -->
-        <AtomsIntersectionObserver id="works">
+        <MolAppSection id="works">
             <TemplatesCardSection v-bind="worksSectionProps">
                 <template #button>
-                    <NuxtLink to="#home">
-                        <LuiButton variant="link" color="primary" to="/contact">Show more projects
+                    <NuxtLink to="#contact">
+                        <LuiButton variant="link" color="primary">Show more projects
                         </LuiButton>
                     </NuxtLink>
                 </template>
             </TemplatesCardSection>
-        </AtomsIntersectionObserver>
+        </MolAppSection>
         <!-- Testimonials Section -->
-        <AtomsIntersectionObserver id="testimonials">
+        <MolAppSection id="testimonials">
             <TemplatesCardSection v-bind="testimonialsSectionProps">
                 <template #button>
                     <span></span>
                 </template>
             </TemplatesCardSection>
-        </AtomsIntersectionObserver>
-        <AtomsIntersectionObserver id="banner">
+        </MolAppSection>
+        <MolAppSection id="banner">
             <TemplatesBanner title="We create high quality dijital products." description="We help companies and startups make their products better every day. So we create high quality digital products for a professional look." />
-        </AtomsIntersectionObserver>
+        </MolAppSection>
+        <MolAppSection id="contact" class="bg-secondary-50">
+            <TemplatesContact />
+        </MolAppSection>
     </div>
 </template>

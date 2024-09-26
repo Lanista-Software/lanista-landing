@@ -2,12 +2,12 @@
 </script>
 
 <template>
-  <main>
+  <div>
     <MolAppHeader />
-    <div>
+    <main class="min-h-screen">
       <NuxtPage />
-    </div>
-  </main>
+    </main>
+  </div>
 </template>
 <style lang="postcss">
 html {
