@@ -2,7 +2,7 @@
   {
     "name": "test",
     "modelId": "test",
-    "localization": false,
+    "localization": true,
     "type": "JSON",
     "createdBy": "user",
     "isServerless": false
