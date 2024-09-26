@@ -14,5 +14,14 @@
     "type": "JSON",
     "createdBy": "user",
     "isServerless": false
+  },
+  {
+    "name": "wwww",
+    "description": "qwe",
+    "modelId": "wwww",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
   }
 ]
