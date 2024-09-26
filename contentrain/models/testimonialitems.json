@@ -101,5 +101,18 @@
       }
     },
     "fieldType": "media"
+  },
+  {
+    "name": "title",
+    "fieldId": "title",
+    "modelId": "testimonialitems",
+    "componentId": "single-line-text",
+    "options": {},
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "string"
   }
 ]
