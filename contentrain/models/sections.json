@@ -88,5 +88,14 @@
       }
     },
     "fieldType": "string"
+  },
+  {
+    "name": "buttonText",
+    "fieldId": "buttontext",
+    "modelId": "sections",
+    "componentId": "single-line-text",
+    "options": {},
+    "validations": {},
+    "fieldType": "string"
   }
 ]
