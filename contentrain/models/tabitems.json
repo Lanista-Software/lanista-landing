@@ -80,5 +80,18 @@
       }
     },
     "fieldType": "relation"
+  },
+  {
+    "name": "link",
+    "fieldId": "link",
+    "modelId": "tabitems",
+    "componentId": "url",
+    "options": {},
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "string"
   }
 ]
