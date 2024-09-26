@@ -1,46 +1,4 @@
-<template>
-    <form @submit.prevent="handleSubmit" class="flex flex-col space-y-4 bg-white p-8 rounded-2xl border border-border-color">
-        <!-- Name Field -->
-        <div class="flex flex-col space-y-2">
-            <label for="name" class="label-text">Name</label>
-            <LuiInput v-model="name" type="text" id="name" name="name" block rounded placeholder="Enter your name"
-                :state="errors.name ? true : undefined" />
-            <span v-if="errors.name" class="text-red-500 text-sm">{{ errors.name }}</span>
-        </div>
-
-        <!-- Email Field -->
-        <div class="flex flex-col space-y-2">
-            <label for="email" class="label-text">Email</label>
-            <LuiInput v-model="email" type="email" id="email" name="email" block rounded placeholder="Enter your email"
-                :state="errors.email ? true : undefined" />
-            <span v-if="errors.email" class="text-red-500 text-sm">{{ errors.email }}</span>
-        </div>
-
-        <!-- Subject Field -->
-        <div class="flex flex-col space-y-2">
-            <label for="subject" class="label-text">Subject</label>
-            <LuiInput v-model="subject" type="text" id="subject" name="subject" block rounded
-                placeholder="Enter the subject" :state="errors.subject ? true : undefined" />
-            <span v-if="errors.subject" class="text-red-500 text-sm">{{ errors.subject }}</span>
-        </div>
-
-        <!-- Message Field -->
-        <div class="flex flex-col space-y-2">
-            <label for="message" class="label-text">Message</label>
-            <LuiTextarea :resize="false" v-model="message" id="message" name="message" block rounded
-                placeholder="Write your message here" :state="errors.message ? true : undefined"></LuiTextarea>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="flex flex-col pt-2">
-            <LuiButton color="danger" block rounded>Send</LuiButton>
-        </div>
-    </form>
-</template>
-
 <script setup lang="ts">
-import { ref } from 'vue';
-
 const name = ref('');
 const email = ref('');
 const subject = ref('');
@@ -102,6 +60,48 @@ const handleSubmit = () => {
     }
 };
 </script>
+<template>
+    <form @submit.prevent="handleSubmit"
+        class="flex flex-col space-y-4 bg-white p-8 rounded-2xl border border-border-color">
+        <!-- Name Field -->
+        <div class="flex flex-col space-y-2">
+            <label for="name" class="label-text">Name</label>
+            <LuiInput v-model="name" type="text" id="name" name="name" block rounded placeholder="Enter your name"
+                :state="errors.name ? true : undefined" />
+            <span v-if="errors.name" class="text-red-500 text-sm">{{ errors.name }}</span>
+        </div>
+
+        <!-- Email Field -->
+        <div class="flex flex-col space-y-2">
+            <label for="email" class="label-text">Email</label>
+            <LuiInput v-model="email" type="email" id="email" name="email" block rounded placeholder="Enter your email"
+                :state="errors.email ? true : undefined" />
+            <span v-if="errors.email" class="text-red-500 text-sm">{{ errors.email }}</span>
+        </div>
+
+        <!-- Subject Field -->
+        <div class="flex flex-col space-y-2">
+            <label for="subject" class="label-text">Subject</label>
+            <LuiInput v-model="subject" type="text" id="subject" name="subject" block rounded
+                placeholder="Enter the subject" :state="errors.subject ? true : undefined" />
+            <span v-if="errors.subject" class="text-red-500 text-sm">{{ errors.subject }}</span>
+        </div>
+
+        <!-- Message Field -->
+        <div class="flex flex-col space-y-2">
+            <label for="message" class="label-text">Message</label>
+            <LuiTextarea :resize="false" v-model="message" id="message" name="message" block rounded
+                placeholder="Write your message here" :state="errors.message ? true : undefined"></LuiTextarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="flex flex-col pt-2">
+            <LuiButton color="danger" block rounded>Send</LuiButton>
+        </div>
+    </form>
+</template>
+
+
 
 <style scoped lang="postcss">
 .label-text {

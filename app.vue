@@ -7,6 +7,7 @@
     <main class="min-h-screen">
       <NuxtPage />
     </main>
+    <MolAppFooter />
   </div>
 </template>
 <style lang="postcss">
