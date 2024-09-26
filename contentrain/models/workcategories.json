@@ -58,5 +58,25 @@
     "system": true,
     "defaultField": false,
     "modelId": "workcategories"
+  },
+  {
+    "name": "category",
+    "fieldId": "category",
+    "modelId": "workcategories",
+    "componentId": "single-line-text",
+    "options": {
+      "title-field": {
+        "value": true
+      }
+    },
+    "validations": {
+      "required-field": {
+        "value": true
+      },
+      "unique-field": {
+        "value": true
+      }
+    },
+    "fieldType": "string"
   }
 ]
