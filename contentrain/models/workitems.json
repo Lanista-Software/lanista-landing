@@ -89,7 +89,7 @@
     "name": "description",
     "fieldId": "description",
     "modelId": "workitems",
-    "componentId": "single-line-text",
+    "componentId": "multi-line-text",
     "options": {},
     "validations": {
       "required-field": {
