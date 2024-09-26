@@ -1,0 +1,82 @@
+[
+  {
+    "name": "ServicesItems",
+    "modelId": "services",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  },
+  {
+    "name": "ProcessItems",
+    "modelId": "processes",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  },
+  {
+    "name": "TabItems",
+    "modelId": "tabitems",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  },
+  {
+    "name": "TabItemCategories",
+    "modelId": "tabitemcategories",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  },
+  {
+    "name": "WorkItems",
+    "modelId": "workitems",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  },
+  {
+    "name": "WorkCategories",
+    "modelId": "workcategories",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  },
+  {
+    "name": "TestimonialItems",
+    "modelId": "testimonialitems",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  },
+  {
+    "name": "FaqItems",
+    "modelId": "faqitems",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  },
+  {
+    "name": "Sections",
+    "modelId": "sections",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  },
+  {
+    "name": "HeroLogos",
+    "modelId": "hero",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  }
+]
