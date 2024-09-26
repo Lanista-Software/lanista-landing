@@ -30,5 +30,13 @@
     "type": "JSON",
     "createdBy": "user",
     "isServerless": false
+  },
+  {
+    "name": "WorkItems",
+    "modelId": "workitems",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
   }
 ]
