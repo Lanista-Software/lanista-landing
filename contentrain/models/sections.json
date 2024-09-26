@@ -97,5 +97,14 @@
     "options": {},
     "validations": {},
     "fieldType": "string"
+  },
+  {
+    "name": "buttonLink",
+    "fieldId": "buttonlink",
+    "modelId": "sections",
+    "componentId": "single-line-text",
+    "options": {},
+    "validations": {},
+    "fieldType": "string"
   }
 ]
