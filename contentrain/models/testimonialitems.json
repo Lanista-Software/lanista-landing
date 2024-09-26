@@ -88,5 +88,18 @@
       }
     },
     "fieldType": "string"
+  },
+  {
+    "name": "image",
+    "fieldId": "image",
+    "modelId": "testimonialitems",
+    "componentId": "media",
+    "options": {},
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "media"
   }
 ]
