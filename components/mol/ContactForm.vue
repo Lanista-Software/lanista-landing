@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { collection, doc, Firestore, setDoc } from "firebase/firestore";
+
 const name = ref('');
 const email = ref('');
 const subject = ref('');
@@ -14,8 +16,9 @@ const validateEmail = (email: string) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
 };
-
-const handleSubmit = () => {
+const { $firestore } = useNuxtApp();
+console.log('Firestore: ', $firestore);
+const handleSubmit = async () => {
     // Reset errors
     errors.value = {
         name: '',
@@ -26,9 +29,15 @@ const handleSubmit = () => {
 
     let isValid = true;
 
-    // Name validation
+    // Name validation (min: 3, max: 50 characters)
     if (!name.value) {
         errors.value.name = 'Name is required';
+        isValid = false;
+    } else if (name.value.length < 3) {
+        errors.value.name = 'Name must be at least 3 characters';
+        isValid = false;
+    } else if (name.value.length > 50) {
+        errors.value.name = 'Name must be less than 50 characters';
         isValid = false;
     }
 
@@ -41,24 +50,59 @@ const handleSubmit = () => {
         isValid = false;
     }
 
-    // Subject validation
+    // Subject validation (min: 5, max: 100 characters)
     if (!subject.value) {
         errors.value.subject = 'Subject is required';
         isValid = false;
+    } else if (subject.value.length < 5) {
+        errors.value.subject = 'Subject must be at least 5 characters';
+        isValid = false;
+    } else if (subject.value.length > 100) {
+        errors.value.subject = 'Subject must be less than 100 characters';
+        isValid = false;
     }
 
-    // Message validation
+    // Message validation (min: 10, max: 500 characters)
     if (!message.value) {
         errors.value.message = 'Message is required';
+        isValid = false;
+    } else if (message.value.length < 10) {
+        errors.value.message = 'Message must be at least 10 characters';
+        isValid = false;
+    } else if (message.value.length > 500) {
+        errors.value.message = 'Message must be less than 500 characters';
         isValid = false;
     }
 
     // If the form is valid, submit the form data
     if (isValid) {
-        // Form submission logic here, e.g., sending data to API
-        alert('Form submitted successfully!');
+        try {
+            const docPath = 'contentrain/models/contactform/content';
+            const defaultCollectionRef = collection($firestore as Firestore, `${docPath}/default`);
+            const newDocRef = doc(defaultCollectionRef)
+            const res = await setDoc(newDocRef, {
+                name: name.value,
+                email: email.value,
+                subject: subject.value,
+                message: message.value,
+                createdAt: new Date().toString(),
+                updatedAt: new Date().toString(),
+                status: 'publish',
+                scheduled: false
+            });
+            console.log("Document written with ID: ", res);
+            resetForm();
+        } catch (e) {
+            console.error("Error adding document: ", e);
+        }
     }
 };
+function resetForm() {
+    name.value = '';
+    email.value = '';
+    subject.value = '';
+    message.value = '';
+}
 </script>
 <template>
     <form @submit.prevent="handleSubmit"
@@ -92,6 +136,7 @@ const handleSubmit = () => {
             <label for="message" class="label-text">Message</label>
             <LuiTextarea :resize="false" v-model="message" id="message" name="message" block rounded
                 placeholder="Write your message here" :state="errors.message ? true : undefined"></LuiTextarea>
+            <span v-if="errors.message" class="text-red-500 text-sm">{{ errors.message }}</span>
         </div>
 
         <!-- Submit Button -->
@@ -100,7 +145,6 @@ const handleSubmit = () => {
         </div>
     </form>
 </template>
-
 
 
 <style scoped lang="postcss">

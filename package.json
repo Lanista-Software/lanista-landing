@@ -20,6 +20,7 @@
     "@nuxtjs/i18n": "^8.5.3",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@tailwindcss/typography": "^0.5.15",
+    "firebase": "^10.13.2",
     "nuxt": "^3.13.0",
     "remixicon": "^4.3.0",
     "vue": "latest",
@@ -30,5 +31,5 @@
   },
   "resolutions": {
     "jackspeak": "2.1.1"
- }
+  }
 }
