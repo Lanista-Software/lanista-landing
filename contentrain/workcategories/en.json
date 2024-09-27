@@ -1,9 +1,41 @@
 [
   {
-    "ID": "94647bb8cb00",
-    "createdAt": "Thu Sep 26 2024 21:07:50 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:07:50 GMT+0300 (GMT+03:00)",
-    "category": "Web Development",
+    "ID": "cab37361e7e6",
+    "createdAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "category": "Frontend Development",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "cab37361e7e7",
+    "createdAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "category": "Backend Development",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "cab37361e7e8",
+    "createdAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "category": "UI/UX Design",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "cab37361e7e9",
+    "createdAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "category": "SEO Optimization",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "cab37361e7ea",
+    "createdAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "category": "Social Media Marketing",
     "status": "publish",
     "scheduled": false
   }

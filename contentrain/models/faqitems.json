@@ -78,7 +78,7 @@
   },
   {
     "name": "answer",
-    "fieldId": "answe",
+    "fieldId": "answer",
     "modelId": "faqitems",
     "componentId": "multi-line-text",
     "options": {},

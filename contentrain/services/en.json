@@ -3,8 +3,49 @@
     "ID": "d00761480436",
     "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
     "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
-    "title": "asdfadsfadsf",
-    "image": "static/1727359111545_1724068521380_kahvedunyasi.svg",
+    "title": "Web Development",
+    "description": "We create high quality dijital products for everyone.",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "d00761480437",
+    "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "title": "Mobile Development",
+    "description": "We create high quality dijital products for everyone.",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "d00761480438",
+    "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "title": "UI/UX Design",
+    "description": "We create high quality dijital products for everyone.",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "d00761480439",
+    "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "title": "SEO Optimization",
+    "description": "We create high quality dijital products for everyone.",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "d00761480440",
+    "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "title": "Social Media Marketing",
+    "description": "We create high quality  dijital products for everyone.",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
     "status": "publish",
     "scheduled": false
   }

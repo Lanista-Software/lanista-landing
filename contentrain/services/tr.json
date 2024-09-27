@@ -3,8 +3,49 @@
     "ID": "d00761480436",
     "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
     "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
-    "title": "dfadsfsdf",
-    "image": "static/1727359111545_1724068521380_kahvedunyasi.svg",
+    "title": "Web Geliştirme",
+    "description": "Herkes için yüksek kaliteli dijital ürünler oluşturuyoruz.",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "d00761480437",
+    "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "title": "Mobil Geliştirme",
+    "description": "Herkes için yüksek kaliteli dijital ürünler oluşturuyoruz.",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "d00761480438",
+    "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "title": "UI/UX Tasarımı",
+    "description": "Herkes için yüksek kaliteli dijital ürünler oluşturuyoruz.",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "d00761480439",
+    "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "title": "SEO Optimizasyonu",
+    "description": "Herkes için yüksek kaliteli dijital ürünler oluşturuyoruz.",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "d00761480440",
+    "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
+    "title": "Sosyal Medya Pazarlama",
+    "description": "Herkes için yüksek kaliteli dijital ürünler oluşturuyoruz.",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
     "status": "publish",
     "scheduled": false
   }

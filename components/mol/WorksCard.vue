@@ -1,14 +1,17 @@
 <script setup lang="ts">
-export interface WorksCardProps {
-    title: string;
-    description: string;
-    image?: {
-        url: string;
-        alt: string;
-    }
-    link: string;
-    category?: string;
+import type { TWorkCategory } from '../templates/TabSection.vue';
 
+export interface WorksCardProps {
+    ID: string;
+    createdAt: string;
+    updatedAt: string;
+    title: string;
+    image: string;
+    description: string;
+    category: string;
+    link: string;
+    status: string;
+    scheduled: boolean;
 }
 defineProps<{
     item: WorksCardProps;
@@ -34,13 +37,8 @@ defineProps<{
                 </div>
             </div>
             <div v-if="item.image" class="w-full h-auto rounded-3xl overflow-hidden lg:w-7/12">
-                <NuxtImg class="w-full rounded-xl h-full object-cover"
-                :src="item.image.url"
-                :alt="item.image.alt"
-                loading="lazy"
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                format="webp"
-                />
+                <NuxtImg class="w-full rounded-xl h-full object-cover" :src="getStaticImagePath(item.image)" :alt="getImageAlt(item.image)" placeholder
+                    loading="lazy" sizes="xs:100vw sm:50vw md:33vw" format="webp" />
             </div>
         </div>
     </MolCardAnimation>

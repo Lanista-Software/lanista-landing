@@ -3,10 +3,32 @@
     "ID": "db0bc9c19d28",
     "createdAt": "Thu Sep 26 2024 21:07:19 GMT+0300 (GMT+03:00)",
     "updatedAt": "Thu Sep 26 2024 21:07:19 GMT+0300 (GMT+03:00)",
-    "name": "dasdasd",
-    "description": "dasdasd",
-    "image": "static/1727359111545_1724068521380_kahvedunyasi.svg",
-    "title": "dasdasd",
+    "name": "John Doe",
+    "description": "This company is the best. I am so happy with the result!",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "title": "CEO, Acme Inc.",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "db0bc9c19d29",
+    "createdAt": "Thu Sep 26 2024 21:07:19 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:07:19 GMT+0300 (GMT+03:00)",
+    "name": "Jane Doe",
+    "description": "This company is the best. I am so happy with the result!",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "title": "CEO, Acme Inc.",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "db0bc9c19d2b",
+    "createdAt": "Thu Sep 26 2024 21:07:19 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:07:19 GMT+0300 (GMT+03:00)",
+    "name": "Jane Doe",
+    "description": "This company is the best. I am so happy with the result!",
+    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "title": "CEO, Acme Inc.",
     "status": "publish",
     "scheduled": false
   }

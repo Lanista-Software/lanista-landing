@@ -3,9 +3,59 @@
     "ID": "96c64803d441",
     "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
     "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
-    "title": "a process",
-    "description": "a processa processa process",
+    "title": "Project Kickoff and Analysis",
+    "description": "Gathering all relevant information to understand your project's requirements and objectives. This phase sets a strong foundation by aligning our development with your vision.",
     "icon": "ri-search-eye-line",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "96c64803d442",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Design",
+    "description": "Turning your ideas into detailed design prototypes ready for implementation. We focus on crafting interfaces that are both user-friendly and visually appealing.",
+    "icon": "ri-pencil-ruler-line",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "96c64803d443",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Development Stage",
+    "description": "Transforming the design and strategy into a functional product. Our coding expertise brings your design to life, ensuring seamless functionality.",
+    "icon": "ri-code-s-slash-line",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "96c64803d444",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Deployment",
+    "description": "Thoroughly testing the product to identify and fix any issues. Once approved, we deploy the product to the live environment.",
+    "icon": "ri-rocket-line",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "96c64803d445",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Testing",
+    "description": "Merge your Developer and Content Teams to create a smooth content structure with advanced.",
+    "icon": "ri-bug-line",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "96c64803d446",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Publishing",
+    "description": "Testing the product to ensure all components are working correctly before deploying the product to the live environment. Once approved, we deploy the product to the live environment.",
+    "icon": "ri-rocket-line",
     "status": "publish",
     "scheduled": false
   }

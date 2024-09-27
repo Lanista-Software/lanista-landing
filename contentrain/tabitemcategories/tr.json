@@ -3,7 +3,39 @@
     "ID": "cab37361e7e6",
     "createdAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
     "updatedAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
-    "category": "Frontend Development",
+    "category": "Frontend Geliştirme",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "cab37361e7e7",
+    "createdAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "category": "Backend Geliştirme",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "cab37361e7e8",
+    "createdAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "category": "UI/UX Tasarımı",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "cab37361e7e9",
+    "createdAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "category": "SEO Optimizasyonu",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "cab37361e7ea",
+    "createdAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:55 GMT+0300 (GMT+03:00)",
+    "category": "Sosyal Medya Pazarlama",
     "status": "publish",
     "scheduled": false
   }

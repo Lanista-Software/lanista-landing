@@ -77,6 +77,19 @@
     "fieldType": "string"
   },
   {
+    "name": "subtitle",
+    "fieldId": "subtitle",
+    "modelId": "services",
+    "componentId": "single-line-text",
+    "options": {},
+    "validations": {
+      "required-field": {
+        "value": false
+      }
+    },
+    "fieldType": "string"
+  },
+  {
     "name": "image",
     "fieldId": "image",
     "modelId": "services",

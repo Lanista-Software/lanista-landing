@@ -1,21 +1,26 @@
 <script setup lang="ts">
+import sectionData from '../../contentrain/sections/en.json'
+import referencesData from '../../contentrain/references/en.json'
+const defaultPath = getDefaultPathByFieldName(sectionData, 'name', 'hero', 'sections')
+
 </script>
 
 <template>
-    <section class="hero-section text-center">
+    <section v-if="defaultPath" class="hero-section text-center">
         <div>
-            <LuiTag color="secondary" filter="lighten" size="lg" rounded="full">Development Company</LuiTag>
+            <LuiTag color="secondary" filter="lighten" size="lg" rounded="full">
+                {{ $t(`${defaultPath}.subtitle`)}}</LuiTag>
         </div>
         <h1 class="text-heading-text text-4xl lg:text-5xl xl:text-6xl font-space font-bold mt-8 max-content">
-            We create high quality digital products for everyone.
+            {{ $t(`${defaultPath}.title`) }}
         </h1>
         <p class="text-body-text font-normal text-lg md:text-xl mt-6 max-content">
-            We help companies and startups make their products better every day. So we create high quality digital
-            products for a professional look.
+            {{ $t(`${defaultPath}.description`) }}
         </p>
         <div class="pt-8 flex items-center justify-center max-content">
-            <NuxtLink to="#contact">
-                <LuiButton rounded="full" color="danger">Let's discuss your project
+            <NuxtLink :to="$t(`${defaultPath}.buttonlink`)">
+                <LuiButton rounded="full" color="danger">
+                    {{ $t(`${defaultPath}.buttontext`) }}
                     <template #append>
                         <i class="ri-arrow-right-up-line"></i>
                     </template>
@@ -23,17 +28,9 @@
             </NuxtLink>
         </div>
         <div class="flex items-center justify-evenly pt-14 lg:pt-20 flex-wrap gap-4">
-            <!-- Logo section -->
-            <NuxtImg 
-            v-for="i in 5" 
-            :key="i" 
-            src="/images/popile.png" 
-            alt="Logo 1"
-            class="w-auto h-8"
-            loading="lazy"
-            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-            format="webp"
-            />
+    
+            <NuxtImg v-for="i in referencesData" :key="i.ID" :src="getStaticImagePath(i.logo)" :alt="getImageAlt(i.logo)" class="w-auto h-8" loading="lazy"
+                sizes="xs:100vw sm:50vw md:33vw" format="webp" />
         </div>
     </section>
 </template>

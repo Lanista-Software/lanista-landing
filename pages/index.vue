@@ -1,381 +1,91 @@
 <script setup lang="ts">
+import sectionData from '../contentrain/sections/en.json'
+import enServicesData from '../contentrain/services/en.json';
+import trServicesData from '../contentrain/services/tr.json';
+import trProcessData from '../contentrain/processes/tr.json';
+import enProcessData from '../contentrain/processes/en.json';
+import enTabItemsData from '../contentrain/tabitems/en.json';
+import trTabItemsData from '../contentrain/tabitems/tr.json';
+import enWorkCategoriesData from '../contentrain/workcategories/en.json';
+import trWorkCategoriesData from '../contentrain/workcategories/tr.json';
+import trWorksItemsData from '../contentrain/workitems/tr.json';
+import enWorksItemsData from '../contentrain/workitems/en.json';
+import enTestimonialsData from '../contentrain/testimonialitems/en.json';
+import trTestimonialsData from '../contentrain/testimonialitems/tr.json';
+import enFaqItemsData from '../contentrain/faqitems/en.json';
+import trFaqItemsData from '../contentrain/faqitems/tr.json';
+
 import type { AppCardProps } from '~/components/mol/AppCard.vue';
 import type { TestimonialCardProps } from '~/components/mol/TestimonialCard.vue';
 import type { WorksCardProps } from '~/components/mol/WorksCard.vue';
 import type { CardSectionProps } from '~/components/templates/CardSection.vue';
-import type { TabItem, TabSectionProps } from '~/components/templates/TabSection.vue';
+import type { TabItem, TabSectionProps, TWorkCategory } from '~/components/templates/TabSection.vue';
+import type { ContactProps, Faq } from '~/components/templates/Contact.vue';
 
-const serviceItems: AppCardProps[] = [
-    {
-        title: 'Web Development', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    },
-    {
-        title: 'Mobile Development', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    },
-    {
-        title: 'UI/UX Design', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    },
-    {
-        title: 'SEO Optimization', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    },
-    {
-        title: 'Social Media Marketing', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    },
-    {
-        title: 'Content Marketing', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    },
-    {
-        title: 'E-Commerce Solutions', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    },
-    {
-        title: 'Digital Marketing', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    },
-    {
-        title: 'Branding', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    },
-    {
-        title: 'Consulting', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    },
-    {
-        title: 'Consulting', description: 'We create high quality dijital products for everyone.', image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Web Development'
-        }
-    }
-]
+const { t, locale } = useI18n()
+const serviceItems = computed<AppCardProps[]>(() => locale.value === 'en' ? enServicesData as AppCardProps[] : trServicesData as AppCardProps[])
+const servicesSectionDefaultPath = getDefaultPathByFieldName(sectionData, 'name', 'services', 'sections')
+const processItems = computed<AppCardProps[]>(() => locale.value === 'en' ? enProcessData as AppCardProps[] : trProcessData as AppCardProps[])
+const processSectionDefaultPath = getDefaultPathByFieldName(sectionData, 'name', 'process', 'sections')
+const tabItems = computed<TabItem[]>(() => locale.value === 'en' ? enTabItemsData as TabItem[] : trTabItemsData as TabItem[])
+const tabSectionDefaultPath = getDefaultPathByFieldName(sectionData, 'name', 'tabs', 'sections')
+const worksCategories = computed<TWorkCategory[]>(() => locale.value === 'en' ? enWorkCategoriesData as TWorkCategory[] : trWorkCategoriesData as TWorkCategory[])
+const workSectionDefaultPath = getDefaultPathByFieldName(sectionData, 'name', 'works', 'sections')
+const workItems = computed<WorksCardProps[]>(() => locale.value === 'en' ? enWorksItemsData as WorksCardProps[] : trWorksItemsData as WorksCardProps[])
+const workItemWithCategories = computed(() => workItems.value.map(item => {
+    return { ...item, category: getRelationalFields(worksCategories.value, item.category)?.category }
+}))
+const testimoSectionDefaultPath = getDefaultPathByFieldName(sectionData, 'name', 'testimonials', 'sections')
+const testimonials = computed<TestimonialCardProps[]>(() => locale.value === 'en' ? enTestimonialsData as TestimonialCardProps[] : trTestimonialsData as TestimonialCardProps[])
+const faqItems = computed<Faq[]>(() => locale.value === 'en' ? enFaqItemsData as Faq[] : trFaqItemsData as Faq[])
+const contactSectionDefaultPath = getDefaultPathByFieldName(sectionData, 'name', 'contact', 'sections')
+const faqSectionDefaultPath = getDefaultPathByFieldName(sectionData, 'name', 'faq', 'sections')
 const serviceCardProps: CardSectionProps = {
-    items: serviceItems,
+    items: serviceItems.value,
     view: 'grid',
-    title: 'Here are the technologies that we have expertise',
-    description: 'We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo numquam quia quos velit mollitia. Maiores voluptatem dolor aspernatur.',
+    title: t(`${servicesSectionDefaultPath}.title`),
+    description: t(`${servicesSectionDefaultPath}.description`),
     cardComponent: 'app'
 }
-const processItems: AppCardProps[] = [
-    {
-        title: "Project Kickoff and Analysis",
-        description: "Gathering all relevant information to understand your project's requirements and objectives. This phase sets a strong foundation by aligning our development with your vision.",
-        icon: "ri-search-eye-line" // Icon for analysis
-    },
-    {
-        title: "Design",
-        description: "Turning your ideas into detailed design prototypes ready for implementation. We focus on crafting interfaces that are both user-friendly and visually appealing.",
-        icon: "ri-pencil-ruler-line" // Icon for design
-    },
-    {
-        title: "Development Stage",
-        description: "Transforming the design and strategy into a functional product. Our coding expertise brings your design to life, ensuring seamless functionality.",
-        icon: "ri-code-s-slash-line" // Icon for development
-    },
-    {
-        title: "Deployment",
-        description: "Thoroughly testing the product to identify and fix any issues. Once approved, we deploy the product to the live environment.",
-        icon: "ri-rocket-line" // Icon for deployment
-    },
-    {
-        title: "Testing",
-        description: "Merge your Developer and Content Teams to create a smooth content structure with advanced.",
-        icon: "ri-bug-line" // Icon for testing
-    },
-    {
-        title: "Maintenance",
-        description: "Providing ongoing support and maintenance. This includes fixing issues and making upgrades to ensure your product remains up-to-date.",
-        icon: "ri-tools-line" // Icon for maintenance
-    }
-];
 const processCardProps: CardSectionProps = {
-    items: processItems,
+    items: processItems.value,
     view: 'triple',
-    title: 'Here are the  technologies that we have expertise',
-    description: 'We follow a structured approach to ensure your project is delivered on time and within budget. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    title: t(`${processSectionDefaultPath}.title`),
+    description: t(`${processSectionDefaultPath}.description`),
     cardComponent: 'app'
 }
-const tabItems: TabItem[] = [
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-        title: "Vue.js",
-        description: "Vue.js is a progressive JavaScript framework used for building user interfaces, especially single-page applications. It is designed to be incrementally adoptable and integrates well with other libraries.",
-        category: "Frontend Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        title: "React.js",
-        description: "React.js is a JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a large community of developers. React is known for its fast rendering and virtual DOM.",
-        category: "Frontend Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",
-        title: "Nuxt.js",
-        description: "Nuxt.js is a framework built on top of Vue.js that simplifies the development of server-rendered applications and static websites. It offers powerful features like SSR, static site generation, and improved SEO support.",
-        category: "Frontend Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
-        title: "Next.js",
-        description: "Next.js is a React framework that enables functionality such as server-side rendering and static website generation for building high-performance, SEO-friendly applications.",
-        category: "Frontend Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg",
-        title: "Astro",
-        description: "Astro is a new frontend framework for building fast, content-focused websites. It uses an innovative approach to page rendering called partial hydration, which makes websites faster by reducing the JavaScript sent to the browser.",
-        category: "Frontend Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
-        title: "Svelte",
-        description: "Svelte is a modern JavaScript framework that shifts much of the work to the compile step instead of the runtime. This results in smaller bundle sizes and faster load times, making it an excellent choice for building fast web applications.",
-        category: "Frontend Development",
-        link: "https://vuejs.org/",
-    },
-    // Backend JS 
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        title: "Node.js",
-        description: "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript on the server, enabling you to build scalable and high-performance applications.",
-        category: "Backend Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        title: "Express.js",
-        description: "Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications. It is designed to create APIs and web servers quickly and easily.",
-        category: "Backend Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg",
-        title: "Nest.js",
-        description: "Nest.js is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications. It uses TypeScript and is heavily inspired by Angular, providing a solid architectural design for your applications.",
-        category: "Backend Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/koa/koa-original.svg",
-        title: "Koa.js",
-        description: "Koa.js is a modern web framework for Node.js that aims to be smaller, more expressive, and more robust. It uses async functions to eliminate callbacks and increase error-handling capabilities.",
-        category: "Backend Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
-        title: "GraphQL",
-        description: "GraphQL is a query language for APIs and a runtime for executing those queries. It provides a more efficient and powerful alternative to REST by allowing clients to request only the data they need.",
-        category: "Backend Development",
-        link: "https://vuejs.org/",
-    },
-    // Mobile 
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        title: "React Native",
-        description: "React Native is a framework for building native mobile applications using JavaScript and React. It allows you to write once and run on multiple platforms, saving time and effort in developing mobile apps.",
-        category: "Mobile Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
-        title: "Flutter",
-        description: "Flutter is Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. It offers a rich set of pre-built widgets and tools for creating beautiful apps.",
-        category: "Mobile Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg",
-        title: "Ionic",
-        description: "Ionic is a popular open-source framework for building cross-platform mobile applications using web technologies like HTML, CSS, and JavaScript. It provides a library of mobile-optimized UI components and tools for creating high-quality apps.",
-        category: "Mobile Development",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/capacitor/capacitor-original.svg",
-        title: "Capacitor",
-        description: "Capacitor is a cross-platform runtime that allows you to build web applications that run natively on iOS, Android, and Electron. It provides a consistent API for accessing native features and plugins across platforms.",
-        category: "Mobile Development",
-        link: "https://vuejs.org/",
-    },
-    // Design
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg",
-        title: "Sketch",
-        description: "Sketch is a popular design tool for creating user interfaces, websites, and icons. It offers a wide range of features like artboards, symbols, and libraries to streamline the design process.",
-        category: "UI/UX Design",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-        title: "Figma",
-        description: "Figma is a cloud-based design tool that allows real-time collaboration between designers and developers. It offers features like prototyping, vector editing, and design systems to create interactive and responsive designs.",
-        category: "UI/UX Design",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adobexd/adobexd-plain.svg",
-        title: "Adobe XD",
-        description: "Adobe XD is a vector-based design tool for creating user interfaces, websites, and mobile apps. It offers features like artboards, responsive resizing, and prototyping to design and test interactive experiences.",
-        category: "UI/UX Design",
-        link: "https://vuejs.org/",
-    },
-    {
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/invision/invision-original.svg",
-        title: "InVision",
-        description: "InVision is a digital product design platform that allows you to create interactive prototypes and collaborate with stakeholders. It offers features like design systems, user testing, and version control to streamline the design process.",
-        category: "UI/UX Design",
-        link: "https://vuejs.org/",
-    },
-]
 const tabSectionProps: TabSectionProps = {
-    items: tabItems,
-    title: 'Here are the technologies that we have expertise',
-    description: 'We use the latest technologies to build high-quality digital products.'
+    items: tabItems.value,
+    title: t(`${tabSectionDefaultPath}.title`),
+    description: t(`${tabSectionDefaultPath}.description`),
+    categories: worksCategories.value
 }
-const works: WorksCardProps[] = [
-    {
-        title: 'Project Title 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
-        image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Project Title 1'
-        },
-        link: "https://vuejs.org/",
-        category: 'Web Development'
-    },
-    {
-        title: 'Project Title 2',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
-        image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Project Title 2'
-        },
-        link: "https://vuejs.org/",
-        category: 'Mobile Development'
-    },
-    {
-        title: 'Project Title 3',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
-        image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Project Title 3'
-        },
-        link: "https://vuejs.org/",
-        category: 'UI/UX Design'
-    },
-    {
-        title: 'Project Title 4',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
-        image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Project Title 4'
-        },
-        link: "https://vuejs.org/",
-        category: 'Web Development'
-    },
-    {
-        title: 'Project Title 5',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
-        image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Project Title 5'
-        },
-        link: "https://vuejs.org/",
-        category: 'Mobile Development'
-    },
-    {
-        title: 'Project Title 6',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
-        image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Project Title 6'
-        },
-        link: "https://vuejs.org/",
-        category: 'UI/UX Design'
-    },
-    {
-        title: 'Project Title 7',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien. ',
-        image: {
-            url: 'https://placehold.co/600x400',
-            alt: 'Project Title 7'
-        },
-        link: "https://vuejs.org/",
-        category: 'Web Development'
-    },
-]
 const worksSectionProps: CardSectionProps = {
-    items: works,
+    items: workItemWithCategories.value,
     view: 'single',
-    title: 'Here are the technologies that we have expertise',
-    description: 'We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo numquam quia quos velit mollitia. Maiores voluptatem dolor aspernatur.',
+    title: t(`${workSectionDefaultPath}.title`),
+    description: t(`${workSectionDefaultPath}.description`),
     cardComponent: 'works'
 }
-const testimonials: TestimonialCardProps[] = [
-    {
-        name: 'John Doe',
-        title: 'CEO, Company Name',
-        image: {
-            url: 'https://randomuser.me/api/portraits/men/80.jpg',
-            alt: 'John Doe'
-        },
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    },
-    {
-        name: 'Jane Doe',
-        title: 'CTO, Company Name',
-        image: {
-            url: 'https://randomuser.me/api/portraits/women/78.jpg',
-            alt: 'Jane Doe'
-        },
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    },
-    {
-        name: 'John Smith',
-        title: 'COO, Company Name',
-        image: {
-            url: 'https://randomuser.me/api/portraits/men/85.jpg',
-            alt: 'John Smith'
-        },
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    },
-]
 const testimonialsSectionProps: CardSectionProps = {
-    items: testimonials,
+    items: testimonials.value,
     view: 'triple',
-    title: 'Here are the technologies that we have expertise',
-    description: 'We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    title: t(`${testimoSectionDefaultPath}.title`),
+    description: t(`${testimoSectionDefaultPath}.description`),
     cardComponent: 'testimonial'
+}
+const contactAndFaqSectionProps: ContactProps = {
+    faqList: faqItems.value,
+    sections: {
+        contact: {
+            title: t(`${contactSectionDefaultPath}.title`),
+            description: t(`${contactSectionDefaultPath}.description`)
+        },
+        faq: {
+            title: t(`${faqSectionDefaultPath}.title`),
+            description: t(`${faqSectionDefaultPath}.description`)
+        }
+    }
 }
 </script>
 <template>
@@ -400,9 +110,8 @@ const testimonialsSectionProps: CardSectionProps = {
         <MolAppSection id="works">
             <TemplatesCardSection v-bind="worksSectionProps">
                 <template #button>
-                    <NuxtLink to="#contact">
-                        <LuiButton variant="link" color="primary">Show more projects
-                        </LuiButton>
+                    <NuxtLink :to="$t(`${workSectionDefaultPath}.buttonlink`)">
+                        <LuiButton variant="link" color="primary">{{ $t(`${workSectionDefaultPath}.buttontext`) }}</LuiButton>
                     </NuxtLink>
                 </template>
             </TemplatesCardSection>
@@ -416,10 +125,11 @@ const testimonialsSectionProps: CardSectionProps = {
             </TemplatesCardSection>
         </MolAppSection>
         <MolAppSection id="banner">
-            <TemplatesBanner title="We create high quality dijital products." description="We help companies and startups make their products better every day. So we create high quality digital products for a professional look." />
+            <TemplatesBanner title="We create high quality dijital products."
+                description="We help companies and startups make their products better every day. So we create high quality digital products for a professional look." />
         </MolAppSection>
         <MolAppSection id="contact" class="bg-secondary-50">
-            <TemplatesContact />
+            <TemplatesContact v-bind="contactAndFaqSectionProps" />
         </MolAppSection>
     </div>
 </template>

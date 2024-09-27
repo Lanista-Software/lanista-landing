@@ -2,13 +2,15 @@
 import { LuiAvatar } from '@lui-ui/lui-vue';
 
 export type TestimonialCardProps = {
+    ID: string;
+    createdAt: string;
+    updatedAt: string;
     name: string;
     title: string;
-    image: {
-        url: string;
-        alt: string;
-    };
     description: string;
+    status: string;
+    scheduled: boolean;
+    image: string;
 }
 defineProps<{
     item: TestimonialCardProps;
@@ -21,7 +23,7 @@ defineProps<{
         <div class="p-6 w-full">
             <div class="flex items-center space-x-4">
                 <div>
-                    <LuiAvatar :src="item.image.url" size="xl" rounded="full" :alt="item.image.alt" />
+                    <LuiAvatar :src="getStaticImagePath(item.image)" size="xl" rounded="full" :alt="getImageAlt(item.image)" />
                 </div>
                 <div>
                     <h6 class="text-lg font-semibold font-space text-heading-text">{{ item.name }}</h6>
