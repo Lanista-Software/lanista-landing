@@ -8,6 +8,14 @@
     "scheduled": false
   },
   {
+    "ID": "5c5955d57da8",
+    "createdAt": "Fri Sep 27 2024 22:58:54 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Fri Sep 27 2024 22:58:54 GMT+0300 (GMT+03:00)",
+    "logo": "public/1727359111545_1724068521380_popile.png",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
     "ID": "7fa159ae4aaf",
     "createdAt": "Fri Sep 27 2024 22:58:40 GMT+0300 (GMT+03:00)",
     "updatedAt": "Fri Sep 27 2024 22:58:40 GMT+0300 (GMT+03:00)",
