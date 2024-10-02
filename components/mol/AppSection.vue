@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <section :id="id">
-    <AtomsContainer class="py-20 flex items-center justify-center">
+    <AtomsContainer class="pt-20 pb-40 flex items-center justify-center">
       <slot></slot>
     </AtomsContainer>
   </section>
