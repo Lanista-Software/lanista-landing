@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     },
   },
   image: {
-    provider: 'static', // Prodda netlify localde ipx
+    provider: 'ipx',
     dir: 'public',
   },
   i18n: {
