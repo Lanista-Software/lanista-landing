@@ -27,7 +27,7 @@ const footerData = {
                 </p>
             </div>
             <div>
-                <NuxtLink to="/#test" class="flex w-28 md:w-36 items-center space-x-2">
+                <NuxtLink to="/" class="flex w-28 md:w-36 items-center space-x-2">
                     <AtomsLogo />
                 </NuxtLink>
             </div>

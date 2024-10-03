@@ -37,7 +37,11 @@ const getCardClass = (index: number) => {
         :key="index"
         :class="getCardClass(index)"
       >
-        <MolAppCard v-if="cardComponent === 'app'" :item="item" :square="getCardClass(index) === 'lg:col-span-2'" />
+        <MolAppCard
+          v-if="cardComponent === 'app'"
+          :item="item"
+          :square="getCardClass(index) === 'lg:col-span-2'"
+        />
         <MolWorksCard
           v-else-if="cardComponent === 'works'"
           :item="item as WorksCardProps"
@@ -48,15 +52,18 @@ const getCardClass = (index: number) => {
         />
       </div>
     </div>
+
     <template #button-slot>
-      <NuxtLink to="#home">
-        <LuiButton rounded="full" color="danger" tag="div"
-          >Let's discuss your project
-          <template #append>
-            <i class="ri-arrow-right-up-line"></i>
-          </template>
-        </LuiButton>
-      </NuxtLink>
+      <slot name="button">
+        <NuxtLink to="#home">
+          <LuiButton rounded="full" color="danger" tag="div"
+            >Let's discuss your project
+            <template #append>
+              <i class="ri-arrow-right-up-line"></i>
+            </template>
+          </LuiButton>
+        </NuxtLink>
+      </slot>
     </template>
   </MolAppSectionLayout>
 </template>

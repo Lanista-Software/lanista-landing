@@ -30,14 +30,15 @@ function toogleVisibility() {
         :aria-controls="isActive ? panelId : ''"
         @click="toogleVisibility"
       >
-        <div class="flex text-left justify-between">
+        <div class="flex items-center text-left justify-between">
           <slot :id="titleId" name="title">
             <h5 :id="titleId" class="text-heading-text font-space text-xl font-medium">
               {{ title }}
             </h5>
           </slot>
+          
 
-          <i class="text-heading size-5" :class="isActive ? 'i-ri-arrow-up-s-line' : 'i-ri-arrow-down-s-line'" />
+          <i class="text-disabled-text text-xl leading-none" :class="isActive ? 'ri-subtract-line' : 'ri-add-line'" />
         </div>
       </button>
     </div>

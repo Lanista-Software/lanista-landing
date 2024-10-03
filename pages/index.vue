@@ -14,6 +14,8 @@ import enTestimonialsData from "../contentrain/testimonialitems/en.json";
 import trTestimonialsData from "../contentrain/testimonialitems/tr.json";
 import enFaqItemsData from "../contentrain/faqitems/en.json";
 import trFaqItemsData from "../contentrain/faqitems/tr.json";
+import trMetaTags from "../contentrain/meta-tags/tr.json";
+import enMetaTags from "../contentrain/meta-tags/en.json";
 
 import type { AppCardProps } from "~/components/mol/AppCard.vue";
 import type { TestimonialCardProps } from "~/components/mol/TestimonialCard.vue";
@@ -27,6 +29,9 @@ import type {
 import type { ContactProps, Faq } from "~/components/templates/Contact.vue";
 
 const { t, locale } = useI18n();
+const metaTags = computed(() =>
+  locale.value === "en" ? enMetaTags : trMetaTags
+);
 const serviceItems = computed<AppCardProps[]>(() =>
   locale.value === "en"
     ? (enServicesData as AppCardProps[])
@@ -43,6 +48,7 @@ const processItems = computed<AppCardProps[]>(() =>
     ? (enProcessData as AppCardProps[])
     : (trProcessData as AppCardProps[])
 );
+
 const processSectionDefaultPath = getDefaultPathByFieldName(
   sectionData,
   "name",
@@ -86,6 +92,12 @@ const workItemWithCategories = computed(() =>
       };
     })
     .slice(0, 3)
+);
+const bannerSectionDefaultPath = getDefaultPathByFieldName(
+  sectionData,
+  "name",
+  "banner",
+  "sections"
 );
 const testimoSectionDefaultPath = getDefaultPathByFieldName(
   sectionData,
@@ -140,6 +152,12 @@ const worksSectionProps: CardSectionProps = {
   description: t(`${workSectionDefaultPath}.description`),
   cardComponent: "works",
 };
+const bannerSection = {
+  title: t(`${bannerSectionDefaultPath}.title`),
+  description: t(`${bannerSectionDefaultPath}.description`),
+  buttonText: t(`${bannerSectionDefaultPath}.buttontext`),
+  buttonLink: t(`${bannerSectionDefaultPath}.buttonlink`),
+};
 const testimonialsSectionProps: CardSectionProps = {
   items: testimonials.value,
   view: "triple",
@@ -160,29 +178,51 @@ const contactAndFaqSectionProps: ContactProps = {
     },
   },
 };
+
+const convertedMetaTags = computed(() =>
+  metaTags.value.reduce((acc: Record<string, string>, item) => {
+    acc[item.name] = item.content;
+    return acc;
+  }, {} as Record<string, string>)
+);
+
+const route = useRoute();
+const router = useRouter();
+
+useSeoMeta({ ...convertedMetaTags.value });
+
+function handleSectionViewed(id: string) {
+  const routeHash = route.hash;
+  const idWithHash = `#${id}`;
+  if(routeHash !== idWithHash) {
+    router.push({ hash: idWithHash });
+  }
+}
 </script>
 <template>
   <div>
     <!-- Home Section -->
-    <MolAppSection id="home">
-      <TemplatesHero />
-    </MolAppSection>
+    <div class="bg-[url('/1727359111545_1624068421380_hero.png')]">
+      <MolAppSection id="home">
+        <TemplatesHero />
+      </MolAppSection>
+    </div>
     <!-- Services Section -->
-    <MolAppSection id="services">
+    <MolAppSection id="services" @viewed="handleSectionViewed">
       <TemplatesCardSection v-bind="serviceCardProps" />
     </MolAppSection>
     <!-- Process Section -->
-    <MolAppSection id="process">
+    <MolAppSection id="process" @viewed="handleSectionViewed">
       <TemplatesCardSection v-bind="processCardProps" />
     </MolAppSection>
     <!-- Technologies Section -->
-    <MolAppSection id="technologies">
+    <MolAppSection id="technologies" @viewed="handleSectionViewed">
       <TemplatesTabSection v-bind="tabSectionProps" />
     </MolAppSection>
     <!-- Works Section -->
-    <MolAppSection id="works">
+    <MolAppSection id="works" @viewed="handleSectionViewed">
       <TemplatesCardSection v-bind="worksSectionProps">
-        <template #button-slot>
+        <template #button>
           <NuxtLink :to="$t(`${workSectionDefaultPath}.buttonlink`)">
             <LuiButton variant="link" color="primary" tag="div">{{
               $t(`${workSectionDefaultPath}.buttontext`)
@@ -201,8 +241,10 @@ const contactAndFaqSectionProps: ContactProps = {
     </MolAppSection>
     <MolAppSection id="banner">
       <TemplatesBanner
-        title="We create high quality dijital products."
-        description="We help companies and startups make their products better every day. So we create high quality digital products for a professional look."
+        :title="bannerSection.title"
+        :description="bannerSection.description"
+        :buttonLabel="bannerSection.buttonText"
+        :buttonLink="bannerSection.buttonLink"
       />
     </MolAppSection>
     <MolAppSection id="contact" class="bg-secondary-50">

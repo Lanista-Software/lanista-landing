@@ -26,5 +26,19 @@
       },
       "createdAt": "2024-09-26T13:58:32.966Z"
     }
+  },
+  {
+    "path": "public/1727359111545_1624068421380_hero.png",
+    "mimetype": "image/png",
+    "size": 53537,
+    "alt": "hero background",
+    "meta": {
+      "user": {
+        "name": "Ahmet Bayhan BAYRAMOĞLU",
+        "email": "bayhanbayramoglu@gmail.com",
+        "avatar": "https://lh3.googleusercontent.com/a-/AOh14GiukvNPwUeS58RDXlPU1MKUfOtsMvGsSHlBfgIsbQ=s96-c"
+      },
+      "createdAt": "2024-09-26T13:58:32.966Z"
+    }
   }
 ]

@@ -41,7 +41,7 @@ onUnmounted(() => {
         <div :class="[{ 'fixed-header': isHeaderFixed }, 'bg-white py-6 transition-all duration-500 ease-in-out']">
             <AtomsContainer>
                 <div class="flex items-center justify-between">
-                    <NuxtLink to="/#test" class="flex w-28 md:w-36 items-center space-x-2">
+                    <NuxtLink to="/" class="flex w-28 md:w-36 items-center space-x-2">
                         <AtomsLogo />
                     </NuxtLink>
                     <div class="flex-1 items-center justify-center hidden lg:flex">
