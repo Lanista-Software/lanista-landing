@@ -73,15 +73,14 @@
   },
   {
     "ID": "2aa54f9e7xb3",
-    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "title": " We create high quality digital products for everyone.",
+    "createdAt": "2024-09-26T18:05:14.000Z",
+    "updatedAt": "2024-10-04T22:07:05.201Z",
+    "status": "publish",
+    "title": "Just trying...",
     "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look.",
     "buttontext": "Let's discuss your project",
-    "subtitle": "Development Company",
     "buttonlink": "#contact",
     "name": "hero",
-    "status": "publish",
     "scheduled": false
   },
   {
