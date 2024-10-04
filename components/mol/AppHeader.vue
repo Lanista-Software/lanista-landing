@@ -48,7 +48,7 @@ onUnmounted(() => {
                         <MolAppNav direction="horizontal" :menuItems="menuItems" />
                     </div>
                     <div class="flex items-center space-x-4">
-                        <MolLangSelect @language-selected="(lang: string) => setLocale(lang)" />
+                        <MolLangSelect @language-selected="(lang: string) => setLocale(lang)" :active-lang="locale" />
                         <LuiButton class="lg:hidden" filter="darken" size="xl" variant="link" @click="toggleMenu">
                             <template #icon>
                                 <i class="ri-menu-line"></i>

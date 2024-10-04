@@ -12,9 +12,8 @@ onMounted(() => {
     (entries) => {
       const entry = entries[0];
       if (entry.isIntersecting) emit("viewed", props.id);
-      // emit('viewed', props.product)
     },
-    { threshold: 0.4 } // Observe when 50% of the element is visible
+    { threshold: 0.3 } // Observe when 50% of the element is visible
   );
 
   if (el.value) {
