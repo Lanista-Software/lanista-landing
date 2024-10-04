@@ -31,7 +31,6 @@ defineProps<{
           sizes="xs:100vw sm:50vw md:33vw"
           width="442"
           height="442"
-          format="webp"
         />
         <NuxtImg
           v-else
@@ -41,7 +40,6 @@ defineProps<{
           :alt="getImageAlt(item.image)"
           placeholder
           sizes="xs:100vw sm:50vw md:33vw"
-          format="webp"
           width="704"
           height="352"
         />
