@@ -59,7 +59,6 @@ defineProps<{
           placeholder
           loading="lazy"
           sizes="xs:100vw sm:50vw md:33vw"
-          format="webp"
         />
       </div>
     </div>
