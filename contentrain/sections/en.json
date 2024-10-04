@@ -66,7 +66,7 @@
     "title": " We create high quality digital products for everyone.",
     "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look.",
     "buttontext": "Let's discuss your project",
-    "subtitle" : "Development Company",
+    "subtitle": "Development Company",
     "buttonlink": "#contact",
     "name": "hero",
     "status": "publish",
@@ -79,7 +79,7 @@
     "title": "FAQ's",
     "description": "Browse through the FAQs to get quick answers or if the answers don’t match your needs feel free to join us on Contentrain's discor server for more help.",
     "buttontext": "Let's discuss your project",
-    "subtitle" : "Development Company",
+    "subtitle": "Development Company",
     "buttonlink": "#contact",
     "name": "faq",
     "status": "publish",
@@ -94,6 +94,18 @@
     "buttontext": "View all testimonials",
     "buttonlink": "#testimonials",
     "name": "contact",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "2aa54f9e7x90",
+    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "title": "We create high quality dijital products",
+    "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look.",
+    "buttontext": "Let's discuss your project",
+    "buttonlink": "#contact",
+    "name": "banner",
     "status": "publish",
     "scheduled": false
   }
