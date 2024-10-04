@@ -78,7 +78,6 @@ function getTabItems(category: string) {
                       :alt="item.title"
                       placeholder
                       sizes="xs:100vw sm:50vw md:33vw"
-                      format="webp"
                       width="200"
                       height="80"
                     />
