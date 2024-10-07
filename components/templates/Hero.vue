@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import sectionData from "../../contentrain/sections/en.json";
-import referencesData from "../../contentrain/references/en.json";
+import referencesData from "../../contentrain/references/references.json";
 const defaultPath = getDefaultPathByFieldName(
   sectionData,
   "name",
