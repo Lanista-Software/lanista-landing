@@ -42,7 +42,7 @@
     }
   },
   {
-    "path": "static/1728078857706_pazardan-logo.8e05f16c 1.svg",
+    "path": "public/1728078857706_pazardan-logo.8e05f16c 1.svg",
     "mimetype": "image/svg+xml",
     "size": 34336,
     "alt": "",
@@ -56,7 +56,7 @@
     }
   },
   {
-    "path": "static/1728366352762_frontend.png",
+    "path": "public/1728366352762_frontend.png",
     "mimetype": "image/png",
     "size": 120464,
     "alt": "",
