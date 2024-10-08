@@ -81,7 +81,8 @@
     "buttontext": "Let's discuss your project",
     "buttonlink": "#contact",
     "name": "hero",
-    "scheduled": false
+    "scheduled": false,
+    "subtitle": "Development Company"
   },
   {
     "ID": "2aa54f9e7xb4",
@@ -90,7 +91,6 @@
     "title": "Sıkça Sorulan Sorular",
     "description": "Browse through the FAQs to get quick answers or if the answers don’t match your needs feel free to join us on Contentrain's discor server for more help.",
     "buttontext": "Let's discuss your project",
-    "subtitle": "Development Company",
     "buttonlink": "#contact",
     "name": "faq",
     "status": "publish",

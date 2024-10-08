@@ -80,6 +80,7 @@
     "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look.",
     "buttontext": "Let's discuss your project",
     "buttonlink": "#contact",
+    "subtitle": "Development Company",
     "name": "hero",
     "scheduled": false
   },
@@ -90,7 +91,6 @@
     "title": "FAQ's",
     "description": "Browse through the FAQs to get quick answers or if the answers don’t match your needs feel free to join us on Contentrain's discor server for more help.",
     "buttontext": "Let's discuss your project",
-    "subtitle": "Development Company",
     "buttonlink": "#contact",
     "name": "faq",
     "status": "publish",

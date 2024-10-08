@@ -207,7 +207,7 @@ function handleSectionViewed(id: string) {
 <template>
   <div>
     <!-- Home Section -->
-    <div class="bg-[url('/1727359111545_1624068421380_hero.png')]">
+    <div class="bg-[url('/1727359111545_1624068421380_hero.png')] aspect-auto bg-cover bg-center">
       <MolAppSection id="home" @viewed="handleSectionViewed">
         <TemplatesHero />
       </MolAppSection>
