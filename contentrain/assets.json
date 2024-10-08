@@ -68,5 +68,33 @@
       },
       "createdAt": "2024-10-08T05:45:54.789Z"
     }
+  },
+  {
+    "path": "public/1728372344142_Screenshot 2024-09-23 at 16.44.45.png",
+    "mimetype": "image/png",
+    "size": 250322,
+    "alt": "rahmi test",
+    "meta": {
+      "user": {
+        "name": "Rahmi Kostik",
+        "email": "rahmi.kstk@gmail.com",
+        "avatar": "https://lh3.googleusercontent.com/a/AATXAJww1GmKa1SKAiGg5VttUmjbUqC-o_DqmZ8sGumR=s96-c"
+      },
+      "createdAt": "2024-10-08T07:25:46.054Z"
+    }
+  },
+  {
+    "path": "public/1728373760680_pazardan.svg",
+    "mimetype": "image/svg+xml",
+    "size": 34336,
+    "alt": "",
+    "meta": {
+      "user": {
+        "name": "Sercan Oray",
+        "email": "oraysercan@gmail.com",
+        "avatar": "https://firebasestorage.googleapis.com/v0/b/contentrain-bb335.appspot.com/o/profiles%2F1653544895449?alt=media&token=941d8890-696b-4cbb-a2f9-41a3864f978f"
+      },
+      "createdAt": "2024-10-08T07:49:22.289Z"
+    }
   }
 ]
