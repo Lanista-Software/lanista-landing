@@ -77,8 +77,8 @@
     "fieldType": "string"
   },
   {
-    "name": "subtitle",
-    "fieldId": "subtitle",
+    "name": "description",
+    "fieldId": "description",
     "modelId": "services",
     "componentId": "single-line-text",
     "options": {},
