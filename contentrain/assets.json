@@ -68,5 +68,19 @@
       },
       "createdAt": "2024-10-08T05:45:54.789Z"
     }
+  },
+  {
+    "path": "public/1728371385880_Screenshot 2024-09-23 at 16.44.45.png",
+    "mimetype": "image/png",
+    "size": 250322,
+    "alt": "test",
+    "meta": {
+      "user": {
+        "name": "Rahmi Kostik",
+        "email": "rahmi.kstk@gmail.com",
+        "avatar": "https://lh3.googleusercontent.com/a/AATXAJww1GmKa1SKAiGg5VttUmjbUqC-o_DqmZ8sGumR=s96-c"
+      },
+      "createdAt": "2024-10-08T07:09:47.740Z"
+    }
   }
 ]
