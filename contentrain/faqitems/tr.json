@@ -1,0 +1,47 @@
+[
+  {
+    "ID": "a528b01b5689",
+    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "question": "Contentrain nedir?",
+    "answer": "Contentrain, içerik oluşturucuları markalarla buluşturan bir platformdur. Markaların kampanyaları için doğru içerik oluşturucularını bulmalarına yardımcı olur ve içerik oluşturucuların çalışmak istediği doğru markaları bulmalarına yardımcı olur.",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "a528b01b5690",
+    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "question": "Contentrain'e nasıl katılabilirim?",
+    "answer": "Contentrain'e web sitemizde kaydolarak katılabilirsiniz. Kaydolduktan sonra profilinizi oluşturabilir ve kampanyalara başvuruda bulunmaya başlayabilirsiniz.",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "a528b01b5691",
+    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "question": "Contentrain'de nasıl bir kampanya oluşturabilirim?",
+    "answer": "Contentrain'de bir kampanya oluşturmak için bir marka olarak kaydolmanız gerekmektedir. Kaydolduktan sonra kampanyanızı oluşturabilir ve içerik oluşturuculardan başvurular almaya başlayabilirsiniz.",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "a528b01b5692",
+    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "question": "Contentrain'de bir kampanyaya nasıl başvurabilirim?",
+    "answer": "Contentrain'de bir kampanyaya başvurmak için bir içerik oluşturucu olarak kaydolmanız gerekmektedir. Kaydolduktan sonra profilinizi oluşturabilir ve kampanyalara başvuruda bulunmaya başlayabilirsiniz.",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "a528b01b5693",
+    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "question": "Contentrain ile nasıl iletişime geçebilirim?",
+    "answer": "Contentrain ile  [email protected] adresine e-posta göndererek veya discord sunucumuza katılarak iletişime geçebilirsiniz.",
+    "status": "publish",
+    "scheduled": false
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "path": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "mimetype": "image/svg+xml",
+    "size": 5574,
+    "alt": "Kahve dunyasi",
+    "meta": {
+      "user": {
+        "name": "Ahmet Bayhan BAYRAMOĞLU",
+        "email": "bayhanbayramoglu@gmail.com",
+        "avatar": "https://lh3.googleusercontent.com/a-/AOh14GiukvNPwUeS58RDXlPU1MKUfOtsMvGsSHlBfgIsbQ=s96-c"
+      },
+      "createdAt": "2024-09-26T13:58:32.966Z"
+    }
+  },
+  {
+    "path": "public/1727359111545_1724068521380_popile.png",
+    "mimetype": "image/png",
+    "size": 1623,
+    "alt": "Popile logo",
+    "meta": {
+      "user": {
+        "name": "Ahmet Bayhan BAYRAMOĞLU",
+        "email": "bayhanbayramoglu@gmail.com",
+        "avatar": "https://lh3.googleusercontent.com/a-/AOh14GiukvNPwUeS58RDXlPU1MKUfOtsMvGsSHlBfgIsbQ=s96-c"
+      },
+      "createdAt": "2024-09-26T13:58:32.966Z"
+    }
+  },
+  {
+    "path": "public/1727359111545_1624068421380_hero.png",
+    "mimetype": "image/png",
+    "size": 53537,
+    "alt": "hero background",
+    "meta": {
+      "user": {
+        "name": "Ahmet Bayhan BAYRAMOĞLU",
+        "email": "bayhanbayramoglu@gmail.com",
+        "avatar": "https://lh3.googleusercontent.com/a-/AOh14GiukvNPwUeS58RDXlPU1MKUfOtsMvGsSHlBfgIsbQ=s96-c"
+      },
+      "createdAt": "2024-09-26T13:58:32.966Z"
+    }
+  },
+  {
+    "path": "static/1728078857706_pazardan-logo.8e05f16c 1.svg",
+    "mimetype": "image/svg+xml",
+    "size": 34336,
+    "alt": "",
+    "meta": {
+      "user": {
+        "name": "Sercan Oray",
+        "email": "oraysercan@gmail.com",
+        "avatar": "https://firebasestorage.googleapis.com/v0/b/contentrain-bb335.appspot.com/o/profiles%2F1653544895449?alt=media&token=941d8890-696b-4cbb-a2f9-41a3864f978f"
+      },
+      "createdAt": "2024-10-04T21:54:19.495Z"
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "ID": "96c64803d441",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Proje Başlangıcı ve Analizi",
+    "description": "Projenizin gereksinimlerini ve hedeflerini anlamak için tüm ilgili bilgileri toplama. Bu aşama, gelişimimizi vizyonunuzla uyumlu hale getirerek sağlam bir temel oluşturur.",
+    "icon": "ri-search-eye-line",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "96c64803d442",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Tasarım",
+    "description": "Fikirlerinizi uygulamaya hazır ayrıntılı tasarım prototiplerine dönüştürme. Kullanıcı dostu ve görsel olarak çekici arayüzler oluşturmaya odaklanıyoruz.",
+    "icon": "ri-pencil-ruler-line",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "96c64803d443",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Geliştirme Aşaması",
+    "description": "Tasarımı ve stratejiyi işlevsel bir ürüne dönüştürme. Kodlama uzmanlığımız tasarımınızı hayata geçirir, sorunsuz işlevsellik sağlar.",
+    "icon": "ri-code-s-slash-line",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "96c64803d444",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Dağıtım",
+    "description": "Ürünü tanımlamak ve herhangi bir sorunu düzeltmek için ürünü titizlikle test etme. Onaylandıktan sonra ürünü canlı ortama dağıtıyoruz.",
+    "icon": "ri-rocket-line",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "96c64803d445",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Test",
+    "description": "Geliştirici ve İçerik Ekiplerinizi birleştirerek gelişmiş bir içerik yapısı oluşturun.",
+    "icon": "ri-bug-line",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "96c64803d446",
+    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
+    "title": "Yayınlama",
+    "description": "Ürünü canlı ortama dağıtmadan önce tüm bileşenlerin doğru çalıştığından emin olmak için ürünü test etme. Onaylandıktan sonra ürünü canlı ortama dağıtıyoruz.",
+    "icon": "ri-rocket-line",
+    "status": "publish",
+    "scheduled": false
+  }
+]

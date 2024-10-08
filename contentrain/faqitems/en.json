@@ -1,0 +1,47 @@
+[
+  {
+    "ID": "a528b01b5689",
+    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "question": "What is Contentrain?",
+    "answer": "Contentrain is a platform that connects content creators with brands. We help brands to find the right content creators for their campaigns and help content creators to find the right brands to work with.",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "a528b01b5690",
+    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "question": "How can I join Contentrain?",
+    "answer": "You can join Contentrain by signing up on our website. After signing up, you can create your profile and start applying for campaigns.",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "a528b01b5691",
+    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "question": "How can I create a campaign on Contentrain?",
+    "answer": "You can create a campaign on Contentrain by signing up as a brand. After signing up, you can create your campaign and start receiving applications from content creators.",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "a528b01b5692",
+    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "question": "How can I apply for a campaign on Contentrain?",
+    "answer": "You can apply for a campaign on Contentrain by signing up as a content creator. After signing up, you can create your profile and start applying for campaigns.",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "a528b01b5693",
+    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "question": "How can I contact Contentrain?",
+    "answer": "You can contact Contentrain by sending an email to  [email protected] or by joining our discord server.",
+    "status": "publish",
+    "scheduled": false
+  }
+]

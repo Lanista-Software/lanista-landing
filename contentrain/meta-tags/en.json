@@ -1,0 +1,122 @@
+[
+  {
+    "ID": "02135e680b44",
+    "createdAt": "Mon Apr 29 2024 14:35:46 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-04-29T11:37:31.204Z",
+    "name": "ogType",
+    "content": "website",
+    "description": "default",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "196caf507337",
+    "createdAt": "Mon Apr 29 2024 14:37:02 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-04-29T11:37:31.221Z",
+    "name": "ogTitle",
+    "content": "Bloom and Fresh: Online Çiçek, Çikolata ve Hediye Gönder!",
+    "description": "defalt",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "4a02e38c9389",
+    "createdAt": "2024-05-16T11:32:09.000Z",
+    "updatedAt": "2024-09-09T13:48:44.644Z",
+    "status": "publish",
+    "name": "twitter:title",
+    "content": "Bloom and Fresh online sipariş verebilirsin.",
+    "description": "Giriş yap sayfasında kullanılacak test",
+    "scheduled": false
+  },
+  {
+    "ID": "66a7106a5d6a",
+    "createdAt": "Mon Apr 29 2024 14:39:20 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-04-29T11:39:52.021Z",
+    "name": "twitterSiteId",
+    "content": "twitter-site-id",
+    "description": "default",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "6dcd400f4763",
+    "createdAt": "Mon Apr 29 2024 14:38:59 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-04-29T11:39:52.037Z",
+    "name": "twitterDescription",
+    "content": "Çiçek göndermek veya leziz bir çikolata hediye etmek! Online siparişi ile aynı gün teslim eşsiz butik çiçek, çikolata ve hediyeleri sevdiklerinize hediye edin!",
+    "description": "default",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "6ea95fa81d7f",
+    "createdAt": "Mon Apr 29 2024 14:38:15 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-04-29T11:39:52.053Z",
+    "name": "twitterCard",
+    "content": "summary",
+    "description": "default",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "9f3fb78abf01",
+    "createdAt": "Mon Apr 29 2024 14:38:01 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-04-29T11:39:52.064Z",
+    "name": "ogSiteName",
+    "content": "Bloom and Fresh",
+    "description": "default",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "a756a05f093e",
+    "createdAt": "Fri Aug 16 2024 14:38:53 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Fri Aug 16 2024 14:38:53 GMT+0300 (GMT+03:00)",
+    "name": "title",
+    "content": "Title content of lanista",
+    "description": "Sepet title",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "ba01e958b444",
+    "createdAt": "2024-04-25T09:37:26.000Z",
+    "updatedAt": "2024-04-25T09:46:10.945Z",
+    "status": "publish",
+    "name": "description",
+    "content": "Etkileyici bir descriptipn",
+    "description": "Tum sayfalar icin kullanilacak tag",
+    "scheduled": false
+  },
+  {
+    "ID": "ce993b69b8ff",
+    "createdAt": "Mon Apr 29 2024 14:38:28 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-04-29T11:39:52.079Z",
+    "name": "twitterTitle",
+    "content": "Bloom and Fresh: Online Çiçek, Çikolata ve Hediye Gönder!",
+    "description": "default",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "dc2539d45a50",
+    "createdAt": "Mon Apr 29 2024 14:36:05 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-04-29T11:37:31.245Z",
+    "name": "ogImage",
+    "content": "https://onescreen.bloomandfresh.com/assets/images/logo.png",
+    "description": "default",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "de2b9bd58b75",
+    "createdAt": "Mon Apr 29 2024 14:36:39 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-04-29T11:37:31.254Z",
+    "name": "ogDescription",
+    "content": "'Çiçek göndermek veya leziz bir çikolata hediye etmek! Online siparişi ile aynı gün teslim eşsiz butik çiçek, çikolata ve hediyeleri sevdiklerinize hediye edin!",
+    "description": "default",
+    "status": "publish",
+    "scheduled": false
+  }
+]

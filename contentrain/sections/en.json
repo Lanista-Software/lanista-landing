@@ -1,0 +1,111 @@
+[
+  {
+    "ID": "2aa54f9e7eaf",
+    "createdAt": "2024-09-26T18:05:14.000Z",
+    "updatedAt": "2024-10-07T06:49:51.946Z",
+    "status": "changed",
+    "title": "This is test title",
+    "description": "We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo numquam quia quos velit mollitia. Maiores voluptatem dolor aspernatur.",
+    "buttontext": "Let's discuss your project",
+    "buttonlink": "#contact",
+    "name": "services",
+    "scheduled": false
+  },
+  {
+    "ID": "2aa54f9e7eb0",
+    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "title": "Here are the technologies that we have expertise",
+    "description": "We follow a structured approach to ensure your project is delivered on time and within budget. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "buttontext": "View all works",
+    "buttonlink": "#works",
+    "name": "process",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "2aa54f9e7eb1",
+    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "title": "Here are the technologies that we have expertise'",
+    "description": "We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "buttontext": "View all testimonials",
+    "buttonlink": "#testimonials",
+    "name": "testimonials",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "2aa54f9e7eb2",
+    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "title": "Here are the technologies that we have expertise",
+    "description": "We follow a structured approach to ensure your project is delivered on time and within budget. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "buttontext": "View all works",
+    "buttonlink": "#works",
+    "name": "works",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "2aa54f9e7eb3",
+    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "title": "Here are the technologies that we have expertise",
+    "description": "We use the latest technologies to build high-quality digital products.",
+    "buttontext": "View all testimonials",
+    "buttonlink": "#testimonials",
+    "name": "tabs",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "2aa54f9e7x90",
+    "createdAt": "2024-09-26T18:05:14.000Z",
+    "updatedAt": "2024-10-04T07:03:09.568Z",
+    "status": "publish",
+    "title": "Web & Mobile App. Development Solutions",
+    "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look.",
+    "buttontext": "Let's discuss your project",
+    "buttonlink": "#contact",
+    "name": "banner",
+    "scheduled": false
+  },
+  {
+    "ID": "2aa54f9e7xb3",
+    "createdAt": "2024-09-26T18:05:14.000Z",
+    "updatedAt": "2024-10-04T22:07:05.201Z",
+    "status": "publish",
+    "title": "Just trying...",
+    "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look.",
+    "buttontext": "Let's discuss your project",
+    "buttonlink": "#contact",
+    "subtitle": "Development Company",
+    "name": "hero",
+    "scheduled": false
+  },
+  {
+    "ID": "2aa54f9e7xb4",
+    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "title": "FAQ's",
+    "description": "Browse through the FAQs to get quick answers or if the answers don’t match your needs feel free to join us on Contentrain's discor server for more help.",
+    "buttontext": "Let's discuss your project",
+    "buttonlink": "#contact",
+    "name": "faq",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
+    "ID": "2aa54f9e7xb5",
+    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "title": "Drop your message",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius mi amet nunc, urna. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "buttontext": "View all testimonials",
+    "buttonlink": "#testimonials",
+    "name": "contact",
+    "status": "publish",
+    "scheduled": false
+  }
+]
