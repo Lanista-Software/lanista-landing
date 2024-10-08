@@ -9,10 +9,10 @@
   },
   {
     "ID": "5c5955d57da8",
-    "createdAt": "Fri Sep 27 2024 22:58:54 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Fri Sep 27 2024 22:58:54 GMT+0300 (GMT+03:00)",
-    "logo": "public/1727359111545_1724068521380_popile.png",
+    "createdAt": "2024-09-27T19:58:54.000Z",
+    "updatedAt": "2024-10-04T21:54:44.814Z",
     "status": "publish",
+    "logo": "public/1727359111545_1724068521380_popile.png",
     "scheduled": false
   },
   {
@@ -33,10 +33,10 @@
   },
   {
     "ID": "ca7bedf86bfb",
-    "createdAt": "Fri Sep 27 2024 22:59:01 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Fri Sep 27 2024 22:59:01 GMT+0300 (GMT+03:00)",
-    "logo": "public/1727359111545_1724068521380_popile.png",
-    "status": "publish",
+    "createdAt": "2024-09-27T19:59:01.000Z",
+    "updatedAt": "2024-10-07T06:51:50.765Z",
+    "status": "changed",
+    "logo": "public/1727359111545_1724068521380_kahvedunyasi.svg",
     "scheduled": false
   }
 ]

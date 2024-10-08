@@ -73,7 +73,7 @@ function getTabItems(category: string) {
                   <div class="w-48 h-20">
                     <NuxtImg
                       loading="lazy"
-                      class="w-full h-auto rounded-xl object-cover"
+                      class="w-full h-full rounded-xl object-cover"
                       :src="getStaticImagePath(item.image)"
                       :alt="item.title"
                       placeholder

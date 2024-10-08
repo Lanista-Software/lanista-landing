@@ -27,6 +27,7 @@ import type {
   TWorkCategory,
 } from "~/components/templates/TabSection.vue";
 import type { ContactProps, Faq } from "~/components/templates/Contact.vue";
+import useScrollLock from "~/composables/scrollLock";
 
 const { t, locale } = useI18n();
 const metaTags = computed(() =>
@@ -189,21 +190,25 @@ const convertedMetaTags = computed(() =>
 const route = useRoute();
 const router = useRouter();
 
+const { isScrollLocked } = useScrollLock();
+
+
 useSeoMeta({ ...convertedMetaTags.value });
 
 function handleSectionViewed(id: string) {
   const routeHash = route.hash;
   const idWithHash = `#${id}`;
-  if(routeHash !== idWithHash) {
+  if (routeHash !== idWithHash && !isScrollLocked.value) {
     router.push({ hash: idWithHash });
   }
 }
+
 </script>
 <template>
   <div>
     <!-- Home Section -->
-    <div class="bg-[url('/1727359111545_1624068421380_hero.png')]">
-      <MolAppSection id="home">
+    <div class="bg-[url('/1727359111545_1624068421380_hero.png')] aspect-auto bg-cover bg-center">
+      <MolAppSection id="home" @viewed="handleSectionViewed">
         <TemplatesHero />
       </MolAppSection>
     </div>
