@@ -37,14 +37,14 @@
   },
   {
     "ID": "2aa54f9e7eb2",
-    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "title": "Here are the technologies that we have expertise",
-    "description": "We follow a structured approach to ensure your project is delivered on time and within budget. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "createdAt": "2024-09-26T18:05:14.000Z",
+    "updatedAt": "2024-10-08T14:49:15.713Z",
+    "status": "publish",
+    "title": "Our recent client works",
+    "description": "Explore some of our recent projects where we’ve partnered with clients to turn their ideas into successful products. From Web and Mobile Applications to complex digital products, these works showcase our commitment to quality and innovation.",
     "buttontext": "View all works",
     "buttonlink": "#works",
     "name": "works",
-    "status": "publish",
     "scheduled": false
   },
   {
