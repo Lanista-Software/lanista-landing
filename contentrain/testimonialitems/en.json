@@ -24,12 +24,12 @@
   {
     "ID": "db0bc9c19d2b",
     "createdAt": "2024-09-26T18:07:19.000Z",
-    "updatedAt": "2024-09-27T20:00:53.908Z",
-    "status": "publish",
-    "name": "Joshua Doe",
+    "updatedAt": "2024-10-09T09:02:02.927Z",
+    "status": "changed",
+    "name": "Levent Aydın",
     "description": "This company is the best. I am so happy with the result!",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "title": "CEO, Acme Inc.",
+    "image": "public/1728464234681_levent.jpeg",
+    "title": "E-Commerce Executive, Bloom and Fresh",
     "scheduled": false
   }
 ]
