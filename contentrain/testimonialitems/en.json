@@ -13,8 +13,8 @@
   {
     "ID": "db0bc9c19d29",
     "createdAt": "2024-09-26T18:07:19.000Z",
-    "updatedAt": "2024-10-09T09:01:20.711Z",
-    "status": "changed",
+    "updatedAt": "2024-10-09T09:02:07.589Z",
+    "status": "publish",
     "name": "Ege Büyüktaşkın",
     "description": "This company is the best. I am so happy with the result!",
     "image": "public/1728464446315_ege.jpeg",
@@ -24,8 +24,8 @@
   {
     "ID": "db0bc9c19d2b",
     "createdAt": "2024-09-26T18:07:19.000Z",
-    "updatedAt": "2024-10-09T09:02:02.927Z",
-    "status": "changed",
+    "updatedAt": "2024-10-09T09:02:07.593Z",
+    "status": "publish",
     "name": "Levent Aydın",
     "description": "This company is the best. I am so happy with the result!",
     "image": "public/1728464234681_levent.jpeg",
