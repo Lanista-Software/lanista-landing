@@ -25,14 +25,14 @@
   },
   {
     "ID": "2aa54f9e7eb1",
-    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "title": "Here are the technologies that we have expertise'",
-    "description": "We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "createdAt": "2024-09-26T18:05:14.000Z",
+    "updatedAt": "2024-10-09T08:33:37.196Z",
+    "status": "publish",
+    "title": "Trusted by Industry Professionals",
+    "description": "Our focus on quality has earned the trust of industry professionals over time. We deliver tailored solutions that meet the highest standards for our clients.\n",
     "buttontext": "View all testimonials",
     "buttonlink": "#testimonials",
     "name": "testimonials",
-    "status": "publish",
     "scheduled": false
   },
   {
