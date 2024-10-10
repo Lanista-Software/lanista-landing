@@ -1,14 +1,13 @@
 [
   {
     "ID": "9ab7dcca9d1d",
-    "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "category": "cab37361e7e6",
-    "title": "Vue.js",
-    "description": "Vue.js is a progressive JavaScript framework used for building user interfaces, especially single-page applications. It is designed to be incrementally adoptable and integrates well with other libraries.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "createdAt": "2024-09-26T18:06:53.000Z",
+    "updatedAt": "2024-10-10T06:25:04.291Z",
     "status": "publish",
+    "category": "cab37361e7e6",
     "link": "https://vuejs.org/",
+    "description": "Vue.js is a progressive JavaScript framework used for building user interfaces, especially single-page applications. It is designed to be incrementally adoptable and integrates well with other libraries.",
+    "image": "public/1728541493988_vuejs.svg",
     "scheduled": false
   },
   {
