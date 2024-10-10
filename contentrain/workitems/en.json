@@ -2,10 +2,10 @@
   {
     "ID": "8a8044e883e8",
     "createdAt": "2024-09-26T18:08:38.000Z",
-    "updatedAt": "2024-10-10T07:16:36.875Z",
-    "status": "changed",
+    "updatedAt": "2024-10-10T07:17:21.023Z",
+    "status": "publish",
     "title": "Contentrain",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "image": "public/1728544623153_work items.svg",
     "description": "Contentrain is a scalable content management platform combining Git and serverless platforms.\n\nWe planned the entire project workflow, designed the software architecture, developed the frontend and backend, structured the database, and integrated all components before deployment.",
     "category": "cab37361e7e6",
     "link": "https://bloomandfresh.com",
