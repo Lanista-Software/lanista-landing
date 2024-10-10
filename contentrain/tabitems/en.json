@@ -100,14 +100,13 @@
   },
   {
     "ID": "9ab7dcca9d26",
-    "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-09-26T18:06:53.000Z",
+    "updatedAt": "2024-10-10T06:39:49.078Z",
+    "status": "changed",
     "category": "cab37361e7e7",
-    "title": "Koa.js",
-    "description": "Koa.js is a modern web framework for Node.js that aims to be smaller, more expressive, and more robust. It uses async functions to eliminate callbacks and increase error-handling capabilities.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "status": "publish",
     "link": "https://vuejs.org/",
+    "description": "Koa.js is a modern web framework for Node.js that aims to be smaller, more expressive, and more robust. It uses async functions to eliminate callbacks and increase error-handling capabilities.",
+    "image": "public/1728542379255_koajs.svg",
     "scheduled": false
   },
   {
