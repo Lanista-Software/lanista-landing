@@ -56,14 +56,13 @@
   },
   {
     "ID": "9ab7dcca9d22",
-    "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-09-26T18:06:53.000Z",
+    "updatedAt": "2024-10-10T06:29:43.927Z",
+    "status": "changed",
     "category": "cab37361e7e6",
-    "title": "Svelte",
-    "description": "Svelte is a modern JavaScript framework that shifts much of the work to the compile step instead of the runtime. This results in smaller bundle sizes and faster load times, making it an excellent choice for building fast web applications.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "status": "publish",
     "link": "https://vuejs.org/",
+    "description": "Svelte is a modern JavaScript framework that shifts much of the work to the compile step instead of the runtime. This results in smaller bundle sizes and faster load times, making it an excellent choice for building fast web applications.",
+    "image": "public/1728541774910_svelte.svg",
     "scheduled": false
   },
   {
