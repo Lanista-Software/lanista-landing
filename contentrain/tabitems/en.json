@@ -34,14 +34,13 @@
   },
   {
     "ID": "9ab7dcca9d20",
-    "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-09-26T18:06:53.000Z",
+    "updatedAt": "2024-10-10T06:28:54.271Z",
+    "status": "changed",
     "category": "cab37361e7e6",
-    "title": "Next.js",
-    "description": "Next.js is a React framework that enables functionality such as server-side rendering and static website generation for building high-performance, SEO-friendly applications.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "status": "publish",
     "link": "https://nextjs.org/",
+    "description": "Next.js is a React framework that enables functionality such as server-side rendering and static website generation for building high-performance, SEO-friendly applications.",
+    "image": "public/1728541725437_next.svg",
     "scheduled": false
   },
   {
