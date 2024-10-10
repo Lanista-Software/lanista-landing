@@ -23,14 +23,13 @@
   },
   {
     "ID": "9ab7dcca9d1f",
-    "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-09-26T18:06:53.000Z",
+    "updatedAt": "2024-10-10T06:28:32.876Z",
+    "status": "changed",
     "category": "cab37361e7e6",
-    "title": "Nuxt.js",
-    "description": "Nuxt.js is a framework built on top of Vue.js that simplifies the development of server-rendered applications and static websites. It offers powerful features like SSR, static site generation, and improved SEO support.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "status": "publish",
     "link": "https://nuxtjs.com/",
+    "description": "Nuxt.js is a framework built on top of Vue.js that simplifies the development of server-rendered applications and static websites. It offers powerful features like SSR, static site generation, and improved SEO support.",
+    "image": "public/1728541702569_nuxt.svg",
     "scheduled": false
   },
   {
