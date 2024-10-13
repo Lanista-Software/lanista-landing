@@ -88,5 +88,27 @@
       }
     },
     "fieldType": "string"
+  },
+  {
+    "name": "Order",
+    "fieldId": "order",
+    "modelId": "faqitems",
+    "componentId": "integer",
+    "options": {
+      "default-value": {
+        "value": true,
+        "form": {
+          "integer": {
+            "value": 0
+          }
+        }
+      }
+    },
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "number"
   }
 ]
