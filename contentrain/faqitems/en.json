@@ -22,10 +22,11 @@
   {
     "ID": "a528b01b5690",
     "createdAt": "2024-09-26T13:57:30.000Z",
-    "updatedAt": "2024-10-13T09:03:36.801Z",
-    "status": "publish",
+    "updatedAt": "2024-10-13T09:25:50.766Z",
+    "status": "changed",
     "question": "How does the software product development process work?",
     "answer": "We begin by understanding your goals, then research, plan and create a prototype. After approval, we proceed with development, testing and deployment, keeping you involved throughout.",
+    "order": 3,
     "scheduled": false
   },
   {
