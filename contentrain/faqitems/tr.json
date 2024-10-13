@@ -62,9 +62,9 @@
   {
     "ID": "a528b01b5691",
     "createdAt": "2024-09-26T13:57:30.000Z",
-    "updatedAt": "2024-10-13T09:26:45.418Z",
-    "status": "changed",
-    "question": "Contentrain'de nasıl bir kampanya oluşturabilirim?",
+    "updatedAt": "2024-10-13T11:17:21.433Z",
+    "status": "publish",
+    "question": "Bir yazılım ürününü geliştirmek ne kadar zaman alır?",
     "answer": "Contentrain'de bir kampanya oluşturmak için bir marka olarak kaydolmanız gerekmektedir. Kaydolduktan sonra kampanyanızı oluşturabilir ve içerik oluşturuculardan başvurular almaya başlayabilirsiniz.",
     "order": 4,
     "scheduled": false
