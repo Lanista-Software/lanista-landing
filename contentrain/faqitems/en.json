@@ -11,12 +11,12 @@
   },
   {
     "ID": "7d33292fa865",
-    "createdAt": "Sun Oct 13 2024 13:16:28 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Sun Oct 13 2024 13:16:28 GMT+0300 (GMT+03:00)",
-    "question": "Can you integrate 3rd party app services to my existing project?",
+    "createdAt": "2024-10-13T10:16:28.000Z",
+    "updatedAt": "2024-10-13T11:03:34.276Z",
+    "status": "publish",
+    "question": "Can you integrate 3rd party app services into my existing project?",
     "answer": "Our team is skilled in integrating 3rd party solutions with existing systems. Whether it’s APIs or 3rd platforms we provide seamless integrations to enhance your digital ecosystem.",
     "order": 10,
-    "status": "publish",
     "scheduled": false
   },
   {
