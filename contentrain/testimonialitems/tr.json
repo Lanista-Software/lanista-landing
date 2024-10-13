@@ -23,13 +23,13 @@
   },
   {
     "ID": "db0bc9c19d2b",
-    "createdAt": "Thu Sep 26 2024 21:07:19 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:07:19 GMT+0300 (GMT+03:00)",
-    "name": "Jane Doe",
+    "createdAt": "2024-09-26T18:07:19.000Z",
+    "updatedAt": "2024-10-13T11:20:22.606Z",
+    "status": "changed",
+    "name": "Murat Sus",
     "description": "Bu şirket en iyisi. Sonuçtan çok mutluyum!",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "title": "CEO, Acme Inc.",
-    "status": "publish",
+    "image": "public/1728464234681_levent.jpeg",
+    "title": "Marketing Exe., Bloom and Fresh",
     "scheduled": false
   }
 ]
