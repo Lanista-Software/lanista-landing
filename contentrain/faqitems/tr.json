@@ -1,12 +1,12 @@
 [
   {
     "ID": "0c1b5726fbf6",
-    "createdAt": "Sun Oct 13 2024 12:47:51 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Sun Oct 13 2024 12:47:51 GMT+0300 (GMT+03:00)",
-    "question": "Proje tesliminden sonra teknik destek ve bakım hizmeti sunuyor musunuz?",
-    "answer": "Evet canım",
-    "order": 7,
+    "createdAt": "2024-10-13T09:47:51.000Z",
+    "updatedAt": "2024-10-13T10:53:47.058Z",
     "status": "publish",
+    "question": "Proje tesliminden sonra teknik destek ve bakım hizmeti sunuyor musunuz?",
+    "answer": "Evet, ürününüzün sorunsuz çalışmasını sağlamak için teknik destek ve bakım hizmetleri sağlıyoruz. Desteğimiz hata düzeltmeleri, güncellemeler ve özellik geliştirmelerini içeriyor.",
+    "order": 7,
     "scheduled": false
   },
   {
