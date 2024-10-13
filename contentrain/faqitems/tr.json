@@ -22,10 +22,10 @@
   {
     "ID": "951c49ca05b9",
     "createdAt": "2024-10-10T06:20:32.000Z",
-    "updatedAt": "2024-10-13T09:25:31.743Z",
-    "status": "changed",
-    "question": "Deneme",
-    "answer": "yanılma",
+    "updatedAt": "2024-10-13T10:30:59.426Z",
+    "status": "publish",
+    "question": "Lanista Yazılım'ın uzmanlık alanları nelerdir?",
+    "answer": "Lanista Yazılım olarak, farklı işletmeler için web ve mobil uygulamalar geliştiriyoruz. Uçtan uca ürün geliştirme konusundaki uzmanlığımızla, startuplar için MVP’ler geliştiriyoruz.",
     "order": 1,
     "scheduled": false
   },
