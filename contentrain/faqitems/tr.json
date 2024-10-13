@@ -52,10 +52,10 @@
   {
     "ID": "a528b01b5690",
     "createdAt": "2024-09-26T13:57:30.000Z",
-    "updatedAt": "2024-10-13T09:25:50.768Z",
-    "status": "changed",
-    "question": "Contentrain'e nasıl katılabilirim?",
-    "answer": "Contentrain'e web sitemizde kaydolarak katılabilirsiniz. Kaydolduktan sonra profilinizi oluşturabilir ve kampanyalara başvuruda bulunmaya başlayabilirsiniz.",
+    "updatedAt": "2024-10-13T10:40:27.794Z",
+    "status": "publish",
+    "question": "Yazılım ürünü geliştirme süreci nasıl işliyor?",
+    "answer": "Hedeflerinizi anlayarak başlıyoruz, ardından araştırma, planlama ve prototip oluşturma aşamalarına geçiyoruz. Prototip onayı sonrasında ürün geliştirme sürecine başlıyoruz. Ürünün test süreçlerine sizi de dahil ederek, ürünün sorunsuz versiyonunu yayına alıyoruz.",
     "order": 3,
     "scheduled": false
   },
