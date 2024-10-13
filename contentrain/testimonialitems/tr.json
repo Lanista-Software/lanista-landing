@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "ID": "89ae53eb8370",
+    "createdAt": "Sun Oct 13 2024 14:24:25 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Sun Oct 13 2024 14:24:25 GMT+0300 (GMT+03:00)",
+    "name": "Ertuğrul Uçar",
+    "description": "aaaa",
+    "image": "public/1728463995414_ertugrul.jpeg",
+    "title": "CEO, Popile",
+    "status": "publish",
+    "scheduled": false
+  }
+]
