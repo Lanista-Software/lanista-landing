@@ -62,10 +62,10 @@
   {
     "ID": "a528b01b5691",
     "createdAt": "2024-09-26T13:57:30.000Z",
-    "updatedAt": "2024-10-13T09:27:06.102Z",
+    "updatedAt": "2024-10-13T11:17:21.428Z",
     "status": "publish",
     "question": "How long does it take to develop a software product?",
-    "answer": "The development timeline depends on the complexity and scope of the project. After analyzing your goals, we provide a detailed timeline before starting the project.",
+    "answer": "Geliştirme zaman çizelgesi projenin karmaşıklığına ve kapsamına bağlıdır. Hedeflerinizi analiz ettikten sonra, projeye başlamadan önce size ayrıntılı bir zaman çizelgesi sunuyoruz.",
     "order": 4,
     "scheduled": false
   },
