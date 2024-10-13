@@ -12,10 +12,11 @@
   {
     "ID": "a528b01b5689",
     "createdAt": "2024-09-26T13:57:30.000Z",
-    "updatedAt": "2024-10-13T08:58:17.747Z",
-    "status": "publish",
+    "updatedAt": "2024-10-13T09:25:41.045Z",
+    "status": "changed",
     "question": "What industries does Lanista Software serve?",
     "answer": "We develop high-performance software solutions for industries like saas, e-commerce, healthcare, finance, education, retail, media, manufacturing, automotive, and HR services.",
+    "order": 2,
     "scheduled": false
   },
   {
