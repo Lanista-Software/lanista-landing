@@ -31,11 +31,12 @@
   },
   {
     "ID": "a528b01b5691",
-    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
-    "question": "How can I create a campaign on Contentrain?",
-    "answer": "You can create a campaign on Contentrain by signing up as a brand. After signing up, you can create your campaign and start receiving applications from content creators.",
-    "status": "publish",
+    "createdAt": "2024-09-26T13:57:30.000Z",
+    "updatedAt": "2024-10-13T09:26:45.413Z",
+    "status": "changed",
+    "question": "How long does it take to develop a software product?",
+    "answer": "The development timeline depends on the complexity and scope of the project. After analyzing your goals, we provide a detailed timeline before starting the project.",
+    "order": 4,
     "scheduled": false
   },
   {
