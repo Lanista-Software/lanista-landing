@@ -91,12 +91,12 @@
   },
   {
     "ID": "bdf371e875c4",
-    "createdAt": "Sun Oct 13 2024 12:59:04 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Sun Oct 13 2024 12:59:04 GMT+0300 (GMT+03:00)",
-    "question": "What is your pricing model?",
-    "answer": "We offer flexible pricing based on your project needs, including fixed-price contracts for well-defined projects or hourly rates for more dynamic ones.",
-    "order": 8,
+    "createdAt": "2024-10-13T09:59:04.000Z",
+    "updatedAt": "2024-10-13T10:58:06.404Z",
     "status": "publish",
+    "question": "Fiyatlandırma modeliniz nedir?",
+    "answer": "Projenizin ihtiyaçlarına göre esnek fiyatlandırma sunuyoruz; kapsam detayları belirli projelerde sabit fiyat, daha dinamik projelerde ise saatlik fiyatlandırma seçenekleri sunuyoruz.",
+    "order": 8,
     "scheduled": false
   },
   {
