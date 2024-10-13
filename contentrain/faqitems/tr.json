@@ -51,11 +51,12 @@
   },
   {
     "ID": "a528b01b5693",
-    "createdAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 16:57:30 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-09-26T13:57:30.000Z",
+    "updatedAt": "2024-10-13T09:45:27.269Z",
+    "status": "publish",
     "question": "Contentrain ile nasıl iletişime geçebilirim?",
     "answer": "Contentrain ile  [email protected] adresine e-posta göndererek veya discord sunucumuza katılarak iletişime geçebilirsiniz.",
-    "status": "publish",
+    "order": 6,
     "scheduled": false
   }
 ]
