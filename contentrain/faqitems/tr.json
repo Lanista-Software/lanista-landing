@@ -98,5 +98,15 @@
     "order": 8,
     "status": "publish",
     "scheduled": false
+  },
+  {
+    "ID": "c7ea2d6becc4",
+    "createdAt": "Sun Oct 13 2024 13:22:27 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Sun Oct 13 2024 13:22:27 GMT+0300 (GMT+03:00)",
+    "question": "Why do I need custom software?",
+    "answer": "Custom software meets your business’s unique requirements. It offers flexibility, scalability, and seamless integration with existing processes, providing better user experience.",
+    "order": 11,
+    "status": "publish",
+    "scheduled": false
   }
 ]
