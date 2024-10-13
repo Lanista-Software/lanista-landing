@@ -2,10 +2,11 @@
   {
     "ID": "951c49ca05b9",
     "createdAt": "2024-10-10T06:20:32.000Z",
-    "updatedAt": "2024-10-13T08:46:03.004Z",
-    "status": "publish",
+    "updatedAt": "2024-10-13T09:25:31.740Z",
+    "status": "changed",
     "question": "What does Lanista Software specialize in?",
     "answer": "At Lanista Software, we develop custom web and mobile apps for different businesses. With expertise in end-to-end product development, we also help startups to create solid MVPs.",
+    "order": 1,
     "scheduled": false
   },
   {
