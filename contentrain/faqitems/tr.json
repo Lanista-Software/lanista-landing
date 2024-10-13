@@ -42,10 +42,10 @@
   {
     "ID": "a528b01b5689",
     "createdAt": "2024-09-26T13:57:30.000Z",
-    "updatedAt": "2024-10-13T09:25:41.048Z",
-    "status": "changed",
-    "question": "Contentrain nedir?",
-    "answer": "Contentrain, içerik oluşturucuları markalarla buluşturan bir platformdur. Markaların kampanyaları için doğru içerik oluşturucularını bulmalarına yardımcı olur ve içerik oluşturucuların çalışmak istediği doğru markaları bulmalarına yardımcı olur.",
+    "updatedAt": "2024-10-13T11:13:27.768Z",
+    "status": "publish",
+    "question": "Lanista Yazılım hangi sektörlere hizmet veriyor?",
+    "answer": "SaaS, e-ticaret, sağlık, finans, eğitim, perakende, medya, üretim, otomotiv ve insan kaynakları gibi sektörler için yüksek performanslı yazılım çözümleri sunuyoruz.",
     "order": 2,
     "scheduled": false
   },
