@@ -1,12 +1,12 @@
 [
   {
     "ID": "50d81f2a3baf",
-    "createdAt": "Mon Oct 14 2024 13:32:18 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Mon Oct 14 2024 13:32:18 GMT+0300 (GMT+03:00)",
-    "title": "Frontend Development",
-    "description": "aaaa",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "status": "draft",
+    "createdAt": "2024-10-14T10:32:18.000Z",
+    "updatedAt": "2024-10-14T11:04:47.089Z",
+    "status": "publish",
+    "title": "Web Uygulama Geliştirme",
+    "description": "Konseptten lansmana kadar güvenli, ölçeklenebilir ve iş ihtiyaçlarınızı karşılayacak şekilde tasarlanmış özel web uygulamaları geliştiriyoruz.",
+    "image": "public/1728902911683_dikdortgen.svg",
     "scheduled": false
   },
   {
