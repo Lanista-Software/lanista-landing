@@ -22,10 +22,10 @@
   {
     "ID": "96c64803d443",
     "createdAt": "2024-09-26T13:59:00.000Z",
-    "updatedAt": "2024-10-14T07:09:27.007Z",
+    "updatedAt": "2024-10-14T07:15:13.119Z",
     "status": "publish",
     "title": "Development Stage",
-    "description": "At this stage, we transform designs into fully functional software, integrating key features and making sure the system is stable and secure.",
+    "description": "We transform designs into fully functional software, integrating key features and making sure the system is ready for testing.",
     "icon": "ri-code-s-slash-line",
     "scheduled": false
   },
