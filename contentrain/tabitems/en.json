@@ -122,14 +122,13 @@
   },
   {
     "ID": "9ab7dcca9d28",
-    "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "category": "cab37361e7e8",
-    "title": "React Native",
-    "description": "React Native is a framework for building native mobile applications using JavaScript and React. It allows you to write once and run on multiple platforms, saving time and effort in developing mobile apps.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "createdAt": "2024-09-26T18:06:53.000Z",
+    "updatedAt": "2024-10-14T09:41:55.242Z",
     "status": "publish",
-    "link": "https://vuejs.org/",
+    "category": "cab37361e7e8",
+    "link": "https://www.figma.com/",
+    "description": "Figma is the leading collaborative design tool for building meaningful products. Seamlessly design, prototype, develop, and collect feedback in a single platform.",
+    "image": "public/1728898720249_figma.svg",
     "scheduled": false
   },
   {
