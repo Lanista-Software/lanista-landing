@@ -133,14 +133,13 @@
   },
   {
     "ID": "9ab7dcca9d29",
-    "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-09-26T18:06:53.000Z",
+    "updatedAt": "2024-10-14T09:44:38.315Z",
+    "status": "changed",
     "category": "cab37361e7e8",
-    "title": "Flutter",
-    "description": "Flutter is Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "status": "publish",
-    "link": "https://vuejs.org/",
+    "link": "https://www.sketch.com/",
+    "description": "Sketch is a design software suite that helps you create beautiful products at scale, whether you’re working alone or collaboratively.",
+    "image": "public/1728898732629_sketch.svg",
     "scheduled": false
   }
 ]
