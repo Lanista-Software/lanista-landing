@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   id: string;
+  customPadding?:string
 }>();
 const emit = defineEmits<{ viewed: [id: string] }>();
 
@@ -32,7 +33,7 @@ onBeforeUnmount(() => {
 
 <template>
   <section ref="el" :id="id">
-    <AtomsContainer class="pt-28 pb-40 flex items-center justify-center">
+    <AtomsContainer class="flex items-center justify-center" :class="customPadding ? customPadding : 'pt-28 pb-40'">
       <slot></slot>
     </AtomsContainer>
   </section>

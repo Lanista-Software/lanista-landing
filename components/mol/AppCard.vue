@@ -24,7 +24,7 @@ defineProps<{
         <NuxtImg
           v-if="square"
           loading="lazy"
-          class="w-full rounded-xl h-full object-cover aspect-square md:aspect-auto lg:aspect-square"
+          class="w-full h-full object-cover rounded-xl aspect-square md:aspect-auto lg:aspect-square"
           :src="getStaticImagePath(item.image)"
           :alt="getImageAlt(item.image)"
           placeholder
@@ -35,7 +35,7 @@ defineProps<{
         <NuxtImg
           v-else
           loading="lazy"
-          class="w-full rounded-xl h-full object-cover aspect-square md:aspect-auto lg:aspect-[2/1]"
+          class="w-full h-full object-cover rounded-xl aspect-square md:aspect-auto lg:aspect-[2/1]"
           :src="getStaticImagePath(item.image)"
           :alt="getImageAlt(item.image)"
           placeholder
@@ -51,6 +51,7 @@ defineProps<{
           </template>
         </LuiAvatar>
       </div>
+
       <h2 class="text-xl font-bold font-space mt-8 text-heading-text">
         {{ item.title }}
       </h2>
