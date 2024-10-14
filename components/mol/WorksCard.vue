@@ -53,7 +53,7 @@ defineProps<{
         class="w-full h-auto rounded-3xl overflow-hidden"
       >
         <NuxtImg
-          class="w-full rounded-xl h-full object-cover aspect-[2/1]"
+          class="w-full h-full object-cover aspect-[2/1]"
           :src="getStaticImagePath(item.image)"
           :alt="getImageAlt(item.image)"
           placeholder

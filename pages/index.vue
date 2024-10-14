@@ -192,7 +192,6 @@ const router = useRouter();
 
 const { isScrollLocked } = useScrollLock();
 
-
 useSeoMeta({ ...convertedMetaTags.value });
 
 function handleSectionViewed(id: string) {
@@ -202,12 +201,13 @@ function handleSectionViewed(id: string) {
     router.push({ hash: idWithHash });
   }
 }
-
 </script>
 <template>
   <div>
     <!-- Home Section -->
-    <div class="bg-[url('/1727359111545_1624068421380_hero.png')] aspect-auto bg-cover bg-center">
+    <div
+      class="bg-[url('/1727359111545_1624068421380_hero.png')] aspect-auto bg-cover bg-center"
+    >
       <MolAppSection id="home" @viewed="handleSectionViewed">
         <TemplatesHero />
       </MolAppSection>
@@ -239,9 +239,6 @@ function handleSectionViewed(id: string) {
     <!-- Testimonials Section -->
     <MolAppSection id="testimonials">
       <TemplatesCardSection v-bind="testimonialsSectionProps">
-        <template #button>
-          <span></span>
-        </template>
       </TemplatesCardSection>
     </MolAppSection>
     <MolAppSection id="banner">
@@ -252,7 +249,7 @@ function handleSectionViewed(id: string) {
         :buttonLink="bannerSection.buttonLink"
       />
     </MolAppSection>
-    <MolAppSection id="contact" class="bg-secondary-50">
+    <MolAppSection id="contact" class="bg-secondary-50" @viewed="handleSectionViewed">
       <TemplatesContact v-bind="contactAndFaqSectionProps" />
     </MolAppSection>
   </div>

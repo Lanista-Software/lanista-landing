@@ -1418,7 +1418,17 @@
   resolved "https://registry.yarnpkg.com/@lui-ui/lui-tailwindcss/-/lui-tailwindcss-0.1.1.tgz#58a40d8ccea559a1df47b33e66a5e102f4d1c010"
   integrity sha512-eywZnt8xhC2lns6+k6IUh22VdSu568yir2lwN2tQHeiMJABqS0koMnhf2o+vixj9wKOmfdDXy/JOZTG1w/z3Lg==
 
-"@lui-ui/lui-vue@^1.0.11", "@lui-ui/lui-vue@latest":
+"@lui-ui/lui-vue@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@lui-ui/lui-vue/-/lui-vue-1.0.12.tgz#bdd35b33077b0be5f0d0be47e2214f83f8516b85"
+  integrity sha512-Arothhi2LkvOc240RSvNsLB0jyro8yvDh0AjhdReIMwUnXUnQsmEnD5M+Za7t1HalQflVMTTI48k4neWHnA/Qw==
+  dependencies:
+    "@floating-ui/vue" "^1.0.6"
+    "@vueuse/integrations" "^10.3.0"
+    focus-trap "^7.5.2"
+    unplugin-vue-macros "^2.7.3"
+
+"@lui-ui/lui-vue@latest":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@lui-ui/lui-vue/-/lui-vue-1.0.11.tgz#6aacac8a399b18b80223228130397907ccbd9b05"
   integrity sha512-L8IR0tA9M8UZbvhJKq+/0+x4bn84EAQCeSBHNnGo/To6zDcf6RTFqxPRaVipkVJzYzMH6XpVFlV4cHpTz48BYw==
@@ -5310,7 +5320,7 @@ jackspeak@2.1.1, jackspeak@^3.1.2:
   optionalDependencies:
     "@pkgjs/parseargs" "^0.11.0"
 
-"jiti-v1@npm:jiti@^1.21.6", jiti@^1.21.0, jiti@^1.21.6:
+"jiti-v1@npm:jiti@^1.21.6":
   version "1.21.6"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.21.6.tgz#6c7f7398dd4b3142767f9a168af2f317a428d268"
   integrity sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==
@@ -5319,6 +5329,11 @@ jiti@2.0.0-beta.3:
   version "2.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-2.0.0-beta.3.tgz#8b97dcb268a7409c3fbda9242453486564a11c36"
   integrity sha512-pmfRbVRs/7khFrSAYnSiJ8C0D5GvzkE4Ey2pAvUcJsw1ly/p+7ut27jbJrjY79BpAJQJ4gXYFtK6d1Aub+9baQ==
+
+jiti@^1.21.0, jiti@^1.21.6:
+  version "1.21.6"
+  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.21.6.tgz#6c7f7398dd4b3142767f9a168af2f317a428d268"
+  integrity sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==
 
 js-tokens@^4.0.0:
   version "4.0.0"

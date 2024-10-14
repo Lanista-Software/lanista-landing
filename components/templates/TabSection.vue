@@ -45,10 +45,10 @@ function getTabItems(category: string) {
 <template>
   <MolAppSectionLayout :title="title" :description="description">
     <div class="w-full">
-      <div v-if="filteredCategories.length" class="overflow-x-scroll">
+      <div v-if="filteredCategories.length" class="w-full overflow-x-scroll">
         <LuiTabGroup :selected-index="0">
           <!-- Tab Buttons -->
-          <LuiTabButtons align-tabs="center" class="w-max mx-auto">
+          <LuiTabButtons align-tabs="center">
             <LuiTabButton
               v-for="(category, index) in filteredCategories"
               :key="category.ID"
