@@ -22,9 +22,9 @@
   {
     "ID": "d00761480436",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-14T10:33:42.785Z",
-    "status": "publish",
-    "title": "Web App. Development",
+    "updatedAt": "2024-10-14T10:38:05.202Z",
+    "status": "changed",
+    "title": "MVP Development",
     "description": "We create high quality dijital products for everyone.",
     "image": "public/1728366352762_frontend.png",
     "scheduled": false
