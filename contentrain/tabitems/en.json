@@ -145,8 +145,8 @@
   {
     "ID": "9ab7dcca9d29",
     "createdAt": "2024-09-26T18:06:53.000Z",
-    "updatedAt": "2024-10-14T09:44:38.315Z",
-    "status": "changed",
+    "updatedAt": "2024-10-14T09:52:56.665Z",
+    "status": "publish",
     "category": "cab37361e7e8",
     "link": "https://www.sketch.com/",
     "description": "Sketch is a design software suite that helps you create beautiful products at scale, whether you’re working alone or collaboratively.",
@@ -156,12 +156,12 @@
   {
     "ID": "bc311eb63570",
     "createdAt": "Mon Oct 14 2024 12:44:44 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Mon Oct 14 2024 12:44:44 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-10-14T09:52:56.668Z",
     "category": "cab37361e7e8",
     "link": "https://www.adobe.com/tr/products/illustrator.html",
     "description": "Adobe Illustrator is a vector-based graphic design software developed by Adobe, primarily used for creating scalable graphics such as logos, illustrations, icons, typography, and complex illustrations.",
     "image": "public/1728898754502_Illustrator.svg",
-    "status": "draft",
+    "status": "publish",
     "scheduled": false
   }
 ]
