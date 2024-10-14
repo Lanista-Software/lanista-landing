@@ -51,12 +51,12 @@
   },
   {
     "ID": "96c64803d446",
-    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
-    "title": "Publishing",
+    "createdAt": "2024-09-26T13:59:00.000Z",
+    "updatedAt": "2024-10-14T07:10:34.301Z",
+    "status": "changed",
+    "title": "Support & Maintenance",
     "description": "Testing the product to ensure all components are working correctly before deploying the product to the live environment. Once approved, we deploy the product to the live environment.",
     "icon": "ri-rocket-line",
-    "status": "publish",
     "scheduled": false
   }
 ]
