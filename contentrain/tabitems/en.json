@@ -2,12 +2,12 @@
   {
     "ID": "3442ac47e4cc",
     "createdAt": "Mon Oct 14 2024 12:50:29 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Mon Oct 14 2024 12:50:29 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-10-14T09:52:59.521Z",
     "category": "cab37361e7e8",
     "link": "https://www.adobe.com/tr/products/photoshop.html",
     "description": "Adobe Photoshop is a widely used graphic design and image editing software developed by Adobe. It is primarily used for editing photos, creating digital artwork, and designing graphics for both print and web.",
     "image": "public/1728898765927_Photoshop.svg",
-    "status": "draft",
+    "status": "publish",
     "scheduled": false
   },
   {
