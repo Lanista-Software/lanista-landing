@@ -32,10 +32,10 @@
   {
     "ID": "96c64803d444",
     "createdAt": "2024-09-26T13:59:00.000Z",
-    "updatedAt": "2024-10-14T07:18:37.403Z",
-    "status": "publish",
+    "updatedAt": "2024-10-14T07:20:35.596Z",
+    "status": "changed",
     "title": "Testing",
-    "description": "We thoroughly test the product to identify and resolve any issues with the client. Once approved, we deploy it to the live environment.",
+    "description": "We test the project to identify and resolve any issues with the client. Once approved, we deploy it to the live environment.",
     "icon": "ri-test-tube-line",
     "scheduled": false
   },
