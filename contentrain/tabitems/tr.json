@@ -154,5 +154,16 @@
     "link": "https://vuejs.org/",
     "scheduled": false,
     "image": "public/1727359111545_1724068521380_kahvedunyasi.svg"
+  },
+  {
+    "ID": "bc311eb63570",
+    "createdAt": "Mon Oct 14 2024 12:44:44 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Mon Oct 14 2024 12:44:44 GMT+0300 (GMT+03:00)",
+    "category": "cab37361e7e8",
+    "link": "https://www.adobe.com/tr/products/illustrator.html",
+    "description": "Adobe Illustrator, Adobe tarafından geliştirilen vektör tabanlı bir grafik tasarım yazılımıdır ve öncelikle logolar, illüstrasyonlar, ikonlar, tipografi ve karmaşık illüstrasyonlar gibi ölçeklenebilir grafikler oluşturmak için kullanılır.",
+    "image": "public/1728898754502_Illustrator.svg",
+    "status": "draft",
+    "scheduled": false
   }
 ]
