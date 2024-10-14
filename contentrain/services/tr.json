@@ -31,12 +31,12 @@
   },
   {
     "ID": "d00761480437",
-    "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
-    "title": "Mobil Geliştirme",
-    "description": "Herkes için yüksek kaliteli dijital ürünler oluşturuyoruz.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "createdAt": "2024-09-26T18:04:41.000Z",
+    "updatedAt": "2024-10-14T11:50:10.707Z",
     "status": "publish",
+    "title": "Saas Platform Geliştirme",
+    "description": "Uçtan uca özel Saas platform geliştirme çözümleri sağlıyoruz.",
+    "image": "public/1728902854805_kare.svg",
     "scheduled": false
   },
   {
