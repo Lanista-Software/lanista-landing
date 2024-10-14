@@ -446,5 +446,19 @@
       },
       "createdAt": "2024-10-10T07:51:56.379Z"
     }
+  },
+  {
+    "path": "public/1728898720249_figma.svg",
+    "mimetype": "image/svg+xml",
+    "size": 5248,
+    "alt": "",
+    "meta": {
+      "user": {
+        "name": "Sercan Oray",
+        "email": "oraysercan@gmail.com",
+        "avatar": "https://firebasestorage.googleapis.com/v0/b/contentrain-bb335.appspot.com/o/profiles%2F1653544895449?alt=media&token=941d8890-696b-4cbb-a2f9-41a3864f978f"
+      },
+      "createdAt": "2024-10-14T09:38:41.904Z"
+    }
   }
 ]
