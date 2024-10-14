@@ -41,12 +41,12 @@
   },
   {
     "ID": "d00761480440",
-    "createdAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:04:41 GMT+0300 (GMT+03:00)",
-    "title": "Social Media Marketing",
+    "createdAt": "2024-09-26T18:04:41.000Z",
+    "updatedAt": "2024-10-14T10:32:16.385Z",
+    "status": "changed",
+    "title": "API integrations",
     "description": "We create high quality  dijital products for everyone.",
     "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "status": "publish",
     "scheduled": false
   }
 ]
