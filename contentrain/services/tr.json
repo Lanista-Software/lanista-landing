@@ -22,10 +22,10 @@
   {
     "ID": "d00761480436",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-14T11:39:24.487Z",
+    "updatedAt": "2024-10-14T11:43:45.069Z",
     "status": "publish",
     "title": "MVP Geliştirme",
-    "description": "Deneyimli bir ekiple fikirlerini hayata geçirmelerine yardımcı olarak, yeni başlayan şirketlere MVP geliştirme hizmetleri sunuyoruz.",
+    "description": "Startuplara, fikirlerini hayata geçirebilmeleri için deneyimli bir ekiple birlikte MVP geliştirme hizmeti sunuyoruz.",
     "image": "public/1728902854805_kare.svg",
     "scheduled": false
   },
