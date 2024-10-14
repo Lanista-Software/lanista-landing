@@ -1,5 +1,16 @@
 [
   {
+    "ID": "3442ac47e4cc",
+    "createdAt": "Mon Oct 14 2024 12:50:29 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Mon Oct 14 2024 12:50:29 GMT+0300 (GMT+03:00)",
+    "category": "cab37361e7e8",
+    "link": "https://www.adobe.com/tr/products/photoshop.html",
+    "description": "Adobe Photoshop, Adobe tarafından geliştirilen ve yaygın olarak kullanılan bir grafik tasarım ve görüntü düzenleme yazılımıdır. Başlıca fotoğraf düzenleme, dijital sanat eseri oluşturma ve hem baskı hem de web için grafik tasarımı amacıyla kullanılır.",
+    "image": "public/1728898765927_Photoshop.svg",
+    "status": "draft",
+    "scheduled": false
+  },
+  {
     "ID": "9ab7dcca9d1d",
     "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
     "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
