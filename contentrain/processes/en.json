@@ -21,12 +21,12 @@
   },
   {
     "ID": "96c64803d443",
-    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
-    "title": "Development Stage",
-    "description": "Transforming the design and strategy into a functional product. Our coding expertise brings your design to life, ensuring seamless functionality.",
-    "icon": "ri-code-s-slash-line",
+    "createdAt": "2024-09-26T13:59:00.000Z",
+    "updatedAt": "2024-10-14T07:09:27.007Z",
     "status": "publish",
+    "title": "Development Stage",
+    "description": "At this stage, we transform designs into fully functional software, integrating key features and making sure the system is stable and secure.",
+    "icon": "ri-code-s-slash-line",
     "scheduled": false
   },
   {
