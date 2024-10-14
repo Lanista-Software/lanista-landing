@@ -237,8 +237,11 @@ function handleSectionViewed(id: string) {
       </TemplatesCardSection>
     </MolAppSection>
     <!-- Testimonials Section -->
-    <MolAppSection id="testimonials">
+    <MolAppSection id="testimonials" custom-padding="pt-28 pb-0">
       <TemplatesCardSection v-bind="testimonialsSectionProps">
+        <template #button>
+          <span></span>
+        </template>
       </TemplatesCardSection>
     </MolAppSection>
     <MolAppSection id="banner">
@@ -249,7 +252,7 @@ function handleSectionViewed(id: string) {
         :buttonLink="bannerSection.buttonLink"
       />
     </MolAppSection>
-    <MolAppSection id="contact" class="bg-secondary-50" @viewed="handleSectionViewed">
+    <MolAppSection id="contact" class="bg-secondary-50" custom-padding="pt-28 pb-24" @viewed="handleSectionViewed">
       <TemplatesContact v-bind="contactAndFaqSectionProps" />
     </MolAppSection>
   </div>

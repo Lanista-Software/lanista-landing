@@ -16,7 +16,7 @@ defineProps<{
 </script>
 <template>
   <MolCardAnimation>
-    <div class="border border-border-color rounded-2xl shadow-sm">
+    <div class="border border-border-color p-6 rounded-2xl shadow-sm">
       <div
         v-if="item.image"
         class="rounded-3xl overflow-hidden h-auto md:h-[459px] lg:h-auto"
@@ -24,7 +24,7 @@ defineProps<{
         <NuxtImg
           v-if="square"
           loading="lazy"
-          class="w-full h-full object-cover aspect-square md:aspect-auto lg:aspect-square"
+          class="w-full h-full object-cover rounded-xl aspect-square md:aspect-auto lg:aspect-square"
           :src="getStaticImagePath(item.image)"
           :alt="getImageAlt(item.image)"
           placeholder
@@ -35,7 +35,7 @@ defineProps<{
         <NuxtImg
           v-else
           loading="lazy"
-          class="w-full h-full object-cover aspect-square md:aspect-auto lg:aspect-[2/1]"
+          class="w-full h-full object-cover rounded-xl aspect-square md:aspect-auto lg:aspect-[2/1]"
           :src="getStaticImagePath(item.image)"
           :alt="getImageAlt(item.image)"
           placeholder
@@ -45,20 +45,19 @@ defineProps<{
         />
       </div>
       <div v-else-if="item.icon" class="">
-        <LuiAvatar filter="lighten" color="success" size="xl">
+        <LuiAvatar filter="lighten" color="success" size="xl" rounded="full">
           <template #icon>
             <i :class="item.icon"></i>
           </template>
         </LuiAvatar>
       </div>
-      <div class="p-6">
-        <h2 class="text-xl font-bold font-space mt-8 text-heading-text">
-          {{ item.title }}
-        </h2>
-        <p class="text-body font-normal font-inter mt-2">
-          {{ item.description }}
-        </p>
-      </div>
+
+      <h2 class="text-xl font-bold font-space mt-8 text-heading-text">
+        {{ item.title }}
+      </h2>
+      <p class="text-body font-normal font-inter mt-2">
+        {{ item.description }}
+      </p>
     </div>
   </MolCardAnimation>
 </template>
