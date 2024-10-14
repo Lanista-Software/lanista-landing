@@ -12,11 +12,11 @@
   {
     "ID": "96c64803d442",
     "createdAt": "2024-09-26T13:59:00.000Z",
-    "updatedAt": "2024-10-14T07:01:59.251Z",
-    "status": "publish",
+    "updatedAt": "2024-10-14T07:33:39.411Z",
+    "status": "changed",
     "title": "Design & Prototyping",
     "description": "We turn ideas into great designs based on each project’s goals, refining them through client feedback and iterations.",
-    "icon": "ri-pencil-ruler-line",
+    "icon": "ri-shape-line",
     "scheduled": false
   },
   {
