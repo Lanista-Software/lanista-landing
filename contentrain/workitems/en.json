@@ -37,14 +37,14 @@
   },
   {
     "ID": "8a8044e883eb",
-    "createdAt": "Thu Sep 26 2024 21:08:38 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:08:38 GMT+0300 (GMT+03:00)",
-    "title": "Project Title 4",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "description": "Project Description 4, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla facilisi. Nullam vel semper turpis. Nullam nec turpis nec libero tincidunt ultricies. Nulla facilisi. Nullam vel semper turpis. Nullam nec turpis nec libero tincidunt ultricies.",
-    "category": "cab37361e7e9",
-    "link": "https://bloomandfresh.com",
+    "createdAt": "2024-09-26T18:08:38.000Z",
+    "updatedAt": "2024-10-16T10:22:34.812Z",
     "status": "publish",
+    "title": "Visivi",
+    "image": "public/1729074133746_visivi.svg",
+    "description": "Visivi is an HR platform with both mobile and web portals. \n\nWe developed the mobile application with React Native, making it cross-platform for both iOS and Android. For the web portal, we used Nuxt.js and Vue.js.",
+    "category": "bcc834108adc",
+    "link": "https://visivi.co/",
     "scheduled": false
   },
   {
