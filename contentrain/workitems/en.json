@@ -25,14 +25,14 @@
   },
   {
     "ID": "5711a48d0554",
-    "createdAt": "Wed Oct 16 2024 14:00:03 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Wed Oct 16 2024 14:00:03 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-10-16T11:00:03.000Z",
+    "updatedAt": "2024-10-16T11:03:15.952Z",
+    "status": "changed",
     "title": "RezMe",
     "image": "public/1729076421952_rezme.svg",
     "description": "aaa",
-    "category": "bcc834108adc",
+    "category": "b5debb48ccb2",
     "link": "https://lanista.com.tr/",
-    "status": "draft",
     "scheduled": false
   },
   {
