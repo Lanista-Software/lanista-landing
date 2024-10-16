@@ -1,5 +1,17 @@
 [
   {
+    "ID": "1a01328952b4",
+    "createdAt": "Wed Oct 16 2024 13:27:21 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Wed Oct 16 2024 13:27:21 GMT+0300 (GMT+03:00)",
+    "title": "Pazardan",
+    "image": "public/1729074629296_pazardan.svg",
+    "description": "Pazardan is an online marketplace for ordering vegetables and fruits from local groceries. \n\nWe developed the mobile application with React Native, making it cross-platform for iOS and Android. The web platform was developed with React.js and Next.js.",
+    "category": "cab37361e7e6",
+    "link": "https://pazardan.app/",
+    "status": "publish",
+    "scheduled": false
+  },
+  {
     "ID": "8a8044e883e8",
     "createdAt": "2024-09-26T18:08:38.000Z",
     "updatedAt": "2024-10-16T08:03:22.597Z",
