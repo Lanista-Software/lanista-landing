@@ -25,14 +25,14 @@
   },
   {
     "ID": "8a8044e883ea",
-    "createdAt": "Thu Sep 26 2024 21:08:38 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:08:38 GMT+0300 (GMT+03:00)",
-    "title": "Project Title 3",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "description": "Project Description 3, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla facilisi. Nullam vel semper turpis. Nullam nec turpis nec libero tincidunt ultricies. Nulla facilisi. Nullam vel semper turpis. Nullam nec turpis nec libero tincidunt ultricies.",
-    "category": "cab37361e7ea",
-    "link": "https://bloomandfresh.com",
+    "createdAt": "2024-09-26T18:08:38.000Z",
+    "updatedAt": "2024-10-16T08:13:12.448Z",
     "status": "publish",
+    "title": "Wordify",
+    "image": "public/1729066309718_wordify.svg",
+    "description": "We transformed Wordify's Squarespace-based website into a custom site using Jamstack architecture. This upgrade provided Wordify with a smooth look, enhanced performance, scalability, and improved user experience.",
+    "category": "cab37361e7ea",
+    "link": "https://www.wordify.co/",
     "scheduled": false
   },
   {
