@@ -12,6 +12,18 @@
     "scheduled": false
   },
   {
+    "ID": "51bf2dbbed29",
+    "createdAt": "Wed Oct 16 2024 13:45:44 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Wed Oct 16 2024 13:45:44 GMT+0300 (GMT+03:00)",
+    "title": "Popile",
+    "image": "public/1729075716315_popile.svg",
+    "description": "Popile is the meeting point of data and creativity in influencer marketing. We made improvements on the frontend using Vue.js, supported payment system integrations, and optimized the backend for better performance.",
+    "category": "cab37361e7e6",
+    "link": "https://www.popile.com/",
+    "status": "draft",
+    "scheduled": false
+  },
+  {
     "ID": "8a8044e883e8",
     "createdAt": "2024-09-26T18:08:38.000Z",
     "updatedAt": "2024-10-16T08:03:22.597Z",
