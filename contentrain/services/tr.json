@@ -52,10 +52,10 @@
   {
     "ID": "d00761480439",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-16T07:37:01.476Z",
-    "status": "changed",
+    "updatedAt": "2024-10-16T07:45:22.269Z",
+    "status": "publish",
     "title": "Web Tasarımı & Geliştirme",
-    "description": "Herkes için yüksek kaliteli dijital ürünler oluşturuyoruz.",
+    "description": "Ziyaretçilerinizi çekecek web sitelerine mi ihtiyacınız var? İşiniz için ölçeklenebilir ve responsive web siteleri geliştiriyoruz.",
     "image": "public/1728902911683_dikdortgen.svg",
     "scheduled": false
   },
