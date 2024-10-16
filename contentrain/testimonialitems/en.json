@@ -1,13 +1,13 @@
 [
   {
     "ID": "89ae53eb8370",
-    "createdAt": "Sun Oct 13 2024 14:24:25 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Sun Oct 13 2024 14:24:25 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-10-13T11:24:25.000Z",
+    "updatedAt": "2024-10-16T11:10:08.066Z",
+    "status": "publish",
     "name": "Ertuğrul Uçar",
-    "description": "aaaaa",
+    "description": "Lanista Software supported Popile’s frontend and backend in its early stages, helping us improve our work.",
     "image": "public/1728463995414_ertugrul.jpeg",
     "title": "CEO, Popile",
-    "status": "publish",
     "scheduled": false
   }
 ]
