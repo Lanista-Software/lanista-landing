@@ -49,14 +49,14 @@
   },
   {
     "ID": "8a8044e883ec",
-    "createdAt": "Thu Sep 26 2024 21:08:38 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:08:38 GMT+0300 (GMT+03:00)",
-    "title": "Project Title 5",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "description": "Project Description 5, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla facilisi. Nullam vel semper turpis. Nullam nec turpis nec libero tincidunt ultricies. Nulla facilisi. Nullam vel semper turpis. Nullam nec turpis nec libero tincidunt ultricies.",
-    "category": "cab37361e7e8",
-    "link": "https://bloomandfresh.com",
+    "createdAt": "2024-09-26T18:08:38.000Z",
+    "updatedAt": "2024-10-16T10:27:04.241Z",
     "status": "publish",
+    "title": "DXP 360",
+    "image": "public/1729074312031_dxp360.svg",
+    "description": "DXP360 is an RFP (Request for Proposal) portal that aggregates RFPs from various sources, simplifying the proposal discovery and submission process for enterprises and agencies.\n\nWe designed the project plan based on client briefs, developed the frontend and backend, structured the database, and deployed the project.",
+    "category": "bcc834108adc",
+    "link": "https://dxp360.com/",
     "scheduled": false
   }
 ]
