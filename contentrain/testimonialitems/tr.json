@@ -20,5 +20,16 @@
     "title": "Marketing Executive, Bloom & Fresh",
     "status": "publish",
     "scheduled": false
+  },
+  {
+    "ID": "c421eb634cfa",
+    "createdAt": "Wed Oct 16 2024 14:31:21 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Wed Oct 16 2024 14:31:21 GMT+0300 (GMT+03:00)",
+    "name": "Ege Büyüktaşkın",
+    "description": "Lanista Yazılım, ekibimle yakın iş birliği içinde çalışarak fikrimi hayata geçirdi ve süreci çok daha kolay hale getirdi.",
+    "image": "public/1728464446315_ege.jpeg",
+    "title": "Kurucu, Visiv",
+    "status": "publish",
+    "scheduled": false
   }
 ]
