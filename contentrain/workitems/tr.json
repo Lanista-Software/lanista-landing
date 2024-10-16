@@ -13,14 +13,14 @@
   },
   {
     "ID": "51bf2dbbed29",
-    "createdAt": "Wed Oct 16 2024 13:45:44 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Wed Oct 16 2024 13:45:44 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-10-16T10:45:44.000Z",
+    "updatedAt": "2024-10-16T10:51:00.522Z",
+    "status": "publish",
     "title": "Popile",
     "image": "public/1729075716315_popile.svg",
     "description": "Popile, influencer pazarlamasında veri ve yaratıcılığın buluşma noktasıdır. Frontend tarafında Vue.js ile iyileştirmeler yaptık, ödeme sistemi entegrasyonlarında destek sağladık ve backend tarafında performans optimizasyonları gerçekleştirdik.",
-    "category": "cab37361e7e6",
+    "category": "8ac7d8c79484",
     "link": "https://www.popile.com/",
-    "status": "draft",
     "scheduled": false
   },
   {
