@@ -9,5 +9,16 @@
     "image": "public/1728463995414_ertugrul.jpeg",
     "title": "CEO, Popile",
     "scheduled": false
+  },
+  {
+    "ID": "b770c71013d2",
+    "createdAt": "Wed Oct 16 2024 14:26:26 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Wed Oct 16 2024 14:26:26 GMT+0300 (GMT+03:00)",
+    "name": "Murat Sus",
+    "description": "Lanista Yazılım ekibinin açık ve özverili iletişimi, onlarla çalışmayı keyifli hale getiriyor.",
+    "image": "public/1729077149989_profil.png",
+    "title": "Marketing Executive, Bloom & Fresh",
+    "status": "publish",
+    "scheduled": false
   }
 ]
