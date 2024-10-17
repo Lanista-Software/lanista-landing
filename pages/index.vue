@@ -192,7 +192,15 @@ const router = useRouter();
 
 const { isScrollLocked } = useScrollLock();
 
-
+const {fullSchema} = useSchemas()
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: fullSchema.value,
+    },
+  ],
+});
 useSeoMeta({ ...convertedMetaTags.value });
 
 function handleSectionViewed(id: string) {
