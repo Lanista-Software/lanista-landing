@@ -121,12 +121,12 @@
   },
   {
     "ID": "de2b9bd58b75",
-    "createdAt": "Mon Apr 29 2024 14:36:39 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-10-18T09:02:42.405Z",
+    "createdAt": "2024-04-29T11:36:39.000Z",
+    "updatedAt": "2024-10-18T09:06:28.012Z",
+    "status": "changed",
     "name": "ogDescription",
-    "content": "'Çiçek göndermek veya leziz bir çikolata hediye etmek! Online siparişi ile aynı gün teslim eşsiz butik çiçek, çikolata ve hediyeleri sevdiklerinize hediye edin!",
+    "content": "We provide end-to-end outsourced web and mobile application development services to drive your business's growth in today's digital world.",
     "description": "default",
-    "status": "publish",
     "scheduled": false
   }
 ]
