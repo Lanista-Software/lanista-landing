@@ -81,12 +81,12 @@
   },
   {
     "ID": "a756a05f093e",
-    "createdAt": "Fri Aug 16 2024 14:38:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Fri Aug 16 2024 14:38:53 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-08-16T11:38:53.000Z",
+    "updatedAt": "2024-10-18T09:27:42.792Z",
+    "status": "changed",
     "name": "title",
-    "content": "Lanista title icerigi",
-    "description": "Sepet title",
-    "status": "publish",
+    "content": "Lanista | Web ve Mobile uygulama geliştirme partneriniz",
+    "description": "Lanista website ogtitle",
     "scheduled": false
   },
   {
