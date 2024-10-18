@@ -92,11 +92,11 @@
   {
     "ID": "ba01e958b444",
     "createdAt": "2024-04-25T09:37:26.000Z",
-    "updatedAt": "2024-10-18T08:40:58.918Z",
-    "status": "publish",
+    "updatedAt": "2024-10-18T09:00:34.863Z",
+    "status": "changed",
     "name": "description",
-    "content": "Etkileyici bir descriptipn",
-    "description": "Tum sayfalar icin kullanilacak tag",
+    "content": "We provide end-to-end outsourced web and mobile application development services to drive your business's growth in today's digital world.",
+    "description": "website ogdescription",
     "scheduled": false
   },
   {
