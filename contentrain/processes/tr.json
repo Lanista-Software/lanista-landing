@@ -1,12 +1,12 @@
 [
   {
     "ID": "96c64803d441",
-    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
-    "title": "Proje Başlangıcı ve Analizi",
-    "description": "Projenizin gereksinimlerini ve hedeflerini anlamak için tüm ilgili bilgileri toplama. Bu aşama, gelişimimizi vizyonunuzla uyumlu hale getirerek sağlam bir temel oluşturur.",
-    "icon": "ri-search-eye-line",
+    "createdAt": "2024-09-26T13:59:00.000Z",
+    "updatedAt": "2024-10-18T09:48:56.911Z",
     "status": "publish",
+    "title": "Araştırma & Analiz",
+    "description": "Proje hedeflerini ve müşteri ihtiyaçlarını belirleyerek, doğru ve ölçeklenebilir çözümleri geliştirmek için derinlemesine analizler yürütüyoruz.",
+    "icon": "ri-search-eye-line",
     "scheduled": false
   },
   {
