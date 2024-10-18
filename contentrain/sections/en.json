@@ -81,7 +81,8 @@
     "buttontext": "Let's discuss your project",
     "buttonlink": "#contact",
     "name": "hero",
-    "scheduled": false
+    "scheduled": false,
+    "subtitle": "Software Development Company"
   },
   {
     "ID": "2aa54f9e7xb4",
