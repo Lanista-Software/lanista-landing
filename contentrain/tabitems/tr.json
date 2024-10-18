@@ -69,14 +69,13 @@
   },
   {
     "ID": "9ab7dcca9d22",
-    "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-09-26T18:06:53.000Z",
+    "updatedAt": "2024-10-18T10:42:04.097Z",
+    "status": "changed",
     "category": "cab37361e7e6",
-    "title": "Svelte",
-    "description": "Svelte, çalışma zamanı yerine derleme adımına çok işi kaydıran modern bir JavaScript çerçevesidir. Bu, daha küçük paket boyutları ve daha hızlı yükleme süreleri sağlar, bu da hızlı web uygulamaları oluşturmak için mükemmel bir seçim yapar.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "status": "publish",
     "link": "https://vuejs.org/",
+    "description": "Svelte, çalışma zamanı yerine derleme adımına çok işi kaydıran modern bir JavaScript çerçevesidir. Bu, daha küçük paket boyutları ve daha hızlı yükleme süreleri sağlar, bu da hızlı web uygulamaları oluşturmak için mükemmel bir seçim yapar.",
+    "image": "public/1728541774910_svelte.svg",
     "scheduled": false
   },
   {
