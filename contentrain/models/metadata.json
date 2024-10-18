@@ -48,14 +48,6 @@
     "isServerless": false
   },
   {
-    "name": "TestimonialItems",
-    "modelId": "testimonialitems",
-    "localization": true,
-    "type": "JSON",
-    "createdBy": "user",
-    "isServerless": false
-  },
-  {
     "name": "FaqItems",
     "modelId": "faqitems",
     "localization": true,
