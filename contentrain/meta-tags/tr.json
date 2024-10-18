@@ -111,12 +111,12 @@
   },
   {
     "ID": "dc2539d45a50",
-    "createdAt": "Mon Apr 29 2024 14:36:05 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-04-29T11:37:31.245Z",
-    "name": "ogImage",
-    "content": "https://onescreen.bloomandfresh.com/assets/images/logo.png",
-    "description": "default",
+    "createdAt": "2024-04-29T11:36:05.000Z",
+    "updatedAt": "2024-10-18T09:18:48.377Z",
     "status": "publish",
+    "name": "ogImage",
+    "content": "https://res.cloudinary.com/dmywgn45o/image/upload/v1729243091/lanista_og_chgpop.jpg",
+    "description": "default",
     "scheduled": false
   },
   {
