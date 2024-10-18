@@ -21,12 +21,12 @@
   },
   {
     "ID": "96c64803d443",
-    "createdAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 16:59:00 GMT+0300 (GMT+03:00)",
-    "title": "Geliştirme Aşaması",
-    "description": "Tasarımı ve stratejiyi işlevsel bir ürüne dönüştürme. Kodlama uzmanlığımız tasarımınızı hayata geçirir, sorunsuz işlevsellik sağlar.",
-    "icon": "ri-code-s-slash-line",
+    "createdAt": "2024-09-26T13:59:00.000Z",
+    "updatedAt": "2024-10-18T09:57:12.317Z",
     "status": "publish",
+    "title": "Yazılım Geliştirme Aşaması",
+    "description": "Tasarımları tam işlevli ürünlere dönüştürüyor, uygulama için temel özellikleri entegre ediyor ve sistemi test aşaması için hazır hale getiriyoruz.",
+    "icon": "ri-terminal-box-line",
     "scheduled": false
   },
   {
