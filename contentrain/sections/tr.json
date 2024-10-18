@@ -1,14 +1,14 @@
 [
   {
     "ID": "2aa54f9e7eaf",
-    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "title": "Deneyimlerimizi ve uzmanlığımızı görmek için aşağıdaki teknolojilere göz atın",
-    "description": "We offer a wide range of services to help you achieve your goals.Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo numquam quia quos velit mollitia. Maiores voluptatem dolor aspernatur.",
+    "createdAt": "2024-09-26T18:05:14.000Z",
+    "updatedAt": "2024-10-18T09:34:13.927Z",
+    "status": "changed",
+    "title": "Yazılım geliştirme çözümlerimize göz atın",
+    "description": "Müşterilerimize, tasarımdan final ürüne kadar her adımda rehberlik ederek geniş kapsamlı yazılım geliştirme hizmetleri sunuyoruz.",
     "buttontext": "Let's discuss your project",
     "buttonlink": "#contact",
     "name": "services",
-    "status": "publish",
     "scheduled": false
   },
   {
