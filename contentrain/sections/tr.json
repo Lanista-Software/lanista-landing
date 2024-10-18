@@ -61,14 +61,14 @@
   },
   {
     "ID": "2aa54f9e7x90",
-    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "title": "We create high quality dijital products",
-    "description": "Sirketlere yardim ediyoruz their products better every day. So we create high quality digital products for a professional look.",
+    "createdAt": "2024-09-26T18:05:14.000Z",
+    "updatedAt": "2024-10-18T06:11:51.339Z",
+    "status": "publish",
+    "title": "Fikrinizi birlikte geliştirelim!",
+    "description": "Ürün geliştirme tecrübemizle şirketlerin ve girişimlerin fikirlerini hayata geçirmelerine yardımcı oluyoruz.",
     "buttontext": "Let's discuss your project",
     "buttonlink": "#contact",
     "name": "banner",
-    "status": "publish",
     "scheduled": false
   },
   {
