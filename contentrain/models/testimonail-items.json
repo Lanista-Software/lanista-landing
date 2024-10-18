@@ -101,5 +101,18 @@
       }
     },
     "fieldType": "string"
+  },
+  {
+    "name": "Image",
+    "fieldId": "image",
+    "modelId": "testimonail-items",
+    "componentId": "media",
+    "options": {},
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "media"
   }
 ]
