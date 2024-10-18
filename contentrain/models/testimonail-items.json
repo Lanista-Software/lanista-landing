@@ -81,11 +81,7 @@
     "fieldId": "description",
     "modelId": "testimonail-items",
     "componentId": "single-line-text",
-    "options": {
-      "title-field": {
-        "value": true
-      }
-    },
+    "options": {},
     "validations": {
       "required-field": {
         "value": true
