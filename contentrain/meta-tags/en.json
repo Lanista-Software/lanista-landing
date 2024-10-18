@@ -71,12 +71,12 @@
   },
   {
     "ID": "a756a05f093e",
-    "createdAt": "Fri Aug 16 2024 14:38:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Fri Aug 16 2024 14:38:53 GMT+0300 (GMT+03:00)",
-    "name": "title",
+    "createdAt": "2024-08-16T11:38:53.000Z",
+    "updatedAt": "2024-10-18T06:41:55.976Z",
+    "status": "changed",
+    "name": "Lanista | Web and Mobile App. development partner",
     "content": "Title content of lanista",
     "description": "Sepet title",
-    "status": "publish",
     "scheduled": false
   },
   {
