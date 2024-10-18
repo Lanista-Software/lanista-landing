@@ -20,6 +20,16 @@
     "scheduled": false
   },
   {
+    "ID": "38eb812efbfe",
+    "createdAt": "Fri Oct 18 2024 10:31:40 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Fri Oct 18 2024 10:31:40 GMT+0300 (GMT+03:00)",
+    "name": "ogImage",
+    "content": "url gelecek",
+    "description": "website ogimage",
+    "status": "draft",
+    "scheduled": false
+  },
+  {
     "ID": "4a02e38c9389",
     "createdAt": "2024-05-16T11:32:09.000Z",
     "updatedAt": "2024-10-18T07:28:27.749Z",
