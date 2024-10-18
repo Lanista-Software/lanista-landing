@@ -2,7 +2,7 @@
   {
     "ID": "02135e680b44",
     "createdAt": "Mon Apr 29 2024 14:35:46 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-04-29T11:37:31.204Z",
+    "updatedAt": "2024-10-18T08:40:58.867Z",
     "name": "ogType",
     "content": "website",
     "description": "default",
@@ -12,8 +12,8 @@
   {
     "ID": "196caf507337",
     "createdAt": "2024-04-29T11:37:02.000Z",
-    "updatedAt": "2024-10-18T07:27:57.353Z",
-    "status": "changed",
+    "updatedAt": "2024-10-18T08:40:58.878Z",
+    "status": "publish",
     "name": "ogTitle",
     "content": "Lanista | Web and Mobile App. development partner",
     "description": "defalt",
@@ -22,18 +22,18 @@
   {
     "ID": "38eb812efbfe",
     "createdAt": "Fri Oct 18 2024 10:31:40 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Fri Oct 18 2024 10:31:40 GMT+0300 (GMT+03:00)",
+    "updatedAt": "2024-10-18T08:40:58.885Z",
     "name": "ogImage",
     "content": "url gelecek",
     "description": "website ogimage",
-    "status": "draft",
+    "status": "publish",
     "scheduled": false
   },
   {
     "ID": "4a02e38c9389",
     "createdAt": "2024-05-16T11:32:09.000Z",
-    "updatedAt": "2024-10-18T07:28:27.749Z",
-    "status": "changed",
+    "updatedAt": "2024-10-18T08:40:58.889Z",
+    "status": "publish",
     "name": "twitter:title",
     "content": "Lanista | Web and Mobile App. development partner",
     "description": "Lanista twitter ogtitle",
@@ -42,7 +42,7 @@
   {
     "ID": "66a7106a5d6a",
     "createdAt": "Mon Apr 29 2024 14:39:20 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-04-29T11:39:52.021Z",
+    "updatedAt": "2024-10-18T08:40:58.895Z",
     "name": "twitterSiteId",
     "content": "twitter-site-id",
     "description": "default",
@@ -52,7 +52,7 @@
   {
     "ID": "6dcd400f4763",
     "createdAt": "Mon Apr 29 2024 14:38:59 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-04-29T11:39:52.037Z",
+    "updatedAt": "2024-10-18T08:40:58.901Z",
     "name": "twitterDescription",
     "content": "Çiçek göndermek veya leziz bir çikolata hediye etmek! Online siparişi ile aynı gün teslim eşsiz butik çiçek, çikolata ve hediyeleri sevdiklerinize hediye edin!",
     "description": "default",
@@ -62,7 +62,7 @@
   {
     "ID": "6ea95fa81d7f",
     "createdAt": "Mon Apr 29 2024 14:38:15 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-04-29T11:39:52.053Z",
+    "updatedAt": "2024-10-18T08:40:58.905Z",
     "name": "twitterCard",
     "content": "summary",
     "description": "default",
@@ -72,8 +72,8 @@
   {
     "ID": "9f3fb78abf01",
     "createdAt": "2024-04-29T11:38:01.000Z",
-    "updatedAt": "2024-10-18T07:30:26.040Z",
-    "status": "changed",
+    "updatedAt": "2024-10-18T08:40:58.910Z",
+    "status": "publish",
     "name": "ogSiteName",
     "content": "Lanista",
     "description": "default",
@@ -82,8 +82,8 @@
   {
     "ID": "a756a05f093e",
     "createdAt": "2024-08-16T11:38:53.000Z",
-    "updatedAt": "2024-10-18T07:27:42.480Z",
-    "status": "changed",
+    "updatedAt": "2024-10-18T08:40:58.915Z",
+    "status": "publish",
     "name": "title",
     "content": "Lanista | Web and Mobile App. development partner",
     "description": "Lanista website ogtitle",
@@ -92,7 +92,7 @@
   {
     "ID": "ba01e958b444",
     "createdAt": "2024-04-25T09:37:26.000Z",
-    "updatedAt": "2024-04-25T09:46:10.945Z",
+    "updatedAt": "2024-10-18T08:40:58.918Z",
     "status": "publish",
     "name": "description",
     "content": "Etkileyici bir descriptipn",
@@ -102,8 +102,8 @@
   {
     "ID": "ce993b69b8ff",
     "createdAt": "2024-04-29T11:38:28.000Z",
-    "updatedAt": "2024-10-18T07:30:53.725Z",
-    "status": "changed",
+    "updatedAt": "2024-10-18T08:40:58.922Z",
+    "status": "publish",
     "name": "twitterTitle",
     "content": "Lanista | Web and Mobile App. development partner",
     "description": "default",
@@ -112,7 +112,7 @@
   {
     "ID": "dc2539d45a50",
     "createdAt": "Mon Apr 29 2024 14:36:05 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-04-29T11:37:31.245Z",
+    "updatedAt": "2024-10-18T08:40:58.928Z",
     "name": "ogImage",
     "content": "https://onescreen.bloomandfresh.com/assets/images/logo.png",
     "description": "default",
@@ -122,7 +122,7 @@
   {
     "ID": "de2b9bd58b75",
     "createdAt": "Mon Apr 29 2024 14:36:39 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-04-29T11:37:31.254Z",
+    "updatedAt": "2024-10-18T08:40:58.933Z",
     "name": "ogDescription",
     "content": "'Çiçek göndermek veya leziz bir çikolata hediye etmek! Online siparişi ile aynı gün teslim eşsiz butik çiçek, çikolata ve hediyeleri sevdiklerinize hediye edin!",
     "description": "default",
