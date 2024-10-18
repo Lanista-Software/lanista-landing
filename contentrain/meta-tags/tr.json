@@ -51,12 +51,12 @@
   },
   {
     "ID": "6dcd400f4763",
-    "createdAt": "Mon Apr 29 2024 14:38:59 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-04-29T11:39:52.037Z",
+    "createdAt": "2024-04-29T11:38:59.000Z",
+    "updatedAt": "2024-10-18T09:01:09.158Z",
+    "status": "changed",
     "name": "twitterDescription",
-    "content": "Çiçek göndermek veya leziz bir çikolata hediye etmek! Online siparişi ile aynı gün teslim eşsiz butik çiçek, çikolata ve hediyeleri sevdiklerinize hediye edin!",
+    "content": "İşletmenizin günümüz dijital dünyasında büyümesini sağlamak için uçtan uca dış kaynaklı web ve mobil uygulama geliştirme hizmetleri sağlıyoruz.",
     "description": "default",
-    "status": "publish",
     "scheduled": false
   },
   {
