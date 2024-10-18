@@ -62,10 +62,10 @@
   {
     "ID": "9f3fb78abf01",
     "createdAt": "2024-04-29T11:38:01.000Z",
-    "updatedAt": "2024-10-18T09:02:42.386Z",
-    "status": "publish",
+    "updatedAt": "2024-10-18T09:27:15.726Z",
+    "status": "changed",
     "name": "ogSiteName",
-    "content": "Lanista",
+    "content": "Lanista | Web and Mobile App. development partner",
     "description": "default",
     "scheduled": false
   },
