@@ -122,14 +122,13 @@
   },
   {
     "ID": "9ab7dcca9d27",
-    "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-09-26T18:06:53.000Z",
+    "updatedAt": "2024-10-18T10:44:09.492Z",
+    "status": "changed",
     "category": "cab37361e7e7",
-    "title": "GraphQL",
-    "description": "GraphQL, API'ler için bir sorgu dili ve bu sorguları yürütmek için bir çalışma zamanıdır. REST'e yalnızca ihtiyaç duydukları verileri isteyerek daha verimli ve güçlü bir alternatif sunar.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "status": "publish",
     "link": "https://vuejs.org/",
+    "description": "GraphQL, API'ler için bir sorgu dili ve bu sorguları yürütmek için bir çalışma zamanıdır. REST'e yalnızca ihtiyaç duydukları verileri isteyerek daha verimli ve güçlü bir alternatif sunar.",
+    "image": "public/1728542406152_graphql.svg",
     "scheduled": false
   },
   {
