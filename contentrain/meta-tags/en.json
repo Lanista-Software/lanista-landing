@@ -2,7 +2,7 @@
   {
     "ID": "02135e680b44",
     "createdAt": "Mon Apr 29 2024 14:35:46 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-10-18T09:02:42.359Z",
+    "updatedAt": "2024-10-18T09:28:17.255Z",
     "name": "ogType",
     "content": "website",
     "description": "default",
@@ -12,7 +12,7 @@
   {
     "ID": "196caf507337",
     "createdAt": "2024-04-29T11:37:02.000Z",
-    "updatedAt": "2024-10-18T09:02:42.364Z",
+    "updatedAt": "2024-10-18T09:28:17.267Z",
     "status": "publish",
     "name": "ogTitle",
     "content": "Lanista | Web and Mobile App. development partner",
@@ -22,7 +22,7 @@
   {
     "ID": "4a02e38c9389",
     "createdAt": "2024-05-16T11:32:09.000Z",
-    "updatedAt": "2024-10-18T09:02:42.371Z",
+    "updatedAt": "2024-10-18T09:28:17.285Z",
     "status": "publish",
     "name": "twitter:title",
     "content": "Lanista | Web and Mobile App. development partner",
@@ -32,7 +32,7 @@
   {
     "ID": "66a7106a5d6a",
     "createdAt": "Mon Apr 29 2024 14:39:20 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-10-18T09:02:42.376Z",
+    "updatedAt": "2024-10-18T09:28:17.295Z",
     "name": "twitterSiteId",
     "content": "twitter-site-id",
     "description": "default",
@@ -42,7 +42,7 @@
   {
     "ID": "6dcd400f4763",
     "createdAt": "2024-04-29T11:38:59.000Z",
-    "updatedAt": "2024-10-18T09:02:42.379Z",
+    "updatedAt": "2024-10-18T09:28:17.311Z",
     "status": "publish",
     "name": "twitterDescription",
     "content": "We provide end-to-end outsourced web and mobile application development services to drive your business's growth in today's digital world.",
@@ -52,7 +52,7 @@
   {
     "ID": "6ea95fa81d7f",
     "createdAt": "Mon Apr 29 2024 14:38:15 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-10-18T09:02:42.383Z",
+    "updatedAt": "2024-10-18T09:28:17.331Z",
     "name": "twitterCard",
     "content": "summary",
     "description": "default",
@@ -62,8 +62,8 @@
   {
     "ID": "9f3fb78abf01",
     "createdAt": "2024-04-29T11:38:01.000Z",
-    "updatedAt": "2024-10-18T09:27:15.726Z",
-    "status": "changed",
+    "updatedAt": "2024-10-18T09:28:17.342Z",
+    "status": "publish",
     "name": "ogSiteName",
     "content": "Lanista | Web and Mobile App. development partner",
     "description": "default",
@@ -72,7 +72,7 @@
   {
     "ID": "a756a05f093e",
     "createdAt": "2024-08-16T11:38:53.000Z",
-    "updatedAt": "2024-10-18T09:02:42.389Z",
+    "updatedAt": "2024-10-18T09:28:17.362Z",
     "status": "publish",
     "name": "title",
     "content": "Lanista | Web and Mobile App. development partner",
@@ -82,7 +82,7 @@
   {
     "ID": "ba01e958b444",
     "createdAt": "2024-04-25T09:37:26.000Z",
-    "updatedAt": "2024-10-18T09:02:42.395Z",
+    "updatedAt": "2024-10-18T09:28:17.373Z",
     "status": "publish",
     "name": "description",
     "content": "We provide end-to-end outsourced web and mobile application development services to drive your business's growth in today's digital world.",
@@ -92,7 +92,7 @@
   {
     "ID": "ce993b69b8ff",
     "createdAt": "2024-04-29T11:38:28.000Z",
-    "updatedAt": "2024-10-18T09:02:42.398Z",
+    "updatedAt": "2024-10-18T09:28:17.377Z",
     "status": "publish",
     "name": "twitterTitle",
     "content": "Lanista | Web and Mobile App. development partner",
@@ -102,7 +102,7 @@
   {
     "ID": "dc2539d45a50",
     "createdAt": "2024-04-29T11:36:05.000Z",
-    "updatedAt": "2024-10-18T09:18:48.375Z",
+    "updatedAt": "2024-10-18T09:28:17.380Z",
     "status": "publish",
     "name": "ogImage",
     "content": "https://res.cloudinary.com/dmywgn45o/image/upload/v1729243091/lanista_og_chgpop.jpg",
@@ -112,8 +112,8 @@
   {
     "ID": "de2b9bd58b75",
     "createdAt": "2024-04-29T11:36:39.000Z",
-    "updatedAt": "2024-10-18T09:06:28.012Z",
-    "status": "changed",
+    "updatedAt": "2024-10-18T09:28:17.385Z",
+    "status": "publish",
     "name": "ogDescription",
     "content": "We provide end-to-end outsourced web and mobile application development services to drive your business's growth in today's digital world.",
     "description": "default",
