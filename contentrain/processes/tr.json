@@ -32,10 +32,10 @@
   {
     "ID": "96c64803d444",
     "createdAt": "2024-09-26T13:59:00.000Z",
-    "updatedAt": "2024-10-18T10:24:22.587Z",
+    "updatedAt": "2024-10-18T10:37:26.966Z",
     "status": "publish",
     "title": "Test Aşaması",
-    "description": "Olası sorunları tespit etmek ve çözmek için projeyi müşteriyle birlikte test ediyoruz. Ardından sorunları çözerek projeyi canlı ortama alıyoruz.",
+    "description": "Olası sorunları tespit etmek için projeyi müşteriyle birlikte test ediyoruz ve ardından sorunları çözerek projeyi canlı ortama alıyoruz.",
     "icon": "ri-test-tube-line",
     "scheduled": false
   },
