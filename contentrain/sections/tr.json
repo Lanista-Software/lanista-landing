@@ -86,14 +86,14 @@
   },
   {
     "ID": "2aa54f9e7xb4",
-    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-09-26T18:05:14.000Z",
+    "updatedAt": "2024-10-18T08:43:34.347Z",
+    "status": "changed",
     "title": "Sıkça Sorulan Sorular",
-    "description": "Browse through the FAQs to get quick answers or if the answers don’t match your needs feel free to join us on Contentrain's discor server for more help.",
+    "description": "Lanista Yazılım'ın hizmetleri hakkında sık sorulan sorularla hızlı yanıtlar bulun. Eğer daha fazla yanıta ihtiyaç duyuyorsanız bizimle iletişime geçebilirsiniz.",
     "buttontext": "Let's discuss your project",
     "buttonlink": "#contact",
     "name": "faq",
-    "status": "publish",
     "scheduled": false
   },
   {
