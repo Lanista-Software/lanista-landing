@@ -22,10 +22,10 @@
   {
     "ID": "96c64803d443",
     "createdAt": "2024-09-26T13:59:00.000Z",
-    "updatedAt": "2024-10-18T09:57:12.317Z",
+    "updatedAt": "2024-10-18T09:58:06.964Z",
     "status": "publish",
     "title": "Yazılım Geliştirme Aşaması",
-    "description": "Tasarımları tam işlevli ürünlere dönüştürüyor, uygulama için temel özellikleri entegre ediyor ve sistemi test aşaması için hazır hale getiriyoruz.",
+    "description": "Tasarımları tam işlevli ürünlere dönüştürüyor, uygulama için temel özellikleri entegre ediyor ve sistemi canlı ortama dağıtmak için hazır hale getiriyoruz.",
     "icon": "ri-terminal-box-line",
     "scheduled": false
   },
