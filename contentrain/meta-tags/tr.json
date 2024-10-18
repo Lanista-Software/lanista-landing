@@ -101,12 +101,12 @@
   },
   {
     "ID": "ce993b69b8ff",
-    "createdAt": "Mon Apr 29 2024 14:38:28 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-04-29T11:39:52.079Z",
+    "createdAt": "2024-04-29T11:38:28.000Z",
+    "updatedAt": "2024-10-18T09:06:05.245Z",
+    "status": "changed",
     "name": "twitterTitle",
-    "content": "Bloom and Fresh: Online Çiçek, Çikolata ve Hediye Gönder!",
+    "content": "Lanista | Web ve Mobile uygulama geliştirme partneriniz",
     "description": "default",
-    "status": "publish",
     "scheduled": false
   },
   {
