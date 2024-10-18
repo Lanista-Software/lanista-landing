@@ -89,14 +89,13 @@
   },
   {
     "ID": "9ab7dcca9d24",
-    "createdAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Thu Sep 26 2024 21:06:53 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-09-26T18:06:53.000Z",
+    "updatedAt": "2024-10-18T10:43:22.801Z",
+    "status": "changed",
     "category": "cab37361e7e7",
-    "title": "Express.js",
-    "description": "Express.js, web ve mobil uygulamalar oluşturmak için sağlam bir özellik seti sağlayan minimal ve esnek bir Node.js web uygulama çerçevesidir. API'ler ve web sunucuları hızlı ve kolay bir şekilde oluşturmak için tasarlanmıştır.",
-    "image": "public/1727359111545_1724068521380_kahvedunyasi.svg",
-    "status": "publish",
     "link": "https://vuejs.org/",
+    "description": "Express.js, web ve mobil uygulamalar oluşturmak için sağlam bir özellik seti sağlayan minimal ve esnek bir Node.js web uygulama çerçevesidir. API'ler ve web sunucuları hızlı ve kolay bir şekilde oluşturmak için tasarlanmıştır.",
+    "image": "public/1728542335115_expressjs.svg",
     "scheduled": false
   },
   {
