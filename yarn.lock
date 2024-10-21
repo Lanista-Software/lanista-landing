@@ -1418,7 +1418,17 @@
   resolved "https://registry.yarnpkg.com/@lui-ui/lui-tailwindcss/-/lui-tailwindcss-0.1.1.tgz#58a40d8ccea559a1df47b33e66a5e102f4d1c010"
   integrity sha512-eywZnt8xhC2lns6+k6IUh22VdSu568yir2lwN2tQHeiMJABqS0koMnhf2o+vixj9wKOmfdDXy/JOZTG1w/z3Lg==
 
-"@lui-ui/lui-vue@^1.0.11", "@lui-ui/lui-vue@latest":
+"@lui-ui/lui-vue@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@lui-ui/lui-vue/-/lui-vue-1.0.12.tgz#bdd35b33077b0be5f0d0be47e2214f83f8516b85"
+  integrity sha512-Arothhi2LkvOc240RSvNsLB0jyro8yvDh0AjhdReIMwUnXUnQsmEnD5M+Za7t1HalQflVMTTI48k4neWHnA/Qw==
+  dependencies:
+    "@floating-ui/vue" "^1.0.6"
+    "@vueuse/integrations" "^10.3.0"
+    focus-trap "^7.5.2"
+    unplugin-vue-macros "^2.7.3"
+
+"@lui-ui/lui-vue@latest":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@lui-ui/lui-vue/-/lui-vue-1.0.11.tgz#6aacac8a399b18b80223228130397907ccbd9b05"
   integrity sha512-L8IR0tA9M8UZbvhJKq+/0+x4bn84EAQCeSBHNnGo/To6zDcf6RTFqxPRaVipkVJzYzMH6XpVFlV4cHpTz48BYw==

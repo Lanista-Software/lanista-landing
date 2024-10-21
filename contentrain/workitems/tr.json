@@ -9,7 +9,8 @@
     "category": "cab37361e7e6",
     "link": "https://pazardan.app/",
     "status": "publish",
-    "scheduled": false
+    "scheduled": false,
+    "order": 7
   },
   {
     "ID": "51bf2dbbed29",
@@ -21,7 +22,8 @@
     "description": "Popile, influencer pazarlamasında veri ve yaratıcılığın buluşma noktasıdır. Frontend tarafında Vue.js ile iyileştirmeler yaptık, ödeme sistemi entegrasyonlarında destek sağladık ve backend tarafında performans optimizasyonları gerçekleştirdik.",
     "category": "8ac7d8c79484",
     "link": "https://www.popile.com/",
-    "scheduled": false
+    "scheduled": false,
+    "order": 4
   },
   {
     "ID": "5711a48d0554",
@@ -33,7 +35,8 @@
     "description": "aaa",
     "category": "b5debb48ccb2",
     "link": "https://lanista.com.tr/",
-    "scheduled": false
+    "scheduled": false,
+    "order": 8
   },
   {
     "ID": "8a8044e883e8",
@@ -45,7 +48,8 @@
     "category": "cab37361e7e6",
     "link": "https://bloomandfresh.com",
     "status": "publish",
-    "scheduled": false
+    "scheduled": false,
+    "order": 1
   },
   {
     "ID": "8a8044e883e9",
@@ -57,7 +61,8 @@
     "description": "Bloom & Fresh, çiçek aranjmanları ve hediyeler konusunda uzmanlaşmış bir e-ticaret platformudur.\n\nFrontend kısmını Vue.js ve Nuxt.js ile modernize ettik ve bunu müşterinin mevcut Backend sistemiyle entegre ettik.",
     "category": "cab37361e7e6",
     "link": "https://bloomandfresh.com",
-    "scheduled": false
+    "scheduled": false,
+    "order": 2
   },
   {
     "ID": "8a8044e883ea",
@@ -69,7 +74,8 @@
     "description": "Wordify'ın Squarespace tabanlı web sitesini Jamstack mimarisini kullanarak özel bir siteye dönüştürdük. Bu yükseltme Wordify'a pürüzsüz bir görünüm, gelişmiş performans, ölçeklenebilirlik ve iyileştirilmiş kullanıcı deneyimi sağladı.",
     "category": "59cbdac46c1e",
     "link": "https://www.wordify.co/",
-    "scheduled": false
+    "scheduled": false,
+    "order": 3
   },
   {
     "ID": "8a8044e883eb",
@@ -81,7 +87,8 @@
     "description": "Visivi, hem mobil hem de web portalları olan bir İK platformudur.\n\nMobil uygulamayı React Native ile geliştirdik ve hem iOS hem de Android için çapraz platform haline getirdik. Web portalı için Nuxt.js ve Vue.js kullandık.",
     "category": "bcc834108adc",
     "link": "https://visivi.co/",
-    "scheduled": false
+    "scheduled": false,
+    "order": 5
   },
   {
     "ID": "8a8044e883ec",
@@ -93,6 +100,7 @@
     "description": "DXP360, çeşitli kaynaklardan gelen RFP'leri bir araya getiren ve işletmeler ve ajanslar için teklif keşfi ve gönderim sürecini basitleştiren bir RFP (Teklif Talebi) portalıdır.\n\nProje planını müşteri brifinglerine göre tasarladık, ön ucu ve arka ucu geliştirdik, veritabanını yapılandırdık ve projeyi dağıttık.",
     "category": "bcc834108adc",
     "link": "https://dxp360.com/",
-    "scheduled": false
+    "scheduled": false,
+    "order": 6
   }
 ]

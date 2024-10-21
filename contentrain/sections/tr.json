@@ -6,7 +6,7 @@
     "status": "changed",
     "title": "Yazılım geliştirme çözümlerimize göz atın",
     "description": "Müşterilerimize, tasarımdan final ürüne kadar her adımda rehberlik ederek geniş kapsamlı yazılım geliştirme hizmetleri sunuyoruz.",
-    "buttontext": "Let's discuss your project",
+    "buttontext": "Projenizi konuşalım",
     "buttonlink": "#contact",
     "name": "services",
     "scheduled": false
@@ -18,7 +18,7 @@
     "status": "changed",
     "title": "Ürün geliştirme ve proje yönetme yaklaşımımız",
     "description": "Projenizin zamanında ve bütçe dahilinde teslim edilmesini sağlamak için sistemli bir proje geliştirme süreci izliyoruz.",
-    "buttontext": "View all works",
+    "buttontext": "Tüm çalışmaları görüntüleyin",
     "buttonlink": "#works",
     "name": "process",
     "scheduled": false
@@ -30,7 +30,7 @@
     "status": "publish",
     "title": "Sektör profesyonelleri tarafından güvenilen bir yazılım geliştirme partneriyiz",
     "description": "Kaliteye odaklanarak çalışmamız zamanla sektör profesyonellerinin güvenini kazandı. Müşterilerimiz için en yüksek standartları karşılayan özel çözümler sunuyoruz.",
-    "buttontext": "View all testimonials",
+    "buttontext": "Tüm referanslar",
     "buttonlink": "#testimonials",
     "name": "testimonials",
     "scheduled": false
@@ -42,7 +42,7 @@
     "status": "changed",
     "title": "Müşterilerimiz için geliştirdiğimiz bazı projeler",
     "description": "Müşterilerimizin fikirlerini geliştirerek başarılı ürünlere dönüştürdüğümüz projelerimizden bazılarını inceleyin.",
-    "buttontext": "View all works",
+    "buttontext": "Tüm çalışmaları görüntüleyin",
     "buttonlink": "#works",
     "name": "works",
     "scheduled": false
@@ -54,7 +54,7 @@
     "status": "changed",
     "title": "Kullandığımız teknolojiler ve geliştirme araçları ",
     "description": "Harika ürünler ortaya çıkarmak için Javascript teknolojilerini ve güncel araçları kullanmayı seviyoruz.",
-    "buttontext": "View all testimonials",
+    "buttontext": "Tüm referanslar",
     "buttonlink": "#testimonials",
     "name": "tabs",
     "scheduled": false
@@ -66,7 +66,7 @@
     "status": "publish",
     "title": "Fikrinizi birlikte geliştirelim!",
     "description": "Ürün geliştirme tecrübemizle şirketlerin ve girişimlerin fikirlerini hayata geçirmelerine yardımcı oluyoruz.",
-    "buttontext": "Let's discuss your project",
+    "buttontext": "Projenizi konuşalım",
     "buttonlink": "#contact",
     "name": "banner",
     "scheduled": false
@@ -91,7 +91,7 @@
     "status": "changed",
     "title": "Sıkça Sorulan Sorular",
     "description": "Lanista Yazılım'ın hizmetleri hakkında sık sorulan sorularla hızlı yanıtlar bulun. Eğer daha fazla yanıta ihtiyaç duyuyorsanız bizimle iletişime geçebilirsiniz.",
-    "buttontext": "Let's discuss your project",
+    "buttontext": "Projenizi konuşalım",
     "buttonlink": "#contact",
     "name": "faq",
     "scheduled": false

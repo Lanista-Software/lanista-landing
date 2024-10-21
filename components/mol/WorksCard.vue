@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import type { TWorkCategory } from "../templates/TabSection.vue";
+import useScrollLock from '~/composables/scrollLock';
 
+const { lockScroll } = useScrollLock();
 export interface WorksCardProps {
   ID: string;
   createdAt: string;
@@ -12,6 +13,7 @@ export interface WorksCardProps {
   link: string;
   status: string;
   scheduled: boolean;
+  order: number;
 }
 defineProps<{
   item: WorksCardProps;
@@ -39,6 +41,7 @@ defineProps<{
               variant="outline"
               rounded
               filter="darken"
+              @click="lockScroll"
             >
               See live project
               <template #append>
@@ -50,10 +53,10 @@ defineProps<{
       </div>
       <div
         v-if="item.image"
-        class="w-full h-auto rounded-3xl overflow-hidden"
+        class="w-full h-auto overflow-hidden p-4"
       >
         <NuxtImg
-          class="w-full rounded-xl h-full object-cover aspect-[2/1]"
+          class="w-full h-full object-cover aspect-[2/1]"
           :src="getStaticImagePath(item.image)"
           :alt="getImageAlt(item.image)"
           placeholder

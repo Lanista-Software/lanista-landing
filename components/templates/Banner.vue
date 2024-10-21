@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import useScrollLock from '~/composables/scrollLock';
+
 export type BannerProps = {
   title: string;
   description: string;
@@ -6,6 +8,7 @@ export type BannerProps = {
   buttonLink: string;
 };
 defineProps<BannerProps>();
+const {lockScroll} = useScrollLock();
 </script>
 
 <template>
@@ -23,7 +26,7 @@ defineProps<BannerProps>();
       </div>
       <div class="w-full md:w-1/2 md:flex md:items-center md:justify-end">
         <NuxtLink :to="buttonLink">
-          <LuiButton color="danger" rounded="full" size="lg" tag="div">
+          <LuiButton @click="lockScroll" color="danger" rounded="full" size="lg" tag="div">
             {{ buttonLabel }}
             <template #append>
               <i class="ri-arrow-right-up-line" />

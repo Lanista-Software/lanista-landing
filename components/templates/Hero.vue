@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import sectionData from "../../contentrain/sections/en.json";
 import referencesData from "../../contentrain/references/references.json";
+import useScrollLock from "~/composables/scrollLock";
 const defaultPath = getDefaultPathByFieldName(
   sectionData,
   "name",
   "hero",
   "sections"
 );
+const { lockScroll } = useScrollLock();
 </script>
 
 <template>
@@ -26,7 +28,7 @@ const defaultPath = getDefaultPathByFieldName(
     </p>
     <div class="pt-8 flex items-center justify-center max-content">
       <NuxtLink :to="$t(`${defaultPath}.buttonlink`)">
-        <LuiButton rounded="full" color="danger">
+        <LuiButton @click="lockScroll" rounded="full" color="danger">
           {{ $t(`${defaultPath}.buttontext`) }}
           <template #append>
             <i class="ri-arrow-right-up-line"></i>
