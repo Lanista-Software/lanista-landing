@@ -1,42 +1,42 @@
 [
   {
     "ID": "34e63b4829f0",
-    "createdAt": "Fri Sep 27 2024 22:58:20 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Fri Sep 27 2024 22:58:20 GMT+0300 (GMT+03:00)",
-    "logo": "public/1727359111545_1724068521380_popile.png",
+    "createdAt": "2024-09-27T19:58:20.000Z",
+    "updatedAt": "2024-10-08T13:42:57.061Z",
     "status": "publish",
+    "logo": "public/1728394907608_Popile.svg",
     "scheduled": false
   },
   {
     "ID": "5c5955d57da8",
     "createdAt": "2024-09-27T19:58:54.000Z",
-    "updatedAt": "2024-10-04T21:54:44.814Z",
+    "updatedAt": "2024-10-09T15:05:43.629Z",
     "status": "publish",
-    "logo": "public/1727359111545_1724068521380_popile.png",
+    "logo": "public/1728394892554_pazardan.svg",
     "scheduled": false
   },
   {
     "ID": "7fa159ae4aaf",
-    "createdAt": "Fri Sep 27 2024 22:58:40 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Fri Sep 27 2024 22:58:40 GMT+0300 (GMT+03:00)",
-    "logo": "public/1727359111545_1724068521380_popile.png",
+    "createdAt": "2024-09-27T19:58:40.000Z",
+    "updatedAt": "2024-10-08T13:42:57.072Z",
     "status": "publish",
+    "logo": "public/1728394876736_Contentrain.svg",
     "scheduled": false
   },
   {
     "ID": "ae0d98f178d1",
-    "createdAt": "Fri Sep 27 2024 22:59:08 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Fri Sep 27 2024 22:59:08 GMT+0300 (GMT+03:00)",
-    "logo": "public/1727359111545_1724068521380_popile.png",
+    "createdAt": "2024-09-27T19:59:08.000Z",
+    "updatedAt": "2024-10-08T13:42:57.076Z",
     "status": "publish",
+    "logo": "public/1728394832510_Visivi.svg",
     "scheduled": false
   },
   {
     "ID": "ca7bedf86bfb",
     "createdAt": "2024-09-27T19:59:01.000Z",
-    "updatedAt": "2024-10-07T06:51:50.765Z",
-    "status": "changed",
-    "logo": "public/1727359111545_1724068521380_kahvedunyasi.svg",
+    "updatedAt": "2024-10-09T07:27:46.424Z",
+    "status": "publish",
+    "logo": "public/1728458840475_Bloomandfresh.svg",
     "scheduled": false
   }
 ]

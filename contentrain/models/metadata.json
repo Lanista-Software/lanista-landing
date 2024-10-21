@@ -48,14 +48,6 @@
     "isServerless": false
   },
   {
-    "name": "TestimonialItems",
-    "modelId": "testimonialitems",
-    "localization": true,
-    "type": "JSON",
-    "createdBy": "user",
-    "isServerless": false
-  },
-  {
     "name": "FaqItems",
     "modelId": "faqitems",
     "localization": true,
@@ -90,6 +82,14 @@
   {
     "name": "MetaTags",
     "modelId": "meta-tags",
+    "localization": true,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
+  },
+  {
+    "name": "Testimonail Items",
+    "modelId": "testimonail-items",
     "localization": true,
     "type": "JSON",
     "createdBy": "user",

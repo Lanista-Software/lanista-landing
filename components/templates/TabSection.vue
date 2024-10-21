@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import useScrollLock from '~/composables/scrollLock';
+
 export type TabItem = {
   ID: string;
   createdAt: string;
@@ -18,6 +20,7 @@ export type TWorkCategory = {
   category: string;
   status: string;
   scheduled: boolean;
+  order: number;
 };
 export type TabSectionProps = {
   items: TabItem[];
@@ -25,17 +28,19 @@ export type TabSectionProps = {
   description: string;
   categories: TWorkCategory[];
 };
-
+const {lockScroll} = useScrollLock();
 const activeIndex = ref(0);
 const props = defineProps<TabSectionProps>();
 const filteredCategories = computed(() => {
-  return props.items.reduce((acc: TWorkCategory[], item) => {
+  const categories = props.items.reduce((acc: TWorkCategory[], item) => {
     const categoryObject = getRelationalFields(props.categories, item.category);
     if (!acc.some((x) => x.ID === item.category) && categoryObject) {
       acc.push(categoryObject);
     }
     return acc;
   }, []);
+  const categoriesSorted = categories.sort((a, b) => a.order - b.order);
+  return categoriesSorted;
 });
 function getTabItems(category: string) {
   return props.items.filter((x) => x.category === category);
@@ -45,10 +50,10 @@ function getTabItems(category: string) {
 <template>
   <MolAppSectionLayout :title="title" :description="description">
     <div class="w-full">
-      <div v-if="filteredCategories.length" class="overflow-x-scroll">
+      <div v-if="filteredCategories.length" class="w-full overflow-x-scroll">
         <LuiTabGroup :selected-index="0">
           <!-- Tab Buttons -->
-          <LuiTabButtons align-tabs="center" class="w-max mx-auto">
+          <LuiTabButtons align-tabs="center">
             <LuiTabButton
               v-for="(category, index) in filteredCategories"
               :key="category.ID"
@@ -102,7 +107,7 @@ function getTabItems(category: string) {
     <template #button-slot>
       <slot name="button">
         <NuxtLink to="#contact">
-          <LuiButton rounded="full" color="danger"
+          <LuiButton @click="lockScroll" rounded="full" color="danger"
             >Let's discuss your project
             <template #append>
               <i class="ri-arrow-right-up-line"></i>

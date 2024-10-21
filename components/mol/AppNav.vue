@@ -6,10 +6,13 @@ export interface MenuItem {
   label: string;
   path: string;
 }
-
 defineProps<{ menuItems: MenuItem[]; direction: "vertical" | "horizontal" }>();
 const { lockScroll } = useScrollLock()
-
+const emit = defineEmits<{ clicked: [] }>();
+function handleClicked() {
+  lockScroll();
+  emit("clicked");
+}
 function isActive(path: string, routeHash: string) {
   return routeHash.length === 0 ? path === "#home" : routeHash === path;
 }
@@ -25,7 +28,7 @@ function isActive(path: string, routeHash: string) {
         <li v-if="item">
           <NuxtLink
             :to="item.path"
-            @click="lockScroll"
+            @click="handleClicked"
             class="font-inter cursor-pointer"
             :class="{
               'text-danger-500 font-bold': isActive(item.path, $route.hash),

@@ -10,8 +10,8 @@ import enWorkCategoriesData from "../contentrain/workcategories/en.json";
 import trWorkCategoriesData from "../contentrain/workcategories/tr.json";
 import trWorksItemsData from "../contentrain/workitems/tr.json";
 import enWorksItemsData from "../contentrain/workitems/en.json";
-import enTestimonialsData from "../contentrain/testimonialitems/en.json";
-import trTestimonialsData from "../contentrain/testimonialitems/tr.json";
+import enTestimonialsData from "../contentrain/testimonail-items/en.json";
+import trTestimonialsData from "../contentrain/testimonail-items/tr.json";
 import enFaqItemsData from "../contentrain/faqitems/en.json";
 import trFaqItemsData from "../contentrain/faqitems/tr.json";
 import trMetaTags from "../contentrain/meta-tags/tr.json";
@@ -33,6 +33,7 @@ const { t, locale } = useI18n();
 const metaTags = computed(() =>
   locale.value === "en" ? enMetaTags : trMetaTags
 );
+const viewedWorkItems = ref(3);
 const serviceItems = computed<AppCardProps[]>(() =>
   locale.value === "en"
     ? (enServicesData as AppCardProps[])
@@ -91,8 +92,8 @@ const workItemWithCategories = computed(() =>
         category: getRelationalFields(worksCategories.value, item.category)
           ?.category,
       };
-    })
-    .slice(0, 3)
+    }).sort((a, b) => a.order - b.order).slice(0, viewedWorkItems.value)
+
 );
 const bannerSectionDefaultPath = getDefaultPathByFieldName(
   sectionData,
@@ -146,13 +147,15 @@ const tabSectionProps: TabSectionProps = {
   description: t(`${tabSectionDefaultPath}.description`),
   categories: worksCategories.value,
 };
-const worksSectionProps: CardSectionProps = {
+const worksSectionProps = computed<CardSectionProps>(() => ({
+
   items: workItemWithCategories.value,
   view: "single",
   title: t(`${workSectionDefaultPath}.title`),
   description: t(`${workSectionDefaultPath}.description`),
   cardComponent: "works",
-};
+
+}));
 const bannerSection = {
   title: t(`${bannerSectionDefaultPath}.title`),
   description: t(`${bannerSectionDefaultPath}.description`),
@@ -190,9 +193,17 @@ const convertedMetaTags = computed(() =>
 const route = useRoute();
 const router = useRouter();
 
-const { isScrollLocked } = useScrollLock();
+const { isScrollLocked, lockScroll } = useScrollLock();
 
-
+const { fullSchema } = useSchemas()
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: fullSchema.value,
+    },
+  ],
+});
 useSeoMeta({ ...convertedMetaTags.value });
 
 function handleSectionViewed(id: string) {
@@ -208,9 +219,9 @@ function handleSectionViewed(id: string) {
   <div>
     <!-- Home Section -->
     <div class="bg-[url('/1727359111545_1624068421380_hero.png')] aspect-auto bg-cover bg-center">
-      <MolAppSection id="home" @viewed="handleSectionViewed">
+      <AtomsContainer class="pt-28 pb-40 flex items-center justify-center">
         <TemplatesHero />
-      </MolAppSection>
+      </AtomsContainer>
     </div>
     <!-- Services Section -->
     <MolAppSection id="services" @viewed="handleSectionViewed">
@@ -227,32 +238,23 @@ function handleSectionViewed(id: string) {
     <!-- Works Section -->
     <MolAppSection id="works" @viewed="handleSectionViewed">
       <TemplatesCardSection v-bind="worksSectionProps">
-        <template #button>
-          <NuxtLink :to="$t(`${workSectionDefaultPath}.buttonlink`)">
-            <LuiButton variant="link" color="primary" tag="div">{{
-              $t(`${workSectionDefaultPath}.buttontext`)
-            }}</LuiButton>
-          </NuxtLink>
+        <template v-if="viewedWorkItems !== workItems.length" #button>
+          <LuiButton @click="viewedWorkItems = 8" variant="link" color="primary">{{
+            $t(`${workSectionDefaultPath}.buttontext`) }}
+          </LuiButton>
         </template>
       </TemplatesCardSection>
     </MolAppSection>
     <!-- Testimonials Section -->
     <MolAppSection id="testimonials">
-      <TemplatesCardSection v-bind="testimonialsSectionProps">
-        <template #button>
-          <span></span>
-        </template>
+      <TemplatesCardSection v-bind="testimonialsSectionProps" disableButton>
       </TemplatesCardSection>
     </MolAppSection>
     <MolAppSection id="banner">
-      <TemplatesBanner
-        :title="bannerSection.title"
-        :description="bannerSection.description"
-        :buttonLabel="bannerSection.buttonText"
-        :buttonLink="bannerSection.buttonLink"
-      />
+      <TemplatesBanner :title="bannerSection.title" :description="bannerSection.description"
+        :buttonLabel="bannerSection.buttonText" :buttonLink="bannerSection.buttonLink" />
     </MolAppSection>
-    <MolAppSection id="contact" class="bg-secondary-50">
+    <MolAppSection id="footer" class="bg-secondary-50">
       <TemplatesContact v-bind="contactAndFaqSectionProps" />
     </MolAppSection>
   </div>
