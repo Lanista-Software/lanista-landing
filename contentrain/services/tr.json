@@ -2,11 +2,11 @@
   {
     "ID": "50d81f2a3baf",
     "createdAt": "2024-10-14T10:32:18.000Z",
-    "updatedAt": "2024-10-22T16:05:05.174Z",
-    "status": "publish",
+    "updatedAt": "2024-10-22T18:03:26.714Z",
+    "status": "changed",
     "title": "Web Uygulama Geliştirme",
     "description": "Konseptten lansmana kadar güvenli, ölçeklenebilir ve iş ihtiyaçlarınızı karşılayacak şekilde tasarlanmış özel web uygulamaları geliştiriyoruz.",
-    "image": "public/1729613076053_webapptry.svg",
+    "image": "public/1729620156603_webdark.svg",
     "scheduled": false
   },
   {
