@@ -2,21 +2,21 @@
   {
     "ID": "50d81f2a3baf",
     "createdAt": "2024-10-14T10:32:18.000Z",
-    "updatedAt": "2024-10-22T16:05:05.174Z",
-    "status": "publish",
+    "updatedAt": "2024-10-22T18:03:26.714Z",
+    "status": "changed",
     "title": "Web Uygulama Geliştirme",
     "description": "Konseptten lansmana kadar güvenli, ölçeklenebilir ve iş ihtiyaçlarınızı karşılayacak şekilde tasarlanmış özel web uygulamaları geliştiriyoruz.",
-    "image": "public/1729613076053_webapptry.svg",
+    "image": "public/1729620156603_webdark.svg",
     "scheduled": false
   },
   {
     "ID": "9450777bee2f",
     "createdAt": "2024-10-14T10:33:10.000Z",
-    "updatedAt": "2024-10-22T16:07:24.800Z",
-    "status": "publish",
+    "updatedAt": "2024-10-22T18:03:46.738Z",
+    "status": "changed",
     "title": "Mobil Uygulama Geliştirme",
     "description": "Müşterilerimizin fikirlerini gerçek mobil deneyimlere dönüştürebilmek için özel IOS ve Android uygulamalar geliştiriyoruz.",
-    "image": "public/1729613217101_mobileapptry.svg",
+    "image": "public/1729620175935_mobiledark.svg",
     "scheduled": false
   },
   {
