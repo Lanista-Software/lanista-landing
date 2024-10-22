@@ -2,6 +2,7 @@
 import useScrollLock from '~/composables/scrollLock';
 
 const { lockScroll } = useScrollLock();
+const proxy = useScriptGoogleAnalytics();
 export interface WorksCardProps {
   ID: string;
   createdAt: string;
@@ -14,6 +15,10 @@ export interface WorksCardProps {
   status: string;
   scheduled: boolean;
   order: number;
+}
+function handleClick() {
+    lockScroll();
+    proxy.dataLayer.push({ event: 'button_clicked', button_name: 'see_live_project' });
 }
 defineProps<{
   item: WorksCardProps;
@@ -41,7 +46,7 @@ defineProps<{
               variant="outline"
               rounded
               filter="darken"
-              @click="lockScroll"
+              @click="handleClick"
             >
               See live project
               <template #append>

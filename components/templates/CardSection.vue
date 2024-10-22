@@ -15,6 +15,11 @@ export type CardSectionProps = {
 
 const props = defineProps<CardSectionProps>();
 const {lockScroll} = useScrollLock();
+const proxy = useScriptGoogleAnalytics();
+function handleClick() {
+  lockScroll();
+  proxy.dataLayer.push({ event: 'button_clicked', button_name: '#contact' });
+}
 const getCardClass = (index: number) => {
   if (props.view === "grid") {
     const rowPattern = [2, 3];
@@ -62,7 +67,7 @@ const getCardClass = (index: number) => {
     <template #button-slot>
       <slot name="button">
         <NuxtLink to="#home">
-          <LuiButton @click="lockScroll" rounded="full" color="danger" tag="div"
+          <LuiButton @click="handleClick" rounded="full" color="danger" tag="div"
             >Let's discuss your project
             <template #append>
               <i class="ri-arrow-right-up-line"></i>

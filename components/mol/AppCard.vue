@@ -9,14 +9,13 @@ export interface AppCardProps {
   createdAt: string;
   updatedAt: string;
 }
-const props = defineProps<{
+defineProps<{
   item: AppCardProps;
   square?: boolean;
   view?: "grid" | "single" | "triple";
   closePadding?: boolean;
 }>();
 
-console.log('props:', props)
 </script>
 <template>
   <MolCardAnimation>

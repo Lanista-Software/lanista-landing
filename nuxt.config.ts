@@ -9,7 +9,15 @@ export default defineNuxtConfig({
     '@lui-ui/lui-nuxt',
     '@nuxt/image',
     '@nuxt/eslint',
+    '@nuxt/scripts',
   ],
+  scripts:{
+    registry:{
+      googleAnalytics:{
+        id: 'G-T48ZEC3WT9'
+      }
+    }
+  },
   css: ['remixicon/fonts/remixicon.css'],
   googleFonts: {
     families: {

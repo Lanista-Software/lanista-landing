@@ -205,7 +205,11 @@ useHead({
   ],
 });
 useSeoMeta({ ...convertedMetaTags.value });
-
+const proxy = useScriptGoogleAnalytics();
+function handleSeeAll() {
+  proxy.dataLayer.push({ event: "button_clicked", button_name: "see_all_works" });
+  viewedWorkItems.value = workItems.value.length;
+}
 function handleSectionViewed(id: string) {
   const routeHash = route.hash;
   const idWithHash = `#${id}`;
@@ -239,7 +243,7 @@ function handleSectionViewed(id: string) {
     <MolAppSection id="works" @viewed="handleSectionViewed">
       <TemplatesCardSection v-bind="worksSectionProps">
         <template v-if="viewedWorkItems !== workItems.length" #button>
-          <LuiButton @click="viewedWorkItems = 8" variant="link" color="primary">{{
+          <LuiButton @click="handleSeeAll" variant="link" color="primary">{{
             $t(`${workSectionDefaultPath}.buttontext`) }}
           </LuiButton>
         </template>

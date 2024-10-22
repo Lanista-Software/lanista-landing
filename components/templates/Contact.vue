@@ -22,6 +22,10 @@ export type ContactProps = {
         }
     }
 }
+const proxy = useScriptGoogleAnalytics();
+function handleToggle(title: string) {
+    proxy.dataLayer.push({ event: 'faq_toggled', faq_title: title });
+}
 defineProps<ContactProps>();
 </script>
 
@@ -33,7 +37,7 @@ defineProps<ContactProps>();
                 <p class="font-normal font-inter text-md text-body-text mt-4"> {{ sections.faq.description }} </p>
             </div>
             <div class="pt-8 space-y-4">
-                <AtomsAccordion v-for="faq in faqList" :key="faq.ID" :title="faq.question">
+                <AtomsAccordion v-for="faq in faqList" :key="faq.ID" :title="faq.question" @toogle="handleToggle">
                    <p class="pt-2 font-normal font-inter text-sm text-body-text"> {{ faq.answer }}</p>
                 </AtomsAccordion>
             </div>

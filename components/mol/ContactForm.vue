@@ -87,7 +87,7 @@ const validateEmail = (email: string) => {
     return re.test(String(email).toLowerCase());
 };
 const { $firestore } = useNuxtApp();
-console.log('Firestore: ', $firestore);
+const proxy = useScriptGoogleAnalytics();
 const handleSubmit = async () => {
     // Reset errors
     errors.value = {
@@ -146,6 +146,7 @@ const handleSubmit = async () => {
 
     // If the form is valid, submit the form data
     if (isValid) {
+        proxy.dataLayer.push({ event: 'contact_form_submitted' });
         try {
             const docPath = 'contentrain/models/contactform/content';
             const defaultCollectionRef = collection($firestore as Firestore, `${docPath}/default`);

@@ -7,8 +7,13 @@ export type BannerProps = {
   buttonLabel: string;
   buttonLink: string;
 };
-defineProps<BannerProps>();
+const props = defineProps<BannerProps>();
 const {lockScroll} = useScrollLock();
+const proxy = useScriptGoogleAnalytics();
+function handleClick() {
+  proxy.dataLayer.push({ event: 'button_clicked', button_name: props.buttonLink });
+  lockScroll();
+}
 </script>
 
 <template>

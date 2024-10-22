@@ -17,7 +17,7 @@ const emit = defineEmits(['toogle'])
 const isActive = ref(props.defaultOpen)
 function toogleVisibility() {
   isActive.value = !isActive.value
-  emit('toogle', isActive.value)
+  emit('toogle', props.title)
 }
 </script>
 
