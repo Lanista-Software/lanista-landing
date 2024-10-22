@@ -34,14 +34,5 @@
     "link": "https://www.linkedin.com/company/lanista-software",
     "icon": "ri-linkedin-line",
     "scheduled": false
-  },
-  {
-    "ID": "2aa54f9e7eb3",
-    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-10-22T09:35:13.503Z",
-    "link": "https://www.youtube.com/contentrain",
-    "icon": "ri-youtube-line",
-    "status": "draft",
-    "scheduled": false
   }
 ]
