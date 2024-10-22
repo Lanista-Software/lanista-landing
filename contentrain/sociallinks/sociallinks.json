@@ -2,19 +2,10 @@
   {
     "ID": "2aa54f9e7eaf",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-22T09:35:21.896Z",
+    "updatedAt": "2024-10-22T10:40:07.059Z",
     "status": "publish",
-    "link": "https://www.instagram.com/lanistasoftware/",
-    "icon": "ri-instagram-line",
-    "scheduled": false
-  },
-  {
-    "ID": "2aa54f9e7eb0",
-    "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-22T09:35:21.903Z",
-    "status": "publish",
-    "link": "https://www.facebook.com/lanistasoftware/",
-    "icon": "ri-facebook-line",
+    "link": "https://www.linkedin.com/company/lanista-software",
+    "icon": "ri-linkedin-line",
     "scheduled": false
   },
   {
@@ -29,19 +20,10 @@
   {
     "ID": "2aa54f9e7eb2",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-22T09:35:21.914Z",
+    "updatedAt": "2024-10-22T10:40:07.066Z",
     "status": "publish",
-    "link": "https://www.linkedin.com/company/lanista-software",
-    "icon": "ri-linkedin-line",
-    "scheduled": false
-  },
-  {
-    "ID": "2aa54f9e7eb3",
-    "createdAt": "Thu Sep 26 2024 21:05:14 GMT+0300 (GMT+03:00)",
-    "updatedAt": "2024-10-22T09:35:13.503Z",
-    "link": "https://www.youtube.com/contentrain",
-    "icon": "ri-youtube-line",
-    "status": "draft",
+    "link": "https://www.instagram.com/lanistasoftware/",
+    "icon": "ri-instagram-line",
     "scheduled": false
   }
 ]
