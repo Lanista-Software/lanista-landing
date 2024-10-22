@@ -2,8 +2,8 @@
   {
     "ID": "2aa54f9e7eaf",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-22T09:33:33.431Z",
-    "status": "changed",
+    "updatedAt": "2024-10-22T09:35:21.896Z",
+    "status": "publish",
     "link": "https://www.instagram.com/lanistasoftware/",
     "icon": "ri-instagram-line",
     "scheduled": false
@@ -11,8 +11,8 @@
   {
     "ID": "2aa54f9e7eb0",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-22T09:35:07.821Z",
-    "status": "changed",
+    "updatedAt": "2024-10-22T09:35:21.903Z",
+    "status": "publish",
     "link": "https://www.facebook.com/lanistasoftware/",
     "icon": "ri-facebook-line",
     "scheduled": false
@@ -20,8 +20,8 @@
   {
     "ID": "2aa54f9e7eb1",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-22T09:34:07.667Z",
-    "status": "changed",
+    "updatedAt": "2024-10-22T09:35:21.910Z",
+    "status": "publish",
     "link": "https://x.com/lanistasoftware",
     "icon": "ri-twitter-line",
     "scheduled": false
@@ -29,8 +29,8 @@
   {
     "ID": "2aa54f9e7eb2",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-22T09:34:42.502Z",
-    "status": "changed",
+    "updatedAt": "2024-10-22T09:35:21.914Z",
+    "status": "publish",
     "link": "https://www.linkedin.com/company/lanista-software",
     "icon": "ri-linkedin-line",
     "scheduled": false
