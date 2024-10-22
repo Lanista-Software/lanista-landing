@@ -10,6 +10,7 @@ export type CardSectionProps = {
   description: string;
   cardComponent: "works" | "app" | "testimonial";
   disableButton?: boolean;
+  closePadding?: boolean;
 };
 
 const props = defineProps<CardSectionProps>();
@@ -45,6 +46,7 @@ const getCardClass = (index: number) => {
           :item="item"
           :square="getCardClass(index) === 'lg:col-span-2'"
           :view="props.view"
+          :close-padding="closePadding"
         />
         <MolWorksCard
           v-else-if="cardComponent === 'works'"
