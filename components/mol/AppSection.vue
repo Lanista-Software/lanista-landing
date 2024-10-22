@@ -6,12 +6,16 @@ const emit = defineEmits<{ viewed: [id: string] }>();
 
 let intersectionObserver: IntersectionObserver | null = null;
 const el = ref(null);
+const proxy = useScriptGoogleAnalytics();
 
 onMounted(() => {
   intersectionObserver = new IntersectionObserver(
     (entries) => {
       const entry = entries[0];
-      if (entry.isIntersecting) emit("viewed", props.id);
+      if (entry.isIntersecting) {
+        emit("viewed", props.id)
+        proxy.dataLayer.push({ event: 'section_viewed', section_id: props.id });
+      }
     },
     { threshold: 0.3 } // Observe when 50% of the element is visible
   );

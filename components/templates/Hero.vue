@@ -9,6 +9,11 @@ const defaultPath = getDefaultPathByFieldName(
   "sections"
 );
 const { lockScroll } = useScrollLock();
+const proxy = useScriptGoogleAnalytics();
+function handleClick() {
+  lockScroll();
+  proxy.dataLayer.push({ event: "button_clicked", button_name: "hero_button" });
+}
 </script>
 
 <template>
@@ -28,7 +33,7 @@ const { lockScroll } = useScrollLock();
     </p>
     <div class="pt-8 flex items-center justify-center max-content">
       <NuxtLink :to="$t(`${defaultPath}.buttonlink`)">
-        <LuiButton @click="lockScroll" rounded="full" color="danger">
+        <LuiButton @click="handleClick" rounded="full" color="danger">
           {{ $t(`${defaultPath}.buttontext`) }}
           <template #append>
             <i class="ri-arrow-right-up-line"></i>
