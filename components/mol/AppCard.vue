@@ -9,15 +9,20 @@ export interface AppCardProps {
   createdAt: string;
   updatedAt: string;
 }
-defineProps<{
+const props = defineProps<{
   item: AppCardProps;
   square?: boolean;
   view?: "grid" | "single" | "triple";
+  closePadding?: boolean;
 }>();
+
+console.log('props:', props)
 </script>
 <template>
   <MolCardAnimation>
-    <div class="border border-border-color p-6 rounded-2xl shadow-sm " :class="view && view === 'triple' ? 'lg:h-72 xl:h-64 lg:flex lg:flex-col md:justify-between' : ''">
+    <div class="border border-border-color rounded-2xl shadow-sm " 
+    :class="[view && view === 'triple' ? 'lg:h-72 xl:h-64 lg:flex lg:flex-col md:justify-between' : '', closePadding ? 'p-0' : 'p-6']"
+    >
       <div v-if="item.image" class="rounded-3xl overflow-hidden h-auto md:h-[459px] lg:h-auto">
         <NuxtImg v-if="square" loading="lazy"
           class="w-full rounded-xl h-full object-cover aspect-square md:aspect-auto lg:aspect-square"
@@ -35,7 +40,7 @@ defineProps<{
           </template>
         </LuiAvatar>
       </div>
-      <div>
+      <div :class="closePadding ? 'px-6 pb-6' : 'p-0'">
         <h2 class="text-xl font-bold font-space text-heading-text" :class="view && view === 'triple' ? 'mt-8 lg:mt-0' : 'mt-8'">
           {{ item.title }}
         </h2>

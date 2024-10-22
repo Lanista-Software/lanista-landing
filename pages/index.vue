@@ -225,7 +225,7 @@ function handleSectionViewed(id: string) {
     </div>
     <!-- Services Section -->
     <MolAppSection id="services" @viewed="handleSectionViewed">
-      <TemplatesCardSection v-bind="serviceCardProps" />
+      <TemplatesCardSection v-bind="serviceCardProps" :close-padding="true" />
     </MolAppSection>
     <!-- Process Section -->
     <MolAppSection id="process" @viewed="handleSectionViewed">
