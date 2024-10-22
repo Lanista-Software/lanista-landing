@@ -22,11 +22,11 @@
   {
     "ID": "d00761480436",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-21T17:39:38.813Z",
-    "status": "publish",
+    "updatedAt": "2024-10-22T13:47:22.905Z",
+    "status": "changed",
     "title": "MVP Development",
     "description": "Helping startups bring their ideas to life with MVP development services.",
-    "image": "public/1729532360463_mvp.svg",
+    "image": "public/1729604747141_mvpfinal.svg",
     "scheduled": false
   },
   {
