@@ -26,19 +26,6 @@
     "order": 4
   },
   {
-    "ID": "5711a48d0554",
-    "createdAt": "2024-10-16T11:00:03.000Z",
-    "updatedAt": "2024-10-16T11:03:15.952Z",
-    "status": "changed",
-    "title": "RezMe",
-    "image": "public/1729076421952_rezme.svg",
-    "description": "aaa",
-    "category": "b5debb48ccb2",
-    "link": "https://lanista.com.tr/",
-    "scheduled": false,
-    "order": 8
-  },
-  {
     "ID": "8a8044e883e8",
     "createdAt": "2024-09-26T18:08:38.000Z",
     "updatedAt": "2024-10-16T08:03:22.597Z",
