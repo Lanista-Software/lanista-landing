@@ -2,51 +2,51 @@
   {
     "ID": "50d81f2a3baf",
     "createdAt": "2024-10-14T10:32:18.000Z",
-    "updatedAt": "2024-10-21T16:48:22.011Z",
+    "updatedAt": "2024-10-22T16:05:05.169Z",
     "status": "publish",
     "title": "Web App. Development",
     "description": "From concept to launch, we deliver custom web apps that are secure, scalable, and designed to meet your business needs.",
-    "image": "public/1729529279758_webapdeneme.svg",
+    "image": "public/1729613076053_webapptry.svg",
     "scheduled": false
   },
   {
     "ID": "9450777bee2f",
     "createdAt": "2024-10-14T10:33:10.000Z",
-    "updatedAt": "2024-10-21T17:21:56.595Z",
+    "updatedAt": "2024-10-22T16:07:24.797Z",
     "status": "publish",
     "title": "Mobile App. Development",
     "description": "We develop custom iOS and Android mobile apps to turn our clients’ ideas into real mobile experiences.",
-    "image": "public/1729528436478_mobile.svg",
+    "image": "public/1729613217101_mobileapptry.svg",
     "scheduled": false
   },
   {
     "ID": "d00761480436",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-21T17:39:38.813Z",
+    "updatedAt": "2024-10-22T13:48:10.420Z",
     "status": "publish",
     "title": "MVP Development",
     "description": "Helping startups bring their ideas to life with MVP development services.",
-    "image": "public/1729532360463_mvp.svg",
+    "image": "public/1729604747141_mvpfinal.svg",
     "scheduled": false
   },
   {
     "ID": "d00761480437",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-21T19:29:50.538Z",
+    "updatedAt": "2024-10-22T13:48:10.422Z",
     "status": "publish",
     "title": "SaaS Platform Development",
     "description": "We provide end-to-end custom SaaS platform development solutions. ",
-    "image": "public/1729538970450_saasdeneme.svg",
+    "image": "public/1729604771177_saasfinal.svg",
     "scheduled": false
   },
   {
     "ID": "d00761480438",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-22T08:00:41.047Z",
+    "updatedAt": "2024-10-22T13:54:00.453Z",
     "status": "publish",
     "title": "Product Design",
     "description": "Crafting product designs that blend functionality with modern aesthetics.",
-    "image": "public/1729584022404_productdesign2.svg",
+    "image": "public/1729605212295_productdesignfinal.svg",
     "scheduled": false
   },
   {
