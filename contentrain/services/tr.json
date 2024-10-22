@@ -42,11 +42,11 @@
   {
     "ID": "d00761480438",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-22T13:48:03.161Z",
-    "status": "changed",
+    "updatedAt": "2024-10-22T13:54:00.456Z",
+    "status": "publish",
     "title": "Ürün Tasarımı",
     "description": "İşlevselliği modern estetikle harmanlayan ürün tasarımları üretiyoruz.",
-    "image": "public/1729604715819_productdesignfinal.svg",
+    "image": "public/1729605212295_productdesignfinal.svg",
     "scheduled": false
   },
   {
