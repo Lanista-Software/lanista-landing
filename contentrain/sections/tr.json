@@ -2,12 +2,12 @@
   {
     "ID": "2aa54f9e7eaf",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-18T09:34:13.927Z",
-    "status": "changed",
+    "updatedAt": "2024-10-23T08:30:32.237Z",
+    "status": "publish",
     "title": "Yazılım geliştirme çözümlerimize göz atın",
     "description": "Müşterilerimize, tasarımdan final ürüne kadar her adımda rehberlik ederek geniş kapsamlı yazılım geliştirme hizmetleri sunuyoruz.",
-    "buttontext": "Projenizi konuşalım",
-    "buttonlink": "#contact",
+    "buttontext": "Son projelerimizi inceleyin",
+    "buttonlink": "#works",
     "name": "services",
     "scheduled": false
   },
