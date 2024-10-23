@@ -2,12 +2,12 @@
   {
     "ID": "2aa54f9e7eaf",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-18T09:43:28.139Z",
+    "updatedAt": "2024-10-23T08:12:32.375Z",
     "status": "publish",
     "title": "Explore our expertise in outsourced Development Services",
     "description": "We offer a wide range of software development services, guiding our clients through every step from concept to final product.",
-    "buttontext": "Let's discuss your project",
-    "buttonlink": "#contact",
+    "buttontext": "See our latest works",
+    "buttonlink": "#works",
     "name": "services",
     "scheduled": false
   },
