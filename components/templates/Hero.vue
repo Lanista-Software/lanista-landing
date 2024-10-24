@@ -42,7 +42,7 @@ function handleClick() {
       </NuxtLink>
     </div>
     <div
-      class="flex items-center justify-evenly pt-14 lg:pt-20 flex-wrap gap-4 max-w-screen-md mx-auto w-full"
+      class="flex items-center justify-evenly pt-14 lg:pt-20 flex-wrap gap-4 gap-y-8 max-w-screen-md mx-auto w-full"
     >
       <NuxtImg
         v-for="i in referencesData"

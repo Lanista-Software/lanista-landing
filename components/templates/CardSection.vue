@@ -11,14 +11,18 @@ export type CardSectionProps = {
   cardComponent: "works" | "app" | "testimonial";
   disableButton?: boolean;
   closePadding?: boolean;
+  button?: {
+    text: string;
+    link: string;
+  };
 };
 
 const props = defineProps<CardSectionProps>();
-const {lockScroll} = useScrollLock();
+const { lockScroll } = useScrollLock();
 const proxy = useScriptGoogleAnalytics();
 function handleClick() {
   lockScroll();
-  proxy.dataLayer.push({ event: 'button_clicked', button_name: '#contact' });
+  proxy.dataLayer.push({ event: "button_clicked", button_name: "#contact" });
 }
 const getCardClass = (index: number) => {
   if (props.view === "grid") {
@@ -39,7 +43,11 @@ const getCardClass = (index: number) => {
 };
 </script>
 <template>
-  <MolAppSectionLayout :title="title" :description="description" :disable-button="disableButton">
+  <MolAppSectionLayout
+    :title="title"
+    :description="description"
+    :disable-button="disableButton"
+  >
     <div class="grid grid-cols-1 lg:grid-cols-6 gap-8 w-full">
       <div
         v-for="(item, index) in items"
@@ -65,16 +73,22 @@ const getCardClass = (index: number) => {
     </div>
 
     <template #button-slot>
-      <slot name="button">
-        <NuxtLink to="#home">
-          <LuiButton @click="handleClick" rounded="full" color="danger" tag="div"
-            >Let's discuss your project
-            <template #append>
-              <i class="ri-arrow-right-up-line"></i>
-            </template>
-          </LuiButton>
-        </NuxtLink>
-      </slot>
+      <template v-if="button">
+        <slot name="button">
+          <NuxtLink :to="button.link">
+            <LuiButton
+              @click="handleClick"
+              rounded="full"
+              color="danger"
+              tag="div"
+              >{{ button.text }}
+              <template #append>
+                <i class="ri-arrow-right-up-line"></i>
+              </template>
+            </LuiButton>
+          </NuxtLink>
+        </slot>
+      </template>
     </template>
   </MolAppSectionLayout>
 </template>
