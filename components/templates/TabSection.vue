@@ -27,6 +27,10 @@ export type TabSectionProps = {
   title: string;
   description: string;
   categories: TWorkCategory[];
+  button?: {
+    text: string;
+    link: string;
+  };
 };
 const {lockScroll} = useScrollLock();
 const activeIndex = ref(0);
@@ -106,9 +110,9 @@ function getTabItems(category: string) {
 
     <template #button-slot>
       <slot name="button">
-        <NuxtLink to="#contact">
+        <NuxtLink :to="button?.link">
           <LuiButton @click="lockScroll" rounded="full" color="danger"
-            >Let's discuss your project
+            >{{ button?.text }}
             <template #append>
               <i class="ri-arrow-right-up-line"></i>
             </template>

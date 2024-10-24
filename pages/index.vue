@@ -133,6 +133,10 @@ const serviceCardProps: CardSectionProps = {
   title: t(`${servicesSectionDefaultPath}.title`),
   description: t(`${servicesSectionDefaultPath}.description`),
   cardComponent: "app",
+  button: {
+    text: t(`${servicesSectionDefaultPath}.buttontext`),
+    link: t(`${servicesSectionDefaultPath}.buttonlink`),
+  }
 };
 const processCardProps: CardSectionProps = {
   items: processItems.value,
@@ -140,12 +144,20 @@ const processCardProps: CardSectionProps = {
   title: t(`${processSectionDefaultPath}.title`),
   description: t(`${processSectionDefaultPath}.description`),
   cardComponent: "app",
+  button: {
+    text: t(`${processSectionDefaultPath}.buttontext`),
+    link: t(`${processSectionDefaultPath}.buttonlink`),
+  }
 };
 const tabSectionProps: TabSectionProps = {
   items: tabItems.value,
   title: t(`${tabSectionDefaultPath}.title`),
   description: t(`${tabSectionDefaultPath}.description`),
   categories: worksCategories.value,
+  button: {
+    text: t(`${tabSectionDefaultPath}.buttontext`),
+    link: t(`${tabSectionDefaultPath}.buttonlink`),
+  }
 };
 const worksSectionProps = computed<CardSectionProps>(() => ({
 
@@ -153,6 +165,10 @@ const worksSectionProps = computed<CardSectionProps>(() => ({
   view: "single",
   title: t(`${workSectionDefaultPath}.title`),
   description: t(`${workSectionDefaultPath}.description`),
+  button:{
+    text: t(`${workSectionDefaultPath}.buttontext`),
+    link: t(`${workSectionDefaultPath}.buttonlink`),
+  },
   cardComponent: "works",
 
 }));
@@ -168,6 +184,10 @@ const testimonialsSectionProps: CardSectionProps = {
   title: t(`${testimoSectionDefaultPath}.title`),
   description: t(`${testimoSectionDefaultPath}.description`),
   cardComponent: "testimonial",
+  button: {
+    text: t(`${testimoSectionDefaultPath}.buttontext`),
+    link: t(`${testimoSectionDefaultPath}.buttonlink`)
+  }
 };
 const contactAndFaqSectionProps: ContactProps = {
   faqList: faqItems.value,
