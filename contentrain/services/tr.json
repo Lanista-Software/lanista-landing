@@ -2,7 +2,7 @@
   {
     "ID": "50d81f2a3baf",
     "createdAt": "2024-10-14T10:32:18.000Z",
-    "updatedAt": "2024-10-24T08:02:35.134Z",
+    "updatedAt": "2024-10-24T08:02:56.525Z",
     "status": "publish",
     "title": "Web Uygulama Geliştirme",
     "description": "Konseptten lansmana kadar güvenli, ölçeklenebilir ve iş ihtiyaçlarınızı karşılayacak şekilde tasarlanmış özel web uygulamaları geliştiriyoruz.",
@@ -12,8 +12,8 @@
   {
     "ID": "9450777bee2f",
     "createdAt": "2024-10-14T10:33:10.000Z",
-    "updatedAt": "2024-10-22T18:03:46.738Z",
-    "status": "changed",
+    "updatedAt": "2024-10-24T08:02:56.530Z",
+    "status": "publish",
     "title": "Mobil Uygulama Geliştirme",
     "description": "Müşterilerimizin fikirlerini gerçek mobil deneyimlere dönüştürebilmek için özel IOS ve Android uygulamalar geliştiriyoruz.",
     "image": "public/1729620175935_mobiledark.svg",
@@ -22,8 +22,8 @@
   {
     "ID": "d00761480436",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-22T13:47:22.906Z",
-    "status": "changed",
+    "updatedAt": "2024-10-24T08:02:56.534Z",
+    "status": "publish",
     "title": "MVP Geliştirme",
     "description": "Startuplara, fikirlerini hayata geçirebilmeleri için deneyimli bir ekiple birlikte MVP geliştirme hizmeti sunuyoruz.",
     "image": "public/1729604747141_mvpfinal.svg",
@@ -32,8 +32,8 @@
   {
     "ID": "d00761480437",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-22T13:47:43.388Z",
-    "status": "changed",
+    "updatedAt": "2024-10-24T08:02:56.539Z",
+    "status": "publish",
     "title": "SaaS Platform Geliştirme",
     "description": "Startuplara ve kurumsal firmalara ihtiyaç duydukları uçtan uca SaaS platform geliştirme çözümleri sağlıyoruz.",
     "image": "public/1729604771177_saasfinal.svg",
@@ -42,7 +42,7 @@
   {
     "ID": "d00761480438",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-22T13:54:00.456Z",
+    "updatedAt": "2024-10-24T08:02:56.542Z",
     "status": "publish",
     "title": "Ürün Tasarımı",
     "description": "İşlevselliği modern estetikle harmanlayan ürün tasarımları üretiyoruz.",
@@ -52,7 +52,7 @@
   {
     "ID": "d00761480439",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-23T06:17:50.106Z",
+    "updatedAt": "2024-10-24T08:02:56.546Z",
     "status": "publish",
     "title": "Web Tasarımı & Geliştirme",
     "description": "Ziyaretçilerinizi çekecek web sitelerine mi ihtiyacınız var? İşiniz için ölçeklenebilir ve responsive web siteleri geliştiriyoruz.",
@@ -62,7 +62,7 @@
   {
     "ID": "d00761480440",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-23T08:07:52.853Z",
+    "updatedAt": "2024-10-24T08:02:56.549Z",
     "status": "publish",
     "title": "Headless CMS Çözümleri",
     "description": "Projeleriniz için CMS çözümleri geliştiriyor veya kendi ürünümüz olan Git tabanlı Contentrain'i projenize entegre ediyoruz.",
