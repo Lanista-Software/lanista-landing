@@ -15,34 +15,21 @@
   {
     "ID": "51bf2dbbed29",
     "createdAt": "2024-10-16T10:45:44.000Z",
-    "updatedAt": "2024-10-16T10:51:00.522Z",
+    "updatedAt": "2024-10-25T16:45:21.859Z",
     "status": "publish",
     "title": "Popile",
-    "image": "public/1729075716315_popile.svg",
+    "image": "public/1729874670881_popile.svg",
     "description": "Popile, influencer pazarlamasında veri ve yaratıcılığın buluşma noktasıdır. Frontend tarafında Vue.js ile iyileştirmeler yaptık, ödeme sistemi entegrasyonlarında destek sağladık ve backend tarafında performans optimizasyonları gerçekleştirdik.",
     "category": "8ac7d8c79484",
     "link": "https://www.popile.com/",
-    "scheduled": false,
-    "order": 4
-  },
-  {
-    "ID": "5711a48d0554",
-    "createdAt": "2024-10-16T11:00:03.000Z",
-    "updatedAt": "2024-10-16T11:03:15.954Z",
-    "status": "changed",
-    "title": "RezMe",
-    "image": "public/1729076421952_rezme.svg",
-    "description": "aaa",
-    "category": "b5debb48ccb2",
-    "link": "https://lanista.com.tr/",
-    "scheduled": false,
-    "order": 8
+    "order": 4,
+    "scheduled": false
   },
   {
     "ID": "8a8044e883e8",
     "createdAt": "2024-09-26T18:08:38.000Z",
-    "updatedAt": "2024-10-21T16:01:12.329Z",
-    "status": "changed",
+    "updatedAt": "2024-10-25T16:49:44.612Z",
+    "status": "publish",
     "title": "Contentrain",
     "image": "public/1729065603135_denemecontentrain.svg",
     "description": "Contentrain, Git ve serverless platformları birleştiren, ölçeklenebilir bir içerik yönetim platformudur.\n\nTüm proje iş akışını planladık, yazılım mimarisini tasarladık, frontend ve backend geliştirmelerini yaptık, veritabanını yapılandırdık ve tüm bileşenleri dağıtımdan önce entegre ettik.",
@@ -54,15 +41,15 @@
   {
     "ID": "8a8044e883e9",
     "createdAt": "2024-09-26T18:08:38.000Z",
-    "updatedAt": "2024-10-16T08:14:31.231Z",
+    "updatedAt": "2024-10-25T16:38:01.211Z",
     "status": "publish",
     "title": "Bloom and Fresh",
-    "image": "public/1729066081677_bloomandfresh.svg",
+    "image": "public/1729874043253_Bloomandfresh.svg",
     "description": "Bloom & Fresh, çiçek aranjmanları ve hediyeler konusunda uzmanlaşmış bir e-ticaret platformudur.\n\nFrontend kısmını Vue.js ve Nuxt.js ile modernize ettik ve bunu müşterinin mevcut Backend sistemiyle entegre ettik.",
     "category": "cab37361e7e6",
     "link": "https://bloomandfresh.com",
-    "scheduled": false,
-    "order": 2
+    "order": 2,
+    "scheduled": false
   },
   {
     "ID": "8a8044e883ea",
