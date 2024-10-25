@@ -79,10 +79,10 @@
   {
     "ID": "9ab7dcca9d23",
     "createdAt": "2024-09-26T18:06:53.000Z",
-    "updatedAt": "2024-10-18T10:43:08.272Z",
+    "updatedAt": "2024-10-25T17:08:07.635Z",
     "status": "changed",
     "category": "cab37361e7e7",
-    "link": "https://vuejs.org/",
+    "link": "https://nodejs.org/en",
     "description": "Node.js, Chrome'un V8 JavaScript motoru üzerine inşa edilmiş bir JavaScript çalışma zamanıdır. Sunucuda JavaScript çalıştırmanıza olanak tanır, böylece ölçeklenebilir ve yüksek performanslı uygulamalar oluşturabilirsiniz.",
     "image": "public/1728542310638_nodejs.svg",
     "scheduled": false
