@@ -57,10 +57,10 @@
   {
     "ID": "9ab7dcca9d21",
     "createdAt": "2024-09-26T18:06:53.000Z",
-    "updatedAt": "2024-10-10T06:29:50.482Z",
-    "status": "publish",
+    "updatedAt": "2024-10-25T17:07:07.578Z",
+    "status": "changed",
     "category": "cab37361e7e6",
-    "link": "https://vuejs.org/",
+    "link": "https://astro.build/",
     "description": "Astro is a new frontend framework for building fast, content-focused websites. It uses an innovative approach to page rendering called partial hydration, which makes websites faster by reducing the JavaScript sent to the browser.",
     "image": "public/1728541750606_astro.svg",
     "scheduled": false
