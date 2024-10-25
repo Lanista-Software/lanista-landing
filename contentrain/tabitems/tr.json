@@ -101,10 +101,10 @@
   {
     "ID": "9ab7dcca9d25",
     "createdAt": "2024-09-26T18:06:53.000Z",
-    "updatedAt": "2024-10-18T10:43:37.134Z",
+    "updatedAt": "2024-10-25T17:09:58.882Z",
     "status": "changed",
     "category": "cab37361e7e7",
-    "link": "https://vuejs.org/",
+    "link": "https://nestjs.com/",
     "description": "Nest.js, verimli, güvenilir ve ölçeklenebilir sunucu taraflı uygulamalar oluşturmak için ilerici bir Node.js çerçevesidir. TypeScript kullanır ve uygulamalarınız için sağlam bir mimari tasarım sağlar, Angular'dan büyük ölçüde ilham almıştır.",
     "image": "public/1728542360382_nestjs.svg",
     "scheduled": false
