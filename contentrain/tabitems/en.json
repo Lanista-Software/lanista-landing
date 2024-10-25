@@ -123,10 +123,10 @@
   {
     "ID": "9ab7dcca9d27",
     "createdAt": "2024-09-26T18:06:53.000Z",
-    "updatedAt": "2024-10-10T06:40:24.485Z",
-    "status": "publish",
+    "updatedAt": "2024-10-25T17:10:52.917Z",
+    "status": "changed",
     "category": "cab37361e7e7",
-    "link": "https://vuejs.org/",
+    "link": "https://graphql.org/",
     "description": "GraphQL is a query language for APIs and a runtime for executing those queries. It provides a more efficient and powerful alternative to REST by allowing clients to request only the data they need.",
     "image": "public/1728542406152_graphql.svg",
     "scheduled": false
