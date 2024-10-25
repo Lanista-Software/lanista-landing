@@ -123,10 +123,10 @@
   {
     "ID": "9ab7dcca9d27",
     "createdAt": "2024-09-26T18:06:53.000Z",
-    "updatedAt": "2024-10-18T10:44:09.492Z",
+    "updatedAt": "2024-10-25T17:10:52.919Z",
     "status": "changed",
     "category": "cab37361e7e7",
-    "link": "https://vuejs.org/",
+    "link": "https://graphql.org/",
     "description": "GraphQL, API'ler için bir sorgu dili ve bu sorguları yürütmek için bir çalışma zamanıdır. REST'e yalnızca ihtiyaç duydukları verileri isteyerek daha verimli ve güçlü bir alternatif sunar.",
     "image": "public/1728542406152_graphql.svg",
     "scheduled": false
