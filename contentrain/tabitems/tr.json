@@ -57,10 +57,10 @@
   {
     "ID": "9ab7dcca9d21",
     "createdAt": "2024-09-26T18:06:53.000Z",
-    "updatedAt": "2024-10-18T10:42:44.630Z",
+    "updatedAt": "2024-10-25T17:07:07.581Z",
     "status": "changed",
     "category": "cab37361e7e6",
-    "link": "https://vuejs.org/",
+    "link": "https://astro.build/",
     "description": "Astro, hızlı, içerik odaklı web siteleri oluşturmak için yeni bir frontend çerçevesidir. Kısmi hidrasyon adı verilen sayfa renderlama yaklaşımını kullanır ve JavaScript'i tarayıcıya göndererek web sitelerini hızlandırır.",
     "image": "public/1728541750606_astro.svg",
     "scheduled": false
