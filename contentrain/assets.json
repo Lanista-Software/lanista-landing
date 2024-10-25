@@ -796,5 +796,19 @@
       },
       "createdAt": "2024-10-24T15:57:21.607Z"
     }
+  },
+  {
+    "path": "public/1729840801029_SaaS12345.svg",
+    "mimetype": "image/svg+xml",
+    "size": 199058,
+    "alt": "Saas development tool stack",
+    "meta": {
+      "user": {
+        "name": "Sercan Oray",
+        "email": "oraysercan@gmail.com",
+        "avatar": "https://firebasestorage.googleapis.com/v0/b/contentrain-bb335.appspot.com/o/profiles%2F1653544895449?alt=media&token=941d8890-696b-4cbb-a2f9-41a3864f978f"
+      },
+      "createdAt": "2024-10-25T07:20:03.156Z"
+    }
   }
 ]
