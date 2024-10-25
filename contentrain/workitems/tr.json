@@ -1,16 +1,16 @@
 [
   {
     "ID": "1a01328952b4",
-    "createdAt": "Wed Oct 16 2024 13:27:21 GMT+0300 (GMT+03:00)",
-    "updatedAt": "Wed Oct 16 2024 13:27:21 GMT+0300 (GMT+03:00)",
+    "createdAt": "2024-10-16T10:27:21.000Z",
+    "updatedAt": "2024-10-25T17:03:30.451Z",
+    "status": "publish",
     "title": "Pazardan",
-    "image": "public/1729074629296_pazardan.svg",
+    "image": "public/1729875780702_pazardan.svg",
     "description": "Pazardan, yerel marketlerden sebze ve meyve siparişi vermek için bir çevrimiçi pazar yeridir.\n\nMobil uygulamayı React Native ile geliştirdik ve iOS ve Android için çapraz platform haline getirdik. Web platformu ise React.js ve Next.js ile geliştirildi.",
     "category": "cab37361e7e6",
     "link": "https://pazardan.app/",
-    "status": "publish",
-    "scheduled": false,
-    "order": 7
+    "order": 7,
+    "scheduled": false
   },
   {
     "ID": "51bf2dbbed29",
