@@ -101,10 +101,10 @@
   {
     "ID": "9ab7dcca9d25",
     "createdAt": "2024-09-26T18:06:53.000Z",
-    "updatedAt": "2024-10-10T06:40:24.465Z",
-    "status": "publish",
+    "updatedAt": "2024-10-25T17:09:58.880Z",
+    "status": "changed",
     "category": "cab37361e7e7",
-    "link": "https://vuejs.org/",
+    "link": "https://nestjs.com/",
     "description": "Nest.js is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications. It uses TypeScript and is heavily inspired by Angular, providing a solid architectural design for your applications.",
     "image": "public/1728542360382_nestjs.svg",
     "scheduled": false
