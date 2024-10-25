@@ -28,8 +28,8 @@
   {
     "ID": "8a8044e883e8",
     "createdAt": "2024-09-26T18:08:38.000Z",
-    "updatedAt": "2024-10-21T16:01:12.329Z",
-    "status": "changed",
+    "updatedAt": "2024-10-25T16:49:44.612Z",
+    "status": "publish",
     "title": "Contentrain",
     "image": "public/1729065603135_denemecontentrain.svg",
     "description": "Contentrain, Git ve serverless platformları birleştiren, ölçeklenebilir bir içerik yönetim platformudur.\n\nTüm proje iş akışını planladık, yazılım mimarisini tasarladık, frontend ve backend geliştirmelerini yaptık, veritabanını yapılandırdık ve tüm bileşenleri dağıtımdan önce entegre ettik.",
