@@ -8,6 +8,7 @@
     "description": "Lanista Software supported Popile’s frontend and backend in its early stages, helping us improve our work.",
     "image": "public/1728463995414_ertugrul.jpeg",
     "title": "CEO, Popile",
+    "creative-work": "51bf2dbbed29",
     "scheduled": false
   },
   {
@@ -19,6 +20,7 @@
     "description": "The team has a great ability to resolve any problem by adapting innovative technologies and approaches.",
     "image": "public/1729164933955_murat.png",
     "title": "Co-Founder, Bloom and Fresh",
+    "creative-work": "8a8044e883e9",
     "scheduled": false
   },
   {
@@ -30,6 +32,7 @@
     "image": "public/1728464446315_ege.jpeg",
     "title": "Founder, Visivi",
     "status": "publish",
+    "creative-work": "8a8044e883eb",
     "scheduled": false
   }
 ]
