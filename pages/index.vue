@@ -33,7 +33,7 @@ const { t, locale } = useI18n();
 const metaTags = computed(() =>
   locale.value === "en" ? enMetaTags : trMetaTags
 );
-const viewedWorkItems = ref(5);
+const viewedWorkItems = ref(3);
 const serviceItems = computed<AppCardProps[]>(() =>
   locale.value === "en"
     ? (enServicesData as AppCardProps[])
@@ -211,7 +211,7 @@ const convertedMetaTags = computed(() =>
 );
 
 const route = useRoute();
-const router = useRouter();
+const router = useRouter(); 
 
 const { isScrollLocked, lockScroll } = useScrollLock();
 
@@ -238,11 +238,11 @@ function handleSectionViewed(id: string) {
   }
 }
 
-onMounted(() => {
-  setTimeout(() => {
-    viewedWorkItems.value = 3;
-  }, 500)
-})
+// onMounted(() => {
+//   setTimeout(() => {
+//     viewedWorkItems.value = 3;
+//   }, 500)
+// })
 
 </script>
 <template>
