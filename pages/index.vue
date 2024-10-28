@@ -33,7 +33,7 @@ const { t, locale } = useI18n();
 const metaTags = computed(() =>
   locale.value === "en" ? enMetaTags : trMetaTags
 );
-const viewedWorkItems = ref(3);
+const viewedWorkItems = ref(5);
 const serviceItems = computed<AppCardProps[]>(() =>
   locale.value === "en"
     ? (enServicesData as AppCardProps[])
@@ -237,6 +237,12 @@ function handleSectionViewed(id: string) {
     router.push({ hash: idWithHash });
   }
 }
+
+onMounted(() => {
+  setTimeout(() => {
+    viewedWorkItems.value = 3;
+  }, 500)
+})
 
 </script>
 <template>
