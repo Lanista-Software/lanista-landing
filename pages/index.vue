@@ -33,7 +33,7 @@ const { t, locale } = useI18n();
 const metaTags = computed(() =>
   locale.value === "en" ? enMetaTags : trMetaTags
 );
-const viewedWorkItems = ref(3);
+
 const serviceItems = computed<AppCardProps[]>(() =>
   locale.value === "en"
     ? (enServicesData as AppCardProps[])
@@ -84,6 +84,7 @@ const workItems = computed<WorksCardProps[]>(() =>
     ? (enWorksItemsData as WorksCardProps[])
     : (trWorksItemsData as WorksCardProps[])
 );
+const viewedWorkItems = ref(workItems.value.length);
 const workItemWithCategories = computed(() =>
   workItems.value
     .map((item) => {
@@ -238,11 +239,11 @@ function handleSectionViewed(id: string) {
   }
 }
 
-// onMounted(() => {
-//   setTimeout(() => {
-//     viewedWorkItems.value = 3;
-//   }, 500)
-// })
+onMounted(() => {
+  setTimeout(() => {
+    viewedWorkItems.value = 3;
+  }, 100)
+})
 
 </script>
 <template>
