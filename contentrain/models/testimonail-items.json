@@ -114,5 +114,27 @@
       }
     },
     "fieldType": "media"
+  },
+  {
+    "name": "Creative work",
+    "fieldId": "creative-work",
+    "modelId": "testimonail-items",
+    "componentId": "one-to-one",
+    "options": {
+      "reference": {
+        "value": true,
+        "form": {
+          "reference": {
+            "value": "workitems"
+          }
+        }
+      }
+    },
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "relation"
   }
 ]
