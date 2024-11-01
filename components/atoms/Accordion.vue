@@ -32,9 +32,9 @@ function toogleVisibility() {
       >
         <div class="flex items-center text-left justify-between">
           <slot :id="titleId" name="title">
-            <h5 :id="titleId" class="text-heading-text font-space text-xl font-medium">
+            <h4 :id="titleId" class="text-heading-text font-space text-xl font-medium">
               {{ title }}
-            </h5>
+            </h4>
           </slot>
           
 

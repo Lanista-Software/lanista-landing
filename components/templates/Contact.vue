@@ -33,7 +33,7 @@ defineProps<ContactProps>();
     <div class="w-full space-y-16 lg:space-y-0 lg:space-x-16 2xl:space-x-24 lg:flex lg:justify-between">
        <div class="flex-1">
             <div>
-                <h5 class=" text-3xl font-space font-semibold">{{ sections.faq.title }}</h5>
+                <h4 class=" text-3xl font-space font-semibold">{{ sections.faq.title }}</h4>
                 <p class="font-normal font-inter text-md text-body-text mt-4"> {{ sections.faq.description }} </p>
             </div>
             <div class="pt-8 space-y-4">
@@ -45,7 +45,7 @@ defineProps<ContactProps>();
         </div>
         <div class="flex-1">
             <div>
-                <h5 class=" text-3xl font-space font-semibold">{{ sections.contact.title }}</h5>
+                <h4 class=" text-3xl font-space font-semibold">{{ sections.contact.title }}</h4>
                 <p class="font-normal font-inter text-md text-body-text mt-4">{{ sections.contact.description}}</p>
             </div>
             <div>

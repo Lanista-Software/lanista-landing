@@ -218,6 +218,9 @@ const { isScrollLocked, lockScroll } = useScrollLock();
 
 const { fullSchema } = useSchemas()
 useHead({
+  htmlAttrs: {
+    lang: locale.value,
+  },
   script: [
     {
       type: 'application/ld+json',

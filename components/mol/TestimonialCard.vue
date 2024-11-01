@@ -26,7 +26,7 @@ defineProps<{
                     <LuiAvatar :src="getStaticImagePath(item.image)" size="xl" rounded="full" :alt="getImageAlt(item.image)" />
                 </div>
                 <div>
-                    <h6 class="text-lg font-semibold font-space text-heading-text">{{ item.name }}</h6>
+                    <h4 class="text-lg font-semibold font-space text-heading-text">{{ item.name }}</h4>
                     <p class="mt-1 text-body-text font-normal">{{ item.title }}</p>
                 </div>
             </div>

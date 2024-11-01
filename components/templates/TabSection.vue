@@ -33,6 +33,7 @@ export type TabSectionProps = {
   };
 };
 const {lockScroll} = useScrollLock();
+const {locale} = useI18n();
 const activeIndex = ref(0);
 const props = defineProps<TabSectionProps>();
 const filteredCategories = computed(() => {
@@ -76,7 +77,7 @@ function getTabItems(category: string) {
               <ul>
                 <li
                   v-for="item in getTabItems(category.ID)"
-                  :key="item.title"
+                  :key="item.ID"
                   class="flex flex-col md:flex-row space-y-4 md:space-y-0 items-start md:items-center justify-between py-5 border-b border-border-color md:space-x-8 space-x-0 last:border-b-0"
                 >
                   <div class="w-48 h-20">
@@ -84,7 +85,7 @@ function getTabItems(category: string) {
                       loading="lazy"
                       class="w-full h-full rounded-xl object-cover"
                       :src="getStaticImagePath(item.image)"
-                      :alt="item.title"
+                      :alt="item.description"
                       placeholder
                       sizes="xs:100vw sm:50vw md:33vw"
                       width="200"
@@ -95,8 +96,7 @@ function getTabItems(category: string) {
                     <p class="text-sm text-body-text">{{ item.description }}</p>
                   </div>
                   <div>
-                    <!-- Sağdaki ok simgesi, teknoloji linkine gider -->
-                    <NuxtLink :to="item.link" class="text-xl text-muted-text">
+                    <NuxtLink :to="item.link" class="text-xl text-muted-text" :aria-label="locale === 'en' ? `For more details ${item.link}` : `Daha fazla detay icin ${item.link}`">
                       <i class="ri-arrow-right-up-line"></i>
                     </NuxtLink>
                   </div>

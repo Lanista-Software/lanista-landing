@@ -82,6 +82,7 @@ onUnmounted(() => {
               size="xl"
               variant="link"
               @click="toggleMenu"
+              aria-label="Menu"
             >
               <template #icon>
                 <i class="ri-menu-line"></i>

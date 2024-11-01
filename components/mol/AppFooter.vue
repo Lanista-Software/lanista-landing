@@ -21,6 +21,7 @@ const footerData = {
             target="_blank"
             rel="noopener noreferrer"
             class="text-heading-text font-bold text-xl leading-none"
+            aria-label="Social Media Link"
           >
             <i :class="social.icon"></i>
           </a>
