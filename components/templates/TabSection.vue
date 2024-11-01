@@ -85,7 +85,7 @@ function getTabItems(category: string) {
                       loading="lazy"
                       class="w-full h-full rounded-xl object-cover"
                       :src="getStaticImagePath(item.image)"
-                      :alt="item.description"
+                      :alt="locale === 'en' ? `Technology logo` : `Teknoloji logosu`"
                       placeholder
                       sizes="xs:100vw sm:50vw md:33vw"
                       width="200"
@@ -95,8 +95,8 @@ function getTabItems(category: string) {
                   <div class="flex-1">
                     <p class="text-sm text-body-text">{{ item.description }}</p>
                   </div>
-                  <div>
-                    <NuxtLink :to="item.link" class="text-xl text-muted-text" :aria-label="locale === 'en' ? `For more details ${item.link}` : `Daha fazla detay icin ${item.link}`">
+                  <div class="p-2">
+                    <NuxtLink :to="item.link" class="text-xl text-muted-text p-2" :aria-label="locale === 'en' ? `For more details ${item.link}` : `Daha fazla detay icin ${item.link}`">
                       <i class="ri-arrow-right-up-line"></i>
                     </NuxtLink>
                   </div>

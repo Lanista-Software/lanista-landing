@@ -23,10 +23,12 @@ defineProps<{
         <div class="p-6 w-full">
             <div class="flex items-center space-x-4">
                 <div>
-                    <LuiAvatar :src="getStaticImagePath(item.image)" size="xl" rounded="full" :alt="getImageAlt(item.image)" />
+                    <NuxtImg class="border border-solid block object-contain rounded-full border-transparent w-16 h-16"
+                        :src="getStaticImagePath(item.image)" :alt="getImageAlt(item.image)" width="80" height="80"
+                        loading="lazy" sizes="xs:30vw sm:20vw md:10vw" />
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold font-space text-heading-text">{{ item.name }}</h4>
+                    <h3 class="text-lg font-semibold font-space text-heading-text">{{ item.name }}</h3>
                     <p class="mt-1 text-body-text font-normal">{{ item.title }}</p>
                 </div>
             </div>
