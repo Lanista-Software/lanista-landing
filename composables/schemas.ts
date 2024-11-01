@@ -138,10 +138,6 @@ export const useSchemas = () => {
     const testimonials =
       locale.value === "tr" ? trTestimonialsData : enTestimonialsData;
     return testimonials.map((testimonial) => {
-      const creativeWork = getCreativeWork(
-        testimonial["creative-work"],
-        locale.value
-      );
       return {
         "@context": "https://schema.org",
         "@type": "Review",
@@ -158,16 +154,16 @@ export const useSchemas = () => {
           ratingValue: "5",
           bestRating: "5",
         },
-        itemReviewed: {
-          "@type": "CreativeWork",
-          name: creativeWork.title,
-          description: creativeWork.description,
-          image: `https://lanista.com.tr/${creativeWork.image}`,
-        },
+        "itemReviewed": {
+          "@type": "Organization",
+          "name": "Lanista Software",
+          "logo": "https://lanista.com.tr/logo.svg",
+          "sameAs": socialLinks,
+        }
       };
     });
   });
-  
+
   const contactPointSchema = computed(() => {
     return {
       "@context": "https://schema.org",
@@ -201,9 +197,3 @@ export const useSchemas = () => {
     fullSchema,
   };
 };
-
-function getCreativeWork(id: string, lang: string) {
-  const worksItems = lang === "tr" ? trWorksItemsData : enWorksItemsData;
-  const findItem = worksItems.find((item) => item.ID === id);
-  return findItem ? findItem : worksItems[0];
-}
