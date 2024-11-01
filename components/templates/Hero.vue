@@ -52,6 +52,8 @@ function handleClick() {
         class="w-auto h-7"
         loading="lazy"
         sizes="xs:100vw sm:50vw md:33vw"
+        height="30"
+        width="100"
       />
     </div>
   </section>
