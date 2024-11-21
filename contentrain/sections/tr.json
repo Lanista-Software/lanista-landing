@@ -2,7 +2,7 @@
   {
     "ID": "2aa54f9e7eaf",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-23T08:30:32.237Z",
+    "updatedAt": "2024-10-28T08:36:15.010Z",
     "status": "publish",
     "title": "Yazılım geliştirme çözümlerimize göz atın",
     "description": "Müşterilerimize, tasarımdan final ürüne kadar her adımda rehberlik ederek geniş kapsamlı yazılım geliştirme hizmetleri sunuyoruz.",
@@ -14,8 +14,8 @@
   {
     "ID": "2aa54f9e7eb0",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-18T09:36:05.191Z",
-    "status": "changed",
+    "updatedAt": "2024-10-28T08:36:15.018Z",
+    "status": "publish",
     "title": "Ürün geliştirme ve proje yönetme yaklaşımımız",
     "description": "Projenizin zamanında ve bütçe dahilinde teslim edilmesini sağlamak için sistemli bir proje geliştirme süreci izliyoruz.",
     "buttontext": "Tüm çalışmaları görüntüleyin",
@@ -26,7 +26,7 @@
   {
     "ID": "2aa54f9e7eb1",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-18T09:43:20.869Z",
+    "updatedAt": "2024-10-28T08:36:15.028Z",
     "status": "publish",
     "title": "Sektör profesyonelleri tarafından güvenilen bir yazılım geliştirme partneriyiz",
     "description": "Kaliteye odaklanarak çalışmamız zamanla sektör profesyonellerinin güvenini kazandı. Müşterilerimiz için en yüksek standartları karşılayan özel çözümler sunuyoruz.",
@@ -38,8 +38,8 @@
   {
     "ID": "2aa54f9e7eb2",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-18T09:40:26.946Z",
-    "status": "changed",
+    "updatedAt": "2024-10-28T08:36:15.034Z",
+    "status": "publish",
     "title": "Müşterilerimiz için geliştirdiğimiz bazı projeler",
     "description": "Müşterilerimizin fikirlerini geliştirerek başarılı ürünlere dönüştürdüğümüz projelerimizden bazılarını inceleyin.",
     "buttontext": "Tüm çalışmaları görüntüleyin",
@@ -50,8 +50,8 @@
   {
     "ID": "2aa54f9e7eb3",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-18T09:38:31.523Z",
-    "status": "changed",
+    "updatedAt": "2024-10-28T08:36:15.039Z",
+    "status": "publish",
     "title": "Kullandığımız teknolojiler ve geliştirme araçları ",
     "description": "Harika ürünler ortaya çıkarmak için Javascript teknolojilerini ve güncel araçları kullanmayı seviyoruz.",
     "buttontext": "Tüm referanslar",
@@ -62,7 +62,7 @@
   {
     "ID": "2aa54f9e7x90",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-18T06:11:51.339Z",
+    "updatedAt": "2024-10-28T08:36:15.047Z",
     "status": "publish",
     "title": "Fikrinizi birlikte geliştirelim!",
     "description": "Ürün geliştirme tecrübemizle şirketlerin ve girişimlerin fikirlerini hayata geçirmelerine yardımcı oluyoruz.",
@@ -74,7 +74,7 @@
   {
     "ID": "2aa54f9e7xb3",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-18T09:47:18.809Z",
+    "updatedAt": "2024-10-28T08:36:15.052Z",
     "status": "publish",
     "title": "Web ve Mobil Uygulama geliştirme hizmetleri partneriniz",
     "description": "Dijital dünyada başarılı iş modelleri geliştirebilmeniz için dış kaynaklı Frontend, Backend ve Mobil Uygulama geliştirme hizmetleri sunuyoruz.",
@@ -87,8 +87,8 @@
   {
     "ID": "2aa54f9e7xb4",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-18T08:43:34.347Z",
-    "status": "changed",
+    "updatedAt": "2024-10-28T08:36:15.056Z",
+    "status": "publish",
     "title": "Sıkça Sorulan Sorular",
     "description": "Lanista Yazılım'ın hizmetleri hakkında sık sorulan sorularla hızlı yanıtlar bulun. Eğer daha fazla yanıta ihtiyaç duyuyorsanız bizimle iletişime geçebilirsiniz.",
     "buttontext": "Projenizi konuşalım",
@@ -99,7 +99,7 @@
   {
     "ID": "2aa54f9e7xb5",
     "createdAt": "2024-09-26T18:05:14.000Z",
-    "updatedAt": "2024-10-18T08:44:52.950Z",
+    "updatedAt": "2024-10-28T08:36:15.061Z",
     "status": "publish",
     "title": "Daha fazla bilgi için bize ulaşın",
     "description": "Daha fazla bilgi için bizimle doğrudan iletişime geçmekten çekinmeyin.",
