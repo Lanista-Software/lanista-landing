@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ID": "48dcf39f8da0",
+    "createdAt": "Mon Jan 06 2025 13:07:57 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Mon Jan 06 2025 13:07:57 GMT+0300 (GMT+03:00)",
+    "adsadfs": [
+      3
+    ],
+    "status": "draft",
+    "scheduled": false
+  }
+]
