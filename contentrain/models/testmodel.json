@@ -58,5 +58,18 @@
     "system": true,
     "defaultField": false,
     "modelId": "testmodel"
+  },
+  {
+    "name": "name",
+    "fieldId": "name",
+    "modelId": "testmodel",
+    "componentId": "multi-line-text",
+    "options": {},
+    "validations": {
+      "required-field": {
+        "value": true
+      }
+    },
+    "fieldType": "string"
   }
 ]
