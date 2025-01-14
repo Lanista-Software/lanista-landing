@@ -71,5 +71,14 @@
       }
     },
     "fieldType": "string"
+  },
+  {
+    "name": "testDate",
+    "fieldId": "testdate",
+    "modelId": "testmodel",
+    "componentId": "date",
+    "options": {},
+    "validations": {},
+    "fieldType": "date"
   }
 ]
