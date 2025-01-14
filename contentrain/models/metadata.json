@@ -94,5 +94,13 @@
     "type": "JSON",
     "createdBy": "user",
     "isServerless": false
+  },
+  {
+    "name": "TestModel",
+    "modelId": "testmodel",
+    "localization": false,
+    "type": "JSON",
+    "createdBy": "user",
+    "isServerless": false
   }
 ]
