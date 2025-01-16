@@ -60,15 +60,6 @@
     "modelId": "test"
   },
   {
-    "name": "adsadfs",
-    "fieldId": "adsadfs",
-    "modelId": "test",
-    "componentId": "integer",
-    "options": {},
-    "validations": {},
-    "fieldType": "array"
-  },
-  {
     "name": "dasads",
     "fieldId": "dasads",
     "modelId": "test",
