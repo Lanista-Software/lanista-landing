@@ -58,23 +58,5 @@
     "system": true,
     "defaultField": false,
     "modelId": "test"
-  },
-  {
-    "name": "dasads",
-    "fieldId": "dasads",
-    "modelId": "test",
-    "componentId": "one-to-one",
-    "options": {
-      "reference": {
-        "value": true,
-        "form": {
-          "reference": {
-            "value": "services"
-          }
-        }
-      }
-    },
-    "validations": {},
-    "fieldType": "relation"
   }
 ]
