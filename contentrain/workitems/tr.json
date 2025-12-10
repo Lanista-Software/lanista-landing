@@ -54,14 +54,14 @@
   {
     "ID": "8a8044e883e9",
     "createdAt": "2024-09-26T18:08:38.000Z",
-    "updatedAt": "2024-10-25T16:38:01.211Z",
-    "status": "publish",
+    "updatedAt": "2025-12-10T12:57:02.292Z",
+    "status": "changed",
     "title": "Bloom and Fresh",
     "image": "public/1729874043253_Bloomandfresh.svg",
     "description": "Bloom & Fresh, çiçek aranjmanları ve hediyeler konusunda uzmanlaşmış bir e-ticaret platformudur.\n\nFrontend kısmını Vue.js ve Nuxt.js ile modernize ettik ve bunu müşterinin mevcut Backend sistemiyle entegre ettik.",
     "category": "cab37361e7e6",
     "link": "https://bloomandfresh.com",
-    "order": 2,
+    "order": 3,
     "scheduled": false
   },
   {
