@@ -67,15 +67,15 @@
   {
     "ID": "8a8044e883ea",
     "createdAt": "2024-09-26T18:08:38.000Z",
-    "updatedAt": "2024-10-16T08:13:12.448Z",
-    "status": "publish",
+    "updatedAt": "2025-12-10T12:57:45.159Z",
+    "status": "changed",
     "title": "Wordify",
     "image": "public/1729066309718_wordify.svg",
     "description": "We transformed Wordify's Squarespace-based website into a custom site using Jamstack architecture. This upgrade provided Wordify with a smooth look, enhanced performance, scalability, and improved user experience.",
     "category": "cab37361e7ea",
     "link": "https://www.wordify.co/",
-    "scheduled": false,
-    "order": 3
+    "order": 6,
+    "scheduled": false
   },
   {
     "ID": "8a8044e883eb",
