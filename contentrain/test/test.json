@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "ID": "48dcf39f8da0",
+    "createdAt": "Mon Jan 06 2025 13:07:57 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Mon Jan 06 2025 13:07:57 GMT+0300 (GMT+03:00)",
+    "adsadfs": [
+      3
+    ],
+    "status": "draft",
+    "scheduled": false
+  },
+  {
+    "ID": "93a7438b50d3",
+    "createdAt": "Thu Jan 16 2025 15:06:25 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Thu Jan 16 2025 15:06:25 GMT+0300 (GMT+03:00)",
+    "manyrelation": [
+      "3442ac47e4cc",
+      "9ab7dcca9d1d",
+      "9ab7dcca9d1e"
+    ],
+    "status": "draft",
+    "scheduled": false
+  }
+]
