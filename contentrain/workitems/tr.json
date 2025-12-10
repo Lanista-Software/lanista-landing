@@ -26,6 +26,19 @@
     "scheduled": false
   },
   {
+    "ID": "53cecf1d3c66",
+    "createdAt": "Wed Dec 10 2025 15:53:48 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Wed Dec 10 2025 15:53:48 GMT+0300 (GMT+03:00)",
+    "title": "LineDiff",
+    "image": "public/1765371209596_linediff.svg",
+    "description": "Elbette, çeviriyorum:\n\nMetinleri ve belgeleri anında temiz ve anlamlı sonuçlarla karşılaştırın.\nLineDiff, yalnızca görsel farkları değil, gerçek anlamsal değişiklikleri vurgular ve bağlamı açıklamak veya niyeti netleştirmek gerektiğinde yalnızca ihtiyaç duyulan noktalarda AI desteği kullanır. Şifreli geçmiş, çevrimdışı mod, çok formatlı dışa aktarma seçenekleri ve ekip iş birliği özellikleriyle; hukuki, finansal ve teknik iş akışları için idealdir.",
+    "category": "bcc834108adc",
+    "link": "https://linediff.app/",
+    "order": 1,
+    "status": "draft",
+    "scheduled": false
+  },
+  {
     "ID": "8a8044e883e8",
     "createdAt": "2024-09-26T18:08:38.000Z",
     "updatedAt": "2024-10-25T16:49:44.612Z",
