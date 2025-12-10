@@ -93,8 +93,8 @@
   {
     "ID": "8a8044e883ec",
     "createdAt": "2024-09-26T18:08:38.000Z",
-    "updatedAt": "2025-12-10T12:57:59.573Z",
-    "status": "changed",
+    "updatedAt": "2025-12-10T12:58:31.510Z",
+    "status": "draft",
     "title": "DXP 360",
     "image": "public/1729074312031_dxp360.svg",
     "description": "DXP360 is an RFP (Request for Proposal) portal that aggregates RFPs from various sources, simplifying the proposal discovery and submission process for enterprises and agencies.\n\nWe designed the project plan based on client briefs, developed the frontend and backend, structured the database, and deployed the project.",
