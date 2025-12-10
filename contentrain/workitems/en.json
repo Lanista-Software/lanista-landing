@@ -26,6 +26,19 @@
     "scheduled": false
   },
   {
+    "ID": "53cecf1d3c66",
+    "createdAt": "Wed Dec 10 2025 15:53:48 GMT+0300 (GMT+03:00)",
+    "updatedAt": "Wed Dec 10 2025 15:53:48 GMT+0300 (GMT+03:00)",
+    "title": "LineDiff",
+    "image": "public/1765371209596_linediff.svg",
+    "description": "Compare text and documents instantly with clean, meaningful results. LineDiff highlights real semantic changes, not just visual differences and uses AI only when needed to explain context and clarify intent. Encrypted history, offline mode, multi-format exports, and team collaboration make it ideal for legal, financial, and technical workflows.",
+    "category": "bcc834108adc",
+    "link": "https://linediff.app/",
+    "order": 1,
+    "status": "draft",
+    "scheduled": false
+  },
+  {
     "ID": "8a8044e883e8",
     "createdAt": "2024-09-26T18:08:38.000Z",
     "updatedAt": "2024-10-16T08:03:22.597Z",
