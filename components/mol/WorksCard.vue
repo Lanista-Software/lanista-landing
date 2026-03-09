@@ -39,8 +39,8 @@ defineProps<{
         <p class="text-body font-normal font-inter mt-2">
           {{ item.description }}
         </p>
-        <div class="pt-2">
-          <NuxtLink :to="item.link">
+        <div v-if="item.link" class="pt-2">
+          <NuxtLink :to="item.link" target="_blank" rel="noopener noreferrer">
             <LuiButton
               color="secondary"
               variant="outline"

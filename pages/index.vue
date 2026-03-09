@@ -221,6 +221,12 @@ useHead({
   htmlAttrs: {
     lang: locale.value,
   },
+  link: [
+    { rel: 'canonical', href: 'https://lanista.com.tr/' },
+    { rel: 'alternate', hreflang: 'en', href: 'https://lanista.com.tr/' },
+    { rel: 'alternate', hreflang: 'tr', href: 'https://lanista.com.tr/' },
+    { rel: 'alternate', hreflang: 'x-default', href: 'https://lanista.com.tr/' },
+  ],
   script: [
     {
       type: 'application/ld+json',

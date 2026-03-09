@@ -1,55 +1,94 @@
 [
   {
-    "ID": "1a01328952b4",
-    "createdAt": "2024-10-16T10:27:21.000Z",
-    "updatedAt": "2024-10-25T17:03:30.448Z",
-    "status": "publish",
-    "title": "Pazardan",
-    "image": "public/1729875780702_pazardan.svg",
-    "description": "Pazardan is an online marketplace for ordering vegetables and fruits from local groceries. \n\nWe developed the mobile application with React Native, making it cross-platform for iOS and Android. The web platform was developed with React.js and Next.js.",
-    "category": "cab37361e7e6",
-    "link": "https://pazardan.app/",
-    "order": 7,
-    "scheduled": false
-  },
-  {
-    "ID": "51bf2dbbed29",
-    "createdAt": "2024-10-16T10:45:44.000Z",
-    "updatedAt": "2024-10-25T16:45:21.855Z",
-    "status": "publish",
-    "title": "Popile",
-    "image": "public/1729874670881_popile.svg",
-    "description": "Popile is the meeting point of data and creativity in influencer marketing. We made improvements on the frontend using Vue.js, supported payment system integrations, and optimized the backend for better performance.",
-    "category": "8ac7d8c79484",
-    "link": "https://www.popile.com/",
-    "order": 4,
-    "scheduled": false
-  },
-  {
     "ID": "8a8044e883e8",
     "createdAt": "2024-09-26T18:08:38.000Z",
-    "updatedAt": "2024-10-16T08:03:22.597Z",
+    "updatedAt": "2026-03-09T12:00:00.000Z",
     "status": "publish",
     "title": "Contentrain",
     "image": "public/1729065603135_denemecontentrain.svg",
-    "description": "Contentrain is a scalable content management platform combining Git and serverless platforms.\n\nWe planned the entire project workflow, designed the software architecture, developed the frontend and backend, structured the database, and integrated all components before deployment.",
+    "description": "Git-native Headless CMS platform. Contentrain combines Git workflows with content management, allowing developers and content creators to collaborate on the same platform.\n\nBuilt with Vue 3, NestJS, PostgreSQL, and a pnpm + Nx + Turbo monorepo architecture. Features 20+ modular NestJS modules, Stripe subscription management, TypeBox schema-first API design, and Atomic Design component architecture.",
     "category": "bcc834108adc",
     "link": "https://contentrain.io/",
     "scheduled": false,
     "order": 1
   },
   {
+    "ID": "a1b2c3d4e5f6",
+    "createdAt": "2026-03-09T12:00:00.000Z",
+    "updatedAt": "2026-03-09T12:00:00.000Z",
+    "status": "publish",
+    "title": "Yanyana",
+    "image": "",
+    "description": "Social game platform for weddings, corporate events, and social gatherings. Supports P2P offline (2-10 players) and online event (50-500+ players) modes across Web (PWA), iOS, and Android.\n\nBuilt with React Native (Expo + CLI), Bun.js + ElysiaJS, Vue 3, and a pnpm workspaces monorepo with 4 apps + 4 shared packages. Features 12+ independent game engines, real-time WebSocket state sync, 39 shared Vue components as a design system, dual payment system (Paddle + In-App Purchase), and 130+ test files with 500+ tests including Stryker mutation testing.",
+    "category": "bcc834108adc",
+    "link": "https://yanyana.games",
+    "scheduled": false,
+    "order": 2
+  },
+  {
+    "ID": "b2c3d4e5f6a7",
+    "createdAt": "2026-03-09T12:00:00.000Z",
+    "updatedAt": "2026-03-09T12:00:00.000Z",
+    "status": "publish",
+    "title": "LineDiff",
+    "image": "",
+    "description": "AI-powered text and document comparison platform. Local-first, offline-capable with client-side encryption for privacy. Supports 10+ file formats including txt, docx, pdf, json, xml, csv, md, html, and yaml.\n\nBuilt with Nuxt 4 + Vue 3, Firebase Firestore, and OpenAI API. Features IndexedDB primary storage with Firestore sync queue (local-first architecture), Web Workers for diff computation, Paddle subscription management, and integrations with Google Docs, Notion, and MS Word Add-in.",
+    "category": "bcc834108adc",
+    "link": "https://linediff.app",
+    "scheduled": false,
+    "order": 3
+  },
+  {
     "ID": "8a8044e883e9",
     "createdAt": "2024-09-26T18:08:38.000Z",
-    "updatedAt": "2024-10-25T16:38:01.208Z",
+    "updatedAt": "2026-03-09T12:00:00.000Z",
     "status": "publish",
     "title": "Bloom and Fresh",
     "image": "public/1729874043253_Bloomandfresh.svg",
-    "description": "Bloom & Fresh is an eCommerce platform specializing in floral arrangements and gifts.\n\nWe modernized the frontend with Vue.js and Nuxt.js, integrating it with the client's existing backend system.",
+    "description": "Turkey's leading online flower and gift platform. Complete frontend modernization from legacy code to modern Nuxt.js architecture with 2 years of continuous development and maintenance.\n\nBuilt with Nuxt.js, Vue.js, and Contentrain CMS. Features SSR with SEO optimization, dynamic content management, performance optimizations (lazy loading, code splitting, image optimization), and full e-commerce capabilities including product catalog, cart, payment, and order tracking.",
     "category": "cab37361e7e6",
     "link": "https://bloomandfresh.com",
-    "order": 2,
+    "order": 4,
     "scheduled": false
+  },
+  {
+    "ID": "c3d4e5f6a7b8",
+    "createdAt": "2026-03-09T12:00:00.000Z",
+    "updatedAt": "2026-03-09T12:00:00.000Z",
+    "status": "publish",
+    "title": "FoodButik",
+    "image": "",
+    "description": "Multi-tenant food ordering platform with a 7-microservice backend system. All architecture decisions, tech stack selection, and implementation were carried out by Lanista Software.\n\nBuilt with NestJS Monorepo, gRPC, RabbitMQ, PostgreSQL, Redis, and Prisma ORM. Features 1 API Gateway + 3 gRPC services + 3 RabbitMQ consumers, ~78 RPC methods, ~80+ REST endpoints, 10-state order lifecycle management, multi-channel notification system (Email/SMS/Push), and 3 different auth mechanisms.",
+    "category": "cab37361e7e7",
+    "link": "https://foodbutik.se",
+    "scheduled": false,
+    "order": 5
+  },
+  {
+    "ID": "d4e5f6a7b8c9",
+    "createdAt": "2026-03-09T12:00:00.000Z",
+    "updatedAt": "2026-03-09T12:00:00.000Z",
+    "status": "publish",
+    "title": "FoodButik POS",
+    "image": "",
+    "description": "Restaurant order management application running on Sunmi commercial POS terminals. Includes ~2,100 lines of custom Java Native Modules for Sunmi SDK integration, thermal printer control, and Android foreground service.\n\nBuilt with React Native CLI, TypeScript, Redux Toolkit, and Java (Sunmi SDK). Features real-time order polling, AutoTask automatic order acceptance, concurrent action lock mechanism, device-based authentication (Sunmi serial number vs PIN), and 3-language support via i18next + Contentrain CMS.",
+    "category": "b5debb48ccb2",
+    "link": "https://foodbutik.se",
+    "scheduled": false,
+    "order": 6
+  },
+  {
+    "ID": "e5f6a7b8c9d0",
+    "createdAt": "2026-03-09T12:00:00.000Z",
+    "updatedAt": "2026-03-09T12:00:00.000Z",
+    "status": "publish",
+    "title": "RezMe",
+    "image": "",
+    "description": "Restaurant discovery and reservation platform for iOS and Android. Users can discover restaurants and make reservations while restaurant owners manage their venue through a subscription model.\n\nBuilt with React Native (Expo SDK 53), Expo Router v5, Bun.js + ElysiaJS, and Supabase (PostgreSQL + Auth + RLS). Features 9 Zustand stores, multi-auth support (Email, Google, Apple, Phone OTP), 10-module layered API architecture, end-to-end subscription lifecycle with PayTR integration, and push notifications via Expo SDK.",
+    "category": "b5debb48ccb2",
+    "link": "",
+    "scheduled": false,
+    "order": 7
   },
   {
     "ID": "8a8044e883ea",
@@ -62,7 +101,20 @@
     "category": "cab37361e7ea",
     "link": "https://www.wordify.co/",
     "scheduled": false,
-    "order": 3
+    "order": 8
+  },
+  {
+    "ID": "51bf2dbbed29",
+    "createdAt": "2024-10-16T10:45:44.000Z",
+    "updatedAt": "2024-10-25T16:45:21.855Z",
+    "status": "publish",
+    "title": "Popile",
+    "image": "public/1729874670881_popile.svg",
+    "description": "Popile is the meeting point of data and creativity in influencer marketing. We made improvements on the frontend using Vue.js, supported payment system integrations, and optimized the backend for better performance.",
+    "category": "8ac7d8c79484",
+    "link": "https://www.popile.com/",
+    "order": 9,
+    "scheduled": false
   },
   {
     "ID": "8a8044e883eb",
@@ -75,7 +127,7 @@
     "category": "bcc834108adc",
     "link": "https://visivi.co/",
     "scheduled": false,
-    "order": 5
+    "order": 10
   },
   {
     "ID": "8a8044e883ec",
@@ -88,6 +140,32 @@
     "category": "bcc834108adc",
     "link": "https://dxp360.com/",
     "scheduled": false,
-    "order": 6
+    "order": 11
+  },
+  {
+    "ID": "1a01328952b4",
+    "createdAt": "2024-10-16T10:27:21.000Z",
+    "updatedAt": "2024-10-25T17:03:30.448Z",
+    "status": "publish",
+    "title": "Pazardan",
+    "image": "public/1729875780702_pazardan.svg",
+    "description": "Pazardan is an online marketplace for ordering vegetables and fruits from local groceries. \n\nWe developed the mobile application with React Native, making it cross-platform for iOS and Android. The web platform was developed with React.js and Next.js.",
+    "category": "cab37361e7e6",
+    "link": "https://pazardan.app/",
+    "order": 12,
+    "scheduled": false
+  },
+  {
+    "ID": "f6a7b8c9d0e1",
+    "createdAt": "2026-03-09T12:00:00.000Z",
+    "updatedAt": "2026-03-09T12:00:00.000Z",
+    "status": "publish",
+    "title": "LUI Vue",
+    "image": "",
+    "description": "Open-source Vue 3 UI component library actively used across all Lanista Software projects. Built with Vue 3, TypeScript, TailwindCSS, and documented with Storybook.\n\nFeatures component-driven scalable design, easy installation via npm, and is actively used in multiple production projects. Open for community contributions.",
+    "category": "cab37361e7e6",
+    "link": "https://www.npmjs.com/package/@lui-ui/lui-vue",
+    "scheduled": false,
+    "order": 13
   }
 ]

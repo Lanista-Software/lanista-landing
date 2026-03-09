@@ -1,1 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /_nuxt/
+Disallow: /*?trk=*
 
+Sitemap: https://lanista.com.tr/sitemap.xml
+
+Host: https://lanista.com.tr

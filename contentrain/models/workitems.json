@@ -128,7 +128,7 @@
     "options": {},
     "validations": {
       "required-field": {
-        "value": true
+        "value": false
       }
     },
     "fieldType": "string"

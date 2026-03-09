@@ -10,6 +10,8 @@ import trFaqItemsData from "../contentrain/faqitems/tr.json";
 import trMetaTags from "../contentrain/meta-tags/tr.json";
 import enMetaTags from "../contentrain/meta-tags/en.json";
 
+const SITE_URL = "https://lanista.com.tr";
+
 export const useSchemas = () => {
   const { locale } = useI18n();
   const socialLinks = socialLinkData.map((item) => item.link);
@@ -18,12 +20,14 @@ export const useSchemas = () => {
       "@context": "https://schema.org",
       "@type": "Organization",
       name: "Lanista Software",
-      url: "https://lanista.com.tr",
-      logo: "https://lanista.com.tr/logo.svg",
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.svg`,
+      foundingDate: "2019",
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+90-432-502-8500",
+        telephone: "+90-506-215-0700",
         contactType: "Customer Service",
+        availableLanguage: ["Turkish", "English"],
       },
       sameAs: socialLinks,
     },
@@ -39,13 +43,13 @@ export const useSchemas = () => {
         provider: {
           "@type": "Organization",
           name: "Lanista Software",
-          url: "https://lanista.com.tr",
+          url: SITE_URL,
         },
         serviceType: service.title,
         areaServed: "Global",
         availableChannel: {
           "@type": "ServiceChannel",
-          serviceUrl: "https://lanista.com.tr/#contact",
+          serviceUrl: `${SITE_URL}/#contact`,
         },
       };
     });
@@ -70,16 +74,86 @@ export const useSchemas = () => {
   const creativeWorkSchema = computed(() => {
     const workItems =
       locale.value === "tr" ? trWorksItemsData : enWorksItemsData;
-    return workItems.map((item) => {
-      return {
+    return workItems
+      .filter((item) => item.link)
+      .map((item) => {
+        return {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          name: item.title,
+          description: item.description,
+          ...(item.image ? { image: `${SITE_URL}/${item.image}` } : {}),
+          url: item.link,
+          creator: {
+            "@type": "Organization",
+            name: "Lanista Software",
+            url: SITE_URL,
+          },
+        };
+      });
+  });
+  const softwareAppSchema = computed(() => {
+    const isEn = locale.value === "en";
+    return [
+      {
         "@context": "https://schema.org",
-        "@type": "CreativeWork",
-        name: item.title,
-        description: item.description,
-        image: `https://lanista.com.tr/${item.image}`,
-        url: item.link,
-      };
-    });
+        "@type": "SoftwareApplication",
+        name: "Contentrain",
+        description: isEn
+          ? "Git-native Headless CMS platform combining Git workflows with content management for developers and content creators."
+          : "Git-native Headless CMS platformu. İçerik yönetimini Git workflow'ları üzerine kurar.",
+        url: "https://contentrain.io/",
+        applicationCategory: "DeveloperApplication",
+        operatingSystem: "Web",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+        creator: {
+          "@type": "Organization",
+          name: "Lanista Software",
+          url: SITE_URL,
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        name: "Yanyana",
+        description: isEn
+          ? "Social game platform for weddings, corporate events, and social gatherings. Supports offline and online modes with 12+ game engines."
+          : "Düğün, kurumsal etkinlik ve sosyal buluşmalar için sosyal oyun platformu. 12+ oyun motoru ile offline ve online modlar.",
+        url: "https://yanyana.games",
+        applicationCategory: "GameApplication",
+        operatingSystem: "iOS, Android, Web",
+        creator: {
+          "@type": "Organization",
+          name: "Lanista Software",
+          url: SITE_URL,
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        name: "LineDiff",
+        description: isEn
+          ? "AI-powered text and document comparison platform. Local-first, offline-capable with client-side encryption. Supports 10+ file formats."
+          : "AI destekli metin ve doküman karşılaştırma platformu. Local-first, offline çalışabilir, istemci tarafı şifreleme. 10+ dosya formatı desteği.",
+        url: "https://linediff.app",
+        applicationCategory: "UtilitiesApplication",
+        operatingSystem: "Web",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+        creator: {
+          "@type": "Organization",
+          name: "Lanista Software",
+          url: SITE_URL,
+        },
+      },
+    ];
   });
   const webPageSchema = computed(() => {
     const metaTags = locale.value === "tr" ? trMetaTags : enMetaTags;
@@ -91,15 +165,18 @@ export const useSchemas = () => {
       "@type": "WebPage",
       name: title?.content,
       description: description?.content,
-      url: "https://lanista.com.tr",
-      image: "https://lanista.com.tr/logo.svg",
+      url: SITE_URL,
+      image: `${SITE_URL}/logo.svg`,
+      inLanguage: locale.value === "tr" ? "tr-TR" : "en-US",
     };
   });
   const webSiteSchema = computed(() => {
     return {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      url: "https://lanista.com.tr",
+      name: "Lanista Software",
+      url: SITE_URL,
+      inLanguage: ["en", "tr"],
     };
   });
   const personSchema = computed(() => {
@@ -122,7 +199,7 @@ export const useSchemas = () => {
         "@context": "https://schema.org",
         "@type": "Person",
         name: "Sercan Oray",
-        jobTitle: "CO Founder",
+        jobTitle: "Co Founder",
         worksFor: {
           "@type": "Organization",
           name: "Lanista Software",
@@ -144,7 +221,7 @@ export const useSchemas = () => {
         author: {
           "@type": "Person",
           name: testimonial.name,
-          image: `https://lanista.com.tr/${testimonial.image}`,
+          image: `${SITE_URL}/${testimonial.image}`,
           jobTitle: testimonial.title,
         },
         datePublished: new Date(testimonial.createdAt).toISOString(),
@@ -154,12 +231,12 @@ export const useSchemas = () => {
           ratingValue: "5",
           bestRating: "5",
         },
-        "itemReviewed": {
+        itemReviewed: {
           "@type": "Organization",
-          "name": "Lanista Software",
-          "logo": "https://lanista.com.tr/logo.svg",
-          "sameAs": socialLinks,
-        }
+          name: "Lanista Software",
+          logo: `${SITE_URL}/logo.svg`,
+          sameAs: socialLinks,
+        },
       };
     });
   });
@@ -168,7 +245,7 @@ export const useSchemas = () => {
     return {
       "@context": "https://schema.org",
       "@type": "ContactPoint",
-      telephone: "+90-432-502-8500",
+      telephone: "+90-506-215-0700",
       contactType: "Customer Service",
       areaServed: "TR",
       availableLanguage: ["Turkish", "English"],
@@ -184,6 +261,7 @@ export const useSchemas = () => {
           ...serviceSchema.value,
           faqSchema.value,
           ...creativeWorkSchema.value,
+          ...softwareAppSchema.value,
           ...personSchema.value,
           ...reviewSchema.value,
           contactPointSchema.value,

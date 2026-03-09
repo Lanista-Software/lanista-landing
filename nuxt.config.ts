@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
+  site: {
+    url: 'https://lanista.com.tr',
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
@@ -10,7 +13,65 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/eslint',
     '@nuxt/scripts',
+    '@nuxtjs/sitemap',
   ],
+  sitemap: {
+    urls: [
+      {
+        loc: '/',
+        lastmod: new Date().toISOString(),
+        changefreq: 'weekly',
+        priority: 1.0,
+        alternatives: [
+          { hreflang: 'en', href: 'https://lanista.com.tr/' },
+          { hreflang: 'tr', href: 'https://lanista.com.tr/' },
+          { hreflang: 'x-default', href: 'https://lanista.com.tr/' },
+        ],
+      },
+      {
+        loc: '/services/nestjs-microservice-development',
+        lastmod: new Date().toISOString(),
+        changefreq: 'monthly',
+        priority: 0.8,
+      },
+      {
+        loc: '/services/react-native-mobile-app-development',
+        lastmod: new Date().toISOString(),
+        changefreq: 'monthly',
+        priority: 0.8,
+      },
+      {
+        loc: '/services/saas-platform-development',
+        lastmod: new Date().toISOString(),
+        changefreq: 'monthly',
+        priority: 0.8,
+      },
+      {
+        loc: '/services/nuxtjs-vuejs-web-application-development',
+        lastmod: new Date().toISOString(),
+        changefreq: 'monthly',
+        priority: 0.8,
+      },
+      {
+        loc: '/services/payment-integration-development',
+        lastmod: new Date().toISOString(),
+        changefreq: 'monthly',
+        priority: 0.8,
+      },
+      {
+        loc: '/services/pos-application-development',
+        lastmod: new Date().toISOString(),
+        changefreq: 'monthly',
+        priority: 0.8,
+      },
+      {
+        loc: '/services/ai-powered-software-development',
+        lastmod: new Date().toISOString(),
+        changefreq: 'monthly',
+        priority: 0.8,
+      },
+    ],
+  },
   scripts:{
     registry:{
       googleAnalytics:{
