@@ -105,6 +105,11 @@ export default defineNuxtConfig({
       stylistic: true,
     }
   },
+  runtimeConfig: {
+    public: {
+      firebaseApiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY || '',
+    },
+  },
   //add scroll behavior
   router: {
     options: {
