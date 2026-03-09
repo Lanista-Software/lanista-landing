@@ -97,5 +97,18 @@
     "options": {},
     "validations": {},
     "fieldType": "media"
+  },
+  {
+    "name": "link",
+    "fieldId": "link",
+    "modelId": "services",
+    "componentId": "url",
+    "options": {},
+    "validations": {
+      "required-field": {
+        "value": false
+      }
+    },
+    "fieldType": "string"
   }
 ]

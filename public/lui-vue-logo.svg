@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <rect width="200" height="60" rx="8" fill="#1a1a2e"/>
+  <text x="20" y="40" font-family="monospace" font-size="28" font-weight="bold" fill="#6366f1">LUI</text>
+  <text x="90" y="40" font-family="monospace" font-size="28" font-weight="300" fill="#a5b4fc">Vue</text>
+</svg>

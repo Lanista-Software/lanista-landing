@@ -2,41 +2,45 @@
   {
     "ID": "50d81f2a3baf",
     "createdAt": "2024-10-14T10:32:18.000Z",
-    "updatedAt": "2024-10-25T15:00:08.321Z",
+    "updatedAt": "2026-03-09T14:00:00.000Z",
     "status": "publish",
     "title": "Web App. Development",
     "description": "From concept to launch, we deliver custom web apps that are secure, scalable, and designed to meet your business needs.",
     "image": "public/1729868379116_Webapp.svg",
+    "link": "/services/nuxtjs-vuejs-web-application-development",
     "scheduled": false
   },
   {
     "ID": "9450777bee2f",
     "createdAt": "2024-10-14T10:33:10.000Z",
-    "updatedAt": "2024-10-24T10:27:07.330Z",
+    "updatedAt": "2026-03-09T14:00:00.000Z",
     "status": "publish",
     "title": "Mobile App. Development",
-    "description": "We develop custom iOS and Android mobile apps to turn our clients’ ideas into real mobile experiences.",
+    "description": "We develop custom iOS and Android mobile apps to turn our clients' ideas into real mobile experiences.",
     "image": "public/1729765510539_Mobileapp.svg",
+    "link": "/services/react-native-mobile-app-development",
     "scheduled": false
   },
   {
     "ID": "d00761480436",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-24T10:59:32.680Z",
+    "updatedAt": "2026-03-09T14:00:00.000Z",
     "status": "publish",
     "title": "MVP Development",
     "description": "Helping startups bring their ideas to life with MVP development services.",
     "image": "public/1729767526420_MVP.svg",
+    "link": "/services/saas-platform-development",
     "scheduled": false
   },
   {
     "ID": "d00761480437",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-25T08:24:14.428Z",
+    "updatedAt": "2026-03-09T14:00:00.000Z",
     "status": "publish",
     "title": "SaaS Platform Development",
     "description": "We provide end-to-end custom SaaS platform development solutions. ",
     "image": "public/1729844595854_SaaS.svg",
+    "link": "/services/saas-platform-development",
     "scheduled": false
   },
   {
@@ -47,16 +51,18 @@
     "title": "Product Design",
     "description": "Crafting product designs that blend functionality with modern aesthetics.",
     "image": "public/1729849903212_ProductDesign.svg",
+    "link": "",
     "scheduled": false
   },
   {
     "ID": "d00761480439",
     "createdAt": "2024-09-26T18:04:41.000Z",
-    "updatedAt": "2024-10-25T11:38:08.324Z",
+    "updatedAt": "2026-03-09T14:00:00.000Z",
     "status": "publish",
     "title": "Web Design & Development",
     "description": "Need high convertible websites? We craft responsive websites that attract and convert visitors.",
     "image": "public/1729856262454_Webdesign.svg",
+    "link": "/services/nuxtjs-vuejs-web-application-development",
     "scheduled": false
   },
   {
@@ -67,6 +73,7 @@
     "title": "Headless CMS Solutions",
     "description": "We develop custom Headless CMS solutions or integrate our own Git-based Headless CMS Contentrain into your projects.",
     "image": "public/1729867496804_Headless.svg",
+    "link": "",
     "scheduled": false
   }
 ]
