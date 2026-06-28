@@ -6,7 +6,7 @@ const menuItems: MenuItem[] = [
   { label: "services", path: "#services" },
   { label: "process", path: "#process" },
   { label: "technologies", path: "#technologies" },
-  { label: "works", path: "#works" },
+  { label: "works", path: "/works" },
 ];
 const { lockScroll } = useScrollLock();
 const { setLocale, locale } = useI18n();

@@ -8,13 +8,24 @@ export interface MenuItem {
 }
 defineProps<{ menuItems: MenuItem[]; direction: "vertical" | "horizontal" }>();
 const { lockScroll } = useScrollLock()
+const localePath = useLocalePath()
+const route = useRoute()
 const emit = defineEmits<{ clicked: [] }>();
 function handleClicked() {
   lockScroll();
   emit("clicked");
 }
-function isActive(path: string, routeHash: string) {
-  return routeHash.length === 0 ? path === "#home" : routeHash === path;
+const isHash = (path: string) => path.startsWith("#");
+// Hash items scroll within the homepage; route items (e.g. /works) are localized links.
+function resolveTo(path: string) {
+  return isHash(path) ? path : localePath(path);
+}
+function isActive(item: MenuItem) {
+  if (isHash(item.path)) {
+    return route.hash.length === 0 ? item.path === "#home" : route.hash === item.path;
+  }
+  const target = localePath(item.path);
+  return route.path === target || route.path.startsWith(`${target}/`);
 }
 </script>
 
@@ -27,15 +38,12 @@ function isActive(path: string, routeHash: string) {
       <template v-for="(item, index) in menuItems" :key="item.path + index">
         <li v-if="item">
           <NuxtLink
-            :to="item.path"
+            :to="resolveTo(item.path)"
             @click="handleClicked"
             class="font-inter cursor-pointer"
             :class="{
-              'text-danger-500 font-bold': isActive(item.path, $route.hash),
-              'text-heading-text font-medium': !isActive(
-                item.path,
-                $route.hash
-              ),
+              'text-danger-500 font-bold': isActive(item),
+              'text-heading-text font-medium': !isActive(item),
             }"
           >
             {{ $t(`menu.${item.label}`) }}

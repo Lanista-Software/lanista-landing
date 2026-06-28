@@ -72,7 +72,7 @@ const footerData = {
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/#works" class="text-sm text-body hover:text-primary-600 transition-colors">
+              <NuxtLink :to="localePath('/works')" class="text-sm text-body hover:text-primary-600 transition-colors">
                 {{ locale === 'tr' ? 'Projeler' : 'Works' }}
               </NuxtLink>
             </li>
