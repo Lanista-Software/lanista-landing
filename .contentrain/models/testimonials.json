@@ -1,0 +1,27 @@
+{
+  "description": "Client testimonials",
+  "domain": "marketing",
+  "fields": {
+    "creativeWork": {
+      "model": "workitems",
+      "type": "relation"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "image"
+    },
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "i18n": true,
+  "id": "testimonials",
+  "kind": "collection",
+  "name": "Testimonials"
+}

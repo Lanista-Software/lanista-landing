@@ -1,0 +1,37 @@
+{
+  "sp01a2b3c4d5": {
+    "source": "import",
+    "status": "published",
+    "updated_by": "migration"
+  },
+  "sp02b3c4d5e6": {
+    "source": "import",
+    "status": "published",
+    "updated_by": "migration"
+  },
+  "sp03c4d5e6f7": {
+    "source": "import",
+    "status": "published",
+    "updated_by": "migration"
+  },
+  "sp04d5e6f7a8": {
+    "source": "import",
+    "status": "published",
+    "updated_by": "migration"
+  },
+  "sp05e6f7a8b9": {
+    "source": "import",
+    "status": "published",
+    "updated_by": "migration"
+  },
+  "sp06f7a8b9c0": {
+    "source": "import",
+    "status": "published",
+    "updated_by": "migration"
+  },
+  "sp07a8b9c0d1": {
+    "source": "import",
+    "status": "published",
+    "updated_by": "migration"
+  }
+}

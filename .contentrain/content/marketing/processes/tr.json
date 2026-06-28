@@ -1,0 +1,32 @@
+{
+  "96c64803d441": {
+    "description": "Proje hedeflerini ve müşteri ihtiyaçlarını belirleyerek, doğru ve ölçeklenebilir çözümleri geliştirmek için analizler yapıyoruz.",
+    "icon": "ri-search-eye-line",
+    "title": "Araştırma ve Analiz"
+  },
+  "96c64803d442": {
+    "description": "Her projenin hedeflerine göre fikirleri uygun tasarımlara dönüştürüyor ve süreci müşteri ile birlikte iterasyonlarla ilerletiyoruz.",
+    "icon": "ri-shape-line",
+    "title": "Tasarım ve Prototipleme"
+  },
+  "96c64803d443": {
+    "description": "Tasarımları tam işlevli ürünlere dönüştürüyor, temel özellikleri entegre ediyor ve sistemi test ortamına almak için hazır hale getiriyoruz.",
+    "icon": "ri-terminal-box-line",
+    "title": "Yazılım Geliştirme Aşaması"
+  },
+  "96c64803d444": {
+    "description": "Olası sorunları tespit etmek için projeyi müşteriyle birlikte test ediyoruz ve ardından sorunları çözerek projeyi canlı ortama alıyoruz.",
+    "icon": "ri-test-tube-line",
+    "title": "Test Aşaması"
+  },
+  "96c64803d445": {
+    "description": "Projeyi doğru yapıyla canlı ortama aktarıyoruz ve ürünün son kullanıcıya hazır olmasını sağlıyoruz.",
+    "icon": "ri-rocket-line",
+    "title": "Proje Dağıtımı"
+  },
+  "96c64803d446": {
+    "description": "Projenin canlı ortama alınmasından sonra sorunsuz bir şekilde çalışmasını sağlamak için sürekli destek ve bakım sağlıyoruz.",
+    "icon": "ri-brush-3-line",
+    "title": "Destek ve Bakım"
+  }
+}

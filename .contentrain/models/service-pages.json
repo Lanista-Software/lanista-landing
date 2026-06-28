@@ -1,0 +1,46 @@
+{
+  "description": "Standalone SEO service detail pages (/services/:slug)",
+  "domain": "marketing",
+  "fields": {
+    "approachContent": {
+      "type": "text"
+    },
+    "benefitsContent": {
+      "type": "text"
+    },
+    "challengeContent": {
+      "type": "text"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "relatedWorks": {
+      "model": "workitems",
+      "type": "relations"
+    },
+    "slug": {
+      "required": true,
+      "type": "slug"
+    },
+    "technologies": {
+      "type": "text"
+    },
+    "title": {
+      "required": true,
+      "type": "string"
+    }
+  },
+  "i18n": true,
+  "id": "service-pages",
+  "kind": "collection",
+  "name": "Service Pages"
+}

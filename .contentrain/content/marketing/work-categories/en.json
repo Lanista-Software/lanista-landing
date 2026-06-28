@@ -1,0 +1,38 @@
+{
+  "59cbdac46c1e": {
+    "category": "Web Design & Development",
+    "order": 6
+  },
+  "8ac7d8c79484": {
+    "category": "Support & Maintenance",
+    "order": 7
+  },
+  "b5debb48ccb2": {
+    "category": "Mobile App. Development",
+    "order": 8
+  },
+  "bcc834108adc": {
+    "category": "Product Development",
+    "order": 9
+  },
+  "cab37361e7e6": {
+    "category": "Frontend Development",
+    "order": 1
+  },
+  "cab37361e7e7": {
+    "category": "Backend Development",
+    "order": 2
+  },
+  "cab37361e7e8": {
+    "category": "UI/UX Design",
+    "order": 3
+  },
+  "cab37361e7e9": {
+    "category": "SEO Optimization",
+    "order": 4
+  },
+  "cab37361e7ea": {
+    "category": "Social Media Marketing",
+    "order": 5
+  }
+}

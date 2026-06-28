@@ -1,0 +1,32 @@
+{
+  "96c64803d441": {
+    "description": "We identify project goals and client needs, conducting in-depth analysis to develop the right, scalable solutions.",
+    "icon": "ri-search-eye-line",
+    "title": "Research & Analysis"
+  },
+  "96c64803d442": {
+    "description": "We turn ideas into great designs based on each project’s goals, refining them through client feedback and iterations.",
+    "icon": "ri-shape-line",
+    "title": "Design & Prototyping"
+  },
+  "96c64803d443": {
+    "description": "We transform designs into fully functional software, integrating key features and making sure the system is ready for testing.",
+    "icon": "ri-terminal-box-line",
+    "title": "Development Stage"
+  },
+  "96c64803d444": {
+    "description": "We test the project to identify and resolve any issues with the client. Once approved, we deploy it to the live environment.",
+    "icon": "ri-test-tube-line",
+    "title": "Testing Stage"
+  },
+  "96c64803d445": {
+    "description": "We deploy the project to a live environment with the right structure, ensuring the product is ready for end users.",
+    "icon": "ri-rocket-line",
+    "title": "Project Deployment"
+  },
+  "96c64803d446": {
+    "description": "After launch, we provide continuous support and maintenance to ensure the product runs smoothly.",
+    "icon": "ri-brush-3-line",
+    "title": "Support & Maintenance"
+  }
+}

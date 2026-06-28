@@ -2,15 +2,18 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "contentrain generate && nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "contentrain generate && nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
+    "postinstall": "contentrain generate && nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "cr:generate": "contentrain generate",
+    "cr:watch": "contentrain generate --watch"
   },
   "dependencies": {
+    "@contentrain/query": "^6.1.0",
     "@lui-ui/lui-nuxt": "^0.1.0",
     "@lui-ui/lui-tailwindcss": "^0.1.1",
     "@lui-ui/lui-vue": "^1.0.12",
@@ -29,9 +32,24 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.6.2"
+    "@antfu/eslint-config": "^3.6.2",
+    "contentrain": "^0.6.0"
   },
   "resolutions": {
     "jackspeak": "2.1.1"
+  },
+  "imports": {
+    "#contentrain": {
+      "types": "./.contentrain/client/index.d.ts",
+      "import": "./.contentrain/client/index.mjs",
+      "require": "./.contentrain/client/index.cjs",
+      "default": "./.contentrain/client/index.mjs"
+    },
+    "#contentrain/*": {
+      "types": "./.contentrain/client/*.d.ts",
+      "import": "./.contentrain/client/*.mjs",
+      "require": "./.contentrain/client/*.cjs",
+      "default": "./.contentrain/client/*.mjs"
+    }
   }
 }

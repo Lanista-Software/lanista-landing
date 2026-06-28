@@ -1,0 +1,57 @@
+{
+  "0c1b5726fbf6": {
+    "answer": "Yes, we provide ongoing technical support and maintenance services to ensure your product runs smoothly. Our support includes bug fixes, updates, and feature enhancements.",
+    "order": 7,
+    "question": "Do you offer technical support and maintenance services after delivering the project?"
+  },
+  "7d33292fa865": {
+    "answer": "Our team is skilled in integrating 3rd party solutions with existing systems. Whether it’s APIs or 3rd platforms we provide seamless integrations to enhance your digital ecosystem.",
+    "order": 10,
+    "question": "Can you integrate 3rd party app services into my existing project?"
+  },
+  "951c49ca05b9": {
+    "answer": "At Lanista Software, we develop custom web and mobile apps for different businesses. With expertise in end-to-end product development, we also help startups to create solid MVPs.",
+    "order": 1,
+    "question": "What does Lanista Software specialize in?"
+  },
+  "9afcecd11af9": {
+    "answer": "Absolutely. We collaborate closely with clients to refine ideas and develop app structure, providing insights into user experience, functionality, and technical feasibility.",
+    "order": 9,
+    "question": "Can you help with app ideas and structure?"
+  },
+  "a528b01b5689": {
+    "answer": "We develop high-performance software solutions for industries like saas, e-commerce, healthcare, finance, education, retail, media, manufacturing, automotive and HR services. ",
+    "order": 2,
+    "question": "What industries does Lanista Software serve?"
+  },
+  "a528b01b5690": {
+    "answer": "We begin by understanding your goals, then research, plan and create a prototype. After approval, we proceed with development, testing and deployment, keeping you involved throughout.",
+    "order": 3,
+    "question": "How does the software product development process work?"
+  },
+  "a528b01b5691": {
+    "answer": "Geliştirme zaman çizelgesi projenin karmaşıklığına ve kapsamına bağlıdır. Hedeflerinizi analiz ettikten sonra, projeye başlamadan önce size ayrıntılı bir zaman çizelgesi sunuyoruz.",
+    "order": 4,
+    "question": "How long does it take to develop a software product?"
+  },
+  "a528b01b5692": {
+    "answer": "We understand that new ideas can emerge during development. Our agile approach allows flexibility for changes, and we assess the impact on timelines and budget before moving forward.",
+    "order": 5,
+    "question": "What if I want to make changes to the project after development starts?"
+  },
+  "a528b01b5693": {
+    "answer": "We believe in transparent communication throughout the development process. You can get regular updates through weekly meetings, progress reports, and demos at key milestones.",
+    "order": 6,
+    "question": "How often will I receive updates about my project from the team?"
+  },
+  "bdf371e875c4": {
+    "answer": "We offer flexible pricing based on your project needs, including fixed-price contracts for well-defined projects or hourly rates for more dynamic ones.",
+    "order": 8,
+    "question": "What is your pricing model?"
+  },
+  "c7ea2d6becc4": {
+    "answer": "Custom software meets your business’s unique requirements. It offers flexibility, scalability, and seamless integration with existing processes, providing better user experience.",
+    "order": 11,
+    "question": "Why do I need custom software?"
+  }
+}

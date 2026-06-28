@@ -1,0 +1,38 @@
+{
+  "59cbdac46c1e": {
+    "category": "Web Tasarım ve Geliştirme",
+    "order": 6
+  },
+  "8ac7d8c79484": {
+    "category": "Destek ve Bakım",
+    "order": 7
+  },
+  "b5debb48ccb2": {
+    "category": "Mobil Uygulama Geliştirme",
+    "order": 8
+  },
+  "bcc834108adc": {
+    "category": "Ürün Geliştirme",
+    "order": 9
+  },
+  "cab37361e7e6": {
+    "category": "Frontend Geliştirme",
+    "order": 1
+  },
+  "cab37361e7e7": {
+    "category": "Backend Geliştirme",
+    "order": 2
+  },
+  "cab37361e7e8": {
+    "category": "UI/UX Tasarımı",
+    "order": 3
+  },
+  "cab37361e7e9": {
+    "category": "SEO Optimizasyonu",
+    "order": 4
+  },
+  "cab37361e7ea": {
+    "category": "Sosyal Medya Pazarlama",
+    "order": 5
+  }
+}

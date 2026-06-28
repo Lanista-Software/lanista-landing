@@ -1,0 +1,14 @@
+{
+  "description": "Client / reference brand logos",
+  "domain": "marketing",
+  "fields": {
+    "logo": {
+      "required": true,
+      "type": "image"
+    }
+  },
+  "i18n": false,
+  "id": "references",
+  "kind": "collection",
+  "name": "References"
+}

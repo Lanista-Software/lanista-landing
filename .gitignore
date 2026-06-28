@@ -29,3 +29,6 @@ logs
 # Contentrain
 .contentrain/.cache/
 .contentrain/client/
+
+# Claude Code local settings
+.claude/settings.local.json

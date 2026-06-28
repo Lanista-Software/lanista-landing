@@ -1,0 +1,23 @@
+{
+  "description": "Technology / tooling items shown in the technologies tab section",
+  "domain": "marketing",
+  "fields": {
+    "category": {
+      "model": "work-categories",
+      "type": "relation"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "image"
+    },
+    "link": {
+      "type": "string"
+    }
+  },
+  "i18n": true,
+  "id": "tabitems",
+  "kind": "collection",
+  "name": "Tab Items"
+}

@@ -1,0 +1,29 @@
+{
+  "description": "Homepage section headings (title/description/CTA) keyed by section name",
+  "domain": "marketing",
+  "fields": {
+    "buttonlink": {
+      "type": "string"
+    },
+    "buttontext": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "i18n": true,
+  "id": "sections",
+  "kind": "collection",
+  "name": "Sections"
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Frequently asked questions",
+  "domain": "marketing",
+  "fields": {
+    "answer": {
+      "required": true,
+      "type": "text"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "question": {
+      "required": true,
+      "type": "string"
+    }
+  },
+  "i18n": true,
+  "id": "faq",
+  "kind": "collection",
+  "name": "FAQ"
+}

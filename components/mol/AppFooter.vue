@@ -1,19 +1,16 @@
 <script lang="ts" setup>
-import socialLinks from "../../contentrain/sociallinks/sociallinks.json";
-import enServicePages from "../../contentrain/service-pages/en.json";
-import trServicePages from "../../contentrain/service-pages/tr.json";
-
 const { locale } = useI18n();
 
-const servicePages = computed(() => {
-  const pages = locale.value === "tr" ? trServicePages : enServicePages;
-  return pages
-    .filter((p) => p.status === "publish")
-    .sort((a, b) => a.order - b.order);
-});
+const { data: layout } = await useAsyncData(
+  "layout",
+  () => $fetch("/api/layout", { query: { locale: locale.value } }),
+  { watch: [locale] }
+);
+
+const servicePages = computed(() => layout.value?.servicePages || []);
+const socials = computed(() => layout.value?.socialLinks || []);
 
 const footerData = {
-  socials: socialLinks,
   logo: {
     link: "/",
     image: "/images/logo.svg",
@@ -31,7 +28,7 @@ const footerData = {
             <AtomsLogo />
           </NuxtLink>
           <div class="space-x-4">
-            <template v-for="social in footerData.socials" :key="social.link">
+            <template v-for="social in socials" :key="social.link">
               <a
                 :href="social.link"
                 target="_blank"

@@ -1,0 +1,57 @@
+{
+  "0c1b5726fbf6": {
+    "answer": "Evet, ürününüzün sorunsuz çalışmasını sağlamak için teknik destek ve bakım hizmetleri sağlıyoruz. Desteğimiz hata düzeltmeleri, güncellemeler ve özellik geliştirmelerini içeriyor.",
+    "order": 7,
+    "question": "Proje tesliminden sonra teknik destek ve bakım hizmeti sunuyor musunuz?"
+  },
+  "7d33292fa865": {
+    "answer": "Ekibimiz, 3. parti çözümleri mevcut sistemlerle entegre etme konusunda uzmandır. API'leri ve 3. parti çözümleri dijital ekosisteminizi geliştirmek için projenize entegre ediyoruz.",
+    "order": 10,
+    "question": "Mevcut projeme 3. parti uygulamaları entegre edebilir misiniz?"
+  },
+  "951c49ca05b9": {
+    "answer": "Lanista Yazılım olarak, farklı işletmeler için web ve mobil uygulamalar geliştiriyoruz. Uçtan uca ürün geliştirme konusundaki uzmanlığımızla, startuplar için MVP’ler geliştiriyoruz.",
+    "order": 1,
+    "question": "Lanista Yazılım'ın uzmanlık alanları nelerdir?"
+  },
+  "9afcecd11af9": {
+    "answer": "Fikir ve uygulama yapısını geliştirmek için müşterilerimizle yakın bir şekilde iş birliği yapıyor, kullanıcı deneyimi, işlevsellik ve teknik uygulanabilirlik konusunda destek sağlıyoruz.",
+    "order": 9,
+    "question": "Uygulama fikirleri ve yapısı konusunda yardımcı oluyor musunuz?"
+  },
+  "a528b01b5689": {
+    "answer": "SaaS, e-ticaret, sağlık, finans, eğitim, perakende, medya, üretim, otomotiv ve insan kaynakları gibi sektörler için yüksek performanslı yazılım çözümleri sunuyoruz.",
+    "order": 2,
+    "question": "Lanista Yazılım hangi sektörlere hizmet veriyor?"
+  },
+  "a528b01b5690": {
+    "answer": "Hedeflerinizi anlayarak başlıyoruz, ardından araştırma, planlama ve prototip oluşturma aşamalarına geçiyoruz. Prototip onayı sonrasında ürün geliştirme sürecine başlıyoruz. Ürünün test süreçlerine sizi de dahil ederek, ürünün sorunsuz versiyonunu yayına alıyoruz.",
+    "order": 3,
+    "question": "Yazılım ürünü geliştirme süreci nasıl işliyor?"
+  },
+  "a528b01b5691": {
+    "answer": "Contentrain'de bir kampanya oluşturmak için bir marka olarak kaydolmanız gerekmektedir. Kaydolduktan sonra kampanyanızı oluşturabilir ve içerik oluşturuculardan başvurular almaya başlayabilirsiniz.",
+    "order": 4,
+    "question": "Bir yazılım ürününü geliştirmek ne kadar zaman alır?"
+  },
+  "a528b01b5692": {
+    "answer": "Ürün geliştirme sırasında yeni fikirler ortaya çıkabilir ve projenin ek geliştirmelere ihtiyacı olabilir. Komponent bazlı proje geliştirme yöntemimiz, değişiklikler için esneklik sağlar.",
+    "order": 5,
+    "question": "Geliştirme başladıktan sonra projede değişiklik yapmak istersem ne olur?"
+  },
+  "a528b01b5693": {
+    "answer": "Geliştirme süreci boyunca şeffaf iletişime inanıyoruz. Haftalık toplantılar ve önemli kilometre taşlarında demolar görerek projeniz hakkında düzenli güncellemeler alabilirsiniz.",
+    "order": 6,
+    "question": "Projem hakkında ekipten ne sıklıkla güncelleme alacağım?"
+  },
+  "bdf371e875c4": {
+    "answer": "Projenizin ihtiyaçlarına göre esnek fiyatlandırma sunuyoruz; kapsam detayları belirli projelerde sabit fiyat, daha dinamik projelerde ise saatlik fiyatlandırma seçenekleri sunuyoruz.",
+    "order": 8,
+    "question": "Fiyatlandırma modeliniz nedir?"
+  },
+  "c7ea2d6becc4": {
+    "answer": "Özel yazılımlar, işletmenizin benzersiz ihtiyaçlarını karşılar. Esneklik, ölçeklenebilirlik ve mevcut süreçlerle kusursuz entegrasyon sunarak daha iyi kullanıcı deneyimi sağlar.",
+    "order": 11,
+    "question": "Neden özel bir yazılım geliştirme çözümüne ihtiyacım var?"
+  }
+}

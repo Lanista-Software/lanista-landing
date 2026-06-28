@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import sectionData from "../../contentrain/sections/en.json";
-import referencesData from "../../contentrain/references/references.json";
 import useScrollLock from "~/composables/scrollLock";
-const defaultPath = getDefaultPathByFieldName(
-  sectionData,
-  "name",
-  "hero",
-  "sections"
-);
+
+defineProps<{
+  hero: Record<string, any>;
+  references: { ID?: string; id?: string; logo: string }[];
+}>();
+
 const { lockScroll } = useScrollLock();
 const proxy = useScriptGoogleAnalytics();
 function handleClick() {
@@ -17,24 +15,24 @@ function handleClick() {
 </script>
 
 <template>
-  <section v-if="defaultPath" class="hero-section text-center">
+  <section v-if="hero && hero.title" class="hero-section text-center">
     <div>
       <LuiTag color="secondary" filter="lighten" size="lg" rounded="full">
-        {{ $t(`${defaultPath}.subtitle`) }}</LuiTag
+        {{ hero.subtitle }}</LuiTag
       >
     </div>
     <h1
       class="text-heading-text text-4xl lg:text-5xl xl:text-6xl font-space mt-8 max-content font-semibold"
     >
-      {{ $t(`${defaultPath}.title`) }}
+      {{ hero.title }}
     </h1>
     <p class="text-body-text font-normal text-lg md:text-xl mt-6 max-content">
-      {{ $t(`${defaultPath}.description`) }}
+      {{ hero.description }}
     </p>
     <div class="pt-8 flex items-center justify-center max-content">
-      <NuxtLink :to="$t(`${defaultPath}.buttonlink`)">
+      <NuxtLink :to="hero.buttonlink">
         <LuiButton @click="handleClick" rounded="full" color="danger">
-          {{ $t(`${defaultPath}.buttontext`) }}
+          {{ hero.buttontext }}
           <template #append>
             <i class="ri-arrow-right-up-line"></i>
           </template>
@@ -45,8 +43,8 @@ function handleClick() {
       class="flex items-center justify-evenly pt-14 lg:pt-20 flex-wrap gap-4 gap-y-8 max-w-screen-md mx-auto w-full"
     >
       <NuxtImg
-        v-for="i in referencesData"
-        :key="i.ID"
+        v-for="i in references"
+        :key="i.ID || i.id"
         :src="getStaticImagePath(i.logo)"
         :alt="getImageAlt(i.logo)"
         class="w-auto h-7"

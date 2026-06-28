@@ -1,0 +1,44 @@
+{
+  "50d81f2a3baf": {
+    "description": "Konseptten lansmana kadar güvenli, ölçeklenebilir ve iş ihtiyaçlarınızı karşılayacak şekilde tasarlanmış özel web uygulamaları geliştiriyoruz.",
+    "image": "/1729868379116_Webapp.svg",
+    "link": "/services/nuxtjs-vuejs-web-application-development",
+    "title": "Web Uygulama Geliştirme"
+  },
+  "9450777bee2f": {
+    "description": "Müşterilerimizin fikirlerini gerçek mobil deneyimlere dönüştürebilmek için özel IOS ve Android uygulamalar geliştiriyoruz.",
+    "image": "/1729765510539_Mobileapp.svg",
+    "link": "/services/react-native-mobile-app-development",
+    "title": "Mobil Uygulama Geliştirme"
+  },
+  "d00761480436": {
+    "description": "Startuplara, fikirlerini hayata geçirebilmeleri için deneyimli bir ekiple birlikte MVP geliştirme hizmeti sunuyoruz.",
+    "image": "/1729767526420_MVP.svg",
+    "link": "/services/saas-platform-development",
+    "title": "MVP Geliştirme"
+  },
+  "d00761480437": {
+    "description": "Startuplara ve kurumsal firmalara ihtiyaç duydukları uçtan uca SaaS platform geliştirme çözümleri sağlıyoruz.",
+    "image": "/1729844595854_SaaS.svg",
+    "link": "/services/saas-platform-development",
+    "title": "SaaS Platform Geliştirme"
+  },
+  "d00761480438": {
+    "description": "İşlevselliği modern estetikle harmanlayan ürün tasarımları üretiyoruz.",
+    "image": "/1729849903212_ProductDesign.svg",
+    "link": "",
+    "title": "Ürün Tasarımı"
+  },
+  "d00761480439": {
+    "description": "Ziyaretçilerinizi çekecek web sitelerine mi ihtiyacınız var? İşiniz için ölçeklenebilir ve responsive web siteleri geliştiriyoruz.",
+    "image": "/1729856262454_Webdesign.svg",
+    "link": "/services/nuxtjs-vuejs-web-application-development",
+    "title": "Web Tasarımı & Geliştirme"
+  },
+  "d00761480440": {
+    "description": "Projeleriniz için CMS çözümleri geliştiriyor veya kendi ürünümüz olan Git tabanlı Contentrain'i projenize entegre ediyoruz.",
+    "image": "/1729867496804_Headless.svg",
+    "link": "",
+    "title": "Headless CMS Çözümleri"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Service offerings shown on the homepage services section",
+  "domain": "marketing",
+  "fields": {
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "image"
+    },
+    "link": {
+      "type": "string"
+    },
+    "title": {
+      "required": true,
+      "type": "string"
+    }
+  },
+  "i18n": true,
+  "id": "services",
+  "kind": "collection",
+  "name": "Services"
+}

@@ -1,0 +1,44 @@
+{
+  "50d81f2a3baf": {
+    "description": "From concept to launch, we deliver custom web apps that are secure, scalable, and designed to meet your business needs.",
+    "image": "/1729868379116_Webapp.svg",
+    "link": "/services/nuxtjs-vuejs-web-application-development",
+    "title": "Web App. Development"
+  },
+  "9450777bee2f": {
+    "description": "We develop custom iOS and Android mobile apps to turn our clients' ideas into real mobile experiences.",
+    "image": "/1729765510539_Mobileapp.svg",
+    "link": "/services/react-native-mobile-app-development",
+    "title": "Mobile App. Development"
+  },
+  "d00761480436": {
+    "description": "Helping startups bring their ideas to life with MVP development services.",
+    "image": "/1729767526420_MVP.svg",
+    "link": "/services/saas-platform-development",
+    "title": "MVP Development"
+  },
+  "d00761480437": {
+    "description": "We provide end-to-end custom SaaS platform development solutions. ",
+    "image": "/1729844595854_SaaS.svg",
+    "link": "/services/saas-platform-development",
+    "title": "SaaS Platform Development"
+  },
+  "d00761480438": {
+    "description": "Crafting product designs that blend functionality with modern aesthetics.",
+    "image": "/1729849903212_ProductDesign.svg",
+    "link": "",
+    "title": "Product Design"
+  },
+  "d00761480439": {
+    "description": "Need high convertible websites? We craft responsive websites that attract and convert visitors.",
+    "image": "/1729856262454_Webdesign.svg",
+    "link": "/services/nuxtjs-vuejs-web-application-development",
+    "title": "Web Design & Development"
+  },
+  "d00761480440": {
+    "description": "We develop custom Headless CMS solutions or integrate our own Git-based Headless CMS Contentrain into your projects.",
+    "image": "/1729867496804_Headless.svg",
+    "link": "",
+    "title": "Headless CMS Solutions"
+  }
+}

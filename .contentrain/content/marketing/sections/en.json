@@ -1,0 +1,66 @@
+{
+  "2aa54f9e7eaf": {
+    "buttonlink": "#works",
+    "buttontext": "See our latest works",
+    "description": "We offer a wide range of software development services, guiding our clients through every step from concept to final product.",
+    "name": "services",
+    "title": "Explore our expertise in outsourced Development Services"
+  },
+  "2aa54f9e7eb0": {
+    "buttonlink": "#works",
+    "buttontext": "View all works",
+    "description": "We follow a structured approach to ensure each project is delivered on time, with secure architecture, and within budget.",
+    "name": "process",
+    "title": "Building Success: Our product development approach"
+  },
+  "2aa54f9e7eb1": {
+    "buttonlink": "#testimonials",
+    "buttontext": "View all testimonials",
+    "description": "Our focus on quality has earned the trust of industry professionals over time. We deliver tailored solutions that meet the highest standards for our clients.\n",
+    "name": "testimonials",
+    "title": "Trusted by Industry Professionals"
+  },
+  "2aa54f9e7eb2": {
+    "buttonlink": "#works",
+    "buttontext": "View all works",
+    "description": "Explore some of our recent projects where we’ve partnered with clients to turn their ideas into successful products.",
+    "name": "works",
+    "title": "Our recent client works"
+  },
+  "2aa54f9e7eb3": {
+    "buttonlink": "#testimonials",
+    "buttontext": "View all testimonials",
+    "description": "We love to use Javascript frameworks and the latest technologies to deliver great products.",
+    "name": "tabs",
+    "title": "Our technology and tool stack"
+  },
+  "2aa54f9e7x90": {
+    "buttonlink": "#contact",
+    "buttontext": "Contact us",
+    "description": "We help companies and startups bring their ideas to life with our experience.",
+    "name": "banner",
+    "title": "Let's build together!"
+  },
+  "2aa54f9e7xb3": {
+    "buttonlink": "#contact",
+    "buttontext": "Let's discuss your project",
+    "description": "We provide outsourced Frontend, Backend, and Mobile Application development services to craft custom digital projects that drive results.\n",
+    "name": "hero",
+    "subtitle": "Software Development Company",
+    "title": "Web & Mobile Application development services"
+  },
+  "2aa54f9e7xb4": {
+    "buttonlink": "#contact",
+    "buttontext": "Let's discuss your project",
+    "description": "Find quick answers to common questions about Lanista’s services. Need more help? Contact our team anytime.",
+    "name": "faq",
+    "title": "FAQ's"
+  },
+  "2aa54f9e7xb5": {
+    "buttonlink": "#testimonials",
+    "buttontext": "Send",
+    "description": "Can’t find what you’re looking for in the FAQs? Feel free to reach out to us directly for more information.",
+    "name": "contact",
+    "title": "Reach out for more information"
+  }
+}

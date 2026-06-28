@@ -1,0 +1,17 @@
+{
+  "description": "Categories for portfolio work items and technology tabs",
+  "domain": "marketing",
+  "fields": {
+    "category": {
+      "required": true,
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    }
+  },
+  "i18n": true,
+  "id": "work-categories",
+  "kind": "collection",
+  "name": "Work Categories"
+}

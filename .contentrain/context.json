@@ -1,18 +1,20 @@
 {
   "lastOperation": {
+    "entries": [],
     "locale": "en",
     "model": "",
-    "source": "mcp-local",
-    "timestamp": "2026-06-28T15:52:02.553Z",
-    "tool": "contentrain_init"
+    "source": "import",
+    "timestamp": "2026-06-28T16:23:47.000Z",
+    "tool": "migration"
   },
   "stats": {
-    "entries": 0,
-    "lastSync": "2026-06-28T15:52:02.554Z",
+    "entries": 172,
+    "lastSync": "2026-06-28T16:23:47.000Z",
     "locales": [
-      "en"
+      "en",
+      "tr"
     ],
-    "models": 0
+    "models": 12
   },
   "version": "1"
 }

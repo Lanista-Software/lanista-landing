@@ -1,0 +1,30 @@
+{
+  "description": "Portfolio / showcase work items",
+  "domain": "marketing",
+  "fields": {
+    "category": {
+      "model": "work-categories",
+      "type": "relation"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "image"
+    },
+    "link": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "title": {
+      "required": true,
+      "type": "string"
+    }
+  },
+  "i18n": true,
+  "id": "workitems",
+  "kind": "collection",
+  "name": "Work Items"
+}

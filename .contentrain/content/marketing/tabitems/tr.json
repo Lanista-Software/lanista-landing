@@ -1,0 +1,92 @@
+{
+  "3442ac47e4cc": {
+    "category": "cab37361e7e8",
+    "description": "Adobe Photoshop, Adobe tarafından geliştirilen ve yaygın olarak kullanılan bir grafik tasarım ve görüntü düzenleme yazılımıdır. Başlıca fotoğraf düzenleme, dijital sanat eseri oluşturma ve hem baskı hem de web için grafik tasarımı amacıyla kullanılır.",
+    "image": "/1728898765927_Photoshop.svg",
+    "link": "https://www.adobe.com/tr/products/photoshop.html"
+  },
+  "9ab7dcca9d1d": {
+    "category": "cab37361e7e6",
+    "description": "Vue.js Javascript tabanlı bir frameworktür. Vue.js, kullanıcı arayüzleri ve UI bileşenleri oluşturmak için kullanılan bir JavaScript kütüphanesidir. Facebook ve büyük bir geliştirici topluluğu tarafından sürdürülmektedir. Vue, hızlı renderlama ve sanal DOM ile bilinir.",
+    "image": "/1728541493988_vuejs.svg",
+    "link": "https://vuejs.org/"
+  },
+  "9ab7dcca9d1e": {
+    "category": "cab37361e7e6",
+    "description": "React.js, kullanıcı arayüzleri veya UI bileşenleri oluşturmak için kullanılan bir JavaScript kütüphanesidir. Facebook ve büyük bir geliştirici topluluğu tarafından sürdürülmektedir. React, hızlı renderlama ve sanal DOM ile bilinir.",
+    "image": "/1728541679333_react.svg",
+    "link": "https://reactjs.dev/"
+  },
+  "9ab7dcca9d1f": {
+    "category": "cab37361e7e6",
+    "description": "Nuxt.js, Vue.js üzerine inşa edilmiş bir frameworktür. Sunucu tarafında render edilen uygulamaların ve statik web sitelerinin geliştirilmesini kolaylaştırır. SSR, statik site oluşturma ve geliştirilmiş SEO desteği gibi güçlü özellikler sunar.",
+    "image": "/1728541702569_nuxt.svg",
+    "link": "https://nuxtjs.com/"
+  },
+  "9ab7dcca9d20": {
+    "category": "cab37361e7e6",
+    "description": "Next.js, yüksek performanslı, SEO dostu uygulamalar oluşturmak için sunucu tarafında renderlama ve statik web sitesi oluşturma gibi işlevleri etkinleştiren bir React çerçevesidir.",
+    "image": "/1728541725437_next.svg",
+    "link": "https://nextjs.org/"
+  },
+  "9ab7dcca9d21": {
+    "category": "cab37361e7e6",
+    "description": "Astro, hızlı, içerik odaklı web siteleri oluşturmak için yeni bir frontend çerçevesidir. Kısmi hidrasyon adı verilen sayfa renderlama yaklaşımını kullanır ve JavaScript'i tarayıcıya göndererek web sitelerini hızlandırır.",
+    "image": "/1728541750606_astro.svg",
+    "link": "https://astro.build/"
+  },
+  "9ab7dcca9d22": {
+    "category": "cab37361e7e6",
+    "description": "Svelte, çalışma zamanı yerine derleme adımına çok işi kaydıran modern bir JavaScript çerçevesidir. Bu, daha küçük paket boyutları ve daha hızlı yükleme süreleri sağlar, bu da hızlı web uygulamaları oluşturmak için mükemmel bir seçim yapar.",
+    "image": "/1728541774910_svelte.svg",
+    "link": "https://svelte.dev/"
+  },
+  "9ab7dcca9d23": {
+    "category": "cab37361e7e7",
+    "description": "Node.js, Chrome'un V8 JavaScript motoru üzerine inşa edilmiş bir JavaScript çalışma zamanıdır. Sunucuda JavaScript çalıştırmanıza olanak tanır, böylece ölçeklenebilir ve yüksek performanslı uygulamalar oluşturabilirsiniz.",
+    "image": "/1728542310638_nodejs.svg",
+    "link": "https://nodejs.org/en"
+  },
+  "9ab7dcca9d24": {
+    "category": "cab37361e7e7",
+    "description": "Express.js, web ve mobil uygulamalar oluşturmak için sağlam bir özellik seti sağlayan minimal ve esnek bir Node.js web uygulama çerçevesidir. API'ler ve web sunucuları hızlı ve kolay bir şekilde oluşturmak için tasarlanmıştır.",
+    "image": "/1728542335115_expressjs.svg",
+    "link": "https://expressjs.com/"
+  },
+  "9ab7dcca9d25": {
+    "category": "cab37361e7e7",
+    "description": "Nest.js, verimli, güvenilir ve ölçeklenebilir sunucu taraflı uygulamalar oluşturmak için ilerici bir Node.js çerçevesidir. TypeScript kullanır ve uygulamalarınız için sağlam bir mimari tasarım sağlar, Angular'dan büyük ölçüde ilham almıştır.",
+    "image": "/1728542360382_nestjs.svg",
+    "link": "https://nestjs.com/"
+  },
+  "9ab7dcca9d26": {
+    "category": "cab37361e7e7",
+    "description": "Koa.js, daha küçük, daha ifade edici ve daha sağlam olmayı hedefleyen modern bir Node.js web çerçevesidir. Geri aramaları ortadan kaldırmak ve hata işleme yeteneklerini artırmak için async fonksiyonlar kullanır.",
+    "image": "/1728542379255_koajs.svg",
+    "link": "https://koajs.com/"
+  },
+  "9ab7dcca9d27": {
+    "category": "cab37361e7e7",
+    "description": "GraphQL, API'ler için bir sorgu dili ve bu sorguları yürütmek için bir çalışma zamanıdır. REST'e yalnızca ihtiyaç duydukları verileri isteyerek daha verimli ve güçlü bir alternatif sunar.",
+    "image": "/1728542406152_graphql.svg",
+    "link": "https://graphql.org/"
+  },
+  "9ab7dcca9d28": {
+    "category": "cab37361e7e8",
+    "description": "Figma, anlamlı ürünler oluşturmak için önde gelen işbirlikçi tasarım aracıdır. Tek bir platformda sorunsuz bir şekilde tasarlayın, prototip oluşturun, geliştirin ve geri bildirim toplayın.",
+    "image": "/1728898720249_figma.svg",
+    "link": "https://www.figma.com/"
+  },
+  "9ab7dcca9d29": {
+    "category": "cab37361e7e8",
+    "description": "Sketch, ister tek başınıza ister iş birliği yaparak, büyük ölçekte güzel ürünler oluşturmanıza yardımcı olan bir tasarım yazılım aracıdır.",
+    "image": "/1728898732629_sketch.svg",
+    "link": "https://vuejs.org/"
+  },
+  "bc311eb63570": {
+    "category": "cab37361e7e8",
+    "description": "Adobe Illustrator, Adobe tarafından geliştirilen vektör tabanlı bir grafik tasarım yazılımıdır ve öncelikle logolar, illüstrasyonlar, ikonlar, tipografi ve karmaşık illüstrasyonlar gibi ölçeklenebilir grafikler oluşturmak için kullanılır.",
+    "image": "/1728898754502_Illustrator.svg",
+    "link": "https://www.adobe.com/tr/products/illustrator.html"
+  }
+}

@@ -1,13 +1,8 @@
-import enSectionsData from './contentrain/sections/en.json';
-import trSectionData from './contentrain/sections/tr.json';
-
-import type { TSection } from './types';
 export default defineI18nConfig(() => ({
   legacy: false,
   locale: 'en', // Varsayılan dil
   messages: {
     en: {
-      sections: enSectionsData as TSection[],
       menu: {
         home: 'Home',
         services: 'Services',
@@ -17,7 +12,6 @@ export default defineI18nConfig(() => ({
       },
     },
     tr: {
-      sections: trSectionData as TSection[],
       menu: {
         home: 'Ana Sayfa',
         services: 'Hizmetler',
@@ -25,6 +19,6 @@ export default defineI18nConfig(() => ({
         technologies: 'Teknolojiler',
         works: 'Çalışmalar',
       },
-    }
-  }
+    },
+  },
 }));

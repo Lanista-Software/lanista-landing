@@ -1,52 +1,30 @@
 <script setup lang="ts">
-import enServicePages from '../../contentrain/service-pages/en.json'
-import trServicePages from '../../contentrain/service-pages/tr.json'
-import enWorksItemsData from '../../contentrain/workitems/en.json'
-import trWorksItemsData from '../../contentrain/workitems/tr.json'
-import enWorkCategoriesData from '../../contentrain/workcategories/en.json'
-import trWorkCategoriesData from '../../contentrain/workcategories/tr.json'
-
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 const route = useRoute()
 const slug = route.params.slug as string
 
-const page = computed(() => {
-  const pages = locale.value === 'tr' ? trServicePages : enServicePages
-  return pages.find(p => p.slug === slug)
-})
+const { data, error } = await useAsyncData(
+  `service-page-${slug}`,
+  () => $fetch(`/api/service-page/${slug}`, { query: { locale: locale.value } }),
+  { watch: [locale] },
+)
 
-const allPages = computed(() => {
-  const pages = locale.value === 'tr' ? trServicePages : enServicePages
-  return pages.filter(p => p.slug !== slug && p.status === 'publish').sort((a, b) => a.order - b.order)
-})
-
-const relatedWorks = computed(() => {
-  if (!page.value?.relatedWorks) return []
-  const works = locale.value === 'tr' ? trWorksItemsData : enWorksItemsData
-  const categories = locale.value === 'tr' ? trWorkCategoriesData : enWorkCategoriesData
-  return page.value.relatedWorks
-    .map(id => works.find(w => w.ID === id))
-    .filter(Boolean)
-    .map(item => ({
-      ...item,
-      categoryName: categories.find(c => c.ID === item!.category)?.category || '',
-    }))
-})
-
-const technologies = computed(() => {
-  if (!page.value?.technologies) return []
-  return page.value.technologies.split(',').map(t => t.trim())
-})
-
-if (!page.value) {
+if (error.value || !data.value?.page) {
   throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
 }
 
+const page = computed(() => data.value!.page)
+const allPages = computed(() => data.value?.allPages || [])
+const relatedWorks = computed(() => data.value?.relatedWorks || [])
+const technologies = computed<string[]>(() => {
+  const tech = page.value?.technologies
+  return tech ? tech.split(',').map((t: string) => t.trim()) : []
+})
 const isEn = computed(() => locale.value === 'en')
 
 useHead({
-  htmlAttrs: { lang: locale.value },
-  title: page.value.metaTitle,
+  htmlAttrs: { lang: locale },
+  title: () => page.value?.metaTitle,
   link: [
     { rel: 'canonical', href: `https://lanista.com.tr/services/${slug}` },
     { rel: 'alternate', hreflang: 'en', href: `https://lanista.com.tr/services/${slug}` },
@@ -56,17 +34,17 @@ useHead({
   script: [
     {
       type: 'application/ld+json',
-      innerHTML: JSON.stringify({
+      innerHTML: () => JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Service',
-        name: page.value.title,
-        description: page.value.metaDescription,
+        name: page.value?.title,
+        description: page.value?.metaDescription,
         provider: {
           '@type': 'Organization',
           name: 'Lanista Software',
           url: 'https://lanista.com.tr',
         },
-        serviceType: page.value.title,
+        serviceType: page.value?.title,
         areaServed: 'Global',
         availableChannel: {
           '@type': 'ServiceChannel',
@@ -78,16 +56,16 @@ useHead({
 })
 
 useSeoMeta({
-  title: page.value.metaTitle,
-  description: page.value.metaDescription,
-  ogTitle: page.value.metaTitle,
-  ogDescription: page.value.metaDescription,
+  title: () => page.value?.metaTitle,
+  description: () => page.value?.metaDescription,
+  ogTitle: () => page.value?.metaTitle,
+  ogDescription: () => page.value?.metaDescription,
   ogType: 'website',
   ogSiteName: 'Lanista Software',
   ogImage: 'https://res.cloudinary.com/dmywgn45o/image/upload/v1729243091/lanista_og_chgpop.jpg',
   twitterCard: 'summary_large_image',
-  twitterTitle: page.value.metaTitle,
-  twitterDescription: page.value.metaDescription,
+  twitterTitle: () => page.value?.metaTitle,
+  twitterDescription: () => page.value?.metaDescription,
 })
 </script>
 
@@ -189,21 +167,21 @@ useSeoMeta({
           <div class="space-y-6">
             <div
               v-for="work in relatedWorks"
-              :key="work!.ID"
+              :key="work.ID"
               class="border border-border-color rounded-2xl p-6 lg:p-8"
             >
               <LuiTag color="primary" filter="lighten" size="lg" rounded="full" class="mb-3">
-                {{ work!.categoryName }}
+                {{ work.categoryName }}
               </LuiTag>
               <h3 class="text-xl font-bold font-space text-heading-text mb-2">
-                {{ work!.title }}
+                {{ work.title }}
               </h3>
               <p class="text-body font-inter leading-relaxed line-clamp-3">
-                {{ work!.description }}
+                {{ work.description }}
               </p>
               <NuxtLink
-                v-if="work!.link"
-                :to="work!.link"
+                v-if="work.link"
+                :to="work.link"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center mt-4 text-primary-600 hover:text-primary-700 font-medium text-sm"

@@ -1,0 +1,20 @@
+{
+  "description": "Product development process steps",
+  "domain": "marketing",
+  "fields": {
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "icon"
+    },
+    "title": {
+      "required": true,
+      "type": "string"
+    }
+  },
+  "i18n": true,
+  "id": "processes",
+  "kind": "collection",
+  "name": "Processes"
+}

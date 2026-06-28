@@ -17,9 +17,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Nuxt 3 single-page landing site** with TypeScript, Tailwind CSS, and i18n (English + Turkish).
 
-### Content System
+### Content System (Contentrain AI ecosystem)
 
-All content lives in `contentrain/` as JSON files — one per language (`en.json`, `tr.json`). Sections, services, FAQ items, testimonials, work items, and meta tags are all managed here. Relational data uses ID-based linking resolved by `composables/utils.ts` (`getRelationalFields()`).
+All content lives in `.contentrain/` and is managed via the new Contentrain ecosystem (`contentrain` CLI + `@contentrain/query` SDK + `@contentrain/mcp`). See `ai.contentrain.io`.
+
+- **Config:** `.contentrain/config.json` — stack `nuxt`, locales `en`/`tr`, domains `marketing` + `system`.
+- **Models:** `.contentrain/models/*.json` (12 models). Collections (services, processes, workitems, tabitems, work-categories, faq, testimonials, references, service-pages, sections) + dictionaries (meta-tags). Relations: `workitems.category` & `tabitems.category` → `work-categories`; `testimonials.creativeWork` & `service-pages.relatedWorks` → `workitems`.
+- **Content:** `.contentrain/content/{domain}/{model}/{locale}.json` — keyed object-maps (`data.json` for non-i18n models). Lifecycle metadata is in `.contentrain/meta/` (system-managed — never edit by hand).
+- **Consumption:** `contentrain generate` produces the typed `#contentrain` client into `.contentrain/client/` (gitignored; built via the `build`/`generate`/`postinstall` scripts). `#contentrain` is **server-only** — query it in `server/api/*` routes and consume with `useAsyncData` (relations resolved server-side via `.include()`). Never import `#contentrain` in client components.
+- **Editing:** prefer the Contentrain MCP tools (see `.claude/rules/` + `.claude/skills/`) so content stays canonical and git-governed; do not hand-write `.contentrain/` JSON.
+- Navigation menu labels remain in `i18n.config.ts` (vue-i18n) as UI chrome.
 
 ### Component Structure (Atomic Design)
 
@@ -36,18 +43,18 @@ Single page (`pages/index.vue`) with hash-based navigation (#home, #services, #p
 ### Key Integrations
 
 - **LUI** (`@lui-ui/lui-vue`) — Component library for base UI elements
-- **Contentrain** — Headless CMS providing JSON, MD-MDX content files
+- **Contentrain** (`contentrain` CLI, `@contentrain/query`, `@contentrain/mcp`) — git-native AI content governance; typed `#contentrain` client from `.contentrain/`
 - **Firebase Firestore** — Contact form submissions (client-side plugin in `plugins/firebase.client.ts`)
 - **@nuxt/image** — Image optimization with IPX provider
 - **@nuxt/scripts** — Google Analytics (G-T48ZEC3WT9)
 - **Remixicon** — Icon library
 
-### Composables
+### Composables & server routes
 
-- `schemas.ts` — Schema.org structured data (Organization, Service, FAQPage, WebPage, etc.)
-- `utils.ts` — Image path helpers, relational data resolution, i18n field matching
-- `scrollLock.ts` — Scroll lock utility
-- `i18nUtils.ts` — i18n helper functions
+- `server/api/home.get.ts`, `server/api/layout.get.ts`, `server/api/service-page/[slug].get.ts` — server-only Contentrain access; resolve relations and re-add `ID` (alias of generated `id`) for component keys.
+- `schemas.ts` — Schema.org structured data (`useSchemas(data)`), built from the fetched `/api/home` payload.
+- `utils.ts` — `getStaticImagePath`/`getImageAlt` (alt looked up from `composables/assets.json`) + `getRelationalFields` (client-side relation grouping in TabSection).
+- `scrollLock.ts` — Scroll lock utility.
 
 ### Styling
 

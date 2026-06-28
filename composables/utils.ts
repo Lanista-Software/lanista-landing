@@ -1,14 +1,20 @@
-import assets from '../contentrain/assets.json';
+import assets from './assets.json'
+
 export function getStaticImagePath(path: string): string {
-    if(!path) return '';
-    return path.replace('public/', '');
+  if (!path) return ''
+  // Content stores web paths (e.g. "/foo.svg"); tolerate a legacy "public/" prefix too.
+  return path.replace('public/', '')
 }
 
 export function getImageAlt(path: string): string {
-    const asset = assets.find((asset) => asset.path === path);
-    return asset?.alt || '';
+  if (!path) return ''
+  const file = path.replace(/^\//, '').replace(/^public\//, '')
+  const asset = assets.find(a => a.path.replace(/^public\//, '') === file)
+  return asset?.alt || ''
 }
-// T Tipi her zaman ID isimli field icermelidir asagidaki fonksiyonu buna gore duzenliyoruz
+
+// Resolve a relational entry by id. Server routes expose `ID` as an alias of the
+// generated `id`, so client-side grouping (e.g. TabSection) keeps working.
 export function getRelationalFields<T extends { ID: string }>(data: T[], id: string): T | undefined {
-    return data.find((item) => item.ID === id);
+  return data.find(item => item.ID === id)
 }

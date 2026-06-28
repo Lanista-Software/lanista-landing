@@ -1,0 +1,66 @@
+{
+  "2aa54f9e7eaf": {
+    "buttonlink": "#works",
+    "buttontext": "Son projelerimizi inceleyin",
+    "description": "Müşterilerimize, tasarımdan final ürüne kadar her adımda rehberlik ederek geniş kapsamlı yazılım geliştirme hizmetleri sunuyoruz.",
+    "name": "services",
+    "title": "Yazılım geliştirme çözümlerimize göz atın"
+  },
+  "2aa54f9e7eb0": {
+    "buttonlink": "#works",
+    "buttontext": "Tüm çalışmaları görüntüleyin",
+    "description": "Projenizin zamanında ve bütçe dahilinde teslim edilmesini sağlamak için sistemli bir proje geliştirme süreci izliyoruz.",
+    "name": "process",
+    "title": "Ürün geliştirme ve proje yönetme yaklaşımımız"
+  },
+  "2aa54f9e7eb1": {
+    "buttonlink": "#testimonials",
+    "buttontext": "Tüm referanslar",
+    "description": "Kaliteye odaklanarak çalışmamız zamanla sektör profesyonellerinin güvenini kazandı. Müşterilerimiz için en yüksek standartları karşılayan özel çözümler sunuyoruz.",
+    "name": "testimonials",
+    "title": "Sektör profesyonelleri tarafından güvenilen bir yazılım geliştirme partneriyiz"
+  },
+  "2aa54f9e7eb2": {
+    "buttonlink": "#works",
+    "buttontext": "Tüm çalışmaları görüntüleyin",
+    "description": "Müşterilerimizin fikirlerini geliştirerek başarılı ürünlere dönüştürdüğümüz projelerimizden bazılarını inceleyin.",
+    "name": "works",
+    "title": "Müşterilerimiz için geliştirdiğimiz bazı projeler"
+  },
+  "2aa54f9e7eb3": {
+    "buttonlink": "#testimonials",
+    "buttontext": "Tüm referanslar",
+    "description": "Harika ürünler ortaya çıkarmak için Javascript teknolojilerini ve güncel araçları kullanmayı seviyoruz.",
+    "name": "tabs",
+    "title": "Kullandığımız teknolojiler ve geliştirme araçları "
+  },
+  "2aa54f9e7x90": {
+    "buttonlink": "#contact",
+    "buttontext": "Projenizi konuşalım",
+    "description": "Ürün geliştirme tecrübemizle şirketlerin ve girişimlerin fikirlerini hayata geçirmelerine yardımcı oluyoruz.",
+    "name": "banner",
+    "title": "Fikrinizi birlikte geliştirelim!"
+  },
+  "2aa54f9e7xb3": {
+    "buttonlink": "#contact",
+    "buttontext": "Projenizi konuşalım",
+    "description": "Dijital dünyada başarılı iş modelleri geliştirebilmeniz için dış kaynaklı Frontend, Backend ve Mobil Uygulama geliştirme hizmetleri sunuyoruz.",
+    "name": "hero",
+    "subtitle": "Yazılım Geliştirme Şirketi",
+    "title": "Web ve Mobil Uygulama geliştirme hizmetleri partneriniz"
+  },
+  "2aa54f9e7xb4": {
+    "buttonlink": "#contact",
+    "buttontext": "Projenizi konuşalım",
+    "description": "Lanista Yazılım'ın hizmetleri hakkında sık sorulan sorularla hızlı yanıtlar bulun. Eğer daha fazla yanıta ihtiyaç duyuyorsanız bizimle iletişime geçebilirsiniz.",
+    "name": "faq",
+    "title": "Sıkça Sorulan Sorular"
+  },
+  "2aa54f9e7xb5": {
+    "buttonlink": "#testimonials",
+    "buttontext": "Gönder",
+    "description": "Daha fazla bilgi için bizimle doğrudan iletişime geçmekten çekinmeyin.",
+    "name": "contact",
+    "title": "Daha fazla bilgi için bize ulaşın"
+  }
+}

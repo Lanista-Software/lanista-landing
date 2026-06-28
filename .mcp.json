@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "contentrain": {
+      "command": "npx",
+      "args": ["contentrain", "serve", "--stdio"],
+      "env": {}
+    }
+  }
+}

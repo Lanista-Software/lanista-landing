@@ -1,22 +1,4 @@
 <script setup lang="ts">
-import sectionData from "../contentrain/sections/en.json";
-import enServicesData from "../contentrain/services/en.json";
-import trServicesData from "../contentrain/services/tr.json";
-import trProcessData from "../contentrain/processes/tr.json";
-import enProcessData from "../contentrain/processes/en.json";
-import enTabItemsData from "../contentrain/tabitems/en.json";
-import trTabItemsData from "../contentrain/tabitems/tr.json";
-import enWorkCategoriesData from "../contentrain/workcategories/en.json";
-import trWorkCategoriesData from "../contentrain/workcategories/tr.json";
-import trWorksItemsData from "../contentrain/workitems/tr.json";
-import enWorksItemsData from "../contentrain/workitems/en.json";
-import enTestimonialsData from "../contentrain/testimonail-items/en.json";
-import trTestimonialsData from "../contentrain/testimonail-items/tr.json";
-import enFaqItemsData from "../contentrain/faqitems/en.json";
-import trFaqItemsData from "../contentrain/faqitems/tr.json";
-import trMetaTags from "../contentrain/meta-tags/tr.json";
-import enMetaTags from "../contentrain/meta-tags/en.json";
-
 import type { AppCardProps } from "~/components/mol/AppCard.vue";
 import type { TestimonialCardProps } from "~/components/mol/TestimonialCard.vue";
 import type { WorksCardProps } from "~/components/mol/WorksCard.vue";
@@ -29,212 +11,133 @@ import type {
 import type { ContactProps, Faq } from "~/components/templates/Contact.vue";
 import useScrollLock from "~/composables/scrollLock";
 
-const { t, locale } = useI18n();
-const metaTags = computed(() =>
-  locale.value === "en" ? enMetaTags : trMetaTags
+const { locale } = useI18n();
+
+// All homepage content for the active locale, fetched server-side from Contentrain.
+const { data } = await useAsyncData(
+  "home",
+  () => $fetch("/api/home", { query: { locale: locale.value } }),
+  { watch: [locale] }
 );
 
-const serviceItems = computed<AppCardProps[]>(() =>
-  locale.value === "en"
-    ? (enServicesData as AppCardProps[])
-    : (trServicesData as AppCardProps[])
-);
-const servicesSectionDefaultPath = getDefaultPathByFieldName(
-  sectionData,
-  "name",
-  "services",
-  "sections"
-);
-const processItems = computed<AppCardProps[]>(() =>
-  locale.value === "en"
-    ? (enProcessData as AppCardProps[])
-    : (trProcessData as AppCardProps[])
-);
+const sectionsByName = computed<Record<string, any>>(() => {
+  const map: Record<string, any> = {};
+  for (const s of data.value?.sections || []) map[s.name] = s;
+  return map;
+});
+const section = (name: string) => sectionsByName.value[name] || {};
 
-const processSectionDefaultPath = getDefaultPathByFieldName(
-  sectionData,
-  "name",
-  "process",
-  "sections"
-);
-const tabItems = computed<TabItem[]>(() =>
-  locale.value === "en"
-    ? (enTabItemsData as TabItem[])
-    : (trTabItemsData as TabItem[])
-);
-const tabSectionDefaultPath = getDefaultPathByFieldName(
-  sectionData,
-  "name",
-  "tabs",
-  "sections"
-);
-const worksCategories = computed<TWorkCategory[]>(() =>
-  locale.value === "en"
-    ? (enWorkCategoriesData as TWorkCategory[])
-    : (trWorkCategoriesData as TWorkCategory[])
-);
-const workSectionDefaultPath = getDefaultPathByFieldName(
-  sectionData,
-  "name",
-  "works",
-  "sections"
-);
-const workItems = computed<WorksCardProps[]>(() =>
-  locale.value === "en"
-    ? (enWorksItemsData as WorksCardProps[])
-    : (trWorksItemsData as WorksCardProps[])
-);
+const serviceItems = computed<AppCardProps[]>(() => (data.value?.services as AppCardProps[]) || []);
+const processItems = computed<AppCardProps[]>(() => (data.value?.processes as AppCardProps[]) || []);
+const tabItems = computed<TabItem[]>(() => (data.value?.tabItems as TabItem[]) || []);
+const worksCategories = computed<TWorkCategory[]>(() => (data.value?.workCategories as TWorkCategory[]) || []);
+const workItems = computed<WorksCardProps[]>(() => (data.value?.workItems as WorksCardProps[]) || []);
+const testimonials = computed<TestimonialCardProps[]>(() => (data.value?.testimonials as TestimonialCardProps[]) || []);
+const faqItems = computed<Faq[]>(() => (data.value?.faq as Faq[]) || []);
+const references = computed(() => data.value?.references || []);
+const heroSection = computed(() => section("hero"));
+
+// Work items arrive sorted by `order` with `category` resolved to its name (server route).
 const viewedWorkItems = ref(workItems.value.length);
-const workItemWithCategories = computed(() =>
-  workItems.value
-    .map((item) => {
-      return {
-        ...item,
-        category: getRelationalFields(worksCategories.value, item.category)
-          ?.category,
-      };
-    }).sort((a, b) => a.order - b.order).slice(0, viewedWorkItems.value)
+const workItemWithCategories = computed(() => workItems.value.slice(0, viewedWorkItems.value));
 
-);
-const bannerSectionDefaultPath = getDefaultPathByFieldName(
-  sectionData,
-  "name",
-  "banner",
-  "sections"
-);
-const testimoSectionDefaultPath = getDefaultPathByFieldName(
-  sectionData,
-  "name",
-  "testimonials",
-  "sections"
-);
-const testimonials = computed<TestimonialCardProps[]>(() =>
-  locale.value === "en"
-    ? (enTestimonialsData as TestimonialCardProps[])
-    : (trTestimonialsData as TestimonialCardProps[])
-);
-const faqItems = computed<Faq[]>(() =>
-  locale.value === "en" ? (enFaqItemsData as Faq[]) : (trFaqItemsData as Faq[])
-);
-const contactSectionDefaultPath = getDefaultPathByFieldName(
-  sectionData,
-  "name",
-  "contact",
-  "sections"
-);
-const faqSectionDefaultPath = getDefaultPathByFieldName(
-  sectionData,
-  "name",
-  "faq",
-  "sections"
-);
-const serviceCardProps: CardSectionProps = {
+const serviceCardProps = computed<CardSectionProps>(() => ({
   items: serviceItems.value,
   view: "grid",
-  title: t(`${servicesSectionDefaultPath}.title`),
-  description: t(`${servicesSectionDefaultPath}.description`),
+  title: section("services").title,
+  description: section("services").description,
   cardComponent: "app",
   button: {
-    text: t(`${servicesSectionDefaultPath}.buttontext`),
-    link: t(`${servicesSectionDefaultPath}.buttonlink`),
-  }
-};
-const processCardProps: CardSectionProps = {
+    text: section("services").buttontext,
+    link: section("services").buttonlink,
+  },
+}));
+const processCardProps = computed<CardSectionProps>(() => ({
   items: processItems.value,
   view: "triple",
-  title: t(`${processSectionDefaultPath}.title`),
-  description: t(`${processSectionDefaultPath}.description`),
+  title: section("process").title,
+  description: section("process").description,
   cardComponent: "app",
   button: {
-    text: t(`${processSectionDefaultPath}.buttontext`),
-    link: t(`${processSectionDefaultPath}.buttonlink`),
-  }
-};
-const tabSectionProps: TabSectionProps = {
+    text: section("process").buttontext,
+    link: section("process").buttonlink,
+  },
+}));
+const tabSectionProps = computed<TabSectionProps>(() => ({
   items: tabItems.value,
-  title: t(`${tabSectionDefaultPath}.title`),
-  description: t(`${tabSectionDefaultPath}.description`),
+  title: section("tabs").title,
+  description: section("tabs").description,
   categories: worksCategories.value,
   button: {
-    text: t(`${tabSectionDefaultPath}.buttontext`),
-    link: t(`${tabSectionDefaultPath}.buttonlink`),
-  }
-};
+    text: section("tabs").buttontext,
+    link: section("tabs").buttonlink,
+  },
+}));
 const worksSectionProps = computed<CardSectionProps>(() => ({
-
   items: workItemWithCategories.value,
   view: "single",
-  title: t(`${workSectionDefaultPath}.title`),
-  description: t(`${workSectionDefaultPath}.description`),
-  button:{
-    text: t(`${workSectionDefaultPath}.buttontext`),
-    link: t(`${workSectionDefaultPath}.buttonlink`),
+  title: section("works").title,
+  description: section("works").description,
+  button: {
+    text: section("works").buttontext,
+    link: section("works").buttonlink,
   },
   cardComponent: "works",
-
 }));
-const bannerSection = {
-  title: t(`${bannerSectionDefaultPath}.title`),
-  description: t(`${bannerSectionDefaultPath}.description`),
-  buttonText: t(`${bannerSectionDefaultPath}.buttontext`),
-  buttonLink: t(`${bannerSectionDefaultPath}.buttonlink`),
-};
-const testimonialsSectionProps: CardSectionProps = {
+const bannerSection = computed(() => ({
+  title: section("banner").title,
+  description: section("banner").description,
+  buttonText: section("banner").buttontext,
+  buttonLink: section("banner").buttonlink,
+}));
+const testimonialsSectionProps = computed<CardSectionProps>(() => ({
   items: testimonials.value,
   view: "triple",
-  title: t(`${testimoSectionDefaultPath}.title`),
-  description: t(`${testimoSectionDefaultPath}.description`),
+  title: section("testimonials").title,
+  description: section("testimonials").description,
   cardComponent: "testimonial",
   button: {
-    text: t(`${testimoSectionDefaultPath}.buttontext`),
-    link: t(`${testimoSectionDefaultPath}.buttonlink`)
-  }
-};
-const contactAndFaqSectionProps: ContactProps = {
+    text: section("testimonials").buttontext,
+    link: section("testimonials").buttonlink,
+  },
+}));
+const contactAndFaqSectionProps = computed<ContactProps>(() => ({
   faqList: faqItems.value,
   sections: {
     contact: {
-      title: t(`${contactSectionDefaultPath}.title`),
-      description: t(`${contactSectionDefaultPath}.description`),
+      title: section("contact").title,
+      description: section("contact").description,
     },
     faq: {
-      title: t(`${faqSectionDefaultPath}.title`),
-      description: t(`${faqSectionDefaultPath}.description`),
+      title: section("faq").title,
+      description: section("faq").description,
     },
   },
-};
-
-const convertedMetaTags = computed(() =>
-  metaTags.value.reduce((acc: Record<string, string>, item) => {
-    acc[item.name] = item.content;
-    return acc;
-  }, {} as Record<string, string>)
-);
+}));
 
 const route = useRoute();
-const router = useRouter(); 
-
+const router = useRouter();
 const { isScrollLocked, lockScroll } = useScrollLock();
 
-const { fullSchema } = useSchemas()
+const { fullSchema } = useSchemas(data);
 useHead({
   htmlAttrs: {
-    lang: locale.value,
+    lang: locale,
   },
   link: [
-    { rel: 'canonical', href: 'https://lanista.com.tr/' },
-    { rel: 'alternate', hreflang: 'en', href: 'https://lanista.com.tr/' },
-    { rel: 'alternate', hreflang: 'tr', href: 'https://lanista.com.tr/' },
-    { rel: 'alternate', hreflang: 'x-default', href: 'https://lanista.com.tr/' },
+    { rel: "canonical", href: "https://lanista.com.tr/" },
+    { rel: "alternate", hreflang: "en", href: "https://lanista.com.tr/" },
+    { rel: "alternate", hreflang: "tr", href: "https://lanista.com.tr/" },
+    { rel: "alternate", hreflang: "x-default", href: "https://lanista.com.tr/" },
   ],
   script: [
     {
-      type: 'application/ld+json',
-      innerHTML: fullSchema.value,
+      type: "application/ld+json",
+      innerHTML: () => fullSchema.value,
     },
   ],
 });
-useSeoMeta({ ...convertedMetaTags.value });
+useSeoMeta((data.value?.metaTags as Record<string, string>) || {});
 const proxy = useScriptGoogleAnalytics();
 function handleSeeAll() {
   proxy.dataLayer.push({ event: "button_clicked", button_name: "see_all_works" });
@@ -251,16 +154,15 @@ function handleSectionViewed(id: string) {
 onMounted(() => {
   setTimeout(() => {
     viewedWorkItems.value = 3;
-  }, 100)
-})
-
+  }, 100);
+});
 </script>
 <template>
   <div>
     <!-- Home Section -->
     <div class="bg-[url('/1727359111545_1624068421380_hero.png')] aspect-auto bg-cover bg-center">
       <AtomsContainer class="pt-28 pb-40 flex items-center justify-center">
-        <TemplatesHero />
+        <TemplatesHero :hero="heroSection" :references="references" />
       </AtomsContainer>
     </div>
     <!-- Services Section -->
@@ -280,7 +182,7 @@ onMounted(() => {
       <TemplatesCardSection v-bind="worksSectionProps">
         <template v-if="viewedWorkItems !== workItems.length" #button>
           <LuiButton @click="handleSeeAll" variant="link" color="primary">{{
-            $t(`${workSectionDefaultPath}.buttontext`) }}
+            section("works").buttontext }}
           </LuiButton>
         </template>
       </TemplatesCardSection>
