@@ -45,8 +45,8 @@ const references = computed(() => data.value?.references || []);
 const heroSection = computed(() => section("hero"));
 
 // Work items arrive sorted by `order` with `category` resolved to its name (server route).
-const viewedWorkItems = ref(workItems.value.length);
-const workItemWithCategories = computed(() => workItems.value.slice(0, viewedWorkItems.value));
+// The homepage previews a few; the full list lives on /works.
+const workItemWithCategories = computed(() => workItems.value.slice(0, 3));
 
 const serviceCardProps = computed<CardSectionProps>(() => ({
   items: serviceItems.value,
@@ -150,11 +150,6 @@ useHead({
   ],
 });
 useSeoMeta((data.value?.metaTags as Record<string, string>) || {});
-const proxy = useScriptGoogleAnalytics();
-function handleSeeAll() {
-  proxy.dataLayer.push({ event: "button_clicked", button_name: "see_all_works" });
-  viewedWorkItems.value = workItems.value.length;
-}
 function handleSectionViewed(id: string) {
   const routeHash = route.hash;
   const idWithHash = `#${id}`;
@@ -162,12 +157,6 @@ function handleSectionViewed(id: string) {
     router.push({ hash: idWithHash });
   }
 }
-
-onMounted(() => {
-  setTimeout(() => {
-    viewedWorkItems.value = 3;
-  }, 100);
-});
 </script>
 <template>
   <div>
@@ -192,10 +181,12 @@ onMounted(() => {
     <!-- Works Section -->
     <MolAppSection id="works" @viewed="handleSectionViewed">
       <TemplatesCardSection v-bind="worksSectionProps">
-        <template v-if="viewedWorkItems !== workItems.length" #button>
-          <LuiButton @click="handleSeeAll" variant="link" color="primary">{{
-            section("works").buttontext }}
-          </LuiButton>
+        <template #button>
+          <NuxtLink :to="localePath('/works')">
+            <LuiButton variant="link" color="primary">
+              {{ section("works").buttontext || (locale === 'tr' ? 'Tüm çalışmaları gör' : 'View all work') }}
+            </LuiButton>
+          </NuxtLink>
         </template>
       </TemplatesCardSection>
     </MolAppSection>

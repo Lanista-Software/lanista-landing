@@ -3,18 +3,20 @@ import useScrollLock from '~/composables/scrollLock';
 
 const { lockScroll } = useScrollLock();
 const proxy = useScriptGoogleAnalytics();
+const localePath = useLocalePath();
 export interface WorksCardProps {
-  ID: string;
-  createdAt: string;
-  updatedAt: string;
+  ID?: string;
+  createdAt?: string;
+  updatedAt?: string;
   title: string;
-  image: string;
-  description: string;
-  category: string;
-  link: string;
-  status: string;
-  scheduled: boolean;
-  order: number;
+  image?: string;
+  description?: string;
+  category?: string;
+  link?: string;
+  slug?: string;
+  status?: string;
+  scheduled?: boolean;
+  order?: number;
 }
 function handleClick() {
     lockScroll();
@@ -39,8 +41,16 @@ defineProps<{
         <p class="text-body font-normal font-inter mt-2">
           {{ item.description }}
         </p>
-        <div v-if="item.link" class="pt-2">
-          <NuxtLink :to="item.link" target="_blank" rel="noopener noreferrer">
+        <div class="pt-2 flex flex-wrap items-center gap-3">
+          <NuxtLink v-if="item.slug" :to="localePath(`/works/${item.slug}`)">
+            <LuiButton color="primary" rounded filter="darken">
+              {{ $i18n.locale === 'tr' ? 'Vaka çalışması' : 'View case study' }}
+              <template #append>
+                <i class="ri-arrow-right-line" />
+              </template>
+            </LuiButton>
+          </NuxtLink>
+          <NuxtLink v-if="item.link" :to="item.link" target="_blank" rel="noopener noreferrer">
             <LuiButton
               color="secondary"
               variant="outline"
@@ -48,7 +58,7 @@ defineProps<{
               filter="darken"
               @click="handleClick"
             >
-              See live project
+              {{ $i18n.locale === 'tr' ? 'Canlı site' : 'Live site' }}
               <template #append>
                 <i class="ri-arrow-right-up-line" />
               </template>

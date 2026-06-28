@@ -6,6 +6,9 @@
       "model": "work-categories",
       "type": "relation"
     },
+    "challenge": {
+      "type": "text"
+    },
     "description": {
       "type": "text"
     },
@@ -17,6 +20,18 @@
     },
     "order": {
       "type": "integer"
+    },
+    "outcome": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "slug"
+    },
+    "solution": {
+      "type": "text"
+    },
+    "technologies": {
+      "type": "string"
     },
     "title": {
       "required": true,
