@@ -25,14 +25,15 @@
   },
   "8a8044e883e8": {
     "category": "bcc834108adc",
-    "challenge": "Developers and content teams needed a CMS that fits Git workflows instead of fighting them — letting both collaborate on the same versioned platform.",
-    "description": "Git-native Headless CMS platform. Contentrain combines Git workflows with content management, allowing developers and content creators to collaborate on the same platform.\n\nBuilt with Vue 3, NestJS, PostgreSQL, and a pnpm + Nx + Turbo monorepo architecture. Features 20+ modular NestJS modules, Stripe subscription management, TypeBox schema-first API design, and Atomic Design component architecture.",
+    "challenge": "AI made teams dramatically faster at producing code — but it did nothing for the content trapped inside that code. UI copy, docs, and structured content stay hardcoded across components: unstructured, untranslated, and ungoverned. Traditional CMS products answer this by hiding content behind opaque databases and admin panels, and by locking it into a proprietary runtime. The brief was to let AI agents extract, create, translate, and update content at full speed, while keeping schema, human review, and portable output firmly in control — with no vendor lock-in.",
+    "description": "AI-native content governance ecosystem. Contentrain lets teams extract, govern, and ship structured content straight from their codebase — a local-first, Git-native toolchain (CLI, MCP server, type-safe SDK) plus Contentrain Studio, a conversation-first, self-hostable CMS.",
     "image": "/1729065603135_denemecontentrain.svg",
     "link": "https://contentrain.io/",
     "order": 1,
+    "outcome": "Shipped as an open ecosystem rather than a single product: the MIT npm packages (the `contentrain` CLI, `@contentrain/mcp`, `@contentrain/query`, `@contentrain/rules`, `@contentrain/skills`, and `@contentrain/types`) with 15 reusable agent skills, alongside the AGPL open-core Studio platform and a managed cloud option. Content stays portable JSON and Markdown in Git with zero vendor lock-in — and this very site runs on it.",
     "slug": "contentrain",
-    "solution": "We built a git-native headless CMS with a Vue 3 frontend and a NestJS + PostgreSQL backend on a pnpm + Nx + Turbo monorepo: 20+ modular NestJS modules, Stripe subscriptions, TypeBox schema-first APIs, and an Atomic Design component system.",
-    "technologies": "Vue 3, NestJS, PostgreSQL, pnpm, Nx, Turbo, Stripe, TypeBox",
+    "solution": "We designed and built Contentrain as a two-layer, open ecosystem around a single `.contentrain/` Git contract — plain JSON and Markdown that any framework or language can read.\n\nContentrain AI (MIT, local-first): a CLI plus a deterministic MCP server (17 tools over stdio and HTTP, with Local, GitHub, and GitLab providers), a type-safe `#contentrain` query SDK, and a library of agent rules and skills. Agents extract hardcoded strings and create, translate, and update content; Contentrain enforces the schema, writes canonical output, and routes every change through Git-native review branches. It is agent-agnostic (Claude Code, Cursor, Windsurf, VS Code, Copilot) and ships starters for Nuxt, Next.js, Astro, SvelteKit, and VitePress.\n\nContentrain Studio (open-core, AGPL + EE): a conversation-first, Git-backed content operations platform built on Nuxt 4. Teams connect a repository, define models, edit through chat, forms, or a structured UI, review changes as branches, commits, diffs, and merges, and deliver through media, CDN, and APIs — self-hosted or as a managed Pro/Enterprise offering, with Git always the source of truth.",
+    "technologies": "TypeScript, Model Context Protocol (MCP), Node.js, Nuxt 4, Vue 3, Supabase, TailwindCSS, Git, pnpm monorepo, Sentry",
     "title": "Contentrain"
   },
   "8a8044e883e9": {
