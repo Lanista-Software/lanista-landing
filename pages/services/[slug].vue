@@ -24,12 +24,17 @@ const isEn = computed(() => locale.value === 'en')
 
 useHead({
   htmlAttrs: { lang: locale },
-  title: () => page.value?.metaTitle,
+  title: () => page.value?.metaTitle ?? 'Lanista Software',
   link: [
-    { rel: 'canonical', href: `https://lanista.com.tr/services/${slug}` },
-    { rel: 'alternate', hreflang: 'en', href: `https://lanista.com.tr/services/${slug}` },
-    { rel: 'alternate', hreflang: 'tr', href: `https://lanista.com.tr/services/${slug}` },
-    { rel: 'alternate', hreflang: 'x-default', href: `https://lanista.com.tr/services/${slug}` },
+    {
+      rel: 'canonical',
+      href: locale.value === 'tr'
+        ? `https://lanista.com.tr/tr/services/${slug}/`
+        : `https://lanista.com.tr/services/${slug}/`,
+    },
+    { rel: 'alternate', hreflang: 'en', href: `https://lanista.com.tr/services/${slug}/` },
+    { rel: 'alternate', hreflang: 'tr', href: `https://lanista.com.tr/tr/services/${slug}/` },
+    { rel: 'alternate', hreflang: 'x-default', href: `https://lanista.com.tr/services/${slug}/` },
   ],
   script: [
     {
@@ -56,7 +61,7 @@ useHead({
 })
 
 useSeoMeta({
-  title: () => page.value?.metaTitle,
+  title: () => page.value?.metaTitle ?? 'Lanista Software',
   description: () => page.value?.metaDescription,
   ogTitle: () => page.value?.metaTitle,
   ogDescription: () => page.value?.metaDescription,

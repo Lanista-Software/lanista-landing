@@ -5,7 +5,7 @@
     "challengeContent": "Monolitik backend'ler ürün büyüdükçe darboğaz haline gelir. Özellikleri bağımsız ölçeklendirmek, karmaşık iş mantığını farklı domainler arasında yönetmek ve yük altında sistem güvenilirliğini korumak temelden farklı bir yaklaşım gerektirir. Birçok ekip servis sınırları, servisler arası veri tutarlılığı ve dağıtık sistemlerin operasyonel karmaşıklığı ile mücadele eder. Kötü tasarlanmış bir mikroservis mimarisi, monolitten daha kötü olabilir — gerçek servis izolasyonunun faydaları olmadan ağ gecikmesi, deployment karmaşıklığı ve hata ayıklama zorlukları ekler.",
     "heroDescription": "NestJS, gRPC ve mesaj kuyrukları kullanarak üretim kalitesinde mikroservis mimarileri tasarlıyor ve geliştiriyoruz. API gateway tasarımından servisler arası iletişime kadar, işletmenizle birlikte büyüyen backend sistemleri sunuyoruz.",
     "metaDescription": "Uzman NestJS mikroservis geliştirme hizmeti. gRPC, RabbitMQ ve event-driven mimari ile ölçeklenebilir, üretime hazır backend sistemleri tasarlıyor ve geliştiriyoruz.",
-    "metaTitle": "NestJS Mikroservis Geliştirme | gRPC & RabbitMQ Mimarisi | Lanista Software",
+    "metaTitle": "NestJS Mikroservis Geliştirme | Lanista Software",
     "order": 1,
     "relatedWorks": [
       "c3d4e5f6a7b8",
@@ -21,7 +21,7 @@
     "challengeContent": "Tek bir kod tabanını koruyarak hem iOS hem Android'de gerçekten native hissettiren uygulamalar oluşturmak sürekli bir denge gerektirir. Ekipler native modül entegrasyonu, gerçek zamanlı özellikler için performans optimizasyonu, platforma özgü UI davranışları ve uygulama mağazası deployment'larının karmaşıklığı ile karşı karşıya kalır. POS terminalleri gibi özel donanımlar için zorluk katlanarak artar — standart uygulama geliştirmenin çok ötesine geçen custom native bridge'ler, donanım SDK entegrasyonu ve arka plan servis yönetimi gerektirir.",
     "heroDescription": "React Native ile çapraz platform mobil uygulamalar geliştiriyoruz — tüketici uygulamalarından özel ticari cihaz yazılımlarına kadar. Hızlı geliştirme için Expo managed workflow'ları ve derin native entegrasyon için bare React Native CLI deneyimimiz var.",
     "metaDescription": "Expo ve CLI ile çapraz platform React Native mobil uygulama geliştirme. Native modül entegrasyonu, gerçek zamanlı özellikler ve ölçeklenebilir mimariler ile üretim iOS ve Android uygulamaları.",
-    "metaTitle": "React Native Mobil Uygulama Geliştirme | Expo & CLI | Lanista Software",
+    "metaTitle": "React Native Mobil Uygulama Geliştirme | Lanista Software",
     "order": 2,
     "relatedWorks": [
       "a1b2c3d4e5f6",
@@ -39,7 +39,7 @@
     "challengeContent": "Bir SaaS platformu oluşturmak benzersiz zorlukları aynı anda çözmeyi gerektirir: multi-tenant veri izolasyonu, deneme süreleri ve tolerans dönemleri ile abonelik faturalandırma, birden fazla sağlayıcı üzerinden kullanıcı kimlik doğrulama ve teknik borç biriktirmeden hızlı özellik geliştirmeyi destekleyen bir mimari. Abonelik yaşam döngüsü tek başına — deneme süreleri, ödeme yeniden denemeleri, plan değişiklikleri, askıya almalar, iptaller ve tolerans dönemleri — geliri korumak için kusursuz çalışması gereken karmaşık bir durum makinesidir.",
     "heroDescription": "SaaS platformlarını sıfırdan inşa ediyoruz — multi-tenant mimariler tasarlıyor, abonelik yaşam döngüsü yönetimi uygulıyor ve kullanıcı tabanınızla büyüyen ölçeklenebilir altyapılar sunuyoruz. Erken aşama MVP'lerden binlerce müşteriye hizmet veren kurumsal platformlara kadar.",
     "metaDescription": "Multi-tenant mimari, abonelik faturalandırma (Stripe, Paddle, PayTR) ve ölçeklenebilir altyapı ile uçtan uca SaaS platform geliştirme. MVP'den kurumsal platformlara.",
-    "metaTitle": "SaaS Platform Geliştirme | Multi-tenant Mimari & Abonelik Yönetimi | Lanista Software",
+    "metaTitle": "SaaS Platform Geliştirme | Lanista Software",
     "order": 3,
     "relatedWorks": [
       "8a8044e883e8",
@@ -56,7 +56,7 @@
     "challengeContent": "Modern web uygulamalarının birden fazla rekabet eden gereksinimi dengelemesi gerekir: SEO ve kullanıcı deneyimi için hızlı ilk sayfa yükleme, etkileşim için zengin interaktivite, cihazlar arası responsive tasarım ve özellik büyümesiyle ölçeklenen sürdürülebilir kod tabanları. Eski frontend kod tabanları genellikle düşük performans, tutarsız bileşen kalıpları ve keşfedilebilirliği olumsuz etkileyen SEO eksikliklerinden muzdariptir.",
     "heroDescription": "Vue.js ve Nuxt.js frontend uzmanlığımızın merkezinde yer alıyor. Performans, SEO ve geliştirici deneyimine odaklanarak sunucu tarafında render edilen web uygulamaları, tek sayfa uygulamaları ve statik siteler geliştiriyoruz. E-ticaret platformlarından SaaS panellerine, Vue ekosistemi uzmanlığımız üretim kalitesinde sonuçlar sunuyor.",
     "metaDescription": "SSR, SEO optimizasyonu ve yüksek performanslı mimariler ile uzman Nuxt.js ve Vue.js web uygulama geliştirme. Modern, ölçeklenebilir web uygulamaları ve e-ticaret platformları geliştiriyoruz.",
-    "metaTitle": "Nuxt.js & Vue.js Web Uygulama Geliştirme | SSR & SEO Optimizasyonu | Lanista Software",
+    "metaTitle": "Nuxt.js & Vue.js Web Geliştirme | Lanista Software",
     "order": 4,
     "relatedWorks": [
       "8a8044e883e9",
@@ -74,7 +74,7 @@
     "challengeContent": "Ödeme entegrasyonu bir checkout formu göstermenin çok ötesindedir. Abonelik yönetimi deneme süreleri, plan yükseltme ve düşürmeleri, oransal fiyatlandırma, exponential backoff ile başarısız ödeme yeniden denemeleri, tolerans dönemleri ve iptal akışlarını ele almayı gerektirir. Mobil uygulamalar Apple ve Google'ın uygulama içi satın alma gereksinimleri, makbuz doğrulama ve web ile mobil arasında birleşik faturalandırma durumu ihtiyacı ile başka bir karmaşıklık katmanı ekler. PayTR gibi bölgesel ödeme sağlayıcılarının Stripe gibi global sağlayıcılardan önemli ölçüde farklı kendi özgünlükleri, webhook kalıpları ve uzlaşma gereksinimleri vardır.",
     "heroDescription": "Web ve mobil uygulamalara ödeme sistemleri entegre ediyoruz — tek seferlik satın almalardan karmaşık abonelik yaşam döngülerine kadar. Stripe, Paddle, PayTR ve native In-App Purchase sistemleri ile uygulamalı deneyimimiz, üretimde ödeme akışlarını bozan edge case'leri anlamamız anlamına gelir.",
     "metaDescription": "Web ve mobil uygulamalar için ödeme sistemi entegrasyonu. Stripe, Paddle, PayTR ve In-App Purchase uzmanlığı ile abonelik yaşam döngüsü yönetimi ve çoklu para birimi desteği.",
-    "metaTitle": "Ödeme Sistemi Entegrasyonu | Stripe, Paddle, PayTR & In-App Purchase | Lanista Software",
+    "metaTitle": "Ödeme Sistemi Entegrasyonu | Lanista Software",
     "order": 5,
     "relatedWorks": [
       "8a8044e883e8",
@@ -92,7 +92,7 @@
     "challengeContent": "Ticari POS terminalleri güvenilirliğin tartışılmaz olduğu ortamlarda çalışır. Çöken bir uygulama kaybedilen siparişler ve gelir demektir. Bu cihazlar derin native entegrasyon gerektirir — termal yazıcılar hassas format kontrolü ister, uygulama gelen bir siparişi asla kaçırmamak için foreground service olarak çalışmalıdır, sesli uyarılar mutfak bildirimleri için güvenilir çalışmalıdır ve cihaz kimlik doğrulaması güvenlik için donanıma bağlı olmalıdır.",
     "heroDescription": "Ticari POS terminalleri — özellikle Sunmi cihazları — için özel uygulamalar geliştiriyoruz. Termal yazıcı kontrolünden gerçek zamanlı sipariş işleme için foreground service'lere kadar, custom native modüller ile React Native ve native cihaz yetenekleri arasındaki boşluğu kapatıyoruz.",
     "metaDescription": "Sunmi terminalleri ve ticari cihazlar için özel POS uygulama geliştirme. Restoran sipariş yönetimi, termal yazıcı entegrasyonu ve gerçek zamanlı sipariş işleme sistemleri.",
-    "metaTitle": "POS Uygulama Geliştirme | Sunmi Terminal Yazılımı & Restoran Sistemleri | Lanista Software",
+    "metaTitle": "POS Uygulama Geliştirme | Lanista Software",
     "order": 6,
     "relatedWorks": [
       "d4e5f6a7b8c9",
@@ -108,7 +108,7 @@
     "challengeContent": "AI yazılım geliştirmeyi iki cephede dönüştürüyor: yazılımın nasıl oluşturulduğu ve yazılımın neler yapabildiği. AI destekli geliştirme iş akışlarını benimsemeyen ekipler teslimat hızında geride kalıyor. AI yeteneklerinden yararlanmayan ürünler, kullanıcıların giderek daha fazla beklediği akıllı özellikleri — akıllı arama, içerik analizi, otomatik içgörüler ve doğal dil arayüzleri — sunma fırsatlarını kaçırıyor. Zorluk, AI'ın gerçek değer kattığı yerleri gereksiz karmaşıklık, maliyet veya güvenilirlik endişeleri eklediği yerlerden ayırt edebilmektir.",
     "heroDescription": "AI teknolojilerini hem geliştirme iş akışımıza hem de oluşturduğumuz ürünlere entegre ediyoruz. Claude Code ve Codex'i AI pair programming ortağı olarak kullanmaktan LLM yeteneklerini doğrudan uygulamalara yerleştirmeye kadar, AI yazılımı daha hızlı ve akıllı sunmamızın temel bir parçası.",
     "metaDescription": "Claude Code, Codex ve LLM entegrasyonu ile AI destekli yazılım geliştirme. Daha hızlı teslimat, akıllı testler ve intelligent ürün özellikleri için AI agent'lardan yararlanıyoruz.",
-    "metaTitle": "AI Destekli Yazılım Geliştirme | Claude Code, AI Agent & LLM Entegrasyonu | Lanista Software",
+    "metaTitle": "AI Destekli Yazılım Geliştirme | Lanista Software",
     "order": 7,
     "relatedWorks": [
       "b2c3d4e5f6a7",

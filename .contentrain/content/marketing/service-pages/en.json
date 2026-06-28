@@ -5,7 +5,7 @@
     "challengeContent": "Monolithic backends become bottlenecks as products grow. Scaling individual features independently, managing complex business logic across domains, and maintaining system reliability under load require a fundamentally different approach. Many teams struggle with service boundaries, data consistency across services, and the operational complexity of distributed systems. A poorly designed microservice architecture can be worse than a monolith — adding network latency, deployment complexity, and debugging challenges without the benefits of true service isolation.",
     "heroDescription": "We design and build production-grade microservice architectures using NestJS, gRPC, and message queues. From API gateway design to inter-service communication, we deliver backend systems that scale with your business.",
     "metaDescription": "Expert NestJS microservice development with gRPC, RabbitMQ, and event-driven architecture. We build scalable, production-ready backend systems with proven multi-service architectures.",
-    "metaTitle": "NestJS Microservice Development | gRPC & RabbitMQ Architecture | Lanista Software",
+    "metaTitle": "NestJS Microservice Development | Lanista Software",
     "order": 1,
     "relatedWorks": [
       "c3d4e5f6a7b8",
@@ -21,7 +21,7 @@
     "challengeContent": "Building mobile apps that feel truly native on both iOS and Android while maintaining a single codebase is a constant balancing act. Teams face challenges with native module integration, performance optimization for real-time features, platform-specific UI behaviors, and the complexity of managing app store deployments. For specialized hardware like POS terminals, the challenge multiplies — requiring custom native bridges, hardware SDK integration, and background service management that goes far beyond standard app development.",
     "heroDescription": "We build cross-platform mobile applications with React Native — from consumer-facing apps to specialized commercial device software. Our experience spans Expo managed workflows for rapid development and bare React Native CLI for deep native integration.",
     "metaDescription": "Cross-platform React Native mobile app development with Expo and CLI. We build production iOS and Android apps with native module integration, real-time features, and scalable architectures.",
-    "metaTitle": "React Native Mobile App Development | Expo & CLI | Lanista Software",
+    "metaTitle": "React Native Mobile App Development | Lanista Software",
     "order": 2,
     "relatedWorks": [
       "a1b2c3d4e5f6",
@@ -39,7 +39,7 @@
     "challengeContent": "Building a SaaS platform requires solving a unique set of challenges simultaneously: multi-tenant data isolation, subscription billing with trials and grace periods, user authentication across multiple providers, and an architecture that supports rapid feature development without accumulating technical debt. The subscription lifecycle alone — trial periods, payment retries, plan changes, suspensions, cancellations, and grace periods — is a complex state machine that must work flawlessly to protect revenue.",
     "heroDescription": "We build SaaS platforms from the ground up — designing multi-tenant architectures, implementing subscription lifecycle management, and delivering scalable infrastructure that grows with your user base. From early-stage MVPs to enterprise platforms serving thousands of customers.",
     "metaDescription": "End-to-end SaaS platform development with multi-tenant architecture, subscription billing (Stripe, Paddle, PayTR), and scalable infrastructure. From MVP to enterprise-grade platforms.",
-    "metaTitle": "SaaS Platform Development | Multi-tenant Architecture & Subscription Management | Lanista Software",
+    "metaTitle": "SaaS Platform Development | Lanista Software",
     "order": 3,
     "relatedWorks": [
       "8a8044e883e8",
@@ -56,7 +56,7 @@
     "challengeContent": "Modern web applications need to balance multiple competing requirements: fast initial page loads for SEO and user experience, rich interactivity for engagement, responsive design across devices, and maintainable codebases that scale with feature growth. Legacy frontend codebases often suffer from poor performance, inconsistent component patterns, and SEO deficiencies that hurt discoverability. Migrating to a modern framework while maintaining business continuity requires careful planning and deep framework expertise.",
     "heroDescription": "Vue.js and Nuxt.js are at the core of our frontend expertise. We build server-rendered web applications, single-page apps, and static sites with a focus on performance, SEO, and developer experience. From e-commerce platforms to SaaS dashboards, our Vue ecosystem expertise delivers production-grade results.",
     "metaDescription": "Expert Nuxt.js and Vue.js web application development with SSR, SEO optimization, and high-performance architectures. We build modern, scalable web applications and e-commerce platforms.",
-    "metaTitle": "Nuxt.js & Vue.js Web Application Development | SSR & SEO Optimization | Lanista Software",
+    "metaTitle": "Nuxt.js & Vue.js Web Development | Lanista Software",
     "order": 4,
     "relatedWorks": [
       "8a8044e883e9",
@@ -74,7 +74,7 @@
     "challengeContent": "Payment integration goes far beyond displaying a checkout form. Subscription management requires handling trial periods, plan upgrades and downgrades, proration, failed payment retries with exponential backoff, grace periods, and cancellation flows. Mobile apps add another layer of complexity with Apple and Google's in-app purchase requirements, receipt validation, and the need for a unified billing state across web and mobile. Regional payment providers like PayTR have their own quirks, webhook patterns, and reconciliation requirements that differ significantly from global providers like Stripe.",
     "heroDescription": "We integrate payment systems into web and mobile applications — from one-time purchases to complex subscription lifecycles. Our hands-on experience with Stripe, Paddle, PayTR, and native In-App Purchase systems means we understand the edge cases that break payment flows in production.",
     "metaDescription": "Payment system integration for web and mobile apps. Stripe, Paddle, PayTR, and In-App Purchase expertise with subscription lifecycle management, multi-currency support, and PCI compliance.",
-    "metaTitle": "Payment Integration Development | Stripe, Paddle, PayTR & In-App Purchase | Lanista Software",
+    "metaTitle": "Payment Integration Development | Lanista Software",
     "order": 5,
     "relatedWorks": [
       "8a8044e883e8",
@@ -92,7 +92,7 @@
     "challengeContent": "Commercial POS terminals operate in environments where reliability is non-negotiable. A crashed app means lost orders and revenue. These devices require deep native integration — thermal printers need precise formatting control, the app must run as a foreground service to never miss an incoming order, audio alerts must work reliably for kitchen notifications, and device authentication must be hardware-bound for security. Standard React Native development doesn't cover these requirements — they demand custom native module development and intimate knowledge of device-specific SDKs.",
     "heroDescription": "We develop custom applications for commercial POS terminals — specifically Sunmi devices. From thermal printer control to foreground services for real-time order processing, we bridge the gap between React Native and native device capabilities with custom native modules.",
     "metaDescription": "Custom POS application development for Sunmi terminals and commercial devices. Restaurant order management, thermal printer integration, and real-time order processing systems.",
-    "metaTitle": "POS Application Development | Sunmi Terminal Software & Restaurant Systems | Lanista Software",
+    "metaTitle": "POS Application Development | Lanista Software",
     "order": 6,
     "relatedWorks": [
       "d4e5f6a7b8c9",
@@ -108,7 +108,7 @@
     "challengeContent": "AI is transforming software development on two fronts: how software is built, and what software can do. Teams that don't adopt AI-assisted development workflows fall behind in delivery speed. Products that don't leverage AI capabilities miss opportunities to provide intelligent features users increasingly expect — smart search, content analysis, automated insights, and natural language interfaces. The challenge is knowing where AI adds genuine value versus where it introduces unnecessary complexity, cost, or reliability concerns.",
     "heroDescription": "We integrate AI technologies into both our development workflow and the products we build. From using Claude Code and Codex as AI pair programming partners to embedding LLM capabilities directly into applications, AI is a core part of how we deliver software faster and smarter.",
     "metaDescription": "AI-powered software development with Claude Code, Codex, and LLM integration. We leverage AI agents for faster delivery, smarter testing, and intelligent product features.",
-    "metaTitle": "AI-Powered Software Development | Claude Code, AI Agents & LLM Integration | Lanista Software",
+    "metaTitle": "AI-Powered Software Development | Lanista Software",
     "order": 7,
     "relatedWorks": [
       "b2c3d4e5f6a7",

@@ -12,6 +12,7 @@ import type { ContactProps, Faq } from "~/components/templates/Contact.vue";
 import useScrollLock from "~/composables/scrollLock";
 
 const { locale } = useI18n();
+const localePath = useLocalePath();
 
 // All homepage content for the active locale, fetched server-side from Contentrain.
 const { data } = await useAsyncData(
@@ -27,13 +28,19 @@ const sectionsByName = computed<Record<string, any>>(() => {
 });
 const section = (name: string) => sectionsByName.value[name] || {};
 
-const serviceItems = computed<AppCardProps[]>(() => (data.value?.services as AppCardProps[]) || []);
-const processItems = computed<AppCardProps[]>(() => (data.value?.processes as AppCardProps[]) || []);
-const tabItems = computed<TabItem[]>(() => (data.value?.tabItems as TabItem[]) || []);
-const worksCategories = computed<TWorkCategory[]>(() => (data.value?.workCategories as TWorkCategory[]) || []);
-const workItems = computed<WorksCardProps[]>(() => (data.value?.workItems as WorksCardProps[]) || []);
-const testimonials = computed<TestimonialCardProps[]>(() => (data.value?.testimonials as TestimonialCardProps[]) || []);
-const faqItems = computed<Faq[]>(() => (data.value?.faq as Faq[]) || []);
+// Server payload (SDK types) is bridged to the existing component prop types.
+const serviceItems = computed<AppCardProps[]>(() =>
+  ((data.value?.services as unknown as AppCardProps[]) || []).map(s => ({
+    ...s,
+    link: s.link ? localePath(s.link) : s.link,
+  })),
+);
+const processItems = computed<AppCardProps[]>(() => (data.value?.processes as unknown as AppCardProps[]) || []);
+const tabItems = computed<TabItem[]>(() => (data.value?.tabItems as unknown as TabItem[]) || []);
+const worksCategories = computed<TWorkCategory[]>(() => (data.value?.workCategories as unknown as TWorkCategory[]) || []);
+const workItems = computed<WorksCardProps[]>(() => (data.value?.workItems as unknown as WorksCardProps[]) || []);
+const testimonials = computed<TestimonialCardProps[]>(() => (data.value?.testimonials as unknown as TestimonialCardProps[]) || []);
+const faqItems = computed<Faq[]>(() => (data.value?.faq as unknown as Faq[]) || []);
 const references = computed(() => data.value?.references || []);
 const heroSection = computed(() => section("hero"));
 
@@ -117,7 +124,7 @@ const contactAndFaqSectionProps = computed<ContactProps>(() => ({
 
 const route = useRoute();
 const router = useRouter();
-const { isScrollLocked, lockScroll } = useScrollLock();
+const { isScrollLocked } = useScrollLock();
 
 const { fullSchema } = useSchemas(data);
 useHead({
@@ -125,9 +132,14 @@ useHead({
     lang: locale,
   },
   link: [
-    { rel: "canonical", href: "https://lanista.com.tr/" },
+    {
+      rel: "canonical",
+      href: locale.value === "tr"
+        ? "https://lanista.com.tr/tr/"
+        : "https://lanista.com.tr/",
+    },
     { rel: "alternate", hreflang: "en", href: "https://lanista.com.tr/" },
-    { rel: "alternate", hreflang: "tr", href: "https://lanista.com.tr/" },
+    { rel: "alternate", hreflang: "tr", href: "https://lanista.com.tr/tr/" },
     { rel: "alternate", hreflang: "x-default", href: "https://lanista.com.tr/" },
   ],
   script: [

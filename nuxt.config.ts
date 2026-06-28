@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   site: {
     url: 'https://lanista.com.tr',
+    trailingSlash: true,
   },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -16,61 +17,10 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
   ],
   sitemap: {
-    urls: [
-      {
-        loc: '/',
-        lastmod: new Date().toISOString(),
-        changefreq: 'weekly',
-        priority: 1.0,
-        alternatives: [
-          { hreflang: 'en', href: 'https://lanista.com.tr/' },
-          { hreflang: 'tr', href: 'https://lanista.com.tr/' },
-          { hreflang: 'x-default', href: 'https://lanista.com.tr/' },
-        ],
-      },
-      {
-        loc: '/services/nestjs-microservice-development',
-        lastmod: new Date().toISOString(),
-        changefreq: 'monthly',
-        priority: 0.8,
-      },
-      {
-        loc: '/services/react-native-mobile-app-development',
-        lastmod: new Date().toISOString(),
-        changefreq: 'monthly',
-        priority: 0.8,
-      },
-      {
-        loc: '/services/saas-platform-development',
-        lastmod: new Date().toISOString(),
-        changefreq: 'monthly',
-        priority: 0.8,
-      },
-      {
-        loc: '/services/nuxtjs-vuejs-web-application-development',
-        lastmod: new Date().toISOString(),
-        changefreq: 'monthly',
-        priority: 0.8,
-      },
-      {
-        loc: '/services/payment-integration-development',
-        lastmod: new Date().toISOString(),
-        changefreq: 'monthly',
-        priority: 0.8,
-      },
-      {
-        loc: '/services/pos-application-development',
-        lastmod: new Date().toISOString(),
-        changefreq: 'monthly',
-        priority: 0.8,
-      },
-      {
-        loc: '/services/ai-powered-software-development',
-        lastmod: new Date().toISOString(),
-        changefreq: 'monthly',
-        priority: 0.8,
-      },
-    ],
+    // Routes (incl. dynamic service pages) and per-locale hreflang are auto-discovered
+    // by @nuxtjs/sitemap via the @nuxtjs/i18n integration. `site.trailingSlash` keeps
+    // sitemap URLs aligned with the canonical (trailing-slash) form.
+    autoLastmod: true,
   },
   scripts:{
     registry:{

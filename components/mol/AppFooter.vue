@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const { locale } = useI18n();
+const localePath = useLocalePath();
 
 const { data: layout } = await useAsyncData(
   "layout",
@@ -50,7 +51,7 @@ const footerData = {
           <ul class="space-y-2">
             <li v-for="page in servicePages" :key="page.ID">
               <NuxtLink
-                :to="`/services/${page.slug}`"
+                :to="localePath(`/services/${page.slug}`)"
                 class="text-sm text-body hover:text-primary-600 transition-colors"
               >
                 {{ page.title }}
