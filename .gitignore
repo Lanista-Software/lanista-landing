@@ -25,3 +25,7 @@ logs
 
 # Local Netlify folder
 .netlify
+
+# Contentrain
+.contentrain/.cache/
+.contentrain/client/
