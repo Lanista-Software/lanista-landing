@@ -37,7 +37,7 @@
     "title": "Contentrain"
   },
   "8a8044e883e9": {
-    "category": "cab37361e7e6",
+    "category": "59cbdac46c1e",
     "challenge": "Turkey's leading online flower and gift platform was held back by legacy code and needed a modern, SEO-friendly, high-performance storefront.",
     "description": "Turkey's leading online flower and gift platform. Complete frontend modernization from legacy code to modern Nuxt.js architecture with 2 years of continuous development and maintenance.\n\nBuilt with Nuxt.js, Vue.js, and Contentrain CMS. Features SSR with SEO optimization, dynamic content management, performance optimizations (lazy loading, code splitting, image optimization), and full e-commerce capabilities including product catalog, cart, payment, and order tracking.",
     "image": "/1729874043253_Bloomandfresh.svg",
@@ -49,7 +49,7 @@
     "title": "Bloom and Fresh"
   },
   "8a8044e883ea": {
-    "category": "cab37361e7ea",
+    "category": "59cbdac46c1e",
     "challenge": "Wordify's Squarespace-based site limited performance, scalability, and customization.",
     "description": "We transformed Wordify's Squarespace-based website into a custom site using Jamstack architecture. This upgrade provided Wordify with a smooth look, enhanced performance, scalability, and improved user experience.",
     "image": "/1729066309718_wordify.svg",
