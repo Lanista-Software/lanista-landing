@@ -5,9 +5,9 @@
     "updated_by": "migration"
   },
   "9ab7dcca9d1d": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_by": "bayhanbayramoglu@gmail.com"
   },
   "9ab7dcca9d1e": {
     "source": "import",
@@ -65,9 +65,9 @@
     "updated_by": "migration"
   },
   "9ab7dcca9d29": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_by": "bayhanbayramoglu@gmail.com"
   },
   "bc311eb63570": {
     "source": "import",
