@@ -37,7 +37,7 @@
     "title": "Contentrain"
   },
   "8a8044e883e9": {
-    "category": "cab37361e7e6",
+    "category": "59cbdac46c1e",
     "challenge": "Türkiye'nin önde gelen online çiçek ve hediye platformu legacy kod nedeniyle yavaşlıyordu; modern, SEO uyumlu ve yüksek performanslı bir vitrine ihtiyaç vardı.",
     "description": "Türkiye'nin önde gelen online çiçek ve hediye platformu için komple frontend yenileme. Legacy koddan modern Nuxt.js mimarisine geçiş ile 2 yıllık sürekli geliştirme ve bakım.\n\nNuxt.js, Vue.js ve Contentrain CMS ile geliştirildi. SSR ile SEO optimizasyonu, dinamik içerik yönetimi, performans optimizasyonları (lazy loading, code splitting, image optimization) ve ürün katalog, sepet, ödeme, sipariş takibi dahil tam e-ticaret özellikleri.",
     "image": "/1729874043253_Bloomandfresh.svg",
