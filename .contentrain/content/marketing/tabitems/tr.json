@@ -7,7 +7,7 @@
   },
   "9ab7dcca9d1d": {
     "category": "cab37361e7e6",
-    "description": "Vue.js Javascript tabanlı bir frameworktür. Vue.js, kullanıcı arayüzleri ve UI bileşenleri oluşturmak için kullanılan bir JavaScript kütüphanesidir. Facebook ve büyük bir geliştirici topluluğu tarafından sürdürülmektedir. Vue, hızlı renderlama ve sanal DOM ile bilinir.",
+    "description": "Vue.js, kullanıcı arayüzleri oluşturmak için kullanılan ilerici bir JavaScript çerçevesidir. Özellikle tek sayfa uygulamaları için tasarlanmış olup diğer kütüphanelerle kolayca entegre edilebilir ve aşamalı olarak benimsenebilir.",
     "image": "/1728541493988_vuejs.svg",
     "link": "https://vuejs.org/"
   },
@@ -81,7 +81,7 @@
     "category": "cab37361e7e8",
     "description": "Sketch, ister tek başınıza ister iş birliği yaparak, büyük ölçekte güzel ürünler oluşturmanıza yardımcı olan bir tasarım yazılım aracıdır.",
     "image": "/1728898732629_sketch.svg",
-    "link": "https://vuejs.org/"
+    "link": "https://www.sketch.com/"
   },
   "bc311eb63570": {
     "category": "cab37361e7e8",
