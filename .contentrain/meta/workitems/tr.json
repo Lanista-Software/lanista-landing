@@ -15,14 +15,14 @@
     "updated_by": "migration"
   },
   "8a8044e883e9": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_by": "bayhanbayramoglu@gmail.com"
   },
   "8a8044e883ea": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_by": "bayhanbayramoglu@gmail.com"
   },
   "8a8044e883eb": {
     "source": "import",
