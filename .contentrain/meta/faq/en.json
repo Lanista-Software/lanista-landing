@@ -30,9 +30,9 @@
     "updated_by": "migration"
   },
   "a528b01b5691": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_by": "bayhanbayramoglu@gmail.com"
   },
   "a528b01b5692": {
     "source": "import",
