@@ -10,11 +10,6 @@
     "link": "/services/nuxtjs-vuejs-web-application-development",
     "title": "Web Uygulama Geliştirme"
   },
-  "7e772c1b4821": {
-    "description": "Stripe, Paddle, PayTR ve In-App Purchase entegre ediyor; abonelik yaşam döngüsünü ve üretimde ödemeleri bozan uç durumları yönetiyoruz.",
-    "link": "/services/payment-integration-development",
-    "title": "Ödeme Entegrasyonu"
-  },
   "8cf57e3279a8": {
     "description": "NestJS, gRPC ve mesaj kuyruklarıyla işinizle birlikte ölçeklenen, üretime hazır mikroservis backend'leri tasarlıyor ve geliştiriyoruz.",
     "link": "/services/nestjs-microservice-development",
