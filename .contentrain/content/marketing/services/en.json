@@ -26,7 +26,7 @@
   "d00761480438": {
     "description": "Crafting product designs that blend functionality with modern aesthetics.",
     "image": "/1729849903212_ProductDesign.svg",
-    "link": "",
+    "link": "/services/nuxtjs-vuejs-web-application-development",
     "title": "Product Design"
   },
   "d00761480439": {
@@ -38,7 +38,7 @@
   "d00761480440": {
     "description": "We develop custom Headless CMS solutions or integrate our own Git-based Headless CMS Contentrain into your projects.",
     "image": "/1729867496804_Headless.svg",
-    "link": "",
+    "link": "/services/saas-platform-development",
     "title": "Headless CMS Solutions"
   }
 }
