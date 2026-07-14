@@ -26,7 +26,7 @@
   "d00761480438": {
     "description": "İşlevselliği modern estetikle harmanlayan ürün tasarımları üretiyoruz.",
     "image": "/1729849903212_ProductDesign.svg",
-    "link": "",
+    "link": "/services/nuxtjs-vuejs-web-application-development",
     "title": "Ürün Tasarımı"
   },
   "d00761480439": {
@@ -38,7 +38,7 @@
   "d00761480440": {
     "description": "Projeleriniz için CMS çözümleri geliştiriyor veya kendi ürünümüz olan Git tabanlı Contentrain'i projenize entegre ediyoruz.",
     "image": "/1729867496804_Headless.svg",
-    "link": "",
+    "link": "/services/saas-platform-development",
     "title": "Headless CMS Çözümleri"
   }
 }
