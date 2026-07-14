@@ -1,8 +1,16 @@
 {
   "description": "End-to-end web & mobile app development. We build SaaS platforms, microservices, and cross-platform apps with Vue.js, React Native & NestJS.",
+  "ogDescription": "We design and ship SaaS platforms, microservices, and cross-platform apps with Vue.js, React Native & NestJS.",
   "ogImage": "https://res.cloudinary.com/dmywgn45o/image/upload/v1729243091/lanista_og_chgpop.jpg",
+  "ogLocale": "en_US",
   "ogSiteName": "Lanista Software",
+  "ogTitle": "Web & Mobile Apps, Built End-to-End | Lanista Software",
   "ogType": "website",
+  "ogUrl": "https://lanista.com.tr/",
   "title": "Lanista Software | Web & Mobile App Development Partner",
-  "twitterCard": "summary_large_image"
+  "twitterCard": "summary_large_image",
+  "twitterDescription": "We design and ship SaaS platforms, microservices, and cross-platform apps with Vue.js, React Native & NestJS.",
+  "twitterImage": "https://res.cloudinary.com/dmywgn45o/image/upload/v1729243091/lanista_og_chgpop.jpg",
+  "twitterSite": "@lanaboratory",
+  "twitterTitle": "Web & Mobile Apps, Built End-to-End | Lanista Software"
 }
