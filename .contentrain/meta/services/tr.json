@@ -20,9 +20,9 @@
     "updated_by": "migration"
   },
   "d00761480438": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
   },
   "d00761480439": {
     "source": "import",
@@ -30,8 +30,8 @@
     "updated_by": "migration"
   },
   "d00761480440": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
   }
 }
