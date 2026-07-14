@@ -1,19 +1,14 @@
 {
-  "4ee530221c95": {
-    "description": "AI'ı hem sürecimize hem ürününüze gömüyoruz — LLM destekli özelliklerden daha hızlı teslim eden AI-destekli geliştirmeye.",
-    "link": "/services/ai-powered-software-development",
-    "title": "AI Destekli Geliştirme"
-  },
   "50d81f2a3baf": {
     "description": "Konseptten lansmana kadar güvenli, ölçeklenebilir ve iş ihtiyaçlarınızı karşılayacak şekilde tasarlanmış özel web uygulamaları geliştiriyoruz.",
     "image": "/1729868379116_Webapp.svg",
     "link": "/services/nuxtjs-vuejs-web-application-development",
     "title": "Web Uygulama Geliştirme"
   },
-  "8632a79f14a8": {
-    "description": "Sunmi ticari POS terminalleri için özel uygulamalar geliştiriyoruz — termal yazıcı, foreground service ve gerçek zamanlı sipariş yönetimi.",
-    "link": "/services/pos-application-development",
-    "title": "POS Uygulama Geliştirme"
+  "7e772c1b4821": {
+    "description": "Stripe, Paddle, PayTR ve In-App Purchase entegre ediyor; abonelik yaşam döngüsünü ve üretimde ödemeleri bozan uç durumları yönetiyoruz.",
+    "link": "/services/payment-integration-development",
+    "title": "Ödeme Entegrasyonu"
   },
   "9450777bee2f": {
     "description": "Müşterilerimizin fikirlerini gerçek mobil deneyimlere dönüştürebilmek için özel IOS ve Android uygulamalar geliştiriyoruz.",
@@ -50,5 +45,10 @@
     "image": "/1729867496804_Headless.svg",
     "link": "/services/saas-platform-development",
     "title": "Headless CMS Çözümleri"
+  },
+  "e2b01937486c": {
+    "description": "NestJS, gRPC ve mesaj kuyruklarıyla işinizle birlikte ölçeklenen, üretime hazır mikroservis backend'leri tasarlıyor ve geliştiriyoruz.",
+    "link": "/services/nestjs-microservice-development",
+    "title": "Mikroservis Geliştirme"
   }
 }
