@@ -1,8 +1,16 @@
 {
   "description": "Uçtan uca web ve mobil uygulama geliştirme. Vue.js, React Native ve NestJS ile SaaS platformları, mikroservisler ve çapraz platform uygulamalar.",
+  "ogDescription": "Vue.js, React Native ve NestJS ile SaaS platformları, mikroservisler ve çapraz platform uygulamalar tasarlıyor ve geliştiriyoruz.",
   "ogImage": "https://res.cloudinary.com/dmywgn45o/image/upload/v1729243091/lanista_og_chgpop.jpg",
+  "ogLocale": "tr_TR",
   "ogSiteName": "Lanista Software",
+  "ogTitle": "Uçtan Uca Web ve Mobil Uygulama Geliştirme | Lanista Software",
   "ogType": "website",
+  "ogUrl": "https://lanista.com.tr/tr/",
   "title": "Lanista Software | Web ve Mobil Uygulama Geliştirme Partneri",
-  "twitterCard": "summary_large_image"
+  "twitterCard": "summary_large_image",
+  "twitterDescription": "Vue.js, React Native ve NestJS ile SaaS platformları, mikroservisler ve çapraz platform uygulamalar tasarlıyor ve geliştiriyoruz.",
+  "twitterImage": "https://res.cloudinary.com/dmywgn45o/image/upload/v1729243091/lanista_og_chgpop.jpg",
+  "twitterSite": "@lanaboratory",
+  "twitterTitle": "Uçtan Uca Web ve Mobil Uygulama Geliştirme | Lanista Software"
 }
