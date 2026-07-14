@@ -10,11 +10,6 @@
     "link": "/services/nuxtjs-vuejs-web-application-development",
     "title": "Web Uygulama Geliştirme"
   },
-  "7e772c1b4821": {
-    "description": "Stripe, Paddle, PayTR ve In-App Purchase entegre ediyor; abonelik yaşam döngüsünü ve üretimde ödemeleri bozan uç durumları yönetiyoruz.",
-    "link": "/services/payment-integration-development",
-    "title": "Ödeme Entegrasyonu"
-  },
   "8632a79f14a8": {
     "description": "Sunmi ticari POS terminalleri için özel uygulamalar geliştiriyoruz — termal yazıcı, foreground service ve gerçek zamanlı sipariş yönetimi.",
     "link": "/services/pos-application-development",
