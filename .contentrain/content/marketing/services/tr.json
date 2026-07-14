@@ -1,4 +1,9 @@
 {
+  "2b592e751796": {
+    "description": "Stripe, Paddle, PayTR ve In-App Purchase entegre ediyor; abonelik yaşam döngüsünü ve üretimde ödemeleri bozan uç durumları yönetiyoruz.",
+    "link": "/services/payment-integration-development",
+    "title": "Ödeme Entegrasyonu"
+  },
   "50d81f2a3baf": {
     "description": "Konseptten lansmana kadar güvenli, ölçeklenebilir ve iş ihtiyaçlarınızı karşılayacak şekilde tasarlanmış özel web uygulamaları geliştiriyoruz.",
     "image": "/1729868379116_Webapp.svg",
@@ -9,6 +14,11 @@
     "description": "Stripe, Paddle, PayTR ve In-App Purchase entegre ediyor; abonelik yaşam döngüsünü ve üretimde ödemeleri bozan uç durumları yönetiyoruz.",
     "link": "/services/payment-integration-development",
     "title": "Ödeme Entegrasyonu"
+  },
+  "8cf57e3279a8": {
+    "description": "NestJS, gRPC ve mesaj kuyruklarıyla işinizle birlikte ölçeklenen, üretime hazır mikroservis backend'leri tasarlıyor ve geliştiriyoruz.",
+    "link": "/services/nestjs-microservice-development",
+    "title": "Mikroservis Geliştirme"
   },
   "9450777bee2f": {
     "description": "Müşterilerimizin fikirlerini gerçek mobil deneyimlere dönüştürebilmek için özel IOS ve Android uygulamalar geliştiriyoruz.",
@@ -46,9 +56,19 @@
     "link": "/services/saas-platform-development",
     "title": "Headless CMS Çözümleri"
   },
+  "d48331b6ba10": {
+    "description": "Sunmi ticari POS terminalleri için özel uygulamalar geliştiriyoruz — termal yazıcı, foreground service ve gerçek zamanlı sipariş yönetimi.",
+    "link": "/services/pos-application-development",
+    "title": "POS Uygulama Geliştirme"
+  },
   "e2b01937486c": {
     "description": "NestJS, gRPC ve mesaj kuyruklarıyla işinizle birlikte ölçeklenen, üretime hazır mikroservis backend'leri tasarlıyor ve geliştiriyoruz.",
     "link": "/services/nestjs-microservice-development",
     "title": "Mikroservis Geliştirme"
+  },
+  "f16b19c950c7": {
+    "description": "AI'ı hem sürecimize hem ürününüze gömüyoruz — LLM destekli özelliklerden daha hızlı teslim eden AI-destekli geliştirmeye.",
+    "link": "/services/ai-powered-software-development",
+    "title": "AI Destekli Geliştirme"
   }
 }
