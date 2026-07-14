@@ -9,11 +9,6 @@
     "status": "published",
     "updated_by": "migration"
   },
-  "7e772c1b4821": {
-    "source": "agent",
-    "status": "draft",
-    "updated_by": "contentrain-mcp"
-  },
   "8cf57e3279a8": {
     "source": "agent",
     "status": "draft",
