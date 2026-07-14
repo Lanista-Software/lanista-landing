@@ -44,7 +44,7 @@
     "link": "https://bloomandfresh.com",
     "order": 4,
     "slug": "bloom-and-fresh",
-    "solution": "We led a complete frontend modernization to Nux.js with SSR and SEO optimization, dynamic content via Contentrain CMS, and performance work (lazy loading, code splitting, image optimization) across full e-commerce — catalog, cart, payment, and order tracking — over 2 years of continuous development.",
+    "solution": "We led a complete frontend modernization to Nuxt.js with SSR and SEO optimization, dynamic content via Contentrain CMS, and performance work (lazy loading, code splitting, image optimization) across full e-commerce — catalog, cart, payment, and order tracking — over 2 years of continuous development.",
     "technologies": "Nuxt.js, Vue.js, Contentrain CMS, SSR",
     "title": "Bloom and Fresh"
   },
