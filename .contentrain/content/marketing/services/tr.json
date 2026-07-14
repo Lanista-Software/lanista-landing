@@ -61,11 +61,6 @@
     "link": "/services/pos-application-development",
     "title": "POS Uygulama Geliştirme"
   },
-  "e2b01937486c": {
-    "description": "NestJS, gRPC ve mesaj kuyruklarıyla işinizle birlikte ölçeklenen, üretime hazır mikroservis backend'leri tasarlıyor ve geliştiriyoruz.",
-    "link": "/services/nestjs-microservice-development",
-    "title": "Mikroservis Geliştirme"
-  },
   "f16b19c950c7": {
     "description": "AI'ı hem sürecimize hem ürününüze gömüyoruz — LLM destekli özelliklerden daha hızlı teslim eden AI-destekli geliştirmeye.",
     "link": "/services/ai-powered-software-development",
