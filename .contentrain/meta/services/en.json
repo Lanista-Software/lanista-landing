@@ -1,13 +1,13 @@
 {
   "50d81f2a3baf": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
   },
   "9450777bee2f": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
   },
   "d00761480436": {
     "source": "import",
@@ -15,9 +15,9 @@
     "updated_by": "migration"
   },
   "d00761480437": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
   },
   "d00761480438": {
     "source": "import",
