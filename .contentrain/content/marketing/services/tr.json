@@ -55,10 +55,5 @@
     "image": "/1729867496804_Headless.svg",
     "link": "/services/saas-platform-development",
     "title": "Headless CMS Çözümleri"
-  },
-  "e2b01937486c": {
-    "description": "NestJS, gRPC ve mesaj kuyruklarıyla işinizle birlikte ölçeklenen, üretime hazır mikroservis backend'leri tasarlıyor ve geliştiriyoruz.",
-    "link": "/services/nestjs-microservice-development",
-    "title": "Mikroservis Geliştirme"
   }
 }
