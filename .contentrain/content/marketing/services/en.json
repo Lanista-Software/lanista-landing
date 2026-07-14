@@ -1,6 +1,7 @@
 {
   "2b592e751796": {
     "description": "We integrate Stripe, Paddle, PayTR, and In-App Purchase — handling the full subscription lifecycle and the edge cases that break payments in production.",
+    "image": "/service-payment.svg",
     "link": "/services/payment-integration-development",
     "title": "Payment Integration"
   },
@@ -12,6 +13,7 @@
   },
   "8cf57e3279a8": {
     "description": "We design and build production-grade microservice backends with NestJS, gRPC, and message queues that scale with your business.",
+    "image": "/service-microservice.svg",
     "link": "/services/nestjs-microservice-development",
     "title": "Microservice Development"
   },
@@ -53,11 +55,13 @@
   },
   "d48331b6ba10": {
     "description": "We build custom apps for Sunmi commercial POS terminals — thermal printing, foreground services, and real-time order processing.",
+    "image": "/service-pos.svg",
     "link": "/services/pos-application-development",
     "title": "POS App Development"
   },
   "f16b19c950c7": {
     "description": "We embed AI into both our workflow and your product — from LLM-powered features to AI-assisted delivery that ships faster.",
+    "image": "/service-ai.svg",
     "link": "/services/ai-powered-software-development",
     "title": "AI-Powered Development"
   }
