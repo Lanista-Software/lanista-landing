@@ -670,5 +670,29 @@
       },
       "createdAt": "2024-10-25T17:03:02.405Z"
     }
+  },
+  {
+    "path": "public/service-microservice.svg",
+    "mimetype": "image/svg+xml",
+    "size": 1945,
+    "alt": "Microservice architecture illustration: an API gateway connected to independent service nodes"
+  },
+  {
+    "path": "public/service-payment.svg",
+    "mimetype": "image/svg+xml",
+    "size": 1364,
+    "alt": "Payment integration illustration: a credit card with a chip and a success checkmark"
+  },
+  {
+    "path": "public/service-pos.svg",
+    "mimetype": "image/svg+xml",
+    "size": 1421,
+    "alt": "POS application illustration: a commercial POS terminal printing an order receipt"
+  },
+  {
+    "path": "public/service-ai.svg",
+    "mimetype": "image/svg+xml",
+    "size": 1576,
+    "alt": "AI-powered development illustration: a friendly robot with circuit nodes and a spark"
   }
 ]

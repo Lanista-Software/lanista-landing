@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" fill="none">
+  <circle cx="220" cy="220" r="164" fill="#EBF2FA"/>
+  <!-- connectors -->
+  <g stroke="#9ABFE5" stroke-width="7" stroke-linecap="round">
+    <line x1="220" y1="220" x2="120" y2="120"/>
+    <line x1="220" y1="220" x2="320" y2="120"/>
+    <line x1="220" y1="220" x2="120" y2="320"/>
+    <line x1="220" y1="220" x2="320" y2="320"/>
+  </g>
+  <!-- message dots travelling on the wires -->
+  <g fill="#C2D9EF">
+    <circle cx="168" cy="168" r="8"/>
+    <circle cx="272" cy="168" r="8"/>
+    <circle cx="168" cy="272" r="8"/>
+    <circle cx="272" cy="272" r="8"/>
+  </g>
+  <!-- service nodes -->
+  <rect x="80" y="80" width="80" height="80" rx="20" fill="#498CD0"/>
+  <rect x="280" y="80" width="80" height="80" rx="20" fill="#71A6DA"/>
+  <rect x="80" y="280" width="80" height="80" rx="20" fill="#71A6DA"/>
+  <rect x="280" y="280" width="80" height="80" rx="20" fill="#22C55E"/>
+  <!-- node glyphs -->
+  <g stroke="#FFFFFF" stroke-width="6" stroke-linecap="round">
+    <line x1="102" y1="112" x2="138" y2="112"/><line x1="102" y1="128" x2="128" y2="128"/>
+    <line x1="302" y1="112" x2="338" y2="112"/><line x1="302" y1="128" x2="328" y2="128"/>
+    <line x1="102" y1="312" x2="138" y2="312"/><line x1="102" y1="328" x2="128" y2="328"/>
+  </g>
+  <path d="M300 320 l14 14 l26 -28" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- central API gateway -->
+  <rect x="166" y="166" width="108" height="108" rx="26" fill="#25598E"/>
+  <rect x="166" y="166" width="108" height="108" rx="26" fill="#1A4065" opacity="0.0"/>
+  <g stroke="#EBF2FA" stroke-width="8" stroke-linecap="round">
+    <line x1="192" y1="204" x2="248" y2="204"/>
+    <line x1="192" y1="222" x2="248" y2="222"/>
+    <line x1="192" y1="240" x2="230" y2="240"/>
+  </g>
+  <circle cx="220" cy="220" r="54" stroke="#498CD0" stroke-width="4" opacity="0.5" fill="none"/>
+</svg>

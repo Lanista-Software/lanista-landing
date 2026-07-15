@@ -1,13 +1,23 @@
 {
+  "2b592e751796": {
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
+  },
   "50d81f2a3baf": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
+  },
+  "8cf57e3279a8": {
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
   },
   "9450777bee2f": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
   },
   "d00761480436": {
     "source": "import",
@@ -15,14 +25,14 @@
     "updated_by": "migration"
   },
   "d00761480437": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
   },
   "d00761480438": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
   },
   "d00761480439": {
     "source": "import",
@@ -30,8 +40,18 @@
     "updated_by": "migration"
   },
   "d00761480440": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
+  },
+  "d48331b6ba10": {
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
+  },
+  "f16b19c950c7": {
+    "source": "agent",
+    "status": "draft",
+    "updated_by": "contentrain-mcp"
   }
 }

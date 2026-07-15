@@ -1,15 +1,27 @@
 {
+  "2b592e751796": {
+    "description": "We integrate Stripe, Paddle, PayTR, and In-App Purchase — handling the full subscription lifecycle and the edge cases that break payments in production.",
+    "image": "/service-payment.svg",
+    "link": "/services/payment-integration-development",
+    "title": "Payment Integration"
+  },
   "50d81f2a3baf": {
     "description": "From concept to launch, we deliver custom web apps that are secure, scalable, and designed to meet your business needs.",
     "image": "/1729868379116_Webapp.svg",
     "link": "/services/nuxtjs-vuejs-web-application-development",
-    "title": "Web App. Development"
+    "title": "Web App Development"
+  },
+  "8cf57e3279a8": {
+    "description": "We design and build production-grade microservice backends with NestJS, gRPC, and message queues that scale with your business.",
+    "image": "/service-microservice.svg",
+    "link": "/services/nestjs-microservice-development",
+    "title": "Microservice Development"
   },
   "9450777bee2f": {
     "description": "We develop custom iOS and Android mobile apps to turn our clients' ideas into real mobile experiences.",
     "image": "/1729765510539_Mobileapp.svg",
     "link": "/services/react-native-mobile-app-development",
-    "title": "Mobile App. Development"
+    "title": "Mobile App Development"
   },
   "d00761480436": {
     "description": "Helping startups bring their ideas to life with MVP development services.",
@@ -18,7 +30,7 @@
     "title": "MVP Development"
   },
   "d00761480437": {
-    "description": "We provide end-to-end custom SaaS platform development solutions. ",
+    "description": "We provide end-to-end custom SaaS platform development solutions.",
     "image": "/1729844595854_SaaS.svg",
     "link": "/services/saas-platform-development",
     "title": "SaaS Platform Development"
@@ -26,7 +38,7 @@
   "d00761480438": {
     "description": "Crafting product designs that blend functionality with modern aesthetics.",
     "image": "/1729849903212_ProductDesign.svg",
-    "link": "",
+    "link": "/services/nuxtjs-vuejs-web-application-development",
     "title": "Product Design"
   },
   "d00761480439": {
@@ -38,7 +50,19 @@
   "d00761480440": {
     "description": "We develop custom Headless CMS solutions or integrate our own Git-based Headless CMS Contentrain into your projects.",
     "image": "/1729867496804_Headless.svg",
-    "link": "",
+    "link": "/services/saas-platform-development",
     "title": "Headless CMS Solutions"
+  },
+  "d48331b6ba10": {
+    "description": "We build custom apps for Sunmi commercial POS terminals — thermal printing, foreground services, and real-time order processing.",
+    "image": "/service-pos.svg",
+    "link": "/services/pos-application-development",
+    "title": "POS App Development"
+  },
+  "f16b19c950c7": {
+    "description": "We embed AI into both our workflow and your product — from LLM-powered features to AI-assisted delivery that ships faster.",
+    "image": "/service-ai.svg",
+    "link": "/services/ai-powered-software-development",
+    "title": "AI-Powered Development"
   }
 }

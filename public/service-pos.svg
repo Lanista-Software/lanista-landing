@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" fill="none">
+  <circle cx="220" cy="220" r="164" fill="#EBF2FA"/>
+  <!-- receipt emerging from the top -->
+  <g>
+    <path d="M168 96 h104 v150 l-13 -10 l-13 10 l-13 -10 l-13 10 l-13 -10 l-13 10 l-13 -10 l-13 10 z" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="3"/>
+    <g stroke="#9ABFE5" stroke-width="7" stroke-linecap="round">
+      <line x1="188" y1="124" x2="252" y2="124"/>
+      <line x1="188" y1="146" x2="252" y2="146"/>
+      <line x1="188" y1="168" x2="230" y2="168"/>
+    </g>
+    <path d="M204 196 l12 12 l22 -24" stroke="#22C55E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- terminal body -->
+  <rect x="132" y="236" width="176" height="128" rx="22" fill="#25598E"/>
+  <rect x="132" y="236" width="176" height="52" rx="22" fill="#1A4065"/>
+  <rect x="132" y="266" width="176" height="22" fill="#1A4065"/>
+  <!-- screen -->
+  <rect x="156" y="252" width="128" height="26" rx="8" fill="#71A6DA"/>
+  <!-- keypad -->
+  <g fill="#498CD0">
+    <rect x="156" y="300" width="34" height="24" rx="7"/>
+    <rect x="203" y="300" width="34" height="24" rx="7"/>
+    <rect x="250" y="300" width="34" height="24" rx="7"/>
+    <rect x="156" y="332" width="34" height="20" rx="7"/>
+    <rect x="203" y="332" width="34" height="20" rx="7"/>
+  </g>
+  <rect x="250" y="332" width="34" height="20" rx="7" fill="#22C55E"/>
+</svg>

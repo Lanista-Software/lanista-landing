@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" fill="none">
+  <circle cx="220" cy="220" r="164" fill="#EBF2FA"/>
+  <!-- back card -->
+  <rect x="112" y="150" width="228" height="150" rx="22" fill="#C2D9EF" transform="rotate(-9 226 225)"/>
+  <!-- front card -->
+  <g transform="rotate(-9 220 232)">
+    <rect x="96" y="168" width="248" height="156" rx="22" fill="#2F73B6"/>
+    <rect x="96" y="168" width="248" height="156" rx="22" fill="#25598E" opacity="0.15"/>
+    <!-- magnetic stripe -->
+    <rect x="96" y="196" width="248" height="26" fill="#1A4065"/>
+    <!-- chip -->
+    <rect x="120" y="242" width="40" height="30" rx="6" fill="#F59E0B"/>
+    <line x1="140" y1="242" x2="140" y2="272" stroke="#B45309" stroke-width="3"/>
+    <!-- number dots -->
+    <g fill="#9ABFE5">
+      <circle cx="188" cy="258" r="5"/><circle cx="204" cy="258" r="5"/><circle cx="220" cy="258" r="5"/>
+      <circle cx="248" cy="258" r="5"/><circle cx="264" cy="258" r="5"/><circle cx="280" cy="258" r="5"/>
+    </g>
+    <rect x="120" y="292" width="90" height="12" rx="6" fill="#498CD0"/>
+  </g>
+  <!-- success badge -->
+  <circle cx="316" cy="300" r="40" fill="#22C55E"/>
+  <circle cx="316" cy="300" r="40" fill="#FFFFFF" opacity="0.0"/>
+  <path d="M298 300 l12 13 l24 -26" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
