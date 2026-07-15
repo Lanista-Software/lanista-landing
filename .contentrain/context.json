@@ -1,14 +1,14 @@
 {
   "lastOperation": {
     "locale": "en",
-    "model": "meta-tags",
+    "model": "services",
     "source": "mcp-studio",
-    "timestamp": "2026-07-14T12:44:08.270Z",
+    "timestamp": "2026-07-14T13:27:05.295Z",
     "tool": "merge"
   },
   "stats": {
-    "entries": 182,
-    "lastSync": "2026-07-14T12:44:08.270Z",
+    "entries": 190,
+    "lastSync": "2026-07-14T13:27:05.295Z",
     "locales": [
       "en",
       "tr"
