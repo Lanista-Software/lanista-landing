@@ -57,7 +57,14 @@ export default defineNuxtConfig({
   },
   eslint: {
     config: {
-      stylistic: true,
+      // Stylistic rules come from @antfu/eslint-config (as `style/*`). Enabling
+      // them here too made every formatting issue report twice, once as
+      // `@stylistic/*` and once as `style/*`.
+      stylistic: false,
+      // The generated config is composed with @antfu/eslint-config in
+      // eslint.config.mjs; standalone would register a second `import` plugin
+      // instance and ESLint refuses to load both.
+      standalone: false,
     }
   },
   runtimeConfig: {

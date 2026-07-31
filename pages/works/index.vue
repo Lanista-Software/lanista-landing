@@ -3,10 +3,11 @@ const { locale } = useI18n()
 const localePath = useLocalePath()
 const isEn = computed(() => locale.value === 'en')
 
+// Locale-keyed, no `watch`: /api/* is absent from the static build, so a
+// client-side refetch 404s and empties the list. See pages/index.vue.
 const { data: works } = await useAsyncData(
-  'works-list',
+  `works-list-${locale.value}`,
   () => $fetch('/api/works', { query: { locale: locale.value } }),
-  { watch: [locale] },
 )
 
 const title = computed(() => (isEn.value ? 'Our Work & Case Studies' : 'Çalışmalarımız ve Vaka Çalışmaları'))

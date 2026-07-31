@@ -70,7 +70,7 @@ function getTabItems(category: string) {
           </LuiTabButtons>
           <LuiTabPanels>
             <LuiTabPanel
-              v-for="(category, index) in filteredCategories"
+              v-for="category in filteredCategories"
               :key="category.ID"
               :id="category.ID"
             >

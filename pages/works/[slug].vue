@@ -5,10 +5,11 @@ const route = useRoute()
 const slug = route.params.slug as string
 const isEn = computed(() => locale.value === 'en')
 
+// Locale-keyed, no `watch`: /api/* is absent from the static build, so a
+// client-side refetch 404s and would throw this page into its own 404 branch.
 const { data, error } = await useAsyncData(
-  `work-${slug}`,
+  `work-${slug}-${locale.value}`,
   () => $fetch(`/api/work/${slug}`, { query: { locale: locale.value } }),
-  { watch: [locale] },
 )
 
 if (error.value || !data.value?.work) {

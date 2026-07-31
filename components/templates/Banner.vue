@@ -31,7 +31,7 @@ function handleClick() {
       </div>
       <div class="w-full md:w-1/2 md:flex md:items-center md:justify-end">
         <NuxtLink :to="buttonLink">
-          <LuiButton @click="lockScroll" color="danger" rounded="full" size="lg" tag="div">
+          <LuiButton @click="handleClick" color="danger" rounded="full" size="lg" tag="div">
             {{ buttonLabel }}
             <template #append>
               <i class="ri-arrow-right-up-line" />

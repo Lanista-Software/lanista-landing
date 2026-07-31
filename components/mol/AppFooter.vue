@@ -2,10 +2,11 @@
 const { locale } = useI18n();
 const localePath = useLocalePath();
 
+// Locale-keyed, no `watch`: /api/* is absent from the static build, so a
+// client-side refetch 404s and empties the footer. See pages/index.vue.
 const { data: layout } = await useAsyncData(
-  "layout",
-  () => $fetch("/api/layout", { query: { locale: locale.value } }),
-  { watch: [locale] }
+  `layout-${locale.value}`,
+  () => $fetch("/api/layout", { query: { locale: locale.value } })
 );
 
 const servicePages = computed(() => layout.value?.servicePages || []);

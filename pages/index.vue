@@ -15,10 +15,12 @@ const { locale } = useI18n();
 const localePath = useLocalePath();
 
 // All homepage content for the active locale, fetched server-side from Contentrain.
+// The key carries the locale and there is deliberately no `watch`: /api/* does not
+// exist in the static build, so re-running the fetch on the client 404s and wipes
+// the page. Each prerendered route ships its own locale's data in _payload.json.
 const { data } = await useAsyncData(
-  "home",
-  () => $fetch("/api/home", { query: { locale: locale.value } }),
-  { watch: [locale] }
+  `home-${locale.value}`,
+  () => $fetch("/api/home", { query: { locale: locale.value } })
 );
 
 // Content stores bare hashes ("#contact"). Anchoring them to the localized home
