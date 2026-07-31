@@ -1,54 +1,54 @@
 <script setup lang="ts">
-import useScrollLock from '~/composables/scrollLock';
+import useScrollLock from '~/composables/scrollLock'
 
 export type TabItem = {
-  ID: string;
-  createdAt: string;
-  updatedAt: string;
-  category: string;
-  title: string;
-  description: string;
-  image: string;
-  status: string;
-  link: string;
-  scheduled: boolean;
-};
+  ID: string
+  createdAt: string
+  updatedAt: string
+  category: string
+  title: string
+  description: string
+  image: string
+  status: string
+  link: string
+  scheduled: boolean
+}
 export type TWorkCategory = {
-  ID: string;
-  createdAt: string;
-  updatedAt: string;
-  category: string;
-  status: string;
-  scheduled: boolean;
-  order: number;
-};
+  ID: string
+  createdAt: string
+  updatedAt: string
+  category: string
+  status: string
+  scheduled: boolean
+  order: number
+}
 export type TabSectionProps = {
-  items: TabItem[];
-  title: string;
-  description: string;
-  categories: TWorkCategory[];
+  items: TabItem[]
+  title: string
+  description: string
+  categories: TWorkCategory[]
   button?: {
-    text: string;
-    link: string;
-  };
-};
-const {lockScroll} = useScrollLock();
-const {locale} = useI18n();
-const activeIndex = ref(0);
-const props = defineProps<TabSectionProps>();
+    text: string
+    link: string
+  }
+}
+const props = defineProps<TabSectionProps>()
+const { lockScroll } = useScrollLock()
+const { locale } = useI18n()
+const activeIndex = ref(0)
 const filteredCategories = computed(() => {
   const categories = props.items.reduce((acc: TWorkCategory[], item) => {
-    const categoryObject = getRelationalFields(props.categories, item.category);
-    if (!acc.some((x) => x.ID === item.category) && categoryObject) {
-      acc.push(categoryObject);
+    const categoryObject = getRelationalFields(props.categories, item.category)
+    if (!acc.some(x => x.ID === item.category) && categoryObject) {
+      acc.push(categoryObject)
     }
-    return acc;
-  }, []);
-  const categoriesSorted = categories.sort((a, b) => a.order - b.order);
-  return categoriesSorted;
-});
+    return acc
+  }, [])
+  const categoriesSorted = categories.sort((a, b) => a.order - b.order)
+  return categoriesSorted
+})
 function getTabItems(category: string) {
-  return props.items.filter((x) => x.category === category);
+  return props.items.filter(x => x.category === category)
 }
 </script>
 
@@ -61,8 +61,8 @@ function getTabItems(category: string) {
           <LuiTabButtons align-tabs="center">
             <LuiTabButton
               v-for="(category, index) in filteredCategories"
-              :key="category.ID"
               :id="category.ID"
+              :key="category.ID"
               @click="activeIndex = index"
             >
               {{ category.category }}
@@ -71,19 +71,19 @@ function getTabItems(category: string) {
           <LuiTabPanels>
             <LuiTabPanel
               v-for="category in filteredCategories"
-              :key="category.ID"
               :id="category.ID"
+              :key="category.ID"
             >
               <ul>
                 <li
                   v-for="item in getTabItems(category.ID)"
                   :key="item.ID"
-                  class="flex flex-col md:flex-row space-y-4 md:space-y-0 items-start md:items-center justify-between py-5 border-b border-border-color md:space-x-8 space-x-0 last:border-b-0"
+                  class="flex flex-col items-start justify-between space-x-0 space-y-4 border-b border-border-color py-5 last:border-b-0 md:flex-row md:items-center md:space-x-8 md:space-y-0"
                 >
-                  <div class="w-48 h-20">
+                  <div class="h-20 w-48">
                     <NuxtImg
                       loading="lazy"
-                      class="w-full h-full rounded-xl object-cover"
+                      class="size-full rounded-xl object-cover"
                       :src="getStaticImagePath(item.image)"
                       :alt="locale === 'en' ? `Technology logo` : `Teknoloji logosu`"
                       placeholder
@@ -93,10 +93,12 @@ function getTabItems(category: string) {
                     />
                   </div>
                   <div class="flex-1">
-                    <p class="text-sm text-body-text">{{ item.description }}</p>
+                    <p class="text-sm text-body-text">
+                      {{ item.description }}
+                    </p>
                   </div>
                   <div class="p-2">
-                    <NuxtLink :to="item.link" class="text-xl text-muted-text p-2" :aria-label="locale === 'en' ? `For more details ${item.link}` : `Daha fazla detay icin ${item.link}`">
+                    <NuxtLink :to="item.link" class="p-2 text-xl text-muted-text" :aria-label="locale === 'en' ? `For more details ${item.link}` : `Daha fazla detay icin ${item.link}`">
                       <i class="ri-arrow-right-up-line"></i>
                     </NuxtLink>
                   </div>
@@ -111,8 +113,8 @@ function getTabItems(category: string) {
     <template #button-slot>
       <slot name="button">
         <NuxtLink :to="button?.link">
-          <LuiButton @click="lockScroll" rounded="full" color="danger"
-            >{{ button?.text }}
+          <LuiButton rounded="full" color="danger" @click="lockScroll">
+            {{ button?.text }}
             <template #append>
               <i class="ri-arrow-right-up-line"></i>
             </template>

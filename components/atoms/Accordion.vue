@@ -22,7 +22,7 @@ function toogleVisibility() {
 </script>
 
 <template>
-  <div class="accordion-wrapper flex flex-col p-8 leading-none bg-white justify-center rounded-2xl " :class="border ? 'border border-border-color' : ''">
+  <div class="accordion-wrapper flex flex-col justify-center rounded-2xl bg-white p-8 leading-none " :class="border ? 'border border-border-color' : ''">
     <div class="flex items-center">
       <button
         class="w-full"
@@ -30,15 +30,14 @@ function toogleVisibility() {
         :aria-controls="isActive ? panelId : ''"
         @click="toogleVisibility"
       >
-        <div class="flex items-center text-left justify-between">
+        <div class="flex items-center justify-between text-left">
           <slot :id="titleId" name="title">
-            <h4 :id="titleId" class="text-heading-text font-space text-xl font-medium">
+            <h4 :id="titleId" class="font-space text-xl font-medium text-heading-text">
               {{ title }}
             </h4>
           </slot>
-          
 
-          <i class="text-disabled-text text-xl leading-none" :class="isActive ? 'ri-subtract-line' : 'ri-add-line'" />
+          <i class="text-xl leading-none text-disabled-text" :class="isActive ? 'ri-subtract-line' : 'ri-add-line'" />
         </div>
       </button>
     </div>

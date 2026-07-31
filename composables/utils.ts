@@ -1,13 +1,15 @@
 import assets from './assets.json'
 
 export function getStaticImagePath(path: string): string {
-  if (!path) return ''
+  if (!path)
+    return ''
   // Content stores web paths (e.g. "/foo.svg"); tolerate a legacy "public/" prefix too.
   return path.replace('public/', '')
 }
 
 export function getImageAlt(path: string): string {
-  if (!path) return ''
+  if (!path)
+    return ''
   const file = path.replace(/^\//, '').replace(/^public\//, '')
   const asset = assets.find(a => a.path.replace(/^public\//, '') === file)
   return asset?.alt || ''

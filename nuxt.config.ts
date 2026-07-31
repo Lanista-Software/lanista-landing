@@ -31,18 +31,18 @@ export default defineNuxtConfig({
     // sitemap URLs aligned with the canonical (trailing-slash) form.
     autoLastmod: true,
   },
-  scripts:{
-    registry:{
-      googleAnalytics:{
-        id: 'G-T48ZEC3WT9'
-      }
-    }
+  scripts: {
+    registry: {
+      googleAnalytics: {
+        id: 'G-T48ZEC3WT9',
+      },
+    },
   },
   css: ['remixicon/fonts/remixicon.css'],
   googleFonts: {
     families: {
-      Inter: [400, 500, 600, 700],
-      "Space Grotesk": [400, 500, 600, 700],
+      'Inter': [400, 500, 600, 700],
+      'Space Grotesk': [400, 500, 600, 700],
     },
   },
   image: {
@@ -74,14 +74,14 @@ export default defineNuxtConfig({
       // eslint.config.mjs; standalone would register a second `import` plugin
       // instance and ESLint refuses to load both.
       standalone: false,
-    }
+    },
   },
   runtimeConfig: {
     public: {
       firebaseApiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY || '',
     },
   },
-  //add scroll behavior
+  // add scroll behavior
   router: {
     options: {
       // hashMode: true,

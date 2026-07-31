@@ -64,19 +64,19 @@ useSeo({
   <div v-if="page">
     <!-- Hero Section -->
     <section class="bg-gradient-to-b from-primary-50 to-white">
-      <AtomsContainer class="pt-32 pb-16 lg:pb-24">
+      <AtomsContainer class="pb-16 pt-32 lg:pb-24">
         <div class="max-w-4xl">
           <NuxtLink
             :to="`${localePath('/')}#services`"
-            class="inline-flex items-center text-sm text-primary-600 hover:text-primary-700 mb-6 font-medium"
+            class="mb-6 inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700"
           >
             <i class="ri-arrow-left-line mr-1" />
             {{ isEn ? 'All Services' : 'Tüm Hizmetler' }}
           </NuxtLink>
-          <h1 class="text-3xl lg:text-5xl font-bold font-space text-heading-text leading-tight">
+          <h1 class="font-space text-3xl font-bold leading-tight text-heading-text lg:text-5xl">
             {{ page.title }}
           </h1>
-          <p class="mt-6 text-lg lg:text-xl text-body font-inter leading-relaxed">
+          <p class="text-body mt-6 font-inter text-lg leading-relaxed lg:text-xl">
             {{ page.heroDescription }}
           </p>
         </div>
@@ -87,10 +87,10 @@ useSeo({
     <section class="py-16 lg:py-20">
       <AtomsContainer>
         <div class="max-w-4xl">
-          <h2 class="text-2xl lg:text-3xl font-bold font-space text-heading-text mb-6">
+          <h2 class="mb-6 font-space text-2xl font-bold text-heading-text lg:text-3xl">
             {{ isEn ? 'The Challenge' : 'Zorluk' }}
           </h2>
-          <p class="text-body font-inter leading-relaxed whitespace-pre-line">
+          <p class="text-body whitespace-pre-line font-inter leading-relaxed">
             {{ page.challengeContent }}
           </p>
         </div>
@@ -98,13 +98,13 @@ useSeo({
     </section>
 
     <!-- Approach Section -->
-    <section class="py-16 lg:py-20 bg-secondary-50">
+    <section class="bg-secondary-50 py-16 lg:py-20">
       <AtomsContainer>
         <div class="max-w-4xl">
-          <h2 class="text-2xl lg:text-3xl font-bold font-space text-heading-text mb-6">
+          <h2 class="mb-6 font-space text-2xl font-bold text-heading-text lg:text-3xl">
             {{ isEn ? 'Our Approach' : 'Yaklaşımımız' }}
           </h2>
-          <p class="text-body font-inter leading-relaxed whitespace-pre-line">
+          <p class="text-body whitespace-pre-line font-inter leading-relaxed">
             {{ page.approachContent }}
           </p>
         </div>
@@ -115,7 +115,7 @@ useSeo({
     <section class="py-16 lg:py-20">
       <AtomsContainer>
         <div class="max-w-4xl">
-          <h2 class="text-2xl lg:text-3xl font-bold font-space text-heading-text mb-6">
+          <h2 class="mb-6 font-space text-2xl font-bold text-heading-text lg:text-3xl">
             {{ isEn ? 'Technologies We Use' : 'Kullandığımız Teknolojiler' }}
           </h2>
           <div class="flex flex-wrap gap-3">
@@ -135,13 +135,13 @@ useSeo({
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-16 lg:py-20 bg-secondary-50">
+    <section class="bg-secondary-50 py-16 lg:py-20">
       <AtomsContainer>
         <div class="max-w-4xl">
-          <h2 class="text-2xl lg:text-3xl font-bold font-space text-heading-text mb-6">
+          <h2 class="mb-6 font-space text-2xl font-bold text-heading-text lg:text-3xl">
             {{ isEn ? 'Key Benefits' : 'Temel Avantajlar' }}
           </h2>
-          <p class="text-body font-inter leading-relaxed whitespace-pre-line">
+          <p class="text-body whitespace-pre-line font-inter leading-relaxed">
             {{ page.benefitsContent }}
           </p>
         </div>
@@ -152,22 +152,22 @@ useSeo({
     <section v-if="relatedWorks.length" class="py-16 lg:py-20">
       <AtomsContainer>
         <div class="max-w-4xl">
-          <h2 class="text-2xl lg:text-3xl font-bold font-space text-heading-text mb-8">
+          <h2 class="mb-8 font-space text-2xl font-bold text-heading-text lg:text-3xl">
             {{ isEn ? 'Related Projects' : 'İlgili Projeler' }}
           </h2>
           <div class="space-y-6">
             <div
               v-for="work in relatedWorks"
               :key="work.ID"
-              class="border border-border-color rounded-2xl p-6 lg:p-8"
+              class="rounded-2xl border border-border-color p-6 lg:p-8"
             >
               <LuiTag color="primary" filter="lighten" size="lg" rounded="full" class="mb-3">
                 {{ work.categoryName }}
               </LuiTag>
-              <h3 class="text-xl font-bold font-space text-heading-text mb-2">
+              <h3 class="mb-2 font-space text-xl font-bold text-heading-text">
                 {{ work.title }}
               </h3>
-              <p class="text-body font-inter leading-relaxed line-clamp-3">
+              <p class="text-body line-clamp-3 font-inter leading-relaxed">
                 {{ work.description }}
               </p>
               <NuxtLink
@@ -175,7 +175,7 @@ useSeo({
                 :to="work.link"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center mt-4 text-primary-600 hover:text-primary-700 font-medium text-sm"
+                class="mt-4 inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700"
               >
                 {{ isEn ? 'View project' : 'Projeyi görüntüle' }}
                 <i class="ri-arrow-right-up-line ml-1" />
@@ -187,23 +187,23 @@ useSeo({
     </section>
 
     <!-- Other Services Section -->
-    <section class="py-16 lg:py-20 bg-secondary-50">
+    <section class="bg-secondary-50 py-16 lg:py-20">
       <AtomsContainer>
         <div class="max-w-4xl">
-          <h2 class="text-2xl lg:text-3xl font-bold font-space text-heading-text mb-8">
+          <h2 class="mb-8 font-space text-2xl font-bold text-heading-text lg:text-3xl">
             {{ isEn ? 'Explore Our Other Services' : 'Diğer Hizmetlerimizi Keşfedin' }}
           </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <NuxtLink
               v-for="otherPage in allPages"
               :key="otherPage.ID"
               :to="localePath(`/services/${otherPage.slug}`)"
-              class="border border-border-color rounded-xl p-5 bg-white hover:shadow-md transition-shadow"
+              class="rounded-xl border border-border-color bg-white p-5 transition-shadow hover:shadow-md"
             >
-              <h3 class="text-lg font-bold font-space text-heading-text">
+              <h3 class="font-space text-lg font-bold text-heading-text">
                 {{ otherPage.title }}
               </h3>
-              <p class="text-sm text-body mt-2 line-clamp-2">
+              <p class="text-body mt-2 line-clamp-2 text-sm">
                 {{ otherPage.heroDescription }}
               </p>
             </NuxtLink>
@@ -215,11 +215,11 @@ useSeo({
     <!-- CTA Section -->
     <section class="py-16 lg:py-24">
       <AtomsContainer>
-        <div class="max-w-4xl text-center mx-auto">
-          <h2 class="text-2xl lg:text-3xl font-bold font-space text-heading-text mb-4">
+        <div class="mx-auto max-w-4xl text-center">
+          <h2 class="mb-4 font-space text-2xl font-bold text-heading-text lg:text-3xl">
             {{ isEn ? "Let's Build Together" : 'Birlikte İnşa Edelim' }}
           </h2>
-          <p class="text-body font-inter mb-8">
+          <p class="text-body mb-8 font-inter">
             {{ isEn ? 'Ready to discuss your project? We\'d love to hear about your requirements.' : 'Projenizi tartışmaya hazır mısınız? Gereksinimlerinizi duymak isteriz.' }}
           </p>
           <NuxtLink :to="`${localePath('/')}#contact`">

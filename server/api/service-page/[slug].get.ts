@@ -6,7 +6,8 @@ export default defineEventHandler((event) => {
   const slug = getRouterParam(event, 'slug') || ''
 
   const page = query('service-pages').locale(locale).where('slug', slug).first()
-  if (!page) throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
+  if (!page)
+    throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
 
   const allPages = query('service-pages')
     .locale(locale)

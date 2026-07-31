@@ -1,47 +1,50 @@
 <script setup lang="ts">
-import useScrollLock from '~/composables/scrollLock';
+import useScrollLock from '~/composables/scrollLock'
 
-const { lockScroll } = useScrollLock();
-const proxy = useScriptGoogleAnalytics();
-const localePath = useLocalePath();
+defineProps<{
+  item: WorksCardProps
+}>()
+const { lockScroll } = useScrollLock()
+const proxy = useScriptGoogleAnalytics()
+const localePath = useLocalePath()
 export interface WorksCardProps {
-  ID?: string;
-  createdAt?: string;
-  updatedAt?: string;
-  title: string;
-  image?: string;
-  description?: string;
-  category?: string;
-  link?: string;
-  slug?: string;
-  status?: string;
-  scheduled?: boolean;
-  order?: number;
+  ID?: string
+  createdAt?: string
+  updatedAt?: string
+  title: string
+  image?: string
+  description?: string
+  category?: string
+  link?: string
+  slug?: string
+  status?: string
+  scheduled?: boolean
+  order?: number
 }
 function handleClick() {
-    lockScroll();
-    proxy.dataLayer.push({ event: 'button_clicked', button_name: 'see_live_project' });
+  lockScroll()
+  proxy.dataLayer.push({ event: 'button_clicked', button_name: 'see_live_project' })
 }
-defineProps<{
-  item: WorksCardProps;
-}>();
 </script>
+
 <template>
   <MolCardAnimation>
     <div
-      class="border border-border-color rounded-2xl shadow-sm space-y-6 lg:space-x-12 lg:flex lg:justify-between lg:items-center p-6 lg:p-12 2xl:p-20"
+      class="space-y-6 rounded-2xl border border-border-color p-6 shadow-sm lg:flex lg:items-center lg:justify-between lg:space-x-12 lg:p-12 2xl:p-20"
     >
       <div class="space-y-4 lg:w-8/12">
-        <LuiTag color="primary" filter="lighten" size="xl" rounded="full">{{
-          item.category
-        }}</LuiTag>
-        <h2 class="text-xl font-bold font-space text-heading-text">
+        <LuiTag color="primary" filter="lighten" size="xl" rounded="full">
+          {{
+            item.category
+          }}
+        </LuiTag>
+        <h2 class="font-space text-xl font-bold text-heading-text">
           {{ item.title }}
         </h2>
-        <p class="text-body font-normal font-inter mt-2">
+        <p class="text-body mt-2 font-inter font-normal">
           {{ item.description }}
         </p>
-        <div class="pt-2 flex flex-wrap items-center gap-3">
+        <div class="flex flex-wrap items-center gap-3 pt-2">
           <NuxtLink v-if="item.slug" :to="localePath(`/works/${item.slug}`)">
             <LuiButton color="primary" rounded filter="darken">
               {{ $i18n.locale === 'tr' ? 'Vaka çalışması' : 'View case study' }}
@@ -68,10 +71,10 @@ defineProps<{
       </div>
       <div
         v-if="item.image"
-        class="w-full h-auto overflow-hidden p-4"
+        class="h-auto w-full overflow-hidden p-4"
       >
         <NuxtImg
-          class="w-full h-full object-cover aspect-[2/1]"
+          class="aspect-[2/1] size-full object-cover"
           :src="getStaticImagePath(item.image)"
           :alt="getImageAlt(item.image)"
           placeholder

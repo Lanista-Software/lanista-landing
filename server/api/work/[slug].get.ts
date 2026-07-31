@@ -7,7 +7,8 @@ export default defineEventHandler((event) => {
 
   const all = query('workitems').locale(locale).include('category').sort('order', 'asc').all()
   const work = all.find(w => w.slug === slug)
-  if (!work) throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
+  if (!work)
+    throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
 
   const catId = typeof work.category === 'object' && work.category ? work.category.id : undefined
   const categoryName = typeof work.category === 'object' && work.category ? work.category.category : ''

@@ -1,87 +1,88 @@
 <script setup lang="ts">
-import useScrollLock from "~/composables/scrollLock";
-import type { MenuItem } from "./AppNav.vue";
+import type { MenuItem } from './AppNav.vue'
+import useScrollLock from '~/composables/scrollLock'
+
 const menuItems: MenuItem[] = [
-  { label: "home", path: "#home" },
-  { label: "services", path: "#services" },
-  { label: "process", path: "#process" },
-  { label: "technologies", path: "#technologies" },
-  { label: "works", path: "/works" },
-];
-const { lockScroll } = useScrollLock();
-const { locale } = useI18n();
-const localePath = useLocalePath();
-const proxy = useScriptGoogleAnalytics();
-const isMenuOpen = ref(false);
-const isHeaderFixed = ref(false); // Header fixed durumunu takip eden state
+  { label: 'home', path: '#home' },
+  { label: 'services', path: '#services' },
+  { label: 'process', path: '#process' },
+  { label: 'technologies', path: '#technologies' },
+  { label: 'works', path: '/works' },
+]
+const { lockScroll } = useScrollLock()
+const { locale } = useI18n()
+const localePath = useLocalePath()
+const proxy = useScriptGoogleAnalytics()
+const isMenuOpen = ref(false)
+const isHeaderFixed = ref(false) // Header fixed durumunu takip eden state
 
 function toggleMenu() {
-  isMenuOpen.value = !isMenuOpen.value;
+  isMenuOpen.value = !isMenuOpen.value
 }
 // Scroll eventini dinlemek için
 function handleScroll() {
   // Eğer scroll 90px üzerindeyse header'ı fixed yap
-  isHeaderFixed.value = window.scrollY > 90;
+  isHeaderFixed.value = window.scrollY > 90
 }
 // The switcher itself is a <NuxtLink>; navigation already changes the locale,
 // so this only reports the interaction.
 function handleLang(lang: string) {
-  proxy.dataLayer.push({ event: "language_changed", language: lang });
+  proxy.dataLayer.push({ event: 'language_changed', language: lang })
 }
 
 watch(
   () => isMenuOpen.value,
   (val) => {
     if (val) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'hidden'
     }
-  }
-);
+    else {
+      document.body.style.overflow = 'auto'
+    }
+  },
+)
 onMounted(() => {
   // Scroll event listener ekliyoruz
-  window.addEventListener("scroll", handleScroll);
-});
+  window.addEventListener('scroll', handleScroll)
+})
 function handleClick() {
-  lockScroll();
-  proxy.dataLayer.push({ event: "button_clicked", button_name: "contact" });
+  lockScroll()
+  proxy.dataLayer.push({ event: 'button_clicked', button_name: 'contact' })
 }
 onUnmounted(() => {
   // Scroll event listener'ı kaldırıyoruz";
-  window.removeEventListener("scroll", handleScroll);
-  document.body.style.overflow = "";
-});
+  window.removeEventListener('scroll', handleScroll)
+  document.body.style.overflow = ''
+})
 </script>
 
 <template>
   <header :class="{ 'pt-[90px]': false }">
     <div
-      :class="[
+      class="bg-white py-6 transition-all duration-500 ease-in-out" :class="[
         { 'fixed-header': isHeaderFixed },
-        'bg-white py-6 transition-all duration-500 ease-in-out',
       ]"
     >
       <AtomsContainer>
         <div class="flex items-center justify-between">
-          <NuxtLink :to="localePath('/')" class="flex w-28 md:w-36 items-center space-x-2">
+          <NuxtLink :to="localePath('/')" class="flex w-28 items-center space-x-2 md:w-36">
             <AtomsLogo />
           </NuxtLink>
-          <div class="flex-1 items-center justify-center hidden lg:flex">
-            <MolAppNav direction="horizontal" :menuItems="menuItems" />
+          <div class="hidden flex-1 items-center justify-center lg:flex">
+            <MolAppNav direction="horizontal" :menu-items="menuItems" />
           </div>
           <div class="flex items-center space-x-4">
             <MolLangSelect
-              @language-selected="handleLang"
               :active-lang="locale"
+              @language-selected="handleLang"
             />
             <LuiButton
               class="lg:hidden"
               filter="darken"
               size="xl"
               variant="link"
-              @click="toggleMenu"
               aria-label="Menu"
+              @click="toggleMenu"
             >
               <template #icon>
                 <i class="ri-menu-line"></i>
@@ -89,11 +90,11 @@ onUnmounted(() => {
             </LuiButton>
             <NuxtLink class="hidden md:block" :to="`${localePath('/')}#contact`">
               <LuiButton
-                @click="handleClick"
                 block
                 color="danger"
                 rounded="full"
                 tag="div"
+                @click="handleClick"
               >
                 Contact
               </LuiButton>
@@ -105,37 +106,37 @@ onUnmounted(() => {
     </div>
     <div>
       <LuiSidebar
-        class="lg:hidden bg-white"
+        class="bg-white lg:hidden"
         :show="isMenuOpen"
         @close="isMenuOpen = false"
       >
         <div>
           <div class="flex items-center justify-between">
-            <NuxtLink :to="localePath('/')" class="flex w-28 md:w-36 items-center space-x-2">
+            <NuxtLink :to="localePath('/')" class="flex w-28 items-center space-x-2 md:w-36">
               <AtomsLogo />
             </NuxtLink>
-            <div class="flex items-center space-x-4 z-50">
+            <div class="z-50 flex items-center space-x-4">
               <MolLangSelect
-                @language-selected="handleLang"
                 :active-lang="locale"
+                @language-selected="handleLang"
               />
             </div>
           </div>
           <div class="pt-6">
             <MolAppNav
               direction="vertical"
-              :menuItems="menuItems"
+              :menu-items="menuItems"
               @clicked="toggleMenu"
             />
             <div class="pt-8">
-              <NuxtLink @click="toggleMenu" :to="`${localePath('/')}#contact`">
+              <NuxtLink :to="`${localePath('/')}#contact`" @click="toggleMenu">
                 <LuiButton
-                  @click="handleClick"
                   block
-                  class="items-center justify-center flex"
+                  class="flex items-center justify-center"
                   color="danger"
                   rounded="full"
                   tag="div"
+                  @click="handleClick"
                 >
                   Contact
                 </LuiButton>

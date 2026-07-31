@@ -57,12 +57,12 @@ useSeo({
 <template>
   <div>
     <section class="bg-gradient-to-b from-primary-50 to-white">
-      <AtomsContainer class="pt-32 pb-12 lg:pb-16">
+      <AtomsContainer class="pb-12 pt-32 lg:pb-16">
         <div class="max-w-3xl">
-          <h1 class="text-3xl lg:text-5xl font-bold font-space text-heading-text leading-tight">
+          <h1 class="font-space text-3xl font-bold leading-tight text-heading-text lg:text-5xl">
             {{ title }}
           </h1>
-          <p class="mt-5 text-lg text-body font-inter leading-relaxed">
+          <p class="text-body mt-5 font-inter text-lg leading-relaxed">
             {{ description }}
           </p>
         </div>
@@ -71,16 +71,16 @@ useSeo({
 
     <section class="py-12 lg:py-16">
       <AtomsContainer>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <NuxtLink
             v-for="work in works"
             :key="work.ID"
             :to="localePath(`/works/${work.slug}`)"
-            class="group border border-border-color rounded-2xl overflow-hidden bg-white hover:shadow-md transition-shadow flex flex-col"
+            class="group flex flex-col overflow-hidden rounded-2xl border border-border-color bg-white transition-shadow hover:shadow-md"
           >
-            <div v-if="work.image" class="overflow-hidden aspect-[2/1] bg-secondary-50">
+            <div v-if="work.image" class="aspect-[2/1] overflow-hidden bg-secondary-50">
               <NuxtImg
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                class="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 :src="getStaticImagePath(work.image)"
                 :alt="getImageAlt(work.image) || work.title"
                 placeholder
@@ -90,19 +90,19 @@ useSeo({
                 height="220"
               />
             </div>
-            <div class="p-5 flex flex-col flex-1">
+            <div class="flex flex-1 flex-col p-5">
               <LuiTag v-if="work.categoryName" color="primary" filter="lighten" size="sm" rounded="full" class="mb-3 self-start">
                 {{ work.categoryName }}
               </LuiTag>
-              <h2 class="text-lg font-bold font-space text-heading-text">
+              <h2 class="font-space text-lg font-bold text-heading-text">
                 {{ work.title }}
               </h2>
-              <p class="text-sm text-body mt-2 line-clamp-3 flex-1">
+              <p class="text-body mt-2 line-clamp-3 flex-1 text-sm">
                 {{ work.description }}
               </p>
-              <span class="inline-flex items-center mt-4 text-sm text-primary-600 font-medium">
+              <span class="mt-4 inline-flex items-center text-sm font-medium text-primary-600">
                 {{ isEn ? 'View case study' : 'Vaka çalışması' }}
-                <i class="ri-arrow-right-line ml-1 group-hover:translate-x-1 transition-transform" />
+                <i class="ri-arrow-right-line ml-1 transition-transform group-hover:translate-x-1" />
               </span>
             </div>
           </NuxtLink>
@@ -110,10 +110,10 @@ useSeo({
       </AtomsContainer>
     </section>
 
-    <section class="py-16 lg:py-20 bg-secondary-50">
+    <section class="bg-secondary-50 py-16 lg:py-20">
       <AtomsContainer>
-        <div class="max-w-3xl text-center mx-auto">
-          <h2 class="text-2xl lg:text-3xl font-bold font-space text-heading-text mb-4">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="mb-4 font-space text-2xl font-bold text-heading-text lg:text-3xl">
             {{ isEn ? 'Have a project in mind?' : 'Aklınızda bir proje mi var?' }}
           </h2>
           <NuxtLink :to="`${localePath('/')}#contact`">

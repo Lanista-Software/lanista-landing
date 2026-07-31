@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import useScrollLock from "~/composables/scrollLock";
+import useScrollLock from '~/composables/scrollLock'
 
 defineProps<{
-  hero: Record<string, any>;
-  references: { ID?: string; id?: string; logo: string }[];
-}>();
+  hero: Record<string, any>
+  references: { ID?: string, id?: string, logo: string }[]
+}>()
 
-const { lockScroll } = useScrollLock();
-const proxy = useScriptGoogleAnalytics();
+const { lockScroll } = useScrollLock()
+const proxy = useScriptGoogleAnalytics()
 function handleClick() {
-  lockScroll();
-  proxy.dataLayer.push({ event: "button_clicked", button_name: "hero_button" });
+  lockScroll()
+  proxy.dataLayer.push({ event: 'button_clicked', button_name: 'hero_button' })
 }
 </script>
 
@@ -18,20 +18,20 @@ function handleClick() {
   <section v-if="hero && hero.title" class="hero-section text-center">
     <div>
       <LuiTag color="secondary" filter="lighten" size="lg" rounded="full">
-        {{ hero.subtitle }}</LuiTag
-      >
+        {{ hero.subtitle }}
+      </LuiTag>
     </div>
     <h1
-      class="text-heading-text text-4xl lg:text-5xl xl:text-6xl font-space mt-8 max-content font-semibold"
+      class="max-content mt-8 font-space text-4xl font-semibold text-heading-text lg:text-5xl xl:text-6xl"
     >
       {{ hero.title }}
     </h1>
-    <p class="text-body-text font-normal text-lg md:text-xl mt-6 max-content">
+    <p class="max-content mt-6 text-lg font-normal text-body-text md:text-xl">
       {{ hero.description }}
     </p>
-    <div class="pt-8 flex items-center justify-center max-content">
+    <div class="max-content flex items-center justify-center pt-8">
       <NuxtLink :to="hero.buttonlink">
-        <LuiButton @click="handleClick" rounded="full" color="danger">
+        <LuiButton rounded="full" color="danger" @click="handleClick">
           {{ hero.buttontext }}
           <template #append>
             <i class="ri-arrow-right-up-line"></i>
@@ -40,14 +40,14 @@ function handleClick() {
       </NuxtLink>
     </div>
     <div
-      class="flex items-center justify-evenly pt-14 lg:pt-20 flex-wrap gap-4 gap-y-8 max-w-screen-md mx-auto w-full"
+      class="mx-auto flex w-full max-w-screen-md flex-wrap items-center justify-evenly gap-4 gap-y-8 pt-14 lg:pt-20"
     >
       <NuxtImg
         v-for="i in references"
         :key="i.ID || i.id"
         :src="getStaticImagePath(i.logo)"
         :alt="getImageAlt(i.logo)"
-        class="w-auto h-7"
+        class="h-7 w-auto"
         loading="lazy"
         sizes="xs:100vw sm:50vw md:33vw"
         height="30"
