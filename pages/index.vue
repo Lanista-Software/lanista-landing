@@ -148,7 +148,11 @@ useSeo({
   description: () => clampDescription(meta.value.description),
   ogTitle: () => meta.value.ogTitle || meta.value.title || "Lanista Software",
   ogDescription: () => clampDescription(meta.value.ogDescription || meta.value.description),
-  image: () => meta.value.ogImage,
+  ogCard: () => ({
+    label: locale.value === "tr" ? "Yazılım Geliştirme" : "Software Development",
+    title: meta.value.ogTitle || meta.value.title || "Lanista Software",
+    description: clampDescription(meta.value.ogDescription || meta.value.description, 130),
+  }),
   jsonLd: () => graph.value,
 });
 function handleSectionViewed(id: string) {

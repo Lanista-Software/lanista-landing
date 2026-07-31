@@ -22,8 +22,11 @@ useSeo({
   title: () => `${title.value} | Lanista Software`,
   description: () => clampDescription(description.value),
   ogTitle: () => title.value,
-  // First case study cover doubles as the listing's share image.
-  image: () => (works.value || []).find(w => w.image)?.image,
+  ogCard: () => ({
+    label: isEn.value ? 'Case Studies' : 'Vaka Çalışmaları',
+    title: title.value,
+    description: description.value,
+  }),
   jsonLd: () => [
     {
       '@context': 'https://schema.org',

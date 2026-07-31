@@ -15,7 +15,16 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/scripts',
     '@nuxtjs/sitemap',
+    'nuxt-og-image',
   ],
+  ogImage: {
+    // Case study covers are SVG logos, which no social scraper renders, so every
+    // page fell back to one shared brand card. Generate a real 1200x630 PNG per
+    // page at prerender time instead.
+    defaults: { component: 'OgCard', width: 1200, height: 630 },
+    // Only the fonts the card template uses.
+    fonts: ['Space+Grotesk:700', 'Inter:400'],
+  },
   sitemap: {
     // Routes (incl. dynamic service pages) and per-locale hreflang are auto-discovered
     // by @nuxtjs/sitemap via the @nuxtjs/i18n integration. `site.trailingSlash` keeps

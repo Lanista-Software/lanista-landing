@@ -34,7 +34,11 @@ useSeo({
   description: () => metaDescription.value,
   ogTitle: () => work.value?.title ?? pageTitle.value,
   type: 'article',
-  image: () => work.value?.image,
+  ogCard: () => ({
+    label: work.value?.categoryName || (isEn.value ? 'Case Study' : 'Vaka Çalışması'),
+    title: work.value?.title ?? slug,
+    description: clampDescription(work.value?.description, 130),
+  }),
   jsonLd: () => [
     {
       '@context': 'https://schema.org',

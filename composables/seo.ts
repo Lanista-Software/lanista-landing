@@ -17,7 +17,8 @@ export function absoluteUrl(path: string, locale = 'en'): string {
 
 /** Site-relative media paths become absolute; already-absolute URLs pass through. */
 export function absoluteAsset(src?: string | null): string {
-  if (!src) return DEFAULT_OG_IMAGE
+  if (!src)
+    return DEFAULT_OG_IMAGE
   return /^https?:\/\//.test(src) ? src : `${SITE_URL}${src.startsWith('/') ? '' : '/'}${src}`
 }
 
@@ -33,7 +34,8 @@ function ogSafeImage(src?: string | null): string {
 /** Collapse whitespace and cut on a word boundary so SERP snippets are not mid-word. */
 export function clampDescription(text?: string | null, max = 155): string {
   const clean = String(text || '').replace(/\s+/g, ' ').trim()
-  if (clean.length <= max) return clean
+  if (clean.length <= max)
+    return clean
   const cut = clean.slice(0, max - 1)
   return `${cut.slice(0, cut.lastIndexOf(' ')) || cut}…`
 }
@@ -51,6 +53,11 @@ export interface SeoOptions {
   path: () => string
   /** Site-relative or absolute; falls back to the shared brand OG image. */
   image?: () => string | undefined | null
+  /**
+   * Render a branded 1200x630 card for this page instead of using `image`.
+   * nuxt-og-image then owns og:image / twitter:image, so this helper skips them.
+   */
+  ogCard?: () => { title: string, description?: string, label?: string }
   type?: 'website' | 'article'
   ogTitle?: () => string
   ogDescription?: () => string
@@ -76,6 +83,24 @@ export function useSeo(options: SeoOptions) {
   const ogDescription = () => (options.ogDescription ?? options.description)()
   const image = () => ogSafeImage(options.image?.())
 
+  // When a card is generated, nuxt-og-image injects og:image/twitter:image with
+  // the right dimensions and cache-busting URL, so we must not emit our own.
+  const generatesCard = Boolean(options.ogCard)
+  if (options.ogCard) {
+    const card = options.ogCard()
+    defineOgImage({
+      component: 'OgCard',
+      props: { title: card.title, description: card.description ?? '', label: card.label ?? '' },
+    })
+  }
+
+  const imageMeta = generatesCard
+    ? []
+    : [
+        { property: 'og:image', content: image },
+        { name: 'twitter:image', content: image },
+      ]
+
   useHead({
     htmlAttrs: { lang: locale },
     title: options.title,
@@ -98,12 +123,11 @@ export function useSeo(options: SeoOptions) {
       { property: 'og:url', content: () => canonical.value },
       { property: 'og:title', content: ogTitle },
       { property: 'og:description', content: ogDescription },
-      { property: 'og:image', content: image },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: TWITTER_SITE },
       { name: 'twitter:title', content: ogTitle },
       { name: 'twitter:description', content: ogDescription },
-      { name: 'twitter:image', content: image },
+      ...imageMeta,
     ],
     ...(options.jsonLd
       ? {

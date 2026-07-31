@@ -28,6 +28,11 @@ useSeo({
   path: () => `/services/${slug}`,
   title: () => page.value?.metaTitle ?? 'Lanista Software',
   description: () => clampDescription(page.value?.metaDescription),
+  ogCard: () => ({
+    label: isEn.value ? 'Service' : 'Hizmet',
+    title: page.value?.title ?? 'Lanista Software',
+    description: clampDescription(page.value?.heroDescription, 130),
+  }),
   jsonLd: () => [
     {
       '@context': 'https://schema.org',
