@@ -25,7 +25,7 @@ const footerData = {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <!-- Logo & Socials -->
         <div>
-          <NuxtLink to="/" class="flex w-28 md:w-36 items-center space-x-2 h-6 mb-4">
+          <NuxtLink :to="localePath('/')" class="flex w-28 md:w-36 items-center space-x-2 h-6 mb-4">
             <AtomsLogo />
           </NuxtLink>
           <div class="space-x-4">
@@ -67,7 +67,7 @@ const footerData = {
           </h3>
           <ul class="space-y-2">
             <li>
-              <NuxtLink to="/#services" class="text-sm text-body hover:text-primary-600 transition-colors">
+              <NuxtLink :to="`${localePath('/')}#services`" class="text-sm text-body hover:text-primary-600 transition-colors">
                 {{ locale === 'tr' ? 'Hizmetler' : 'Services' }}
               </NuxtLink>
             </li>
@@ -77,12 +77,12 @@ const footerData = {
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/#technologies" class="text-sm text-body hover:text-primary-600 transition-colors">
+              <NuxtLink :to="`${localePath('/')}#technologies`" class="text-sm text-body hover:text-primary-600 transition-colors">
                 {{ locale === 'tr' ? 'Teknolojiler' : 'Technologies' }}
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/#contact" class="text-sm text-body hover:text-primary-600 transition-colors">
+              <NuxtLink :to="`${localePath('/')}#contact`" class="text-sm text-body hover:text-primary-600 transition-colors">
                 {{ locale === 'tr' ? 'İletişim' : 'Contact' }}
               </NuxtLink>
             </li>

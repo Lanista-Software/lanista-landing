@@ -17,8 +17,10 @@ function handleClicked() {
 }
 const isHash = (path: string) => path.startsWith("#");
 // Hash items scroll within the homepage; route items (e.g. /works) are localized links.
+// Hashes are anchored to the *localized* homepage — a bare "#services" resolved
+// against /tr/ produced "/tr#services", which the host then 301s to "/tr/".
 function resolveTo(path: string) {
-  return isHash(path) ? path : localePath(path);
+  return isHash(path) ? `${localePath("/")}${path}` : localePath(path);
 }
 function isActive(item: MenuItem) {
   if (isHash(item.path)) {

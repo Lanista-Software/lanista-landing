@@ -44,11 +44,16 @@ export default defineNuxtConfig({
     locales: ['en', 'tr'],
     defaultLocale: 'en',
     vueI18n: './i18n.config.ts', // if you are using custom path, default
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      alwaysRedirect: true,
-    },
+    // The host 301s slash-less URLs. Emitting the trailing slash from `localePath`
+    // keeps internal links, canonicals and the sitemap on the same URL form —
+    // otherwise every crawled link lands in Search Console as "Page with redirect".
+    trailingSlash: true,
+    // No automatic locale redirect. The site is statically generated and the
+    // /api/* routes do not exist in the output, so a client-side locale switch
+    // could not refetch content — `/` redirected to `/tr/` and rendered a mixed
+    // page (Turkish chrome, English body). Locale is chosen by URL: `/` is
+    // English, `/tr/` is Turkish, and the header switcher links between them.
+    detectBrowserLanguage: false,
   },
   eslint: {
     config: {

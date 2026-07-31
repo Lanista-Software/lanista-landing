@@ -21,6 +21,13 @@ const { data } = await useAsyncData(
   { watch: [locale] }
 );
 
+// Content stores bare hashes ("#contact"). Anchoring them to the localized home
+// path keeps TR links on /tr/#contact instead of /tr#contact (which the host 301s).
+const localLink = (link?: string): string => {
+  if (!link) return "";
+  return link.startsWith("#") ? `${localePath("/")}${link}` : localePath(link);
+};
+
 const sectionsByName = computed<Record<string, any>>(() => {
   const map: Record<string, any> = {};
   for (const s of data.value?.sections || []) map[s.name] = s;
@@ -42,7 +49,10 @@ const workItems = computed<WorksCardProps[]>(() => (data.value?.workItems as unk
 const testimonials = computed<TestimonialCardProps[]>(() => (data.value?.testimonials as unknown as TestimonialCardProps[]) || []);
 const faqItems = computed<Faq[]>(() => (data.value?.faq as unknown as Faq[]) || []);
 const references = computed(() => data.value?.references || []);
-const heroSection = computed(() => section("hero"));
+const heroSection = computed(() => {
+  const hero = section("hero");
+  return { ...hero, buttonlink: localLink(hero.buttonlink) };
+});
 
 // Work items arrive sorted by `order` with `category` resolved to its name (server route).
 // The homepage previews a few; the full list lives on /works.
@@ -56,7 +66,7 @@ const serviceCardProps = computed<CardSectionProps>(() => ({
   cardComponent: "app",
   button: {
     text: section("services").buttontext,
-    link: section("services").buttonlink,
+    link: localLink(section("services").buttonlink),
   },
 }));
 const processCardProps = computed<CardSectionProps>(() => ({
@@ -67,7 +77,7 @@ const processCardProps = computed<CardSectionProps>(() => ({
   cardComponent: "app",
   button: {
     text: section("process").buttontext,
-    link: section("process").buttonlink,
+    link: localLink(section("process").buttonlink),
   },
 }));
 const tabSectionProps = computed<TabSectionProps>(() => ({
@@ -77,7 +87,7 @@ const tabSectionProps = computed<TabSectionProps>(() => ({
   categories: worksCategories.value,
   button: {
     text: section("tabs").buttontext,
-    link: section("tabs").buttonlink,
+    link: localLink(section("tabs").buttonlink),
   },
 }));
 const worksSectionProps = computed<CardSectionProps>(() => ({
@@ -87,7 +97,7 @@ const worksSectionProps = computed<CardSectionProps>(() => ({
   description: section("works").description,
   button: {
     text: section("works").buttontext,
-    link: section("works").buttonlink,
+    link: localLink(section("works").buttonlink),
   },
   cardComponent: "works",
 }));
@@ -95,7 +105,7 @@ const bannerSection = computed(() => ({
   title: section("banner").title,
   description: section("banner").description,
   buttonText: section("banner").buttontext,
-  buttonLink: section("banner").buttonlink,
+  buttonLink: localLink(section("banner").buttonlink),
 }));
 const testimonialsSectionProps = computed<CardSectionProps>(() => ({
   items: testimonials.value,
@@ -105,7 +115,7 @@ const testimonialsSectionProps = computed<CardSectionProps>(() => ({
   cardComponent: "testimonial",
   button: {
     text: section("testimonials").buttontext,
-    link: section("testimonials").buttonlink,
+    link: localLink(section("testimonials").buttonlink),
   },
 }));
 const contactAndFaqSectionProps = computed<ContactProps>(() => ({
@@ -126,30 +136,19 @@ const route = useRoute();
 const router = useRouter();
 const { isScrollLocked } = useScrollLock();
 
-const { fullSchema } = useSchemas(data);
-useHead({
-  htmlAttrs: {
-    lang: locale,
-  },
-  link: [
-    {
-      rel: "canonical",
-      href: locale.value === "tr"
-        ? "https://lanista.com.tr/tr/"
-        : "https://lanista.com.tr/",
-    },
-    { rel: "alternate", hreflang: "en", href: "https://lanista.com.tr/" },
-    { rel: "alternate", hreflang: "tr", href: "https://lanista.com.tr/tr/" },
-    { rel: "alternate", hreflang: "x-default", href: "https://lanista.com.tr/" },
-  ],
-  script: [
-    {
-      type: "application/ld+json",
-      innerHTML: () => fullSchema.value,
-    },
-  ],
+const { graph } = useSchemas(data);
+const meta = computed<Record<string, string>>(
+  () => (data.value?.metaTags as Record<string, string>) || {},
+);
+useSeo({
+  path: () => "/",
+  title: () => meta.value.title || "Lanista Software",
+  description: () => clampDescription(meta.value.description),
+  ogTitle: () => meta.value.ogTitle || meta.value.title || "Lanista Software",
+  ogDescription: () => clampDescription(meta.value.ogDescription || meta.value.description),
+  image: () => meta.value.ogImage,
+  jsonLd: () => graph.value,
 });
-useSeoMeta((data.value?.metaTags as Record<string, string>) || {});
 function handleSectionViewed(id: string) {
   const routeHash = route.hash;
   const idWithHash = `#${id}`;

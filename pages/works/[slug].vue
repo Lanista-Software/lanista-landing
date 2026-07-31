@@ -22,47 +22,37 @@ const technologies = computed<string[]>(() => {
   return tech ? tech.split(',').map((t: string) => t.trim()).filter(Boolean) : []
 })
 
-const metaDescription = computed(() => {
-  const d = work.value?.description || ''
-  return d.length > 155 ? `${d.slice(0, 152)}...` : d
-})
+const metaDescription = computed(() => clampDescription(work.value?.description))
+const pageTitle = computed(
+  () => `${work.value?.title} ${isEn.value ? 'Case Study' : 'Vaka Çalışması'} | Lanista Software`,
+)
 
-useHead({
-  htmlAttrs: { lang: locale },
-  title: () => `${work.value?.title} ${isEn.value ? 'Case Study' : 'Vaka Çalışması'} | Lanista Software`,
-  link: [
-    {
-      rel: 'canonical',
-      href: isEn.value
-        ? `https://lanista.com.tr/works/${slug}/`
-        : `https://lanista.com.tr/tr/works/${slug}/`,
-    },
-    { rel: 'alternate', hreflang: 'en', href: `https://lanista.com.tr/works/${slug}/` },
-    { rel: 'alternate', hreflang: 'tr', href: `https://lanista.com.tr/tr/works/${slug}/` },
-    { rel: 'alternate', hreflang: 'x-default', href: `https://lanista.com.tr/works/${slug}/` },
-  ],
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: () => JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'CreativeWork',
-        name: work.value?.title,
-        description: work.value?.description,
-        ...(work.value?.image ? { image: `https://lanista.com.tr${work.value.image}` } : {}),
-        creator: { '@type': 'Organization', name: 'Lanista Software', url: 'https://lanista.com.tr' },
-        ...(work.value?.link ? { sameAs: work.value.link } : {}),
-      }),
-    },
-  ],
-})
-useSeoMeta({
-  title: () => `${work.value?.title} ${isEn.value ? 'Case Study' : 'Vaka Çalışması'} | Lanista Software`,
+useSeo({
+  path: () => `/works/${slug}`,
+  title: () => pageTitle.value,
   description: () => metaDescription.value,
-  ogTitle: () => work.value?.title,
-  ogDescription: () => metaDescription.value,
-  ogType: 'article',
-  ogSiteName: 'Lanista Software',
+  ogTitle: () => work.value?.title ?? pageTitle.value,
+  type: 'article',
+  image: () => work.value?.image,
+  jsonLd: () => [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CreativeWork',
+      'name': work.value?.title,
+      'description': work.value?.description,
+      'url': absoluteUrl(`/works/${slug}`, locale.value),
+      'inLanguage': isEn.value ? 'en-US' : 'tr-TR',
+      ...(work.value?.image ? { image: absoluteAsset(work.value.image) } : {}),
+      'creator': { '@type': 'Organization', 'name': 'Lanista Software', 'url': SITE_URL },
+      ...(work.value?.link ? { sameAs: work.value.link } : {}),
+      ...(technologies.value.length ? { keywords: technologies.value.join(', ') } : {}),
+    },
+    breadcrumbSchema(locale.value, [
+      { name: isEn.value ? 'Home' : 'Ana Sayfa', path: '/' },
+      { name: isEn.value ? 'Work' : 'Çalışmalar', path: '/works' },
+      { name: work.value?.title ?? slug, path: `/works/${slug}` },
+    ]),
+  ],
 })
 </script>
 
@@ -206,7 +196,7 @@ useSeoMeta({
           <p class="text-body font-inter mb-8">
             {{ isEn ? 'Have a similar project? We would love to hear about it.' : 'Benzer bir projeniz mi var? Duymak isteriz.' }}
           </p>
-          <NuxtLink :to="localePath('/') + '#contact'">
+          <NuxtLink :to="`${localePath('/')}#contact`">
             <LuiButton color="danger" rounded="full" size="xl">
               {{ isEn ? 'Contact Us' : 'İletişime Geçin' }}
             </LuiButton>

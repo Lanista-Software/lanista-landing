@@ -16,26 +16,37 @@ const description = computed(() =>
     : '2018\'den bu yana tasarlayıp geliştirdiğimiz seçili projeler — web, mobil, SaaS, mikroservis ve daha fazlası.',
 )
 
-useHead({
-  htmlAttrs: { lang: locale },
+useSeo({
+  path: () => '/works',
   title: () => `${title.value} | Lanista Software`,
-  link: [
-    {
-      rel: 'canonical',
-      href: isEn.value ? 'https://lanista.com.tr/works/' : 'https://lanista.com.tr/tr/works/',
-    },
-    { rel: 'alternate', hreflang: 'en', href: 'https://lanista.com.tr/works/' },
-    { rel: 'alternate', hreflang: 'tr', href: 'https://lanista.com.tr/tr/works/' },
-    { rel: 'alternate', hreflang: 'x-default', href: 'https://lanista.com.tr/works/' },
-  ],
-})
-useSeoMeta({
-  title: () => `${title.value} | Lanista Software`,
-  description: () => description.value,
+  description: () => clampDescription(description.value),
   ogTitle: () => title.value,
-  ogDescription: () => description.value,
-  ogType: 'website',
-  ogSiteName: 'Lanista Software',
+  // First case study cover doubles as the listing's share image.
+  image: () => (works.value || []).find(w => w.image)?.image,
+  jsonLd: () => [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      'name': title.value,
+      'description': description.value,
+      'url': absoluteUrl('/works', locale.value),
+      'inLanguage': isEn.value ? 'en-US' : 'tr-TR',
+      'mainEntity': {
+        '@type': 'ItemList',
+        'numberOfItems': (works.value || []).length,
+        'itemListElement': (works.value || []).map((work, i) => ({
+          '@type': 'ListItem',
+          'position': i + 1,
+          'name': work.title,
+          'url': absoluteUrl(`/works/${work.slug}`, locale.value),
+        })),
+      },
+    },
+    breadcrumbSchema(locale.value, [
+      { name: isEn.value ? 'Home' : 'Ana Sayfa', path: '/' },
+      { name: isEn.value ? 'Work' : 'Çalışmalar', path: '/works' },
+    ]),
+  ],
 })
 </script>
 
@@ -101,7 +112,7 @@ useSeoMeta({
           <h2 class="text-2xl lg:text-3xl font-bold font-space text-heading-text mb-4">
             {{ isEn ? 'Have a project in mind?' : 'Aklınızda bir proje mi var?' }}
           </h2>
-          <NuxtLink :to="localePath('/') + '#contact'">
+          <NuxtLink :to="`${localePath('/')}#contact`">
             <LuiButton color="danger" rounded="full" size="xl">
               {{ isEn ? 'Contact Us' : 'İletişime Geçin' }}
             </LuiButton>

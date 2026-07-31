@@ -11,6 +11,15 @@ function handleSectionViewed(id: string) {
     router.push({ hash: idWithHash });
   }
 }
+// Site-wide head: icons were only discoverable via the implicit /favicon.ico probe.
+useHead({
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' },
+  ],
+  meta: [{ name: 'theme-color', content: '#ffffff' }],
+});
+
 let intersectionObserver: IntersectionObserver | null = null;
 const home = ref(null);
 onMounted(() => {

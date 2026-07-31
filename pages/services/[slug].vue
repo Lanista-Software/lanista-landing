@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { locale } = useI18n()
+const localePath = useLocalePath()
 const route = useRoute()
 const slug = route.params.slug as string
 
@@ -22,55 +23,34 @@ const technologies = computed<string[]>(() => {
 })
 const isEn = computed(() => locale.value === 'en')
 
-useHead({
-  htmlAttrs: { lang: locale },
+useSeo({
+  path: () => `/services/${slug}`,
   title: () => page.value?.metaTitle ?? 'Lanista Software',
-  link: [
+  description: () => clampDescription(page.value?.metaDescription),
+  jsonLd: () => [
     {
-      rel: 'canonical',
-      href: locale.value === 'tr'
-        ? `https://lanista.com.tr/tr/services/${slug}/`
-        : `https://lanista.com.tr/services/${slug}/`,
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      'name': page.value?.title,
+      'description': page.value?.metaDescription,
+      'url': absoluteUrl(`/services/${slug}`, locale.value),
+      'provider': {
+        '@type': 'Organization',
+        'name': 'Lanista Software',
+        'url': SITE_URL,
+      },
+      'serviceType': page.value?.title,
+      'areaServed': 'Global',
+      'availableChannel': {
+        '@type': 'ServiceChannel',
+        'serviceUrl': `${absoluteUrl('/', locale.value)}#contact`,
+      },
     },
-    { rel: 'alternate', hreflang: 'en', href: `https://lanista.com.tr/services/${slug}/` },
-    { rel: 'alternate', hreflang: 'tr', href: `https://lanista.com.tr/tr/services/${slug}/` },
-    { rel: 'alternate', hreflang: 'x-default', href: `https://lanista.com.tr/services/${slug}/` },
+    breadcrumbSchema(locale.value, [
+      { name: isEn.value ? 'Home' : 'Ana Sayfa', path: '/' },
+      { name: page.value?.title ?? slug, path: `/services/${slug}` },
+    ]),
   ],
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: () => JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Service',
-        name: page.value?.title,
-        description: page.value?.metaDescription,
-        provider: {
-          '@type': 'Organization',
-          name: 'Lanista Software',
-          url: 'https://lanista.com.tr',
-        },
-        serviceType: page.value?.title,
-        areaServed: 'Global',
-        availableChannel: {
-          '@type': 'ServiceChannel',
-          serviceUrl: 'https://lanista.com.tr/#contact',
-        },
-      }),
-    },
-  ],
-})
-
-useSeoMeta({
-  title: () => page.value?.metaTitle ?? 'Lanista Software',
-  description: () => page.value?.metaDescription,
-  ogTitle: () => page.value?.metaTitle,
-  ogDescription: () => page.value?.metaDescription,
-  ogType: 'website',
-  ogSiteName: 'Lanista Software',
-  ogImage: 'https://res.cloudinary.com/dmywgn45o/image/upload/v1729243091/lanista_og_chgpop.jpg',
-  twitterCard: 'summary_large_image',
-  twitterTitle: () => page.value?.metaTitle,
-  twitterDescription: () => page.value?.metaDescription,
 })
 </script>
 
@@ -81,7 +61,7 @@ useSeoMeta({
       <AtomsContainer class="pt-32 pb-16 lg:pb-24">
         <div class="max-w-4xl">
           <NuxtLink
-            to="/#services"
+            :to="`${localePath('/')}#services`"
             class="inline-flex items-center text-sm text-primary-600 hover:text-primary-700 mb-6 font-medium"
           >
             <i class="ri-arrow-left-line mr-1" />
@@ -211,7 +191,7 @@ useSeoMeta({
             <NuxtLink
               v-for="otherPage in allPages"
               :key="otherPage.ID"
-              :to="`/services/${otherPage.slug}`"
+              :to="localePath(`/services/${otherPage.slug}`)"
               class="border border-border-color rounded-xl p-5 bg-white hover:shadow-md transition-shadow"
             >
               <h3 class="text-lg font-bold font-space text-heading-text">
@@ -236,7 +216,7 @@ useSeoMeta({
           <p class="text-body font-inter mb-8">
             {{ isEn ? 'Ready to discuss your project? We\'d love to hear about your requirements.' : 'Projenizi tartışmaya hazır mısınız? Gereksinimlerinizi duymak isteriz.' }}
           </p>
-          <NuxtLink to="/#contact">
+          <NuxtLink :to="`${localePath('/')}#contact`">
             <LuiButton color="danger" rounded="full" size="xl">
               {{ isEn ? 'Contact Us' : 'İletişime Geçin' }}
             </LuiButton>

@@ -1,5 +1,3 @@
-const SITE_URL = "https://lanista.com.tr";
-
 interface SchemaSource {
   services?: any[];
   faq?: any[];
@@ -13,6 +11,7 @@ interface SchemaSource {
 // `data` comes from the /api/home server route (see pages/index.vue).
 export const useSchemas = (data: Ref<SchemaSource | null | undefined>) => {
   const { locale } = useI18n();
+  const pageUrl = computed(() => absoluteUrl("/", locale.value));
   const socialLinks = computed<string[]>(() =>
     (data.value?.socialLinks || []).map(item => item.link)
   );
@@ -48,7 +47,7 @@ export const useSchemas = (data: Ref<SchemaSource | null | undefined>) => {
       areaServed: "Global",
       availableChannel: {
         "@type": "ServiceChannel",
-        serviceUrl: `${SITE_URL}/#contact`,
+        serviceUrl: `${pageUrl.value}#contact`,
       },
     }))
   );
@@ -72,8 +71,10 @@ export const useSchemas = (data: Ref<SchemaSource | null | undefined>) => {
         "@type": "CreativeWork",
         name: item.title,
         description: item.description,
-        ...(item.image ? { image: `${SITE_URL}${item.image}` } : {}),
-        url: item.link,
+        ...(item.image ? { image: absoluteAsset(item.image) } : {}),
+        // The indexable case study is ours; the client's live site is a related reference.
+        ...(item.slug ? { url: absoluteUrl(`/works/${item.slug}`, locale.value) } : {}),
+        ...(item.link ? { sameAs: item.link } : {}),
         creator: {
           "@type": "Organization",
           name: "Lanista Software",
@@ -131,7 +132,7 @@ export const useSchemas = (data: Ref<SchemaSource | null | undefined>) => {
       "@type": "WebPage",
       name: mt.title,
       description: mt.description,
-      url: SITE_URL,
+      url: pageUrl.value,
       image: `${SITE_URL}/logo.svg`,
       inLanguage: locale.value === "tr" ? "tr-TR" : "en-US",
     };
@@ -174,7 +175,7 @@ export const useSchemas = (data: Ref<SchemaSource | null | undefined>) => {
       author: {
         "@type": "Person",
         name: testimonial.name,
-        image: testimonial.image ? `${SITE_URL}${testimonial.image}` : undefined,
+        image: testimonial.image ? absoluteAsset(testimonial.image) : undefined,
         jobTitle: testimonial.title,
       },
       reviewBody: testimonial.description,
@@ -199,25 +200,20 @@ export const useSchemas = (data: Ref<SchemaSource | null | undefined>) => {
     areaServed: "TR",
     availableLanguage: ["Turkish", "English"],
   }));
-  const fullSchema = computed(() =>
-    JSON.stringify(
-      {
-        "@graph": [
-          webPageSchema.value,
-          webSiteSchema.value,
-          ...orgSchema.value,
-          ...serviceSchema.value,
-          faqSchema.value,
-          ...creativeWorkSchema.value,
-          ...softwareAppSchema.value,
-          ...personSchema.value,
-          ...reviewSchema.value,
-          contactPointSchema.value,
-        ],
-      },
-      null,
-      2
-    )
-  );
-  return { fullSchema };
+  const graph = computed(() => ({
+    "@context": "https://schema.org",
+    "@graph": [
+      webPageSchema.value,
+      webSiteSchema.value,
+      ...orgSchema.value,
+      ...serviceSchema.value,
+      faqSchema.value,
+      ...creativeWorkSchema.value,
+      ...softwareAppSchema.value,
+      ...personSchema.value,
+      ...reviewSchema.value,
+      contactPointSchema.value,
+    ],
+  }));
+  return { graph };
 };

@@ -9,7 +9,8 @@ const menuItems: MenuItem[] = [
   { label: "works", path: "/works" },
 ];
 const { lockScroll } = useScrollLock();
-const { setLocale, locale } = useI18n();
+const { locale } = useI18n();
+const localePath = useLocalePath();
 const proxy = useScriptGoogleAnalytics();
 const isMenuOpen = ref(false);
 const isHeaderFixed = ref(false); // Header fixed durumunu takip eden state
@@ -22,8 +23,10 @@ function handleScroll() {
   // Eğer scroll 90px üzerindeyse header'ı fixed yap
   isHeaderFixed.value = window.scrollY > 90;
 }
+// The switcher itself is a <NuxtLink>; navigation already changes the locale,
+// so this only reports the interaction.
 function handleLang(lang: string) {
-  setLocale(lang);
+  proxy.dataLayer.push({ event: "language_changed", language: lang });
 }
 
 watch(
@@ -37,10 +40,6 @@ watch(
   }
 );
 onMounted(() => {
-  if (locale.value) {
-    setLocale(locale.value);
-    proxy.dataLayer.push({ event: "language_changed", language: locale.value });
-  }
   // Scroll event listener ekliyoruz
   window.addEventListener("scroll", handleScroll);
 });
@@ -65,7 +64,7 @@ onUnmounted(() => {
     >
       <AtomsContainer>
         <div class="flex items-center justify-between">
-          <NuxtLink to="/" class="flex w-28 md:w-36 items-center space-x-2">
+          <NuxtLink :to="localePath('/')" class="flex w-28 md:w-36 items-center space-x-2">
             <AtomsLogo />
           </NuxtLink>
           <div class="flex-1 items-center justify-center hidden lg:flex">
@@ -88,7 +87,7 @@ onUnmounted(() => {
                 <i class="ri-menu-line"></i>
               </template>
             </LuiButton>
-            <NuxtLink class="hidden md:block" to="/#contact">
+            <NuxtLink class="hidden md:block" :to="`${localePath('/')}#contact`">
               <LuiButton
                 @click="handleClick"
                 block
@@ -112,12 +111,12 @@ onUnmounted(() => {
       >
         <div>
           <div class="flex items-center justify-between">
-            <NuxtLink to="/" class="flex w-28 md:w-36 items-center space-x-2">
+            <NuxtLink :to="localePath('/')" class="flex w-28 md:w-36 items-center space-x-2">
               <AtomsLogo />
             </NuxtLink>
             <div class="flex items-center space-x-4 z-50">
               <MolLangSelect
-                @language-selected="(lang: string) => setLocale(lang)"
+                @language-selected="handleLang"
                 :active-lang="locale"
               />
             </div>
@@ -129,7 +128,7 @@ onUnmounted(() => {
               @clicked="toggleMenu"
             />
             <div class="pt-8">
-              <NuxtLink @click="toggleMenu" to="/#contact">
+              <NuxtLink @click="toggleMenu" :to="`${localePath('/')}#contact`">
                 <LuiButton
                   @click="handleClick"
                   block
