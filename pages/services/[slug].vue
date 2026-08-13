@@ -26,19 +26,19 @@ const isEn = computed(() => locale.value === 'en')
 
 useSeo({
   path: () => `/services/${slug}`,
-  title: () => page.value?.metaTitle ?? 'Lanista Software',
-  description: () => clampDescription(page.value?.metaDescription),
+  title: () => page.value?.meta_title ?? 'Lanista Software',
+  description: () => clampDescription(page.value?.meta_description),
   ogCard: () => ({
     label: isEn.value ? 'Service' : 'Hizmet',
     title: page.value?.title ?? 'Lanista Software',
-    description: clampDescription(page.value?.heroDescription, 130),
+    description: clampDescription(page.value?.hero_description, 130),
   }),
   jsonLd: () => [
     {
       '@context': 'https://schema.org',
       '@type': 'Service',
       'name': page.value?.title,
-      'description': page.value?.metaDescription,
+      'description': page.value?.meta_description,
       'url': absoluteUrl(`/services/${slug}`, locale.value),
       'provider': {
         '@type': 'Organization',
@@ -77,7 +77,7 @@ useSeo({
             {{ page.title }}
           </h1>
           <p class="text-body mt-6 font-inter text-lg leading-relaxed lg:text-xl">
-            {{ page.heroDescription }}
+            {{ page.hero_description }}
           </p>
         </div>
       </AtomsContainer>
@@ -91,7 +91,7 @@ useSeo({
             {{ isEn ? 'The Challenge' : 'Zorluk' }}
           </h2>
           <p class="text-body whitespace-pre-line font-inter leading-relaxed">
-            {{ page.challengeContent }}
+            {{ page.challenge_content }}
           </p>
         </div>
       </AtomsContainer>
@@ -105,7 +105,7 @@ useSeo({
             {{ isEn ? 'Our Approach' : 'Yaklaşımımız' }}
           </h2>
           <p class="text-body whitespace-pre-line font-inter leading-relaxed">
-            {{ page.approachContent }}
+            {{ page.approach_content }}
           </p>
         </div>
       </AtomsContainer>
@@ -142,7 +142,7 @@ useSeo({
             {{ isEn ? 'Key Benefits' : 'Temel Avantajlar' }}
           </h2>
           <p class="text-body whitespace-pre-line font-inter leading-relaxed">
-            {{ page.benefitsContent }}
+            {{ page.benefits_content }}
           </p>
         </div>
       </AtomsContainer>
@@ -204,7 +204,7 @@ useSeo({
                 {{ otherPage.title }}
               </h3>
               <p class="text-body mt-2 line-clamp-2 text-sm">
-                {{ otherPage.heroDescription }}
+                {{ otherPage.hero_description }}
               </p>
             </NuxtLink>
           </div>

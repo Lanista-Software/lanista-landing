@@ -17,7 +17,7 @@ export default defineEventHandler((event) => {
     .map(p => ({ ...p, ID: p.id }))
 
   const works = query('workitems').locale(locale).include('category').all()
-  const relatedWorks = ((page.relatedWorks as string[]) || [])
+  const relatedWorks = ((page.related_works as string[]) || [])
     .map(id => works.find(w => w.id === id))
     .filter((w): w is NonNullable<typeof w> => Boolean(w))
     .map(w => ({

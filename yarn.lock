@@ -418,14 +418,14 @@
   dependencies:
     mime "^3.0.0"
 
-"@contentrain/mcp@1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@contentrain/mcp/-/mcp-1.6.0.tgz#99f0cf3064cf8001ad744eddfc890cff33e6e1b7"
-  integrity sha512-xj48ag8jbsL0RI6OmU18BBR9ioBoc4BVH++XTKiMKNtZlT9iwwzrLj8J6qltdueXo8V+enEhdg3J9FNIYCPE7g==
+"@contentrain/mcp@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@contentrain/mcp/-/mcp-3.0.2.tgz#20900ce620f064f50ede5318329b7034457f1849"
+  integrity sha512-v6Lcdfj4fkY1IkZ0WZLhlcKImXj710Zu8EDMtXapOROTJbXGAvdx5zOm42rgpro3q/HSbuFzo/VWERReRXATyA==
   dependencies:
-    "@contentrain/types" "0.6.0"
+    "@contentrain/types" "1.0.2"
     "@modelcontextprotocol/sdk" "^1.12.0"
-    simple-git "^3.27.0"
+    simple-git "^3.36.0"
     typescript "^5.7.0"
     zod "^3.24.0"
   optionalDependencies:
@@ -433,27 +433,27 @@
     "@vue/compiler-sfc" "^3.5.30"
     svelte "^4.2.0"
 
-"@contentrain/query@6.1.0", "@contentrain/query@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@contentrain/query/-/query-6.1.0.tgz#73bac174a6393ec5d29dae326a98c06e91942a1b"
-  integrity sha512-+ARNRM0/LwUcAxOLWDBypXpA0kfPqdnHToeNidfj1tg3CoK3Qtoxfm6dIpUEPGG4lCGRQ61L+8VUOn0AIsj8+Q==
+"@contentrain/query@7.0.4", "@contentrain/query@^7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@contentrain/query/-/query-7.0.4.tgz#e8d91aace8db57b5e3c5857d99031656075824c4"
+  integrity sha512-J+sV7Mpz+Su5pQNXziOd5sjDp1oRSLvzAlx/bpm5WchETJNncYmXI6vE4XNPEk6UBXj2uKjrS6I5vij/e+cynw==
   dependencies:
-    "@contentrain/types" "0.6.0"
+    "@contentrain/types" "1.0.2"
 
-"@contentrain/rules@0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@contentrain/rules/-/rules-0.5.3.tgz#ab7b2631b6fd466837f58af193a8fc2f2f9caba4"
-  integrity sha512-N5JIrVXSDEh9ROMM+4A0R+L4F6W+F3jf92qz1AaJUgc/ExoL410SyzG7wc+IR/jWhwdU7t0qdIexaRKdUjA2vg==
+"@contentrain/rules@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@contentrain/rules/-/rules-0.7.0.tgz#d37456e7ec85ade4a1a2370b9ca93caefc56c218"
+  integrity sha512-7l/EAMCZCVf4mZyyt8RfhBo7bNKkWTaIPQCdnxcjEq7yRS7+4lxHJIFvdmp5G/ZTgqvun5S8SyxZGLEEdknQiA==
 
-"@contentrain/skills@0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@contentrain/skills/-/skills-0.5.3.tgz#ac18e99aa235dc05c82ffe88c628cf51691d78d7"
-  integrity sha512-u/i2yeaq+3e77nHTQNv62sd4gh+uAf2eXN1MQgZXF9BKkxkbX50xIPrj4rBwLPboYgAmYoI4m7BpU+TQvvboZg==
+"@contentrain/skills@0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@contentrain/skills/-/skills-0.8.0.tgz#f496349d6184d1128b7062d96c83ff5c3ac1390e"
+  integrity sha512-G9KnISKrONUAAS8mI3WncQSgu7u9maHwb7rCA0qxRXcJ1sCcP8RSeIhsZgSd1ccOZbdi/iw6Ff1jMu0h3ekI5Q==
 
-"@contentrain/types@0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@contentrain/types/-/types-0.6.0.tgz#6c2aeede479961c0c2903f6374b003354ea2f66d"
-  integrity sha512-qXLMQoXsEKdBLWHQniXPEqZChraRLVVXCJMy/8Eyw4RvrfN9zy2jvGHoEBanc2nfQ60dgf7vL+wptgHhnshkzg==
+"@contentrain/types@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@contentrain/types/-/types-1.0.2.tgz#ee3a9061af6825f17199e1d52edcdb2a64a937a6"
+  integrity sha512-x8pZXuE62p5zF4bPL5XEPJhGGT6nDNE+s/rTCuGKt1WQvTmVjmBx00T9VjtR7aof8B0VoxqvoMRsz8okpcSBdg==
 
 "@csstools/selector-resolve-nested@^1.1.0":
   version "1.1.0"
@@ -2744,6 +2744,18 @@
     fflate "^0.7.3"
     string.prototype.codepointat "^0.2.1"
 
+"@simple-git/args-pathspec@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@simple-git/args-pathspec/-/args-pathspec-1.0.3.tgz#9ef4a2ad5f49ab4056362d03f93f775b93118ca5"
+  integrity sha512-ngJMaHlsWDTfjyq9F3VIQ8b7NXbBLq5j9i5bJ6XLYtD6qlDXT7fdKY2KscWWUF8t18xx052Y/PUO1K1TRc9yKA==
+
+"@simple-git/argv-parser@^1.1.0":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@simple-git/argv-parser/-/argv-parser-1.1.1.tgz#275b839c6eeb5030872c73b1ea839a416885da9d"
+  integrity sha512-Q9lBcfQ+VQCpQqGJFHe5yooOS5hGdLFFbJ5R+R5aDsnkPCahtn1hSkMcORX65J2Z5lxSkD0lQorMsncuBQxYUw==
+  dependencies:
+    "@simple-git/args-pathspec" "^1.0.3"
+
 "@sindresorhus/merge-streams@^2.1.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/merge-streams/-/merge-streams-2.3.0.tgz#719df7fb41766bc143369eaa0dd56d8dc87c9958"
@@ -4837,17 +4849,17 @@ content-type@^2.0.0:
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-2.0.0.tgz#2fb3ede69dffa0af78ca7c4ce7589680638b56df"
   integrity sha512-j/O/d7GcZCyNl7/hwZAb606rzqkyvaDctLmckbxLzHvFBzTJHuGEdodATcP3yIRoDrLHkIATJuvzbFlp/ki2cQ==
 
-contentrain@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/contentrain/-/contentrain-0.6.0.tgz#c268e57e0ab538230ce799aeb8723f6f2781fa6e"
-  integrity sha512-FmsHraU4xBXLSWgi9MrK9xt1bh1iV7cV8SJlGSUbY+Fx2TpeSLYka9SqIHYD2cEFcHK2IJWQIRs2CXN3eC6ZJw==
+contentrain@^0.9.2:
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/contentrain/-/contentrain-0.9.2.tgz#9402f479ebc5f5040fb6630ae74e227d7745a1fe"
+  integrity sha512-g5Jv8vQov7wCwQvvu19HyjEWTiDvbRvxoan5eRM15YrujCYEVOnVb1HSNUWOtIbCgnRIrsB1f9NKGcUkCR0dlA==
   dependencies:
     "@clack/prompts" "^0.10.0"
-    "@contentrain/mcp" "1.6.0"
-    "@contentrain/query" "6.1.0"
-    "@contentrain/rules" "0.5.3"
-    "@contentrain/skills" "0.5.3"
-    "@contentrain/types" "0.6.0"
+    "@contentrain/mcp" "3.0.2"
+    "@contentrain/query" "7.0.4"
+    "@contentrain/rules" "0.7.0"
+    "@contentrain/skills" "0.8.0"
+    "@contentrain/types" "1.0.2"
     "@modelcontextprotocol/sdk" "^1.12.0"
     chokidar "^4.0.0"
     citty "^0.1.0"
@@ -10294,6 +10306,17 @@ simple-git@^3.27.0:
     "@kwsites/file-exists" "^1.1.1"
     "@kwsites/promise-deferred" "^1.1.1"
     debug "^4.3.5"
+
+simple-git@^3.36.0:
+  version "3.36.0"
+  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.36.0.tgz#019b28c0a35847ee34299c6fb63770ab1b2dffb7"
+  integrity sha512-cGQjLjK8bxJw4QuYT7gxHw3/IouVESbhahSsHrX97MzCL1gu2u7oy38W6L2ZIGECEfIBG4BabsWDPjBxJENv9Q==
+  dependencies:
+    "@kwsites/file-exists" "^1.1.1"
+    "@kwsites/promise-deferred" "^1.1.1"
+    "@simple-git/args-pathspec" "^1.0.3"
+    "@simple-git/argv-parser" "^1.1.0"
+    debug "^4.4.0"
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
