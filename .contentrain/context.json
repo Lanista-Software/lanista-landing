@@ -9,15 +9,15 @@
       "sp06f7a8b9c0",
       "sp07a8b9c0d1"
     ],
-    "locale": "en",
+    "locale": "tr",
     "model": "service-pages",
     "source": "mcp-local",
-    "timestamp": "2026-08-13T21:36:38.328Z",
+    "timestamp": "2026-08-13T21:36:44.358Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 190,
-    "lastSync": "2026-08-13T21:36:38.328Z",
+    "lastSync": "2026-08-13T21:36:44.358Z",
     "locales": [
       "en",
       "tr"
