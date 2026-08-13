@@ -1,14 +1,21 @@
 {
   "lastOperation": {
+    "entries": [
+      "34e63b4829f0",
+      "5c5955d57da8",
+      "7fa159ae4aaf",
+      "ae0d98f178d1",
+      "ca7bedf86bfb"
+    ],
     "locale": "en",
     "model": "references",
     "source": "mcp-local",
-    "timestamp": "2026-08-13T21:14:24.153Z",
-    "tool": "contentrain_model_save"
+    "timestamp": "2026-08-13T21:14:45.061Z",
+    "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 190,
-    "lastSync": "2026-08-13T21:14:24.155Z",
+    "lastSync": "2026-08-13T21:14:45.061Z",
     "locales": [
       "en",
       "tr"
