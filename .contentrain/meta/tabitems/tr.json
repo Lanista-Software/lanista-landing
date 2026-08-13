@@ -71,33 +71,39 @@
   },
   "a1b2c3d4e5f1": {
     "source": "agent",
-    "status": "draft",
-    "updated_by": "bayhanbayramoglu@gmail.com"
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:09.235Z",
+    "updated_by": "contentrain-mcp"
   },
   "a1b2c3d4e5f2": {
     "source": "agent",
-    "status": "draft",
-    "updated_by": "bayhanbayramoglu@gmail.com"
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:09.235Z",
+    "updated_by": "contentrain-mcp"
   },
   "a1b2c3d4e5f3": {
     "source": "agent",
-    "status": "draft",
-    "updated_by": "bayhanbayramoglu@gmail.com"
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:09.235Z",
+    "updated_by": "contentrain-mcp"
   },
   "a1b2c3d4e5f4": {
     "source": "agent",
-    "status": "draft",
-    "updated_by": "bayhanbayramoglu@gmail.com"
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:09.235Z",
+    "updated_by": "contentrain-mcp"
   },
   "a1b2c3d4e5f5": {
     "source": "agent",
-    "status": "draft",
-    "updated_by": "bayhanbayramoglu@gmail.com"
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:09.235Z",
+    "updated_by": "contentrain-mcp"
   },
   "a1b2c3d4e5f6": {
     "source": "agent",
-    "status": "draft",
-    "updated_by": "bayhanbayramoglu@gmail.com"
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:09.235Z",
+    "updated_by": "contentrain-mcp"
   },
   "bc311eb63570": {
     "source": "import",
