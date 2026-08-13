@@ -1,22 +1,26 @@
 {
   "2b592e751796": {
     "source": "agent",
-    "status": "draft",
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:02.131Z",
     "updated_by": "contentrain-mcp"
   },
   "50d81f2a3baf": {
     "source": "agent",
-    "status": "draft",
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:02.131Z",
     "updated_by": "contentrain-mcp"
   },
   "8cf57e3279a8": {
     "source": "agent",
-    "status": "draft",
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:02.131Z",
     "updated_by": "contentrain-mcp"
   },
   "9450777bee2f": {
     "source": "agent",
-    "status": "draft",
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:02.131Z",
     "updated_by": "contentrain-mcp"
   },
   "d00761480436": {
@@ -26,12 +30,14 @@
   },
   "d00761480437": {
     "source": "agent",
-    "status": "draft",
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:02.131Z",
     "updated_by": "contentrain-mcp"
   },
   "d00761480438": {
     "source": "agent",
-    "status": "draft",
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:02.131Z",
     "updated_by": "contentrain-mcp"
   },
   "d00761480439": {
@@ -41,17 +47,20 @@
   },
   "d00761480440": {
     "source": "agent",
-    "status": "draft",
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:02.131Z",
     "updated_by": "contentrain-mcp"
   },
   "d48331b6ba10": {
     "source": "agent",
-    "status": "draft",
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:02.131Z",
     "updated_by": "contentrain-mcp"
   },
   "f16b19c950c7": {
     "source": "agent",
-    "status": "draft",
+    "status": "published",
+    "updated_at": "2026-08-13T21:39:02.131Z",
     "updated_by": "contentrain-mcp"
   }
 }
