@@ -18,6 +18,7 @@
       "type": "image"
     },
     "link": {
+      "required": true,
       "type": "string"
     }
   }
