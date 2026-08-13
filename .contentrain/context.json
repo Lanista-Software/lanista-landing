@@ -1,23 +1,25 @@
 {
   "lastOperation": {
     "entries": [
-      "sp01a2b3c4d5",
-      "sp02b3c4d5e6",
-      "sp03c4d5e6f7",
-      "sp04d5e6f7a8",
-      "sp05e6f7a8b9",
-      "sp06f7a8b9c0",
-      "sp07a8b9c0d1"
+      "2b592e751796",
+      "50d81f2a3baf",
+      "8cf57e3279a8",
+      "9450777bee2f",
+      "d00761480437",
+      "d00761480438",
+      "d00761480440",
+      "d48331b6ba10",
+      "f16b19c950c7"
     ],
-    "locale": "tr",
-    "model": "service-pages",
+    "locale": "en",
+    "model": "services",
     "source": "mcp-local",
-    "timestamp": "2026-08-13T21:36:44.358Z",
-    "tool": "contentrain_content_save"
+    "timestamp": "2026-08-13T21:39:02.447Z",
+    "tool": "contentrain_bulk"
   },
   "stats": {
     "entries": 190,
-    "lastSync": "2026-08-13T21:36:44.358Z",
+    "lastSync": "2026-08-13T21:39:02.447Z",
     "locales": [
       "en",
       "tr"
