@@ -4,6 +4,7 @@
   "kind": "collection",
   "domain": "marketing",
   "i18n": false,
+  "title_field": "name",
   "description": "Client / reference brand logos",
   "fields": {
     "logo": {
