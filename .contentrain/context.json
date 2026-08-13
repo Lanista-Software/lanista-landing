@@ -1,25 +1,22 @@
 {
   "lastOperation": {
     "entries": [
-      "2b592e751796",
-      "50d81f2a3baf",
-      "8cf57e3279a8",
-      "9450777bee2f",
-      "d00761480437",
-      "d00761480438",
-      "d00761480440",
-      "d48331b6ba10",
-      "f16b19c950c7"
+      "a1b2c3d4e5f1",
+      "a1b2c3d4e5f2",
+      "a1b2c3d4e5f3",
+      "a1b2c3d4e5f4",
+      "a1b2c3d4e5f5",
+      "a1b2c3d4e5f6"
     ],
     "locale": "en",
-    "model": "services",
+    "model": "tabitems",
     "source": "mcp-local",
-    "timestamp": "2026-08-13T21:39:02.447Z",
+    "timestamp": "2026-08-13T21:39:09.673Z",
     "tool": "contentrain_bulk"
   },
   "stats": {
     "entries": 190,
-    "lastSync": "2026-08-13T21:39:02.447Z",
+    "lastSync": "2026-08-13T21:39:09.673Z",
     "locales": [
       "en",
       "tr"
