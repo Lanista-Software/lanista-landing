@@ -1,17 +1,20 @@
 {
   "89ae53eb8370": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-08-13T21:36:16.778Z",
+    "updated_by": "contentrain-mcp"
   },
   "b770c71013d2": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-08-13T21:36:16.778Z",
+    "updated_by": "contentrain-mcp"
   },
   "c421eb634cfa": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-08-13T21:36:16.778Z",
+    "updated_by": "contentrain-mcp"
   }
 }
