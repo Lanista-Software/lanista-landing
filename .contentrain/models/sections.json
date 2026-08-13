@@ -24,6 +24,7 @@
       "type": "text"
     },
     "title": {
+      "required": true,
       "type": "string"
     }
   }
