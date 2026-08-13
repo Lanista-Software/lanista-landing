@@ -1,19 +1,14 @@
 {
   "lastOperation": {
-    "entries": [
-      "89ae53eb8370",
-      "b770c71013d2",
-      "c421eb634cfa"
-    ],
-    "locale": "tr",
-    "model": "testimonials",
+    "locale": "en",
+    "model": "service-pages",
     "source": "mcp-local",
-    "timestamp": "2026-08-13T21:36:24.825Z",
-    "tool": "contentrain_content_save"
+    "timestamp": "2026-08-13T21:36:31.991Z",
+    "tool": "contentrain_model_save"
   },
   "stats": {
     "entries": 190,
-    "lastSync": "2026-08-13T21:36:24.825Z",
+    "lastSync": "2026-08-13T21:36:31.991Z",
     "locales": [
       "en",
       "tr"
