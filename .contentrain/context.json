@@ -1,14 +1,14 @@
 {
   "lastOperation": {
     "locale": "en",
-    "model": "sections",
+    "model": "tabitems",
     "source": "mcp-local",
-    "timestamp": "2026-08-13T21:20:01.477Z",
+    "timestamp": "2026-08-13T21:20:11.850Z",
     "tool": "contentrain_model_save"
   },
   "stats": {
     "entries": 190,
-    "lastSync": "2026-08-13T21:20:01.478Z",
+    "lastSync": "2026-08-13T21:20:11.850Z",
     "locales": [
       "en",
       "tr"
