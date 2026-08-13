@@ -4,10 +4,10 @@
   "kind": "collection",
   "domain": "marketing",
   "i18n": true,
-  "title_field": "title",
+  "title_field": "name",
   "description": "Client testimonials",
   "fields": {
-    "creativeWork": {
+    "creative_work": {
       "model": "workitems",
       "type": "relation"
     },
