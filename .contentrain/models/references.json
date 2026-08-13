@@ -1,14 +1,19 @@
 {
-  "description": "Client / reference brand logos",
+  "id": "references",
+  "name": "References",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": false,
+  "description": "Client / reference brand logos",
   "fields": {
     "logo": {
       "required": true,
       "type": "image"
+    },
+    "name": {
+      "description": "Brand name shown as the entry title",
+      "required": true,
+      "type": "string"
     }
-  },
-  "i18n": false,
-  "id": "references",
-  "kind": "collection",
-  "name": "References"
+  }
 }
