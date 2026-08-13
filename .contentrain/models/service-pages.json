@@ -7,28 +7,28 @@
   "title_field": "title",
   "description": "Standalone SEO service detail pages (/services/:slug)",
   "fields": {
-    "approachContent": {
+    "approach_content": {
       "type": "text"
     },
-    "benefitsContent": {
+    "benefits_content": {
       "type": "text"
     },
-    "challengeContent": {
+    "challenge_content": {
       "type": "text"
     },
-    "heroDescription": {
+    "hero_description": {
       "type": "text"
     },
-    "metaDescription": {
+    "meta_description": {
       "type": "text"
     },
-    "metaTitle": {
+    "meta_title": {
       "type": "string"
     },
     "order": {
       "type": "integer"
     },
-    "relatedWorks": {
+    "related_works": {
       "model": "workitems",
       "type": "relations"
     },
