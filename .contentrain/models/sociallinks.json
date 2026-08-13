@@ -1,6 +1,11 @@
 {
-  "description": "Social media profile links",
+  "id": "sociallinks",
+  "name": "Social Links",
+  "kind": "collection",
   "domain": "system",
+  "i18n": false,
+  "title_field": "link",
+  "description": "Social media profile links",
   "fields": {
     "icon": {
       "type": "icon"
@@ -9,9 +14,5 @@
       "required": true,
       "type": "string"
     }
-  },
-  "i18n": false,
-  "id": "sociallinks",
-  "kind": "collection",
-  "name": "Social Links"
+  }
 }

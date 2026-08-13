@@ -1,6 +1,11 @@
 {
-  "description": "Portfolio / showcase work items",
+  "id": "workitems",
+  "name": "Work Items",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "title",
+  "description": "Portfolio / showcase work items",
   "fields": {
     "category": {
       "model": "work-categories",
@@ -37,9 +42,5 @@
       "required": true,
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "workitems",
-  "kind": "collection",
-  "name": "Work Items"
+  }
 }

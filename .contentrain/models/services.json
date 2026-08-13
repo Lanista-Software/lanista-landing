@@ -1,6 +1,11 @@
 {
-  "description": "Service offerings shown on the homepage services section",
+  "id": "services",
+  "name": "Services",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "title",
+  "description": "Service offerings shown on the homepage services section",
   "fields": {
     "description": {
       "type": "text"
@@ -15,9 +20,5 @@
       "required": true,
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "services",
-  "kind": "collection",
-  "name": "Services"
+  }
 }

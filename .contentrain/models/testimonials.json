@@ -1,6 +1,11 @@
 {
-  "description": "Client testimonials",
+  "id": "testimonials",
+  "name": "Testimonials",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "title",
+  "description": "Client testimonials",
   "fields": {
     "creativeWork": {
       "model": "workitems",
@@ -19,9 +24,5 @@
     "title": {
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "testimonials",
-  "kind": "collection",
-  "name": "Testimonials"
+  }
 }

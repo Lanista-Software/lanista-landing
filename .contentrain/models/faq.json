@@ -1,6 +1,11 @@
 {
-  "description": "Frequently asked questions",
+  "id": "faq",
+  "name": "FAQ",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "question",
+  "description": "Frequently asked questions",
   "fields": {
     "answer": {
       "required": true,
@@ -13,9 +18,5 @@
       "required": true,
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "faq",
-  "kind": "collection",
-  "name": "FAQ"
+  }
 }

@@ -1,6 +1,11 @@
 {
-  "description": "Product development process steps",
+  "id": "processes",
+  "name": "Processes",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "title",
+  "description": "Product development process steps",
   "fields": {
     "description": {
       "type": "text"
@@ -12,9 +17,5 @@
       "required": true,
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "processes",
-  "kind": "collection",
-  "name": "Processes"
+  }
 }

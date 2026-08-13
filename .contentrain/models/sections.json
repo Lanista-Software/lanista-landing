@@ -1,6 +1,11 @@
 {
-  "description": "Homepage section headings (title/description/CTA) keyed by section name",
+  "id": "sections",
+  "name": "Sections",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "title",
+  "description": "Homepage section headings (title/description/CTA) keyed by section name",
   "fields": {
     "buttonlink": {
       "type": "string"
@@ -21,9 +26,5 @@
     "title": {
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "sections",
-  "kind": "collection",
-  "name": "Sections"
+  }
 }

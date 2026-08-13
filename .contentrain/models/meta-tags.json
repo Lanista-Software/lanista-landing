@@ -1,8 +1,9 @@
 {
-  "description": "Homepage SEO / Open Graph / Twitter meta tags (name -> content)",
+  "id": "meta-tags",
+  "name": "Meta Tags",
+  "kind": "dictionary",
   "domain": "system",
   "i18n": true,
-  "id": "meta-tags",
-  "kind": "dictionary",
-  "name": "Meta Tags"
+  "title_field": "key",
+  "description": "Homepage SEO / Open Graph / Twitter meta tags (name -> content)"
 }

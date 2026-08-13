@@ -1,6 +1,11 @@
 {
-  "description": "Standalone SEO service detail pages (/services/:slug)",
+  "id": "service-pages",
+  "name": "Service Pages",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "title",
+  "description": "Standalone SEO service detail pages (/services/:slug)",
   "fields": {
     "approachContent": {
       "type": "text"
@@ -38,9 +43,5 @@
       "required": true,
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "service-pages",
-  "kind": "collection",
-  "name": "Service Pages"
+  }
 }

@@ -1,6 +1,11 @@
 {
-  "description": "Technology / tooling items shown in the technologies tab section",
+  "id": "tabitems",
+  "name": "Tab Items",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "link",
+  "description": "Technology / tooling items shown in the technologies tab section",
   "fields": {
     "category": {
       "model": "work-categories",
@@ -15,9 +20,5 @@
     "link": {
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "tabitems",
-  "kind": "collection",
-  "name": "Tab Items"
+  }
 }
