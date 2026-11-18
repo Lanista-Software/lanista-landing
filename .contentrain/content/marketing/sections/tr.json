@@ -62,5 +62,26 @@
     "description": "Daha fazla bilgi için bizimle doğrudan iletişime geçmekten çekinmeyin.",
     "name": "contact",
     "title": "Daha fazla bilgi için bize ulaşın"
+  },
+  "6688128fdc13": {
+    "buttonlink": "/urunler/hesap-takip#demo",
+    "buttontext": "Demo isteyin",
+    "description": "Üç adımda dükkânınızda kullanmaya başlarsınız.",
+    "name": "start",
+    "title": "Nasıl başlarsınız?"
+  },
+  "6b931f1d3589": {
+    "buttonlink": "#contact",
+    "buttontext": "Yazılım projesi için teklif alın",
+    "description": "Hesap Takip'i ve diğer ürünlerimizi Van Teknokent'te kendi ekibimizle geliştiriyoruz. Aynı ekip, şirketiniz için web ve mobil uygulama da geliştirir: kapsamı birlikte yazarız, yazılımı teslim eder, bakımını üstleniriz.",
+    "name": "bridge",
+    "title": "Bu uygulamaları yapan ekip, sizin yazılımınızı da yapar"
+  },
+  "98874f167333": {
+    "buttonlink": "/urunler",
+    "buttontext": "Tüm ürünler",
+    "description": "Defter ve Excel ile yürüyen işletmeler için telefondan çalışan, kurulumu bizden uygulamalar.",
+    "name": "products",
+    "title": "Hazır uygulamalarımız"
   }
 }
