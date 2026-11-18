@@ -1,46 +1,46 @@
 {
   "2aa54f9e7eaf": {
     "buttonlink": "#works",
-    "buttontext": "See our latest works",
-    "description": "We offer a wide range of software development services, guiding our clients through every step from concept to final product.",
+    "buttontext": "See our latest work",
+    "description": "The team that builds our own products also builds web, mobile and SaaS software for your company, then delivers and maintains it.",
     "name": "services",
-    "title": "Explore our expertise in outsourced Development Services"
+    "title": "Explore our software development services"
   },
   "2aa54f9e7eb0": {
     "buttonlink": "#works",
-    "buttontext": "View all works",
-    "description": "We follow a structured approach to ensure each project is delivered on time, with secure architecture, and within budget.",
+    "buttontext": "View all work",
+    "description": "We follow a structured development process so your project is delivered on time and on budget.",
     "name": "process",
-    "title": "Building Success: Our product development approach"
+    "title": "How we build products and run projects"
   },
   "2aa54f9e7eb1": {
     "buttonlink": "#testimonials",
-    "buttontext": "View all testimonials",
-    "description": "Our focus on quality has earned the trust of industry professionals over time. We deliver tailored solutions that meet the highest standards for our clients.\n",
+    "buttontext": "All testimonials",
+    "description": "Our focus on quality has earned the trust of industry professionals over time. We build tailored solutions that meet our clients' highest standards.",
     "name": "testimonials",
-    "title": "Trusted by Industry Professionals"
+    "title": "A software development partner trusted by industry professionals"
   },
   "2aa54f9e7eb2": {
     "buttonlink": "#works",
-    "buttontext": "View all works",
-    "description": "Explore some of our recent projects where we’ve partnered with clients to turn their ideas into successful products.",
+    "buttontext": "View all work",
+    "description": "See some of the projects where we turned our clients' ideas into successful products.",
     "name": "works",
-    "title": "Our recent client works"
+    "title": "Some of the projects we built for our clients"
   },
   "2aa54f9e7xb3": {
-    "buttonlink": "#contact",
-    "buttontext": "Let's discuss your project",
-    "description": "We provide outsourced Frontend, Backend, and Mobile Application development services to craft custom digital projects that drive results.\n",
+    "buttonlink": "/urunler/hesap-takip",
+    "buttontext": "See Hesap Takip",
+    "description": "Ready-made apps for credit sales, collections, due dates and the daily till. We do the setup, and records keep saving even when the internet drops.",
     "name": "hero",
-    "subtitle": "Software Development Company",
-    "title": "Web & Mobile Application development services"
+    "subtitle": "Ready-made apps for local shops",
+    "title": "Put the paper ledger away: your shop's accounts on your phone"
   },
   "2aa54f9e7xb4": {
-    "buttonlink": "#contact",
-    "buttontext": "Let's discuss your project",
-    "description": "Find quick answers to common questions about Lanista’s services. Need more help? Contact our team anytime.",
+    "buttonlink": "/iletisim",
+    "buttontext": "Let's talk about your project",
+    "description": "Find quick answers to common questions about Lanista Yazılım's services. If you need more, get in touch with us.",
     "name": "faq",
-    "title": "FAQ's"
+    "title": "Frequently asked questions"
   },
   "6688128fdc13": {
     "buttonlink": "/urunler/hesap-takip#demo",
@@ -50,7 +50,7 @@
     "title": "How to get started"
   },
   "6b931f1d3589": {
-    "buttonlink": "#contact",
+    "buttonlink": "/iletisim",
     "buttontext": "Get a quote for your project",
     "description": "We build Hesap Takip and our other products in-house at Van Technopark. The same team builds web and mobile software for your company: we scope it with you, deliver it and maintain it.",
     "name": "bridge",

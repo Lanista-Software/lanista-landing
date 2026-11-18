@@ -36,7 +36,7 @@
     "title": "Defteri bırakın, dükkânın hesabı telefonunuzda olsun"
   },
   "2aa54f9e7xb4": {
-    "buttonlink": "#contact",
+    "buttonlink": "/iletisim",
     "buttontext": "Projenizi konuşalım",
     "description": "Lanista Yazılım'ın hizmetleri hakkında sık sorulan sorularla hızlı yanıtlar bulun. Eğer daha fazla yanıta ihtiyaç duyuyorsanız bizimle iletişime geçebilirsiniz.",
     "name": "faq",
@@ -50,7 +50,7 @@
     "title": "Nasıl başlarsınız?"
   },
   "6b931f1d3589": {
-    "buttonlink": "#contact",
+    "buttonlink": "/iletisim",
     "buttontext": "Yazılım projesi için teklif alın",
     "description": "Hesap Takip'i ve diğer ürünlerimizi Van Teknokent'te kendi ekibimizle geliştiriyoruz. Aynı ekip, şirketiniz için web ve mobil uygulama da geliştirir: kapsamı birlikte yazarız, yazılımı teslim eder, bakımını üstleniriz.",
     "name": "bridge",
