@@ -30,6 +30,9 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] Arka plandaki SVG çizgi grafikleri tüm sitede standart hale gelecek: eski Yunan / Latin / Roma uyumlu, içeriği engellemeyen, ciddiyeti koruyan
 - [ ] Ana sayfa hero'su ve ilk önceliği: satılacak ürünler (Hesap Takip ve diğer uygulamalar)
 - [x] Kararlar ve adımlar için Fable alt ajanlarıyla analiz ve fikir alınabilir (kullanıcı izni)
+- [x] **Projede sabit (hard-coded) metin olmayacak**: arayüz metinleri dahil her içerik eksiksiz Contentrain'de (2026-11-18) — tarama temiz
+- [x] Formlar ve iletişim ayrı sayfada: `/iletisim/`, `/en/contact/` (şirket bilgileri + talep türü seçmeli form); ana sayfada SSS + iletişim kartı
+- [ ] Stil kararlarına (Ludus, token'lar, erişilebilirlik) sadık kalınacak; kontrol listesi her adımda güncel tutulacak
 
 ## 1. Astro'ya geçiş ✅ (`0d50ee0`)
 - [x] Nuxt → Astro 6 (statik), LUI kaldırıldı, Zag.js (sekmeler, akordeon, mobil menü)
@@ -51,6 +54,14 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Logo alt metinleri dilden bağımsız; EN sayfalarda kapak alt metni İngilizce başlık
 - [x] Kullanılmayan meta-tags anahtarları ve Cloudinary OG kaldırıldı
 - [ ] Netlify: `STUDIO_CDN_KEY` build ortam değişkeni (yalnız build, tarayıcıya gitmez)
+
+## 2a. İçerik bütünlüğü (sabit metin yok)
+- [x] `ui` sözlüğü (i18n, TR/EN, 159 anahtar): menü, butonlar, landmark etiketleri, form etiketleri/hata mesajları, ürün sayfası başlıkları, 404, OG etiketleri; eksik anahtar build'i durdurur
+- [x] `src/lib/i18n.ts` ve `src/lib/forms.ts` metinleri sözlükte; kod yalnız anahtar kullanıyor
+- [x] Sayfalardaki `en ? '…' : '…'` kalıpları sözlüğe taşındı
+- [x] "Nasıl başlarsınız" adımları → `onboarding-steps`; kurucular → `team`; şirket bilgileri → `company` singleton
+- [x] Şema/OG sabit metinleri içerikte; kodda duran "kendi ürünlerimiz" şeması kaldırıldı (bilgiler zaten çalışma kayıtlarında); hero'daki sahte vade satırları yerine gerçek ekran görüntüsü
+- [x] Doğrulama: `src/` taraması temiz (yalnız geliştirici log mesajları ve font adları kaldı)
 
 ## 2b. İllüstrasyon sistemi ("Ludus" stili)
 - [x] Stil rehberi: `docs/illustration-style.md` (motifler, çizgi, renk, kompozisyon, yapılmayacaklar); üretici `design/ludus/generate.py`
@@ -78,16 +89,19 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] `prefers-reduced-motion` ile tamamen kapalı; transform/opacity dışında animasyon yok (CLS yok)
 
 ## 5. Ürünler
+- [x] Ürün ekran görüntüleri ve videoları Studio CDN'de (33 dosya, alt metinli); `products.hero_screenshot`, `screenshots`, `desktop_screenshots`, `videos`
+- [x] Fiyatlar `plans`'ta (15.000 öne çıkan, 25.000 + 7.500)
+- [x] Ürün sayfası şablonu (hero, dert→çözüm, ekranlar/video, özellikler, paketler, güven, SSS, demo/bekleme formu)
 - [x] Contentrain modelleri: `products` (3 ürün, yayında), `plans` (Hesap Takip: 3 paket, fiyatsız)
 - [ ] `legal-pages` modeli (+ şirket bilgisi)
-- [ ] `/urunler/` katalog
-- [ ] `/urunler/hesap-takip/` (yayında)
-- [ ] `/urunler/nalbur-takip/`, `/urunler/kasa-takip/` (yakında + bekleme listesi)
-- [ ] Demo / teklif / bekleme listesi formları (`leads`, type + product)
+- [x] `/urunler/` katalog
+- [x] `/urunler/hesap-takip/` (yayında; 2 video, 6 mobil ekran)
+- [x] `/urunler/nalbur-takip/` (yakında), `/urunler/kasa-takip/` (pilotta; 1 video, 6 ekran) + bekleme listesi
+- [x] Demo / satın alma / bekleme listesi formları (`leads`, type + product)
 - [ ] Ekran görüntüleri (demo ortamı, telefon çerçevesi) + stok fotoğraflar (sanayi dükkânı, nalbur, büfe)
-- [x] Header'a "Ürünler" (şimdilik /#urunler; ürün sayfaları gelince /urunler/)
+- [x] Header'a "Ürünler" → `/urunler/`
 - [ ] Footer'a "Ürünler"
-- [ ] JSON-LD: SoftwareApplication + Offer, FAQPage, BreadcrumbList
+- [x] JSON-LD: SoftwareApplication + Offer (KDV hariç, UnitPriceSpecification), FAQPage, BreadcrumbList
 
 ## 6. Yerel SEO sayfaları (Van öncelikli)
 - [x] Anahtar kelime araştırması (Fable, Google önerileri): `docs/kararlar-arama-verisi.md` §C — slug'lar, title/meta, doorway kuralları
@@ -99,8 +113,9 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 ## 7. iyzico ve yasal (bkz. `docs/iyzico-gereksinimleri.md`)
 - [ ] KEP adresi (iyzico şartı, (b) maddesi) → şu an yok, boş kalacak; başvuru öncesi tekrar
 - [x] Meslek odası: Van Ticaret ve Sanayi Odası (kullanıcı teyit etti)
-- [ ] Van TSO adresi ve meslek kuralları bağlantısı doğrulanacak
-- [ ] İletişim sayfası (ana sayfadan doğrudan erişim)
+- [x] Van TSO sitesi doğrulandı (vantso.org.tr)
+- [ ] Meslek kuralları bağlantısı (`company.chamber_rules_url`) — Van TSO'da yayımlanmış bir sayfa bulunamadı; kullanıcıya sorulacak
+- [x] İletişim sayfası (`/iletisim/`, header + footer'dan erişim): unvan, adres, telefon, e-posta, MERSİS, VKN, ticaret sicil, meslek odası (KEP gelince otomatik görünür)
 - [ ] Hakkımızda
 - [ ] İşlem rehberi
 - [ ] Mesafeli satış sözleşmesi, Ön bilgilendirme formu

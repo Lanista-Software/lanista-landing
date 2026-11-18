@@ -1,28 +1,34 @@
 /**
- * Seller identity shown in the footer, legal pages and structured data.
- * Source: docs/urunler-ve-iyzico-brief.md §6 (vergi levhası, Ticaret Sicil Gazetesi).
+ * Seller identity, read from the Contentrain `company` singleton (build time).
  * Lanista Ltd. Şti. is the seller, the invoicing party and the iyzico merchant.
- * Do NOT mix with Contentrain Yazılım Teknolojileri A.Ş. (a separate legal entity).
+ * Edit it in Contentrain, never here.
  */
+import { singleton } from '#contentrain'
+
+const c = singleton('company').get()
+const digits = c.phone.replace(/\D/g, '')
+
 export const COMPANY = {
-  legalName: 'LANİSTA YAZILIM SANAYİ VE TİCARET LİMİTED ŞİRKETİ',
-  shortName: 'Lanista Yazılım San. ve Tic. Ltd. Şti.',
-  brand: 'Lanista',
+  legalName: c.legal_name,
+  shortName: c.short_name,
+  brand: c.brand,
+  siteName: c.site_name,
   address: {
-    street: 'Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9',
-    district: 'Tuşba',
-    city: 'Van',
-    country: 'Türkiye',
-    countryCode: 'TR',
-    full: 'Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9 Tuşba / Van',
+    street: c.address_street,
+    district: c.address_district,
+    city: c.address_city,
+    countryCode: c.country_code,
+    full: `${c.address_street} ${c.address_district} / ${c.address_city}`,
   },
-  taxOffice: 'Van',
-  taxNumber: '6081185221',
-  mersis: '0608118522100001',
-  tradeRegistry: '442 / Tuşba (Van Ticaret Sicili Müdürlüğü)',
-  foundingDate: '2019-08-09',
-  phone: '+90 506 215 07 00',
-  phoneHref: 'tel:+905062150700',
-  phoneSchema: '+90-506-215-0700',
-  email: 'info@lanista.com.tr',
+  taxOffice: c.tax_office,
+  taxNumber: c.tax_number,
+  mersis: c.mersis,
+  tradeRegistry: c.trade_registry,
+  foundingDate: c.founding_date,
+  phone: c.phone,
+  phoneHref: `tel:+${digits}`,
+  phoneSchema: c.phone.replace(/\s+/g, '-'),
+  email: c.email,
+  kep: c.kep,
+  chamber: { name: c.chamber_name, url: c.chamber_url, rulesUrl: c.chamber_rules_url },
 } as const

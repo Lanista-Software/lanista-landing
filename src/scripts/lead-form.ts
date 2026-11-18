@@ -126,7 +126,7 @@ export function initLeadForms() {
       submit.disabled = true
       submit.textContent = submit.dataset.sending ?? ''
       const lead: Record<string, unknown> = {
-        type: config.type,
+        type: String(data.get('type') ?? config.type),
         language: config.locale,
         page: location.pathname,
         kvkk_consent: true,

@@ -6,8 +6,10 @@ interface Props {
   buttonHref: string
   secondary?: { label: string, href: string }
   visualLabel: string
+  screenshot?: string
+  chip?: { title: string, text: string }
 }
-const { hero, buttonHref, secondary, visualLabel } = Astro.props
+const { hero, buttonHref, secondary, visualLabel, screenshot, chip } = Astro.props
 ---
 
 {hero.title && (
@@ -26,6 +28,6 @@ const { hero, buttonHref, secondary, visualLabel } = Astro.props
         )}
       </div>
     </div>
-    <HeroVisual label={visualLabel} />
+    <HeroVisual label={visualLabel} screenshot={screenshot} chip={chip} />
   </div>
 )}

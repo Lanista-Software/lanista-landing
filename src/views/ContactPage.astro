@@ -1,0 +1,84 @@
+---
+import type { Locale } from '~/lib/i18n'
+import Breadcrumbs from '~/components/Breadcrumbs.astro'
+import LeadForm from '~/components/LeadForm.astro'
+import PageHero from '~/components/PageHero.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { COMPANY } from '~/lib/company'
+import { ROUTES, t } from '~/lib/i18n'
+import { organizationSchema, webPageSchema } from '~/lib/schema'
+import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
+
+interface Props { locale: Locale }
+const { locale } = Astro.props
+const s = t(locale)
+const path = ROUTES.contact[locale]
+const title = s('contact.title')
+const description = clampDescription(s('contact.description'))
+const trail = [{ name: s('nav.home'), path: '/' }, { name: title, path }]
+// iyzico "İletişim" requirements (ETHS Yön. md.5): unvan, MERSİS, merkez adresi, KEP,
+// e-posta, telefon, meslek odası ve meslek kurallarına erişim.
+const rows = [
+  { label: s('company.legal_name'), value: COMPANY.legalName },
+  { label: s('company.address'), value: COMPANY.address.full },
+  { label: s('company.phone'), value: COMPANY.phone, href: COMPANY.phoneHref },
+  { label: s('company.email'), value: COMPANY.email, href: `mailto:${COMPANY.email}` },
+  ...(COMPANY.kep ? [{ label: s('company.kep'), value: COMPANY.kep, href: `mailto:${COMPANY.kep}` }] : []),
+  { label: s('company.mersis'), value: COMPANY.mersis },
+  { label: s('company.tax_office'), value: `${COMPANY.taxOffice} · ${s('company.tax_number')} ${COMPANY.taxNumber}` },
+  ...(COMPANY.tradeRegistry ? [{ label: s('company.trade_registry'), value: COMPANY.tradeRegistry }] : []),
+  ...(COMPANY.chamber.name ? [{ label: s('company.chamber'), value: COMPANY.chamber.name, href: COMPANY.chamber.url, external: true }] : []),
+  ...(COMPANY.chamber.rulesUrl ? [{ label: s('company.chamber_rules'), value: COMPANY.chamber.rulesUrl, href: COMPANY.chamber.rulesUrl, external: true }] : []),
+]
+---
+
+<BaseLayout
+  locale={locale}
+  title={`${title} | ${SITE_NAME}`}
+  description={description}
+  path={path}
+  paths={ROUTES.contact}
+  jsonLd={[{ ...webPageSchema(locale, path, title, description, 'ContactPage'), about: organizationSchema() }, breadcrumbSchema(locale, trail)]}
+>
+  <PageHero>
+    <Breadcrumbs locale={locale} trail={trail} />
+    <h1 class="page-title">{title}</h1>
+    <p class="mt-5 max-w-2xl text-lg">{s('contact.form_text')}</p>
+  </PageHero>
+
+  <section class="py-12 lg:py-20" aria-labelledby="contact-details">
+    <div class="container-x grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
+      <div>
+        <h2 id="contact-details" class="block-title">{s('contact.details')}</h2>
+        <dl class="mt-8 divide-y divide-border-color rounded-2xl border border-border-color bg-white">
+          {rows.map(r => (
+            <div class="grid gap-1 px-6 py-4 sm:grid-cols-[11rem_1fr] sm:gap-6">
+              <dt class="text-sm font-medium text-label-text">{r.label}</dt>
+              <dd class="text-heading-text">
+                {r.href
+                  ? <a href={r.href} class="link" {...(r.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{r.value}{r.external && <span class="sr-only"> {s('a11y.opens_new_tab')}</span>}</a>
+                  : r.value}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+      <div id="form">
+        <h2 class="block-title">{s('contact.form_title')}</h2>
+        <LeadForm
+          class="mt-8"
+          locale={locale}
+          idPrefix="contact"
+          typeOptions={[
+            { value: 'contact', label: s('contact.option_contact') },
+            { value: 'quote', label: s('contact.option_project') },
+            { value: 'demo', label: s('contact.option_demo') },
+          ]}
+          fields={['name', 'email', 'phone', 'business', 'message']}
+          required={['name', 'email', 'message']}
+          subject={title}
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

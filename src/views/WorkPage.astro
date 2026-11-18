@@ -6,7 +6,7 @@ import Img from '~/components/Img.astro'
 import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import { getWork, splitList } from '~/lib/content'
-import { localePath, t } from '~/lib/i18n'
+import { localePath, routePath, t } from '~/lib/i18n'
 import { creativeWorkSchema } from '~/lib/schema'
 import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
 import { stagger } from '~/lib/ui'
@@ -17,16 +17,16 @@ const s = t(locale)
 const en = locale === 'en'
 const { work, related } = getWork(locale, slug)!
 const technologies = splitList(work.technologies)
-const pageTitle = `${work.title} ${en ? 'Case Study' : 'Vaka Çalışması'} | ${SITE_NAME}`
+const pageTitle = `${work.title} ${s('work.title_suffix')} | ${SITE_NAME}`
 const trail = [
-  { name: s.home, path: '/' },
-  { name: s.menu.works, path: '/works' },
+  { name: s('nav.home'), path: '/' },
+  { name: s('nav.works'), path: '/works' },
   { name: work.title, path: `/works/${slug}` },
 ]
 const blocks = [
-  { key: 'challenge', title: en ? 'The Challenge' : 'Zorluk', body: work.challenge, alt: false },
-  { key: 'solution', title: en ? 'Our Solution' : 'Çözümümüz', body: work.solution, alt: true },
-  { key: 'outcome', title: en ? 'Results' : 'Sonuçlar', body: work.outcome, alt: true },
+  { key: 'challenge', title: s('work.challenge'), body: work.challenge, alt: false },
+  { key: 'solution', title: s('work.solution'), body: work.solution, alt: true },
+  { key: 'outcome', title: s('work.results'), body: work.outcome, alt: true },
 ]
 ---
 
@@ -47,7 +47,7 @@ const blocks = [
     {work.link && (
       <div class="mt-8">
         <a href={work.link} target="_blank" rel="noopener noreferrer" class="btn btn-danger">
-          {en ? 'Visit live site' : 'Canlı siteyi ziyaret et'}<span class="sr-only"> {s.opensNewTab}</span>
+          {s('common.visit_live_site')}<span class="sr-only"> {s('a11y.opens_new_tab')}</span>
           <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
         </a>
       </div>
@@ -76,7 +76,7 @@ const blocks = [
   {technologies.length > 0 && (
     <section class="py-12 lg:py-16" aria-labelledby="tech-title">
       <div class="container-x"><div class="max-w-4xl">
-        <h2 id="tech-title" class="block-title mb-5">{en ? 'Technologies' : 'Teknolojiler'}</h2>
+        <h2 id="tech-title" class="block-title mb-5">{s('work.technologies')}</h2>
         <ul role="list" class="flex flex-wrap gap-3">
           {technologies.map((tech, i) => <li class="reveal" style={stagger(i, 40)}><span class="tag tag-primary tag-lg">{tech}</span></li>)}
         </ul>
@@ -96,7 +96,7 @@ const blocks = [
   {related.length > 0 && (
     <section class="py-14 lg:py-20" aria-labelledby="related-title">
       <div class="container-x"><div class="mx-auto max-w-5xl">
-        <h2 id="related-title" class="block-title mb-8">{en ? 'Related Work' : 'İlgili Çalışmalar'}</h2>
+        <h2 id="related-title" class="block-title mb-8">{s('work.related')}</h2>
         <ul role="list" class="grid grid-cols-1 gap-6 md:grid-cols-3">
           {related.map((rel, i) => (
             <li class="reveal" style={stagger(i)}>
@@ -112,5 +112,5 @@ const blocks = [
     </section>
   )}
 
-  <CtaBlock class="bg-secondary-50" title={en ? 'Let\'s Build Together' : 'Birlikte İnşa Edelim'} text={en ? 'Have a similar project? We would love to hear about it.' : 'Benzer bir projeniz mi var? Duymak isteriz.'} href={`${localePath('/', locale)}#contact`} label={en ? 'Contact Us' : 'İletişime Geçin'} />
+  <CtaBlock class="bg-secondary-50" title={s('work.cta_title')} text={s('work.cta_text')} href={routePath('contact', locale)} label={s('common.contact_us')} />
 </BaseLayout>

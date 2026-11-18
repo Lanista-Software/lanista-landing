@@ -1,0 +1,267 @@
+---
+import type { Products } from '#contentrain'
+import Accordion from '~/components/Accordion.astro'
+import Breadcrumbs from '~/components/Breadcrumbs.astro'
+import Amphitheatre from '~/components/decor/Amphitheatre.astro'
+import Meander from '~/components/decor/Meander.astro'
+import HeroVisual from '~/components/HeroVisual.astro'
+import LeadForm from '~/components/LeadForm.astro'
+import PhoneShot from '~/components/PhoneShot.astro'
+import PlanCard from '~/components/PlanCard.astro'
+import ProductVideo from '~/components/ProductVideo.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { COMPANY } from '~/lib/company'
+import { getPlans } from '~/lib/content'
+import { localePath, t } from '~/lib/i18n'
+import { faqSchema, ORG_ID, webPageSchema } from '~/lib/schema'
+import { absoluteAsset, absoluteUrl, breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
+import { stagger } from '~/lib/ui'
+
+interface Props { product: Products }
+const { product } = Astro.props
+const locale = 'tr' as const
+const path = `/urunler/${product.slug}`
+const live = product.status === 'live'
+const plans = live ? getPlans(product.id) : []
+const priced = plans.filter(p => typeof p.price_try === 'number')
+const extras = plans.filter(p => typeof p.price_try !== 'number')
+const s = t(locale)
+const statusLabel = s(`product.status.${product.status}`)
+const name = { name: product.name }
+
+const trail = [
+  { name: s('nav.home'), path: '/' },
+  { name: s('nav.products'), path: '/urunler' },
+  { name: product.name, path },
+]
+const title = product.seo_title || `${product.name} | ${SITE_NAME}`
+const description = clampDescription(product.seo_description || product.tagline)
+const formTitle = live ? s('product.form.title_live') : s('product.form.title_waitlist')
+const formText = live ? s('product.form.text_live') : s(product.status === 'pilot' ? 'product.form.text_pilot' : 'product.form.text_soon', name)
+
+const offers = priced.map(p => ({
+  '@type': 'Offer',
+  'name': p.name,
+  'price': p.price_try,
+  'priceCurrency': 'TRY',
+  'availability': 'https://schema.org/InStock',
+  'url': absoluteUrl(`${path}#paketler`, locale),
+  'seller': { '@id': ORG_ID },
+  'priceSpecification': {
+    '@type': 'UnitPriceSpecification',
+    'price': p.price_try,
+    'priceCurrency': 'TRY',
+    'valueAddedTaxIncluded': false,
+    ...(p.billing === 'yearly' ? { billingDuration: 'P1Y' } : {}),
+  },
+}))
+const jsonLd = [
+  webPageSchema(locale, path, title, description),
+  {
+    '@type': 'SoftwareApplication',
+    'name': product.name,
+    'description': product.tagline,
+    'applicationCategory': 'BusinessApplication',
+    'operatingSystem': 'Web, Android, iOS (PWA)',
+    'inLanguage': 'tr-TR',
+    'url': absoluteUrl(path, locale),
+    ...(product.hero_screenshot ? { screenshot: absoluteAsset(product.hero_screenshot) } : {}),
+    'publisher': { '@id': ORG_ID },
+    'audience': { '@type': 'BusinessAudience', 'audienceType': product.sector },
+    ...(offers.length ? { offers } : {}),
+    ...(product.keywords?.length ? { keywords: product.keywords.join(', ') } : {}),
+  },
+  ...(product.faq?.length ? [faqSchema(product.faq)] : []),
+  breadcrumbSchema(locale, trail),
+]
+const demoHref = '#demo'
+---
+
+<BaseLayout locale={locale} title={title} description={description} path={path} locales={['tr']} ogTitle={product.hero_title} jsonLd={jsonLd}>
+  <!-- 1. Hero -->
+  <section class="relative isolate overflow-hidden" aria-labelledby="product-title">
+    <Amphitheatre />
+    <div class="container-x pb-20 pt-10 lg:pb-28">
+      <Breadcrumbs locale={locale} trail={trail} />
+      <div class="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-8">
+        <div class="max-w-xl">
+          <p class="flex flex-wrap items-center gap-3">
+            <span class:list={['tag tag-lg', live ? 'tag-success' : product.status === 'pilot' ? 'tag-warning' : 'tag-secondary']}>{statusLabel}</span>
+            <span class="text-sm font-medium text-label-text">{product.sector}</span>
+          </p>
+          <h1 id="product-title" class="mt-5 font-space text-4xl font-semibold leading-[1.08] text-heading-text md:text-5xl">
+            <span class="sr-only">{product.name}: </span>{product.hero_title}
+          </h1>
+          <p class="mt-6 text-lg text-body-text md:text-xl">{product.hero_text}</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href={demoHref} class="btn btn-danger btn-lg">{live ? s('product.cta.demo') : s('product.cta.waitlist')}</a>
+            {live && priced.length > 0 && <a href="#paketler" class="btn btn-outline btn-lg">{s('product.cta.prices')}</a>}
+          </div>
+        </div>
+        <HeroVisual
+          label={s('product.visual_label', name)}
+          screenshot={product.hero_screenshot}
+          chip={null}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Today's pain → what it does -->
+  {product.pains?.length
+? (
+    <section class="bg-secondary-50" aria-labelledby="pains-title">
+      <div class="container-x py-20 lg:py-28">
+        <h2 id="pains-title" class="section-title max-w-2xl">{s('product.pains.title', name)}</h2>
+        <dl class="mt-12 divide-y divide-border-color overflow-hidden rounded-2xl border border-border-color bg-white">
+          {product.pains.map((row, i) => (
+            <div class="reveal grid gap-2 p-6 md:grid-cols-[1fr_1.4fr] md:gap-10 md:p-8" style={stagger(i)}>
+              <dt class="flex gap-3 font-space text-lg font-bold text-heading-text">
+                <i class="ri-close-circle-line mt-0.5 text-xl leading-none text-danger-600" aria-hidden="true"></i>{row.pain}
+              </dt>
+              <dd class="flex gap-3 text-body-text">
+                <i class="ri-checkbox-circle-line mt-0.5 text-xl leading-none text-success-700" aria-hidden="true"></i>{row.solution}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </section>
+  )
+: null}
+
+  <!-- 3. Screens & short recordings -->
+  {(product.videos?.length || product.screenshots?.length)
+? (
+    <section aria-labelledby="screens-title">
+      <div class="container-x py-20 lg:py-28">
+        <h2 id="screens-title" class="section-title">{s('product.screens.title')}</h2>
+        <p class="mt-3 max-w-2xl text-body-text">{s('product.screens.note')}</p>
+        {product.videos?.length
+? (
+          <div class="mt-12 grid gap-14 lg:grid-cols-2">
+            {product.videos.map((v, i) => <ProductVideo id={`video-${i}`} src={v.src} poster={v.poster} title={v.title} caption={v.caption} />)}
+          </div>
+        )
+: null}
+        {product.screenshots?.length
+? (
+          <ul role="list" class="screens-strip mt-16 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-6" tabindex="0" aria-label={s('a11y.screens_strip')}>
+            {product.screenshots.map((src, i) => (
+              <li class="reveal w-[220px] shrink-0 snap-start sm:w-[240px]" style={stagger(i, 60)}><PhoneShot src={src} /></li>
+            ))}
+          </ul>
+        )
+: null}
+      </div>
+    </section>
+  )
+: null}
+
+  <!-- 4. Features -->
+  {product.feature_groups?.length
+? (
+    <section class="bg-secondary-50" aria-labelledby="features-title">
+      <div class="container-x py-20 lg:py-28">
+        <h2 id="features-title" class="section-title">{live ? s('product.features.title_live') : s('product.features.title_planned')}</h2>
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+          {product.feature_groups.map((g, i) => (
+            <section class="reveal rounded-2xl border border-border-color bg-white p-7" style={stagger(i)} aria-labelledby={`fg-${i}`}>
+              <h3 id={`fg-${i}`} class="font-space text-xl font-bold text-heading-text">{g.title}</h3>
+              <ul class="mt-4 space-y-2.5">
+                {(g.items ?? []).map(item => <li class="flex gap-2.5 text-body-text"><i class="ri-check-line mt-0.5 text-lg leading-none text-primary-600" aria-hidden="true"></i><span>{item}</span></li>)}
+              </ul>
+            </section>
+          ))}
+        </div>
+        {product.roadmap?.length
+? (
+          <div class="reveal mt-8 rounded-2xl border border-dashed border-primary-200 bg-white p-7">
+            <h3 class="font-space text-lg font-bold text-heading-text">{s('product.roadmap.title')}</h3>
+            <ul class="mt-3 flex flex-wrap gap-2">{product.roadmap.map(r => <li class="tag tag-primary">{r}</li>)}</ul>
+          </div>
+        )
+: null}
+      </div>
+    </section>
+  )
+: null}
+
+  <!-- 5. Plans & pricing -->
+  {priced.length > 0 && (
+    <section id="paketler" aria-labelledby="plans-title">
+      <div class="container-x py-20 lg:py-28">
+        <h2 id="plans-title" class="section-title">{s('product.plans.title')}</h2>
+        <p class="mt-3 max-w-2xl text-body-text">{s('product.plans.note')}</p>
+        <ul role="list" class="mt-12 grid gap-6 md:grid-cols-3">
+          {priced.map(plan => <li><PlanCard plan={plan} ctaHref={demoHref} /></li>)}
+        </ul>
+        {extras.length > 0 && (
+          <ul class="mt-6 space-y-2">
+            {extras.map(x => <li class="text-sm text-body-text"><strong class="text-heading-text">{x.name}:</strong> {x.note}</li>)}
+          </ul>
+        )}
+      </div>
+    </section>
+  )}
+
+  <!-- 6. Trust -->
+  {product.trust?.length
+? (
+    <section class="bg-secondary-50" aria-labelledby="trust-title">
+      <div class="container-x py-20 lg:py-28">
+        <h2 id="trust-title" class="section-title">{s('product.trust.title')}</h2>
+        <ul role="list" class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {product.trust.map((t, i) => (
+            <li class="reveal rounded-2xl border border-border-color bg-white p-6" style={stagger(i)}>
+              <h3 class="font-space text-lg font-bold text-heading-text">{t.title}</h3>
+              <p class="mt-2 text-sm text-body-text">{t.text}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+: null}
+
+  <!-- 7. FAQ -->
+  {product.faq?.length
+? (
+    <section aria-labelledby="faq-title">
+      <div class="container-x py-20 lg:py-28">
+        <div class="mx-auto max-w-3xl">
+          <h2 id="faq-title" class="section-title">{s('product.faq.title')}</h2>
+          <div class="mt-10"><Accordion items={product.faq.map((f, i) => ({ id: `pfaq-${i}`, question: f.question, answer: f.answer }))} /></div>
+        </div>
+      </div>
+    </section>
+  )
+: null}
+
+  <Meander class="container-x" />
+
+  <!-- 8. Final call: demo / purchase / waitlist -->
+  <section id="demo" aria-labelledby="demo-title" tabindex="-1">
+    <div class="container-x py-20 lg:py-28">
+      <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <h2 id="demo-title" class="section-title">{formTitle}</h2>
+          <p class="mt-4 text-lg text-body-text">{formText}</p>
+          <p class="mt-6 text-body-text">{s('common.call_us')} <a class="link" href={COMPANY.phoneHref}>{COMPANY.phone}</a></p>
+          <p class="mt-6"><a href={localePath('/urunler', locale)} class="link">{s('product.other_products')}</a></p>
+        </div>
+        <LeadForm
+          locale={locale}
+          idPrefix="product"
+          product={product.slug}
+          type={live ? 'demo' : 'waitlist'}
+          typeOptions={live ? [{ value: 'demo', label: s('product.form.option_demo') }, { value: 'quote', label: s('product.form.option_buy') }] : undefined}
+          fields={['name', 'phone', 'business', 'email', 'message']}
+          required={['name', 'phone']}
+          subject={live ? s('product.form.subject_live', name) : s('product.form.subject_waitlist', name)}
+          submitLabel={live ? s('form.send') : s('product.form.submit_waitlist')}
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

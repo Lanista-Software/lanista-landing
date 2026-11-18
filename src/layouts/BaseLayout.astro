@@ -21,6 +21,8 @@ export interface Props {
   /** JSON-LD nodes, emitted as one @graph. */
   jsonLd?: unknown[]
   noindex?: boolean
+  /** Per-locale paths when the slug differs (e.g. /iletisim ↔ /contact). */
+  paths?: Partial<Record<Locale, string>>
 }
 
 const {
@@ -34,14 +36,15 @@ const {
   type = 'website',
   jsonLd = [],
   noindex = false,
+  paths = {},
 } = Astro.props
 
 const canonical = absoluteUrl(path, locale)
 const ogImage = ogImagePath(path, locale)
 const alternates = locales.length > 1
   ? [
-      ...locales.map(code => ({ hreflang: code, href: absoluteUrl(path, code) })),
-      { hreflang: 'x-default', href: absoluteUrl(path, 'tr') },
+      ...locales.map(code => ({ hreflang: code, href: absoluteUrl(paths[code] ?? path, code) })),
+      { hreflang: 'x-default', href: absoluteUrl(paths.tr ?? path, 'tr') },
     ]
   : []
 const s = t(locale)
@@ -102,8 +105,8 @@ const GA_ID = 'G-T48ZEC3WT9'
     <slot name="head" />
   </head>
   <body>
-    <a href="#main" class="skip-link">{s.skipToContent}</a>
-    <Header locale={locale} path={path} locales={locales} />
+    <a href="#main" class="skip-link">{s('a11y.skip_to_content')}</a>
+    <Header locale={locale} path={path} locales={locales} paths={paths} />
     <main id="main" tabindex="-1" class="min-h-screen focus:outline-none">
       <slot />
     </main>

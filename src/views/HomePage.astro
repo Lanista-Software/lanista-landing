@@ -5,7 +5,6 @@ import AppCard from '~/components/AppCard.astro'
 import Amphitheatre from '~/components/decor/Amphitheatre.astro'
 import Hero from '~/components/Hero.astro'
 import Img from '~/components/Img.astro'
-import LeadForm from '~/components/LeadForm.astro'
 import ProcessCard from '~/components/ProcessCard.astro'
 import ProductCard from '~/components/ProductCard.astro'
 import Section from '~/components/Section.astro'
@@ -13,10 +12,11 @@ import SectionLayout from '~/components/SectionLayout.astro'
 import TestimonialCard from '~/components/TestimonialCard.astro'
 import WorksCard from '~/components/WorksCard.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
-import { getHome, getLayout, getProduct, getProducts } from '~/lib/content'
-import { contentLink, localePath, t } from '~/lib/i18n'
-import { creativeWorkSchema, faqSchema, FOUNDERS, organizationSchema, ownAppsSchema, serviceSchema, webPageSchema, websiteSchema } from '~/lib/schema'
-import { clampDescription } from '~/lib/seo'
+import { COMPANY } from '~/lib/company'
+import { getHome, getLayout, getOnboardingSteps, getProduct, getProducts, getTeam } from '~/lib/content'
+import { contentLink, localePath, routePath, t } from '~/lib/i18n'
+import { creativeWorkSchema, faqSchema, organizationSchema, serviceSchema, teamSchema, webPageSchema, websiteSchema } from '~/lib/schema'
+import { clampDescription, SITE_NAME } from '~/lib/seo'
 import { cardSpan, stagger } from '~/lib/ui'
 
 
@@ -33,15 +33,11 @@ const previewWorks = home.works.slice(0, 3)
 const tr = locale === 'tr'
 // Turkish home leads with the products; English stays agency-first (products are Turkey-only).
 const products = tr ? getProducts() : []
-const hesapTakip = tr ? getProduct('hesap-takip') : undefined
-const steps = [
-  { title: 'Demo isteyin', text: 'Formu doldurun; uygulamayı kendi işinize göre telefonda gösterelim.' },
-  { title: 'Kurulumu biz yapalım', text: 'Müşteri listenizi aktarır, ayarları dükkânınıza göre yaparız.' },
-  { title: 'Kullanmaya başlayın', text: 'Kurulum biter bitmez satış, tahsilat ve vade takibi telefonunuzda.' },
-]
+const hesapTakip = getProduct('hesap-takip')
+const steps = tr ? getOnboardingSteps(locale) : []
 
 const meta = home.metaTags
-const title = meta.title || 'Lanista Software'
+const title = meta.title || SITE_NAME
 const description = clampDescription(meta.description)
 const jsonLd = [
   webPageSchema(locale, '/', title, description),
@@ -50,8 +46,7 @@ const jsonLd = [
   ...home.services.map(sv => serviceSchema(locale, { title: sv.title, description: sv.description, path: sv.link })),
   faqSchema(home.faq),
   ...home.works.filter(w => w.slug).map(w => creativeWorkSchema(locale, w)),
-  ...ownAppsSchema(locale),
-  ...FOUNDERS,
+  ...teamSchema(getTeam(locale)),
 ]
 ---
 
@@ -70,8 +65,10 @@ const jsonLd = [
       <Hero
         hero={section('hero')}
         buttonHref={link('hero')}
-        secondary={tr ? { label: 'Demo isteyin', href: localePath('/urunler/hesap-takip#demo', locale) } : undefined}
-        visualLabel={tr ? 'Hesap Takip uygulamasında vade takibi ekranı: vadesi geçen ve yaklaşan müşteriler' : 'Hesap Takip app: overdue and upcoming customer payments'}
+        secondary={tr ? { label: s('home.hero_secondary_cta'), href: localePath('/urunler/hesap-takip#demo', locale) } : undefined}
+        visualLabel={s('home.hero_visual_label')}
+        screenshot={hesapTakip?.hero_screenshot}
+        chip={{ title: s('home.hero_chip_title'), text: s('home.hero_chip_text') }}
       />
     </div>
   </div>
@@ -170,14 +167,14 @@ const jsonLd = [
 
   <Section id="works" spy labelledby="works-title">
     <SectionLayout id="works-title" title={section('works').title} description={section('works').description}>
-      <ul role="list" aria-label={tr ? 'Referanslarımız' : 'Our clients'} class="mb-16 flex w-full flex-wrap items-center justify-center gap-x-10 gap-y-8">
+      <ul role="list" aria-label={s('a11y.references')} class="mb-16 flex w-full flex-wrap items-center justify-center gap-x-10 gap-y-8">
         {home.references.map(r => <li><Img src={r.logo} alt={r.name} class="h-7 w-auto" height={28} width={120} /></li>)}
       </ul>
       <ul role="list" class="grid w-full grid-cols-1 gap-8">
         {previewWorks.map((item, i) => <li style={stagger(i)}><WorksCard locale={locale} item={item} /></li>)}
       </ul>
       <a slot="button" href={localePath('/works', locale)} class="link inline-flex items-center gap-1 text-lg">
-        {section('works').buttontext || s.viewAllWork}<i class="ri-arrow-right-line" aria-hidden="true"></i>
+        {section('works').buttontext || s('common.view_all_work')}<i class="ri-arrow-right-line" aria-hidden="true"></i>
       </a>
     </SectionLayout>
   </Section>
@@ -191,21 +188,26 @@ const jsonLd = [
   </Section>
 
 
-  <section id="contact" aria-label={s.contact} class="bg-secondary-50">
+  <section id="sss" aria-labelledby="faq-title" class="bg-secondary-50">
     <div class="container-x flex items-center justify-center pb-40 pt-28">
       <div class="w-full space-y-16 lg:flex lg:justify-between lg:gap-16 lg:space-y-0 2xl:gap-24">
         <div class="flex-1">
-          <h2 class="section-title">{section('faq').title}</h2>
+          <h2 id="faq-title" class="section-title">{section('faq').title}</h2>
           <p class="mt-4 font-inter text-base font-normal text-body-text">{section('faq').description}</p>
           <div class="pt-8">
             <Accordion items={home.faq} />
           </div>
         </div>
         <div class="flex-1">
-          <h2 class="section-title" id="contact-title">{section('contact').title}</h2>
-          <p class="mt-4 font-inter text-base font-normal text-body-text">{section('contact').description}</p>
-          <div class="pt-8">
-            <LeadForm locale={locale} idPrefix="contact" />
+          <div class="reveal rounded-2xl border border-border-color bg-white p-8 lg:p-10">
+            <h2 class="section-title" id="contact-title">{s('home.contact_cta_title')}</h2>
+            <p class="mt-4 font-inter text-base text-body-text">{s('home.contact_cta_text')}</p>
+            <dl class="mt-8 space-y-3">
+              <div class="flex gap-3"><dt class="w-24 shrink-0 text-sm text-label-text">{s('company.phone')}</dt><dd><a class="link" href={COMPANY.phoneHref}>{COMPANY.phone}</a></dd></div>
+              <div class="flex gap-3"><dt class="w-24 shrink-0 text-sm text-label-text">{s('company.email')}</dt><dd><a class="link" href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></dd></div>
+              <div class="flex gap-3"><dt class="w-24 shrink-0 text-sm text-label-text">{s('company.address')}</dt><dd class="text-heading-text">{COMPANY.address.full}</dd></div>
+            </dl>
+            <a href={routePath('contact', locale)} class="btn btn-danger mt-8">{s('contact.form_title')}<i class="ri-arrow-right-line" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>

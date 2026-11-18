@@ -2,7 +2,7 @@
 import type { Locale } from '~/lib/i18n'
 import { COMPANY } from '~/lib/company'
 import { getLayout } from '~/lib/content'
-import { localePath, t } from '~/lib/i18n'
+import { localePath, routePath, t } from '~/lib/i18n'
 import Logo from './Logo.astro'
 
 interface Props { locale: Locale }
@@ -30,9 +30,9 @@ function socialName(icon = '', link = '') {
 }
 
 const quickLinks = [
-  { label: s.menu.services, href: `${home}#services` },
-  { label: s.menu.works, href: localePath('/works', locale) },
-  { label: s.contact, href: `${home}#contact` },
+  { label: s('nav.services'), href: `${home}#services` },
+  { label: s('nav.works'), href: localePath('/works', locale) },
+  { label: s('nav.contact'), href: routePath('contact', locale) },
 ]
 ---
 
@@ -42,14 +42,14 @@ const quickLinks = [
       <div>
         <a href={home} class="mb-4 flex h-6 w-28 items-center md:w-36">
           <Logo />
-          <span class="sr-only">{s.home}</span>
+          <span class="sr-only">{s('nav.home')}</span>
         </a>
-        <ul class="flex gap-4" aria-label={s.social}>
+        <ul class="flex gap-4" aria-label={s('a11y.social')}>
           {socialLinks.map(social => (
             <li>
               <a href={social.link} target="_blank" rel="noopener noreferrer" class="text-xl leading-none text-heading-text hover:text-primary-600">
                 <i class={social.icon} aria-hidden="true"></i>
-                <span class="sr-only">{socialName(social.icon, social.link)} {s.opensNewTab}</span>
+                <span class="sr-only">{socialName(social.icon, social.link)} {s('a11y.opens_new_tab')}</span>
               </a>
             </li>
           ))}
@@ -57,7 +57,7 @@ const quickLinks = [
       </div>
 
       <nav aria-labelledby="footer-services">
-        <h2 id="footer-services" class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s.ourServices}</h2>
+        <h2 id="footer-services" class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s('footer.services')}</h2>
         <ul class="space-y-2">
           {servicePages.map(page => (
             <li>
@@ -68,7 +68,7 @@ const quickLinks = [
       </nav>
 
       <nav aria-labelledby="footer-quick">
-        <h2 id="footer-quick" class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s.quickLinks}</h2>
+        <h2 id="footer-quick" class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s('footer.quick_links')}</h2>
         <ul class="space-y-2">
           {quickLinks.map(l => (
             <li><a href={l.href} class="text-sm text-body-text transition-colors hover:text-primary-600">{l.label}</a></li>
@@ -77,22 +77,25 @@ const quickLinks = [
       </nav>
 
       <div>
-        <h2 class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s.company}</h2>
+        <h2 class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s('footer.company')}</h2>
         <address class="space-y-2 text-sm not-italic text-body-text">
           <p class="font-medium text-heading-text">{COMPANY.legalName}</p>
           <p>{COMPANY.address.full}</p>
           <p>
-            <span lang="tr">Vergi Dairesi:</span> {COMPANY.taxOffice} · <span lang="tr">VKN:</span> {COMPANY.taxNumber}<br />
-            <span lang="tr">MERSİS:</span> {COMPANY.mersis}
+            {s('company.tax_office')}: {COMPANY.taxOffice}<br />
+            {s('company.tax_number')}: {COMPANY.taxNumber}<br />
+            {s('company.mersis')}: {COMPANY.mersis}
           </p>
           <p><a href={COMPANY.phoneHref} class="hover:text-primary-600">{COMPANY.phone}</a></p>
           <p><a href={`mailto:${COMPANY.email}`} class="hover:text-primary-600">{COMPANY.email}</a></p>
+          {COMPANY.kep && <p>{s('company.kep')}: {COMPANY.kep}</p>}
+          {COMPANY.chamber.name && <p>{s('company.chamber')}: {COMPANY.chamber.url ? <a href={COMPANY.chamber.url} class="hover:text-primary-600" target="_blank" rel="noopener noreferrer">{COMPANY.chamber.name}<span class="sr-only"> {s('a11y.opens_new_tab')}</span></a> : COMPANY.chamber.name}</p>}
         </address>
       </div>
     </div>
 
     <div class="flex flex-col items-center justify-between gap-4 border-t border-border-color pt-6 md:flex-row">
-      <p class="text-center text-sm text-heading-text">© {year} {COMPANY.shortName} {s.rights}</p>
+      <p class="text-center text-sm text-heading-text">© {year} {COMPANY.shortName} {s('footer.rights')}</p>
     </div>
   </div>
 </footer>

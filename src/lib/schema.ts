@@ -100,52 +100,13 @@ export function creativeWorkSchema(locale: Locale, w: { title: string, descripti
   }
 }
 
-export const FOUNDERS = [
-  {
+/** Person nodes from the Contentrain `team` collection. */
+export function teamSchema(team: { name: string, job_title: string, same_as?: string[] }[]) {
+  return team.map(m => ({
     '@type': 'Person',
-    'name': 'Ahmet Bayramoğlu',
-    'jobTitle': 'Co Founder',
+    'name': m.name,
+    'jobTitle': m.job_title,
     'worksFor': { '@id': ORG_ID },
-    'sameAs': ['https://www.linkedin.com/in/ahmet-bayhan-bayramo%C4%9Flu-746362111', 'https://twitter.com/by_hun'],
-  },
-  {
-    '@type': 'Person',
-    'name': 'Sercan Oray',
-    'jobTitle': 'Co Founder',
-    'worksFor': { '@id': ORG_ID },
-    'sameAs': ['https://www.linkedin.com/in/sercanoray', 'https://twitter.com/oraysercan'],
-  },
-]
-
-/** Lanista's own SaaS products listed on the agency home page (unchanged from the Nuxt site). */
-export function ownAppsSchema(locale: Locale) {
-  const en = locale === 'en'
-  return [
-    {
-      '@type': 'SoftwareApplication',
-      'name': 'Contentrain',
-      'description': en ? 'Git-native Headless CMS platform combining Git workflows with content management for developers and content creators.' : 'Git-native Headless CMS platformu. İçerik yönetimini Git workflow\'ları üzerine kurar.',
-      'url': 'https://contentrain.io/',
-      'applicationCategory': 'DeveloperApplication',
-      'operatingSystem': 'Web',
-      'creator': { '@id': ORG_ID },
-    },
-    {
-      '@type': 'SoftwareApplication',
-      'name': 'Yanyana',
-      'description': en ? 'Social game platform for weddings, corporate events, and social gatherings. Supports offline and online modes with 12+ game engines.' : 'Düğün, kurumsal etkinlik ve sosyal buluşmalar için sosyal oyun platformu. 12+ oyun motoru ile offline ve online modlar.',
-      'applicationCategory': 'GameApplication',
-      'operatingSystem': 'iOS, Android, Web',
-      'creator': { '@id': ORG_ID },
-    },
-    {
-      '@type': 'SoftwareApplication',
-      'name': 'LineDiff',
-      'description': en ? 'AI-powered text and document comparison platform. Local-first, offline-capable with client-side encryption. Supports 10+ file formats.' : 'AI destekli metin ve doküman karşılaştırma platformu. Local-first, offline çalışabilir, istemci tarafı şifreleme. 10+ dosya formatı desteği.',
-      'url': 'https://linediff.app',
-      'applicationCategory': 'UtilitiesApplication',
-      'operatingSystem': 'Web',
-      'creator': { '@id': ORG_ID },
-    },
-  ]
+    ...(m.same_as?.length ? { sameAs: m.same_as } : {}),
+  }))
 }

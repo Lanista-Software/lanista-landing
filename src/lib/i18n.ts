@@ -3,6 +3,8 @@
  * English lives under /en/. Every generated URL carries a trailing slash —
  * the host 301s the slash-less form (see docs/seo-audit.md).
  */
+import { dictionary } from '#contentrain'
+
 export const LOCALES = ['tr', 'en'] as const
 export type Locale = (typeof LOCALES)[number]
 export const DEFAULT_LOCALE: Locale = 'tr'
@@ -31,6 +33,15 @@ export function localePath(path: string, locale: Locale = DEFAULT_LOCALE): strin
   return hash !== undefined ? `${href}#${hash}` : href
 }
 
+/** Pages whose slug differs per language. */
+export const ROUTES = {
+  contact: { tr: '/iletisim', en: '/contact' },
+} as const satisfies Record<string, Record<Locale, string>>
+
+export function routePath(route: keyof typeof ROUTES, locale: Locale): string {
+  return localePath(ROUTES[route][locale], locale)
+}
+
 /** Content stores bare hashes ("#contact") or site paths; anchor them to the localized home. */
 export function contentLink(link: string | undefined, locale: Locale): string {
   if (!link)
@@ -40,73 +51,19 @@ export function contentLink(link: string | undefined, locale: Locale): string {
   return link.startsWith('#') ? `${localePath('/', locale)}${link}` : localePath(link, locale)
 }
 
-/** UI chrome strings (navigation, buttons, landmarks). Content lives in Contentrain. */
-export const ui = {
-  tr: {
-    skipToContent: 'İçeriğe geç',
-    mainNav: 'Ana menü',
-    footerNav: 'Alt menü',
-    openMenu: 'Menüyü aç',
-    closeMenu: 'Menüyü kapat',
-    menuTitle: 'Menü',
-    language: 'Dil seçimi',
-    social: 'Sosyal medya',
-    contact: 'İletişim',
-    menu: {
-      home: 'Ana Sayfa',
-      services: 'Hizmetler',
-      products: 'Ürünler',
-      process: 'Süreç',
-      technologies: 'Teknolojiler',
-      works: 'Çalışmalar',
-    },
-    learnMore: 'Detaylı bilgi',
-    caseStudy: 'Vaka çalışması',
-    liveSite: 'Canlı site',
-    opensNewTab: '(yeni sekmede açılır)',
-    viewAllWork: 'Tüm çalışmaları gör',
-    ourServices: 'Hizmetlerimiz',
-    quickLinks: 'Hızlı Erişim',
-    legal: 'Yasal',
-    company: 'Şirket Bilgileri',
-    rights: 'Tüm hakları saklıdır.',
-    home: 'Ana Sayfa',
-    breadcrumb: 'Sayfa konumu',
-    moreDetailsFor: 'Daha fazla bilgi:',
-  },
-  en: {
-    skipToContent: 'Skip to content',
-    mainNav: 'Main navigation',
-    footerNav: 'Footer navigation',
-    openMenu: 'Open menu',
-    closeMenu: 'Close menu',
-    menuTitle: 'Menu',
-    language: 'Language',
-    social: 'Social media',
-    contact: 'Contact',
-    menu: {
-      home: 'Home',
-      services: 'Services',
-      products: 'Products',
-      process: 'Process',
-      technologies: 'Technologies',
-      works: 'Works',
-    },
-    learnMore: 'Learn more',
-    caseStudy: 'View case study',
-    liveSite: 'Live site',
-    opensNewTab: '(opens in a new tab)',
-    viewAllWork: 'View all work',
-    ourServices: 'Our Services',
-    quickLinks: 'Quick Links',
-    legal: 'Legal',
-    company: 'Company',
-    rights: 'All rights reserved.',
-    home: 'Home',
-    breadcrumb: 'Breadcrumb',
-    moreDetailsFor: 'More details:',
-  },
-} as const
+export type Translate = (key: string, params?: Record<string, string | number>) => string
 
-export type UiStrings = (typeof ui)[Locale]
-export const t = (locale: Locale): UiStrings => ui[locale]
+/**
+ * Interface strings come from the Contentrain `ui` dictionary — no
+ * user-facing text lives in code. A missing key fails the build loudly.
+ * Build-time only (imports #contentrain): never import from src/scripts.
+ */
+export function t(locale: Locale): Translate {
+  const dict = dictionary('ui').locale(locale).get()
+  return (key, params) => {
+    const value = dict[key]
+    if (value === undefined)
+      throw new Error(`[ui] Missing dictionary key "${key}" for locale "${locale}" — add it in Contentrain (model: ui).`)
+    return params ? value.replace(/\{(\w+)\}/g, (_, k: string) => String(params[k] ?? '')) : value
+  }
+}

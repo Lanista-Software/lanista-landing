@@ -17,13 +17,13 @@ const s = t(locale)
     <div class="flex flex-wrap items-center gap-3 pt-2">
       {item.slug && (
         <a href={localePath(`/works/${item.slug}`, locale)} class="btn btn-primary">
-          {s.caseStudy}<span class="sr-only">: {item.title}</span>
+          {s('common.case_study')}<span class="sr-only">: {item.title}</span>
           <i class="ri-arrow-right-line" aria-hidden="true"></i>
         </a>
       )}
       {item.link && (
         <a href={item.link} target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-track="button_clicked" data-track-button_name="see_live_project">
-          {s.liveSite}<span class="sr-only">: {item.title} {s.opensNewTab}</span>
+          {s('common.live_site')}<span class="sr-only">: {item.title} {s('a11y.opens_new_tab')}</span>
           <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
         </a>
       )}

@@ -5,7 +5,7 @@ import CtaBlock from '~/components/CtaBlock.astro'
 import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import { getServicePage, splitList } from '~/lib/content'
-import { localePath, t } from '~/lib/i18n'
+import { localePath, routePath, t } from '~/lib/i18n'
 import { serviceSchema } from '~/lib/schema'
 import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
 import { stagger } from '~/lib/ui'
@@ -13,17 +13,16 @@ import { stagger } from '~/lib/ui'
 
 const { locale, slug } = Astro.props as { locale: Locale, slug: string }
 const s = t(locale)
-const en = locale === 'en'
 const { page, otherPages, relatedWorks } = getServicePage(locale, slug)!
 const technologies = splitList(page.technologies)
 const trail = [
-  { name: s.home, path: '/' },
-  { name: s.menu.services, path: '/#services' },
+  { name: s('nav.home'), path: '/' },
+  { name: s('nav.services'), path: '/#services' },
   { name: page.title, path: `/services/${slug}` },
 ]
 const blocks = [
-  { key: 'challenge', title: en ? 'The Challenge' : 'Zorluk', body: page.challenge_content, alt: false },
-  { key: 'approach', title: en ? 'Our Approach' : 'Yaklaşımımız', body: page.approach_content, alt: true },
+  { key: 'challenge', title: s('service.challenge'), body: page.challenge_content, alt: false },
+  { key: 'approach', title: s('service.approach'), body: page.approach_content, alt: true },
 ]
 ---
 
@@ -53,7 +52,7 @@ const blocks = [
   {technologies.length > 0 && (
     <section class="py-16 lg:py-20" aria-labelledby="tech-title">
       <div class="container-x"><div class="max-w-4xl">
-        <h2 id="tech-title" class="block-title mb-6">{en ? 'Technologies We Use' : 'Kullandığımız Teknolojiler'}</h2>
+        <h2 id="tech-title" class="block-title mb-6">{s('service.technologies')}</h2>
         <ul role="list" class="flex flex-wrap gap-3">
           {technologies.map((tech, i) => <li class="reveal" style={stagger(i, 40)}><span class="tag tag-primary">{tech}</span></li>)}
         </ul>
@@ -64,7 +63,7 @@ const blocks = [
   {page.benefits_content && (
     <section class="bg-secondary-50 py-16 lg:py-20" aria-labelledby="benefits-title">
       <div class="container-x"><div class="reveal max-w-4xl">
-        <h2 id="benefits-title" class="block-title mb-6">{en ? 'Key Benefits' : 'Temel Avantajlar'}</h2>
+        <h2 id="benefits-title" class="block-title mb-6">{s('service.benefits')}</h2>
         <p class="whitespace-pre-line font-inter leading-relaxed">{page.benefits_content}</p>
       </div></div>
     </section>
@@ -73,7 +72,7 @@ const blocks = [
   {relatedWorks.length > 0 && (
     <section class="py-16 lg:py-20" aria-labelledby="related-title">
       <div class="container-x"><div class="max-w-4xl">
-        <h2 id="related-title" class="block-title mb-8">{en ? 'Related Projects' : 'İlgili Projeler'}</h2>
+        <h2 id="related-title" class="block-title mb-8">{s('service.related')}</h2>
         <ul role="list" class="space-y-6">
           {relatedWorks.map((work, i) => (
             <li class="reveal rounded-2xl border border-border-color p-6 lg:p-8" style={stagger(i)}>
@@ -81,8 +80,8 @@ const blocks = [
               <h3 class="mb-2 font-space text-xl font-bold text-heading-text">{work.title}</h3>
               <p class="line-clamp-3 font-inter leading-relaxed">{work.description}</p>
               <div class="mt-4 flex flex-wrap gap-4">
-                {work.slug && <a href={localePath(`/works/${work.slug}`, locale)} class="link inline-flex items-center gap-1 text-sm">{s.caseStudy}<span class="sr-only">: {work.title}</span><i class="ri-arrow-right-line" aria-hidden="true"></i></a>}
-                {work.link && <a href={work.link} target="_blank" rel="noopener noreferrer" class="link inline-flex items-center gap-1 text-sm">{en ? 'View project' : 'Projeyi görüntüle'}<span class="sr-only">: {work.title} {s.opensNewTab}</span><i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>}
+                {work.slug && <a href={localePath(`/works/${work.slug}`, locale)} class="link inline-flex items-center gap-1 text-sm">{s('common.case_study')}<span class="sr-only">: {work.title}</span><i class="ri-arrow-right-line" aria-hidden="true"></i></a>}
+                {work.link && <a href={work.link} target="_blank" rel="noopener noreferrer" class="link inline-flex items-center gap-1 text-sm">{s('common.view_project')}<span class="sr-only">: {work.title} {s('a11y.opens_new_tab')}</span><i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>}
               </div>
             </li>
           ))}
@@ -93,7 +92,7 @@ const blocks = [
 
   <section class="bg-secondary-50 py-16 lg:py-20" aria-labelledby="other-title">
     <div class="container-x"><div class="max-w-4xl">
-      <h2 id="other-title" class="block-title mb-8">{en ? 'Explore Our Other Services' : 'Diğer Hizmetlerimizi Keşfedin'}</h2>
+      <h2 id="other-title" class="block-title mb-8">{s('service.others')}</h2>
       <ul role="list" class="grid grid-cols-1 gap-4 md:grid-cols-2">
         {otherPages.map((other, i) => (
           <li class="reveal" style={stagger(i % 4)}>
@@ -107,5 +106,5 @@ const blocks = [
     </div></div>
   </section>
 
-  <CtaBlock title={en ? 'Let\'s Build Together' : 'Birlikte İnşa Edelim'} text={en ? 'Ready to discuss your project? We\'d love to hear about your requirements.' : 'Projenizi tartışmaya hazır mısınız? Gereksinimlerinizi duymak isteriz.'} href={`${localePath('/', locale)}#contact`} label={en ? 'Contact Us' : 'İletişime Geçin'} />
+  <CtaBlock title={s('service.cta_title')} text={s('service.cta_text')} href={routePath('contact', locale)} label={s('common.contact_us')} />
 </BaseLayout>

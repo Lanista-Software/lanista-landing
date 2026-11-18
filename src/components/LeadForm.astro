@@ -1,8 +1,8 @@
 ---
 import type { FieldName, LeadType } from '~/lib/forms'
 import type { Locale } from '~/lib/i18n'
-import { FIELD_RULES, formStrings } from '~/lib/forms'
-import { localePath } from '~/lib/i18n'
+import { FIELD_RULES } from '~/lib/forms'
+import { localePath, t } from '~/lib/i18n'
 
 interface Props {
   locale: Locale
@@ -15,6 +15,8 @@ interface Props {
   /** Override which fields are required for this form. */
   required?: FieldName[]
   submitLabel?: string
+  /** Let the visitor choose the request type (radio group). First option is selected. */
+  typeOptions?: { value: LeadType, label: string }[]
   /** Initial subject text (hidden subject is used when 'subject' is not in fields). */
   subject?: string
   class?: string
@@ -28,9 +30,12 @@ const {
   required,
   submitLabel,
   subject,
+  typeOptions,
   class: className,
 } = Astro.props
-const s = formStrings[locale]
+const s = t(locale)
+const label = (f: FieldName) => s(`form.label.${f}`)
+const [consentBefore, consentAfter] = s('form.consent').split('{link}')
 const isRequired = (f: FieldName) => (required ? required.includes(f) : FIELD_RULES[f].required)
 const fid = (f: string) => `${idPrefix}-${f}`
 const kvkkHref = localePath('/yasal/kvkk', 'tr')
@@ -40,8 +45,18 @@ const config = {
   locale,
   type,
   product: product ?? null,
-  fields: fields.map(f => ({ name: f, label: s.labels[f], ...FIELD_RULES[f], required: isRequired(f) })),
-  messages: { ...s.v, success: s.success, failure: s.failure, consent: s.consentError, rateLimit: s.rateLimit },
+  fields: fields.map(f => ({ name: f, label: label(f), ...FIELD_RULES[f], required: isRequired(f) })),
+  messages: {
+    required: s('form.v.required'),
+    min: s('form.v.min'),
+    max: s('form.v.max'),
+    email: s('form.v.email'),
+    tel: s('form.v.tel'),
+    success: s('form.success'),
+    failure: s('form.failure'),
+    consent: s('form.consent_error'),
+    rateLimit: s('form.rate_limit'),
+  },
 }
 ---
 
@@ -53,23 +68,37 @@ const config = {
   aria-describedby={`${idPrefix}-required-note`}
 >
   <p id={`${idPrefix}-required-note`} class="field-hint">
-    {locale === 'tr' ? 'Yıldızlı (*) alanlar zorunludur.' : 'Fields marked with * are required.'}
+    {s('form.required_note')}
   </p>
 
   <div data-part="summary" tabindex="-1" hidden class="rounded-lg border border-danger-200 bg-danger-50 p-4 text-sm text-danger-800">
-    <p class="font-medium">{s.errorSummary}</p>
+    <p class="font-medium">{s('form.error_summary')}</p>
     <ul class="mt-2 list-disc pl-5" data-part="summary-list"></ul>
   </div>
+
+  {typeOptions && (
+    <fieldset class="flex flex-col gap-2">
+      <legend class="field-label mb-2">{s('form.request_type')}</legend>
+      <div class="flex flex-wrap gap-3">
+        {typeOptions.map((o, i) => (
+          <label class="flex cursor-pointer items-center gap-2 rounded-full border border-border-color px-4 py-2 text-sm font-medium text-heading-text has-[:checked]:border-primary-800 has-[:checked]:bg-primary-50">
+            <input type="radio" name="type" value={o.value} checked={i === 0} class="accent-primary-800" />
+            {o.label}
+          </label>
+        ))}
+      </div>
+    </fieldset>
+  )}
 
   {fields.map(f => (
     <div class="flex flex-col gap-2">
       <label for={fid(f)} class="field-label">
-        {s.labels[f]}
-        {isRequired(f) ? <span aria-hidden="true" class="text-danger-700"> *</span> : <span class="font-normal text-label-text"> {s.optional}</span>}
+        {label(f)}
+        {isRequired(f) ? <span aria-hidden="true" class="text-danger-700"> *</span> : <span class="font-normal text-label-text"> {s('form.optional')}</span>}
       </label>
       {f === 'message'
-        ? <textarea id={fid(f)} name={f} rows="5" class="field resize-none" placeholder={s.placeholders[f]} required={isRequired(f)} maxlength={FIELD_RULES[f].max} aria-describedby={`${fid(f)}-error`}></textarea>
-        : <input id={fid(f)} name={f} type={f === 'email' ? 'email' : f === 'phone' ? 'tel' : 'text'} inputmode={f === 'phone' ? 'tel' : undefined} autocomplete={autocomplete[f]} class="field" placeholder={s.placeholders[f]} required={isRequired(f)} maxlength={FIELD_RULES[f].max} aria-describedby={`${fid(f)}-error`} />}
+        ? <textarea id={fid(f)} name={f} rows="5" class="field resize-none" placeholder={s(`form.placeholder.${f}`)} required={isRequired(f)} maxlength={FIELD_RULES[f].max} aria-describedby={`${fid(f)}-error`}></textarea>
+        : <input id={fid(f)} name={f} type={f === 'email' ? 'email' : f === 'phone' ? 'tel' : 'text'} inputmode={f === 'phone' ? 'tel' : undefined} autocomplete={autocomplete[f]} class="field" placeholder={s(`form.placeholder.${f}`)} required={isRequired(f)} maxlength={FIELD_RULES[f].max} aria-describedby={`${fid(f)}-error`} />}
       <p id={`${fid(f)}-error`} class="field-error" data-error-for={f}></p>
     </div>
   ))}
@@ -80,7 +109,7 @@ const config = {
     <div class="flex items-start gap-3">
       <input id={fid('consent')} name="consent" type="checkbox" class="checkbox" required aria-describedby={`${fid('consent')}-error`} />
       <label for={fid('consent')} class="text-sm text-body-text">
-        {s.consentBefore}<a href={kvkkHref} class="link" target="_blank" rel="noopener" hreflang="tr">{s.consentLink}</a>{s.consentAfter}
+        {consentBefore}<a href={kvkkHref} class="link" target="_blank" rel="noopener" hreflang="tr">{s('form.consent_link')}</a>{consentAfter}
         <span aria-hidden="true" class="text-danger-700"> *</span>
       </label>
     </div>
@@ -91,12 +120,12 @@ const config = {
 
   <!-- Honeypot: hidden from people and assistive tech, filled only by bots. -->
   <div aria-hidden="true" class="absolute -left-[9999px] size-px overflow-hidden">
-    <label for={fid('website')}>Website</label>
+    <label for={fid('website')}>{s('form.honeypot')}</label>
     <input id={fid('website')} name="website" type="text" tabindex="-1" autocomplete="off" />
   </div>
 
   <div class="flex flex-col pt-2">
-    <button type="submit" class="btn btn-danger btn-block" data-label={submitLabel ?? s.send} data-sending={s.sending}>{submitLabel ?? s.send}</button>
+    <button type="submit" class="btn btn-danger btn-block" data-label={submitLabel ?? s('form.send')} data-sending={s('form.sending')}>{submitLabel ?? s('form.send')}</button>
   </div>
   <p data-part="status" role="status" aria-live="polite" class="text-sm"></p>
 </form>

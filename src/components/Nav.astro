@@ -15,7 +15,7 @@ const isHome = path === '/'
 // Hash items scroll within the home page; route items are real pages.
 const items = [
   { key: 'home', href: localePath('/', locale), section: 'home' },
-  ...(locale === 'tr' ? [{ key: 'products', href: `${localePath('/', locale)}#urunler`, section: 'urunler' } as const] : []),
+  ...(locale === 'tr' ? [{ key: 'products', href: localePath('/urunler', locale), route: '/urunler' } as const] : []),
   { key: 'services', href: `${localePath('/', locale)}#services`, section: 'services' },
   { key: 'process', href: `${localePath('/', locale)}#process`, section: 'process' },
   { key: 'works', href: localePath('/works', locale), route: '/works' },
@@ -28,7 +28,7 @@ function isCurrentRoute(route?: string) {
 }
 ---
 
-<nav aria-label={s.mainNav} id={id}>
+<nav aria-label={s('a11y.main_nav')} id={id}>
   <ul class:list={[direction === 'vertical' ? 'flex flex-col gap-6' : 'flex items-center gap-6']}>
     {items.map((item) => {
       const current = 'route' in item ? isCurrentRoute(item.route) : isHome && item.section === 'home'
@@ -40,7 +40,7 @@ function isCurrentRoute(route?: string) {
             aria-current={current ? 'page' : undefined}
             class="font-inter font-medium text-heading-text transition-colors hover:text-danger-600 aria-[current]:font-bold aria-[current]:text-danger-600"
           >
-            {s.menu[item.key]}
+            {s(`nav.${item.key}`)}
           </a>
         </li>
       )

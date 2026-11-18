@@ -4,6 +4,7 @@ import { readFile } from 'node:fs/promises'
 import { createRequire } from 'node:module'
 import { Resvg } from '@resvg/resvg-js'
 import satori from 'satori'
+import { SITE_NAME, SITE_URL } from './seo'
 
 const require = createRequire(import.meta.url)
 // Satori needs woff/ttf (not woff2). latin-ext carries the Turkish glyphs (ğ, ş, İ, ı);
@@ -46,8 +47,8 @@ export async function renderOgCard({ title, description, label }: OgCard): Promi
       description ? h('div', { display: 'flex', width: '100%', marginTop: 24, fontFamily: SANS, fontSize: 30, lineHeight: 1.4, color: '#4a5170' }, description) : null,
     ].filter(Boolean)),
     h('div', { display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', width: '100%' }, [
-      h('div', { display: 'flex', fontFamily: DISPLAY, fontWeight: 700, fontSize: 34, color: '#10162f' }, 'Lanista Software'),
-      h('div', { display: 'flex', fontFamily: SANS, fontSize: 26, color: '#4a5170' }, 'lanista.com.tr'),
+      h('div', { display: 'flex', fontFamily: DISPLAY, fontWeight: 700, fontSize: 34, color: '#10162f' }, SITE_NAME),
+      h('div', { display: 'flex', fontFamily: SANS, fontSize: 26, color: '#4a5170' }, new URL(SITE_URL).host),
     ]),
   ])
   const svg = await satori(tree as never, { width: 1200, height: 630, fonts: await loadFonts() })

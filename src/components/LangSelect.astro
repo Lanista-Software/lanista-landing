@@ -7,19 +7,20 @@ interface Props {
   locale: Locale
   path: string
   locales: readonly Locale[]
+  paths?: Partial<Record<Locale, string>>
 }
-const { locale, path, locales } = Astro.props
+const { locale, path, locales, paths = {} } = Astro.props
 const LABELS: Record<Locale, string> = { tr: 'Türkçe', en: 'English' }
 // Real <a href> per locale: the only crawlable path between the TR and EN trees.
 // A page that does not exist in the other language links to that language's home.
 const options = (['tr', 'en'] as const).map(code => ({
   code,
-  href: localePath(locales.includes(code) ? path : '/', code),
+  href: localePath(locales.includes(code) ? (paths[code] ?? path) : '/', code),
   current: code === locale,
 }))
 ---
 
-<nav aria-label={t(locale).language}>
+<nav aria-label={t(locale)('a11y.language')}>
   <ul class="flex items-center gap-3">
     {options.map(o => (
       <li>

@@ -92,3 +92,11 @@ export function getProduct(slug: string) {
 export function getPlans(productId: string) {
   return query('plans').sort('order', 'asc').all().filter(p => (typeof p.product === 'string' ? p.product : p.product?.id) === productId)
 }
+
+export function getTeam(locale: Locale) {
+  return query('team').locale(locale).sort('order', 'asc').all()
+}
+
+export function getOnboardingSteps(locale: Locale) {
+  return query('onboarding-steps').locale(locale).sort('order', 'asc').all()
+}

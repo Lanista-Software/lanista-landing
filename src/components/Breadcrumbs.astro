@@ -6,7 +6,7 @@ interface Props { locale: Locale, trail: { name: string, path: string }[] }
 const { locale, trail } = Astro.props
 ---
 
-<nav aria-label={t(locale).breadcrumb} class="mb-6">
+<nav aria-label={t(locale)('a11y.breadcrumb')} class="mb-6">
   <ol class="flex flex-wrap items-center gap-1 text-sm text-label-text">
     {trail.map((item, i) => (
       <li class="flex items-center gap-1">

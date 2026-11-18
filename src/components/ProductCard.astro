@@ -1,16 +1,13 @@
 ---
 import type { Products } from '#contentrain'
 import Img from '~/components/Img.astro'
-import { localePath } from '~/lib/i18n'
+import { localePath, t } from '~/lib/i18n'
 
 interface Props { product: Products }
 const { product } = Astro.props
-const BADGE = {
-  live: { label: 'Yayında', cls: 'tag-success' },
-  pilot: { label: 'Pilotta', cls: 'tag-warning' },
-  soon: { label: 'Yakında', cls: 'tag-secondary' },
-} as const
-const badge = BADGE[product.status as keyof typeof BADGE]
+const s = t('tr')
+const BADGE_CLASS = { live: 'tag-success', pilot: 'tag-warning', soon: 'tag-secondary' } as const
+const badge = { label: s(`product.status.${product.status}`), cls: BADGE_CLASS[product.status as keyof typeof BADGE_CLASS] }
 const href = localePath(`/urunler/${product.slug}`, 'tr')
 const live = product.status === 'live'
 ---
@@ -29,7 +26,7 @@ const live = product.status === 'live'
     <p class="mt-1 text-sm font-medium text-label-text">{product.sector}</p>
     <p class="mt-4 flex-1 text-body-text">{product.tagline}</p>
     <p class="mt-6 inline-flex items-center gap-1 font-medium text-primary-600 group-hover:underline" aria-hidden="true">
-      {live ? 'İnceleyin' : 'Haber verin'}
+      {live ? s('product.card.view') : s('product.card.notify')}
       <i class="ri-arrow-right-line transition-transform group-hover:translate-x-1"></i>
     </p>
   </div>

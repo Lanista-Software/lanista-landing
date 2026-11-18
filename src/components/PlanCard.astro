@@ -1,0 +1,44 @@
+---
+import type { Plans } from '#contentrain'
+import { t } from '~/lib/i18n'
+import { tl, withVat } from '~/lib/money'
+
+interface Props { plan: Plans, ctaHref: string }
+const { plan, ctaHref } = Astro.props
+const priced = typeof plan.price_try === 'number'
+const vat = plan.vat_rate ?? 20
+const buyHref = plan.iyzico_link ? `/odeme/?paket=${plan.id}` : ctaHref
+const s = t('tr')
+const billing = s(`plan.billing.${plan.billing}`)
+---
+
+<article class:list={[
+  'plan-card reveal relative flex h-full flex-col rounded-2xl border bg-white p-7',
+  plan.featured ? 'border-primary-800 shadow-[0_20px_40px_-24px_rgba(16,39,62,.45)]' : 'border-border-color',
+]}
+>
+  {plan.featured && <p class="tag tag-primary tag-sm absolute -top-3 left-7 bg-white">{s('plan.recommended')}</p>}
+  <h3 class="font-space text-xl font-bold text-heading-text">{plan.name}</h3>
+  {priced
+    ? (
+        <p class="mt-4">
+          <span class="font-space text-4xl font-bold text-heading-text">{tl(plan.price_try!)}</span>
+          <span class="ml-1 font-medium text-body-text">{s('plan.plus_vat')} {plan.billing !== 'one_time' && billing}</span>
+          <span class="mt-1 block text-sm text-label-text">{s('plan.incl_vat', { amount: tl(withVat(plan.price_try!, vat)) })} {billing}</span>
+        </p>
+      )
+    : <p class="mt-4 font-medium text-body-text">{s('plan.price_on_request')}</p>}
+  {plan.includes?.length
+? (
+    <ul class="mt-6 flex-1 space-y-2.5">
+      {plan.includes.map(item => (
+        <li class="flex gap-2.5 text-body-text"><i class="ri-check-line mt-0.5 text-lg leading-none text-success-700" aria-hidden="true"></i><span>{item}</span></li>
+      ))}
+    </ul>
+  )
+: <div class="flex-1"></div>}
+  {plan.note && <p class="mt-6 border-t border-border-color pt-4 text-sm text-label-text">{plan.note}</p>}
+  <a href={buyHref} class:list={['btn btn-block mt-6', plan.featured ? 'btn-danger' : 'btn-outline']}>
+    {plan.iyzico_link ? s('plan.buy') : s('plan.buy_contact')}
+  </a>
+</article>

@@ -1,0 +1,44 @@
+---
+import Breadcrumbs from '~/components/Breadcrumbs.astro'
+import PageHero from '~/components/PageHero.astro'
+import ProductCard from '~/components/ProductCard.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { getProducts } from '~/lib/content'
+import { t } from '~/lib/i18n'
+import { ORG_ID, webPageSchema } from '~/lib/schema'
+import { absoluteUrl, breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
+import { stagger } from '~/lib/ui'
+
+const locale = 'tr' as const
+const s = t(locale)
+const products = getProducts()
+const title = s('products.title')
+const description = clampDescription(s('products.description'))
+const trail = [{ name: s('nav.home'), path: '/' }, { name: title, path: '/urunler' }]
+const jsonLd = [
+  {
+    ...webPageSchema(locale, '/urunler', title, description, 'CollectionPage'),
+    about: { '@id': ORG_ID },
+    mainEntity: {
+      '@type': 'ItemList',
+      'itemListElement': products.map((p, i) => ({ '@type': 'ListItem', 'position': i + 1, 'name': p.name, 'url': absoluteUrl(`/urunler/${p.slug}`, locale) })),
+    },
+  },
+  breadcrumbSchema(locale, trail),
+]
+---
+
+<BaseLayout locale={locale} title={`${title} | ${SITE_NAME}`} description={description} path="/urunler" locales={['tr']} jsonLd={jsonLd}>
+  <PageHero>
+    <Breadcrumbs locale={locale} trail={trail} />
+    <h1 class="page-title">{title}</h1>
+    <p class="mt-5 max-w-2xl text-lg">{s('products.description')}</p>
+  </PageHero>
+  <section class="py-12 lg:py-20" aria-label={title}>
+    <div class="container-x">
+      <ul role="list" class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        {products.map((product, i) => <li style={stagger(i)}><ProductCard product={product} /></li>)}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

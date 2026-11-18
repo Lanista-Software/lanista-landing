@@ -1,18 +1,23 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro'
-import { localePath } from '~/lib/i18n'
+import { localePath, t } from '~/lib/i18n'
+import { SITE_NAME } from '~/lib/seo'
+
+// Netlify serves one 404 for every path, so it speaks Turkish first with an English line.
+const tr = t('tr')
+const en = t('en')
 ---
 
-<BaseLayout locale="tr" title="Sayfa bulunamadı | Lanista" description="Aradığınız sayfa taşınmış ya da kaldırılmış olabilir." path="/404" locales={['tr']} noindex>
+<BaseLayout locale="tr" title={`${tr('not_found.title')} | ${SITE_NAME}`} description={tr('not_found.text')} path="/404" locales={['tr']} noindex>
   <section class="py-32">
     <div class="container-x text-center">
       <p class="font-space text-7xl font-bold text-primary-100" aria-hidden="true">404</p>
-      <h1 class="page-title mt-4">Sayfa bulunamadı</h1>
-      <p class="mx-auto mt-4 max-w-xl text-lg">Aradığınız sayfa taşınmış ya da kaldırılmış olabilir.</p>
-      <p lang="en" class="mx-auto mt-2 max-w-xl text-body-text">The page you are looking for may have moved.</p>
+      <h1 class="page-title mt-4">{tr('not_found.title')}</h1>
+      <p class="mx-auto mt-4 max-w-xl text-lg">{tr('not_found.text')}</p>
+      <p lang="en" class="mx-auto mt-2 max-w-xl text-body-text">{en('not_found.text')}</p>
       <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <a href={localePath('/', 'tr')} class="btn btn-danger">Ana sayfaya dön</a>
-        <a href={localePath('/', 'en')} class="btn btn-outline" lang="en" hreflang="en">English home</a>
+        <a href={localePath('/', 'tr')} class="btn btn-danger">{tr('not_found.home')}</a>
+        <a href={localePath('/', 'en')} class="btn btn-outline" lang="en" hreflang="en">{tr('not_found.other_home')}</a>
       </div>
     </div>
   </section>

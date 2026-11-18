@@ -1,8 +1,9 @@
 import type { Locale } from './i18n'
+import { COMPANY } from './company'
 import { DEFAULT_LOCALE, localePath } from './i18n'
 
 export const SITE_URL = 'https://lanista.com.tr'
-export const SITE_NAME = 'Lanista Software'
+export const SITE_NAME = COMPANY.siteName
 export const TWITTER_SITE = '@lanaboratory'
 
 /** Canonical absolute URL for a locale-agnostic path. Always trailing-slash. */

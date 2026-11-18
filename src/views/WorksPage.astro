@@ -6,7 +6,7 @@ import Img from '~/components/Img.astro'
 import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import { getWorks } from '~/lib/content'
-import { IN_LANGUAGE, localePath, t } from '~/lib/i18n'
+import { IN_LANGUAGE, localePath, routePath, t } from '~/lib/i18n'
 import { ORG_ID, webPageSchema } from '~/lib/schema'
 import { absoluteUrl, breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
 import { stagger } from '~/lib/ui'
@@ -16,11 +16,9 @@ const { locale } = Astro.props as { locale: Locale }
 const s = t(locale)
 const en = locale === 'en'
 const works = getWorks(locale)
-const title = en ? 'Our Work & Case Studies' : 'Çalışmalarımız ve Vaka Çalışmaları'
-const description = en
-  ? 'Selected projects we have designed and built since 2018 — web, mobile, SaaS, microservices and more.'
-  : '2018\'den bu yana tasarlayıp geliştirdiğimiz seçili projeler — web, mobil, SaaS, mikroservis ve daha fazlası.'
-const trail = [{ name: s.home, path: '/' }, { name: s.menu.works, path: '/works' }]
+const title = s('works.title')
+const description = s('works.description')
+const trail = [{ name: s('nav.home'), path: '/' }, { name: s('nav.works'), path: '/works' }]
 const jsonLd = [
   {
     ...webPageSchema(locale, '/works', title, description, 'CollectionPage'),
@@ -59,7 +57,7 @@ const jsonLd = [
                 <h2 class="font-space text-lg font-bold text-heading-text">{work.title}</h2>
                 <p class="mt-2 line-clamp-3 flex-1 text-sm">{work.description}</p>
                 <span class="mt-4 inline-flex items-center text-sm font-medium text-primary-600" aria-hidden="true">
-                  {s.caseStudy}<i class="ri-arrow-right-line ml-1 transition-transform group-hover:translate-x-1"></i>
+                  {s('common.case_study')}<i class="ri-arrow-right-line ml-1 transition-transform group-hover:translate-x-1"></i>
                 </span>
               </div>
             </a>
@@ -69,5 +67,5 @@ const jsonLd = [
     </div>
   </section>
 
-  <CtaBlock class="bg-secondary-50" title={en ? 'Have a project in mind?' : 'Aklınızda bir proje mi var?'} href={`${localePath('/', locale)}#contact`} label={en ? 'Contact Us' : 'İletişime Geçin'} />
+  <CtaBlock class="bg-secondary-50" title={s('works.cta_title')} href={routePath('contact', locale)} label={s('common.contact_us')} />
 </BaseLayout>

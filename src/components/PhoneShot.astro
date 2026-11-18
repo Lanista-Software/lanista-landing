@@ -1,0 +1,12 @@
+---
+import Img from '~/components/Img.astro'
+
+interface Props { src: string, alt?: string, class?: string }
+const { src, alt, class: className } = Astro.props
+---
+
+<figure class:list={['phone-shot', className]}>
+  <div class="rounded-[2rem] bg-primary-800 p-2 shadow-[0_24px_48px_-24px_rgba(16,39,62,.5)]">
+    <Img src={src} alt={alt} width={390} height={844} class="block w-full rounded-[1.6rem]" />
+  </div>
+</figure>

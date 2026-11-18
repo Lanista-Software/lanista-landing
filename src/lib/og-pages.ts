@@ -3,9 +3,9 @@
  * path segment ('' = TR home, 'en/works/x' …), matching ogImagePath() in seo.ts.
  */
 import type { Locale } from './i18n'
-import { getHome, getServicePages, getWorks } from './content'
-import { localePath, LOCALES } from './i18n'
-import { clampDescription } from './seo'
+import { getHome, getProducts, getServicePages, getWorks } from './content'
+import { localePath, LOCALES, ROUTES, t } from './i18n'
+import { clampDescription, SITE_NAME } from './seo'
 
 export interface OgCard { title: string, description: string, label: string }
 
@@ -16,32 +16,38 @@ function key(path: string, locale: Locale) {
 export function getOgCards(): Record<string, OgCard> {
   const cards: Record<string, OgCard> = {}
   for (const locale of LOCALES) {
-    const en = locale === 'en'
+    const u = t(locale)
     const meta = getHome(locale).metaTags
     cards[key('/', locale)] = {
-      label: en ? 'Software Development' : 'Yazılım Geliştirme',
-      title: meta.ogTitle || meta.title || 'Lanista Software',
+      label: u('og.home'),
+      title: meta.ogTitle || meta.title || SITE_NAME,
       description: clampDescription(meta.ogDescription || meta.description, 130),
     }
     cards[key('/works', locale)] = {
-      label: en ? 'Case Studies' : 'Vaka Çalışmaları',
-      title: en ? 'Our Work & Case Studies' : 'Çalışmalarımız ve Vaka Çalışmaları',
-      description: en ? 'Selected projects we have designed and built since 2018.' : '2018\'den bu yana tasarlayıp geliştirdiğimiz seçili projeler.',
+      label: u('og.works'),
+      title: u('works.title'),
+      description: u('og.works_text'),
     }
     for (const w of getWorks(locale).filter(w => w.slug)) {
       cards[key(`/works/${w.slug}`, locale)] = {
-        label: w.categoryName || (en ? 'Case Study' : 'Vaka Çalışması'),
+        label: w.categoryName || u('og.case_study'),
         title: w.title,
         description: clampDescription(w.description, 130),
       }
     }
     for (const p of getServicePages(locale)) {
       cards[key(`/services/${p.slug}`, locale)] = {
-        label: en ? 'Service' : 'Hizmet',
+        label: u('og.service'),
         title: p.title,
         description: clampDescription(p.hero_description, 130),
       }
     }
+    cards[key(ROUTES.contact[locale], locale)] = { label: SITE_NAME, title: u('contact.title'), description: clampDescription(u('contact.description'), 130) }
+  }
+  const tr = t('tr')
+  cards[key('/urunler', 'tr')] = { label: tr('products.og_label'), title: tr('products.title'), description: clampDescription(tr('products.description'), 130) }
+  for (const p of getProducts()) {
+    cards[key(`/urunler/${p.slug}`, 'tr')] = { label: `${tr('og.product')} · ${tr(`product.status.${p.status}`)}`, title: p.hero_title, description: clampDescription(p.tagline, 130) }
   }
   return cards
 }
