@@ -3,7 +3,7 @@
   "name": "Plans",
   "kind": "collection",
   "domain": "marketing",
-  "i18n": false,
+  "i18n": true,
   "title_field": "name",
   "description": "Sellable packages per product (Turkish only). Prices are KDV hariç, in TRY. Leave price_try empty until the owner sets prices; the site then shows 'Teklif iste'. iyzico_link empty → no 'Satın al' button. Only plans of live products are sold. Auto-renewal must not auto-charge consumers on fixed-term plans (Abonelik Yön. md.13).",
   "fields": {
