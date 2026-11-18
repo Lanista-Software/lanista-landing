@@ -3,7 +3,7 @@
   "name": "Legal & Corporate Pages",
   "kind": "document",
   "domain": "system",
-  "i18n": false,
+  "i18n": true,
   "title_field": "title",
   "description": "Turkish legal texts (mesafeli satış, ön bilgilendirme, teslimat-iade, KVKK, gizlilik, çerez, işlem rehberi) and corporate pages (hakkımızda). Markdown body. Tokens {{kep}}, {{kurulum_suresi}}, {{urun}}, {{paket}}, {{tutar}} are filled from Contentrain data at build. Final versions must be reviewed by a lawyer/accountant.",
   "fields": {
