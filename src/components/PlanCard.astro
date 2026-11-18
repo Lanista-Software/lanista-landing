@@ -1,13 +1,13 @@
 ---
 import type { Plans } from '#contentrain'
-import { t } from '~/lib/i18n'
+import { localePath, t } from '~/lib/i18n'
 import { tl, withVat } from '~/lib/money'
 
 interface Props { plan: Plans, ctaHref: string }
 const { plan, ctaHref } = Astro.props
 const priced = typeof plan.price_try === 'number'
 const vat = plan.vat_rate ?? 20
-const buyHref = plan.iyzico_link ? `/odeme/?paket=${plan.id}` : ctaHref
+const buyHref = plan.iyzico_link ? localePath(`/odeme/${plan.id}`, 'tr') : ctaHref
 const s = t('tr')
 const billing = s(`plan.billing.${plan.billing}`)
 ---

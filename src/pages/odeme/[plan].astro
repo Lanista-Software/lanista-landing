@@ -1,0 +1,31 @@
+---
+/**
+ * Pre-payment confirmation (iyzico Phase A). Generated for plans of live
+ * products that have an iyzico payment link (or for every priced plan when
+ * CHECKOUT_PREVIEW=1, for local testing — then no redirect happens).
+ * Shows the order-specific Ön Bilgilendirme Formu and Mesafeli Satış
+ * Sözleşmesi, collects the three unticked approvals (MSY md.5–8, md.15/1-h),
+ * stores them as a `leads` entry of type "order", then redirects to iyzico.
+ */
+import type { Plans, Products } from '#contentrain'
+import { query } from '#contentrain'
+import CheckoutPage from '~/views/CheckoutPage.astro'
+
+export function getStaticPaths() {
+  const preview = process.env.CHECKOUT_PREVIEW === '1'
+  const products = query('products').all()
+  const paths: { params: { plan: string }, props: { plan: Plans, product: Products } }[] = []
+  for (const plan of query('plans').all()) {
+    if (typeof plan.price_try !== 'number' || (!plan.iyzico_link && !preview))
+      continue
+    const id = typeof plan.product === 'string' ? plan.product : plan.product?.id
+    const product = products.find(pr => pr.id === id)
+    if (product?.status === 'live')
+      paths.push({ params: { plan: plan.id }, props: { plan, product } })
+  }
+  return paths
+}
+const { plan, product } = Astro.props
+---
+
+<CheckoutPage plan={plan} product={product} />

@@ -33,6 +33,8 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] **Projede sabit (hard-coded) metin olmayacak**: arayüz metinleri dahil her içerik eksiksiz Contentrain'de (2026-11-18) — tarama temiz
 - [x] Formlar ve iletişim ayrı sayfada: `/iletisim/`, `/en/contact/` (şirket bilgileri + talep türü seçmeli form); ana sayfada SSS + iletişim kartı
 - [ ] Stil kararlarına (Ludus, token'lar, erişilebilirlik) sadık kalınacak; kontrol listesi her adımda güncel tutulacak
+- [ ] Hizmetler ve Süreç ayrı sayfalara (`/hizmetler/`, `/surec/`; EN `/en/services/`, `/en/process/`); ana sayfada sınırlı gösterim, ana sayfa derli toplu
+- [ ] Ödeme altyapısını bağlayacak oturumlar için devir dokümanı (`docs/odeme-altyapisi.md`)
 
 ## 1. Astro'ya geçiş ✅ (`0d50ee0`)
 - [x] Nuxt → Astro 6 (statik), LUI kaldırıldı, Zag.js (sekmeler, akordeon, mobil menü)
@@ -94,7 +96,9 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Ürün sayfası şablonu (hero, dert→çözüm, ekranlar/video, özellikler, paketler, güven, SSS, demo/bekleme formu)
 - [x] Contentrain modelleri: `products` (3 ürün, yayında), `plans` (Hesap Takip: 3 paket, fiyatsız)
 - [x] `legal-pages` doküman modeli (token'lar: {{kep}}, {{kurulum_suresi}}, {{urun}}, {{paket}}, {{tutar}}), `/yasal/{slug}/` + `/{slug}/` (kurumsal) şablonu, içindekiler, taslak uyarısı
-- [ ] Yasal metin taslakları (Fable yazıyor) → gözden geçirme → MCP ile kayıt
+- [x] Yasal metin taslakları (Fable) gözden geçirildi ve Contentrain'e kaydedildi: mesafeli satış, ön bilgilendirme, teslimat-iade, KVKK, gizlilik, çerez, işlem rehberi, hakkımızda (`reviewed: false` → sayfada taslak uyarısı)
+- [ ] Hukukçu/mali müşavir kontrolü (Fable'ın 8 notu: kurulumun başlama anı, SMS kredisi cayma, tacir iyi niyet iadesi, süre sonu salt okunur, saklama süreleri, yurt dışı aktarım standart sözleşmeleri, veri işleyen sözleşmesi, KVKK başvuru usulü) → sonra `reviewed: true`
+- [ ] Doküman modellerinde toplu durum (published) MCP'de desteklenmiyor — Studio'dan yayınlanacak
 - [ ] Kurulum süresi (`company.setup_days`) — kullanıcıdan
 - [x] Meslek kuralları bağlantısı: Van TSO (kullanıcı onayı)
 - [x] `feat/urun-gorselleri` dalı silindi (yerel + remote)
@@ -119,13 +123,14 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Meslek odası: Van Ticaret ve Sanayi Odası (kullanıcı teyit etti)
 - [x] Van TSO sitesi doğrulandı (vantso.org.tr)
 - [x] İletişim sayfası (`/iletisim/`, header + footer'dan erişim): unvan, adres, telefon, e-posta, MERSİS, VKN, ticaret sicil, meslek odası (KEP gelince otomatik görünür)
-- [ ] Hakkımızda
-- [ ] İşlem rehberi
-- [ ] Mesafeli satış sözleşmesi, Ön bilgilendirme formu
-- [ ] Teslimat, iade ve cayma
-- [ ] KVKK aydınlatma metni, Gizlilik politikası, Çerez politikası
+- [x] Hakkımızda (`/hakkimizda/`)
+- [x] İşlem rehberi (`/yasal/islem-rehberi/`)
+- [x] Mesafeli satış sözleşmesi, Ön bilgilendirme formu (taslak)
+- [x] Teslimat, iade ve cayma (taslak)
+- [x] KVKK aydınlatma metni, Gizlilik politikası, Çerez politikası (taslak)
 - [x] Çerez onay bandı: GA yalnız "Kabul et" sonrası yükleniyor (test edildi); Reddet eşit ağırlıkta; footer'dan tercih değişikliği
-- [ ] Ön onay adımı → iyzico ödeme linki
+- [x] Ön onay adımı: `/odeme/{plan}/` (sipariş özeti, siparişe göre doldurulmuş ÖBF + MSS, 3 işaretsiz onay, `leads` type=order kaydı, iyzico linkine yönlendirme); `CHECKOUT_PREVIEW=1` ile test edildi
+- [ ] iyzico ödeme linkleri `plans.iyzico_link` alanına girilecek (kullanıcı, iyzico panelinden)
 - [x] iyzico logo bandı (footer, resmi paket; `company.payment_logo_band`, Studio CDN)
 - [ ] Fiyatlar, taksit, teslim süresi (kullanıcıdan — proje sonunda)
 

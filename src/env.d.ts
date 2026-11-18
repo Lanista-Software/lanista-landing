@@ -7,4 +7,8 @@ interface ImportMetaEnv {
   readonly PUBLIC_CONTENTRAIN_PROJECT_ID?: string
   /** Cloudflare Turnstile site key, only when CAPTCHA is enabled on the Studio form. */
   readonly PUBLIC_TURNSTILE_SITE_KEY?: string
+  /** Build-time only: Studio media read key (alt/size/blurhash). Never PUBLIC_. */
+  readonly STUDIO_CDN_KEY?: string
+  /** "1" renders /odeme/{plan}/ for plans without an iyzico link (local tests). */
+  readonly CHECKOUT_PREVIEW?: string
 }

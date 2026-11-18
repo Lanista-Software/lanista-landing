@@ -38,7 +38,10 @@ export interface RenderedLegal {
   incomplete: boolean
 }
 
-export function renderLegal(page: LegalPage): RenderedLegal {
+/** Order-specific values for {{urun}}, {{paket}}, {{tutar}} (checkout page). */
+export interface OrderTokens { urun: string, paket: string, tutar: string }
+
+export function renderLegal(page: LegalPage, order?: OrderTokens): RenderedLegal {
   const s = t('tr')
   let incomplete = false
   let md = page.body
@@ -47,9 +50,9 @@ export function renderLegal(page: LegalPage): RenderedLegal {
     .filter(line => !(line.includes('{{kep}}') && !COMPANY.kep))
     .join('\n')
     .replaceAll('{{kep}}', COMPANY.kep ?? '')
-    .replaceAll('{{urun}}', s('legal.token.urun'))
-    .replaceAll('{{paket}}', s('legal.token.paket'))
-    .replaceAll('{{tutar}}', s('legal.token.tutar'))
+    .replaceAll('{{urun}}', order?.urun ?? s('legal.token.urun'))
+    .replaceAll('{{paket}}', order?.paket ?? s('legal.token.paket'))
+    .replaceAll('{{tutar}}', order?.tutar ?? s('legal.token.tutar'))
   md = md.replaceAll('{{kurulum_suresi}}', () => {
     if (COMPANY.setupDays)
       return String(COMPANY.setupDays)
@@ -61,7 +64,12 @@ export function renderLegal(page: LegalPage): RenderedLegal {
   const used = new Set<string>()
   const html = (marked.parse(md, { async: false }) as string)
     .replace(/<h([23])>(.*?)<\/h\1>/g, (_, depth: string, inner: string) => {
-      const text = inner.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&')
+      const text = inner.replace(/<[^>]+>/g, '')
+        .replace(/&#39;/g, '\'')
+        .replace(/&quot;/g, '"')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&amp;/g, '&')
       let id = slugify(text) || 'bolum'
       while (used.has(id)) id += '-2'
       used.add(id)
@@ -70,4 +78,8 @@ export function renderLegal(page: LegalPage): RenderedLegal {
       return `<h${depth} id="${id}">${inner}</h${depth}>`
     })
   return { html, toc, incomplete }
+}
+
+export function getLegalPage(slug: string): LegalPage | undefined {
+  return getLegalPages().find(p => p.slug === slug)
 }

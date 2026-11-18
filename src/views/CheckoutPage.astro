@@ -1,0 +1,141 @@
+---
+import type { Plans, Products } from '#contentrain'
+import Breadcrumbs from '~/components/Breadcrumbs.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { FIELD_RULES } from '~/lib/forms'
+import { localePath, t } from '~/lib/i18n'
+import { getLegalPage, legalPath, renderLegal } from '~/lib/legal'
+import { tl, withVat } from '~/lib/money'
+import { SITE_NAME } from '~/lib/seo'
+
+interface Props { plan: Plans, product: Products }
+const { plan, product } = Astro.props
+const locale = 'tr' as const
+const s = t(locale)
+const total = withVat(plan.price_try!, plan.vat_rate ?? 20)
+const tokens = { urun: product.name, paket: plan.name, tutar: tl(total) }
+const obf = getLegalPage('on-bilgilendirme')
+const mss = getLegalPage('mesafeli-satis')
+const obfHtml = obf ? renderLegal(obf, tokens).html : ''
+const mssHtml = mss ? renderLegal(mss, tokens).html : ''
+const path = `/odeme/${plan.id}`
+const trail = [
+  { name: s('nav.products'), path: '/urunler' },
+  { name: product.name, path: `/urunler/${product.slug}` },
+  { name: s('checkout.title'), path },
+]
+const fields = (['name', 'email', 'phone', 'business'] as const).map(f => ({ name: f, label: s(`form.label.${f}`), ...FIELD_RULES[f], required: f !== 'business' }))
+const config = {
+  locale,
+  type: 'order',
+  product: product.slug,
+  plan: plan.name,
+  amount: total,
+  consents: `obf:${obf?.last_updated ?? ''};mss:${mss?.last_updated ?? ''};ifa_onayi:evet`,
+  redirect: plan.iyzico_link,
+  fields,
+  messages: {
+    required: s('form.v.required'),
+min: s('form.v.min'),
+max: s('form.v.max'),
+email: s('form.v.email'),
+tel: s('form.v.tel'),
+    success: s('checkout.redirecting'),
+failure: s('form.failure'),
+consent: s('checkout.consent_error'),
+rateLimit: s('form.rate_limit'),
+  },
+}
+const [obfBefore, obfAfter] = s('checkout.consent_obf').split('{link}')
+const [mssBefore, mssAfter] = s('checkout.consent_mss').split('{link}')
+---
+
+<BaseLayout locale={locale} title={`${s('checkout.title')} | ${SITE_NAME}`} description={s('checkout.redirect_note')} path={path} locales={['tr']} noindex>
+  <div class="container-x py-10 lg:py-16">
+    <Breadcrumbs locale={locale} trail={trail} />
+    <h1 class="page-title">{s('checkout.title')}</h1>
+
+    <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_22rem]">
+      <form data-checkout data-config={JSON.stringify(config)} novalidate class="flex flex-col gap-8 order-2 lg:order-1">
+        <div data-part="summary" tabindex="-1" hidden class="rounded-lg border border-danger-200 bg-danger-50 p-4 text-sm text-danger-800">
+          <p class="font-medium">{s('form.error_summary')}</p>
+          <ul class="mt-2 list-disc pl-5" data-part="summary-list"></ul>
+        </div>
+
+        <fieldset class="rounded-2xl border border-border-color p-6">
+          <legend class="px-2 font-space text-lg font-bold text-heading-text">{s('checkout.buyer')}</legend>
+          <p class="field-hint mb-4">{s('form.required_note')}</p>
+          <div class="grid gap-4 sm:grid-cols-2">
+            {fields.map(f => (
+              <div class="flex flex-col gap-2">
+                <label for={`co-${f.name}`} class="field-label">{f.label}{f.required ? <span aria-hidden="true" class="text-danger-700"> *</span> : <span class="font-normal text-label-text"> {s('form.optional')}</span>}</label>
+                <input id={`co-${f.name}`} name={f.name} type={f.name === 'email' ? 'email' : f.name === 'phone' ? 'tel' : 'text'} autocomplete={{ name: 'name', email: 'email', phone: 'tel', business: 'organization' }[f.name]} class="field" required={f.required} maxlength={f.max} aria-describedby={`co-${f.name}-error`} />
+                <p id={`co-${f.name}-error`} class="field-error" data-error-for={f.name}></p>
+              </div>
+            ))}
+          </div>
+        </fieldset>
+
+        <section aria-labelledby="docs-title" class="rounded-2xl border border-border-color p-6">
+          <h2 id="docs-title" class="font-space text-lg font-bold text-heading-text">{s('checkout.documents')}</h2>
+          {obf && (
+            <details class="mt-4 rounded-xl border border-border-color">
+              <summary class="cursor-pointer px-4 py-3 font-medium text-heading-text">{obf.title}</summary>
+              <div class="prose prose-sm prose-slate max-h-80 max-w-none overflow-y-auto border-t border-border-color px-4 py-3" tabindex="0" set:html={obfHtml} />
+            </details>
+          )}
+          {mss && (
+            <details class="mt-3 rounded-xl border border-border-color">
+              <summary class="cursor-pointer px-4 py-3 font-medium text-heading-text">{mss.title}</summary>
+              <div class="prose prose-sm prose-slate max-h-80 max-w-none overflow-y-auto border-t border-border-color px-4 py-3" tabindex="0" set:html={mssHtml} />
+            </details>
+          )}
+          <div class="mt-6 space-y-4">
+            {[
+              { name: 'obf', before: obfBefore, after: obfAfter, link: s('checkout.obf_link'), href: obf ? localePath(legalPath(obf), 'tr') : undefined },
+              { name: 'mss', before: mssBefore, after: mssAfter, link: s('checkout.mss_link'), href: mss ? localePath(legalPath(mss), 'tr') : undefined },
+            ].map(c => (
+              <div>
+                <div class="flex items-start gap-3">
+                  <input id={`co-${c.name}`} name={c.name} type="checkbox" class="checkbox" aria-describedby={`co-${c.name}-error`} />
+                  <label for={`co-${c.name}`} class="text-sm text-body-text">{c.before}<a href={c.href} target="_blank" rel="noopener" class="link">{c.link}</a>{c.after} <span aria-hidden="true" class="text-danger-700">*</span></label>
+                </div>
+                <p id={`co-${c.name}-error`} class="field-error" data-error-for={c.name}></p>
+              </div>
+            ))}
+            <div>
+              <div class="flex items-start gap-3">
+                <input id="co-perform" name="perform" type="checkbox" class="checkbox" aria-describedby="co-perform-error" />
+                <label for="co-perform" class="text-sm text-body-text">{s('checkout.consent_perform')} <span aria-hidden="true" class="text-danger-700">*</span></label>
+              </div>
+              <p id="co-perform-error" class="field-error" data-error-for="perform"></p>
+            </div>
+          </div>
+        </section>
+
+        <div>
+          <button type="submit" class="btn btn-danger btn-lg btn-block sm:w-auto" data-label={s('checkout.submit')}>{s('checkout.submit')}</button>
+          <p class="mt-3 text-sm text-label-text">{s('checkout.redirect_note')}</p>
+          <p data-part="status" role="status" aria-live="polite" class="mt-3 text-sm"></p>
+        </div>
+      </form>
+
+      <aside aria-labelledby="sum-title" class="order-1 h-fit rounded-2xl border border-primary-800 p-6 lg:order-2 lg:sticky lg:top-28">
+        <h2 id="sum-title" class="font-space text-lg font-bold text-heading-text">{s('checkout.summary')}</h2>
+        <dl class="mt-4 space-y-3 text-sm">
+          <div class="flex justify-between gap-4"><dt class="text-label-text">{s('checkout.product')}</dt><dd class="font-medium text-heading-text">{product.name}</dd></div>
+          <div class="flex justify-between gap-4"><dt class="text-label-text">{s('checkout.plan')}</dt><dd class="text-right font-medium text-heading-text">{plan.name}</dd></div>
+          <div class="flex justify-between gap-4"><dt class="text-label-text">{s('checkout.price')}</dt><dd class="text-heading-text">{tl(plan.price_try!)} {s('plan.plus_vat')}</dd></div>
+          <div class="flex justify-between gap-4 border-t border-border-color pt-3"><dt class="font-medium text-heading-text">{s('checkout.total')}</dt><dd class="font-space text-xl font-bold text-heading-text">{tl(total)}</dd></div>
+        </dl>
+        {plan.note && <p class="mt-4 text-xs text-label-text">{plan.note}</p>}
+      </aside>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import { initCheckout } from '~/scripts/checkout'
+
+  initCheckout()
+</script>
