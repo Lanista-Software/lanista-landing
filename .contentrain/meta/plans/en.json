@@ -1,20 +1,26 @@
 {
+  "06f604c81143": {
+    "source": "agent",
+    "status": "draft",
+    "updated_at": "2026-11-18T13:11:42.768Z",
+    "updated_by": "contentrain-mcp"
+  },
   "52f4e338a982": {
     "source": "agent",
     "status": "published",
-    "updated_at": "2026-11-18T12:58:03.238Z",
+    "updated_at": "2026-11-18T13:11:42.768Z",
     "updated_by": "contentrain-mcp"
   },
   "a26de14ac86e": {
     "source": "agent",
     "status": "published",
-    "updated_at": "2026-11-18T12:58:03.238Z",
+    "updated_at": "2026-11-18T13:11:42.768Z",
     "updated_by": "contentrain-mcp"
   },
   "be65fb7e0825": {
     "source": "agent",
     "status": "published",
-    "updated_at": "2026-11-18T12:58:03.238Z",
+    "updated_at": "2026-11-18T13:11:42.768Z",
     "updated_by": "contentrain-mcp"
   }
 }
