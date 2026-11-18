@@ -113,6 +113,8 @@
   "legal.token.paket": "seçilen paket",
   "legal.token.tutar": "sipariş tutarı",
   "legal.token.urun": "satın alınan ürün",
+  "legal.translation_note": "Bu metnin İngilizcesi bilgilendirme amaçlıdır; çelişki halinde Türkçe metin geçerlidir.",
+  "legal.turkish_version": "Türkçe metin",
   "llms.company": "Şirket ve iletişim",
   "llms.english": "English version",
   "llms.faq": "Sık sorulan sorular",
