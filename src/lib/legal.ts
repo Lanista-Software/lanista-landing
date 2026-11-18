@@ -16,9 +16,7 @@ export type LegalPage = LegalPages
 const bool = (v: unknown) => v === true || v === 'true'
 
 export function getLegalPages(): LegalPage[] {
-  return document('legal-pages').sort('order', 'asc').all()
-    .map(p => ({ ...p, reviewed: bool(p.reviewed), show_in_footer: bool(p.show_in_footer), order: Number(p.order ?? 0) }))
-    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+  return document('legal-pages').sort('order', 'asc').all().map(p => ({ ...p, reviewed: bool(p.reviewed), show_in_footer: bool(p.show_in_footer), order: Number(p.order ?? 0) })).sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
 }
 
 export function legalPath(page: Pick<LegalPage, 'group' | 'slug'>): string {
