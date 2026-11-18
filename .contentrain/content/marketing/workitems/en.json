@@ -101,7 +101,6 @@
     "challenge": "Weddings, corporate events, and gatherings needed a social game platform that works both offline for small groups and online for hundreds of players, across web and mobile.",
     "description": "Social game platform for weddings, corporate events, and social gatherings. Supports P2P offline (2-10 players) and online event (50-500+ players) modes across Web (PWA), iOS, and Android.\n\nBuilt with React Native (Expo + CLI), Bun.js + ElysiaJS, Vue 3, and a pnpm workspaces monorepo with 4 apps + 4 shared packages. Features 12+ independent game engines, real-time WebSocket state sync, 39 shared Vue components as a design system, dual payment system (Paddle + In-App Purchase), and 130+ test files with 500+ tests including Stryker mutation testing.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/46e13831-ef6f-4568-b689-117fe2a559ce.webp",
-    "link": "https://yanyana.games",
     "order": 3,
     "slug": "yanyana",
     "solution": "We built it on a pnpm monorepo (4 apps + 4 shared packages) with React Native (Expo + CLI), a Bun.js + ElysiaJS backend, and Vue 3: 12+ independent game engines, real-time WebSocket state sync, a 39-component design system, dual payments (Paddle + In-App Purchase), and 500+ tests with Stryker mutation testing.",

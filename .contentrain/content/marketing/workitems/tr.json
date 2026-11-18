@@ -101,7 +101,6 @@
     "challenge": "Düğün, kurumsal etkinlik ve buluşmalar için; hem küçük gruplarla offline hem yüzlerce oyuncuyla online çalışan, web ve mobilde bir sosyal oyun platformu gerekiyordu.",
     "description": "Düğün, kurumsal etkinlik ve sosyal buluşmalar için sosyal oyun platformu. P2P offline (2-10 kişi) ve online event (50-500+ kişi) modları ile Web (PWA), iOS ve Android'de çalışır.\n\nReact Native (Expo + CLI), Bun.js + ElysiaJS, Vue 3 ve pnpm workspaces ile 4 app + 4 paylaşılan paket monorepo mimarisi ile geliştirildi. 12+ bağımsız oyun motoru, gerçek zamanlı WebSocket state sync, 39 paylaşılan Vue komponenti (design system), çift ödeme sistemi (Paddle + In-App Purchase) ve Stryker mutation testing dahil 130+ test dosyası, 500+ test.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/46e13831-ef6f-4568-b689-117fe2a559ce.webp",
-    "link": "https://yanyana.games",
     "order": 3,
     "slug": "yanyana",
     "solution": "pnpm monorepo (4 app + 4 paylaşılan paket) üzerinde React Native (Expo + CLI), Bun.js + ElysiaJS backend ve Vue 3 ile geliştirdik: 12+ bağımsız oyun motoru, gerçek zamanlı WebSocket state sync, 39 bileşenlik design system, çift ödeme (Paddle + In-App Purchase) ve Stryker mutation testing ile 500+ test.",
