@@ -1,20 +1,20 @@
 {
   "52f4e338a982": {
     "source": "agent",
-    "status": "draft",
-    "updated_at": "2026-11-18T12:57:46.361Z",
+    "status": "published",
+    "updated_at": "2026-11-18T12:58:03.238Z",
     "updated_by": "contentrain-mcp"
   },
   "a26de14ac86e": {
     "source": "agent",
-    "status": "draft",
-    "updated_at": "2026-11-18T12:57:46.361Z",
+    "status": "published",
+    "updated_at": "2026-11-18T12:58:03.238Z",
     "updated_by": "contentrain-mcp"
   },
   "be65fb7e0825": {
     "source": "agent",
-    "status": "draft",
-    "updated_at": "2026-11-18T12:57:46.361Z",
+    "status": "published",
+    "updated_at": "2026-11-18T12:58:03.238Z",
     "updated_by": "contentrain-mcp"
   }
 }
