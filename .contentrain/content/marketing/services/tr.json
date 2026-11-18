@@ -50,7 +50,7 @@
   "d00761480438": {
     "description": "İşlevselliği modern estetikle harmanlayan ürün tasarımları üretiyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/fd58ebb2-1d80-4845-ab89-60fe10dbb242.svg",
-    "link": "/services/nuxtjs-vuejs-web-application-development",
+    "link": "/surec",
     "on_home": false,
     "order": 11,
     "title": "Ürün Tasarımı"
@@ -66,7 +66,7 @@
   "d00761480440": {
     "description": "Projeleriniz için CMS çözümleri geliştiriyor veya kendi ürünümüz olan Git tabanlı Contentrain'i projenize entegre ediyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/31ccfbc7-f633-441c-a287-7e9ad56d8dd3.svg",
-    "link": "/services/saas-platform-development",
+    "link": "/works/contentrain",
     "on_home": false,
     "order": 10,
     "title": "Headless CMS Çözümleri"
