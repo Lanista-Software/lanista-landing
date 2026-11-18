@@ -1,32 +1,17 @@
 {
   "lastOperation": {
     "entries": [
-      "cerez-politikasi",
-      "cerez-politikasi",
-      "gizlilik",
-      "gizlilik",
-      "hakkimizda",
-      "hakkimizda",
-      "islem-rehberi",
-      "islem-rehberi",
-      "kvkk",
-      "kvkk",
-      "mesafeli-satis",
-      "mesafeli-satis",
-      "on-bilgilendirme",
-      "on-bilgilendirme",
-      "teslimat-ve-iade",
-      "teslimat-ve-iade"
+      "tr"
     ],
     "locale": "tr",
-    "model": "legal-pages",
+    "model": "ui",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T14:26:01.733Z",
+    "timestamp": "2026-11-18T14:26:25.010Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 228,
-    "lastSync": "2026-11-18T14:26:01.733Z",
+    "lastSync": "2026-11-18T14:26:25.010Z",
     "locales": [
       "en",
       "tr"
