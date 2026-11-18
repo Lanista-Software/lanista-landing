@@ -18,15 +18,15 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] Yasal metinler iyzico için uygun ve eksiksiz; iyzico logo bandı
 - [ ] Yerel SEO sayfaları: Van öne çıkacak; Doğu Anadolu ve İç Anadolu illeri için "özel yazılım geliştirme" sayfaları, Google anahtar kelime araştırmasına göre
 - [ ] Fiyatlar, taksit, teslim süresi → proje sonunda konuşulacak
-- [ ] Hesap Takip fiyatı (2026-11-18): yıllık 15.000 TL + KDV ve/veya 25.000 TL + KDV kurulum+1 yıl, ardından 7.500 TL + KDV/yıl — Fable rakip verisiyle önerecek
-- [ ] Ana sayfa sadeleştirme onaylandı; karar Fable'ın Google arama verisine dayalı analiziyle uygulanacak
+- [x] Hesap Takip fiyatı: ikisi birden, öne çıkan Yıllık Paket 15.000 TL + KDV; Kurulum + 1 yıl 25.000 + 7.500/yıl; "kendiliğinden yenilenmez" notu (rakip fiyat tablosu `docs/kararlar-arama-verisi.md`)
+- [x] Ana sayfa sadeleştirme uygulandı (Fable kararı)
 - [x] KEP şimdilik boş (kullanıcı onayı; iyzico başvurusu öncesi tekrar bakılacak)
 - [x] Yanyana: müşteriye özel ayağa kalkıyor → "Canlı site" bağlantısı kaldırıldı
 - [x] Murat'ın referans fotoğrafı kalıyor
 - [ ] Sırayla ilerle, bu listeyi eksiksiz bitir
 - [ ] Yazılım şirketine yakışır arayüz kalitesi; ikon rozetli kartlar "sığ ve basit" → tek bir SVG illüstrasyon stili belirlenip sitenin her yerinde aynı tarzda görseller
 - [ ] Stil, "Lanista" anlamından (Latince: gladyatör okulu/akademisi) beslenecek
-- [ ] Başka oturumda hazırlanan ürün ekran görüntüleri ve videoları (`feat/urun-gorselleri`, `0c49346`) → telefon numaraları gizlenip Studio CDN'e yüklenecek, ürün sayfalarında kullanılacak
+- [ ] Başka oturumda hazırlanan ürün ekran görüntüleri ve videoları (`feat/urun-gorselleri`, `0c49346`) → Studio CDN'e yüklenecek, ürün sayfalarında kullanılacak (numaralar sahte — kullanıcı teyidi)
 - [ ] Arka plandaki SVG çizgi grafikleri tüm sitede standart hale gelecek: eski Yunan / Latin / Roma uyumlu, içeriği engellemeyen, ciddiyeti koruyan
 - [ ] Ana sayfa hero'su ve ilk önceliği: satılacak ürünler (Hesap Takip ve diğer uygulamalar)
 - [x] Kararlar ve adımlar için Fable alt ajanlarıyla analiz ve fikir alınabilir (kullanıcı izni)
@@ -65,7 +65,8 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Hero: ilk öncelik ürünler — "Defteri bırakın…" + Hesap Takip/Demo CTA + Ludus kemerinde vade takibi ekranı
 - [x] Ürünler bloğu (3 kart, Ludus ürün illüstrasyonları) + "Nasıl başlarsınız" (3 adım + 4 güven maddesi) + köprü bloğu
 - [x] Hizmetler bloğu korundu; "rehberlik/dış kaynak" ifadeleri çıkarıldı; banner metni "Yazılımınızı birlikte yapalım"
-- [ ] Karar bekliyor: ana sayfada hizmetler 11→6, teknolojiler sekmesi taşınsın mı, banner kalksın mı (Fable önerisi)
+- [x] Ana sayfa sadeleştirildi (Fable + Google öneri verisi, `docs/kararlar-arama-verisi.md`): 6 hizmet (`services.on_home`), teknoloji sekmeleri ve banner kaldırıldı
+- [ ] Teknoloji logoları Hakkımızda / hizmet sayfalarına taşınacak
 - [x] TR meta başlık/açıklama güncellendi (Fable önerisi uyarlandı)
 - [ ] Ses ve dil kuralları (sade dil, yasaklı kelimeler yok)
 
@@ -89,7 +90,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] JSON-LD: SoftwareApplication + Offer, FAQPage, BreadcrumbList
 
 ## 6. Yerel SEO sayfaları (Van öncelikli)
-- [ ] Anahtar kelime araştırması (Google: "van yazılım şirketi", "özel yazılım van", bölge/il varyantları, hacim ve rekabet)
+- [x] Anahtar kelime araştırması (Fable, Google önerileri): `docs/kararlar-arama-verisi.md` §C — slug'lar, title/meta, doorway kuralları
 - [ ] Van sayfası: Teknokent ofisi, yerel bağlam, referanslar, LocalBusiness JSON-LD
 - [ ] Doğu Anadolu ve İç Anadolu bölge sayfaları
 - [ ] Yalnız talebi olan birkaç il için özgün içerikli sayfalar (doorway/kopya sayfa riskinden kaçınılacak)

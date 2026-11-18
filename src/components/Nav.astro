@@ -18,7 +18,6 @@ const items = [
   ...(locale === 'tr' ? [{ key: 'products', href: `${localePath('/', locale)}#urunler`, section: 'urunler' } as const] : []),
   { key: 'services', href: `${localePath('/', locale)}#services`, section: 'services' },
   { key: 'process', href: `${localePath('/', locale)}#process`, section: 'process' },
-  { key: 'technologies', href: `${localePath('/', locale)}#technologies`, section: 'technologies' },
   { key: 'works', href: localePath('/works', locale), route: '/works' },
 ] as const
 

@@ -34,6 +34,7 @@ const bg = blurhashColor(asset?.blurhash)
     decoding="async"
     class={className}
     style={[bg ? `background-color:${bg}` : '', style ?? ''].filter(Boolean).join(';') || undefined}
+    onload={bg ? 'this.style.backgroundColor=\'\'' : undefined}
     {...rest}
   />
 )}

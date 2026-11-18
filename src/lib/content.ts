@@ -31,7 +31,7 @@ export function getSections(locale: Locale) {
 
 export function getHome(locale: Locale) {
   return {
-    services: query('services').locale(locale).all(),
+    services: query('services').locale(locale).sort('order', 'asc').all(),
     processes: query('processes').locale(locale).all(),
     workCategories: query('work-categories').locale(locale).sort('order', 'asc').all(),
     tabItems: query('tabitems').locale(locale).all(),

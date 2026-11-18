@@ -2,7 +2,6 @@
 import type { Locale } from '~/lib/i18n'
 import Accordion from '~/components/Accordion.astro'
 import AppCard from '~/components/AppCard.astro'
-import Banner from '~/components/Banner.astro'
 import Amphitheatre from '~/components/decor/Amphitheatre.astro'
 import Hero from '~/components/Hero.astro'
 import Img from '~/components/Img.astro'
@@ -11,7 +10,6 @@ import ProcessCard from '~/components/ProcessCard.astro'
 import ProductCard from '~/components/ProductCard.astro'
 import Section from '~/components/Section.astro'
 import SectionLayout from '~/components/SectionLayout.astro'
-import TabSection from '~/components/TabSection.astro'
 import TestimonialCard from '~/components/TestimonialCard.astro'
 import WorksCard from '~/components/WorksCard.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
@@ -29,7 +27,8 @@ const { socialLinks } = getLayout(locale)
 const section = home.section
 const link = (name: string) => contentLink(section(name).buttonlink, locale)
 
-const services = home.services.map(sv => ({ ...sv, link: sv.link ? localePath(sv.link, locale) : undefined }))
+// Home shows the six services with real Turkish search demand (docs/kararlar-arama-verisi.md).
+const services = home.services.filter(sv => sv.on_home).map(sv => ({ ...sv, link: sv.link ? localePath(sv.link, locale) : undefined }))
 const previewWorks = home.works.slice(0, 3)
 const tr = locale === 'tr'
 // Turkish home leads with the products; English stays agency-first (products are Turkey-only).
@@ -142,8 +141,8 @@ const jsonLd = [
     <SectionLayout id="services-title" title={section('services').title} description={section('services').description}>
       <ul role="list" class="grid w-full grid-cols-1 gap-8 lg:grid-cols-6">
         {services.map((item, i) => (
-          <li class={cardSpan('grid', i)} style={stagger(i)}>
-            <AppCard locale={locale} item={item} view="grid" square={cardSpan('grid', i) === 'lg:col-span-2'} closePadding />
+          <li class="lg:col-span-3" style={stagger(i % 2)}>
+            <AppCard locale={locale} item={item} view="grid" closePadding />
           </li>
         ))}
       </ul>
@@ -168,14 +167,6 @@ const jsonLd = [
     </SectionLayout>
   </Section>
 
-  <Section id="technologies" spy labelledby="technologies-title">
-    <SectionLayout id="technologies-title" title={section('tabs').title} description={section('tabs').description}>
-      <TabSection locale={locale} items={home.tabItems} categories={home.workCategories} />
-      <a slot="button" href={link('tabs')} class="btn btn-danger">
-        {section('tabs').buttontext}<i class="ri-arrow-right-up-line" aria-hidden="true"></i>
-      </a>
-    </SectionLayout>
-  </Section>
 
   <Section id="works" spy labelledby="works-title">
     <SectionLayout id="works-title" title={section('works').title} description={section('works').description}>
@@ -199,9 +190,6 @@ const jsonLd = [
     </SectionLayout>
   </Section>
 
-  <Section id="banner" labelledby="banner-title">
-    <Banner id="banner-title" title={section('banner').title} description={section('banner').description} buttonLabel={section('banner').buttontext} buttonHref={link('banner')} />
-  </Section>
 
   <section id="contact" aria-label={s.contact} class="bg-secondary-50">
     <div class="container-x flex items-center justify-center pb-40 pt-28">
