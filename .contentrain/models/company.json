@@ -1,0 +1,103 @@
+{
+  "id": "company",
+  "name": "Company",
+  "kind": "singleton",
+  "domain": "system",
+  "i18n": false,
+  "title_field": "legal_name",
+  "description": "Seller identity (Lanista Yazılım San. ve Tic. Ltd. Şti.) for footer, contact page, legal texts and JSON-LD. Source: vergi levhası + Ticaret Sicil Gazetesi (docs/urunler-ve-iyzico-brief.md §6). Never mix with Contentrain A.Ş.",
+  "fields": {
+    "address_city": {
+      "order": 7,
+      "required": true,
+      "type": "string"
+    },
+    "address_district": {
+      "order": 6,
+      "required": true,
+      "type": "string"
+    },
+    "address_street": {
+      "order": 5,
+      "required": true,
+      "type": "string"
+    },
+    "brand": {
+      "order": 3,
+      "required": true,
+      "type": "string"
+    },
+    "chamber_name": {
+      "order": 17,
+      "type": "string"
+    },
+    "chamber_rules_url": {
+      "description": "Meslekle ilgili davranış kurallarına elektronik erişim (ETHS Yön. md.5/1-c).",
+      "order": 19,
+      "type": "url"
+    },
+    "chamber_url": {
+      "order": 18,
+      "type": "url"
+    },
+    "country_code": {
+      "order": 8,
+      "required": true,
+      "type": "string"
+    },
+    "email": {
+      "order": 15,
+      "required": true,
+      "type": "email"
+    },
+    "founding_date": {
+      "order": 13,
+      "type": "date"
+    },
+    "kep": {
+      "description": "KEP adresi — iyzico 'İletişim' şartı (b). Şu an yok; alınınca girilecek.",
+      "order": 16,
+      "type": "email"
+    },
+    "legal_name": {
+      "order": 1,
+      "required": true,
+      "type": "string"
+    },
+    "mersis": {
+      "order": 11,
+      "required": true,
+      "type": "string"
+    },
+    "phone": {
+      "order": 14,
+      "required": true,
+      "type": "phone"
+    },
+    "short_name": {
+      "order": 2,
+      "required": true,
+      "type": "string"
+    },
+    "site_name": {
+      "description": "Used in page titles and OG.",
+      "order": 4,
+      "required": true,
+      "type": "string"
+    },
+    "tax_number": {
+      "order": 10,
+      "required": true,
+      "type": "string"
+    },
+    "tax_office": {
+      "order": 9,
+      "required": true,
+      "type": "string"
+    },
+    "trade_registry": {
+      "order": 12,
+      "type": "string"
+    }
+  }
+}
