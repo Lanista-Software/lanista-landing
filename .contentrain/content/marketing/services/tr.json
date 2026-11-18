@@ -3,66 +3,88 @@
     "description": "Stripe, Paddle, PayTR ve In-App Purchase entegre ediyor; abonelik yaşam döngüsünü ve üretimde ödemeleri bozan uç durumları yönetiyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/68714f90-7107-4173-9fe7-650092809b54.webp",
     "link": "/services/payment-integration-development",
+    "on_home": true,
+    "order": 4,
     "title": "Ödeme Entegrasyonu"
   },
   "50d81f2a3baf": {
     "description": "Konseptten lansmana kadar güvenli, ölçeklenebilir ve iş ihtiyaçlarınızı karşılayacak şekilde tasarlanmış özel web uygulamaları geliştiriyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/63a03984-9602-438b-9350-8114fa9f9f70.webp",
     "link": "/services/nuxtjs-vuejs-web-application-development",
-    "title": "Web Uygulama Geliştirme"
+    "on_home": true,
+    "order": 3,
+    "title": "Web Uygulaması ve Özel Yazılım"
   },
   "8cf57e3279a8": {
     "description": "NestJS, gRPC ve mesaj kuyruklarıyla işinizle birlikte ölçeklenen, üretime hazır mikroservis backend'leri tasarlıyor ve geliştiriyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/51282215-b24d-4583-a9ce-92e28784049e.webp",
     "link": "/services/nestjs-microservice-development",
+    "on_home": false,
+    "order": 9,
     "title": "Mikroservis Geliştirme"
   },
   "9450777bee2f": {
     "description": "Müşterilerimizin fikirlerini gerçek mobil deneyimlere dönüştürebilmek için özel IOS ve Android uygulamalar geliştiriyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/b3e092cc-9e5d-4e9a-ae92-59c9d961c0aa.webp",
     "link": "/services/react-native-mobile-app-development",
+    "on_home": true,
+    "order": 1,
     "title": "Mobil Uygulama Geliştirme"
   },
   "d00761480436": {
     "description": "Startuplara, fikirlerini hayata geçirebilmeleri için deneyimli bir ekiple birlikte MVP geliştirme hizmeti sunuyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/2636a6ee-5007-418d-9b2d-06965afcee4a.webp",
     "link": "/services/saas-platform-development",
+    "on_home": false,
+    "order": 8,
     "title": "MVP Geliştirme"
   },
   "d00761480437": {
     "description": "Startuplara ve kurumsal firmalara ihtiyaç duydukları uçtan uca SaaS platform geliştirme çözümleri sağlıyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/014fcffe-2adf-4318-bcdb-5567371b8532.webp",
     "link": "/services/saas-platform-development",
+    "on_home": false,
+    "order": 7,
     "title": "SaaS Platform Geliştirme"
   },
   "d00761480438": {
     "description": "İşlevselliği modern estetikle harmanlayan ürün tasarımları üretiyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a6df3725-bfd7-4565-a255-08ec40e6761f.webp",
     "link": "/services/nuxtjs-vuejs-web-application-development",
+    "on_home": false,
+    "order": 11,
     "title": "Ürün Tasarımı"
   },
   "d00761480439": {
     "description": "Ziyaretçilerinizi çekecek web sitelerine mi ihtiyacınız var? İşiniz için ölçeklenebilir ve responsive web siteleri geliştiriyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/1227f53d-1ff1-4a45-a6aa-3f3964fe4075.webp",
     "link": "/services/nuxtjs-vuejs-web-application-development",
-    "title": "Web Tasarımı & Geliştirme"
+    "on_home": true,
+    "order": 2,
+    "title": "Web Sitesi ve E-Ticaret"
   },
   "d00761480440": {
     "description": "Projeleriniz için CMS çözümleri geliştiriyor veya kendi ürünümüz olan Git tabanlı Contentrain'i projenize entegre ediyoruz.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/b162688d-e31b-40dd-ab36-bc0a97769c60.webp",
     "link": "/services/saas-platform-development",
+    "on_home": false,
+    "order": 10,
     "title": "Headless CMS Çözümleri"
   },
   "d48331b6ba10": {
     "description": "Sunmi ticari POS terminalleri için özel uygulamalar geliştiriyoruz — termal yazıcı, foreground service ve gerçek zamanlı sipariş yönetimi.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/e78731a5-8aad-4238-a930-4ad514322b94.webp",
     "link": "/services/pos-application-development",
+    "on_home": true,
+    "order": 5,
     "title": "POS Uygulama Geliştirme"
   },
   "f16b19c950c7": {
     "description": "AI'ı hem sürecimize hem ürününüze gömüyoruz — LLM destekli özelliklerden daha hızlı teslim eden AI-destekli geliştirmeye.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/452a1d11-5700-49eb-b6ab-c5c1154f86ce.webp",
     "link": "/services/ai-powered-software-development",
+    "on_home": true,
+    "order": 6,
     "title": "AI Destekli Geliştirme"
   }
 }

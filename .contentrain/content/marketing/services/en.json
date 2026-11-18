@@ -3,66 +3,88 @@
     "description": "We integrate Stripe, Paddle, PayTR, and In-App Purchase — handling the full subscription lifecycle and the edge cases that break payments in production.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/68714f90-7107-4173-9fe7-650092809b54.webp",
     "link": "/services/payment-integration-development",
+    "on_home": true,
+    "order": 4,
     "title": "Payment Integration"
   },
   "50d81f2a3baf": {
     "description": "From concept to launch, we deliver custom web apps that are secure, scalable, and designed to meet your business needs.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/63a03984-9602-438b-9350-8114fa9f9f70.webp",
     "link": "/services/nuxtjs-vuejs-web-application-development",
-    "title": "Web App Development"
+    "on_home": true,
+    "order": 3,
+    "title": "Web Apps & Custom Software"
   },
   "8cf57e3279a8": {
     "description": "We design and build production-grade microservice backends with NestJS, gRPC, and message queues that scale with your business.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/51282215-b24d-4583-a9ce-92e28784049e.webp",
     "link": "/services/nestjs-microservice-development",
+    "on_home": false,
+    "order": 9,
     "title": "Microservice Development"
   },
   "9450777bee2f": {
     "description": "We develop custom iOS and Android mobile apps to turn our clients' ideas into real mobile experiences.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/b3e092cc-9e5d-4e9a-ae92-59c9d961c0aa.webp",
     "link": "/services/react-native-mobile-app-development",
+    "on_home": true,
+    "order": 1,
     "title": "Mobile App Development"
   },
   "d00761480436": {
     "description": "Helping startups bring their ideas to life with MVP development services.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/2636a6ee-5007-418d-9b2d-06965afcee4a.webp",
     "link": "/services/saas-platform-development",
+    "on_home": false,
+    "order": 8,
     "title": "MVP Development"
   },
   "d00761480437": {
     "description": "We provide end-to-end custom SaaS platform development solutions.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/014fcffe-2adf-4318-bcdb-5567371b8532.webp",
     "link": "/services/saas-platform-development",
+    "on_home": false,
+    "order": 7,
     "title": "SaaS Platform Development"
   },
   "d00761480438": {
     "description": "Crafting product designs that blend functionality with modern aesthetics.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a6df3725-bfd7-4565-a255-08ec40e6761f.webp",
     "link": "/services/nuxtjs-vuejs-web-application-development",
+    "on_home": false,
+    "order": 11,
     "title": "Product Design"
   },
   "d00761480439": {
     "description": "Need high convertible websites? We craft responsive websites that attract and convert visitors.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/1227f53d-1ff1-4a45-a6aa-3f3964fe4075.webp",
     "link": "/services/nuxtjs-vuejs-web-application-development",
-    "title": "Web Design & Development"
+    "on_home": true,
+    "order": 2,
+    "title": "Website & E-commerce"
   },
   "d00761480440": {
     "description": "We develop custom Headless CMS solutions or integrate our own Git-based Headless CMS Contentrain into your projects.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/b162688d-e31b-40dd-ab36-bc0a97769c60.webp",
     "link": "/services/saas-platform-development",
+    "on_home": false,
+    "order": 10,
     "title": "Headless CMS Solutions"
   },
   "d48331b6ba10": {
     "description": "We build custom apps for Sunmi commercial POS terminals — thermal printing, foreground services, and real-time order processing.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/e78731a5-8aad-4238-a930-4ad514322b94.webp",
     "link": "/services/pos-application-development",
+    "on_home": true,
+    "order": 5,
     "title": "POS App Development"
   },
   "f16b19c950c7": {
     "description": "We embed AI into both our workflow and your product — from LLM-powered features to AI-assisted delivery that ships faster.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/452a1d11-5700-49eb-b6ab-c5c1154f86ce.webp",
     "link": "/services/ai-powered-software-development",
+    "on_home": true,
+    "order": 6,
     "title": "AI-Powered Development"
   }
 }
