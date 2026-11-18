@@ -7,7 +7,7 @@ import PageHero from '~/components/PageHero.astro'
 import TabSection from '~/components/TabSection.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import { getHome } from '~/lib/content'
-import { localePath, routePath, ROUTES, t } from '~/lib/i18n'
+import { contentLink, routePath, ROUTES, t } from '~/lib/i18n'
 import { serviceSchema, webPageSchema } from '~/lib/schema'
 import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
 import { stagger } from '~/lib/ui'
@@ -19,7 +19,7 @@ const home = getHome(locale)
 const path = ROUTES.services[locale]
 const title = s('services.page_title')
 const description = clampDescription(s('services.page_description'))
-const services = home.services.map(sv => ({ ...sv, link: sv.link ? localePath(sv.link, locale) : undefined }))
+const services = home.services.map(sv => ({ ...sv, link: sv.link ? contentLink(sv.link, locale) : undefined }))
 const trail = [{ name: s('nav.home'), path: '/' }, { name: s('nav.services'), path }]
 const jsonLd = [
   { ...webPageSchema(locale, path, title, description, 'CollectionPage'), hasPart: home.services.map(sv => serviceSchema(locale, { title: sv.title, description: sv.description, path: sv.link })) },

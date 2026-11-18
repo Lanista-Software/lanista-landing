@@ -12,6 +12,8 @@ interface Props {
 }
 const { locale, items, categories } = Astro.props
 const s = t(locale)
+
+const techName = (item: Tabitems) => item.name ?? ''
 const catId = (item: Tabitems) => (typeof item.category === 'object' && item.category ? item.category.id : item.category)
 // Only categories that have items, in category order.
 const tabs = categories
@@ -43,13 +45,13 @@ const first = tabs[0]?.id
           {items.filter(i => catId(i) === cat.id).map(item => (
             <li class="flex flex-col items-start justify-between gap-4 border-b border-border-color py-5 last:border-b-0 md:flex-row md:items-center md:gap-8">
               <div class="h-20 w-48">
-                <Img class="size-full rounded-xl object-cover" src={item.image} width={200} height={80} />
+                <Img class="size-full rounded-xl object-cover" src={item.image} alt={techName(item)} width={200} height={80} />
               </div>
               <p class="flex-1 text-sm text-body-text">{item.description}</p>
               {item.link && (
                 <a href={item.link} target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-icon text-muted-text">
                   <Icon name="ri-arrow-right-up-line" />
-                  <span class="sr-only">{s('a11y.more_details')} {item.link} {s('a11y.opens_new_tab')}</span>
+                  <span class="sr-only">{`${s('a11y.more_details')} ${techName(item)} ${s('a11y.opens_new_tab')}`}</span>
                 </a>
               )}
             </li>

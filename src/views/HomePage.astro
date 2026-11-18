@@ -28,7 +28,7 @@ const section = home.section
 const link = (name: string) => contentLink(section(name).buttonlink, locale)
 
 // Home shows the six services with real Turkish search demand (docs/kararlar-arama-verisi.md).
-const services = home.services.filter(sv => sv.on_home).map(sv => ({ ...sv, link: sv.link ? localePath(sv.link, locale) : undefined }))
+const services = home.services.filter(sv => sv.on_home).map(sv => ({ ...sv, link: sv.link ? contentLink(sv.link, locale) : undefined }))
 const previewWorks = home.works.slice(0, 3)
 // Turkish home leads with the products; English stays agency-first (products are Turkey-only).
 const products = getProducts(locale)

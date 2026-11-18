@@ -9,7 +9,7 @@ const tr = t('tr')
 const en = t('en')
 ---
 
-<BaseLayout locale="tr" title={`${tr('not_found.title')} | ${SITE_NAME}`} description={tr('not_found.text')} path="/404" locales={['tr']} noindex>
+<BaseLayout locale="tr" title={`${tr('not_found.title')} | ${SITE_NAME}`} description={tr('not_found.text')} path="/404" paths={{ tr: '/', en: '/' }} locales={['tr']} noindex>
   <section class="py-20 lg:py-28">
     <div class="container-x text-center">
       <FallenKeystone class="mx-auto w-full max-w-md" />

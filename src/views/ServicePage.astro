@@ -6,7 +6,7 @@ import Icon from '~/components/Icon.astro'
 import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import { getServicePage, splitList } from '~/lib/content'
-import { localePath, routePath, t } from '~/lib/i18n'
+import { localePath, routePath, ROUTES, t } from '~/lib/i18n'
 import { serviceSchema } from '~/lib/schema'
 import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
 import { stagger } from '~/lib/ui'
@@ -18,7 +18,7 @@ const { page, otherPages, relatedWorks } = getServicePage(locale, slug)!
 const technologies = splitList(page.technologies)
 const trail = [
   { name: s('nav.home'), path: '/' },
-  { name: s('nav.services'), path: '/#services' },
+  { name: s('nav.services'), path: ROUTES.services[locale] },
   { name: page.title, path: `/services/${slug}` },
 ]
 const blocks = [
@@ -33,7 +33,7 @@ const blocks = [
   description={clampDescription(page.meta_description)}
   ogTitle={page.title}
   path={`/services/${slug}`}
-  jsonLd={[serviceSchema(locale, { title: page.title, description: page.meta_description, path: `/services/${slug}` }), breadcrumbSchema(locale, trail.filter(x => !x.path.includes('#')))]}
+  jsonLd={[serviceSchema(locale, { title: page.title, description: page.meta_description, path: `/services/${slug}` }), breadcrumbSchema(locale, trail)]}
 >
   <PageHero>
     <Breadcrumbs locale={locale} trail={trail} />

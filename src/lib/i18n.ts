@@ -52,7 +52,18 @@ export function contentLink(link: string | undefined, locale: Locale): string {
     return ''
   if (/^https?:\/\//.test(link))
     return link
-  return link.startsWith('#') ? `${localePath('/', locale)}${link}` : localePath(link, locale)
+  // The contact form lives on its own page now; old "#contact" anchors go there.
+  if (link === '#contact')
+    return routePath('contact', locale)
+  if (link.startsWith('#'))
+    return `${localePath('/', locale)}${link}`
+  // Content stores Turkish paths (/urunler/x#demo); map them to the locale's route.
+  const [path, hash] = link.split('#')
+  for (const route of Object.values(ROUTES)) {
+    if (path === route.tr || path.startsWith(`${route.tr}/`))
+      return `${localePath(route[locale] + path.slice(route.tr.length), locale)}${hash ? `#${hash}` : ''}`
+  }
+  return `${localePath(path, locale)}${hash ? `#${hash}` : ''}`
 }
 
 export type Translate = (key: string, params?: Record<string, string | number>) => string
