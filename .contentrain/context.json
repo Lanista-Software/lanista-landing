@@ -1,22 +1,19 @@
 {
   "lastOperation": {
-    "entries": [
-      "8a8044e883e9"
-    ],
     "locale": "en",
-    "model": "workitems",
+    "model": "leads",
     "source": "mcp-local",
-    "timestamp": "2026-08-13T21:39:18.975Z",
-    "tool": "contentrain_bulk"
+    "timestamp": "2026-11-18T12:07:56.705Z",
+    "tool": "contentrain_model_save"
   },
   "stats": {
     "entries": 190,
-    "lastSync": "2026-08-13T21:39:18.975Z",
+    "lastSync": "2026-11-18T12:07:56.706Z",
     "locales": [
       "en",
       "tr"
     ],
-    "models": 12
+    "models": 13
   },
   "version": "1"
 }
