@@ -19,7 +19,8 @@ Every illustration is an **orthographic elevation**: a flat front view, like a p
 | Paper | white | `#FFFFFF` |
 
 ## Drawing rules
-- **viewBox 480 × 360** (4:3). The ground line is at y = 312, and every illustration stands on it. A plinth (two steps) sits on the ground line.
+- **Service cards use 640 × 320 (2:1)** with the ground line at y = 284 (`design/ludus/services.py`); the software object is large and leads, the architecture frames it.
+- **viewBox 480 × 360** (4:3) for process, product and other square-ish slots. The ground line is at y = 312, and every illustration stands on it. A plinth (two steps) sits on the ground line.
 - **Stroke:** 2 px, `stroke-linecap="round"`, `stroke-linejoin="round"`. Secondary details 1.25 px. One weight family; no "sketchy" lines.
 - **Shadow = hatching**: 45° parallel lines 6 px apart in `#9ABFE5`, clipped to the shaded face. No gradients, no drop shadows, no blur.
 - **Fills** are flat: stone, shade, white or software blue. Software surfaces are white with blue content lines.
@@ -47,6 +48,11 @@ Every illustration is an **orthographic elevation**: a flat front view, like a p
 - No isometric 3D, glassmorphism or gradient blobs.
 - Never more than one red element.
 - Never icon-in-a-circle badges as the main visual of a card.
+
+## Where photos and screenshots stay
+- Project cards (`workitems`) keep real screenshots: they are the proof of the work.
+- Testimonials keep real portraits; product pages keep real app screenshots and videos (demo data).
+- Technology logos stay as brand logos.
 
 ## Delivery
 - Static illustrations are **SVG files on the Studio media CDN**, referenced from content fields (e.g. `processes.illustration`).

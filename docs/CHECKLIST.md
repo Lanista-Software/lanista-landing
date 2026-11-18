@@ -80,7 +80,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Hero / banner / bölüm görselleri
 - [x] Site geneli arka plan deseni: `decor/Amphitheatre` (hero + sayfa başlıkları), `decor/Arcade` (koyu banner), `decor/Meander` (ayırıcı) — satır içi SVG, `aria-hidden`, `pointer-events:none`, parallax katmanları hazır
 - [x] 404 illüstrasyonu: kilit taşı düşmüş kemer (`decor/FallenKeystone.astro`, tek seferlik düşme animasyonu, reduced-motion'da sabit)
-- [ ] Hizmet kartı görselleri: arayüz mockup'ları kalsın mı, Ludus illüstrasyonuyla mı değişsin? (kullanıcı kararı; zayıf olanlar: SaaS, Headless CMS)
+- [x] Hizmet kartı görselleri: 11 hizmet Ludus stilinde 2:1 illüstrasyonla yeniden çizildi (`design/ludus/services.py`), Studio CDN'e yüklendi; proje ekran görüntüleri, müşteri portreleri ve ürün ekranları gerçek kaldı (kullanıcı kararı bana bıraktı)
 - [x] SVG'ler Studio CDN'de; animasyonlu olanlar satır içi bileşen
 
 ## 3. Ana sayfa yeniden konumlandırma (brief §1, §2, §8)
