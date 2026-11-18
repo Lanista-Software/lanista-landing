@@ -1,0 +1,78 @@
+---
+/**
+ * 404 illustration (Ludus style, docs/illustration-style.md): an arch whose
+ * keystone has fallen to the ground: the missing piece. Decorative.
+ * The keystone settles once on load; no motion under prefers-reduced-motion.
+ */
+interface Props { class?: string }
+const { class: className } = Astro.props
+const INK = '#10273E'
+const STONE = '#EBF2FA'
+const SHADE = '#C2D9EF'
+const HATCH = '#9ABFE5'
+const BLUE = '#2F73B6'
+const RED = '#E31F30'
+const s = { 'stroke': INK, 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' } as const
+const s1 = { ...s, 'stroke-width': 1.25 } as const
+const cx = 240
+const spring = 150
+const ro = 90
+const ri = 64
+const joints = [28, 52, 76, 104, 128, 152].map((a) => {
+  const r = (a * Math.PI) / 180
+  return [cx - ri * Math.cos(r), spring - ri * Math.sin(r), cx - ro * Math.cos(r), spring - ro * Math.sin(r)].map(n => n.toFixed(1))
+})
+const k = (8 * Math.PI) / 180
+const gap = [
+  [cx - ro * Math.sin(k) - 3, spring - ro * Math.cos(k) - 6],
+  [cx + ro * Math.sin(k) + 3, spring - ro * Math.cos(k) - 6],
+  [cx + ri * Math.sin(k), spring - ri * Math.cos(k)],
+  [cx - ri * Math.sin(k), spring - ri * Math.cos(k)],
+].map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' ')
+---
+
+<svg class:list={['fallen-keystone', className]} viewBox="0 0 480 360" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="fk-h" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke={HATCH} stroke-width="1.5" /></pattern>
+  </defs>
+  <line x1="36" y1="312" x2="444" y2="312" {...s} />
+  <rect x="100" y="296" width="280" height="16" fill={SHADE} {...s} />
+  <rect x="124" y="282" width="232" height="14" fill={STONE} {...s} />
+  <rect x="362" y="296" width="18" height="16" fill="url(#fk-h)" />
+  {Array.from({ length: 18 }, (_, i) => <rect x={150 + i * 10} y="320" width="8" height="8" rx="1" fill={[3, 8, 13].includes(i) ? BLUE : STONE} {...s1} />)}
+
+  <path d={`M${cx - ro} 282 V${spring} A${ro} ${ro} 0 0 1 ${cx + ro} ${spring} V282 H${cx + ri} V${spring} A${ri} ${ri} 0 0 0 ${cx - ri} ${spring} V282 Z`} fill={STONE} {...s} />
+  <rect x={cx + ro - 9} y={spring} width="8" height={282 - spring} fill="url(#fk-h)" />
+  <rect x={cx - ro - 6} y={spring - 4} width={ro - ri + 12} height="8" fill={SHADE} {...s} />
+  <rect x={cx + ri - 6} y={spring - 4} width={ro - ri + 12} height="8" fill={SHADE} {...s} />
+  {joints.map(([x1, y1, x2, y2]) => <line x1={x1} y1={y1} x2={x2} y2={y2} {...s1} />)}
+  <!-- the empty slot where the keystone belongs -->
+  <polygon points={gap} fill="#fff" stroke={INK} stroke-width="1.25" stroke-dasharray="4 3" />
+
+  <!-- an empty software window inside the opening: the page that is not here -->
+  <rect x="196" y="176" width="88" height="70" rx="6" fill="#fff" {...s} />
+  <line x1="196" y1="190" x2="284" y2="190" {...s1} />
+  {[0, 1, 2].map(i => <circle cx={205 + i * 8} cy="183" r="2" fill={BLUE} />)}
+  <line x1="210" y1="206" x2="270" y2="206" stroke={HATCH} stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6" />
+  <line x1="210" y1="220" x2="250" y2="220" stroke={HATCH} stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6" />
+  <line x1="210" y1="234" x2="262" y2="234" stroke={HATCH} stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6" />
+
+  <!-- the fallen keystone, the single red element, lying on the ground at the right -->
+  <g class="fk-stone">
+    <polygon points="394,312 432,312 426,286 400,286" transform="rotate(-10 413 299)" fill={RED} {...s} />
+  </g>
+  <!-- small chips -->
+  <path d="M386 311 l4 -4 l4 4 z" fill={STONE} {...s1} />
+  <path d="M438 311 l3 -4 l4 4 z" fill={STONE} {...s1} />
+</svg>
+
+<style>
+  .fk-stone { transform-box: fill-box; transform-origin: 50% 100%; animation: fk-fall 0.9s cubic-bezier(.3,.7,.4,1) 0.2s both; }
+  @keyframes fk-fall {
+    0% { transform: translate(-172px, -232px) rotate(10deg); }
+    70% { transform: translate(0, 0) rotate(-4deg); }
+    85% { transform: translate(0, -6px) rotate(0); }
+    100% { transform: translate(0, 0) rotate(0); }
+  }
+  @media (prefers-reduced-motion: reduce) { .fk-stone { animation: none; } }
+</style>
