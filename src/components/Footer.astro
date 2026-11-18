@@ -1,50 +1,50 @@
 ---
 import type { Locale } from '~/lib/i18n'
+import Img from '~/components/Img.astro'
 import { COMPANY } from '~/lib/company'
-import { getLayout } from '~/lib/content'
+import { getLayout, getProducts, getServicePages } from '~/lib/content'
 import { localePath, routePath, t } from '~/lib/i18n'
+import { getLegalPages, legalPath } from '~/lib/legal'
 import Logo from './Logo.astro'
 
 interface Props { locale: Locale }
 const { locale } = Astro.props
 const s = t(locale)
-const { servicePages, socialLinks } = getLayout(locale)
+const { socialLinks } = getLayout(locale)
 const home = localePath('/', locale)
 const year = new Date().getFullYear()
 
-// "ri-linkedin-fill" → "LinkedIn": readable names for icon-only links.
-const SOCIAL_NAMES: Record<string, string> = {
-  linkedin: 'LinkedIn',
-  twitter: 'X (Twitter)',
-  github: 'GitHub',
-  instagram: 'Instagram',
-  medium: 'Medium',
-  youtube: 'YouTube',
-  facebook: 'Facebook',
-  dribbble: 'Dribbble',
-  behance: 'Behance',
-}
+// Products first (positioning), then the services with search demand, then company & legal.
+const products = getProducts().map(p => ({ label: p.name, href: localePath(`/urunler/${p.slug}`, 'tr'), status: s(`product.status.${p.status}`), lang: 'tr' }))
+const services = getServicePages(locale).slice(0, 6).map(p => ({ label: p.title, href: localePath(`/services/${p.slug}`, locale) }))
+const legalDocs = getLegalPages()
+const corporate = [
+  ...legalDocs.filter(p => p.group === 'corporate' && p.show_in_footer).map(p => ({ label: p.title, href: localePath(legalPath(p), 'tr'), lang: 'tr' })),
+  { label: s('nav.works'), href: localePath('/works', locale) },
+  { label: s('nav.contact'), href: routePath('contact', locale) },
+]
+const legal = legalDocs.filter(p => p.group === 'legal' && p.show_in_footer).map(p => ({ label: p.title, href: localePath(legalPath(p), 'tr'), lang: 'tr' }))
+
+// "ri-linkedin-fill" → "LinkedIn": readable names for icon-only links (brand names, not copy).
+const SOCIAL_NAMES: Record<string, string> = { linkedin: 'LinkedIn', twitter: 'X (Twitter)', instagram: 'Instagram', github: 'GitHub', youtube: 'YouTube' }
 function socialName(icon = '', link = '') {
   const key = Object.keys(SOCIAL_NAMES).find(k => icon.includes(k) || link.includes(k))
   return key ? SOCIAL_NAMES[key] : new URL(link).hostname
 }
-
-const quickLinks = [
-  { label: s('nav.services'), href: `${home}#services` },
-  { label: s('nav.works'), href: localePath('/works', locale) },
-  { label: s('nav.contact'), href: routePath('contact', locale) },
-]
+const heading = 'mb-4 font-space text-sm font-bold text-heading-text'
+const linkCls = 'text-sm text-body-text transition-colors hover:text-primary-600'
 ---
 
-<footer class="border-t border-border-color">
-  <div class="container-x py-10">
-    <div class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-      <div>
+<footer class="border-t border-border-color bg-white">
+  <div class="container-x py-14">
+    <div class="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-[1.4fr_1fr_1.2fr_1fr_1.1fr]">
+      <div class="col-span-2 md:col-span-3 lg:col-span-1">
         <a href={home} class="mb-4 flex h-6 w-28 items-center md:w-36">
           <Logo />
           <span class="sr-only">{s('nav.home')}</span>
         </a>
-        <ul class="flex gap-4" aria-label={s('a11y.social')}>
+        <p class="max-w-xs text-sm text-body-text">{s('footer.tagline')}</p>
+        <ul class="mt-5 flex gap-4" aria-label={s('a11y.social')}>
           {socialLinks.map(social => (
             <li>
               <a href={social.link} target="_blank" rel="noopener noreferrer" class="text-xl leading-none text-heading-text hover:text-primary-600">
@@ -56,46 +56,57 @@ const quickLinks = [
         </ul>
       </div>
 
+      <nav aria-labelledby="footer-products">
+        <h2 id="footer-products" class={heading}>{s('footer.products')}</h2>
+        <ul class="space-y-2.5">
+          {products.map(p => (
+            <li><a href={p.href} hreflang={p.lang} class={linkCls}>{p.label}</a> <span class="text-xs text-label-text">· {p.status}</span></li>
+          ))}
+        </ul>
+      </nav>
+
       <nav aria-labelledby="footer-services">
-        <h2 id="footer-services" class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s('footer.services')}</h2>
-        <ul class="space-y-2">
-          {servicePages.map(page => (
-            <li>
-              <a href={localePath(`/services/${page.slug}`, locale)} class="text-sm text-body-text transition-colors hover:text-primary-600">{page.title}</a>
-            </li>
-          ))}
+        <h2 id="footer-services" class={heading}>{s('footer.services')}</h2>
+        <ul class="space-y-2.5">
+          {services.map(l => <li><a href={l.href} class={linkCls}>{l.label}</a></li>)}
+          <li><a href={`${home}#services`} class="text-sm font-medium text-primary-600 hover:underline">{s('footer.all_services')}</a></li>
         </ul>
       </nav>
 
-      <nav aria-labelledby="footer-quick">
-        <h2 id="footer-quick" class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s('footer.quick_links')}</h2>
-        <ul class="space-y-2">
-          {quickLinks.map(l => (
-            <li><a href={l.href} class="text-sm text-body-text transition-colors hover:text-primary-600">{l.label}</a></li>
-          ))}
+      <nav aria-labelledby="footer-corporate">
+        <h2 id="footer-corporate" class={heading}>{s('footer.corporate')}</h2>
+        <ul class="space-y-2.5">
+          {corporate.map(l => <li><a href={l.href} hreflang={'lang' in l ? l.lang : undefined} class={linkCls}>{l.label}</a></li>)}
         </ul>
       </nav>
 
-      <div>
-        <h2 class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s('footer.company')}</h2>
-        <address class="space-y-2 text-sm not-italic text-body-text">
-          <p class="font-medium text-heading-text">{COMPANY.legalName}</p>
-          <p>{COMPANY.address.full}</p>
-          <p>
-            {s('company.tax_office')}: {COMPANY.taxOffice}<br />
-            {s('company.tax_number')}: {COMPANY.taxNumber}<br />
-            {s('company.mersis')}: {COMPANY.mersis}
-          </p>
-          <p><a href={COMPANY.phoneHref} class="hover:text-primary-600">{COMPANY.phone}</a></p>
-          <p><a href={`mailto:${COMPANY.email}`} class="hover:text-primary-600">{COMPANY.email}</a></p>
-          {COMPANY.kep && <p>{s('company.kep')}: {COMPANY.kep}</p>}
-          {COMPANY.chamber.name && <p>{s('company.chamber')}: {COMPANY.chamber.url ? <a href={COMPANY.chamber.url} class="hover:text-primary-600" target="_blank" rel="noopener noreferrer">{COMPANY.chamber.name}<span class="sr-only"> {s('a11y.opens_new_tab')}</span></a> : COMPANY.chamber.name}</p>}
-        </address>
-      </div>
+      <nav aria-labelledby="footer-legal">
+        <h2 id="footer-legal" class={heading}>{s('footer.legal')}</h2>
+        <ul class="space-y-2.5">
+          {legal.map(l => <li><a href={l.href} hreflang={l.lang} class={linkCls}>{l.label}</a></li>)}
+          <li><button type="button" data-cookie-preferences class={`${linkCls} underline-offset-4 hover:underline`}>{s('footer.cookie_prefs')}</button></li>
+        </ul>
+        {locale !== 'tr' && <p class="mt-3 text-xs text-label-text">{s('legal.only_turkish')}</p>}
+      </nav>
     </div>
 
-    <div class="flex flex-col items-center justify-between gap-4 border-t border-border-color pt-6 md:flex-row">
-      <p class="text-center text-sm text-heading-text">© {year} {COMPANY.shortName} {s('footer.rights')}</p>
+    <div class="mt-12 grid gap-8 border-t border-border-color pt-8 lg:grid-cols-[1fr_auto] lg:items-center">
+      <address class="text-sm not-italic leading-relaxed text-body-text">
+        <span class="font-medium text-heading-text">{COMPANY.legalName}</span><br />
+        {COMPANY.address.full} ·
+        <a href={COMPANY.phoneHref} class="hover:text-primary-600">{COMPANY.phone}</a> ·
+        <a href={`mailto:${COMPANY.email}`} class="hover:text-primary-600">{COMPANY.email}</a><br />
+        {s('company.mersis')}: {COMPANY.mersis} · {s('company.tax_office')}: {COMPANY.taxOffice} · {s('company.tax_number')}: {COMPANY.taxNumber}
+        {COMPANY.kep && <> · {s('company.kep')}: {COMPANY.kep}</>}
+      </address>
+      {COMPANY.paymentLogoBand && (
+        <div class="flex flex-col items-start gap-2 lg:items-end">
+          <Img src={COMPANY.paymentLogoBand} width={429} height={32} class="h-8 w-auto" />
+          <p class="text-xs text-label-text">{s('footer.payment_note')}</p>
+        </div>
+      )}
     </div>
+
+    <p class="mt-8 text-center text-sm text-label-text lg:text-left">© {year} {COMPANY.shortName} {s('footer.rights')}</p>
   </div>
 </footer>

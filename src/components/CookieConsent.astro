@@ -1,0 +1,85 @@
+---
+/**
+ * KVKK cookie consent (KVKK Çerez Rehberi 2022): analytics only after an active
+ * opt-in, reject as easy as accept, choice changeable from the footer.
+ * Google Analytics is injected by the script below — never before consent.
+ */
+import type { Locale } from '~/lib/i18n'
+import { localePath, t } from '~/lib/i18n'
+
+interface Props { locale: Locale }
+const { locale } = Astro.props
+const s = t(locale)
+const GA_ID = 'G-T48ZEC3WT9'
+---
+
+<section id="cookie-consent" hidden aria-labelledby="cookie-title" class="fixed inset-x-4 bottom-4 z-40 mx-auto max-w-xl rounded-2xl border border-border-color bg-white p-5 shadow-[0_20px_50px_-20px_rgba(16,39,62,.45)] sm:inset-x-6 sm:p-6" data-ga-id={GA_ID}>
+  <h2 id="cookie-title" class="font-space text-lg font-bold text-heading-text">{s('cookie.title')}</h2>
+  <p class="mt-2 text-sm text-body-text">
+    {s('cookie.text')}
+    <a href={localePath('/yasal/cerez-politikasi', 'tr')} hreflang="tr" class="link">{s('cookie.policy')}</a>
+  </p>
+  <div class="mt-4 flex flex-wrap gap-3">
+    <button type="button" data-consent="denied" class="btn btn-outline flex-1">{s('cookie.reject')}</button>
+    <button type="button" data-consent="granted" class="btn btn-primary flex-1">{s('cookie.accept')}</button>
+  </div>
+</section>
+
+<script>
+const KEY = 'lanista-consent'
+const box = document.getElementById('cookie-consent') as HTMLElement | null
+function read() {
+  try {
+    return localStorage.getItem(KEY)
+  }
+  catch {
+    return null
+  }
+}
+function loadAnalytics() {
+  const id = box?.dataset.gaId
+  if (!id || (window as any).__gaLoaded)
+    return;
+  (window as any).__gaLoaded = true
+  const w = window as any
+  w.dataLayer = w.dataLayer || []
+  w.gtag = function gtag() {
+    // gtag.js only accepts the Arguments object.
+    // eslint-disable-next-line prefer-rest-params
+    w.dataLayer.push(arguments)
+  }
+  w.gtag('js', new Date())
+  w.gtag('config', id, { anonymize_ip: true })
+  const sc = document.createElement('script')
+  sc.async = true
+  sc.src = `https://www.googletagmanager.com/gtag/js?id=${id}`
+  document.head.append(sc)
+}
+const choice = read()
+if (choice === 'granted')
+  loadAnalytics()
+else if (choice !== 'denied' && box)
+  box.hidden = false
+
+box?.addEventListener('click', (e) => {
+  const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-consent]')
+  if (!btn)
+    return
+  const value = btn.dataset.consent!
+  try {
+    localStorage.setItem(KEY, value)
+  }
+  catch {}
+  box.hidden = true
+  if (value === 'granted')
+    loadAnalytics()
+  else if ((window as any).__gaLoaded)
+    location.reload() // stop an already-running tracker
+})
+document.querySelectorAll('[data-cookie-preferences]').forEach(el => el.addEventListener('click', () => {
+  if (!box)
+    return
+  box.hidden = false
+  box.querySelector<HTMLButtonElement>('[data-consent="denied"]')?.focus()
+}))
+</script>

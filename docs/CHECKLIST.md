@@ -93,14 +93,18 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Fiyatlar `plans`'ta (15.000 öne çıkan, 25.000 + 7.500)
 - [x] Ürün sayfası şablonu (hero, dert→çözüm, ekranlar/video, özellikler, paketler, güven, SSS, demo/bekleme formu)
 - [x] Contentrain modelleri: `products` (3 ürün, yayında), `plans` (Hesap Takip: 3 paket, fiyatsız)
-- [ ] `legal-pages` modeli (+ şirket bilgisi)
+- [x] `legal-pages` doküman modeli (token'lar: {{kep}}, {{kurulum_suresi}}, {{urun}}, {{paket}}, {{tutar}}), `/yasal/{slug}/` + `/{slug}/` (kurumsal) şablonu, içindekiler, taslak uyarısı
+- [ ] Yasal metin taslakları (Fable yazıyor) → gözden geçirme → MCP ile kayıt
+- [ ] Kurulum süresi (`company.setup_days`) — kullanıcıdan
+- [x] Meslek kuralları bağlantısı: Van TSO (kullanıcı onayı)
+- [x] `feat/urun-gorselleri` dalı silindi (yerel + remote)
 - [x] `/urunler/` katalog
 - [x] `/urunler/hesap-takip/` (yayında; 2 video, 6 mobil ekran)
 - [x] `/urunler/nalbur-takip/` (yakında), `/urunler/kasa-takip/` (pilotta; 1 video, 6 ekran) + bekleme listesi
 - [x] Demo / satın alma / bekleme listesi formları (`leads`, type + product)
 - [ ] Ekran görüntüleri (demo ortamı, telefon çerçevesi) + stok fotoğraflar (sanayi dükkânı, nalbur, büfe)
 - [x] Header'a "Ürünler" → `/urunler/`
-- [ ] Footer'a "Ürünler"
+- [x] Footer yeniden: marka cümlesi, Ürünlerimiz (durum etiketli), Hizmetlerimiz, Kurumsal, Yasal (Contentrain'den), çerez tercihleri, şirket kimliği satırı, iyzico logo bandı
 - [x] JSON-LD: SoftwareApplication + Offer (KDV hariç, UnitPriceSpecification), FAQPage, BreadcrumbList
 
 ## 6. Yerel SEO sayfaları (Van öncelikli)
@@ -114,16 +118,15 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] KEP adresi (iyzico şartı, (b) maddesi) → şu an yok, boş kalacak; başvuru öncesi tekrar
 - [x] Meslek odası: Van Ticaret ve Sanayi Odası (kullanıcı teyit etti)
 - [x] Van TSO sitesi doğrulandı (vantso.org.tr)
-- [ ] Meslek kuralları bağlantısı (`company.chamber_rules_url`) — Van TSO'da yayımlanmış bir sayfa bulunamadı; kullanıcıya sorulacak
 - [x] İletişim sayfası (`/iletisim/`, header + footer'dan erişim): unvan, adres, telefon, e-posta, MERSİS, VKN, ticaret sicil, meslek odası (KEP gelince otomatik görünür)
 - [ ] Hakkımızda
 - [ ] İşlem rehberi
 - [ ] Mesafeli satış sözleşmesi, Ön bilgilendirme formu
 - [ ] Teslimat, iade ve cayma
 - [ ] KVKK aydınlatma metni, Gizlilik politikası, Çerez politikası
-- [ ] Çerez onay bandı (GA onaydan sonra)
+- [x] Çerez onay bandı: GA yalnız "Kabul et" sonrası yükleniyor (test edildi); Reddet eşit ağırlıkta; footer'dan tercih değişikliği
 - [ ] Ön onay adımı → iyzico ödeme linki
-- [ ] iyzico logo bandı (footer, resmi paket)
+- [x] iyzico logo bandı (footer, resmi paket; `company.payment_logo_band`, Studio CDN)
 - [ ] Fiyatlar, taksit, teslim süresi (kullanıcıdan — proje sonunda)
 
 ## 8. Yayın

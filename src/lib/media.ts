@@ -20,6 +20,7 @@ export interface MediaAsset {
   blurhash?: string
   format?: string
   variantUrls: Record<string, string>
+  variants: Record<string, { width: number, height: number }>
 }
 
 interface ApiAsset extends Partial<MediaAsset> { url: string }
@@ -50,6 +51,7 @@ async function load(): Promise<Map<string, MediaAsset>> {
         blurhash: a.blurhash,
         format: a.format,
         variantUrls: a.variantUrls ?? {},
+        variants: a.variants ?? {},
       })
     }
     if (page * 100 >= total || !assets.length)
@@ -75,11 +77,16 @@ export function blurhashColor(hash?: string): string | undefined {
 }
 
 /**
- * Best URL for a slot. Studio variants: `hero` fits within 1920×1080 without
- * cropping; `card`/`thumb` are cropped, so they are not used for covers.
+ * Best URL for a slot. Studio's `hero` variant is capped at 1920×1080 and
+ * crops portrait images; `card`/`thumb` are always cropped.
  */
 export function pickSrc(asset: MediaAsset | undefined, url: string): string {
   if (!asset || asset.format === 'svg')
     return url
-  return asset.variantUrls.hero || url
+  const hero = asset.variants.hero
+  // `hero` caps the height at 1080 and crops tall images (phone screenshots):
+  // use it only when it keeps the original aspect ratio.
+  const sameShape = hero && asset.width && asset.height
+    && Math.abs(hero.width / hero.height - asset.width / asset.height) < 0.01
+  return sameShape && asset.variantUrls.hero ? asset.variantUrls.hero : url
 }

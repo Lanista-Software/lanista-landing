@@ -1,0 +1,12 @@
+---
+/** Corporate pages from Contentrain (e.g. /hakkimizda/). Static routes take precedence. */
+import { getLegalPages } from '~/lib/legal'
+import LegalPage from '~/views/LegalPage.astro'
+
+export function getStaticPaths() {
+  return getLegalPages().filter(p => p.group === 'corporate').map(page => ({ params: { corporate: page.slug }, props: { page } }))
+}
+const { page } = Astro.props
+---
+
+<LegalPage page={page} />

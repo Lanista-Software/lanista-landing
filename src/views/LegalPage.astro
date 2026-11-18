@@ -1,0 +1,51 @@
+---
+import type { LegalPage as LegalDoc } from '~/lib/legal'
+import Breadcrumbs from '~/components/Breadcrumbs.astro'
+import PageHero from '~/components/PageHero.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { t } from '~/lib/i18n'
+import { legalPath, renderLegal } from '~/lib/legal'
+import { ORG_ID, webPageSchema } from '~/lib/schema'
+import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
+
+interface Props { page: LegalDoc }
+const { page } = Astro.props
+const locale = 'tr' as const
+const s = t(locale)
+const path = legalPath(page)
+const { html, toc, incomplete } = renderLegal(page)
+const draft = !page.reviewed || incomplete
+const updated = page.last_updated
+  ? new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(page.last_updated))
+  : undefined
+const trail = [{ name: s('nav.home'), path: '/' }, { name: page.title, path }]
+const jsonLd = [
+  { ...webPageSchema(locale, path, page.title, page.description, page.group === 'corporate' ? 'AboutPage' : 'WebPage'), publisher: { '@id': ORG_ID }, ...(page.last_updated ? { dateModified: page.last_updated } : {}) },
+  breadcrumbSchema(locale, trail),
+]
+---
+
+<BaseLayout locale={locale} title={`${page.title} | ${SITE_NAME}`} description={clampDescription(page.description)} path={path} locales={['tr']} jsonLd={jsonLd}>
+  <PageHero>
+    <Breadcrumbs locale={locale} trail={trail} />
+    <h1 class="page-title">{page.title}</h1>
+    {updated && <p class="mt-4 text-sm text-label-text">{s('legal.last_updated', { date: updated })}</p>}
+  </PageHero>
+
+  <div class="container-x grid gap-12 pb-24 pt-8 lg:grid-cols-[16rem_1fr]">
+    {toc.length > 2 && (
+      <nav aria-labelledby="toc-title" class="lg:sticky lg:top-28 lg:self-start">
+        <h2 id="toc-title" class="text-sm font-semibold text-label-text">{s('legal.toc')}</h2>
+        <ol class="mt-3 space-y-2 border-l border-border-color pl-4 text-sm">
+          {toc.map(item => <li><a href={`#${item.id}`} class="text-body-text hover:text-primary-600">{item.text}</a></li>)}
+        </ol>
+      </nav>
+    )}
+    <article class="max-w-3xl">
+      {draft && page.group === 'legal' && (
+        <p role="note" class="mb-8 rounded-xl border border-warning-200 bg-warning-50 p-4 text-sm text-warning-800">{s('legal.draft_notice')}</p>
+      )}
+      <div class="prose prose-slate max-w-none prose-headings:scroll-mt-28 prose-headings:font-space prose-headings:text-heading-text prose-a:text-primary-600" set:html={html} />
+    </article>
+  </div>
+</BaseLayout>

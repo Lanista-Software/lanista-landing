@@ -31,4 +31,6 @@ export const COMPANY = {
   email: c.email,
   kep: c.kep,
   chamber: { name: c.chamber_name, url: c.chamber_url, rulesUrl: c.chamber_rules_url },
+  paymentLogoBand: c.payment_logo_band,
+  setupDays: c.setup_days,
 } as const

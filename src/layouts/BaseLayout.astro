@@ -1,5 +1,6 @@
 ---
 import type { Locale } from '~/lib/i18n'
+import CookieConsent from '~/components/CookieConsent.astro'
 import Footer from '~/components/Footer.astro'
 import Header from '~/components/Header.astro'
 import { HTML_LANG, LOCALES, OG_LOCALE, t } from '~/lib/i18n'
@@ -48,7 +49,6 @@ const alternates = locales.length > 1
     ]
   : []
 const s = t(locale)
-const GA_ID = 'G-T48ZEC3WT9'
 ---
 
 <!doctype html>
@@ -90,18 +90,6 @@ const GA_ID = 'G-T48ZEC3WT9'
 
     <script is:inline>document.documentElement.classList.add('js')
 </script>
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
-    <script is:inline define:vars={{ GA_ID }}>
-      window.dataLayer = window.dataLayer || []
-      // gtag.js only accepts the Arguments object, not an array.
-      function gtag() {
-        // eslint-disable-next-line prefer-rest-params
-        window.dataLayer.push(arguments)
-      }
-      window.gtag = gtag
-      gtag('js', new Date())
-      gtag('config', GA_ID)
-    </script>
     <slot name="head" />
   </head>
   <body>
@@ -111,6 +99,7 @@ const GA_ID = 'G-T48ZEC3WT9'
       <slot />
     </main>
     <Footer locale={locale} />
+    <CookieConsent locale={locale} />
     <script>
       import '~/scripts/site'
     </script>
