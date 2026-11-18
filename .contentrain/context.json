@@ -1,24 +1,13 @@
 {
   "lastOperation": {
-    "entries": [
-      "cerez-politikasi",
-      "gizlilik",
-      "hakkimizda",
-      "islem-rehberi",
-      "kvkk",
-      "mesafeli-satis",
-      "on-bilgilendirme",
-      "teslimat-ve-iade"
-    ],
-    "locale": "tr",
-    "model": "legal-pages",
-    "source": "mcp-local",
-    "timestamp": "2026-11-18T14:00:52.320Z",
-    "tool": "contentrain_content_save"
+    "locale": "en",
+    "model": "leads",
+    "source": "mcp-studio",
+    "timestamp": "2026-11-18T14:09:23.984Z",
+    "tool": "merge"
   },
   "stats": {
-    "entries": 227,
-    "lastSync": "2026-11-18T14:00:52.320Z",
+    "lastSync": "2026-11-18T14:09:23.984Z",
     "locales": [
       "en",
       "tr"
