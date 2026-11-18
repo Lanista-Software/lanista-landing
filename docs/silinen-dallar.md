@@ -1,0 +1,26 @@
+# Silinen dallar (2026-11-18) — geri yüklemek için: git push origin <sha>:refs/heads/<dal>
+- origin/contentrain-default 3247037cbf76d398f8deb07462ea43e98768b723
+- origin/fix-fields ff86ed4ea59ac997e0ee993b79d750d53324260e
+- origin/fix-hero-section 3a0a1139d79e3760221e16feafe5eed06eb6d613
+- origin/hero-bg a4b8002171758fdc49f8199228e6323b75e110cb
+- origin/ui-fix-v2 b37deae767f0df980281cbc79a4ef075263d68cf
+- origin/analytics a6e55158fdf0089ae36e9ebcf877983689356e28
+- origin/content 81555bc9f8a039b12e3503be8da35fb0b54abca6
+- origin/fix-buttons ee405d60011c3373e71dd74724fefab2bdadba1c
+- origin/fix-cards-padding 0671479d53345f392901f5d90ba2e62fdfc53aa7
+- origin/fix-hero-bg 5dc4fcfee2348c2382b863f7ad137bed695d0401
+- origin/fix-static-folder 5dfdc0663c75abf18ee4a77fac0c04371500b7f3
+- origin/fix-view-all-images 4695ea9770f375127970d498a2617c057c2e1cdd
+- origin/meta-tags 3c4918b94a269dcc1dbeb002437770afb1104a70
+- origin/ui-fixes cc36c10ca0245da263dfddc87589fc46febebb06
+- origin/v2 cdbe46f00d665e2b4f29e132960e850419e0adcb
+- origin/astro-migration 06f71ac5467118998ed8adf914a22b7f5298395a
+- local contentrain-defailt f0f7edd5b69458a91cdf0e41ee04158871d9b9a9
+- local contentrain-default f0f7edd5b69458a91cdf0e41ee04158871d9b9a9
+- local v2-merge 9a0a085f3a7a892e463959e384bcc913e8bc05fe
+- local analytics a6e55158fdf0089ae36e9ebcf877983689356e28
+- local astro-migration 8aea5d7bf0ae2b557b5c0766a0bd8313761af51e
+- local content 706b1b9633c478d5a9a91781bd9376554b700bfc
+- local layer-integration f7408372abe750c4bdd0a0fbb93935e43bef94bf
+- local new-relase fef5e6262b6d291931c4fa7bc95c4d86aa4c4237
+- local v2 45813f2e1772615946ff4ed6c35584c1935278b8
