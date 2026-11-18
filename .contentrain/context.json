@@ -1,17 +1,17 @@
 {
   "lastOperation": {
     "entries": [
-      "tr"
+      "en"
     ],
-    "locale": "tr",
+    "locale": "en",
     "model": "ui",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T13:32:58.914Z",
+    "timestamp": "2026-11-18T13:33:05.600Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 219,
-    "lastSync": "2026-11-18T13:32:58.914Z",
+    "lastSync": "2026-11-18T13:33:05.600Z",
     "locales": [
       "en",
       "tr"
