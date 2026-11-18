@@ -1,38 +1,27 @@
 {
   "lastOperation": {
     "entries": [
-      "2b592e751796",
-      "50d81f2a3baf",
-      "8cf57e3279a8",
-      "9450777bee2f",
-      "d00761480436",
-      "d00761480437",
-      "d00761480438",
-      "d00761480439",
-      "d00761480440",
-      "d48331b6ba10",
-      "f16b19c950c7",
-      "2b592e751796",
-      "50d81f2a3baf",
-      "8cf57e3279a8",
-      "9450777bee2f",
-      "d00761480436",
-      "d00761480437",
-      "d00761480438",
-      "d00761480439",
-      "d00761480440",
-      "d48331b6ba10",
-      "f16b19c950c7"
+      "2aa54f9e7eaf",
+      "2aa54f9e7eb0",
+      "2aa54f9e7eb1",
+      "2aa54f9e7eb2",
+      "2aa54f9e7xb3",
+      "2aa54f9e7xb4",
+      "6688128fdc13",
+      "6b931f1d3589",
+      "98874f167333",
+      "2aa54f9e7xb4",
+      "6b931f1d3589"
     ],
-    "locale": "tr",
-    "model": "services",
+    "locale": "en",
+    "model": "sections",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T21:41:16.295Z",
+    "timestamp": "2026-11-18T21:48:12.684Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 234,
-    "lastSync": "2026-11-18T21:41:16.295Z",
+    "lastSync": "2026-11-18T21:48:12.684Z",
     "locales": [
       "tr",
       "en"
