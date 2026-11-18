@@ -97,9 +97,10 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Contentrain modelleri: `products` (3 ürün, yayında), `plans` (Hesap Takip: 3 paket, fiyatsız)
 - [x] `legal-pages` doküman modeli (token'lar: {{kep}}, {{kurulum_suresi}}, {{urun}}, {{paket}}, {{tutar}}), `/yasal/{slug}/` + `/{slug}/` (kurumsal) şablonu, içindekiler, taslak uyarısı
 - [x] Yasal metin taslakları (Fable) gözden geçirildi ve Contentrain'e kaydedildi: mesafeli satış, ön bilgilendirme, teslimat-iade, KVKK, gizlilik, çerez, işlem rehberi, hakkımızda (`reviewed: false` → sayfada taslak uyarısı)
-- [ ] Hukukçu/mali müşavir kontrolü (Fable'ın 8 notu: kurulumun başlama anı, SMS kredisi cayma, tacir iyi niyet iadesi, süre sonu salt okunur, saklama süreleri, yurt dışı aktarım standart sözleşmeleri, veri işleyen sözleşmesi, KVKK başvuru usulü) → sonra `reviewed: true`
+- [x] Hukuki kontrol tamamlandı (kullanıcı, 2026-11-18) → tüm yasal dokümanlar `reviewed: true`, taslak uyarısı kalktı
+- [ ] KVKK yurt dışı aktarım standart sözleşmeleri (Google, Studio) imzalanıp Kurul'a bildirilecek (kullanıcı)
 - [ ] Doküman modellerinde toplu durum (published) MCP'de desteklenmiyor — Studio'dan yayınlanacak
-- [ ] Kurulum süresi (`company.setup_days`) — kullanıcıdan
+- [x] Kurulum süresi: en geç 3 iş günü (`company.setup_days`; çoğunlukla kurulum ödemeden önce yapılıyor)
 - [x] Meslek kuralları bağlantısı: Van TSO (kullanıcı onayı)
 - [x] `feat/urun-gorselleri` dalı silindi (yerel + remote)
 - [x] `/urunler/` katalog

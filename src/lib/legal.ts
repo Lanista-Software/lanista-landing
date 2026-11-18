@@ -11,8 +11,14 @@ import { t } from './i18n'
 
 export type LegalPage = LegalPages
 
+// Contentrain MCP currently writes document frontmatter booleans quoted ("true"),
+// so the SDK returns strings. Normalize until that is fixed upstream.
+const bool = (v: unknown) => v === true || v === 'true'
+
 export function getLegalPages(): LegalPage[] {
   return document('legal-pages').sort('order', 'asc').all()
+    .map(p => ({ ...p, reviewed: bool(p.reviewed), show_in_footer: bool(p.show_in_footer), order: Number(p.order ?? 0) }))
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
 }
 
 export function legalPath(page: Pick<LegalPage, 'group' | 'slug'>): string {
