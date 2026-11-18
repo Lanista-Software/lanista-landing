@@ -5,6 +5,12 @@
     "updated_at": "2026-11-18T12:42:54.023Z",
     "updated_by": "contentrain-mcp"
   },
+  "22c9e6fcd8ce": {
+    "source": "agent",
+    "status": "draft",
+    "updated_at": "2026-11-18T12:43:39.497Z",
+    "updated_by": "contentrain-mcp"
+  },
   "51bf2dbbed29": {
     "source": "agent",
     "status": "published",
