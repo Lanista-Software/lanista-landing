@@ -5,14 +5,14 @@
     "system"
   ],
   "locales": {
-    "default": "en",
+    "default": "tr",
     "supported": [
-      "en",
-      "tr"
+      "tr",
+      "en"
     ]
   },
   "platform": "web",
-  "stack": "nuxt",
+  "stack": "astro",
   "version": 1,
   "workflow": "auto-merge"
 }
