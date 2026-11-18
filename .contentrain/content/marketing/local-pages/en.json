@@ -76,8 +76,8 @@
   "a1c0de5f7a02": {
     "area_served": [
       "Van",
-      "Erzurum",
       "Malatya",
+      "Erzurum",
       "Elazığ",
       "Ağrı",
       "Bitlis",
@@ -107,7 +107,7 @@
     "faq": [
       {
         "answer": "We hold the first meeting by phone or video call. Once the scope is clear we continue with weekly meetings and show you a working version every week.",
-        "question": "We are in Erzurum or Malatya. How do we work together?"
+        "question": "We are in Malatya or Erzurum. How do we work together?"
       },
       {
         "answer": "The number of pages, whether the design is custom, e-commerce and payment integration, multiple languages and content management needs. Once we have worked out the scope together, we send a written quote.",
@@ -118,16 +118,16 @@
         "question": "Which provinces do you serve?"
       }
     ],
-    "hero_text": "From our team at Van Teknokent we build software for businesses in Erzurum, Malatya, Elazığ, Ağrı, Bitlis, Muş and the other provinces of the region. We are in the same region and know how your business works.",
+    "hero_text": "From our team at Van Teknokent we build software for businesses in Malatya, Erzurum, Elazığ, Ağrı, Bitlis, Muş and the other provinces of the region. We are in the same region and know how your business works.",
     "hero_title": "Websites, mobile apps and custom software for businesses in Eastern Anatolia",
     "local_business": false,
-    "meta_description": "Websites, e-commerce, mobile apps and custom software for businesses in Erzurum, Malatya, Elazığ and across Eastern Anatolia. A software team based in Van.",
-    "meta_title": "Software and Web Design in Eastern Anatolia | Erzurum, Malatya",
+    "meta_description": "Websites, e-commerce, mobile apps and custom software for businesses in Malatya, Erzurum, Elazığ and across Eastern Anatolia. A software team based in Van.",
+    "meta_title": "Software and Web Design in Eastern Anatolia | Malatya, Erzurum",
     "order": 2,
     "sections": [
       {
         "body": "We build company websites, catalogue sites and e-commerce sites. They load fast, look right on phones and launch with technical SEO settings so Google can find them. You can update the content yourself later.",
-        "title": "Web design and websites in Erzurum, Malatya and Elazığ"
+        "title": "Web design and websites in Malatya, Erzurum and Elazığ"
       },
       {
         "body": "We build web applications that follow your own workflow, iOS and Android mobile apps, and ordering and POS apps. We move work such as stock, accounts, orders or appointments out of Excel and paper into one system.",
@@ -153,13 +153,13 @@
   },
   "a1c0de5f7a03": {
     "area_served": [
-      "Konya",
       "Kayseri",
-      "Sivas",
+      "Konya",
+      "Eskişehir",
       "Ankara",
+      "Sivas",
       "Yozgat",
       "Aksaray",
-      "Eskişehir",
       "Kırıkkale",
       "Kırşehir",
       "Nevşehir",
@@ -184,7 +184,7 @@
     "faq": [
       {
         "answer": "It depends on the number of pages, whether the design is custom and needs such as payment integration. Once we have worked out the scope together, we give you the timeline and price in writing.",
-        "question": "How long does a website take in Konya or Kayseri?"
+        "question": "How long does a website take in Kayseri or Konya?"
       },
       {
         "answer": "No. We hold the first meeting by phone or video call, then continue with weekly meetings. We show you a working version every week.",
@@ -195,16 +195,16 @@
         "question": "Which provinces do you serve?"
       }
     ],
-    "hero_text": "Working online, we build websites, mobile apps and custom software for businesses in Konya, Kayseri, Sivas, Ankara, Yozgat, Aksaray and the other provinces of the region.",
+    "hero_text": "Working online, we build websites, mobile apps and custom software for businesses in Kayseri, Konya, Eskişehir, Ankara, Sivas, Yozgat, Aksaray and the other provinces of the region.",
     "hero_title": "Websites, e-commerce and custom software for businesses in Central Anatolia",
     "local_business": false,
-    "meta_description": "Websites, e-commerce, mobile apps and custom software development for businesses in Konya, Kayseri, Sivas, Ankara and across Central Anatolia.",
-    "meta_title": "Software and Web Design in Central Anatolia | Konya, Kayseri",
+    "meta_description": "Websites, e-commerce, mobile apps and custom software development for businesses in Kayseri, Konya, Eskişehir, Ankara and across Central Anatolia.",
+    "meta_title": "Software and Web Design in Central Anatolia | Kayseri, Konya",
     "order": 3,
     "sections": [
       {
         "body": "We build company sites, product catalogues and e-commerce sites for manufacturers, wholesalers and retailers. We set up virtual POS, shipping and invoicing integrations and launch the site with technical SEO settings.",
-        "title": "Websites and e-commerce in Konya and Kayseri"
+        "title": "Websites and e-commerce in Kayseri, Konya and Eskişehir"
       },
       {
         "body": "For small and medium-sized businesses we build sites that load fast, look right on phones and let you update the content yourself. You can start with a one-page site or go straight to a multi-page company site.",

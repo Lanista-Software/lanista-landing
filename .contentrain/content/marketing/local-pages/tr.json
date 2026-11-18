@@ -76,8 +76,8 @@
   "a1c0de5f7a02": {
     "area_served": [
       "Van",
-      "Erzurum",
       "Malatya",
+      "Erzurum",
       "Elazığ",
       "Ağrı",
       "Bitlis",
@@ -107,7 +107,7 @@
     "faq": [
       {
         "answer": "İlk görüşmeyi telefonla ya da görüntülü toplantıyla yapıyoruz. Kapsamı çıkardıktan sonra haftalık toplantılarla ilerliyoruz ve her hafta çalışan sürümü size gösteriyoruz.",
-        "question": "Erzurum ya da Malatya'dayız, nasıl çalışırız?"
+        "question": "Malatya ya da Erzurum'dayız, nasıl çalışırız?"
       },
       {
         "answer": "Sayfa sayısı, tasarımın size özel olup olmadığı, e-ticaret ve ödeme entegrasyonu, çok dillilik ve içerik yönetimi ihtiyacı fiyatı belirler. Kapsamı birlikte çıkardıktan sonra yazılı teklif veriyoruz.",
@@ -118,16 +118,16 @@
         "question": "Hangi illerde hizmet veriyorsunuz?"
       }
     ],
-    "hero_text": "Van Teknokent'teki ekibimizle Erzurum, Malatya, Elazığ, Ağrı, Bitlis, Muş ve bölgedeki diğer illerde işletmelere yazılım geliştiriyoruz. Aynı bölgedeyiz; işletmenizin koşullarını biliyoruz.",
+    "hero_text": "Van Teknokent'teki ekibimizle Malatya, Erzurum, Elazığ, Ağrı, Bitlis, Muş ve bölgedeki diğer illerde işletmelere yazılım geliştiriyoruz. Aynı bölgedeyiz; işletmenizin koşullarını biliyoruz.",
     "hero_title": "Doğu Anadolu'daki işletmeler için web sitesi, mobil uygulama ve özel yazılım",
     "local_business": false,
-    "meta_description": "Erzurum, Malatya, Elazığ ve tüm Doğu Anadolu'daki işletmeler için web sitesi, e-ticaret, mobil uygulama ve özel yazılım. Van merkezli yazılım ekibi.",
-    "meta_title": "Doğu Anadolu Yazılım ve Web Tasarım | Erzurum, Malatya, Elazığ",
+    "meta_description": "Malatya, Erzurum, Elazığ ve tüm Doğu Anadolu'daki işletmeler için web sitesi, e-ticaret, mobil uygulama ve özel yazılım. Van merkezli yazılım ekibi.",
+    "meta_title": "Doğu Anadolu Yazılım ve Web Tasarım | Malatya, Erzurum, Elazığ",
     "order": 2,
     "sections": [
       {
         "body": "Kurumsal tanıtım sitesi, katalog sitesi ve e-ticaret sitesi geliştiriyoruz. Siteler hızlı açılır, telefonda düzgün görünür ve Google'da bulunabilmesi için teknik SEO ayarlarıyla yayına çıkar. İçeriği sonradan kendiniz güncelleyebilirsiniz.",
-        "title": "Erzurum, Malatya ve Elazığ'da web tasarım ve web sitesi"
+        "title": "Malatya, Erzurum ve Elazığ'da web tasarım ve web sitesi"
       },
       {
         "body": "İşletmenin kendi iş akışına göre çalışan web uygulamaları, iOS ve Android mobil uygulamalar, sipariş ve POS uygulamaları geliştiriyoruz. Stok, cari, sipariş ya da randevu gibi işleri Excel ve defterden çıkarıp tek bir sisteme taşıyoruz.",
@@ -153,13 +153,13 @@
   },
   "a1c0de5f7a03": {
     "area_served": [
-      "Konya",
       "Kayseri",
-      "Sivas",
+      "Konya",
+      "Eskişehir",
       "Ankara",
+      "Sivas",
       "Yozgat",
       "Aksaray",
-      "Eskişehir",
       "Kırıkkale",
       "Kırşehir",
       "Nevşehir",
@@ -184,7 +184,7 @@
     "faq": [
       {
         "answer": "Süre; sayfa sayısına, tasarımın size özel olup olmadığına ve ödeme entegrasyonu gibi ihtiyaçlara göre değişir. Kapsamı birlikte çıkardıktan sonra süreyi ve fiyatı yazılı olarak veririz.",
-        "question": "Konya ya da Kayseri'de web sitesi yaptırmak ne kadar sürer?"
+        "question": "Kayseri ya da Konya'da web sitesi yaptırmak ne kadar sürer?"
       },
       {
         "answer": "Hayır. İlk görüşmeyi telefonla ya da görüntülü toplantıyla yapıyor, ardından haftalık toplantılarla ilerliyoruz. Her hafta çalışan sürümü size gösteriyoruz.",
@@ -195,16 +195,16 @@
         "question": "Hangi illerde hizmet veriyorsunuz?"
       }
     ],
-    "hero_text": "Konya, Kayseri, Sivas, Ankara, Yozgat, Aksaray ve bölgedeki diğer illerde işletmelere çevrimiçi çalışarak web sitesi, mobil uygulama ve işletmeye özel yazılım geliştiriyoruz.",
+    "hero_text": "Kayseri, Konya, Eskişehir, Ankara, Sivas, Yozgat, Aksaray ve bölgedeki diğer illerde işletmelere çevrimiçi çalışarak web sitesi, mobil uygulama ve işletmeye özel yazılım geliştiriyoruz.",
     "hero_title": "İç Anadolu'daki işletmeler için web sitesi, e-ticaret ve özel yazılım",
     "local_business": false,
-    "meta_description": "Konya, Kayseri, Sivas, Ankara ve İç Anadolu'daki işletmeler için web sitesi, e-ticaret, mobil uygulama ve özel yazılım geliştirme.",
-    "meta_title": "İç Anadolu Yazılım ve Web Tasarım | Konya, Kayseri, Sivas",
+    "meta_description": "Kayseri, Konya, Eskişehir, Ankara ve İç Anadolu'daki işletmeler için web sitesi, e-ticaret, mobil uygulama ve özel yazılım geliştirme.",
+    "meta_title": "İç Anadolu Yazılım ve Web Tasarım | Kayseri, Konya, Eskişehir",
     "order": 3,
     "sections": [
       {
         "body": "Üretici, toptancı ve perakende işletmeler için kurumsal site, ürün kataloğu ve e-ticaret sitesi geliştiriyoruz. Sanal POS, kargo ve fatura entegrasyonlarını kuruyor; siteyi teknik SEO ayarlarıyla yayına çıkarıyoruz.",
-        "title": "Konya ve Kayseri'de web sitesi ve e-ticaret"
+        "title": "Kayseri, Konya ve Eskişehir'de web sitesi ve e-ticaret"
       },
       {
         "body": "Küçük ve orta ölçekli işletmeler için hızlı açılan, telefonda düzgün görünen ve içeriğini kendinizin güncelleyebildiği siteler yapıyoruz. Başlangıç için tek sayfalık bir tanıtım sitesi de olabilir, çok sayfalı bir kurumsal site de.",
