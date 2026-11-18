@@ -28,5 +28,11 @@
     "status": "draft",
     "updated_at": "2026-11-18T12:41:34.138Z",
     "updated_by": "contentrain-mcp"
+  },
+  "e78cafc5a6e0": {
+    "source": "agent",
+    "status": "draft",
+    "updated_at": "2026-11-18T12:43:01.130Z",
+    "updated_by": "contentrain-mcp"
   }
 }
