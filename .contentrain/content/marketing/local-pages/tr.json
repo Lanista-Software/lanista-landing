@@ -1,0 +1,232 @@
+{
+  "a1c0de5f7a01": {
+    "area_served": [
+      "Van",
+      "Tuşba",
+      "İpekyolu",
+      "Edremit",
+      "Erciş"
+    ],
+    "facts": [
+      {
+        "text": "Bardakçı Mah. Teknokent Sk. No: 1, İç Kapı 9, Tuşba / Van. Randevu alıp ofisimize uğrayabilir, ihtiyacınızı yüz yüze anlatabilirsiniz.",
+        "title": "Van Teknokent'te ofis"
+      },
+      {
+        "text": "Hesap Takip, Van'da iki şubeli bir oto yedek parça işletmesinde her gün kullanılıyor. Kurulumu ve eğitimi dükkânda yaptık.",
+        "title": "Van'da sahada çalışan ürün"
+      },
+      {
+        "text": "Lanista Yazılım, Van Ticaret ve Sanayi Odası'na kayıtlı bir limited şirkettir. Fatura ve sözleşme Van'dan kesilir.",
+        "title": "Van TSO üyesi"
+      }
+    ],
+    "faq": [
+      {
+        "answer": "Süre; sayfa sayısına, tasarımın size özel olup olmadığına ve ödeme entegrasyonu gibi ihtiyaçlara göre değişir. Kapsamı birlikte çıkardıktan sonra süreyi ve fiyatı yazılı olarak veririz.",
+        "question": "Van'da web sitesi yaptırmak ne kadar sürer?"
+      },
+      {
+        "answer": "Evet. Ofisimiz Van Teknokent'te (Tuşba). Telefonla ya da iletişim formundan randevu alıp gelebilirsiniz; isterseniz biz de işletmenize geliriz.",
+        "question": "Ofisinize gelip yüz yüze görüşebilir miyiz?"
+      },
+      {
+        "answer": "Evet. Türkiye'nin her yerinden müşterilerle çevrimiçi toplantılarla çalışıyoruz. Doğu Anadolu ve İç Anadolu'daki işletmeler için ayrı sayfalarımıza da bakabilirsiniz.",
+        "question": "Van dışındaki işletmelerle de çalışıyor musunuz?"
+      },
+      {
+        "answer": "Evet. Yayından sonra bakım, güncelleme ve destek için anlaşma yapıyoruz. Hazır ürünlerimizde destek yıllık pakete dahildir.",
+        "question": "Yazılım bittikten sonra destek veriyor musunuz?"
+      }
+    ],
+    "hero_text": "2019'dan beri Van Teknokent'teyiz. Van'daki işletmelerle yüz yüze çalışıyor; web sitesi, e-ticaret, mobil uygulama ve işletmeye özel yazılımı tasarımdan yayına kadar kendi ekibimizle geliştiriyoruz.",
+    "hero_title": "Van'da yazılım şirketi: web, mobil ve işletmenize özel yazılım",
+    "local_business": true,
+    "meta_description": "Van Teknokent'teki ofisimizden web sitesi, e-ticaret, mobil uygulama ve işletmeye özel yazılım geliştiriyoruz. Yüz yüze görüşme, yerinde kurulum.",
+    "meta_title": "Van Yazılım Şirketi | Web, Mobil ve Özel Yazılım | Lanista",
+    "order": 1,
+    "sections": [
+      {
+        "body": "Web sitesi ve kurumsal tanıtım sitesi, e-ticaret sitesi ve sanal POS (iyzico, PayTR) entegrasyonu, iOS ve Android mobil uygulama, restoran ve kafeler için sipariş ve POS uygulamaları, işletmenin kendi iş akışına göre yazılan özel yazılımlar. Hepsini aynı ekip geliştirir; işi başka bir firmaya devretmeyiz.",
+        "title": "Van'daki işletmeler için ne yapıyoruz?"
+      },
+      {
+        "body": "Veresiye defterini, kasayı ya da usta hesabını telefona taşımak isteyen esnaf için sektöre özel hazır uygulamalarımız var. Hesap Takip oto yedek parça ve sanayi esnafı için, Kasa Takip büfe ve kafeler için, Nalbur Takip nalbur ve hırdavatçılar için. Van içindeki işletmelerde kurulumu ve eğitimi dükkânda yapıyoruz.",
+        "title": "Defterle yürüyen işletmeler için hazır ürünler"
+      },
+      {
+        "body": "Önce tanışıyoruz: ofisimizde ya da işletmenizde ihtiyacı birlikte çıkarıyoruz. Ardından yazılı bir kapsam ve fiyat veriyoruz. Geliştirme sırasında her hafta çalışan bir sürüm görürsünüz. Yayından sonra bakım ve destek için aynı ekiple çalışmaya devam edersiniz.",
+        "title": "Nasıl çalışıyoruz?"
+      },
+      {
+        "body": "Referanslarımızdaki Popile, Bloom and Fresh, Visivi, Collabers ve Contentrain gibi projeleri geliştirdik ya da geliştirmesinde yer aldık. Bu projelerde kullandığımız yöntemleri ve teknolojileri Van'daki işletmelerin projelerinde de kullanıyoruz.",
+        "title": "Van dışındaki projelerimiz"
+      }
+    ],
+    "services": [
+      "sp02b3c4d5e6",
+      "sp04d5e6f7a8",
+      "sp05e6f7a8b9",
+      "sp06f7a8b9c0",
+      "sp07a8b9c0d1"
+    ],
+    "slug": "van-yazilim",
+    "title": "Van Yazılım Şirketi"
+  },
+  "a1c0de5f7a02": {
+    "area_served": [
+      "Van",
+      "Erzurum",
+      "Malatya",
+      "Elazığ",
+      "Ağrı",
+      "Bitlis",
+      "Muş",
+      "Hakkari",
+      "Kars",
+      "Iğdır",
+      "Ardahan",
+      "Erzincan",
+      "Bingöl",
+      "Tunceli"
+    ],
+    "facts": [
+      {
+        "text": "Ofisimiz Van Teknokent'te. Doğu Anadolu'daki işletmelerle aynı bölgedeyiz; toplantıları çevrimiçi yapıyoruz.",
+        "title": "Bölgede bir ekip"
+      },
+      {
+        "text": "Tasarım, geliştirme, ödeme entegrasyonu ve yayın aynı ekipte. İşi taşerona vermiyoruz.",
+        "title": "Uçtan uca geliştirme"
+      },
+      {
+        "text": "Projeye başlamadan önce kapsamı, süreyi ve fiyatı yazılı olarak veriyoruz.",
+        "title": "Yazılı kapsam ve fiyat"
+      }
+    ],
+    "faq": [
+      {
+        "answer": "İlk görüşmeyi telefonla ya da görüntülü toplantıyla yapıyoruz. Kapsamı çıkardıktan sonra haftalık toplantılarla ilerliyoruz ve her hafta çalışan sürümü size gösteriyoruz.",
+        "question": "Erzurum ya da Malatya'dayız, nasıl çalışırız?"
+      },
+      {
+        "answer": "Sayfa sayısı, tasarımın size özel olup olmadığı, e-ticaret ve ödeme entegrasyonu, çok dillilik ve içerik yönetimi ihtiyacı fiyatı belirler. Kapsamı birlikte çıkardıktan sonra yazılı teklif veriyoruz.",
+        "question": "Web sitesi fiyatları neye göre değişiyor?"
+      },
+      {
+        "answer": "Türkiye'nin her yerine hizmet veriyoruz. Doğu Anadolu'da Van, Erzurum, Malatya, Elazığ, Ağrı, Bitlis, Muş, Hakkari, Kars, Iğdır, Ardahan, Erzincan, Bingöl ve Tunceli'deki işletmelerle çalışabiliriz.",
+        "question": "Hangi illerde hizmet veriyorsunuz?"
+      }
+    ],
+    "hero_text": "Van Teknokent'teki ekibimizle Erzurum, Malatya, Elazığ, Ağrı, Bitlis, Muş ve bölgedeki diğer illerde işletmelere yazılım geliştiriyoruz. Aynı bölgedeyiz; işletmenizin koşullarını biliyoruz.",
+    "hero_title": "Doğu Anadolu'daki işletmeler için web sitesi, mobil uygulama ve özel yazılım",
+    "local_business": false,
+    "meta_description": "Erzurum, Malatya, Elazığ ve tüm Doğu Anadolu'daki işletmeler için web sitesi, e-ticaret, mobil uygulama ve özel yazılım. Van merkezli yazılım ekibi.",
+    "meta_title": "Doğu Anadolu Yazılım ve Web Tasarım | Erzurum, Malatya, Elazığ",
+    "order": 2,
+    "sections": [
+      {
+        "body": "Kurumsal tanıtım sitesi, katalog sitesi ve e-ticaret sitesi geliştiriyoruz. Siteler hızlı açılır, telefonda düzgün görünür ve Google'da bulunabilmesi için teknik SEO ayarlarıyla yayına çıkar. İçeriği sonradan kendiniz güncelleyebilirsiniz.",
+        "title": "Erzurum, Malatya ve Elazığ'da web tasarım ve web sitesi"
+      },
+      {
+        "body": "İşletmenin kendi iş akışına göre çalışan web uygulamaları, iOS ve Android mobil uygulamalar, sipariş ve POS uygulamaları geliştiriyoruz. Stok, cari, sipariş ya da randevu gibi işleri Excel ve defterden çıkarıp tek bir sisteme taşıyoruz.",
+        "title": "Mobil uygulama ve özel yazılım"
+      },
+      {
+        "body": "iyzico ve PayTR gibi ödeme kuruluşlarıyla kartlı ödeme, taksit ve abonelik akışlarını kuruyoruz. Mesafeli satış sözleşmesi, ön bilgilendirme formu ve iade koşulları gibi yasal sayfaların akışa doğru yerleşmesine de dikkat ediyoruz.",
+        "title": "Sanal POS ve ödeme entegrasyonu"
+      },
+      {
+        "body": "Veresiye ve cari takibi için Hesap Takip, kasa ve kâr takibi için Kasa Takip, nalbur ve hırdavatçılar için Nalbur Takip. Kurulum ve eğitim çevrimiçi yapılır, telefona program kurmak gerekmez.",
+        "title": "Esnaf için hazır uygulamalar"
+      }
+    ],
+    "services": [
+      "sp02b3c4d5e6",
+      "sp04d5e6f7a8",
+      "sp05e6f7a8b9",
+      "sp06f7a8b9c0"
+    ],
+    "slug": "dogu-anadolu-yazilim",
+    "title": "Doğu Anadolu Yazılım ve Web Tasarım"
+  },
+  "a1c0de5f7a03": {
+    "area_served": [
+      "Konya",
+      "Kayseri",
+      "Sivas",
+      "Ankara",
+      "Yozgat",
+      "Aksaray",
+      "Eskişehir",
+      "Kırıkkale",
+      "Kırşehir",
+      "Nevşehir",
+      "Niğde",
+      "Karaman",
+      "Çankırı"
+    ],
+    "facts": [
+      {
+        "text": "Tasarım, geliştirme, ödeme entegrasyonu ve yayın aynı ekipte. İşi taşerona vermiyoruz.",
+        "title": "Uçtan uca geliştirme"
+      },
+      {
+        "text": "Geliştirme sırasında her hafta çalışan bir sürüm görürsünüz; sürpriz yaşamazsınız.",
+        "title": "Haftalık çalışan sürüm"
+      },
+      {
+        "text": "Projeye başlamadan önce kapsamı, süreyi ve fiyatı yazılı olarak veriyoruz.",
+        "title": "Yazılı kapsam ve fiyat"
+      }
+    ],
+    "faq": [
+      {
+        "answer": "Süre; sayfa sayısına, tasarımın size özel olup olmadığına ve ödeme entegrasyonu gibi ihtiyaçlara göre değişir. Kapsamı birlikte çıkardıktan sonra süreyi ve fiyatı yazılı olarak veririz.",
+        "question": "Konya ya da Kayseri'de web sitesi yaptırmak ne kadar sürer?"
+      },
+      {
+        "answer": "Hayır. İlk görüşmeyi telefonla ya da görüntülü toplantıyla yapıyor, ardından haftalık toplantılarla ilerliyoruz. Her hafta çalışan sürümü size gösteriyoruz.",
+        "question": "Uzaktan çalışmak sorun olur mu?"
+      },
+      {
+        "answer": "Türkiye'nin her yerine hizmet veriyoruz. İç Anadolu'da Konya, Kayseri, Sivas, Ankara, Yozgat, Aksaray, Eskişehir, Kırıkkale, Kırşehir, Nevşehir, Niğde, Karaman ve Çankırı'daki işletmelerle çalışabiliriz.",
+        "question": "Hangi illerde hizmet veriyorsunuz?"
+      }
+    ],
+    "hero_text": "Konya, Kayseri, Sivas, Ankara, Yozgat, Aksaray ve bölgedeki diğer illerde işletmelere çevrimiçi çalışarak web sitesi, mobil uygulama ve işletmeye özel yazılım geliştiriyoruz.",
+    "hero_title": "İç Anadolu'daki işletmeler için web sitesi, e-ticaret ve özel yazılım",
+    "local_business": false,
+    "meta_description": "Konya, Kayseri, Sivas, Ankara ve İç Anadolu'daki işletmeler için web sitesi, e-ticaret, mobil uygulama ve özel yazılım geliştirme.",
+    "meta_title": "İç Anadolu Yazılım ve Web Tasarım | Konya, Kayseri, Sivas",
+    "order": 3,
+    "sections": [
+      {
+        "body": "Üretici, toptancı ve perakende işletmeler için kurumsal site, ürün kataloğu ve e-ticaret sitesi geliştiriyoruz. Sanal POS, kargo ve fatura entegrasyonlarını kuruyor; siteyi teknik SEO ayarlarıyla yayına çıkarıyoruz.",
+        "title": "Konya ve Kayseri'de web sitesi ve e-ticaret"
+      },
+      {
+        "body": "Küçük ve orta ölçekli işletmeler için hızlı açılan, telefonda düzgün görünen ve içeriğini kendinizin güncelleyebildiği siteler yapıyoruz. Başlangıç için tek sayfalık bir tanıtım sitesi de olabilir, çok sayfalı bir kurumsal site de.",
+        "title": "Sivas, Yozgat ve Aksaray'da web tasarım"
+      },
+      {
+        "body": "Ankara'daki şirketler için web uygulaması, SaaS platformu, mikroservis altyapısı ve mobil uygulama geliştiriyoruz. Mevcut bir ekibe destek olarak ya da projeyi baştan sona üstlenerek çalışabiliriz.",
+        "title": "Ankara'daki işletmeler için özel yazılım"
+      },
+      {
+        "body": "Veresiye ve cari takibi için Hesap Takip, kasa ve kâr takibi için Kasa Takip, nalbur ve hırdavatçılar için Nalbur Takip. Kurulum ve eğitim çevrimiçi yapılır, telefona program kurmak gerekmez.",
+        "title": "Esnaf için hazır uygulamalar"
+      }
+    ],
+    "services": [
+      "sp02b3c4d5e6",
+      "sp04d5e6f7a8",
+      "sp03c4d5e6f7",
+      "sp05e6f7a8b9",
+      "sp01a2b3c4d5"
+    ],
+    "slug": "ic-anadolu-yazilim",
+    "title": "İç Anadolu Yazılım ve Web Tasarım"
+  }
+}
