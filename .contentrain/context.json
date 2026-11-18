@@ -1,20 +1,14 @@
 {
   "lastOperation": {
-    "entries": [
-      "06f604c81143",
-      "52f4e338a982",
-      "a26de14ac86e",
-      "be65fb7e0825"
-    ],
     "locale": "en",
-    "model": "plans",
+    "model": "products",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T14:24:47.070Z",
-    "tool": "contentrain_bulk"
+    "timestamp": "2026-11-18T14:24:53.661Z",
+    "tool": "contentrain_model_save"
   },
   "stats": {
     "entries": 214,
-    "lastSync": "2026-11-18T14:24:47.070Z",
+    "lastSync": "2026-11-18T14:24:53.661Z",
     "locales": [
       "en",
       "tr"
