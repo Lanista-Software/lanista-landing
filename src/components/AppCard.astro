@@ -1,0 +1,49 @@
+---
+import type { Locale } from '~/lib/i18n'
+import { imageAlt, imagePath } from '~/lib/content'
+import { t } from '~/lib/i18n'
+
+interface Props {
+  locale: Locale
+  item: { title: string, description?: string, image?: string, icon?: string, link?: string }
+  square?: boolean
+  view?: 'grid' | 'single' | 'triple'
+  closePadding?: boolean
+}
+const { locale, item, square = false, view, closePadding = false } = Astro.props
+const Tag = item.link ? 'a' : 'div'
+---
+
+<div class="reveal h-full">
+  <Tag
+    href={item.link || undefined}
+    class:list={[
+      'group block h-full overflow-hidden rounded-2xl border border-border-color shadow-sm',
+      view === 'triple' && 'md:justify-between lg:flex lg:h-72 lg:flex-col xl:h-64',
+      closePadding ? 'p-0' : 'p-6',
+      item.link && 'transition-shadow hover:shadow-md',
+    ]}
+  >
+    {item.image
+      ? (
+          <div class="h-auto overflow-hidden md:h-[459px] lg:h-auto">
+            {square
+              ? <img loading="lazy" decoding="async" class="aspect-square size-full object-contain md:aspect-auto lg:aspect-square" src={imagePath(item.image)} alt={imageAlt(item.image)} width="442" height="442" />
+              : <img loading="lazy" decoding="async" class="size-full object-contain md:aspect-auto lg:aspect-[2/1]" src={imagePath(item.image)} alt={imageAlt(item.image)} width="704" height="352" />}
+          </div>
+        )
+      : item.icon && (
+        <div class="icon-badge"><i class={item.icon} aria-hidden="true"></i></div>
+      )}
+    <div class={closePadding ? 'px-6 pb-6' : 'p-0'}>
+      <h3 class:list={['font-space text-xl font-bold text-heading-text', view === 'triple' ? 'mt-8 lg:mt-0' : 'mt-8']}>{item.title}</h3>
+      <p class="mt-2 font-inter font-normal">{item.description}</p>
+      {item.link && (
+        <span class="mt-3 inline-flex items-center text-sm font-medium text-primary-600 group-hover:underline" aria-hidden="true">
+          {t(locale).learnMore}
+          <i class="ri-arrow-right-line ml-1" aria-hidden="true"></i>
+        </span>
+      )}
+    </div>
+  </Tag>
+</div>

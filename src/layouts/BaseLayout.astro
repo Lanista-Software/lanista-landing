@@ -1,0 +1,115 @@
+---
+import type { Locale } from '~/lib/i18n'
+import Footer from '~/components/Footer.astro'
+import Header from '~/components/Header.astro'
+import { HTML_LANG, LOCALES, OG_LOCALE, t } from '~/lib/i18n'
+import { absoluteUrl, ogImagePath, serializeJsonLd, SITE_NAME, TWITTER_SITE } from '~/lib/seo'
+import '~/styles/global.css'
+
+export interface Props {
+  locale: Locale
+  /** Full <title>. */
+  title: string
+  description: string
+  /** Locale-agnostic path, e.g. '/', '/works', '/urunler/hesap-takip'. */
+  path: string
+  /** Locales this page exists in. Products and legal pages are Turkish-only. */
+  locales?: readonly Locale[]
+  ogTitle?: string
+  ogDescription?: string
+  type?: 'website' | 'article' | 'product'
+  /** JSON-LD nodes, emitted as one @graph. */
+  jsonLd?: unknown[]
+  noindex?: boolean
+}
+
+const {
+  locale,
+  title,
+  description,
+  path,
+  locales = LOCALES,
+  ogTitle = title,
+  ogDescription = description,
+  type = 'website',
+  jsonLd = [],
+  noindex = false,
+} = Astro.props
+
+const canonical = absoluteUrl(path, locale)
+const ogImage = ogImagePath(path, locale)
+const alternates = locales.length > 1
+  ? [
+      ...locales.map(code => ({ hreflang: code, href: absoluteUrl(path, code) })),
+      { hreflang: 'x-default', href: absoluteUrl(path, 'tr') },
+    ]
+  : []
+const s = t(locale)
+const GA_ID = 'G-T48ZEC3WT9'
+---
+
+<!doctype html>
+<html lang={HTML_LANG[locale]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {alternates.map(a => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+    <meta
+      name="robots"
+      content={noindex ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'}
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:type" content={type === 'product' ? 'website' : type} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content={OG_LOCALE[locale]} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={TWITTER_SITE} />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={ogDescription} />
+    <meta name="twitter:image" content={ogImage} />
+
+    {jsonLd.length > 0 && (
+      <script is:inline type="application/ld+json" set:html={serializeJsonLd({ '@context': 'https://schema.org', '@graph': jsonLd })} />
+    )}
+
+    <script is:inline>document.documentElement.classList.add('js')
+</script>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+    <script is:inline define:vars={{ GA_ID }}>
+      window.dataLayer = window.dataLayer || []
+      // gtag.js only accepts the Arguments object, not an array.
+      function gtag() {
+        // eslint-disable-next-line prefer-rest-params
+        window.dataLayer.push(arguments)
+      }
+      window.gtag = gtag
+      gtag('js', new Date())
+      gtag('config', GA_ID)
+    </script>
+    <slot name="head" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">{s.skipToContent}</a>
+    <Header locale={locale} path={path} locales={locales} />
+    <main id="main" tabindex="-1" class="min-h-screen focus:outline-none">
+      <slot />
+    </main>
+    <Footer locale={locale} />
+    <script>
+      import '~/scripts/site'
+    </script>
+  </body>
+</html>

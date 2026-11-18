@@ -1,0 +1,11 @@
+---
+import { getServicePages } from '~/lib/content'
+import ServicePage from '~/views/ServicePage.astro'
+
+export function getStaticPaths() {
+  return getServicePages('en').map(p => ({ params: { slug: p.slug } }))
+}
+const { slug } = Astro.params
+---
+
+<ServicePage locale="en" slug={slug!} />

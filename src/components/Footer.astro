@@ -1,0 +1,99 @@
+---
+import type { Locale } from '~/lib/i18n'
+import { COMPANY } from '~/lib/company'
+import { getLayout } from '~/lib/content'
+import { localePath, t } from '~/lib/i18n'
+import Logo from './Logo.astro'
+
+interface Props { locale: Locale }
+const { locale } = Astro.props
+const s = t(locale)
+const { servicePages, socialLinks } = getLayout(locale)
+const home = localePath('/', locale)
+const year = new Date().getFullYear()
+
+// "ri-linkedin-fill" → "LinkedIn": readable names for icon-only links.
+const SOCIAL_NAMES: Record<string, string> = {
+  linkedin: 'LinkedIn',
+  twitter: 'X (Twitter)',
+  github: 'GitHub',
+  instagram: 'Instagram',
+  medium: 'Medium',
+  youtube: 'YouTube',
+  facebook: 'Facebook',
+  dribbble: 'Dribbble',
+  behance: 'Behance',
+}
+function socialName(icon = '', link = '') {
+  const key = Object.keys(SOCIAL_NAMES).find(k => icon.includes(k) || link.includes(k))
+  return key ? SOCIAL_NAMES[key] : new URL(link).hostname
+}
+
+const quickLinks = [
+  { label: s.menu.services, href: `${home}#services` },
+  { label: s.menu.works, href: localePath('/works', locale) },
+  { label: s.menu.technologies, href: `${home}#technologies` },
+  { label: s.contact, href: `${home}#contact` },
+]
+---
+
+<footer class="border-t border-border-color">
+  <div class="container-x py-10">
+    <div class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <a href={home} class="mb-4 flex h-6 w-28 items-center md:w-36">
+          <Logo />
+          <span class="sr-only">{s.home}</span>
+        </a>
+        <ul class="flex gap-4" aria-label={s.social}>
+          {socialLinks.map(social => (
+            <li>
+              <a href={social.link} target="_blank" rel="noopener noreferrer" class="text-xl leading-none text-heading-text hover:text-primary-600">
+                <i class={social.icon} aria-hidden="true"></i>
+                <span class="sr-only">{socialName(social.icon, social.link)} {s.opensNewTab}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <nav aria-labelledby="footer-services">
+        <h2 id="footer-services" class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s.ourServices}</h2>
+        <ul class="space-y-2">
+          {servicePages.map(page => (
+            <li>
+              <a href={localePath(`/services/${page.slug}`, locale)} class="text-sm text-body-text transition-colors hover:text-primary-600">{page.title}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-quick">
+        <h2 id="footer-quick" class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s.quickLinks}</h2>
+        <ul class="space-y-2">
+          {quickLinks.map(l => (
+            <li><a href={l.href} class="text-sm text-body-text transition-colors hover:text-primary-600">{l.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="mb-3 font-space text-sm font-bold uppercase tracking-wider text-heading-text">{s.company}</h2>
+        <address class="space-y-2 text-sm not-italic text-body-text">
+          <p class="font-medium text-heading-text">{COMPANY.legalName}</p>
+          <p>{COMPANY.address.full}</p>
+          <p>
+            <span lang="tr">Vergi Dairesi:</span> {COMPANY.taxOffice} · <span lang="tr">VKN:</span> {COMPANY.taxNumber}<br />
+            <span lang="tr">MERSİS:</span> {COMPANY.mersis}
+          </p>
+          <p><a href={COMPANY.phoneHref} class="hover:text-primary-600">{COMPANY.phone}</a></p>
+          <p><a href={`mailto:${COMPANY.email}`} class="hover:text-primary-600">{COMPANY.email}</a></p>
+        </address>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center justify-between gap-4 border-t border-border-color pt-6 md:flex-row">
+      <p class="text-center text-sm text-heading-text">© {year} {COMPANY.shortName} {s.rights}</p>
+    </div>
+  </div>
+</footer>

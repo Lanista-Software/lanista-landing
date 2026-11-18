@@ -1,0 +1,37 @@
+---
+import type { Work } from '~/lib/content'
+import type { Locale } from '~/lib/i18n'
+import { imageAlt, imagePath } from '~/lib/content'
+import { localePath, t } from '~/lib/i18n'
+
+interface Props { locale: Locale, item: Work }
+const { locale, item } = Astro.props
+const s = t(locale)
+---
+
+<article class="reveal space-y-6 rounded-2xl border border-border-color p-6 shadow-sm lg:flex lg:items-center lg:justify-between lg:gap-12 lg:space-y-0 lg:p-12 2xl:p-20">
+  <div class="space-y-4 lg:w-8/12">
+    {item.categoryName && <span class="tag tag-primary">{item.categoryName}</span>}
+    <h3 class="font-space text-xl font-bold text-heading-text">{item.title}</h3>
+    <p class="mt-2 font-inter font-normal">{item.description}</p>
+    <div class="flex flex-wrap items-center gap-3 pt-2">
+      {item.slug && (
+        <a href={localePath(`/works/${item.slug}`, locale)} class="btn btn-primary">
+          {s.caseStudy}<span class="sr-only">: {item.title}</span>
+          <i class="ri-arrow-right-line" aria-hidden="true"></i>
+        </a>
+      )}
+      {item.link && (
+        <a href={item.link} target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-track="button_clicked" data-track-button_name="see_live_project">
+          {s.liveSite}<span class="sr-only">: {item.title} {s.opensNewTab}</span>
+          <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+        </a>
+      )}
+    </div>
+  </div>
+  {item.image && (
+    <div class="h-auto w-full overflow-hidden p-4">
+      <img class="aspect-[2/1] size-full object-cover" src={imagePath(item.image)} alt={imageAlt(item.image)} loading="lazy" decoding="async" width="704" height="352" />
+    </div>
+  )}
+</article>

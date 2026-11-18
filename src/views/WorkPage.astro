@@ -1,0 +1,115 @@
+---
+import type { Locale } from '~/lib/i18n'
+import Breadcrumbs from '~/components/Breadcrumbs.astro'
+import CtaBlock from '~/components/CtaBlock.astro'
+import PageHero from '~/components/PageHero.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { getWork, imageAlt, imagePath, splitList } from '~/lib/content'
+import { localePath, t } from '~/lib/i18n'
+import { creativeWorkSchema } from '~/lib/schema'
+import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
+import { stagger } from '~/lib/ui'
+
+
+const { locale, slug } = Astro.props as { locale: Locale, slug: string }
+const s = t(locale)
+const en = locale === 'en'
+const { work, related } = getWork(locale, slug)!
+const technologies = splitList(work.technologies)
+const pageTitle = `${work.title} ${en ? 'Case Study' : 'Vaka Çalışması'} | ${SITE_NAME}`
+const trail = [
+  { name: s.home, path: '/' },
+  { name: s.menu.works, path: '/works' },
+  { name: work.title, path: `/works/${slug}` },
+]
+const blocks = [
+  { key: 'challenge', title: en ? 'The Challenge' : 'Zorluk', body: work.challenge, alt: false },
+  { key: 'solution', title: en ? 'Our Solution' : 'Çözümümüz', body: work.solution, alt: true },
+  { key: 'outcome', title: en ? 'Results' : 'Sonuçlar', body: work.outcome, alt: true },
+]
+---
+
+<BaseLayout
+  locale={locale}
+  title={pageTitle}
+  description={clampDescription(work.description)}
+  ogTitle={work.title}
+  path={`/works/${slug}`}
+  type="article"
+  jsonLd={[creativeWorkSchema(locale, work), breadcrumbSchema(locale, trail)]}
+>
+  <PageHero>
+    <Breadcrumbs locale={locale} trail={trail} />
+    {work.categoryName && <p class="mb-4"><span class="tag tag-primary tag-lg">{work.categoryName}</span></p>}
+    <h1 class="page-title">{work.title}</h1>
+    <p class="mt-6 font-inter text-lg leading-relaxed lg:text-xl">{work.description}</p>
+    {work.link && (
+      <div class="mt-8">
+        <a href={work.link} target="_blank" rel="noopener noreferrer" class="btn btn-danger">
+          {en ? 'Visit live site' : 'Canlı siteyi ziyaret et'}<span class="sr-only"> {s.opensNewTab}</span>
+          <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+        </a>
+      </div>
+    )}
+  </PageHero>
+
+  {work.image && (
+    <div class="py-10 lg:py-12">
+      <div class="container-x">
+        <div class="reveal mx-auto max-w-5xl overflow-hidden rounded-2xl border border-border-color">
+          <img class="size-full object-cover" src={imagePath(work.image)} alt={imageAlt(work.image) || work.title} width="1024" height="512" decoding="async" />
+        </div>
+      </div>
+    </div>
+  )}
+
+  {blocks.slice(0, 2).filter(b => b.body).map(b => (
+    <section class:list={['py-12 lg:py-16', b.alt && 'bg-secondary-50']} aria-labelledby={`${b.key}-title`}>
+      <div class="container-x"><div class="reveal max-w-4xl">
+        <h2 id={`${b.key}-title`} class="block-title mb-5">{b.title}</h2>
+        <p class="whitespace-pre-line font-inter leading-relaxed">{b.body}</p>
+      </div></div>
+    </section>
+  ))}
+
+  {technologies.length > 0 && (
+    <section class="py-12 lg:py-16" aria-labelledby="tech-title">
+      <div class="container-x"><div class="max-w-4xl">
+        <h2 id="tech-title" class="block-title mb-5">{en ? 'Technologies' : 'Teknolojiler'}</h2>
+        <ul role="list" class="flex flex-wrap gap-3">
+          {technologies.map((tech, i) => <li class="reveal" style={stagger(i, 40)}><span class="tag tag-primary tag-lg">{tech}</span></li>)}
+        </ul>
+      </div></div>
+    </section>
+  )}
+
+  {blocks.slice(2).filter(b => b.body).map(b => (
+    <section class="bg-secondary-50 py-12 lg:py-16" aria-labelledby={`${b.key}-title`}>
+      <div class="container-x"><div class="reveal max-w-4xl">
+        <h2 id={`${b.key}-title`} class="block-title mb-5">{b.title}</h2>
+        <p class="whitespace-pre-line font-inter leading-relaxed">{b.body}</p>
+      </div></div>
+    </section>
+  ))}
+
+  {related.length > 0 && (
+    <section class="py-14 lg:py-20" aria-labelledby="related-title">
+      <div class="container-x"><div class="mx-auto max-w-5xl">
+        <h2 id="related-title" class="block-title mb-8">{en ? 'Related Work' : 'İlgili Çalışmalar'}</h2>
+        <ul role="list" class="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {related.map((rel, i) => (
+            <li class="reveal" style={stagger(i)}>
+              <a href={localePath(`/works/${rel.slug}`, locale)} class="card-lift group block h-full rounded-xl border border-border-color bg-white p-5">
+                {rel.categoryName && <span class="tag tag-primary tag-sm mb-3">{rel.categoryName}</span>}
+                <h3 class="font-space text-lg font-bold text-heading-text">{rel.title}</h3>
+                <p class="mt-2 line-clamp-2 text-sm">{rel.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div></div>
+    </section>
+  )}
+
+  <CtaBlock class="bg-secondary-50" title={en ? 'Let\'s Build Together' : 'Birlikte İnşa Edelim'} text={en ? 'Have a similar project? We would love to hear about it.' : 'Benzer bir projeniz mi var? Duymak isteriz.'} href={`${localePath('/', locale)}#contact`} label={en ? 'Contact Us' : 'İletişime Geçin'} />
+</BaseLayout>

@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /_nuxt/
 Disallow: /*?trk=*
 
-Sitemap: https://lanista.com.tr/sitemap_index.xml
-Sitemap: https://lanista.com.tr/__sitemap__/en.xml
-Sitemap: https://lanista.com.tr/__sitemap__/tr.xml
+Sitemap: https://lanista.com.tr/sitemap-index.xml

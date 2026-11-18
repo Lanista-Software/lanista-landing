@@ -1,0 +1,153 @@
+---
+import type { Locale } from '~/lib/i18n'
+import Accordion from '~/components/Accordion.astro'
+import AppCard from '~/components/AppCard.astro'
+import Banner from '~/components/Banner.astro'
+import Hero from '~/components/Hero.astro'
+import LeadForm from '~/components/LeadForm.astro'
+import Section from '~/components/Section.astro'
+import SectionLayout from '~/components/SectionLayout.astro'
+import TabSection from '~/components/TabSection.astro'
+import TestimonialCard from '~/components/TestimonialCard.astro'
+import WorksCard from '~/components/WorksCard.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { getHome, getLayout } from '~/lib/content'
+import { contentLink, localePath, t } from '~/lib/i18n'
+import { creativeWorkSchema, faqSchema, FOUNDERS, organizationSchema, ownAppsSchema, serviceSchema, webPageSchema, websiteSchema } from '~/lib/schema'
+import { clampDescription } from '~/lib/seo'
+import { cardSpan, stagger } from '~/lib/ui'
+
+
+const { locale } = Astro.props as { locale: Locale }
+const s = t(locale)
+const home = getHome(locale)
+const { socialLinks } = getLayout(locale)
+const section = home.section
+const link = (name: string) => contentLink(section(name).buttonlink, locale)
+
+const services = home.services.map(sv => ({ ...sv, link: sv.link ? localePath(sv.link, locale) : undefined }))
+const previewWorks = home.works.slice(0, 3)
+
+const meta = home.metaTags
+const title = meta.title || 'Lanista Software'
+const description = clampDescription(meta.description)
+const jsonLd = [
+  webPageSchema(locale, '/', title, description),
+  websiteSchema(),
+  organizationSchema(socialLinks.map(l => l.link)),
+  ...home.services.map(sv => serviceSchema(locale, { title: sv.title, description: sv.description, path: sv.link })),
+  faqSchema(home.faq),
+  ...home.works.filter(w => w.slug).map(w => creativeWorkSchema(locale, w)),
+  ...ownAppsSchema(locale),
+  ...FOUNDERS,
+]
+---
+
+<BaseLayout
+  locale={locale}
+  title={title}
+  description={description}
+  path="/"
+  ogTitle={meta.ogTitle || title}
+  ogDescription={clampDescription(meta.ogDescription || meta.description)}
+  jsonLd={jsonLd}
+>
+  <div id="home" data-spy-section class="hero-bg relative isolate overflow-hidden">
+    <div class="hero-bg__image" aria-hidden="true"></div>
+    <div class="container-x flex items-center justify-center pb-40 pt-28">
+      <Hero hero={section('hero')} buttonHref={link('hero')} references={home.references} />
+    </div>
+  </div>
+
+  <Section id="services" spy labelledby="services-title">
+    <SectionLayout id="services-title" title={section('services').title} description={section('services').description}>
+      <ul role="list" class="grid w-full grid-cols-1 gap-8 lg:grid-cols-6">
+        {services.map((item, i) => (
+          <li class={cardSpan('grid', i)} style={stagger(i)}>
+            <AppCard locale={locale} item={item} view="grid" square={cardSpan('grid', i) === 'lg:col-span-2'} closePadding />
+          </li>
+        ))}
+      </ul>
+      <a slot="button" href={link('services')} class="btn btn-danger" data-track="button_clicked" data-track-button_name="services">
+        {section('services').buttontext}<i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+      </a>
+    </SectionLayout>
+  </Section>
+
+  <Section id="process" spy labelledby="process-title">
+    <SectionLayout id="process-title" title={section('process').title} description={section('process').description}>
+      <ol class="grid w-full grid-cols-1 gap-8 lg:grid-cols-6">
+        {home.processes.map((item, i) => (
+          <li class={cardSpan('triple', i)} style={stagger(i)}>
+            <AppCard locale={locale} item={item} view="triple" />
+          </li>
+        ))}
+      </ol>
+      <a slot="button" href={link('process')} class="btn btn-danger" data-track="button_clicked" data-track-button_name="process">
+        {section('process').buttontext}<i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+      </a>
+    </SectionLayout>
+  </Section>
+
+  <Section id="technologies" spy labelledby="technologies-title">
+    <SectionLayout id="technologies-title" title={section('tabs').title} description={section('tabs').description}>
+      <TabSection locale={locale} items={home.tabItems} categories={home.workCategories} />
+      <a slot="button" href={link('tabs')} class="btn btn-danger">
+        {section('tabs').buttontext}<i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+      </a>
+    </SectionLayout>
+  </Section>
+
+  <Section id="works" spy labelledby="works-title">
+    <SectionLayout id="works-title" title={section('works').title} description={section('works').description}>
+      <ul role="list" class="grid w-full grid-cols-1 gap-8">
+        {previewWorks.map((item, i) => <li style={stagger(i)}><WorksCard locale={locale} item={item} /></li>)}
+      </ul>
+      <a slot="button" href={localePath('/works', locale)} class="link inline-flex items-center gap-1 text-lg">
+        {section('works').buttontext || s.viewAllWork}<i class="ri-arrow-right-line" aria-hidden="true"></i>
+      </a>
+    </SectionLayout>
+  </Section>
+
+  <Section id="testimonials" labelledby="testimonials-title">
+    <SectionLayout id="testimonials-title" title={section('testimonials').title} description={section('testimonials').description}>
+      <ul role="list" class="grid w-full grid-cols-1 gap-8 lg:grid-cols-6">
+        {home.testimonials.map((item, i) => <li class="lg:col-span-2" style={stagger(i)}><TestimonialCard item={item} /></li>)}
+      </ul>
+    </SectionLayout>
+  </Section>
+
+  <Section id="banner" labelledby="banner-title">
+    <Banner id="banner-title" title={section('banner').title} description={section('banner').description} buttonLabel={section('banner').buttontext} buttonHref={link('banner')} />
+  </Section>
+
+  <section id="contact" aria-label={s.contact} class="bg-secondary-50">
+    <div class="container-x flex items-center justify-center pb-40 pt-28">
+      <div class="w-full space-y-16 lg:flex lg:justify-between lg:gap-16 lg:space-y-0 2xl:gap-24">
+        <div class="flex-1">
+          <h2 class="section-title">{section('faq').title}</h2>
+          <p class="mt-4 font-inter text-base font-normal text-body-text">{section('faq').description}</p>
+          <div class="pt-8">
+            <Accordion items={home.faq} />
+          </div>
+        </div>
+        <div class="flex-1">
+          <h2 class="section-title" id="contact-title">{section('contact').title}</h2>
+          <p class="mt-4 font-inter text-base font-normal text-body-text">{section('contact').description}</p>
+          <div class="pt-8">
+            <LeadForm locale={locale} idPrefix="contact" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-bg__image {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url('/1727359111545_1624068421380_hero.png') center / cover no-repeat;
+  }
+</style>

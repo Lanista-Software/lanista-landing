@@ -1,5 +1,5 @@
-# Nuxt dev/build outputs
-.output
+# Build outputs
+.astro
 .data
 .nuxt
 .nitro

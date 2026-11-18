@@ -1,0 +1,77 @@
+---
+import type { Locale } from '~/lib/i18n'
+import { localePath, t } from '~/lib/i18n'
+import LangSelect from './LangSelect.astro'
+import Logo from './Logo.astro'
+import Nav from './Nav.astro'
+
+interface Props {
+  locale: Locale
+  path: string
+  locales: readonly Locale[]
+}
+const { locale, path, locales } = Astro.props
+const s = t(locale)
+const home = localePath('/', locale)
+const contactHref = `${home}#contact`
+---
+
+<header id="site-header" class="sticky top-0 z-30 bg-white py-6 transition-shadow duration-300 data-[scrolled]:shadow-sm">
+  <div class="container-x">
+    <div class="flex items-center justify-between gap-4">
+      <a href={home} class="flex w-28 items-center md:w-36">
+        <Logo />
+        <span class="sr-only">{s.home}</span>
+      </a>
+      <div class="hidden flex-1 items-center justify-center lg:flex">
+        <Nav locale={locale} path={path} direction="horizontal" />
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="hidden sm:block">
+          <LangSelect locale={locale} path={path} locales={locales} />
+        </div>
+        <a href={contactHref} class="btn btn-danger hidden md:inline-flex" data-track="button_clicked" data-track-button_name="contact">
+          {s.contact}
+        </a>
+        <!-- Mobile menu: Zag.js dialog (focus trap, Escape, scroll lock, aria-modal). -->
+        <div data-mobile-menu class="lg:hidden">
+          <button type="button" data-part="trigger" class="btn btn-ghost btn-icon" aria-label={s.openMenu}>
+            <i class="ri-menu-line" aria-hidden="true"></i>
+          </button>
+          <div data-part="backdrop" hidden class="fixed inset-0 z-40 bg-secondary-900/40"></div>
+          <div data-part="positioner" hidden class="fixed inset-0 z-50 flex justify-end">
+            <div data-part="content" hidden class="flex h-full w-full flex-col overflow-y-auto bg-white p-8 shadow-xl md:w-[420px]">
+              <div class="flex items-center justify-between">
+                <h2 data-part="title" class="sr-only">{s.menuTitle}</h2>
+                <a href={home} class="flex w-28 items-center">
+                  <Logo />
+                  <span class="sr-only">{s.home}</span>
+                </a>
+                <button type="button" data-part="close-trigger" class="btn btn-ghost btn-icon" aria-label={s.closeMenu}>
+                  <i class="ri-close-line" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="pt-8">
+                <Nav locale={locale} path={path} direction="vertical" />
+              </div>
+              <div class="pt-8">
+                <LangSelect locale={locale} path={path} locales={locales} />
+              </div>
+              <div class="pt-8">
+                <a href={contactHref} class="btn btn-danger btn-block" data-track="button_clicked" data-track-button_name="contact">
+                  {s.contact}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  import { initMobileMenu } from '~/scripts/mobile-menu'
+
+  initMobileMenu()
+</script>

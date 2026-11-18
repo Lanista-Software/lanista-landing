@@ -1,0 +1,16 @@
+---
+interface Props {
+  id: string
+  class?: string
+  /** Participates in the home-page nav scroll-spy. */
+  spy?: boolean
+  labelledby?: string
+}
+const { id, class: className, spy = false, labelledby } = Astro.props
+---
+
+<section id={id} data-spy-section={spy ? '' : undefined} aria-labelledby={labelledby} class={className}>
+  <div class="container-x flex items-center justify-center pb-40 pt-28">
+    <slot />
+  </div>
+</section>

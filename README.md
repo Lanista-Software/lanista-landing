@@ -1,75 +1,33 @@
-# Nuxt 3 Minimal Starter
+# lanista.com.tr
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Lanista Yazılım's website: agency services and ready-made products (Hesap Takip, Nalbur Takip, Kasa Takip).
+Built with **Astro** (static output) and **Tailwind CSS**. Content comes from **Contentrain** (`.contentrain/`, git-based).
 
-## Setup
-
-Make sure to install the dependencies:
+## Develop
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
 yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
+yarn dev        # http://localhost:4321
+yarn build      # contentrain generate → astro check → astro build → dist/
 yarn preview
-
-# bun
-bun run preview
+yarn lint
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Node 22.12+ is required (`.node-version`). Netlify builds with `netlify.toml`.
+
+## Structure
+
+| Path | What |
+|---|---|
+| `src/pages/` | Routes. Turkish is at the root, English under `/en/`. Product and legal pages are Turkish-only. |
+| `src/views/` | Page bodies shared by the TR and EN routes. |
+| `src/components/` | UI components (`.astro`). Interactive parts use Zag.js state machines (`src/scripts/`). |
+| `src/lib/` | Content access (`content.ts`, build-time only), i18n, SEO, JSON-LD, company info. |
+| `src/styles/global.css` | Design tokens → component classes (`.btn`, `.tag`, `.field` …). |
+| `src/pages/og/` | 1200×630 share images, rendered at build time with satori. |
+
+## Forms
+
+Every form (contact, demo, quote, waitlist) posts to the Contentrain Studio forms endpoint of the
+single `leads` model. Set `PUBLIC_CONTENTRAIN_PROJECT_ID` (see `.env.example`) in Netlify, and in
+Studio enable the `leads` form as **public** with all fields exposed.

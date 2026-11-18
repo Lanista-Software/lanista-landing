@@ -1,0 +1,218 @@
+/*
+ * Lanista design system — global layer.
+ *
+ * Colour, type and spacing tokens live in tailwind.config.cjs (unchanged from
+ * the Nuxt site). The component classes below replace the old LUI components
+ * with the same visual language, adjusted only where the original failed WCAG
+ * 2.2 AA contrast:
+ *   - CTA red: danger-500 + white text was 3.6:1 → danger-600 (4.7:1)
+ *   - tags: primary-500 on primary-100 was 3.4:1 → primary-700 on primary-50
+ *   - placeholders: slate-400 was 2.5:1 → slate-500
+ *   - error text: red-500 was 3.8:1 → danger-700
+ */
+@import '@fontsource/inter/latin-400.css';
+@import '@fontsource/inter/latin-ext-400.css';
+@import '@fontsource/inter/latin-500.css';
+@import '@fontsource/inter/latin-ext-500.css';
+@import '@fontsource/inter/latin-600.css';
+@import '@fontsource/inter/latin-ext-600.css';
+@import '@fontsource/inter/latin-700.css';
+@import '@fontsource/inter/latin-ext-700.css';
+@import '@fontsource/space-grotesk/latin-500.css';
+@import '@fontsource/space-grotesk/latin-ext-500.css';
+@import '@fontsource/space-grotesk/latin-600.css';
+@import '@fontsource/space-grotesk/latin-ext-600.css';
+@import '@fontsource/space-grotesk/latin-700.css';
+@import '@fontsource/space-grotesk/latin-ext-700.css';
+@import 'remixicon/fonts/remixicon.css';
+/* Only latin + latin-ext (Turkish) subsets ship. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth font-inter text-[14px] text-body-text antialiased lg:text-[16px];
+    /* Anchor targets must not hide under the sticky header. */
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply bg-white text-body-text;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-4 ring-primary-500/40;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* ---- Layout ---- */
+  .container-x {
+    @apply mx-auto w-full px-6 sm:px-8 lg:container lg:px-8;
+  }
+
+  .skip-link {
+    @apply sr-only;
+  }
+
+  .skip-link:focus {
+    @apply not-sr-only fixed left-4 top-4 z-[100] rounded-full bg-heading-text px-5 py-3 font-medium text-white;
+  }
+
+  /* ---- Buttons (ex LuiButton) ---- */
+  .btn {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border border-solid px-5 py-2 text-base font-medium leading-6 transition-colors active:translate-y-0.5 disabled:cursor-not-allowed disabled:translate-y-0;
+  }
+
+  .btn-lg {
+    @apply px-6 py-2.5 text-lg;
+  }
+
+  .btn-xl {
+    @apply px-7 py-3.5 text-xl;
+  }
+
+  .btn-block {
+    @apply w-full;
+  }
+
+  .btn-danger {
+    @apply border-danger-600 bg-danger-600 text-white hover:border-danger-700 hover:bg-danger-700 focus-visible:ring-danger-500/40;
+  }
+
+  .btn-primary {
+    @apply border-primary-800 bg-primary-800 text-white hover:border-primary-700 hover:bg-primary-700;
+  }
+
+  .btn-outline {
+    @apply border-secondary-800 bg-transparent text-secondary-800 hover:border-secondary-700 hover:text-secondary-700 focus-visible:ring-secondary-500/40;
+  }
+
+  .btn-ghost {
+    @apply border-transparent bg-transparent text-heading-text hover:bg-secondary-100;
+  }
+
+  .btn-icon {
+    @apply p-2.5 text-2xl leading-none;
+  }
+
+  .btn i {
+    @apply text-xl leading-none;
+  }
+
+  /* ---- Tags (ex LuiTag) ---- */
+  .tag {
+    @apply inline-flex items-center gap-2 rounded-full border border-solid px-2.5 text-base;
+  }
+
+  .tag-sm {
+    @apply px-1.5 text-xs;
+  }
+
+  .tag-lg {
+    @apply px-2 text-base;
+  }
+
+  .tag-primary {
+    @apply border-primary-100 bg-primary-50 text-primary-700;
+  }
+
+  .tag-secondary {
+    @apply border-secondary-200 bg-secondary-100 text-secondary-700;
+  }
+
+  .tag-success {
+    @apply border-success-200 bg-success-50 text-success-800;
+  }
+
+  .tag-warning {
+    @apply border-warning-200 bg-warning-50 text-warning-800;
+  }
+
+  /* ---- Form fields (ex LuiInput / LuiTextarea) ---- */
+  .field-label {
+    @apply font-inter text-sm font-medium text-heading-text;
+  }
+
+  .field {
+    @apply block w-full rounded-lg border border-solid border-secondary-200 bg-secondary-50 px-2.5 py-2 text-base text-secondary-700 outline-none placeholder:text-secondary-500 focus:border-primary-500 focus:ring-4 focus:ring-primary-500/40 disabled:cursor-not-allowed disabled:bg-secondary-100;
+  }
+
+  .field[aria-invalid='true'] {
+    @apply border-danger-600 ring-4 ring-danger-500/30;
+  }
+
+  .field-error {
+    @apply text-sm text-danger-700;
+  }
+
+  .field-hint {
+    @apply text-sm text-label-text;
+  }
+
+  .checkbox {
+    @apply mt-0.5 size-5 shrink-0 cursor-pointer rounded border-secondary-300 accent-primary-600;
+  }
+
+  /* ---- Text links ---- */
+  .link {
+    @apply font-medium text-primary-600 underline-offset-4 hover:text-primary-700 hover:underline;
+  }
+
+  /* ---- Icon badge (ex LuiAvatar) ---- */
+  .icon-badge {
+    @apply flex size-14 items-center justify-center rounded-full bg-success-100 text-2xl text-success-700;
+  }
+
+  /* ---- Section heading block ---- */
+  .section-title {
+    @apply font-space text-3xl font-semibold text-heading-text;
+  }
+
+  .page-title {
+    @apply font-space text-3xl font-bold leading-tight text-heading-text lg:text-5xl;
+  }
+
+  .block-title {
+    @apply font-space text-2xl font-bold text-heading-text lg:text-3xl;
+  }
+
+  /* ---- Reveal-on-scroll (ex CardAnimation). Visible without JS. ---- */
+  .js .reveal {
+    @apply opacity-0 transition-opacity duration-1000 ease-in-out;
+  }
+
+  .js .reveal.is-visible {
+    @apply opacity-100;
+  }
+
+  /*
+   * Zag widgets are progressively enhanced: without JS every FAQ answer and
+   * every tab panel stays readable. With JS, hide them until Zag has rendered
+   * its state (it then manages `hidden` itself) so nothing flashes open.
+   */
+  .js [data-accordion]:not([data-ready]) .accordion-panel,
+  .js [data-tabs]:not([data-ready]) .tab-panel ~ .tab-panel {
+    display: none;
+  }
+}

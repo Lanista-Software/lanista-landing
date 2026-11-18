@@ -1,0 +1,14 @@
+---
+interface Props { title: string, text?: string, href: string, label: string, class?: string }
+const { title, text, href, label, class: className } = Astro.props
+---
+
+<section class:list={['py-16 lg:py-24', className]} aria-labelledby="cta-title">
+  <div class="container-x">
+    <div class="reveal mx-auto max-w-4xl text-center">
+      <h2 id="cta-title" class="block-title mb-4">{title}</h2>
+      {text && <p class="mb-8 font-inter">{text}</p>}
+      <a href={href} class="btn btn-danger btn-xl">{label}</a>
+    </div>
+  </div>
+</section>

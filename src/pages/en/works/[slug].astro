@@ -1,0 +1,11 @@
+---
+import { getWorks } from '~/lib/content'
+import WorkPage from '~/views/WorkPage.astro'
+
+export function getStaticPaths() {
+  return getWorks('en').filter(w => w.slug).map(w => ({ params: { slug: w.slug } }))
+}
+const { slug } = Astro.params
+---
+
+<WorkPage locale="en" slug={slug!} />

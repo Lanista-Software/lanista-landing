@@ -1,0 +1,72 @@
+---
+import type { Locale } from '~/lib/i18n'
+import Breadcrumbs from '~/components/Breadcrumbs.astro'
+import CtaBlock from '~/components/CtaBlock.astro'
+import PageHero from '~/components/PageHero.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { getWorks, imageAlt, imagePath } from '~/lib/content'
+import { IN_LANGUAGE, localePath, t } from '~/lib/i18n'
+import { ORG_ID, webPageSchema } from '~/lib/schema'
+import { absoluteUrl, breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
+import { stagger } from '~/lib/ui'
+
+
+const { locale } = Astro.props as { locale: Locale }
+const s = t(locale)
+const en = locale === 'en'
+const works = getWorks(locale)
+const title = en ? 'Our Work & Case Studies' : 'Çalışmalarımız ve Vaka Çalışmaları'
+const description = en
+  ? 'Selected projects we have designed and built since 2018 — web, mobile, SaaS, microservices and more.'
+  : '2018\'den bu yana tasarlayıp geliştirdiğimiz seçili projeler — web, mobil, SaaS, mikroservis ve daha fazlası.'
+const trail = [{ name: s.home, path: '/' }, { name: s.menu.works, path: '/works' }]
+const jsonLd = [
+  {
+    ...webPageSchema(locale, '/works', title, description, 'CollectionPage'),
+    inLanguage: IN_LANGUAGE[locale],
+    about: { '@id': ORG_ID },
+    mainEntity: {
+      '@type': 'ItemList',
+      'numberOfItems': works.length,
+      'itemListElement': works.map((w, i) => ({ '@type': 'ListItem', 'position': i + 1, 'name': w.title, 'url': absoluteUrl(`/works/${w.slug}`, locale) })),
+    },
+  },
+  breadcrumbSchema(locale, trail),
+]
+---
+
+<BaseLayout locale={locale} title={`${title} | ${SITE_NAME}`} description={clampDescription(description)} ogTitle={title} path="/works" jsonLd={jsonLd}>
+  <PageHero>
+    <Breadcrumbs locale={locale} trail={trail} />
+    <h1 class="page-title">{title}</h1>
+    <p class="mt-5 font-inter text-lg leading-relaxed">{description}</p>
+  </PageHero>
+
+  <section class="py-12 lg:py-16" aria-label={title}>
+    <div class="container-x">
+      <ul role="list" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {works.map((work, i) => (
+          <li class="reveal" style={stagger(i % 3)}>
+            <a href={localePath(`/works/${work.slug}`, locale)} class="card-lift group flex h-full flex-col overflow-hidden rounded-2xl border border-border-color bg-white">
+              {work.image && (
+                <div class="aspect-[2/1] overflow-hidden bg-secondary-50">
+                  <img class="size-full object-cover transition-transform duration-500 group-hover:scale-105" src={imagePath(work.image)} alt={imageAlt(work.image)} loading="lazy" decoding="async" width="440" height="220" />
+                </div>
+              )}
+              <div class="flex flex-1 flex-col p-5">
+                {work.categoryName && <span class="tag tag-primary tag-sm mb-3 self-start">{work.categoryName}</span>}
+                <h2 class="font-space text-lg font-bold text-heading-text">{work.title}</h2>
+                <p class="mt-2 line-clamp-3 flex-1 text-sm">{work.description}</p>
+                <span class="mt-4 inline-flex items-center text-sm font-medium text-primary-600" aria-hidden="true">
+                  {s.caseStudy}<i class="ri-arrow-right-line ml-1 transition-transform group-hover:translate-x-1"></i>
+                </span>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <CtaBlock class="bg-secondary-50" title={en ? 'Have a project in mind?' : 'Aklınızda bir proje mi var?'} href={`${localePath('/', locale)}#contact`} label={en ? 'Contact Us' : 'İletişime Geçin'} />
+</BaseLayout>

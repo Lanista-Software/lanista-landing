@@ -1,0 +1,31 @@
+---
+/** FAQ list on the Zag.js accordion (button + region, aria-expanded/controls, keyboard). */
+interface Props {
+  items: { id: string, question: string, answer: string }[]
+  headingLevel?: 3 | 4
+}
+const { items, headingLevel = 3 } = Astro.props
+const H = `h${headingLevel}` as 'h3' | 'h4'
+---
+
+<div data-accordion class="space-y-4">
+  {items.map(item => (
+    <div data-part="item" data-value={item.id} class="flex flex-col justify-center rounded-2xl border border-border-color bg-white p-8 leading-none">
+      <H class="m-0">
+        <button type="button" data-part="trigger" data-value={item.id} aria-expanded="false" class="group flex w-full items-center justify-between gap-4 text-left" data-track="faq_toggled" data-track-faq_title={item.question}>
+          <span class="font-space text-xl font-medium leading-snug text-heading-text">{item.question}</span>
+          <i class="ri-add-line text-xl leading-none text-secondary-500 transition-transform duration-200 group-aria-expanded:rotate-45" aria-hidden="true"></i>
+        </button>
+      </H>
+      <div data-part="content" data-value={item.id} class="accordion-panel">
+        <p class="pt-4 font-inter text-sm font-normal leading-relaxed text-body-text">{item.answer}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+<script>
+  import { initAccordions } from '~/scripts/accordion'
+
+  initAccordions()
+</script>

@@ -1,0 +1,108 @@
+---
+import type { FieldName, LeadType } from '~/lib/forms'
+import type { Locale } from '~/lib/i18n'
+import { FIELD_RULES, formStrings } from '~/lib/forms'
+import { localePath } from '~/lib/i18n'
+
+interface Props {
+  locale: Locale
+  type?: LeadType
+  /** Product slug for demo / quote / waitlist leads. */
+  product?: string
+  /** Unique per page — prefixes every field id. */
+  idPrefix?: string
+  fields?: FieldName[]
+  /** Override which fields are required for this form. */
+  required?: FieldName[]
+  submitLabel?: string
+  /** Initial subject text (hidden subject is used when 'subject' is not in fields). */
+  subject?: string
+  class?: string
+}
+const {
+  locale,
+  type = 'contact',
+  product,
+  idPrefix = 'contact',
+  fields = ['name', 'email', 'subject', 'message'],
+  required,
+  submitLabel,
+  subject,
+  class: className,
+} = Astro.props
+const s = formStrings[locale]
+const isRequired = (f: FieldName) => (required ? required.includes(f) : FIELD_RULES[f].required)
+const fid = (f: string) => `${idPrefix}-${f}`
+const kvkkHref = localePath('/yasal/kvkk', 'tr')
+const autocomplete: Record<FieldName, string> = { name: 'name', email: 'email', phone: 'tel', business: 'organization', subject: 'off', message: 'off' }
+// Client-side copy of the rules/messages, so the script stays framework-free.
+const config = {
+  locale,
+  type,
+  product: product ?? null,
+  fields: fields.map(f => ({ name: f, label: s.labels[f], ...FIELD_RULES[f], required: isRequired(f) })),
+  messages: { ...s.v, success: s.success, failure: s.failure, consent: s.consentError, rateLimit: s.rateLimit },
+}
+---
+
+<form
+  data-lead-form
+  data-config={JSON.stringify(config)}
+  novalidate
+  class:list={['flex flex-col gap-4 rounded-2xl border border-border-color bg-white p-8', className]}
+  aria-describedby={`${idPrefix}-required-note`}
+>
+  <p id={`${idPrefix}-required-note`} class="field-hint">
+    {locale === 'tr' ? 'Yıldızlı (*) alanlar zorunludur.' : 'Fields marked with * are required.'}
+  </p>
+
+  <div data-part="summary" tabindex="-1" hidden class="rounded-lg border border-danger-200 bg-danger-50 p-4 text-sm text-danger-800">
+    <p class="font-medium">{s.errorSummary}</p>
+    <ul class="mt-2 list-disc pl-5" data-part="summary-list"></ul>
+  </div>
+
+  {fields.map(f => (
+    <div class="flex flex-col gap-2">
+      <label for={fid(f)} class="field-label">
+        {s.labels[f]}
+        {isRequired(f) ? <span aria-hidden="true" class="text-danger-700"> *</span> : <span class="font-normal text-label-text"> {s.optional}</span>}
+      </label>
+      {f === 'message'
+        ? <textarea id={fid(f)} name={f} rows="5" class="field resize-none" placeholder={s.placeholders[f]} required={isRequired(f)} maxlength={FIELD_RULES[f].max} aria-describedby={`${fid(f)}-error`}></textarea>
+        : <input id={fid(f)} name={f} type={f === 'email' ? 'email' : f === 'phone' ? 'tel' : 'text'} inputmode={f === 'phone' ? 'tel' : undefined} autocomplete={autocomplete[f]} class="field" placeholder={s.placeholders[f]} required={isRequired(f)} maxlength={FIELD_RULES[f].max} aria-describedby={`${fid(f)}-error`} />}
+      <p id={`${fid(f)}-error`} class="field-error" data-error-for={f}></p>
+    </div>
+  ))}
+
+  {!fields.includes('subject') && <input type="hidden" name="subject" value={subject ?? type} />}
+
+  <div class="flex flex-col gap-2">
+    <div class="flex items-start gap-3">
+      <input id={fid('consent')} name="consent" type="checkbox" class="checkbox" required aria-describedby={`${fid('consent')}-error`} />
+      <label for={fid('consent')} class="text-sm text-body-text">
+        {s.consentBefore}<a href={kvkkHref} class="link" target="_blank" rel="noopener" hreflang="tr">{s.consentLink}</a>{s.consentAfter}
+        <span aria-hidden="true" class="text-danger-700"> *</span>
+      </label>
+    </div>
+    <p id={`${fid('consent')}-error`} class="field-error" data-error-for="consent"></p>
+  </div>
+
+  <div data-part="captcha"></div>
+
+  <!-- Honeypot: hidden from people and assistive tech, filled only by bots. -->
+  <div aria-hidden="true" class="absolute -left-[9999px] size-px overflow-hidden">
+    <label for={fid('website')}>Website</label>
+    <input id={fid('website')} name="website" type="text" tabindex="-1" autocomplete="off" />
+  </div>
+
+  <div class="flex flex-col pt-2">
+    <button type="submit" class="btn btn-danger btn-block" data-label={submitLabel ?? s.send} data-sending={s.sending}>{submitLabel ?? s.send}</button>
+  </div>
+  <p data-part="status" role="status" aria-live="polite" class="text-sm"></p>
+</form>
+
+<script>
+  import { initLeadForms } from '~/scripts/lead-form'
+
+  initLeadForms()
+</script>

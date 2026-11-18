@@ -1,0 +1,21 @@
+---
+import { imagePath } from '~/lib/content'
+
+interface Props { item: { name: string, title?: string, description?: string, image?: string } }
+const { item } = Astro.props
+---
+
+<figure class="reveal w-full p-6">
+  <figcaption class="flex items-center gap-4">
+    {item.image && (
+      <img class="block size-16 rounded-full border border-solid border-transparent object-contain" src={imagePath(item.image)} alt="" width="80" height="80" loading="lazy" decoding="async" />
+    )}
+    <div>
+      <p class="font-space text-lg font-semibold text-heading-text">{item.name}</p>
+      <p class="mt-1 font-normal text-body-text">{item.title}</p>
+    </div>
+  </figcaption>
+  <blockquote class="pt-6">
+    <p class="font-space font-medium text-heading-text">{item.description}</p>
+  </blockquote>
+</figure>

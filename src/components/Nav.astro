@@ -1,0 +1,49 @@
+---
+import type { Locale } from '~/lib/i18n'
+import { localePath, t } from '~/lib/i18n'
+
+interface Props {
+  locale: Locale
+  path: string
+  direction: 'horizontal' | 'vertical'
+  id?: string
+}
+const { locale, path, direction, id } = Astro.props
+const s = t(locale)
+const isHome = path === '/'
+
+// Hash items scroll within the home page; route items are real pages.
+const items = [
+  { key: 'home', href: localePath('/', locale), section: 'home' },
+  { key: 'services', href: `${localePath('/', locale)}#services`, section: 'services' },
+  { key: 'process', href: `${localePath('/', locale)}#process`, section: 'process' },
+  { key: 'technologies', href: `${localePath('/', locale)}#technologies`, section: 'technologies' },
+  { key: 'works', href: localePath('/works', locale), route: '/works' },
+] as const
+
+function isCurrentRoute(route?: string) {
+  if (!route)
+    return false
+  return path === route || path.startsWith(`${route}/`)
+}
+---
+
+<nav aria-label={s.mainNav} id={id}>
+  <ul class:list={[direction === 'vertical' ? 'flex flex-col gap-6' : 'flex items-center gap-6']}>
+    {items.map((item) => {
+      const current = 'route' in item ? isCurrentRoute(item.route) : isHome && item.section === 'home'
+      return (
+        <li>
+          <a
+            href={item.href}
+            data-nav-section={'section' in item && isHome ? item.section : undefined}
+            aria-current={current ? 'page' : undefined}
+            class="font-inter font-medium text-heading-text transition-colors hover:text-danger-600 aria-[current]:font-bold aria-[current]:text-danger-600"
+          >
+            {s.menu[item.key]}
+          </a>
+        </li>
+      )
+    })}
+  </ul>
+</nav>

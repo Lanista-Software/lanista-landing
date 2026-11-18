@@ -1,0 +1,45 @@
+---
+import type { Locale } from '~/lib/i18n'
+import { localePath, t } from '~/lib/i18n'
+
+interface Props {
+  locale: Locale
+  path: string
+  locales: readonly Locale[]
+}
+const { locale, path, locales } = Astro.props
+const LABELS: Record<Locale, string> = { tr: 'Türkçe', en: 'English' }
+const FLAGS: Record<Locale, string> = { tr: '/tr-flag.png', en: '/en-flag.png' }
+// Real <a href> per locale: the only crawlable path between the TR and EN trees.
+// A page that does not exist in the other language links to that language's home.
+const options = (['tr', 'en'] as const).map(code => ({
+  code,
+  href: localePath(locales.includes(code) ? path : '/', code),
+  current: code === locale,
+}))
+---
+
+<nav aria-label={t(locale).language}>
+  <ul class="flex items-center gap-3">
+    {options.map(o => (
+      <li>
+        <a
+          href={o.href}
+          hreflang={o.code}
+          lang={o.code}
+          aria-current={o.current ? 'true' : undefined}
+          data-track="language_changed"
+          data-track-language={o.code}
+          class:list={[
+            'flex items-center gap-1.5 rounded-full p-0.5 pr-2 text-sm font-medium transition',
+            o.current ? 'text-heading-text ring-2 ring-success-600' : 'text-body-text hover:text-heading-text',
+          ]}
+        >
+          <img src={FLAGS[o.code]} alt="" width="24" height="24" class="size-6 rounded-full" />
+          <span>{o.code.toUpperCase()}</span>
+          <span class="sr-only">{LABELS[o.code]}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>

@@ -1,0 +1,6 @@
+---
+interface Props { class?: string }
+const { class: className = '' } = Astro.props
+---
+
+<img src="/logo.svg" alt="Lanista" width="148" height="24" class:list={['h-auto max-h-6 w-full', className]} />

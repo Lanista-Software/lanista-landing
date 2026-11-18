@@ -1,0 +1,19 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { localePath } from '~/lib/i18n'
+---
+
+<BaseLayout locale="tr" title="Sayfa bulunamadı | Lanista" description="Aradığınız sayfa taşınmış ya da kaldırılmış olabilir." path="/404" locales={['tr']} noindex>
+  <section class="py-32">
+    <div class="container-x text-center">
+      <p class="font-space text-7xl font-bold text-primary-100" aria-hidden="true">404</p>
+      <h1 class="page-title mt-4">Sayfa bulunamadı</h1>
+      <p class="mx-auto mt-4 max-w-xl text-lg">Aradığınız sayfa taşınmış ya da kaldırılmış olabilir.</p>
+      <p lang="en" class="mx-auto mt-2 max-w-xl text-body-text">The page you are looking for may have moved.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href={localePath('/', 'tr')} class="btn btn-danger">Ana sayfaya dön</a>
+        <a href={localePath('/', 'en')} class="btn btn-outline" lang="en" hreflang="en">English home</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
