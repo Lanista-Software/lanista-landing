@@ -1,0 +1,12 @@
+{
+  "7d2375179303cc7a46255014": {
+    "email": "info@lanista.com.tr",
+    "kvkk_consent": true,
+    "language": "tr",
+    "message": "Otomatik form testi; silinebilir.",
+    "name": "TEST Claude form kontrolü",
+    "page": "/iletisim/",
+    "subject": "TEST - silinebilir",
+    "type": "contact"
+  }
+}
