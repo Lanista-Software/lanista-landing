@@ -3,7 +3,7 @@
   "name": "Products",
   "kind": "collection",
   "domain": "marketing",
-  "i18n": false,
+  "i18n": true,
   "title_field": "name",
   "description": "Lanista's ready-made products for local businesses (Turkish market, Turkish only). Source: docs/urunler-ve-iyzico-brief.md §3. Voice rules §8: plain shopkeeper language; never mention user management, margins, costs or customer names; planned features are 'ekleniyor', never 'eksik'. Never store demo login credentials here.",
   "fields": {
