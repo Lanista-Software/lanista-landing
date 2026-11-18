@@ -24,7 +24,6 @@
 @import '@fontsource/space-grotesk/latin-ext-600.css';
 @import '@fontsource/space-grotesk/latin-700.css';
 @import '@fontsource/space-grotesk/latin-ext-700.css';
-@import 'remixicon/fonts/remixicon.css';
 /* Only latin + latin-ext (Turkish) subsets ship. */
 
 @tailwind base;
@@ -116,8 +115,8 @@
     @apply p-2.5 text-2xl leading-none;
   }
 
-  .btn i {
-    @apply text-xl leading-none;
+  .btn .ri-icon {
+    @apply text-xl;
   }
 
   /* ---- Tags (ex LuiTag) ---- */

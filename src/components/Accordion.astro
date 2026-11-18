@@ -1,4 +1,5 @@
 ---
+import Icon from '~/components/Icon.astro'
 /** FAQ list on the Zag.js accordion (button + region, aria-expanded/controls, keyboard). */
 interface Props {
   items: { id: string, question: string, answer: string }[]
@@ -14,7 +15,7 @@ const H = `h${headingLevel}` as 'h3' | 'h4'
       <H class="m-0">
         <button type="button" data-part="trigger" data-value={item.id} aria-expanded="false" class="group flex w-full items-center justify-between gap-4 text-left" data-track="faq_toggled" data-track-faq_title={item.question}>
           <span class="font-space text-xl font-medium leading-snug text-heading-text">{item.question}</span>
-          <i class="ri-add-line text-xl leading-none text-secondary-500 transition-transform duration-200 group-aria-expanded:rotate-45" aria-hidden="true"></i>
+          <Icon name="ri-add-line" class="text-xl leading-none text-secondary-500 transition-transform duration-200 group-aria-expanded:rotate-45" />
         </button>
       </H>
       <div data-part="content" data-value={item.id} class="accordion-panel">

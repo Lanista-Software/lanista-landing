@@ -5,6 +5,7 @@ import Breadcrumbs from '~/components/Breadcrumbs.astro'
 import Amphitheatre from '~/components/decor/Amphitheatre.astro'
 import Meander from '~/components/decor/Meander.astro'
 import HeroVisual from '~/components/HeroVisual.astro'
+import Icon from '~/components/Icon.astro'
 import LeadForm from '~/components/LeadForm.astro'
 import PhoneShot from '~/components/PhoneShot.astro'
 import PlanCard from '~/components/PlanCard.astro'
@@ -117,10 +118,10 @@ const demoHref = '#demo'
           {product.pains.map((row, i) => (
             <div class="reveal grid gap-2 p-6 md:grid-cols-[1fr_1.4fr] md:gap-10 md:p-8" style={stagger(i)}>
               <dt class="flex gap-3 font-space text-lg font-bold text-heading-text">
-                <i class="ri-close-circle-line mt-0.5 text-xl leading-none text-danger-600" aria-hidden="true"></i>{row.pain}
+                <Icon name="ri-close-circle-line" class="mt-0.5 text-xl leading-none text-danger-600" />{row.pain}
               </dt>
               <dd class="flex gap-3 text-body-text">
-                <i class="ri-checkbox-circle-line mt-0.5 text-xl leading-none text-success-700" aria-hidden="true"></i>{row.solution}
+                <Icon name="ri-checkbox-circle-line" class="mt-0.5 text-xl leading-none text-success-700" />{row.solution}
               </dd>
             </div>
           ))}
@@ -169,7 +170,7 @@ const demoHref = '#demo'
             <section class="reveal rounded-2xl border border-border-color bg-white p-7" style={stagger(i)} aria-labelledby={`fg-${i}`}>
               <h3 id={`fg-${i}`} class="font-space text-xl font-bold text-heading-text">{g.title}</h3>
               <ul class="mt-4 space-y-2.5">
-                {(g.items ?? []).map(item => <li class="flex gap-2.5 text-body-text"><i class="ri-check-line mt-0.5 text-lg leading-none text-primary-600" aria-hidden="true"></i><span>{item}</span></li>)}
+                {(g.items ?? []).map(item => <li class="flex gap-2.5 text-body-text"><Icon name="ri-check-line" class="mt-0.5 text-lg leading-none text-primary-600" /><span>{item}</span></li>)}
               </ul>
             </section>
           ))}

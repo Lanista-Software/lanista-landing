@@ -1,5 +1,6 @@
 ---
 import type { Products } from '#contentrain'
+import Icon from '~/components/Icon.astro'
 import Img from '~/components/Img.astro'
 import { localePath, t } from '~/lib/i18n'
 
@@ -27,7 +28,7 @@ const live = product.status === 'live'
     <p class="mt-4 flex-1 text-body-text">{product.tagline}</p>
     <p class="mt-6 inline-flex items-center gap-1 font-medium text-primary-600 group-hover:underline" aria-hidden="true">
       {live ? s('product.card.view') : s('product.card.notify')}
-      <i class="ri-arrow-right-line transition-transform group-hover:translate-x-1"></i>
+      <Icon name="ri-arrow-right-line" class="transition-transform group-hover:translate-x-1" />
     </p>
   </div>
 </article>

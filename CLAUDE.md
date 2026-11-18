@@ -49,7 +49,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Integrations
 - Google Analytics G-T48ZEC3WT9 (`BaseLayout`), events via `data-track` attributes (`src/scripts/analytics.ts`).
 - Fonts: self-hosted `@fontsource` Inter + Space Grotesk (latin + latin-ext only).
-- Icons: Remixicon.
+- Icons: Remixicon SVGs inlined at build by `src/components/Icon.astro` (no icon font). Content may store `ri-*` names.
 - Hosting: Netlify (`netlify.toml`, Node 22).
 
 # Contentrain AI Rules

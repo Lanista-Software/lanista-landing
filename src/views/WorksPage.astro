@@ -2,6 +2,7 @@
 import type { Locale } from '~/lib/i18n'
 import Breadcrumbs from '~/components/Breadcrumbs.astro'
 import CtaBlock from '~/components/CtaBlock.astro'
+import Icon from '~/components/Icon.astro'
 import Img from '~/components/Img.astro'
 import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
@@ -57,7 +58,7 @@ const jsonLd = [
                 <h2 class="font-space text-lg font-bold text-heading-text">{work.title}</h2>
                 <p class="mt-2 line-clamp-3 flex-1 text-sm">{work.description}</p>
                 <span class="mt-4 inline-flex items-center text-sm font-medium text-primary-600" aria-hidden="true">
-                  {s('common.case_study')}<i class="ri-arrow-right-line ml-1 transition-transform group-hover:translate-x-1"></i>
+                  {s('common.case_study')}<Icon name="ri-arrow-right-line" class="ml-1 transition-transform group-hover:translate-x-1" />
                 </span>
               </div>
             </a>

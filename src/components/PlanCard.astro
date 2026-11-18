@@ -1,5 +1,6 @@
 ---
 import type { Plans } from '#contentrain'
+import Icon from '~/components/Icon.astro'
 import { localePath, t } from '~/lib/i18n'
 import { tl, withVat } from '~/lib/money'
 
@@ -32,7 +33,7 @@ const billing = s(`plan.billing.${plan.billing}`)
 ? (
     <ul class="mt-6 flex-1 space-y-2.5">
       {plan.includes.map(item => (
-        <li class="flex gap-2.5 text-body-text"><i class="ri-check-line mt-0.5 text-lg leading-none text-success-700" aria-hidden="true"></i><span>{item}</span></li>
+        <li class="flex gap-2.5 text-body-text"><Icon name="ri-check-line" class="mt-0.5 text-lg leading-none text-success-700" /><span>{item}</span></li>
       ))}
     </ul>
   )

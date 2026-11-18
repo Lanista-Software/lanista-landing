@@ -19,6 +19,8 @@ export default defineConfig({
   trailingSlash: 'always',
   build: {
     format: 'directory',
+    // ~15 KB of CSS: inline it so the first paint does not wait for a request.
+    inlineStylesheets: 'always',
   },
   integrations: [
     sitemap({

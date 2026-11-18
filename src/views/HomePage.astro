@@ -4,6 +4,7 @@ import Accordion from '~/components/Accordion.astro'
 import AppCard from '~/components/AppCard.astro'
 import Amphitheatre from '~/components/decor/Amphitheatre.astro'
 import Hero from '~/components/Hero.astro'
+import Icon from '~/components/Icon.astro'
 import Img from '~/components/Img.astro'
 import ProductCard from '~/components/ProductCard.astro'
 import Section from '~/components/Section.astro'
@@ -80,7 +81,7 @@ const jsonLd = [
           {products.map((product, i) => <li style={stagger(i)}><ProductCard product={product} /></li>)}
         </ul>
         <a slot="button" href={contentLink(section('products').buttonlink, locale)} class="link inline-flex items-center gap-1 text-lg">
-          {section('products').buttontext}<i class="ri-arrow-right-line" aria-hidden="true"></i>
+          {section('products').buttontext}<Icon name="ri-arrow-right-line" />
         </a>
       </SectionLayout>
     </Section>
@@ -143,7 +144,7 @@ const jsonLd = [
         ))}
       </ul>
       <a slot="button" href={routePath('services', locale)} class="btn btn-outline" data-track="button_clicked" data-track-button_name="services">
-        {s('home.services_more')}<i class="ri-arrow-right-line" aria-hidden="true"></i>
+        {s('home.services_more')}<Icon name="ri-arrow-right-line" />
       </a>
     </SectionLayout>
   </Section>
@@ -160,7 +161,7 @@ const jsonLd = [
         ))}
       </ol>
       <a slot="button" href={routePath('process', locale)} class="btn btn-outline" data-track="button_clicked" data-track-button_name="process">
-        {s('home.process_more')}<i class="ri-arrow-right-line" aria-hidden="true"></i>
+        {s('home.process_more')}<Icon name="ri-arrow-right-line" />
       </a>
     </SectionLayout>
   </Section>
@@ -174,7 +175,7 @@ const jsonLd = [
         {previewWorks.map((item, i) => <li style={stagger(i)}><WorksCard locale={locale} item={item} /></li>)}
       </ul>
       <a slot="button" href={localePath('/works', locale)} class="link inline-flex items-center gap-1 text-lg">
-        {section('works').buttontext || s('common.view_all_work')}<i class="ri-arrow-right-line" aria-hidden="true"></i>
+        {section('works').buttontext || s('common.view_all_work')}<Icon name="ri-arrow-right-line" />
       </a>
     </SectionLayout>
   </Section>
@@ -207,7 +208,7 @@ const jsonLd = [
               <div class="flex gap-3"><dt class="w-24 shrink-0 text-sm text-label-text">{s('form.label.email')}</dt><dd><a class="link" href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></dd></div>
               <div class="flex gap-3"><dt class="w-24 shrink-0 text-sm text-label-text">{s('company.address')}</dt><dd class="text-heading-text">{COMPANY.address.full}</dd></div>
             </dl>
-            <a href={routePath('contact', locale)} class="btn btn-danger mt-8">{s('contact.form_title')}<i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            <a href={routePath('contact', locale)} class="btn btn-danger mt-8">{s('contact.form_title')}<Icon name="ri-arrow-right-line" /></a>
           </div>
         </div>
       </div>

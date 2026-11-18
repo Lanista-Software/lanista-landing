@@ -1,6 +1,7 @@
 ---
 import type { Tabitems, WorkCategories } from '#contentrain'
 import type { Locale } from '~/lib/i18n'
+import Icon from '~/components/Icon.astro'
 import Img from '~/components/Img.astro'
 import { t } from '~/lib/i18n'
 
@@ -47,7 +48,7 @@ const first = tabs[0]?.id
               <p class="flex-1 text-sm text-body-text">{item.description}</p>
               {item.link && (
                 <a href={item.link} target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-icon text-muted-text">
-                  <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                  <Icon name="ri-arrow-right-up-line" />
                   <span class="sr-only">{s('a11y.more_details')} {item.link} {s('a11y.opens_new_tab')}</span>
                 </a>
               )}

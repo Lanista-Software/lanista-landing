@@ -145,6 +145,8 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Sitemap: yerelleştirilmiş slug çiftleri için hreflang (`astro.config.mjs` LOCALIZED_PAIRS); `/odeme/` sitemap dışı
 - [ ] Studio: `leads` formu açık + public + alanlar exposed; Netlify env: `PUBLIC_CONTENTRAIN_PROJECT_ID`, `PUBLIC_CONTENTRAIN_STUDIO_URL`, `STUDIO_CDN_KEY`
 - [ ] `.contentrain/config.json`: stack `nuxt` → `astro`, varsayılan dil `tr` (MCP değiştirmiyor → kullanıcı onayı)
-- [ ] Lighthouse (performans, erişilebilirlik, SEO) ve axe taraması
+- [x] Lighthouse (canlı, mobil): Erişilebilirlik 100, En iyi uygulamalar 100, SEO 100 (ana sayfa, ürün, iletişim)
+- [x] Performans iyileştirmesi: ikon fontu (165 KB) + 23 KB kullanılmayan CSS kaldırıldı (satır içi SVG `Icon`), CSS HTML'e gömüldü, Studio CDN preconnect
+- [ ] Performans yeniden ölçüm (deploy sonrası)
 - [ ] PR → `content` dalı; yayın sonrası Search Console izlemesi (`/en/` sitemap'ini gönder; İngilizce sıralamalar 301 ile taşınamıyor)
 - [ ] ETBİS kaydı (kullanıcı, e-Devlet)

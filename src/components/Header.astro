@@ -1,5 +1,6 @@
 ---
 import type { Locale } from '~/lib/i18n'
+import Icon from '~/components/Icon.astro'
 import { localePath, routePath, t } from '~/lib/i18n'
 import LangSelect from './LangSelect.astro'
 import Logo from './Logo.astro'
@@ -37,7 +38,7 @@ const contactHref = routePath('contact', locale)
         <!-- Mobile menu: Zag.js dialog (focus trap, Escape, scroll lock, aria-modal). -->
         <div data-mobile-menu class="lg:hidden">
           <button type="button" data-part="trigger" class="btn btn-ghost btn-icon" aria-label={s('a11y.open_menu')}>
-            <i class="ri-menu-line" aria-hidden="true"></i>
+            <Icon name="ri-menu-line" />
           </button>
           <div data-part="backdrop" hidden class="fixed inset-0 z-40 bg-secondary-900/40"></div>
           <div data-part="positioner" hidden class="fixed inset-0 z-50 flex justify-end">
@@ -49,7 +50,7 @@ const contactHref = routePath('contact', locale)
                   <span class="sr-only">{s('nav.home')}</span>
                 </a>
                 <button type="button" data-part="close-trigger" class="btn btn-ghost btn-icon" aria-label={s('a11y.close_menu')}>
-                  <i class="ri-close-line" aria-hidden="true"></i>
+                  <Icon name="ri-close-line" />
                 </button>
               </div>
               <div class="pt-8">

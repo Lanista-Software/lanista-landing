@@ -1,0 +1,38 @@
+---
+/**
+ * Remixicon as inline SVG, resolved at build time (no icon font, no 25 KB of
+ * unused CSS). Accepts "ri-arrow-right-line" or "arrow-right-line" — content
+ * fields (e.g. sociallinks.icon) can keep storing Remixicon class names.
+ * Decorative by default; pass `label` to make it meaningful.
+ */
+import { readdirSync, readFileSync } from 'node:fs'
+import { createRequire } from 'node:module'
+import { dirname, join } from 'node:path'
+
+interface Props { name?: string, class?: string, label?: string }
+const { name = '', class: className = '', label } = Astro.props
+
+const require = createRequire(import.meta.url)
+const root = join(dirname(require.resolve('remixicon/package.json')), 'icons')
+const g = globalThis as unknown as { __riIndex?: Map<string, string> }
+g.__riIndex ??= new Map(readdirSync(root).flatMap(dir => readdirSync(join(root, dir)).map(f => [f.replace(/\.svg$/, ''), join(root, dir, f)] as const)))
+const key = name.replace(/^ri-/, '')
+const file = g.__riIndex.get(key)
+if (!file)
+  throw new Error(`[Icon] Unknown Remixicon "${name}"`)
+const inner = readFileSync(file, 'utf8').replace(/^[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '')
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  width="1em"
+  height="1em"
+  class:list={['ri-icon inline-block shrink-0 align-[-0.125em]', className]}
+  aria-hidden={label ? undefined : 'true'}
+  role={label ? 'img' : undefined}
+  aria-label={label}
+  focusable="false"
+  set:html={inner}
+/>
