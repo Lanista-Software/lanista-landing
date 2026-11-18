@@ -3,9 +3,9 @@ import { getProducts } from '~/lib/content'
 import ProductPage from '~/views/ProductPage.astro'
 
 export function getStaticPaths() {
-  return getProducts().map(product => ({ params: { slug: product.slug }, props: { product } }))
+  return getProducts('tr').map(product => ({ params: { slug: product.slug }, props: { product } }))
 }
 const { product } = Astro.props
 ---
 
-<ProductPage product={product} />
+<ProductPage product={product} locale="tr" />

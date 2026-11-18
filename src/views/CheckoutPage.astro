@@ -2,8 +2,9 @@
 import type { Plans, Products } from '#contentrain'
 import Breadcrumbs from '~/components/Breadcrumbs.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
+import { productPath } from '~/lib/content'
 import { FIELD_RULES } from '~/lib/forms'
-import { localePath, t } from '~/lib/i18n'
+import { localePath, ROUTES, t } from '~/lib/i18n'
 import { getLegalPage, legalPath, renderLegal } from '~/lib/legal'
 import { tl, withVat } from '~/lib/money'
 import { SITE_NAME } from '~/lib/seo'
@@ -20,8 +21,8 @@ const obfHtml = obf ? renderLegal(obf, tokens).html : ''
 const mssHtml = mss ? renderLegal(mss, tokens).html : ''
 const path = `/odeme/${plan.id}`
 const trail = [
-  { name: s('nav.products'), path: '/urunler' },
-  { name: product.name, path: `/urunler/${product.slug}` },
+  { name: s('nav.products'), path: ROUTES.products.tr },
+  { name: product.name, path: productPath(product.slug, 'tr') },
   { name: s('checkout.title'), path },
 ]
 const fields = (['name', 'email', 'phone', 'business'] as const).map(f => ({ name: f, label: s(`form.label.${f}`), ...FIELD_RULES[f], required: f !== 'business' }))

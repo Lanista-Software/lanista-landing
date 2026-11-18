@@ -4,23 +4,30 @@
  * data so one text serves every product (brief §6).
  */
 import type { LegalPages } from '#contentrain'
+import type { Locale } from './i18n'
 import { document } from '#contentrain'
 import { marked } from 'marked'
 import { COMPANY } from './company'
 import { t } from './i18n'
 
-export type LegalPage = LegalPages
+/** Flags are stored as 'true'/'false' strings in Contentrain; exposed as booleans. */
+export type LegalPage = Omit<LegalPages, 'reviewed' | 'show_in_footer'> & { reviewed: boolean, show_in_footer: boolean }
 
-// Contentrain MCP currently writes document frontmatter booleans quoted ("true"),
-// so the SDK returns strings. Normalize until that is fixed upstream.
+// Stored as select 'true'/'false' (MCP quotes document frontmatter booleans).
 const bool = (v: unknown) => v === true || v === 'true'
 
-export function getLegalPages(): LegalPage[] {
-  return document('legal-pages').sort('order', 'asc').all().map(p => ({ ...p, reviewed: bool(p.reviewed), show_in_footer: bool(p.show_in_footer), order: Number(p.order ?? 0) })).sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+export function getLegalPages(locale: Locale = 'tr'): LegalPage[] {
+  return document('legal-pages').locale(locale).sort('order', 'asc').all().map(p => ({ ...p, reviewed: bool(p.reviewed), show_in_footer: bool(p.show_in_footer), order: Number(p.order ?? 0) })).sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
 }
 
-export function legalPath(page: Pick<LegalPage, 'group' | 'slug'>): string {
-  return page.group === 'legal' ? `/yasal/${page.slug}` : `/${page.slug}`
+/** Corporate pages get an English slug of their own. */
+const CORPORATE_EN: Record<string, string> = { hakkimizda: 'about' }
+
+/** Locale-agnostic path of a legal/corporate page (pass to localePath). */
+export function legalPath(page: Pick<LegalPage, 'group' | 'slug'>, locale: Locale = 'tr'): string {
+  if (page.group === 'legal')
+    return `${locale === 'en' ? '/legal' : '/yasal'}/${page.slug}`
+  return `/${locale === 'en' ? (CORPORATE_EN[page.slug] ?? page.slug) : page.slug}`
 }
 
 function slugify(text: string) {
@@ -45,8 +52,8 @@ export interface RenderedLegal {
 /** Order-specific values for {{urun}}, {{paket}}, {{tutar}} (checkout page). */
 export interface OrderTokens { urun: string, paket: string, tutar: string }
 
-export function renderLegal(page: LegalPage, order?: OrderTokens): RenderedLegal {
-  const s = t('tr')
+export function renderLegal(page: LegalPage, order?: OrderTokens, locale: Locale = 'tr'): RenderedLegal {
+  const s = t(locale)
   let incomplete = false
   let md = page.body
     // A line that only exists to show the KEP address disappears until there is one.
@@ -84,6 +91,6 @@ export function renderLegal(page: LegalPage, order?: OrderTokens): RenderedLegal
   return { html, toc, incomplete }
 }
 
-export function getLegalPage(slug: string): LegalPage | undefined {
-  return getLegalPages().find(p => p.slug === slug)
+export function getLegalPage(slug: string, locale: Locale = 'tr'): LegalPage | undefined {
+  return getLegalPages(locale).find(p => p.slug === slug)
 }

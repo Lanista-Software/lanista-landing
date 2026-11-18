@@ -1,22 +1,23 @@
 ---
+import type { Locale } from '~/lib/i18n'
 import type { LegalPage as LegalDoc } from '~/lib/legal'
 import Breadcrumbs from '~/components/Breadcrumbs.astro'
 import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
-import { t } from '~/lib/i18n'
+import { localePath, t } from '~/lib/i18n'
 import { legalPath, renderLegal } from '~/lib/legal'
 import { ORG_ID, webPageSchema } from '~/lib/schema'
 import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
 
-interface Props { page: LegalDoc }
-const { page } = Astro.props
-const locale = 'tr' as const
+interface Props { page: LegalDoc, locale: Locale }
+const { page, locale } = Astro.props
 const s = t(locale)
-const path = legalPath(page)
-const { html, toc, incomplete } = renderLegal(page)
+const path = legalPath(page, locale)
+const paths = { tr: legalPath(page, 'tr'), en: legalPath(page, 'en') }
+const { html, toc, incomplete } = renderLegal(page, undefined, locale)
 const draft = !page.reviewed || incomplete
 const updated = page.last_updated
-  ? new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(page.last_updated))
+  ? new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(page.last_updated))
   : undefined
 const trail = [{ name: s('nav.home'), path: '/' }, { name: page.title, path }]
 const jsonLd = [
@@ -25,7 +26,7 @@ const jsonLd = [
 ]
 ---
 
-<BaseLayout locale={locale} title={`${page.title} | ${SITE_NAME}`} description={clampDescription(page.description)} path={path} locales={['tr']} jsonLd={jsonLd}>
+<BaseLayout locale={locale} title={`${page.title} | ${SITE_NAME}`} description={clampDescription(page.description)} path={path} paths={paths} jsonLd={jsonLd}>
   <PageHero>
     <Breadcrumbs locale={locale} trail={trail} />
     <h1 class="page-title">{page.title}</h1>
@@ -42,6 +43,9 @@ const jsonLd = [
       </nav>
     )}
     <article class="max-w-3xl">
+      {locale === 'en' && page.group === 'legal' && (
+        <p role="note" class="mb-8 rounded-xl border border-primary-100 bg-primary-50 p-4 text-sm text-primary-800">{s('legal.translation_note')} <a href={localePath(paths.tr, 'tr')} hreflang="tr" lang="tr" class="link">{s('legal.turkish_version')}</a></p>
+      )}
       {draft && page.group === 'legal' && (
         <p role="note" class="mb-8 rounded-xl border border-warning-200 bg-warning-50 p-4 text-sm text-warning-800">{s('legal.draft_notice')}</p>
       )}

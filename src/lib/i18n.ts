@@ -38,6 +38,8 @@ export const ROUTES = {
   contact: { tr: '/iletisim', en: '/contact' },
   services: { tr: '/hizmetler', en: '/services' },
   process: { tr: '/surec', en: '/process' },
+  products: { tr: '/urunler', en: '/products' },
+  legal: { tr: '/yasal', en: '/legal' },
 } as const satisfies Record<string, Record<Locale, string>>
 
 export function routePath(route: keyof typeof ROUTES, locale: Locale): string {

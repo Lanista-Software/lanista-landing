@@ -3,7 +3,7 @@
  * path segment ('' = TR home, 'en/works/x' …), matching ogImagePath() in seo.ts.
  */
 import type { Locale } from './i18n'
-import { getHome, getProducts, getServicePages, getWorks } from './content'
+import { getHome, getProducts, getServicePages, getWorks, productPath } from './content'
 import { localePath, LOCALES, ROUTES, t } from './i18n'
 import { clampDescription, SITE_NAME } from './seo'
 
@@ -46,10 +46,12 @@ export function getOgCards(): Record<string, OgCard> {
     cards[key(ROUTES.process[locale], locale)] = { label: SITE_NAME, title: u('process.page_title'), description: clampDescription(u('process.page_description'), 130) }
     cards[key(ROUTES.contact[locale], locale)] = { label: SITE_NAME, title: u('nav.contact'), description: clampDescription(u('contact.description'), 130) }
   }
-  const tr = t('tr')
-  cards[key('/urunler', 'tr')] = { label: tr('products.og_label'), title: tr('products.title'), description: clampDescription(tr('products.description'), 130) }
-  for (const p of getProducts()) {
-    cards[key(`/urunler/${p.slug}`, 'tr')] = { label: `${tr('common.product')} · ${tr(`product.status.${p.status}`)}`, title: p.hero_title, description: clampDescription(p.tagline, 130) }
+  for (const locale of LOCALES) {
+    const u = t(locale)
+    cards[key(ROUTES.products[locale], locale)] = { label: u('products.og_label'), title: u('products.title'), description: clampDescription(u('products.description'), 130) }
+    for (const p of getProducts(locale)) {
+      cards[key(productPath(p.slug, locale), locale)] = { label: `${u('common.product')} · ${u(`product.status.${p.status}`)}`, title: p.hero_title, description: clampDescription(p.tagline, 130) }
+    }
   }
   return cards
 }

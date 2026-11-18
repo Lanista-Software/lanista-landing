@@ -1,15 +1,16 @@
 ---
 import type { Plans } from '#contentrain'
+import type { Locale } from '~/lib/i18n'
 import Icon from '~/components/Icon.astro'
 import { localePath, t } from '~/lib/i18n'
 import { tl, withVat } from '~/lib/money'
 
-interface Props { plan: Plans, ctaHref: string }
-const { plan, ctaHref } = Astro.props
+interface Props { plan: Plans, ctaHref: string, locale?: Locale }
+const { plan, ctaHref, locale = 'tr' } = Astro.props
 const priced = typeof plan.price_try === 'number'
 const vat = plan.vat_rate ?? 20
 const buyHref = plan.iyzico_link ? localePath(`/odeme/${plan.id}`, 'tr') : ctaHref
-const s = t('tr')
+const s = t(locale)
 const billing = s(`plan.billing.${plan.billing}`)
 ---
 

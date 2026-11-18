@@ -1,15 +1,17 @@
 ---
 import type { Products } from '#contentrain'
+import type { Locale } from '~/lib/i18n'
 import Icon from '~/components/Icon.astro'
 import Img from '~/components/Img.astro'
+import { productPath } from '~/lib/content'
 import { localePath, t } from '~/lib/i18n'
 
-interface Props { product: Products }
-const { product } = Astro.props
-const s = t('tr')
+interface Props { product: Products, locale?: Locale }
+const { product, locale = 'tr' } = Astro.props
+const s = t(locale)
 const BADGE_CLASS = { live: 'tag-success', pilot: 'tag-warning', soon: 'tag-secondary' } as const
 const badge = { label: s(`product.status.${product.status}`), cls: BADGE_CLASS[product.status as keyof typeof BADGE_CLASS] }
-const href = localePath(`/urunler/${product.slug}`, 'tr')
+const href = localePath(productPath(product.slug, locale), locale)
 const live = product.status === 'live'
 ---
 

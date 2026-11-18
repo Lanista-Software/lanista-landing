@@ -13,7 +13,7 @@ import TestimonialCard from '~/components/TestimonialCard.astro'
 import WorksCard from '~/components/WorksCard.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import { COMPANY } from '~/lib/company'
-import { getHome, getLayout, getOnboardingSteps, getProduct, getProducts, getTeam } from '~/lib/content'
+import { getHome, getLayout, getOnboardingSteps, getProduct, getProducts, getTeam, productPath } from '~/lib/content'
 import { contentLink, localePath, routePath, t } from '~/lib/i18n'
 import { creativeWorkSchema, faqSchema, organizationSchema, serviceSchema, teamSchema, webPageSchema, websiteSchema } from '~/lib/schema'
 import { clampDescription, SITE_NAME } from '~/lib/seo'
@@ -30,11 +30,10 @@ const link = (name: string) => contentLink(section(name).buttonlink, locale)
 // Home shows the six services with real Turkish search demand (docs/kararlar-arama-verisi.md).
 const services = home.services.filter(sv => sv.on_home).map(sv => ({ ...sv, link: sv.link ? localePath(sv.link, locale) : undefined }))
 const previewWorks = home.works.slice(0, 3)
-const tr = locale === 'tr'
 // Turkish home leads with the products; English stays agency-first (products are Turkey-only).
-const products = tr ? getProducts() : []
-const hesapTakip = getProduct('hesap-takip')
-const steps = tr ? getOnboardingSteps(locale) : []
+const products = getProducts(locale)
+const hesapTakip = getProduct('hesap-takip', locale)
+const steps = getOnboardingSteps(locale)
 
 const meta = home.metaTags
 const title = meta.title || SITE_NAME
@@ -65,7 +64,7 @@ const jsonLd = [
       <Hero
         hero={section('hero')}
         buttonHref={link('hero')}
-        secondary={tr ? { label: s('home.hero_secondary_cta'), href: localePath('/urunler/hesap-takip#demo', locale) } : undefined}
+        secondary={{ label: s('home.hero_secondary_cta'), href: `${localePath(productPath('hesap-takip', locale), locale)}#demo` }}
         visualLabel={s('home.hero_visual_label')}
         screenshot={hesapTakip?.hero_screenshot}
         chip={{ title: s('home.hero_chip_title'), text: s('home.hero_chip_text') }}
@@ -74,11 +73,11 @@ const jsonLd = [
   </div>
 
 
-  {tr && (
+  {products.length > 0 && (
     <Section id="urunler" spy labelledby="products-title">
       <SectionLayout id="products-title" title={section('products').title} description={section('products').description}>
         <ul role="list" class="grid w-full grid-cols-1 gap-8 md:grid-cols-3">
-          {products.map((product, i) => <li style={stagger(i)}><ProductCard product={product} /></li>)}
+          {products.map((product, i) => <li style={stagger(i)}><ProductCard product={product} locale={locale} /></li>)}
         </ul>
         <a slot="button" href={contentLink(section('products').buttonlink, locale)} class="link inline-flex items-center gap-1 text-lg">
           {section('products').buttontext}<Icon name="ri-arrow-right-line" />
@@ -87,7 +86,7 @@ const jsonLd = [
     </Section>
   )}
 
-  {tr && (
+  {steps.length > 0 && (
     <section id="baslarken" aria-labelledby="start-title" class="bg-secondary-50">
       <div class="container-x py-24 lg:py-32">
         <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">

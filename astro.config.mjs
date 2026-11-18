@@ -4,11 +4,28 @@ import { defineConfig } from 'astro/config'
 
 const SITE = 'https://lanista.com.tr'
 // Pages whose slug differs per language (keep in sync with ROUTES in src/lib/i18n.ts).
-const LOCALIZED_PAIRS = [
+// [Turkish path pattern, English path pattern] — `*` is the shared slug.
+const LOCALIZED_PATTERNS = [
   ['/iletisim/', '/en/contact/'],
   ['/hizmetler/', '/en/services/'],
   ['/surec/', '/en/process/'],
+  ['/urunler/', '/en/products/'],
+  ['/urunler/*/', '/en/products/*/'],
+  ['/yasal/*/', '/en/legal/*/'],
+  ['/hakkimizda/', '/en/about/'],
 ]
+/** @param {string} path @returns {{ lang: 'tr' | 'en', path: string } | null} */
+function counterpart(path) {
+  for (const [tr, en] of LOCALIZED_PATTERNS) {
+    for (const [from, to, lang] of /** @type {const} */ ([[tr, en, 'en'], [en, tr, 'tr']])) {
+      const re = new RegExp(`^${from.replace('*', '([^/]+)')}$`)
+      const m = path.match(re)
+      if (m)
+        return { lang, path: to.replace('*', m[1] ?? '') }
+    }
+  }
+  return null
+}
 
 // Turkish is the primary language and lives at the root (`/`, `/works/…`).
 // English is kept under `/en/`. Products and legal pages are Turkish-only.
@@ -31,11 +48,14 @@ export default defineConfig({
       // OG image endpoints and pre-payment pages are not for search.
       filter: page => !page.includes('/og/') && !page.includes('/odeme/') && !page.includes('llms'),
       serialize(item) {
-        const pair = LOCALIZED_PAIRS.find(p => p.some(path => item.url === SITE + path))
-        if (pair) {
+        const path = item.url.slice(SITE.length)
+        const other = counterpart(path)
+        if (other) {
+          const trPath = other.lang === 'tr' ? other.path : path
+          const enPath = other.lang === 'en' ? other.path : path
           item.links = [
-            { lang: 'tr-TR', url: SITE + pair[0] },
-            { lang: 'en-US', url: SITE + pair[1] },
+            { lang: 'tr-TR', url: SITE + trPath },
+            { lang: 'en-US', url: SITE + enPath },
           ]
         }
         return item

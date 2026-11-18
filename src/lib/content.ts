@@ -81,16 +81,21 @@ export function splitList(value?: string): string[] {
   return value ? value.split(',').map(t => t.trim()).filter(Boolean) : []
 }
 
-export function getProducts() {
-  return query('products').sort('order', 'asc').all()
+export function getProducts(locale: Locale = 'tr') {
+  return query('products').locale(locale).sort('order', 'asc').all()
 }
 
-export function getProduct(slug: string) {
-  return getProducts().find(p => p.slug === slug)
+export function getProduct(slug: string, locale: Locale = 'tr') {
+  return getProducts(locale).find(p => p.slug === slug)
 }
 
-export function getPlans(productId: string) {
-  return query('plans').sort('order', 'asc').all().filter(p => (typeof p.product === 'string' ? p.product : p.product?.id) === productId)
+export function getPlans(productId: string, locale: Locale = 'tr') {
+  return query('plans').locale(locale).sort('order', 'asc').all().filter(p => (typeof p.product === 'string' ? p.product : p.product?.id) === productId)
+}
+
+/** Product page path in a locale (/urunler/x ↔ /products/x); pass to localePath. */
+export function productPath(slug: string, locale: Locale): string {
+  return `${locale === 'en' ? '/products' : '/urunler'}/${slug}`
 }
 
 export function getTeam(locale: Locale) {

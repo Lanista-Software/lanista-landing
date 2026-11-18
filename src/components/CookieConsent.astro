@@ -5,7 +5,7 @@
  * Google Analytics is injected by the script below — never before consent.
  */
 import type { Locale } from '~/lib/i18n'
-import { localePath, t } from '~/lib/i18n'
+import { localePath, ROUTES, t } from '~/lib/i18n'
 
 interface Props { locale: Locale }
 const { locale } = Astro.props
@@ -17,7 +17,7 @@ const GA_ID = 'G-T48ZEC3WT9'
   <h2 id="cookie-title" class="font-space text-lg font-bold text-heading-text">{s('cookie.title')}</h2>
   <p class="mt-2 text-sm text-body-text">
     {s('cookie.text')}
-    <a href={localePath('/yasal/cerez-politikasi', 'tr')} hreflang="tr" class="link">{s('cookie.policy')}</a>
+    <a href={localePath(`${ROUTES.legal[locale]}/cerez-politikasi`, locale)} class="link">{s('cookie.policy')}</a>
   </p>
   <div class="mt-4 flex flex-wrap gap-3">
     <button type="button" data-consent="denied" class="btn btn-outline flex-1">{s('cookie.reject')}</button>

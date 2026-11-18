@@ -35,7 +35,9 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Contentrain temizliği: SEO/sosyal medya araç kayıtları (6) + 2 kategori, kullanılmayan 3 bölüm kaydı, 15 sözlük anahtarı (kullanılmayan + tekrarlı) silindi; kullanılmayan Banner/Arcade bileşenleri kaldırıldı
 - [x] **SEO-GEO**: `/llms.txt` + `/llms-full.txt` (Contentrain'den, TR+EN özet), robots'ta AI tarayıcılarına açık izin (`/odeme/` kapalı), Organization + WebSite her sayfada (knowsAbout, areaServed), og:locale:alternate, 64 sayfada JSON-LD doğrulandı
 - [ ] SEO-GEO devam: Van sayfasında LocalBusiness, İngilizce llms bölümü (EN içerik gelince)
-- [ ] **İngilizce eksiksiz**: ürünler, paketler, yasal sayfalar ve Hakkımızda İngilizce (`/en/products/…`, `/en/legal/…`, `/en/about/`); dil değişiminde her sayfa karşılığına gider; iyzico bandı alt metni
+- [x] **İngilizce eksiksiz**: `products`, `plans`, `legal-pages` iki dilli (Fable çevirisi); `/en/products/` (+3 ürün), `/en/legal/` (7 metin, "Türkçe metin geçerlidir" notu), `/en/about/`; dil değiştirici her sayfada karşılığa gidiyor; sitemap 76 URL, tüm çiftler karşılıklı; EN sayfalarda Türkçe alt metin yok
+- [ ] Contentrain'e geri bildirim: i18n'e geçişte eski `data.json` / düz `.md` dosyaları geride kalıyor; doküman boolean'ları tırnaklı yazılıyor (geçici çözüm: select 'true'/'false')
+- [ ] Ödeme onay sayfası yalnız Türkçe (`/odeme/`) — İngilizce ürün sayfasında 'Satın al' Türkçe sözleşme akışına gider (bilinçli)
 - [x] **Projede sabit (hard-coded) metin olmayacak**: arayüz metinleri dahil her içerik eksiksiz Contentrain'de (2026-11-18) — tarama temiz
 - [x] Formlar ve iletişim ayrı sayfada: `/iletisim/`, `/en/contact/` (şirket bilgileri + talep türü seçmeli form); ana sayfada SSS + iletişim kartı
 - [ ] Stil kararlarına (Ludus, token'lar, erişilebilirlik) sadık kalınacak; kontrol listesi her adımda güncel tutulacak
@@ -147,6 +149,6 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] `.contentrain/config.json`: stack `nuxt` → `astro`, varsayılan dil `tr` (MCP değiştirmiyor → kullanıcı onayı)
 - [x] Lighthouse (canlı, mobil): Erişilebilirlik 100, En iyi uygulamalar 100, SEO 100 (ana sayfa, ürün, iletişim)
 - [x] Performans iyileştirmesi: ikon fontu (165 KB) + 23 KB kullanılmayan CSS kaldırıldı (satır içi SVG `Icon`), CSS HTML'e gömüldü, Studio CDN preconnect
-- [ ] Performans yeniden ölçüm (deploy sonrası)
+- [x] Performans yeniden ölçüm: ana sayfa 78→82, ürün 69→87 (FCP 3,3→1,1 sn); A11y/BP/SEO 100
 - [ ] PR → `content` dalı; yayın sonrası Search Console izlemesi (`/en/` sitemap'ini gönder; İngilizce sıralamalar 301 ile taşınamıyor)
 - [ ] ETBİS kaydı (kullanıcı, e-Devlet)

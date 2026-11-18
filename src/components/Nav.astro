@@ -15,7 +15,7 @@ const isHome = path === '/'
 // Hash items scroll within the home page; route items are real pages.
 const items = [
   { key: 'home', href: localePath('/', locale), section: 'home' },
-  ...(locale === 'tr' ? [{ key: 'products', href: localePath('/urunler', locale), route: '/urunler' } as const] : []),
+  { key: 'products', href: localePath(ROUTES.products[locale], locale), route: ROUTES.products[locale] },
   { key: 'services', href: localePath(ROUTES.services[locale], locale), route: ROUTES.services[locale] },
   { key: 'process', href: localePath(ROUTES.process[locale], locale), route: ROUTES.process[locale] },
   { key: 'works', href: localePath('/works', locale), route: '/works' },

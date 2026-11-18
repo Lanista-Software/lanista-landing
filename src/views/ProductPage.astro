@@ -1,5 +1,6 @@
 ---
 import type { Products } from '#contentrain'
+import type { Locale } from '~/lib/i18n'
 import Accordion from '~/components/Accordion.astro'
 import Breadcrumbs from '~/components/Breadcrumbs.astro'
 import Amphitheatre from '~/components/decor/Amphitheatre.astro'
@@ -12,18 +13,18 @@ import PlanCard from '~/components/PlanCard.astro'
 import ProductVideo from '~/components/ProductVideo.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import { COMPANY } from '~/lib/company'
-import { getPlans } from '~/lib/content'
-import { localePath, t } from '~/lib/i18n'
+import { getPlans, productPath } from '~/lib/content'
+import { localePath, ROUTES, t } from '~/lib/i18n'
 import { faqSchema, ORG_ID, webPageSchema } from '~/lib/schema'
 import { absoluteAsset, absoluteUrl, breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
 import { stagger } from '~/lib/ui'
 
-interface Props { product: Products }
-const { product } = Astro.props
-const locale = 'tr' as const
-const path = `/urunler/${product.slug}`
+interface Props { product: Products, locale: Locale }
+const { product, locale } = Astro.props
+const path = productPath(product.slug, locale)
+const paths = { tr: productPath(product.slug, 'tr'), en: productPath(product.slug, 'en') }
 const live = product.status === 'live'
-const plans = live ? getPlans(product.id) : []
+const plans = live ? getPlans(product.id, locale) : []
 const priced = plans.filter(p => typeof p.price_try === 'number')
 const extras = plans.filter(p => typeof p.price_try !== 'number')
 const s = t(locale)
@@ -32,7 +33,7 @@ const name = { name: product.name }
 
 const trail = [
   { name: s('nav.home'), path: '/' },
-  { name: s('nav.products'), path: '/urunler' },
+  { name: s('nav.products'), path: ROUTES.products[locale] },
   { name: product.name, path },
 ]
 const title = product.seo_title || `${product.name} | ${SITE_NAME}`
@@ -64,7 +65,7 @@ const jsonLd = [
     'description': product.tagline,
     'applicationCategory': 'BusinessApplication',
     'operatingSystem': 'Web, Android, iOS (PWA)',
-    'inLanguage': 'tr-TR',
+    'inLanguage': locale === 'en' ? 'en-US' : 'tr-TR',
     'url': absoluteUrl(path, locale),
     ...(product.hero_screenshot ? { screenshot: absoluteAsset(product.hero_screenshot) } : {}),
     'publisher': { '@id': ORG_ID },
@@ -78,7 +79,7 @@ const jsonLd = [
 const demoHref = '#demo'
 ---
 
-<BaseLayout locale={locale} title={title} description={description} path={path} locales={['tr']} ogTitle={product.hero_title} jsonLd={jsonLd}>
+<BaseLayout locale={locale} title={title} description={description} path={path} paths={paths} ogTitle={product.hero_title} jsonLd={jsonLd}>
   <!-- 1. Hero -->
   <section class="relative isolate overflow-hidden" aria-labelledby="product-title">
     <Amphitheatre />
@@ -149,7 +150,7 @@ const demoHref = '#demo'
 ? (
           <ul role="list" class="screens-strip mt-16 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-6" tabindex="0" aria-label={s('a11y.screens_strip')}>
             {product.screenshots.map((src, i) => (
-              <li class="reveal w-[220px] shrink-0 snap-start sm:w-[240px]" style={stagger(i, 60)}><PhoneShot src={src} /></li>
+              <li class="reveal w-[220px] shrink-0 snap-start sm:w-[240px]" style={stagger(i, 60)}><PhoneShot src={src} alt={locale === 'en' ? s('product.screenshot_alt', { name: product.name, n: i + 1 }) : undefined} /></li>
             ))}
           </ul>
         )
@@ -195,7 +196,7 @@ const demoHref = '#demo'
         <h2 id="plans-title" class="section-title">{s('product.plans.title')}</h2>
         <p class="mt-3 max-w-2xl text-body-text">{s('product.plans.note')}</p>
         <ul role="list" class="mt-12 grid gap-6 md:grid-cols-3">
-          {priced.map(plan => <li><PlanCard plan={plan} ctaHref={demoHref} /></li>)}
+          {priced.map(plan => <li><PlanCard plan={plan} ctaHref={demoHref} locale={locale} /></li>)}
         </ul>
         {extras.length > 0 && (
           <ul class="mt-6 space-y-2">
@@ -249,7 +250,7 @@ const demoHref = '#demo'
           <h2 id="demo-title" class="section-title">{formTitle}</h2>
           <p class="mt-4 text-lg text-body-text">{formText}</p>
           <p class="mt-6 text-body-text">{s('common.call_us')} <a class="link" href={COMPANY.phoneHref}>{COMPANY.phone}</a></p>
-          <p class="mt-6"><a href={localePath('/urunler', locale)} class="link">{s('product.other_products')}</a></p>
+          <p class="mt-6"><a href={localePath(ROUTES.products[locale], locale)} class="link">{s('product.other_products')}</a></p>
         </div>
         <LeadForm
           locale={locale}

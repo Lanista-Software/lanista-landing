@@ -2,7 +2,7 @@
 import type { FieldName, LeadType } from '~/lib/forms'
 import type { Locale } from '~/lib/i18n'
 import { FIELD_RULES } from '~/lib/forms'
-import { localePath, t } from '~/lib/i18n'
+import { localePath, ROUTES, t } from '~/lib/i18n'
 
 interface Props {
   locale: Locale
@@ -38,7 +38,7 @@ const label = (f: FieldName) => s(`form.label.${f}`)
 const [consentBefore, consentAfter] = s('form.consent').split('{link}')
 const isRequired = (f: FieldName) => (required ? required.includes(f) : FIELD_RULES[f].required)
 const fid = (f: string) => `${idPrefix}-${f}`
-const kvkkHref = localePath('/yasal/kvkk', 'tr')
+const kvkkHref = localePath(`${ROUTES.legal[locale]}/kvkk`, locale)
 const autocomplete: Record<FieldName, string> = { name: 'name', email: 'email', phone: 'tel', business: 'organization', subject: 'off', message: 'off' }
 // Client-side copy of the rules/messages, so the script stays framework-free.
 const config = {
@@ -109,7 +109,7 @@ const config = {
     <div class="flex items-start gap-3">
       <input id={fid('consent')} name="consent" type="checkbox" class="checkbox" required aria-describedby={`${fid('consent')}-error`} />
       <label for={fid('consent')} class="text-sm text-body-text">
-        {consentBefore}<a href={kvkkHref} class="link" target="_blank" rel="noopener" hreflang="tr">{s('form.consent_link')}</a>{consentAfter}
+        {consentBefore}<a href={kvkkHref} class="link" target="_blank" rel="noopener">{s('form.consent_link')}</a>{consentAfter}
         <span aria-hidden="true" class="text-danger-700"> *</span>
       </label>
     </div>
