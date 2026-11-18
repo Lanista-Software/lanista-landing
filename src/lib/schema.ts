@@ -65,7 +65,7 @@ export function webPageSchema(locale: Locale, path: string, name: string, descri
   }
 }
 
-export function serviceSchema(locale: Locale, s: { title: string, description?: string, path?: string }) {
+export function serviceSchema(locale: Locale, s: { title: string, description?: string, path?: string, areaServed?: string[] }) {
   return {
     '@type': 'Service',
     'name': s.title,
@@ -73,7 +73,30 @@ export function serviceSchema(locale: Locale, s: { title: string, description?: 
     ...(s.path ? { url: absoluteUrl(s.path, locale) } : {}),
     'serviceType': s.title,
     'provider': { '@id': ORG_ID },
-    'areaServed': 'Worldwide',
+    'areaServed': s.areaServed?.length ? s.areaServed.map(name => ({ '@type': 'Place', name })) : 'Worldwide',
+  }
+}
+
+/** The real office (Van Teknokent). Only for the page of the city we are in. */
+export function localBusinessSchema(locale: Locale, p: { name: string, description?: string, path: string, areaServed?: string[] }) {
+  return {
+    '@type': 'ProfessionalService',
+    '@id': `${absoluteUrl(p.path, locale)}#localbusiness`,
+    'name': `${SITE_NAME} — ${p.name}`,
+    'description': p.description,
+    'url': absoluteUrl(p.path, locale),
+    'image': `${SITE_URL}/logo.svg`,
+    'telephone': COMPANY.phoneSchema,
+    'email': COMPANY.email,
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': COMPANY.address.street,
+      'addressLocality': COMPANY.address.district,
+      'addressRegion': COMPANY.address.city,
+      'addressCountry': COMPANY.address.countryCode,
+    },
+    ...(p.areaServed?.length ? { areaServed: p.areaServed.map(name => ({ '@type': 'City', name })) } : {}),
+    'parentOrganization': { '@id': ORG_ID },
   }
 }
 

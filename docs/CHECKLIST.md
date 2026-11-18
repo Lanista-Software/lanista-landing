@@ -16,7 +16,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Ana sayfa ve ürün sayfalarında parallax + ölçülü, etkileyici animasyonlar (stil rehberi korunarak zenginleştirilsin)
 - [x] Ürünler (brief): katalog, Hesap Takip, Nalbur Takip, Kasa Takip (Tosthane)
 - [x] Yasal metinler iyzico için uygun ve eksiksiz; iyzico logo bandı
-- [ ] Yerel SEO sayfaları: Van öne çıkacak; Doğu Anadolu ve İç Anadolu illeri için "özel yazılım geliştirme" sayfaları, Google anahtar kelime araştırmasına göre
+- [x] Yerel SEO sayfaları: Van öne çıkacak; Doğu Anadolu ve İç Anadolu illeri için "özel yazılım geliştirme" sayfaları, Google anahtar kelime araştırmasına göre
 - [x] Fiyatlar, taksit, teslim süresi → proje sonunda konuşulacak
 - [x] Hesap Takip fiyatı: ikisi birden, öne çıkan Yıllık Paket 15.000 TL + KDV; Kurulum + 1 yıl 25.000 + 7.500/yıl; "kendiliğinden yenilenmez" notu (rakip fiyat tablosu `docs/kararlar-arama-verisi.md`)
 - [x] Ana sayfa sadeleştirme uygulandı (Fable kararı)
@@ -34,7 +34,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Sitemap doğrulandı: 64 URL, hepsi 200, canonical = loc, noindex yok, hreflang karşılıklı → indexlemeye hazır
 - [x] Contentrain temizliği: SEO/sosyal medya araç kayıtları (6) + 2 kategori, kullanılmayan 3 bölüm kaydı, 15 sözlük anahtarı (kullanılmayan + tekrarlı) silindi; kullanılmayan Banner/Arcade bileşenleri kaldırıldı
 - [x] **SEO-GEO**: `/llms.txt` + `/llms-full.txt` (Contentrain'den, TR+EN özet), robots'ta AI tarayıcılarına açık izin (`/odeme/` kapalı), Organization + WebSite her sayfada (knowsAbout, areaServed), og:locale:alternate, 64 sayfada JSON-LD doğrulandı
-- [ ] SEO-GEO devam: Van sayfasında LocalBusiness, İngilizce llms bölümü (EN içerik gelince)
+- [ ] SEO-GEO devam: ~~Van sayfasında LocalBusiness~~ (yapıldı), İngilizce llms bölümü (EN içerik gelince)
 - [x] **İngilizce eksiksiz**: `products`, `plans`, `legal-pages` iki dilli (Fable çevirisi); `/en/products/` (+3 ürün), `/en/legal/` (7 metin, "Türkçe metin geçerlidir" notu), `/en/about/`; dil değiştirici her sayfada karşılığa gidiyor; sitemap 76 URL, tüm çiftler karşılıklı; EN sayfalarda Türkçe alt metin yok
 - [ ] Contentrain'e geri bildirim: i18n'e geçişte eski `data.json` / düz `.md` dosyaları geride kalıyor; doküman boolean'ları tırnaklı yazılıyor (geçici çözüm: select 'true'/'false')
 - [ ] Ödeme onay sayfası yalnız Türkçe (`/odeme/`) — İngilizce ürün sayfasında 'Satın al' Türkçe sözleşme akışına gider (bilinçli)
@@ -122,10 +122,10 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 
 ## 6. Yerel SEO sayfaları (Van öncelikli)
 - [x] Anahtar kelime araştırması (Fable, Google önerileri): `docs/kararlar-arama-verisi.md` §C — slug'lar, title/meta, doorway kuralları
-- [ ] Van sayfası: Teknokent ofisi, yerel bağlam, referanslar, LocalBusiness JSON-LD
-- [ ] Doğu Anadolu ve İç Anadolu bölge sayfaları
-- [ ] Yalnız talebi olan birkaç il için özgün içerikli sayfalar (doorway/kopya sayfa riskinden kaçınılacak)
-- [ ] İç bağlantılar, sitemap, hreflang yok (yalnız TR)
+- [x] Van sayfası `/van-yazilim/` (EN `/en/software-company-van/`): Teknokent ofisi, sahadaki Hesap Takip kurulumu (anonim), Van TSO, SSS, LocalBusiness (ProfessionalService) JSON-LD
+- [x] Doğu Anadolu `/dogu-anadolu-yazilim/` ve İç Anadolu `/ic-anadolu-yazilim/` (Ankara bölüm olarak), Service + areaServed; içerik `local-pages` modelinde, TR + EN
+- [ ] İl sayfaları (Konya, Kayseri, Erzurum): yalnız gerçek yerel müşteri/senaryo olunca açılacak (doorway kuralı) — şu an bölge sayfasında bölüm
+- [x] İç bağlantılar (footer Kurumsal, sayfalar arası "Diğer bölgeler"), sitemap + hreflang (TR↔EN), OG kartları, llms.txt
 
 ## 7. iyzico ve yasal (bkz. `docs/iyzico-gereksinimleri.md`)
 - [ ] KEP adresi (iyzico şartı, (b) maddesi) → şu an yok, boş kalacak; başvuru öncesi tekrar

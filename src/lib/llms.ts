@@ -4,7 +4,7 @@
  */
 import type { Locale } from './i18n'
 import { COMPANY } from './company'
-import { getHome, getPlans, getProducts, getServicePages, getWorks } from './content'
+import { getHome, getLocalPages, getPlans, getProducts, getServicePages, getWorks } from './content'
 import { ROUTES, t } from './i18n'
 import { getLegalPages, legalPath, renderLegal } from './legal'
 import { tl } from './money'
@@ -53,6 +53,7 @@ export function buildLlmsTxt(): string {
     `## ${s('llms.company')}`,
     companyBlock('tr'),
     line(s('nav.contact'), url(ROUTES.contact.tr)),
+    ...getLocalPages('tr').map(p => line(p.title, url(`/${p.slug}`), p.meta_description)),
     ...legal.filter(p => p.group === 'corporate').map(p => line(p.title, url(legalPath(p)))),
     '',
     `## ${s('llms.legal')}`,

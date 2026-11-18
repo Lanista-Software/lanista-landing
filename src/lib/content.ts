@@ -105,3 +105,18 @@ export function getTeam(locale: Locale) {
 export function getOnboardingSteps(locale: Locale) {
   return query('onboarding-steps').locale(locale).sort('order', 'asc').all()
 }
+
+/** Local / regional SEO pages (/van-yazilim/, /en/software-company-van/). */
+export function getLocalPages(locale: Locale = 'tr') {
+  return query('local-pages').locale(locale).sort('order', 'asc').all()
+}
+
+export function localPagePath(slug: string) {
+  return `/${slug}`
+}
+
+/** TR + EN path of the same local page (entries share the ID across locales). */
+export function localPagePaths(id: string): Record<Locale, string> {
+  const find = (l: Locale) => getLocalPages(l).find(p => p.id === id)
+  return { tr: localPagePath(find('tr')!.slug), en: localPagePath(find('en')!.slug) }
+}

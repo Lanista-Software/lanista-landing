@@ -1,12 +1,20 @@
 ---
-/** Corporate pages from Contentrain (/hakkimizda/, /en/about/). Static routes take precedence. */
+/**
+ * Root-level pages from Contentrain: corporate pages (/hakkimizda/, /en/about/)
+ * and local SEO pages (/van-yazilim/, /en/software-company-van/).
+ * Static routes take precedence.
+ */
+import { getLocalPages, localPagePath } from '~/lib/content'
 import { getLegalPages, legalPath } from '~/lib/legal'
 import LegalPage from '~/views/LegalPage.astro'
+import LocalPage from '~/views/LocalPage.astro'
 
 export function getStaticPaths() {
-  return getLegalPages('tr').filter(p => p.group === 'corporate').map(page => ({ params: { corporate: legalPath(page, 'tr').slice(1) }, props: { page } }))
+  const corporate = getLegalPages('tr').filter(p => p.group === 'corporate').map(page => ({ params: { corporate: legalPath(page, 'tr').slice(1) }, props: { page, local: undefined } }))
+  const local = getLocalPages('tr').map(page => ({ params: { corporate: localPagePath(page.slug).slice(1) }, props: { page: undefined, local: page } }))
+  return [...corporate, ...local]
 }
-const { page } = Astro.props
+const { page, local } = Astro.props
 ---
 
-<LegalPage page={page} locale="tr" />
+{local ? <LocalPage page={local} locale="tr" /> : <LegalPage page={page!} locale="tr" />}

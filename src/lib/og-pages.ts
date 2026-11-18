@@ -3,7 +3,7 @@
  * path segment ('' = TR home, 'en/works/x' …), matching ogImagePath() in seo.ts.
  */
 import type { Locale } from './i18n'
-import { getHome, getProducts, getServicePages, getWorks, productPath } from './content'
+import { getHome, getLocalPages, getProducts, getServicePages, getWorks, productPath } from './content'
 import { localePath, LOCALES, ROUTES, t } from './i18n'
 import { clampDescription, SITE_NAME } from './seo'
 
@@ -41,6 +41,9 @@ export function getOgCards(): Record<string, OgCard> {
         title: p.title,
         description: clampDescription(p.hero_description, 130),
       }
+    }
+    for (const p of getLocalPages(locale)) {
+      cards[key(`/${p.slug}`, locale)] = { label: u('og.local'), title: p.title, description: clampDescription(p.meta_description || p.hero_text, 130) }
     }
     cards[key(ROUTES.services[locale], locale)] = { label: u('og.service'), title: u('services.page_title'), description: clampDescription(u('services.page_description'), 130) }
     cards[key(ROUTES.process[locale], locale)] = { label: SITE_NAME, title: u('process.page_title'), description: clampDescription(u('process.page_description'), 130) }

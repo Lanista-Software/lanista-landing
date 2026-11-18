@@ -3,7 +3,7 @@ import type { Locale } from '~/lib/i18n'
 import Icon from '~/components/Icon.astro'
 import Img from '~/components/Img.astro'
 import { COMPANY } from '~/lib/company'
-import { getLayout, getProducts, getServicePages, productPath } from '~/lib/content'
+import { getLayout, getLocalPages, getProducts, getServicePages, localPagePath, productPath } from '~/lib/content'
 import { localePath, routePath, t } from '~/lib/i18n'
 import { getLegalPages, legalPath } from '~/lib/legal'
 import Logo from './Logo.astro'
@@ -22,6 +22,7 @@ const legalDocs = getLegalPages(locale)
 const corporate = [
   ...legalDocs.filter(p => p.group === 'corporate' && p.show_in_footer).map(p => ({ label: p.title, href: localePath(legalPath(p, locale), locale) })),
   { label: s('nav.works'), href: localePath('/works', locale) },
+  ...getLocalPages(locale).map(p => ({ label: p.title, href: localePath(localPagePath(p.slug), locale) })),
   { label: s('nav.contact'), href: routePath('contact', locale) },
 ]
 const legal = legalDocs.filter(p => p.group === 'legal' && p.show_in_footer).map(p => ({ label: p.title, href: localePath(legalPath(p, locale), locale) }))

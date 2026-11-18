@@ -1,4 +1,5 @@
 // @ts-check
+import { readFileSync } from 'node:fs'
 import sitemap from '@astrojs/sitemap'
 import { defineConfig } from 'astro/config'
 
@@ -13,7 +14,16 @@ const LOCALIZED_PATTERNS = [
   ['/urunler/*/', '/en/products/*/'],
   ['/yasal/*/', '/en/legal/*/'],
   ['/hakkimizda/', '/en/about/'],
+  ...localPagePairs(),
 ]
+/** Local SEO pages have a different slug per language; pair them by entry ID (read-only). */
+function localPagePairs() {
+  /** @param {string} l @returns {Record<string, { slug: string }>} */
+  const read = l => JSON.parse(readFileSync(new URL(`./.contentrain/content/marketing/local-pages/${l}.json`, import.meta.url), 'utf8'))
+  const tr = read('tr')
+  const en = read('en')
+  return Object.keys(tr).filter(id => en[id]).map(id => [`/${tr[id].slug}/`, `/en/${en[id].slug}/`])
+}
 /** @param {string} path @returns {{ lang: 'tr' | 'en', path: string } | null} */
 function counterpart(path) {
   for (const [tr, en] of LOCALIZED_PATTERNS) {
