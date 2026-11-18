@@ -1,0 +1,35 @@
+---
+/**
+ * Background: concentric amphitheatre tiers and a ground line, drawn like an
+ * architectural plate (Ludus style). Purely decorative and never interactive.
+ * Each ring group is a separate layer so the parallax script can move them.
+ */
+interface Props {
+  class?: string
+  /** Line colour token: light (on white) or inverse (on dark). */
+  tone?: 'light' | 'inverse'
+}
+const { class: className, tone = 'light' } = Astro.props
+const stroke = tone === 'light' ? '#9ABFE5' : '#FFFFFF'
+const rings = [180, 260, 340, 420, 500, 580, 660]
+---
+
+<div class:list={['decor pointer-events-none absolute inset-0 -z-10 overflow-hidden', className]} aria-hidden="true">
+  <svg class="absolute left-1/2 top-0 h-full w-[1600px] max-w-none -translate-x-1/2" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" fill="none">
+    <g data-parallax="0.12" stroke={stroke} stroke-opacity={tone === 'light' ? 0.32 : 0.12} stroke-width="1">
+      {rings.map((r, i) => (
+        <path d={`M${800 - r} 900 A${r} ${r} 0 0 1 ${800 + r} 900`} stroke-dasharray={i % 2 ? '2 10' : undefined} />
+      ))}
+    </g>
+    <g data-parallax="0.06" stroke={stroke} stroke-opacity={tone === 'light' ? 0.2 : 0.1} stroke-width="1">
+      {Array.from({ length: 13 }, (_, i) => {
+        const a = Math.PI * (i + 1) / 14
+        const x1 = 800 - Math.cos(a) * 180
+        const y1 = 900 - Math.sin(a) * 180
+        const x2 = 800 - Math.cos(a) * 660
+        const y2 = 900 - Math.sin(a) * 660
+        return <line x1={x1.toFixed(1)} y1={y1.toFixed(1)} x2={x2.toFixed(1)} y2={y2.toFixed(1)} />
+      })}
+    </g>
+  </svg>
+</div>

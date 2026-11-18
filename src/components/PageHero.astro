@@ -1,9 +1,12 @@
 ---
+import Amphitheatre from '~/components/decor/Amphitheatre.astro'
+
 interface Props { class?: string }
 const { class: className } = Astro.props
 ---
 
-<section class:list={['page-hero relative overflow-hidden bg-gradient-to-b from-primary-50 to-white', className]}>
+<section class:list={['page-hero relative isolate overflow-hidden bg-gradient-to-b from-primary-50 to-white', className]}>
+  <Amphitheatre class="opacity-60" />
   <div class="container-x pb-16 pt-16 lg:pb-24 lg:pt-24">
     <div class="max-w-4xl">
       <slot />

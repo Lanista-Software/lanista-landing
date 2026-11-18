@@ -1,0 +1,10 @@
+---
+/** Greek key (meander) rule — a quiet section divider. Decorative. */
+interface Props { class?: string }
+const { class: className } = Astro.props
+// One 24×12 key unit, repeated as a CSS background so it spans any width crisply.
+const unit = `<svg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'><path d='M0 11.5H5.5V2.5H14.5V8.5H9.5V5.5' fill='none' stroke='%239ABFE5' stroke-width='1'/><path d='M9.5 5.5V8.5H14.5V2.5H5.5V11.5H24' fill='none' stroke='%239ABFE5' stroke-width='1'/></svg>`
+const bg = `url("data:image/svg+xml,${unit.replace(/"/g, '\'').replace(/</g, '%3C').replace(/>/g, '%3E').replace(/#/g, '%23')}")`
+---
+
+<div class:list={['h-3 w-full opacity-80', className]} style={`background-image:${bg};background-repeat:repeat-x;background-position:center`} aria-hidden="true"></div>

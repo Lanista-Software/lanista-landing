@@ -54,7 +54,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Süreç kartları (6) — ikon rozetleri yerine illüstrasyon (`processes.illustration`, Studio CDN, `ProcessCard`)
 - [ ] Hizmet görselleri bu stile uyumlu hale getirilecek
 - [ ] Hero / banner / bölüm görselleri
-- [ ] Site geneli arka plan deseni (menderes bordür, sütun yivi, kemer konturu) — tek bileşen, `pointer-events:none`, düşük kontrast
+- [x] Site geneli arka plan deseni: `decor/Amphitheatre` (hero + sayfa başlıkları), `decor/Arcade` (koyu banner), `decor/Meander` (ayırıcı) — satır içi SVG, `aria-hidden`, `pointer-events:none`, parallax katmanları hazır
 - [ ] Ürün, yerel SEO, yasal ve 404 sayfaları için aynı stilde görseller
 - [ ] SVG'ler Studio CDN'de; animasyonlu olanlar satır içi bileşen
 

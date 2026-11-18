@@ -1,5 +1,5 @@
 ---
-import { SITE_MEDIA } from '~/lib/site-media'
+import Arcade from '~/components/decor/Arcade.astro'
 
 interface Props {
   id: string
@@ -9,11 +9,11 @@ interface Props {
   buttonHref: string
 }
 const { id, title, description, buttonLabel, buttonHref } = Astro.props
-const bannerBg = `url('${SITE_MEDIA.bannerBackground}')`
 ---
 
-<div class="w-full rounded-3xl bg-custom-gradient">
-  <div class="banner-bg size-full space-y-6 rounded-3xl p-12 md:flex md:items-center md:justify-evenly md:gap-6 md:space-y-0 md:p-24 2xl:p-32">
+<div class="relative isolate w-full overflow-hidden rounded-3xl bg-custom-gradient">
+  <Arcade />
+  <div class="relative size-full space-y-6 rounded-3xl p-12 md:flex md:items-center md:justify-evenly md:gap-6 md:space-y-0 md:p-24 2xl:p-32">
     <div class="w-full md:w-1/2">
       <h2 id={id} class="font-space text-4xl font-semibold text-white">{title}</h2>
       <p class="mt-2 font-inter text-lg font-normal text-secondary-200">{description}</p>
@@ -26,11 +26,3 @@ const bannerBg = `url('${SITE_MEDIA.bannerBackground}')`
     </div>
   </div>
 </div>
-
-<style define:vars={{ bannerBg }}>
-  .banner-bg {
-    background-image: var(--bannerBg);
-    background-size: cover;
-    background-position: center;
-  }
-</style>
