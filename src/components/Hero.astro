@@ -1,43 +1,31 @@
 ---
-import Img from '~/components/Img.astro'
+import HeroVisual from '~/components/HeroVisual.astro'
 
 interface Props {
   hero: { title?: string, subtitle?: string, description?: string, buttontext?: string }
   buttonHref: string
-  references: { id: string, logo: string, name: string }[]
+  secondary?: { label: string, href: string }
+  visualLabel: string
 }
-const { hero, buttonHref, references } = Astro.props
+const { hero, buttonHref, secondary, visualLabel } = Astro.props
 ---
 
 {hero.title && (
-  <div class="hero-section relative flex max-w-screen-lg flex-col justify-center text-center">
-    {hero.subtitle && <p><span class="tag tag-secondary tag-lg">{hero.subtitle}</span></p>}
-    <h1 class="mt-8 font-space text-4xl font-semibold text-heading-text lg:text-5xl xl:text-6xl">{hero.title}</h1>
-    <p class="mt-6 text-lg font-normal text-body-text md:text-xl">{hero.description}</p>
-    <div class="flex items-center justify-center pt-8">
-      <a href={buttonHref} class="btn btn-danger" data-track="button_clicked" data-track-button_name="hero_button">
-        {hero.buttontext}
-        <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
-      </a>
+  <div class="grid w-full items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-8">
+    <div class="hero-copy max-w-xl text-center lg:text-left">
+      {hero.subtitle && <p><span class="tag tag-secondary tag-lg">{hero.subtitle}</span></p>}
+      <h1 class="mt-6 font-space text-4xl font-semibold leading-[1.08] text-heading-text md:text-5xl xl:text-[3.5rem]">{hero.title}</h1>
+      <p class="mt-6 text-lg font-normal text-body-text md:text-xl">{hero.description}</p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+        <a href={buttonHref} class="btn btn-danger btn-lg" data-track="button_clicked" data-track-button_name="hero_primary">
+          {hero.buttontext}
+          <i class="ri-arrow-right-line" aria-hidden="true"></i>
+        </a>
+        {secondary && (
+          <a href={secondary.href} class="btn btn-outline btn-lg" data-track="button_clicked" data-track-button_name="hero_secondary">{secondary.label}</a>
+        )}
+      </div>
     </div>
-    <ul role="list" class="mx-auto flex w-full max-w-screen-md flex-wrap items-center justify-evenly gap-4 gap-y-8 pt-14 lg:pt-20">
-      {references.map(r => (
-        <li><Img src={r.logo} alt={r.name} class="h-7 w-auto" height={28} width={120} /></li>
-      ))}
-    </ul>
+    <HeroVisual label={visualLabel} />
   </div>
 )}
-
-<style>
-  .hero-section {
-    height: calc(100vh - 15rem);
-    max-height: 1000px;
-  }
-
-  @media (min-width: 1280px) {
-    .hero-section {
-      height: 100%;
-      padding: 4rem 0;
-    }
-  }
-</style>

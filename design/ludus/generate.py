@@ -213,7 +213,69 @@ def support():
     return svg('Destek ve bakım: üzerinde meşale yanan sütun, kesintisiz çalışma grafiği ve dişli', b)
 
 
-SETS = {'process-research': research, 'process-design': design, 'process-build': build,
+# ---------- Products ----------
+def product_ledger():
+    """Hesap Takip: wax tablet ledger on a plinth, overdue rows, a coin stack."""
+    b = ground() + plinth() + mosaic()
+    b += arch()
+    b += f'<rect x="194" y="150" width="92" height="118" rx="5" fill="#fff" {S}/>'
+    rows = [(RED, 1), (HATCH, .9), (HATCH, .9), (BLUE, .8), (BLUE, .8)]
+    for i, (c, o) in enumerate(rows):
+        y = 166 + i * 19
+        b += f'<rect x="204" y="{y}" width="8" height="8" rx="2" fill="{c if c != RED else "#fff"}" stroke="{INK if c == RED else c}" stroke-width="1.25"/>'
+        b += f'<line x1="218" y1="{y + 4}" x2="{258 - (i % 2) * 10}" y2="{y + 4}" {S1}/><line x1="266" y1="{y + 4}" x2="276" y2="{y + 4}" stroke="{BLUE}" stroke-width="2" stroke-linecap="round"/>'
+    # coin stack (right, asymmetric)
+    for i in range(4):
+        y = 300 - i * 9
+        b += f'<ellipse cx="364" cy="{y}" rx="22" ry="6" fill="{STONE}" {S}/>'
+    b += f'<ellipse cx="364" cy="264" rx="22" ry="6" fill="{SHADE}" {S}/>'
+    return svg('Hesap Takip: kemer altında vade satırları olan hesap tableti ve madeni para yığını', b)
+
+
+def product_hardware():
+    """Nalbur Takip: building blocks being stacked, trowel, plumb line, site ledger."""
+    b = ground() + plinth() + mosaic()
+    # wall of blocks
+    for r in range(4):
+        for c in range(4 - (r % 2)):
+            x = 150 + c * 44 + (22 if r % 2 else 0)
+            y = 260 - r * 26
+            b += f'<rect x="{x}" y="{y}" width="40" height="22" fill="{STONE}" {S}/>'
+    b += f'<rect x="304" y="208" width="8" height="74" fill="url(#h)"/>'
+    # keystone-like red top block being placed (single red)
+    b += f'<rect x="216" y="142" width="40" height="22" fill="{RED}" {S}/><line x1="236" y1="90" x2="236" y2="142" {S1}/>'
+    # plumb line + bob on the right
+    b += f'<line x1="344" y1="96" x2="344" y2="222" {S1}/><path d="M336 222 h16 l-8 16 z" fill="{SHADE}" {S}/>'
+    b += f'<line x1="330" y1="96" x2="360" y2="96" {S}/>'
+    # trowel left
+    b += f'<path d="M84 270 L120 250 L128 266 Z" fill="{STONE}" {S}/><line x1="124" y1="258" x2="140" y2="246" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>'
+    # site ledger slip
+    b += f'<rect x="380" y="240" width="54" height="42" rx="3" fill="#fff" {S}/><line x1="388" y1="254" x2="424" y2="254" stroke="{BLUE}" stroke-width="2" stroke-linecap="round"/><line x1="388" y1="266" x2="414" y2="266" {S1}/>'
+    return svg('Nalbur Takip: üst üste dizilen yapı taşları, çekül, mala ve şantiye fişi', b)
+
+
+def product_till():
+    """Kasa Takip: Roman strongbox (arca) with a day ledger and channel bars."""
+    b = ground() + plinth() + mosaic()
+    b += f'<rect x="170" y="190" width="140" height="92" rx="4" fill="{STONE}" {S}/>'
+    b += f'<path d="M170 190 Q240 150 310 190" fill="{SHADE}" {S}/>'
+    b += f'<rect x="300" y="196" width="9" height="86" fill="url(#h)"/>'
+    for x in (186, 280):
+        b += f'<line x1="{x}" y1="196" x2="{x}" y2="276" {S1}/>'
+    b += f'<circle cx="240" cy="226" r="11" fill="{RED}" {S}/><rect x="237" y="226" width="6" height="14" rx="2" fill="{INK}"/>'
+    # day-sheet above with channel bars
+    b += f'<rect x="196" y="72" width="88" height="70" rx="4" fill="#fff" {S}/>'
+    for i, w in enumerate((60, 42, 30, 18)):
+        b += f'<rect x="206" y="{84 + i * 13}" width="{w}" height="7" rx="2" fill="{BLUE}" opacity="{1 - i * .18:.2f}"/>'
+    b += f'<line x1="240" y1="142" x2="240" y2="160" {S1}/>'
+    # coins spilling right
+    for i, (x, y) in enumerate(((352, 300), (378, 302), (366, 290))):
+        b += f'<ellipse cx="{x}" cy="{y}" rx="14" ry="5" fill="{STONE}" {S}/>'
+    return svg('Kasa Takip: kanal kanal gelir çubuklu gün sayfası ve Roma kasası', b)
+
+
+SETS = {'product-ledger': product_ledger, 'product-hardware': product_hardware, 'product-till': product_till,
+        'process-research': research, 'process-design': design, 'process-build': build,
         'process-test': test, 'process-deploy': deploy, 'process-support': support}
 for name, fn in SETS.items():
     open(os.path.join(OUT, f'{name}.svg'), 'w').write(fn())

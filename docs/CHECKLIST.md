@@ -59,10 +59,11 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] SVG'ler Studio CDN'de; animasyonlu olanlar satır içi bileşen
 
 ## 3. Ana sayfa yeniden konumlandırma (brief §1, §2, §8)
-- [ ] Hero: ilk öncelik ürünler (Hesap Takip öne, diğerleri yanında); ajans hizmetleri ikinci blok
-- [ ] Ürünler bloğu (ana sayfada)
-- [ ] Hizmetler bloğu korunacak, "danışmanlık" çağrışımı azaltılacak (iyzico riski)
-- [ ] Meta başlık/açıklama (≤60 / ≤155 karakter), OG kartı
+- [x] Hero: ilk öncelik ürünler — "Defteri bırakın…" + Hesap Takip/Demo CTA + Ludus kemerinde vade takibi ekranı
+- [x] Ürünler bloğu (3 kart, Ludus ürün illüstrasyonları) + "Nasıl başlarsınız" (3 adım + 4 güven maddesi) + köprü bloğu
+- [x] Hizmetler bloğu korundu; "rehberlik/dış kaynak" ifadeleri çıkarıldı; banner metni "Yazılımınızı birlikte yapalım"
+- [ ] Karar bekliyor: ana sayfada hizmetler 11→6, teknolojiler sekmesi taşınsın mı, banner kalksın mı (Fable önerisi)
+- [x] TR meta başlık/açıklama güncellendi (Fable önerisi uyarlandı)
 - [ ] Ses ve dil kuralları (sade dil, yasaklı kelimeler yok)
 
 ## 4. Animasyon ve parallax
@@ -72,13 +73,15 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] `prefers-reduced-motion` ile tamamen kapanacak; CLS yok; 60 fps
 
 ## 5. Ürünler
-- [ ] Contentrain modelleri: `products`, `plans`, `legal-pages` (+ şirket bilgisi)
+- [x] Contentrain modelleri: `products` (3 ürün, yayında), `plans` (Hesap Takip: 3 paket, fiyatsız)
+- [ ] `legal-pages` modeli (+ şirket bilgisi)
 - [ ] `/urunler/` katalog
 - [ ] `/urunler/hesap-takip/` (yayında)
 - [ ] `/urunler/nalbur-takip/`, `/urunler/kasa-takip/` (yakında + bekleme listesi)
 - [ ] Demo / teklif / bekleme listesi formları (`leads`, type + product)
 - [ ] Ekran görüntüleri (demo ortamı, telefon çerçevesi) + stok fotoğraflar (sanayi dükkânı, nalbur, büfe)
-- [ ] Header ve footer'a "Ürünler"
+- [x] Header'a "Ürünler" (şimdilik /#urunler; ürün sayfaları gelince /urunler/)
+- [ ] Footer'a "Ürünler"
 - [ ] JSON-LD: SoftwareApplication + Offer, FAQPage, BreadcrumbList
 
 ## 6. Yerel SEO sayfaları (Van öncelikli)

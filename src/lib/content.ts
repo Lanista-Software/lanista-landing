@@ -80,3 +80,15 @@ export function getWork(locale: Locale, slug: string) {
 export function splitList(value?: string): string[] {
   return value ? value.split(',').map(t => t.trim()).filter(Boolean) : []
 }
+
+export function getProducts() {
+  return query('products').sort('order', 'asc').all()
+}
+
+export function getProduct(slug: string) {
+  return getProducts().find(p => p.slug === slug)
+}
+
+export function getPlans(productId: string) {
+  return query('plans').sort('order', 'asc').all().filter(p => (typeof p.product === 'string' ? p.product : p.product?.id) === productId)
+}

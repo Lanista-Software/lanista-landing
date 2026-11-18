@@ -1,0 +1,36 @@
+---
+import type { Products } from '#contentrain'
+import Img from '~/components/Img.astro'
+import { localePath } from '~/lib/i18n'
+
+interface Props { product: Products }
+const { product } = Astro.props
+const BADGE = {
+  live: { label: 'Yayında', cls: 'tag-success' },
+  pilot: { label: 'Pilotta', cls: 'tag-warning' },
+  soon: { label: 'Yakında', cls: 'tag-secondary' },
+} as const
+const badge = BADGE[product.status as keyof typeof BADGE]
+const href = localePath(`/urunler/${product.slug}`, 'tr')
+const live = product.status === 'live'
+---
+
+<article class="reveal product-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border-color bg-white transition-shadow hover:shadow-md">
+  {product.illustration && (
+    <div class="border-b border-border-color"><Img src={product.illustration} alt="" width={480} height={360} class="mx-auto aspect-[4/3] w-full max-w-[320px]" /></div>
+  )}
+  <div class="flex flex-1 flex-col p-6">
+    <div class="flex items-center justify-between gap-3">
+      <h3 class="font-space text-2xl font-bold text-heading-text">
+        <a href={href} class="after:absolute after:inset-0 focus-visible:outline-none">{product.name}</a>
+      </h3>
+      <span class:list={['tag tag-sm shrink-0', badge.cls]}>{badge.label}</span>
+    </div>
+    <p class="mt-1 text-sm font-medium text-label-text">{product.sector}</p>
+    <p class="mt-4 flex-1 text-body-text">{product.tagline}</p>
+    <p class="mt-6 inline-flex items-center gap-1 font-medium text-primary-600 group-hover:underline" aria-hidden="true">
+      {live ? 'İnceleyin' : 'Haber verin'}
+      <i class="ri-arrow-right-line transition-transform group-hover:translate-x-1"></i>
+    </p>
+  </div>
+</article>

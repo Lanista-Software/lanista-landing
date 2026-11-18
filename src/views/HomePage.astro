@@ -5,15 +5,17 @@ import AppCard from '~/components/AppCard.astro'
 import Banner from '~/components/Banner.astro'
 import Amphitheatre from '~/components/decor/Amphitheatre.astro'
 import Hero from '~/components/Hero.astro'
+import Img from '~/components/Img.astro'
 import LeadForm from '~/components/LeadForm.astro'
 import ProcessCard from '~/components/ProcessCard.astro'
+import ProductCard from '~/components/ProductCard.astro'
 import Section from '~/components/Section.astro'
 import SectionLayout from '~/components/SectionLayout.astro'
 import TabSection from '~/components/TabSection.astro'
 import TestimonialCard from '~/components/TestimonialCard.astro'
 import WorksCard from '~/components/WorksCard.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
-import { getHome, getLayout } from '~/lib/content'
+import { getHome, getLayout, getProduct, getProducts } from '~/lib/content'
 import { contentLink, localePath, t } from '~/lib/i18n'
 import { creativeWorkSchema, faqSchema, FOUNDERS, organizationSchema, ownAppsSchema, serviceSchema, webPageSchema, websiteSchema } from '~/lib/schema'
 import { clampDescription } from '~/lib/seo'
@@ -29,6 +31,15 @@ const link = (name: string) => contentLink(section(name).buttonlink, locale)
 
 const services = home.services.map(sv => ({ ...sv, link: sv.link ? localePath(sv.link, locale) : undefined }))
 const previewWorks = home.works.slice(0, 3)
+const tr = locale === 'tr'
+// Turkish home leads with the products; English stays agency-first (products are Turkey-only).
+const products = tr ? getProducts() : []
+const hesapTakip = tr ? getProduct('hesap-takip') : undefined
+const steps = [
+  { title: 'Demo isteyin', text: 'Formu doldurun; uygulamayı kendi işinize göre telefonda gösterelim.' },
+  { title: 'Kurulumu biz yapalım', text: 'Müşteri listenizi aktarır, ayarları dükkânınıza göre yaparız.' },
+  { title: 'Kullanmaya başlayın', text: 'Kurulum biter bitmez satış, tahsilat ve vade takibi telefonunuzda.' },
+]
 
 const meta = home.metaTags
 const title = meta.title || 'Lanista Software'
@@ -56,10 +67,76 @@ const jsonLd = [
 >
   <div id="home" data-spy-section class="hero-bg relative isolate overflow-hidden">
     <Amphitheatre />
-    <div class="container-x flex items-center justify-center pb-40 pt-28">
-      <Hero hero={section('hero')} buttonHref={link('hero')} references={home.references} />
+    <div class="container-x flex items-center justify-center pb-24 pt-16 lg:pb-32 lg:pt-20">
+      <Hero
+        hero={section('hero')}
+        buttonHref={link('hero')}
+        secondary={tr ? { label: 'Demo isteyin', href: localePath('/urunler/hesap-takip#demo', locale) } : undefined}
+        visualLabel={tr ? 'Hesap Takip uygulamasında vade takibi ekranı: vadesi geçen ve yaklaşan müşteriler' : 'Hesap Takip app: overdue and upcoming customer payments'}
+      />
     </div>
   </div>
+
+
+  {tr && (
+    <Section id="urunler" spy labelledby="products-title">
+      <SectionLayout id="products-title" title={section('products').title} description={section('products').description}>
+        <ul role="list" class="grid w-full grid-cols-1 gap-8 md:grid-cols-3">
+          {products.map((product, i) => <li style={stagger(i)}><ProductCard product={product} /></li>)}
+        </ul>
+        <a slot="button" href={contentLink(section('products').buttonlink, locale)} class="link inline-flex items-center gap-1 text-lg">
+          {section('products').buttontext}<i class="ri-arrow-right-line" aria-hidden="true"></i>
+        </a>
+      </SectionLayout>
+    </Section>
+  )}
+
+  {tr && (
+    <section id="baslarken" aria-labelledby="start-title" class="bg-secondary-50">
+      <div class="container-x py-24 lg:py-32">
+        <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <h2 id="start-title" class="section-title">{section('start').title}</h2>
+            <p class="mt-4 text-lg text-body-text">{section('start').description}</p>
+            <ol class="mt-10 space-y-8">
+              {steps.map((step, i) => (
+                <li class="reveal flex gap-5" style={stagger(i, 120)}>
+                  <span class="flex size-11 shrink-0 items-center justify-center rounded-full border-2 border-primary-800 bg-white font-space text-lg font-bold text-primary-800" aria-hidden="true">{i + 1}</span>
+                  <div>
+                    <h3 class="font-space text-xl font-bold text-heading-text">{step.title}</h3>
+                    <p class="mt-1 text-body-text">{step.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <a href={contentLink(section('start').buttonlink, locale)} class="btn btn-danger btn-lg mt-10">{section('start').buttontext}</a>
+          </div>
+          {hesapTakip?.trust?.length
+? (
+            <ul role="list" class="grid content-start gap-4 sm:grid-cols-2">
+              {hesapTakip.trust.map((item, i) => (
+                <li class="reveal rounded-2xl border border-border-color bg-white p-6" style={stagger(i)}>
+                  <h3 class="font-space text-lg font-bold text-heading-text">{item.title}</h3>
+                  <p class="mt-2 text-sm text-body-text">{item.text}</p>
+                </li>
+              ))}
+            </ul>
+          )
+: null}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section id="ekip" aria-labelledby="bridge-title">
+    <div class="container-x py-24 lg:py-28">
+      <div class="reveal mx-auto max-w-3xl text-center">
+        <h2 id="bridge-title" class="section-title text-balance">{section('bridge').title}</h2>
+        <p class="mt-5 text-lg text-body-text">{section('bridge').description}</p>
+        <a href={contentLink(section('bridge').buttonlink, locale)} class="btn btn-outline btn-lg mt-8">{section('bridge').buttontext}</a>
+      </div>
+    </div>
+  </section>
 
   <Section id="services" spy labelledby="services-title">
     <SectionLayout id="services-title" title={section('services').title} description={section('services').description}>
@@ -102,6 +179,9 @@ const jsonLd = [
 
   <Section id="works" spy labelledby="works-title">
     <SectionLayout id="works-title" title={section('works').title} description={section('works').description}>
+      <ul role="list" aria-label={tr ? 'Referanslarımız' : 'Our clients'} class="mb-16 flex w-full flex-wrap items-center justify-center gap-x-10 gap-y-8">
+        {home.references.map(r => <li><Img src={r.logo} alt={r.name} class="h-7 w-auto" height={28} width={120} /></li>)}
+      </ul>
       <ul role="list" class="grid w-full grid-cols-1 gap-8">
         {previewWorks.map((item, i) => <li style={stagger(i)}><WorksCard locale={locale} item={item} /></li>)}
       </ul>
