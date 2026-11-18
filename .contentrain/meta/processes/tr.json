@@ -1,32 +1,38 @@
 {
   "96c64803d441": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-11-18T12:53:11.869Z",
+    "updated_by": "contentrain-mcp"
   },
   "96c64803d442": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-11-18T12:53:11.869Z",
+    "updated_by": "contentrain-mcp"
   },
   "96c64803d443": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-11-18T12:53:11.869Z",
+    "updated_by": "contentrain-mcp"
   },
   "96c64803d444": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-11-18T12:53:11.869Z",
+    "updated_by": "contentrain-mcp"
   },
   "96c64803d445": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-11-18T12:53:11.869Z",
+    "updated_by": "contentrain-mcp"
   },
   "96c64803d446": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-11-18T12:53:11.869Z",
+    "updated_by": "contentrain-mcp"
   }
 }

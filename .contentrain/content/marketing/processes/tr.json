@@ -2,31 +2,37 @@
   "96c64803d441": {
     "description": "Proje hedeflerini ve müşteri ihtiyaçlarını belirleyerek, doğru ve ölçeklenebilir çözümleri geliştirmek için analizler yapıyoruz.",
     "icon": "ri-search-eye-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/3a00d94a-4ca4-49fa-acfd-09fb0bf89ba2.svg",
     "title": "Araştırma ve Analiz"
   },
   "96c64803d442": {
     "description": "Her projenin hedeflerine göre fikirleri uygun tasarımlara dönüştürüyor ve süreci müşteri ile birlikte iterasyonlarla ilerletiyoruz.",
     "icon": "ri-shape-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/97cd4dcb-3d8a-482a-97cc-855f0399910f.svg",
     "title": "Tasarım ve Prototipleme"
   },
   "96c64803d443": {
     "description": "Tasarımları tam işlevli ürünlere dönüştürüyor, temel özellikleri entegre ediyor ve sistemi test ortamına almak için hazır hale getiriyoruz.",
     "icon": "ri-terminal-box-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a52c4bd2-05ce-45f2-b55d-13f706cc022b.svg",
     "title": "Yazılım Geliştirme Aşaması"
   },
   "96c64803d444": {
     "description": "Olası sorunları tespit etmek için projeyi müşteriyle birlikte test ediyoruz ve ardından sorunları çözerek projeyi canlı ortama alıyoruz.",
     "icon": "ri-test-tube-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/33848a28-dd49-4679-8f55-4cbe8fa256aa.svg",
     "title": "Test Aşaması"
   },
   "96c64803d445": {
     "description": "Projeyi doğru yapıyla canlı ortama aktarıyoruz ve ürünün son kullanıcıya hazır olmasını sağlıyoruz.",
     "icon": "ri-rocket-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/13dc4268-36b4-4f39-8847-529db903c890.svg",
     "title": "Proje Dağıtımı"
   },
   "96c64803d446": {
     "description": "Projenin canlı ortama alınmasından sonra sorunsuz bir şekilde çalışmasını sağlamak için sürekli destek ve bakım sağlıyoruz.",
     "icon": "ri-brush-3-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/39e8dbc2-b0a9-4f96-8be8-f2113e680ae0.svg",
     "title": "Destek ve Bakım"
   }
 }

@@ -2,31 +2,37 @@
   "96c64803d441": {
     "description": "We identify project goals and client needs, conducting in-depth analysis to develop the right, scalable solutions.",
     "icon": "ri-search-eye-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/3a00d94a-4ca4-49fa-acfd-09fb0bf89ba2.svg",
     "title": "Research & Analysis"
   },
   "96c64803d442": {
     "description": "We turn ideas into great designs based on each project’s goals, refining them through client feedback and iterations.",
     "icon": "ri-shape-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/97cd4dcb-3d8a-482a-97cc-855f0399910f.svg",
     "title": "Design & Prototyping"
   },
   "96c64803d443": {
     "description": "We transform designs into fully functional software, integrating key features and making sure the system is ready for testing.",
     "icon": "ri-terminal-box-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a52c4bd2-05ce-45f2-b55d-13f706cc022b.svg",
     "title": "Development Stage"
   },
   "96c64803d444": {
     "description": "We test the project to identify and resolve any issues with the client. Once approved, we deploy it to the live environment.",
     "icon": "ri-test-tube-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/33848a28-dd49-4679-8f55-4cbe8fa256aa.svg",
     "title": "Testing Stage"
   },
   "96c64803d445": {
     "description": "We deploy the project to a live environment with the right structure, ensuring the product is ready for end users.",
     "icon": "ri-rocket-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/13dc4268-36b4-4f39-8847-529db903c890.svg",
     "title": "Project Deployment"
   },
   "96c64803d446": {
     "description": "After launch, we provide continuous support and maintenance to ensure the product runs smoothly.",
     "icon": "ri-brush-3-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/39e8dbc2-b0a9-4f96-8be8-f2113e680ae0.svg",
     "title": "Support & Maintenance"
   }
 }
