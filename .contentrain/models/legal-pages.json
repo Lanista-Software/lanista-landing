@@ -1,0 +1,50 @@
+{
+  "id": "legal-pages",
+  "name": "Legal & Corporate Pages",
+  "kind": "document",
+  "domain": "system",
+  "i18n": false,
+  "title_field": "title",
+  "description": "Turkish legal texts (mesafeli satış, ön bilgilendirme, teslimat-iade, KVKK, gizlilik, çerez, işlem rehberi) and corporate pages (hakkımızda). Markdown body. Tokens {{kep}}, {{kurulum_suresi}}, {{urun}}, {{paket}}, {{tutar}} are filled from Contentrain data at build. Final versions must be reviewed by a lawyer/accountant.",
+  "fields": {
+    "description": {
+      "max": 160,
+      "order": 2,
+      "required": true,
+      "type": "text"
+    },
+    "group": {
+      "description": "legal → /yasal/{slug}/, corporate → /{slug}/",
+      "options": [
+        "legal",
+        "corporate"
+      ],
+      "order": 3,
+      "required": true,
+      "type": "select"
+    },
+    "last_updated": {
+      "order": 6,
+      "type": "date"
+    },
+    "order": {
+      "order": 4,
+      "type": "integer"
+    },
+    "reviewed": {
+      "description": "Lawyer/accountant review done. While false the page shows a 'taslak' notice.",
+      "order": 7,
+      "type": "boolean"
+    },
+    "show_in_footer": {
+      "order": 5,
+      "type": "boolean"
+    },
+    "title": {
+      "max": 80,
+      "order": 1,
+      "required": true,
+      "type": "string"
+    }
+  }
+}
