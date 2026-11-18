@@ -1,19 +1,18 @@
 {
   "lastOperation": {
     "entries": [
-      "69576769b108",
-      "c835feb1c15c",
-      "f0aca951b8a9"
+      "a1b2c3d4e5f6",
+      "a1b2c3d4e5f6"
     ],
     "locale": "tr",
-    "model": "products",
+    "model": "workitems",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T13:02:35.229Z",
+    "timestamp": "2026-11-18T13:06:49.242Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 205,
-    "lastSync": "2026-11-18T13:02:35.229Z",
+    "lastSync": "2026-11-18T13:06:49.242Z",
     "locales": [
       "en",
       "tr"
