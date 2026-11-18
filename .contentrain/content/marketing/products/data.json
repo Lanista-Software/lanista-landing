@@ -1,0 +1,241 @@
+{
+  "69576769b108": {
+    "faq": [
+      {
+        "answer": "Hayır. Hesap Takip telefonun tarayıcısından açılır ve ana ekrana uygulama gibi eklenir. Dükkândaki bilgisayar ya da tabletten de aynı hesapla girebilirsiniz.",
+        "question": "Bilgisayar ya da program kurmam gerekiyor mu?"
+      },
+      {
+        "answer": "Satış ve tahsilatı girmeye devam edersiniz. Kayıtlar telefonda bekler, bağlantı gelince kendiliğinden gönderilir.",
+        "question": "İnternet kesilirse ne olur?"
+      },
+      {
+        "answer": "Gitmez. Kayıtlar bulutta tutulur; yeni telefondan giriş yaptığınızda her şey yerinde olur.",
+        "question": "Telefonum kaybolursa verilerim gider mi?"
+      },
+      {
+        "answer": "Mesajlar ürünün ortak gönderici adıyla gider ve metinde dükkânınızın adı yazar. Sizin başvuru ya da belge hazırlamanız gerekmez. SMS paketi ayrıca satılır.",
+        "question": "SMS hatırlatmaları kimin adına gider?"
+      },
+      {
+        "answer": "Hatırlatmalar borç bilgilendirmesidir, reklam içermez. Aynı müşteriye varsayılan olarak en sık 7 günde bir, pazar günü ve 10:00–18:00 dışında gönderilmez.",
+        "question": "Müşterilerim mesajları reklam diye şikâyet eder mi?"
+      },
+      {
+        "answer": "Kurulumda müşteri listenizi birlikte aktarırız. Sonradan eklenen müşterileri uygulamadan tek tek girebilirsiniz.",
+        "question": "Defterdeki eski müşterilerimi nasıl aktarırım?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Hızlı satış girişi: parça adı, adet, fiyat, plaka (20–30 sn)",
+          "Daha önce satılan parça öneri olarak gelir",
+          "Tahsilat ve satışın içinden kalem kalem iade",
+          "Alış ve tedarikçi carisi"
+        ],
+        "title": "Satış ve tahsilat"
+      },
+      {
+        "items": [
+          "Müşteri başına vade gün sayısı",
+          "Vadesi geçenler listesi; geçen kırmızı, yaklaşan sarı",
+          "Her sabah 10:30'da vadesi geçenler bildirimi",
+          "SMS hatırlatma: onaylı ya da otomatik, 1–60 gün aralık ayarı, pazar ve mesai dışında gönderim yok"
+        ],
+        "title": "Vade ve hatırlatma"
+      },
+      {
+        "items": [
+          "Logolu fiş ve ekstre (PDF)",
+          "WhatsApp'tan tek dokunuşla gönderim",
+          "Plakaya göre geçmiş: \"Bu arabaya ne takmıştık?\"",
+          "Ortak parça kataloğu: parça adları ve kodları öneri olarak gelir"
+        ],
+        "title": "Ekstre ve kayıt"
+      },
+      {
+        "items": [
+          "Telefona uygulama gibi eklenir, program kurulumu gerekmez",
+          "Dükkândaki her cihazdan açılır",
+          "İnternet yokken de çalışır",
+          "Uygulama içi kullanım kılavuzu"
+        ],
+        "title": "Kullanım"
+      }
+    ],
+    "hero_text": "Satışı 20 saniyede girin, tahsilatı ve vadeyi takip edin. Sabah dükkânı açınca bugün kimi aramanız gerektiği telefonunuzda hazır olur.",
+    "hero_title": "Veresiye defterini telefona taşıyın",
+    "keywords": [
+      "veresiye programı",
+      "cari takip programı",
+      "veresiye defteri uygulaması",
+      "oto yedek parça programı",
+      "vade takip programı",
+      "esnaf hesap takip"
+    ],
+    "name": "Hesap Takip",
+    "order": 1,
+    "pains": [
+      {
+        "pain": "Defterde kimin ne kadar borcu olduğu karışıyor",
+        "solution": "Her müşterinin carisi tek ekranda: satış, tahsilat, iade ve kalan borç her an güncel."
+      },
+      {
+        "pain": "Vadesi geçen alacağı fark etmek zor",
+        "solution": "Vadesi geçen kırmızı, yaklaşan sarı görünür. Her sabah 10:30'da vadesi geçenler bildirimi gelir."
+      },
+      {
+        "pain": "Borç hatırlatmak için tatsız telefonlar",
+        "solution": "Hatırlatmayı siz değil sistem yapar: SMS'i onaylı ya da otomatik gönderir, aynı müşteriye en sık 7 günde bir."
+      },
+      {
+        "pain": "\"Ben bunu almadım\" tartışmaları",
+        "solution": "Ekstreyi PDF olarak WhatsApp'tan gönderin; usta kendi gözüyle görsün."
+      },
+      {
+        "pain": "Sanayide internet gidip geliyor",
+        "solution": "Satış ve tahsilat internet yokken de kaydedilir, bağlantı gelince kendiliğinden gönderilir."
+      }
+    ],
+    "roadmap": [
+      "e-Fatura ve e-Arşiv bağlantısı",
+      "SMS bakiye ve kota takibi",
+      "OEM numaralı parça sözlüğü",
+      "Distribütör fiyat listesi içe aktarma"
+    ],
+    "sector": "Oto yedek parça ve sanayi esnafı",
+    "seo_description": "Oto yedek parça esnafı için veresiye programı: hızlı satış, tahsilat, vade takibi, SMS hatırlatma ve WhatsApp ekstre. Telefondan çalışır, kurulum bizden.",
+    "seo_title": "Hesap Takip | Veresiye ve Cari Takip Programı",
+    "slug": "hesap-takip",
+    "status": "live",
+    "tagline": "Veresiye defteri telefonunuzda. Vadesi geçen alacak her sabah önünüzde, hatırlatma SMS'ini sistem atar.",
+    "trust": [
+      {
+        "text": "Kayıtlar Google Firebase'in Avrupa sunucularında tutulur. Telefon kaybolsa da veri kaybolmaz.",
+        "title": "Veriniz bulutta, Avrupa sunucularında"
+      },
+      {
+        "text": "Ortak parça kataloğunda yalnız parça adları ve kodları paylaşılır. Fiyat, müşteri ve satış adedi paylaşılmaz.",
+        "title": "Fiyatınızı kimse görmez"
+      },
+      {
+        "text": "Müşteri listenizi ve ilk ayarları birlikte kurarız; kullanımı dükkânda gösteririz.",
+        "title": "Kurulumu biz yaparız"
+      },
+      {
+        "text": "Van'da iki şubeli bir yedek parçacı dahil 3 işletmede her gün kullanılıyor.",
+        "title": "Sahada çalışıyor"
+      }
+    ]
+  },
+  "c835feb1c15c": {
+    "faq": [],
+    "feature_groups": [
+      {
+        "items": [
+          "Gün ekranı: gece kasa, devir, kanal kanal gelir ve giderler",
+          "Otomatik hesap: nakit satış, ciro, komisyon düşülmüş net ve kâr",
+          "Tarihli platform oranları",
+          "Ay ay günler listesi; girilmemiş günler işaretli",
+          "Raporlar ve Excel indirme",
+          "Kişiler: çalışan ve tedarikçiler",
+          "Akıllı gider girişi: \"ekmek\" yazınca gider türü kendiliğinden gelir",
+          "İnternet yokken de çalışır, bulutta yedekli"
+        ],
+        "title": "Pilotta çalışan özellikler"
+      }
+    ],
+    "hero_text": "Kanal kanal gelir, giderler, platform komisyonları ve tedarikçi borcu tek ekranda. Akşam rakamları girin, gerçek kârı görün.",
+    "hero_title": "Günlük kasa defteri, telefonunuzda",
+    "keywords": [
+      "kasa takip programı",
+      "günlük kasa defteri",
+      "kafe kasa programı",
+      "büfe kasa takip",
+      "restoran gelir gider takibi"
+    ],
+    "name": "Kasa Takip",
+    "order": 3,
+    "pains": [
+      {
+        "pain": "Kasa Excel'de, formüller bozuluyor",
+        "solution": "Gün ekranı Excel'in yerini alır; her değişiklik kendiliğinden kaydedilir, hesap kendiliğinden yapılır."
+      },
+      {
+        "pain": "Yemek platformlarının kesintisi kârı belirsizleştiriyor",
+        "solution": "Platform oranları tarihli tutulur; net ciro ve gerçek kâr kanal kanal hesaplanır."
+      },
+      {
+        "pain": "Para en çok nereye gidiyor, görünmüyor",
+        "solution": "Dönem raporlarında kanal, gider türü ve kişi bazında döküm; Excel olarak indirme."
+      },
+      {
+        "pain": "Tedarikçiye ne kadar borç kaldı?",
+        "solution": "Tedarikçi carisi: veresiye alım, ödeme, anlık bakiye ve ekstre."
+      }
+    ],
+    "roadmap": [],
+    "sector": "Büfe, tostçu, kafe ve küçük restoranlar",
+    "seo_description": "Büfe, kafe ve küçük restoranlar için günlük kasa defteri: kanal kanal ciro, platform komisyonu, gider ve gerçek kâr. Pilotta; bekleme listesine katılın.",
+    "seo_title": "Kasa Takip | Büfe ve Kafe Kasa Programı (Pilotta)",
+    "slug": "kasa-takip",
+    "status": "pilot",
+    "tagline": "Akşam kasayı girin; ciro, platform kesintisi ve gerçek kârınız telefonunuzda. Excel'e gerek kalmaz.",
+    "trust": []
+  },
+  "f0aca951b8a9": {
+    "faq": [],
+    "feature_groups": [
+      {
+        "items": [
+          "İş / şantiye bazında satış ve ekstre",
+          "Teslim alanın adı ve telefonda imza",
+          "Çek ve senet takibi, vade hatırlatması",
+          "Müşteri kredi limiti uyarısı",
+          "Online mutabakat bağlantısı",
+          "Teklif → satış, toplu fiyat güncelleme, teslimat durumu",
+          "Excel'den toplu müşteri aktarımı"
+        ],
+        "title": "Planlanan özellikler"
+      }
+    ],
+    "hero_text": "Veresiye satışı, teslimatı ve vadeyi tek yerde tutun. Vadesi gelen alacağı ve çeki size, müşteriye de SMS'le hatırlatır.",
+    "hero_title": "Usta ve müteahhit hesabı, şantiye şantiye",
+    "keywords": [
+      "nalbur programı",
+      "hırdavat programı",
+      "inşaat malzemesi cari takip",
+      "nalbur veresiye programı",
+      "çek senet takip programı"
+    ],
+    "name": "Nalbur Takip",
+    "order": 2,
+    "pains": [
+      {
+        "pain": "Ay sonu hangi şantiyeye ne gittiği karışıyor",
+        "solution": "Satışlar iş ve şantiye bazında tutulur; ekstre şantiye şantiye çıkar."
+      },
+      {
+        "pain": "\"Biz bunu teslim almadık\" tartışması",
+        "solution": "Teslim alanın adı ve telefonda imzası satışla birlikte kaydedilir."
+      },
+      {
+        "pain": "Çek ve senetlerin vadesi kaçıyor",
+        "solution": "Çek ve senet takibi; vadesi yaklaşan çek için hatırlatma."
+      },
+      {
+        "pain": "Torba, ton, metre küp… birimler karışıyor",
+        "solution": "Torba, kg, ton, m, m², m³ birimleri ve ondalıklı miktar."
+      }
+    ],
+    "roadmap": [],
+    "sector": "Nalbur, hırdavat ve inşaat malzemecileri",
+    "seo_description": "Nalbur, hırdavat ve inşaat malzemecileri için veresiye, şantiye ekstresi, teslim imzası ve çek takibi. Yakında; bekleme listesine katılın.",
+    "seo_title": "Nalbur Takip | Nalbur ve Hırdavat Programı (Yakında)",
+    "slug": "nalbur-takip",
+    "status": "soon",
+    "tagline": "Usta ve müteahhit hesabı şantiye şantiye; kim neyi teslim aldı imzasıyla kayıtlı.",
+    "trust": []
+  }
+}
