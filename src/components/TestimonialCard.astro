@@ -1,5 +1,5 @@
 ---
-import { imagePath } from '~/lib/content'
+import Img from '~/components/Img.astro'
 
 interface Props { item: { name: string, title?: string, description?: string, image?: string } }
 const { item } = Astro.props
@@ -8,7 +8,7 @@ const { item } = Astro.props
 <figure class="reveal w-full p-6">
   <figcaption class="flex items-center gap-4">
     {item.image && (
-      <img class="block size-16 rounded-full border border-solid border-transparent object-contain" src={imagePath(item.image)} alt="" width="80" height="80" loading="lazy" decoding="async" />
+      <Img class="block size-16 rounded-full border border-solid border-transparent object-cover" src={item.image} alt="" width={80} height={80} />
     )}
     <div>
       <p class="font-space text-lg font-semibold text-heading-text">{item.name}</p>

@@ -1,0 +1,39 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+import { imagePath } from '~/lib/content'
+import { blurhashColor, mediaIndex, pickSrc } from '~/lib/media'
+
+type Props = Omit<HTMLAttributes<'img'>, 'src' | 'alt'> & {
+  src?: string
+  /** Overrides the Studio alt text. Pass "" for decorative images. */
+  alt?: string
+  /** Fallback intrinsic size when Studio has none (SVG logos). */
+  width?: number
+  height?: number
+  /** Above the fold: load eagerly with high priority. */
+  priority?: boolean
+}
+
+const { src, alt, width, height, priority = false, class: className, style, ...rest } = Astro.props
+const raw = imagePath(src)
+const asset = (await mediaIndex()).get(raw)
+const finalAlt = alt ?? asset?.alt ?? ''
+const w = asset?.width || width
+const h = asset?.height || height
+const bg = blurhashColor(asset?.blurhash)
+---
+
+{raw && (
+  <img
+    src={pickSrc(asset, raw)}
+    alt={finalAlt}
+    width={w}
+    height={h}
+    loading={priority ? 'eager' : 'lazy'}
+    fetchpriority={priority ? 'high' : undefined}
+    decoding="async"
+    class={className}
+    style={[bg ? `background-color:${bg}` : '', style ?? ''].filter(Boolean).join(';') || undefined}
+    {...rest}
+  />
+)}

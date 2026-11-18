@@ -1,7 +1,7 @@
 ---
 import type { Work } from '~/lib/content'
 import type { Locale } from '~/lib/i18n'
-import { imageAlt, imagePath } from '~/lib/content'
+import Img from '~/components/Img.astro'
 import { localePath, t } from '~/lib/i18n'
 
 interface Props { locale: Locale, item: Work }
@@ -31,7 +31,7 @@ const s = t(locale)
   </div>
   {item.image && (
     <div class="h-auto w-full overflow-hidden p-4">
-      <img class="aspect-[2/1] size-full object-cover" src={imagePath(item.image)} alt={imageAlt(item.image)} loading="lazy" decoding="async" width="704" height="352" />
+      <Img class="aspect-[2/1] size-full rounded-lg object-cover object-top" src={item.image} alt={locale === 'en' ? item.title : undefined} width={704} height={352} />
     </div>
   )}
 </article>

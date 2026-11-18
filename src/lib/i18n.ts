@@ -72,7 +72,6 @@ export const ui = {
     rights: 'Tüm hakları saklıdır.',
     home: 'Ana Sayfa',
     breadcrumb: 'Sayfa konumu',
-    technologyLogo: 'Teknoloji logosu',
     moreDetailsFor: 'Daha fazla bilgi:',
   },
   en: {
@@ -105,7 +104,6 @@ export const ui = {
     rights: 'All rights reserved.',
     home: 'Home',
     breadcrumb: 'Breadcrumb',
-    technologyLogo: 'Technology logo',
     moreDetailsFor: 'More details:',
   },
 } as const

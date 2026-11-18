@@ -5,19 +5,10 @@
 import type { Workitems } from '#contentrain'
 import type { Locale } from './i18n'
 import { dictionary, query } from '#contentrain'
-import assets from './assets.json'
 
-/** Content stores web paths ("/foo.svg"); tolerate a legacy "public/" prefix. */
+/** Content image fields hold Studio CDN URLs; tolerate legacy site paths with a "public/" prefix. */
 export function imagePath(path?: string): string {
   return path ? path.replace(/^\/?public\//, '/') : ''
-}
-
-/** Alt text from the Contentrain media manifest. */
-export function imageAlt(path?: string): string {
-  if (!path)
-    return ''
-  const file = path.replace(/^\//, '').replace(/^public\//, '')
-  return assets.find(a => a.path.replace(/^public\//, '') === file)?.alt || ''
 }
 
 export type Work = Omit<Workitems, 'category'> & { categoryId?: string, categoryName: string }

@@ -2,9 +2,10 @@
 import type { Locale } from '~/lib/i18n'
 import Breadcrumbs from '~/components/Breadcrumbs.astro'
 import CtaBlock from '~/components/CtaBlock.astro'
+import Img from '~/components/Img.astro'
 import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
-import { getWork, imageAlt, imagePath, splitList } from '~/lib/content'
+import { getWork, splitList } from '~/lib/content'
 import { localePath, t } from '~/lib/i18n'
 import { creativeWorkSchema } from '~/lib/schema'
 import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
@@ -57,7 +58,7 @@ const blocks = [
     <div class="py-10 lg:py-12">
       <div class="container-x">
         <div class="reveal mx-auto max-w-5xl overflow-hidden rounded-2xl border border-border-color">
-          <img class="size-full object-cover" src={imagePath(work.image)} alt={imageAlt(work.image) || work.title} width="1024" height="512" decoding="async" />
+          <Img class="size-full object-cover" src={work.image} alt={en ? work.title : undefined} width={1024} height={512} priority />
         </div>
       </div>
     </div>

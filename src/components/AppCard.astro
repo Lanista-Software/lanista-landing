@@ -1,6 +1,6 @@
 ---
 import type { Locale } from '~/lib/i18n'
-import { imageAlt, imagePath } from '~/lib/content'
+import Img from '~/components/Img.astro'
 import { t } from '~/lib/i18n'
 
 interface Props {
@@ -28,8 +28,8 @@ const Tag = item.link ? 'a' : 'div'
       ? (
           <div class="h-auto overflow-hidden md:h-[459px] lg:h-auto">
             {square
-              ? <img loading="lazy" decoding="async" class="aspect-square size-full object-contain md:aspect-auto lg:aspect-square" src={imagePath(item.image)} alt={imageAlt(item.image)} width="442" height="442" />
-              : <img loading="lazy" decoding="async" class="size-full object-contain md:aspect-auto lg:aspect-[2/1]" src={imagePath(item.image)} alt={imageAlt(item.image)} width="704" height="352" />}
+              ? <Img class="aspect-square size-full object-contain md:aspect-auto lg:aspect-square" src={item.image} alt={locale === 'en' ? item.title : undefined} width={442} height={442} sizes="(min-width: 1024px) 33vw, 100vw" />
+              : <Img class="size-full object-contain md:aspect-auto lg:aspect-[2/1]" src={item.image} alt={locale === 'en' ? item.title : undefined} width={704} height={352} sizes="(min-width: 1024px) 50vw, 100vw" />}
           </div>
         )
       : item.icon && (

@@ -3,8 +3,6 @@ import { DEFAULT_LOCALE, localePath } from './i18n'
 
 export const SITE_URL = 'https://lanista.com.tr'
 export const SITE_NAME = 'Lanista Software'
-export const DEFAULT_OG_IMAGE
-  = 'https://res.cloudinary.com/dmywgn45o/image/upload/v1729243091/lanista_og_chgpop.jpg'
 export const TWITTER_SITE = '@lanaboratory'
 
 /** Canonical absolute URL for a locale-agnostic path. Always trailing-slash. */
@@ -15,7 +13,7 @@ export function absoluteUrl(path: string, locale: Locale = DEFAULT_LOCALE): stri
 /** Site-relative media paths become absolute; already-absolute URLs pass through. */
 export function absoluteAsset(src?: string | null): string {
   if (!src)
-    return DEFAULT_OG_IMAGE
+    return ''
   return /^https?:\/\//.test(src) ? src : `${SITE_URL}${src.startsWith('/') ? '' : '/'}${src}`
 }
 

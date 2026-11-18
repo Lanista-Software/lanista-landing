@@ -1,4 +1,6 @@
 ---
+import { SITE_MEDIA } from '~/lib/site-media'
+
 interface Props {
   id: string
   title?: string
@@ -7,6 +9,7 @@ interface Props {
   buttonHref: string
 }
 const { id, title, description, buttonLabel, buttonHref } = Astro.props
+const bannerBg = `url('${SITE_MEDIA.bannerBackground}')`
 ---
 
 <div class="w-full rounded-3xl bg-custom-gradient">
@@ -24,9 +27,9 @@ const { id, title, description, buttonLabel, buttonHref } = Astro.props
   </div>
 </div>
 
-<style>
+<style define:vars={{ bannerBg }}>
   .banner-bg {
-    background-image: url('/images/banner-bg.png');
+    background-image: var(--bannerBg);
     background-size: cover;
     background-position: center;
   }

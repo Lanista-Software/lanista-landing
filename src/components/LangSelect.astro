@@ -1,6 +1,7 @@
 ---
 import type { Locale } from '~/lib/i18n'
 import { localePath, t } from '~/lib/i18n'
+import Flag from './Flag.astro'
 
 interface Props {
   locale: Locale
@@ -9,7 +10,6 @@ interface Props {
 }
 const { locale, path, locales } = Astro.props
 const LABELS: Record<Locale, string> = { tr: 'Türkçe', en: 'English' }
-const FLAGS: Record<Locale, string> = { tr: '/tr-flag.png', en: '/en-flag.png' }
 // Real <a href> per locale: the only crawlable path between the TR and EN trees.
 // A page that does not exist in the other language links to that language's home.
 const options = (['tr', 'en'] as const).map(code => ({
@@ -35,7 +35,7 @@ const options = (['tr', 'en'] as const).map(code => ({
             o.current ? 'text-heading-text ring-2 ring-success-600' : 'text-body-text hover:text-heading-text',
           ]}
         >
-          <img src={FLAGS[o.code]} alt="" width="24" height="24" class="size-6 rounded-full" />
+          <Flag code={o.code} />
           <span>{o.code.toUpperCase()}</span>
           <span class="sr-only">{LABELS[o.code]}</span>
         </a>

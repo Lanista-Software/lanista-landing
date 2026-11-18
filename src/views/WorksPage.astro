@@ -2,9 +2,10 @@
 import type { Locale } from '~/lib/i18n'
 import Breadcrumbs from '~/components/Breadcrumbs.astro'
 import CtaBlock from '~/components/CtaBlock.astro'
+import Img from '~/components/Img.astro'
 import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
-import { getWorks, imageAlt, imagePath } from '~/lib/content'
+import { getWorks } from '~/lib/content'
 import { IN_LANGUAGE, localePath, t } from '~/lib/i18n'
 import { ORG_ID, webPageSchema } from '~/lib/schema'
 import { absoluteUrl, breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
@@ -50,7 +51,7 @@ const jsonLd = [
             <a href={localePath(`/works/${work.slug}`, locale)} class="card-lift group flex h-full flex-col overflow-hidden rounded-2xl border border-border-color bg-white">
               {work.image && (
                 <div class="aspect-[2/1] overflow-hidden bg-secondary-50">
-                  <img class="size-full object-cover transition-transform duration-500 group-hover:scale-105" src={imagePath(work.image)} alt={imageAlt(work.image)} loading="lazy" decoding="async" width="440" height="220" />
+                  <Img class="size-full object-cover object-top transition-transform duration-500 group-hover:scale-105" src={work.image} alt={en ? work.title : undefined} width={440} height={220} />
                 </div>
               )}
               <div class="flex flex-1 flex-col p-5">

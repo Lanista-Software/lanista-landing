@@ -1,0 +1,27 @@
+---
+/** Decorative round flags for the language switcher (inline SVG: crisp, zero requests). */
+interface Props { code: 'tr' | 'en' }
+const { code } = Astro.props
+---
+
+{code === 'tr'
+  ? (
+      <svg viewBox="0 0 24 24" width="24" height="24" class="size-6 rounded-full" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="12" fill="#E30A17" />
+        <circle cx="10" cy="12" r="5" fill="#fff" />
+        <circle cx="11.25" cy="12" r="4" fill="#E30A17" />
+        <path fill="#fff" d="m16.6 12-1.9.62 1.17-1.62v2l-1.17-1.62z" />
+      </svg>
+    )
+  : (
+      <svg viewBox="0 0 24 24" width="24" height="24" class="size-6 rounded-full" aria-hidden="true" focusable="false">
+        <clipPath id="flag-en-clip"><circle cx="12" cy="12" r="12" /></clipPath>
+        <g clip-path="url(#flag-en-clip)">
+          <rect width="24" height="24" fill="#012169" />
+          <path d="M-2 0 26 24M26 0-2 24" stroke="#fff" stroke-width="4.8" />
+          <path d="M-2 0 26 24M26 0-2 24" stroke="#C8102E" stroke-width="1.6" />
+          <path d="M12 0v24M0 12h24" stroke="#fff" stroke-width="8" />
+          <path d="M12 0v24M0 12h24" stroke="#C8102E" stroke-width="4.8" />
+        </g>
+      </svg>
+    )}
