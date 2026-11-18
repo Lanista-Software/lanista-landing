@@ -1,0 +1,125 @@
+{
+  "id": "leads",
+  "name": "Leads (Form Submissions)",
+  "kind": "collection",
+  "domain": "system",
+  "i18n": false,
+  "title_field": "name",
+  "description": "All website form submissions (contact, product demo request, quote request, product waitlist), received through the Contentrain Studio public forms endpoint. One model for every form because the Studio Starter plan allows a single form-enabled model; `type` and `product` tell the forms apart. Contains personal data (KVKK) — never publish entries, never reference from site content.",
+  "fields": {
+    "business": {
+      "label": {
+        "en": "Company",
+        "tr": "İşletme adı"
+      },
+      "max": 100,
+      "order": 4,
+      "type": "string"
+    },
+    "email": {
+      "label": {
+        "en": "Email",
+        "tr": "E-posta"
+      },
+      "max": 120,
+      "order": 2,
+      "required": true,
+      "type": "email"
+    },
+    "kvkk_consent": {
+      "description": "Visitor confirmed reading the KVKK Aydınlatma Metni (/yasal/kvkk/). Required on every form.",
+      "label": {
+        "en": "Privacy notice acknowledged",
+        "tr": "KVKK aydınlatma metni okundu"
+      },
+      "order": 9,
+      "required": true,
+      "type": "boolean"
+    },
+    "language": {
+      "label": {
+        "en": "Site language",
+        "tr": "Site dili"
+      },
+      "options": [
+        "tr",
+        "en"
+      ],
+      "order": 10,
+      "type": "select"
+    },
+    "message": {
+      "label": {
+        "en": "Message",
+        "tr": "Mesaj"
+      },
+      "max": 1000,
+      "order": 6,
+      "type": "text"
+    },
+    "name": {
+      "label": {
+        "en": "Full name",
+        "tr": "Ad Soyad"
+      },
+      "max": 50,
+      "min": 3,
+      "order": 1,
+      "required": true,
+      "type": "string"
+    },
+    "page": {
+      "label": {
+        "en": "Page",
+        "tr": "Gönderildiği sayfa"
+      },
+      "max": 200,
+      "order": 11,
+      "type": "string"
+    },
+    "phone": {
+      "label": {
+        "en": "Phone",
+        "tr": "Telefon"
+      },
+      "max": 20,
+      "order": 3,
+      "type": "phone"
+    },
+    "product": {
+      "description": "Product slug (e.g. hesap-takip) for demo/quote/waitlist requests; empty for general contact.",
+      "label": {
+        "en": "Product",
+        "tr": "Ürün"
+      },
+      "max": 60,
+      "order": 8,
+      "type": "string"
+    },
+    "subject": {
+      "label": {
+        "en": "Subject",
+        "tr": "Konu"
+      },
+      "max": 100,
+      "order": 5,
+      "type": "string"
+    },
+    "type": {
+      "description": "contact = genel iletişim, demo = demo isteği, quote = teklif isteği, waitlist = Yakında ürün bekleme listesi",
+      "label": {
+        "en": "Request type",
+        "tr": "Talep türü"
+      },
+      "options": [
+        "contact",
+        "demo",
+        "quote",
+        "waitlist"
+      ],
+      "order": 7,
+      "required": true,
+      "type": "select"
+    }
+  }
+}
