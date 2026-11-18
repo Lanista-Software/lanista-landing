@@ -1,22 +1,19 @@
 {
   "lastOperation": {
     "entries": [
-      "a1b2c3d4e5f1",
-      "a1b2c3d4e5f2",
-      "a1b2c3d4e5f3",
-      "a1b2c3d4e5f4",
-      "a1b2c3d4e5f5",
-      "a1b2c3d4e5f6"
+      "2aa54f9e7eb3",
+      "2aa54f9e7x90",
+      "2aa54f9e7xb5"
     ],
     "locale": "en",
-    "model": "tabitems",
+    "model": "sections",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T14:12:44.216Z",
+    "timestamp": "2026-11-18T14:12:50.968Z",
     "tool": "contentrain_bulk"
   },
   "stats": {
-    "entries": 215,
-    "lastSync": "2026-11-18T14:12:44.217Z",
+    "entries": 209,
+    "lastSync": "2026-11-18T14:12:50.968Z",
     "locales": [
       "en",
       "tr"
