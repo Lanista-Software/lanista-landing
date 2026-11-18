@@ -3,7 +3,9 @@ import type { Locale } from '~/lib/i18n'
 import CookieConsent from '~/components/CookieConsent.astro'
 import Footer from '~/components/Footer.astro'
 import Header from '~/components/Header.astro'
+import { getLayout } from '~/lib/content'
 import { HTML_LANG, LOCALES, OG_LOCALE, t } from '~/lib/i18n'
+import { ORG_ID, organizationSchema, WEBSITE_ID, websiteSchema } from '~/lib/schema'
 import { absoluteUrl, ogImagePath, serializeJsonLd, SITE_NAME, TWITTER_SITE } from '~/lib/seo'
 import '~/styles/global.css'
 
@@ -49,6 +51,13 @@ const alternates = locales.length > 1
     ]
   : []
 const s = t(locale)
+// Every page carries the Organization + WebSite nodes (GEO: entity on every URL).
+const ids = new Set((jsonLd as { '@id'?: string }[]).map(n => n?.['@id']))
+const graph = [
+  ...(ids.has(ORG_ID) ? [] : [organizationSchema(getLayout(locale).socialLinks.map(l => l.link))]),
+  ...(ids.has(WEBSITE_ID) ? [] : [websiteSchema()]),
+  ...jsonLd,
+]
 ---
 
 <!doctype html>
@@ -72,6 +81,7 @@ const s = t(locale)
     <meta property="og:type" content={type === 'product' ? 'website' : type} />
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:locale" content={OG_LOCALE[locale]} />
+    {locales.filter(l => l !== locale).map(l => <meta property="og:locale:alternate" content={OG_LOCALE[l]} />)}
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={ogDescription} />
@@ -84,9 +94,7 @@ const s = t(locale)
     <meta name="twitter:description" content={ogDescription} />
     <meta name="twitter:image" content={ogImage} />
 
-    {jsonLd.length > 0 && (
-      <script is:inline type="application/ld+json" set:html={serializeJsonLd({ '@context': 'https://schema.org', '@graph': jsonLd })} />
-    )}
+    <script is:inline type="application/ld+json" set:html={serializeJsonLd({ '@context': 'https://schema.org', '@graph': graph })} />
 
     <script is:inline>document.documentElement.classList.add('js')
 </script>

@@ -36,6 +36,8 @@ export function organizationSchema(sameAs: string[] = []) {
       'availableLanguage': ['Turkish', 'English'],
     },
     'sameAs': sameAs,
+    'areaServed': { '@type': 'Country', 'name': 'Türkiye' },
+    'knowsAbout': ['Veresiye ve cari takip yazılımı', 'Mobil uygulama geliştirme', 'Web sitesi ve e-ticaret', 'Özel yazılım geliştirme', 'Ödeme entegrasyonu', 'POS uygulamaları', 'SaaS', 'Yapay zekâ destekli yazılım'],
   }
 }
 

@@ -33,7 +33,8 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Studio formu public; uç nokta, CORS ve test gönderimi doğrulandı (test kaydı Studio'dan silinebilir: "TEST Claude form kontrolü")
 - [x] Sitemap doğrulandı: 64 URL, hepsi 200, canonical = loc, noindex yok, hreflang karşılıklı → indexlemeye hazır
 - [x] Contentrain temizliği: SEO/sosyal medya araç kayıtları (6) + 2 kategori, kullanılmayan 3 bölüm kaydı, 15 sözlük anahtarı (kullanılmayan + tekrarlı) silindi; kullanılmayan Banner/Arcade bileşenleri kaldırıldı
-- [ ] **SEO-GEO eksiksiz**: `llms.txt` / `llms-full.txt`, AI tarayıcı politikası (robots), yapılandırılmış veri denetimi, lastmod, Organization/LocalBusiness tutarlılığı
+- [x] **SEO-GEO**: `/llms.txt` + `/llms-full.txt` (Contentrain'den, TR+EN özet), robots'ta AI tarayıcılarına açık izin (`/odeme/` kapalı), Organization + WebSite her sayfada (knowsAbout, areaServed), og:locale:alternate, 64 sayfada JSON-LD doğrulandı
+- [ ] SEO-GEO devam: Van sayfasında LocalBusiness, İngilizce llms bölümü (EN içerik gelince)
 - [ ] **İngilizce eksiksiz**: ürünler, paketler, yasal sayfalar ve Hakkımızda İngilizce (`/en/products/…`, `/en/legal/…`, `/en/about/`); dil değişiminde her sayfa karşılığına gider; iyzico bandı alt metni
 - [x] **Projede sabit (hard-coded) metin olmayacak**: arayüz metinleri dahil her içerik eksiksiz Contentrain'de (2026-11-18) — tarama temiz
 - [x] Formlar ve iletişim ayrı sayfada: `/iletisim/`, `/en/contact/` (şirket bilgileri + talep türü seçmeli form); ana sayfada SSS + iletişim kartı

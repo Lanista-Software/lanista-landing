@@ -1,5 +1,41 @@
+# Search and AI assistants are welcome: the site is built to be quoted accurately.
+# Summary for language models: https://lanista.com.tr/llms.txt (full text: /llms-full.txt)
 User-agent: *
 Allow: /
+Disallow: /odeme/
 Disallow: /*?trk=*
+
+# AI search & assistant crawlers (explicitly allowed for GEO)
+User-agent: GPTBot
+Allow: /
+Disallow: /odeme/
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /odeme/
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
 
 Sitemap: https://lanista.com.tr/sitemap-index.xml

@@ -6,7 +6,7 @@ import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import { COMPANY } from '~/lib/company'
 import { ROUTES, t } from '~/lib/i18n'
-import { organizationSchema, webPageSchema } from '~/lib/schema'
+import { ORG_ID, webPageSchema } from '~/lib/schema'
 import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
 
 interface Props { locale: Locale }
@@ -38,7 +38,7 @@ const rows = [
   description={description}
   path={path}
   paths={ROUTES.contact}
-  jsonLd={[{ ...webPageSchema(locale, path, title, description, 'ContactPage'), about: organizationSchema() }, breadcrumbSchema(locale, trail)]}
+  jsonLd={[{ ...webPageSchema(locale, path, title, description, 'ContactPage'), about: { '@id': ORG_ID } }, breadcrumbSchema(locale, trail)]}
 >
   <PageHero>
     <Breadcrumbs locale={locale} trail={trail} />
