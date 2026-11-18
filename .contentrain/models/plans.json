@@ -1,0 +1,73 @@
+{
+  "id": "plans",
+  "name": "Plans",
+  "kind": "collection",
+  "domain": "marketing",
+  "i18n": false,
+  "title_field": "name",
+  "description": "Sellable packages per product (Turkish only). Prices are KDV hariç, in TRY. Leave price_try empty until the owner sets prices; the site then shows 'Teklif iste'. iyzico_link empty → no 'Satın al' button. Only plans of live products are sold. Auto-renewal must not auto-charge consumers on fixed-term plans (Abonelik Yön. md.13).",
+  "fields": {
+    "billing": {
+      "options": [
+        "one_time",
+        "yearly",
+        "monthly"
+      ],
+      "order": 3,
+      "required": true,
+      "type": "select"
+    },
+    "featured": {
+      "order": 10,
+      "type": "boolean"
+    },
+    "includes": {
+      "items": "string",
+      "max": 10,
+      "order": 6,
+      "type": "array"
+    },
+    "iyzico_link": {
+      "description": "iyzico payment link (Phase A). Empty = no buy button.",
+      "order": 8,
+      "type": "url"
+    },
+    "iyzico_plan_code": {
+      "description": "Phase B (subscription API).",
+      "order": 9,
+      "type": "string"
+    },
+    "name": {
+      "max": 60,
+      "order": 1,
+      "required": true,
+      "type": "string"
+    },
+    "note": {
+      "description": "e.g. 'Her yıl TÜFE/ÜFE ile güncellenir', taksit notu.",
+      "max": 200,
+      "order": 7,
+      "type": "text"
+    },
+    "order": {
+      "order": 11,
+      "type": "integer"
+    },
+    "price_try": {
+      "description": "KDV hariç TL. Boş = fiyat henüz yayında değil.",
+      "order": 4,
+      "type": "decimal"
+    },
+    "product": {
+      "model": "products",
+      "order": 2,
+      "required": true,
+      "type": "relation"
+    },
+    "vat_rate": {
+      "default": 20,
+      "order": 5,
+      "type": "percent"
+    }
+  }
+}
