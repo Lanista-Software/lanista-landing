@@ -91,6 +91,8 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Teknoloji logoları `/hizmetler/` sayfasında (SEO/sosyal medya kategorileri hariç)
 - [x] TR meta başlık/açıklama güncellendi (Fable önerisi uyarlandı)
 - [x] Ses ve dil kuralları (sade dil, yasaklı kelimeler yok)
+- [x] EN ana sayfa (hero, bölümler, meta) TR konumlandırmasıyla eşitlendi — önceden eski ajans metni kalmıştı (2026-11-19)
+- [x] Tüm buton/CTA ve bağlantı denetimi (2026-11-19): `contentLink` TR yollarını dile göre çevirir, `#contact` → iletişim sayfası; hizmet kırıntısı `/hizmetler/`; Headless CMS → Contentrain vaka çalışması, Ürün Tasarımı → Süreç; ölü proje siteleri kaldırıldı (Popile, Visivi, DXP 360); React/Nuxt/Adobe adresleri düzeltildi; teknoloji logolarına ad alanı; iç bağlantı ve çapa taraması temiz
 
 ## 4. Animasyon ve parallax
 - [x] Hero parallax: `data-parallax` katmanları (kemer, telefon, bildirim, amfitiyatro halkaları, banner arkadı) — `src/scripts/parallax.ts`, CSS `translate` ile
