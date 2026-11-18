@@ -6,12 +6,12 @@
     "locale": "en",
     "model": "workitems",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T12:43:40.742Z",
-    "tool": "contentrain_content_save"
+    "timestamp": "2026-11-18T12:44:25.976Z",
+    "tool": "contentrain_bulk"
   },
   "stats": {
     "entries": 193,
-    "lastSync": "2026-11-18T12:43:40.742Z",
+    "lastSync": "2026-11-18T12:44:25.976Z",
     "locales": [
       "en",
       "tr"
