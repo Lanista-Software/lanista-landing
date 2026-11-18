@@ -1,0 +1,9 @@
+{
+  "id": "ui",
+  "name": "UI Strings",
+  "kind": "dictionary",
+  "domain": "system",
+  "i18n": true,
+  "title_field": "key",
+  "description": "Every interface string (navigation, buttons, landmarks, form labels and errors, section headings of templates, 404). Code reads keys only — no hard-coded user-facing text. Params use {name} placeholders."
+}
