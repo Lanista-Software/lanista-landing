@@ -1,0 +1,232 @@
+{
+  "a1c0de5f7a01": {
+    "area_served": [
+      "Van",
+      "Tuşba",
+      "İpekyolu",
+      "Edremit",
+      "Erciş"
+    ],
+    "facts": [
+      {
+        "text": "Bardakçı Mah. Teknokent Sk. No: 1, İç Kapı 9, Tuşba / Van. Book a time, visit our office and explain what you need in person.",
+        "title": "Office at Van Teknokent"
+      },
+      {
+        "text": "Hesap Takip is used every day by an auto parts business with two branches in Van. We did the setup and training in their shop.",
+        "title": "A product in daily use in Van"
+      },
+      {
+        "text": "Lanista Yazılım is a limited company registered with the Van Chamber of Commerce and Industry. Invoices and contracts are issued from Van.",
+        "title": "Member of Van TSO"
+      }
+    ],
+    "faq": [
+      {
+        "answer": "It depends on the number of pages, whether the design is custom and needs such as payment integration. Once we have worked out the scope together, we give you the timeline and price in writing.",
+        "question": "How long does a website take in Van?"
+      },
+      {
+        "answer": "Yes. Our office is at Van Teknokent (Tuşba). Book a time by phone or through the contact form and visit us, or we can come to your business.",
+        "question": "Can we meet you in person at your office?"
+      },
+      {
+        "answer": "Yes. We work with clients all over Türkiye through online meetings. See our pages for businesses in Eastern Anatolia and Central Anatolia too.",
+        "question": "Do you work with businesses outside Van?"
+      },
+      {
+        "answer": "Yes. After launch we agree on maintenance, updates and support. For our ready-made products, support is included in the yearly plan.",
+        "question": "Do you provide support after the software is finished?"
+      }
+    ],
+    "hero_text": "We have been at Van Teknokent since 2019. We work face to face with businesses in Van and build websites, e-commerce, mobile apps and custom software with our own team, from design to launch.",
+    "hero_title": "Software company in Van: web, mobile and custom software for your business",
+    "local_business": true,
+    "meta_description": "From our office at Van Teknokent we build websites, e-commerce, mobile apps and custom business software. Meet in person, on-site setup.",
+    "meta_title": "Software Company in Van, Türkiye | Web, Mobile, Custom | Lanista",
+    "order": 1,
+    "sections": [
+      {
+        "body": "Company and brochure websites, e-commerce sites with virtual POS (iyzico, PayTR) integration, iOS and Android mobile apps, ordering and POS apps for restaurants and cafés, and custom software built around your own workflow. The same team builds all of it; we do not hand the work to another company.",
+        "title": "What we build for businesses in Van"
+      },
+      {
+        "body": "For shopkeepers who want to move their credit ledger, till or tradesman accounts to the phone, we have ready-made apps for specific sectors. Hesap Takip for auto parts and industrial-estate businesses, Kasa Takip for kiosks and cafés, Nalbur Takip for hardware stores. In Van, we do the setup and training in your shop.",
+        "title": "Ready-made apps for businesses that run on paper"
+      },
+      {
+        "body": "First we meet: at our office or at your business we work out what you need. Then we give you a written scope and price. During development you see a working version every week. After launch you keep working with the same team for maintenance and support.",
+        "title": "How we work"
+      },
+      {
+        "body": "We built, or were part of building, projects in our references such as Popile, Bloom and Fresh, Visivi, Collabers and Contentrain. We use the same methods and technologies in projects for businesses in Van.",
+        "title": "Our projects outside Van"
+      }
+    ],
+    "services": [
+      "sp02b3c4d5e6",
+      "sp04d5e6f7a8",
+      "sp05e6f7a8b9",
+      "sp06f7a8b9c0",
+      "sp07a8b9c0d1"
+    ],
+    "slug": "software-company-van",
+    "title": "Software Company in Van"
+  },
+  "a1c0de5f7a02": {
+    "area_served": [
+      "Van",
+      "Erzurum",
+      "Malatya",
+      "Elazığ",
+      "Ağrı",
+      "Bitlis",
+      "Muş",
+      "Hakkari",
+      "Kars",
+      "Iğdır",
+      "Ardahan",
+      "Erzincan",
+      "Bingöl",
+      "Tunceli"
+    ],
+    "facts": [
+      {
+        "text": "Our office is at Van Teknokent. We are in the same region as businesses in Eastern Anatolia and hold our meetings online.",
+        "title": "A team in the region"
+      },
+      {
+        "text": "Design, development, payment integration and launch sit with one team. We do not subcontract the work.",
+        "title": "End-to-end development"
+      },
+      {
+        "text": "Before the project starts, we give you the scope, timeline and price in writing.",
+        "title": "Written scope and price"
+      }
+    ],
+    "faq": [
+      {
+        "answer": "We hold the first meeting by phone or video call. Once the scope is clear we continue with weekly meetings and show you a working version every week.",
+        "question": "We are in Erzurum or Malatya. How do we work together?"
+      },
+      {
+        "answer": "The number of pages, whether the design is custom, e-commerce and payment integration, multiple languages and content management needs. Once we have worked out the scope together, we send a written quote.",
+        "question": "What does the price of a website depend on?"
+      },
+      {
+        "answer": "We serve all of Türkiye. In Eastern Anatolia we can work with businesses in Van, Erzurum, Malatya, Elazığ, Ağrı, Bitlis, Muş, Hakkari, Kars, Iğdır, Ardahan, Erzincan, Bingöl and Tunceli.",
+        "question": "Which provinces do you serve?"
+      }
+    ],
+    "hero_text": "From our team at Van Teknokent we build software for businesses in Erzurum, Malatya, Elazığ, Ağrı, Bitlis, Muş and the other provinces of the region. We are in the same region and know how your business works.",
+    "hero_title": "Websites, mobile apps and custom software for businesses in Eastern Anatolia",
+    "local_business": false,
+    "meta_description": "Websites, e-commerce, mobile apps and custom software for businesses in Erzurum, Malatya, Elazığ and across Eastern Anatolia. A software team based in Van.",
+    "meta_title": "Software and Web Design in Eastern Anatolia | Erzurum, Malatya",
+    "order": 2,
+    "sections": [
+      {
+        "body": "We build company websites, catalogue sites and e-commerce sites. They load fast, look right on phones and launch with technical SEO settings so Google can find them. You can update the content yourself later.",
+        "title": "Web design and websites in Erzurum, Malatya and Elazığ"
+      },
+      {
+        "body": "We build web applications that follow your own workflow, iOS and Android mobile apps, and ordering and POS apps. We move work such as stock, accounts, orders or appointments out of Excel and paper into one system.",
+        "title": "Mobile apps and custom software"
+      },
+      {
+        "body": "We set up card payments, instalments and subscription flows with payment providers such as iyzico and PayTR. We also make sure legal pages such as the distance sales contract, pre-information form and refund terms sit in the right place in the flow.",
+        "title": "Virtual POS and payment integration"
+      },
+      {
+        "body": "Hesap Takip for credit and account tracking, Kasa Takip for till and profit tracking, Nalbur Takip for hardware stores. Setup and training are done online, and there is nothing to install on the phone.",
+        "title": "Ready-made apps for shopkeepers"
+      }
+    ],
+    "services": [
+      "sp02b3c4d5e6",
+      "sp04d5e6f7a8",
+      "sp05e6f7a8b9",
+      "sp06f7a8b9c0"
+    ],
+    "slug": "eastern-anatolia-software",
+    "title": "Software and Web Design in Eastern Anatolia"
+  },
+  "a1c0de5f7a03": {
+    "area_served": [
+      "Konya",
+      "Kayseri",
+      "Sivas",
+      "Ankara",
+      "Yozgat",
+      "Aksaray",
+      "Eskişehir",
+      "Kırıkkale",
+      "Kırşehir",
+      "Nevşehir",
+      "Niğde",
+      "Karaman",
+      "Çankırı"
+    ],
+    "facts": [
+      {
+        "text": "Design, development, payment integration and launch sit with one team. We do not subcontract the work.",
+        "title": "End-to-end development"
+      },
+      {
+        "text": "During development you see a working version every week, so there are no surprises.",
+        "title": "A working version every week"
+      },
+      {
+        "text": "Before the project starts, we give you the scope, timeline and price in writing.",
+        "title": "Written scope and price"
+      }
+    ],
+    "faq": [
+      {
+        "answer": "It depends on the number of pages, whether the design is custom and needs such as payment integration. Once we have worked out the scope together, we give you the timeline and price in writing.",
+        "question": "How long does a website take in Konya or Kayseri?"
+      },
+      {
+        "answer": "No. We hold the first meeting by phone or video call, then continue with weekly meetings. We show you a working version every week.",
+        "question": "Is working remotely a problem?"
+      },
+      {
+        "answer": "We serve all of Türkiye. In Central Anatolia we can work with businesses in Konya, Kayseri, Sivas, Ankara, Yozgat, Aksaray, Eskişehir, Kırıkkale, Kırşehir, Nevşehir, Niğde, Karaman and Çankırı.",
+        "question": "Which provinces do you serve?"
+      }
+    ],
+    "hero_text": "Working online, we build websites, mobile apps and custom software for businesses in Konya, Kayseri, Sivas, Ankara, Yozgat, Aksaray and the other provinces of the region.",
+    "hero_title": "Websites, e-commerce and custom software for businesses in Central Anatolia",
+    "local_business": false,
+    "meta_description": "Websites, e-commerce, mobile apps and custom software development for businesses in Konya, Kayseri, Sivas, Ankara and across Central Anatolia.",
+    "meta_title": "Software and Web Design in Central Anatolia | Konya, Kayseri",
+    "order": 3,
+    "sections": [
+      {
+        "body": "We build company sites, product catalogues and e-commerce sites for manufacturers, wholesalers and retailers. We set up virtual POS, shipping and invoicing integrations and launch the site with technical SEO settings.",
+        "title": "Websites and e-commerce in Konya and Kayseri"
+      },
+      {
+        "body": "For small and medium-sized businesses we build sites that load fast, look right on phones and let you update the content yourself. You can start with a one-page site or go straight to a multi-page company site.",
+        "title": "Web design in Sivas, Yozgat and Aksaray"
+      },
+      {
+        "body": "For companies in Ankara we build web applications, SaaS platforms, microservice back ends and mobile apps. We can support an existing team or take the project on from start to finish.",
+        "title": "Custom software for businesses in Ankara"
+      },
+      {
+        "body": "Hesap Takip for credit and account tracking, Kasa Takip for till and profit tracking, Nalbur Takip for hardware stores. Setup and training are done online, and there is nothing to install on the phone.",
+        "title": "Ready-made apps for shopkeepers"
+      }
+    ],
+    "services": [
+      "sp02b3c4d5e6",
+      "sp04d5e6f7a8",
+      "sp03c4d5e6f7",
+      "sp05e6f7a8b9",
+      "sp01a2b3c4d5"
+    ],
+    "slug": "central-anatolia-software",
+    "title": "Software and Web Design in Central Anatolia"
+  }
+}
