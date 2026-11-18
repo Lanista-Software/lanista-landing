@@ -4,7 +4,7 @@
  */
 import type { Locale } from './i18n'
 import { COMPANY } from './company'
-import { getHome, getLocalPages, getPlans, getProducts, getServicePages, getWorks } from './content'
+import { getHome, getLocalPages, getPlans, getProducts, getServicePages, getWorks, productPath } from './content'
 import { ROUTES, t } from './i18n'
 import { getLegalPages, legalPath, renderLegal } from './legal'
 import { tl } from './money'
@@ -59,9 +59,19 @@ export function buildLlmsTxt(): string {
     `## ${s('llms.legal')}`,
     ...legal.filter(p => p.group === 'legal').map(p => line(p.title, url(legalPath(p)), p.description)),
     '',
+    `## ${s('llms.english_section')}`,
+    `> ${en('llms.summary')}`,
+    '',
+    line(en('nav.home'), url('/', 'en')),
+    ...getProducts('en').map(p => line(`${p.name} (${en(`product.status.${p.status}`)})`, url(productPath(p.slug, 'en'), 'en'), p.tagline)),
+    line(en('services.page_title'), url(ROUTES.services.en, 'en')),
+    ...getServicePages('en').map(p => line(p.title, url(`/services/${p.slug}`, 'en'))),
+    ...getLocalPages('en').map(p => line(p.title, url(`/${p.slug}`, 'en'), p.meta_description)),
+    line(en('nav.works'), url('/works', 'en')),
+    line(en('nav.contact'), url(ROUTES.contact.en, 'en')),
+    '',
     `## ${s('llms.optional')}`,
     line(s('llms.full_note'), `${SITE_URL}/llms-full.txt`),
-    line(s('llms.english'), url('/', 'en')),
     line('Sitemap', `${SITE_URL}/sitemap-index.xml`),
     '',
   ].join('\n')

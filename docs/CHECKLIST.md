@@ -34,9 +34,9 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Sitemap doğrulandı: 64 URL, hepsi 200, canonical = loc, noindex yok, hreflang karşılıklı → indexlemeye hazır
 - [x] Contentrain temizliği: SEO/sosyal medya araç kayıtları (6) + 2 kategori, kullanılmayan 3 bölüm kaydı, 15 sözlük anahtarı (kullanılmayan + tekrarlı) silindi; kullanılmayan Banner/Arcade bileşenleri kaldırıldı
 - [x] **SEO-GEO**: `/llms.txt` + `/llms-full.txt` (Contentrain'den, TR+EN özet), robots'ta AI tarayıcılarına açık izin (`/odeme/` kapalı), Organization + WebSite her sayfada (knowsAbout, areaServed), og:locale:alternate, 64 sayfada JSON-LD doğrulandı
-- [ ] SEO-GEO devam: ~~Van sayfasında LocalBusiness~~ (yapıldı), İngilizce llms bölümü (EN içerik gelince)
+- [x] SEO-GEO devam: Van sayfasında LocalBusiness, `llms.txt` İngilizce sayfalar bölümü (2026-11-19)
 - [x] **İngilizce eksiksiz**: `products`, `plans`, `legal-pages` iki dilli (Fable çevirisi); `/en/products/` (+3 ürün), `/en/legal/` (7 metin, "Türkçe metin geçerlidir" notu), `/en/about/`; dil değiştirici her sayfada karşılığa gidiyor; sitemap 76 URL, tüm çiftler karşılıklı; EN sayfalarda Türkçe alt metin yok
-- [ ] Contentrain'e geri bildirim: i18n'e geçişte eski `data.json` / düz `.md` dosyaları geride kalıyor; doküman boolean'ları tırnaklı yazılıyor (geçici çözüm: select 'true'/'false')
+- [x] Contentrain'e geri bildirim notu: `docs/contentrain-geri-bildirim.md` (6 madde; ekibe iletilmesi kullanıcıda)
 - [ ] Ödeme onay sayfası yalnız Türkçe (`/odeme/`) — İngilizce ürün sayfasında 'Satın al' Türkçe sözleşme akışına gider (bilinçli)
 - [x] **Projede sabit (hard-coded) metin olmayacak**: arayüz metinleri dahil her içerik eksiksiz Contentrain'de (2026-11-18) — tarama temiz
 - [x] Formlar ve iletişim ayrı sayfada: `/iletisim/`, `/en/contact/` (şirket bilgileri + talep türü seçmeli form); ana sayfada SSS + iletişim kartı
@@ -76,7 +76,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 ## 2b. İllüstrasyon sistemi ("Ludus" stili)
 - [x] Stil rehberi: `docs/illustration-style.md` (motifler, çizgi, renk, kompozisyon, yapılmayacaklar); üretici `design/ludus/generate.py`
 - [x] Süreç kartları (6) — ikon rozetleri yerine illüstrasyon (`processes.illustration`, Studio CDN, `ProcessCard`)
-- [ ] Hizmet görselleri bu stile uyumlu hale getirilecek
+- [x] Hizmet görselleri bu stile uyumlu hale getirildi (11 adet, 2:1)
 - [x] Hero / banner / bölüm görselleri
 - [x] Site geneli arka plan deseni: `decor/Amphitheatre` (hero + sayfa başlıkları), `decor/Arcade` (koyu banner), `decor/Meander` (ayırıcı) — satır içi SVG, `aria-hidden`, `pointer-events:none`, parallax katmanları hazır
 - [x] 404 illüstrasyonu: kilit taşı düşmüş kemer (`decor/FallenKeystone.astro`, tek seferlik düşme animasyonu, reduced-motion'da sabit)
@@ -149,10 +149,10 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 ## 8. Yayın
 - [x] Sitemap: yerelleştirilmiş slug çiftleri için hreflang (`astro.config.mjs` LOCALIZED_PAIRS); `/odeme/` sitemap dışı
 - [x] Studio: `leads` formu açık + public + alanlar exposed; Netlify env: `PUBLIC_CONTENTRAIN_PROJECT_ID`, `PUBLIC_CONTENTRAIN_STUDIO_URL`, `STUDIO_CDN_KEY`
-- [ ] `.contentrain/config.json`: stack `nuxt` → `astro`, varsayılan dil `tr` (MCP değiştirmiyor → kullanıcı onayı)
+- [x] `.contentrain/config.json`: stack `astro`, varsayılan dil `tr` (kullanıcı onayıyla elle, 2026-11-18)
 - [x] Lighthouse (canlı, mobil): Erişilebilirlik 100, En iyi uygulamalar 100, SEO 100 (ana sayfa, ürün, iletişim)
 - [x] Performans iyileştirmesi: ikon fontu (165 KB) + 23 KB kullanılmayan CSS kaldırıldı (satır içi SVG `Icon`), CSS HTML'e gömüldü, Studio CDN preconnect
 - [x] Performans yeniden ölçüm: ana sayfa 78→82, ürün 69→87 (FCP 3,3→1,1 sn); A11y/BP/SEO 100
 - [x] Yayın `main` dalından (Netlify); PR akışı gerekmedi
-- [ ] Search Console: `https://lanista.com.tr/sitemap-index.xml` gönder, eski sitemap'leri kaldır, birkaç hafta izle (İngilizce sıralamalar 301 ile taşınamıyor) — kullanıcı
+- [~] Search Console: sitemap gönderildi, durum "Başarılı" (2026-11-18); `https://lanista.com.tr/sitemap-index.xml` gönder, eski sitemap'leri kaldır, birkaç hafta izle (İngilizce sıralamalar 301 ile taşınamıyor) — kullanıcı
 - [ ] ETBİS kaydı (kullanıcı, e-Devlet)
