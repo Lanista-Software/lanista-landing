@@ -2,85 +2,85 @@
   "3442ac47e4cc": {
     "category": "cab37361e7e8",
     "description": "Adobe Photoshop is a widely used graphic design and image editing software developed by Adobe. It is primarily used for editing photos, creating digital artwork, and designing graphics for both print and web.",
-    "image": "/1728898765927_Photoshop.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a9173964-7039-4b8c-a91b-f4ba658a40c4.svg",
     "link": "https://www.adobe.com/tr/products/photoshop.html"
   },
   "9ab7dcca9d1d": {
     "category": "cab37361e7e6",
     "description": "Vue.js is a progressive JavaScript framework used for building user interfaces, especially single-page applications. It is designed to be incrementally adoptable and integrates well with other libraries.",
-    "image": "/1728541493988_vuejs.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/e82a90e0-0f9f-42e0-a870-4f5250da1a39.svg",
     "link": "https://vuejs.org/"
   },
   "9ab7dcca9d1e": {
     "category": "cab37361e7e6",
     "description": "React.js is a JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a large community of developers. React is known for its fast rendering and virtual DOM.",
-    "image": "/1728541679333_react.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/787e3039-8f62-4613-9c01-c68abda26e3d.svg",
     "link": "https://reactjs.dev/"
   },
   "9ab7dcca9d1f": {
     "category": "cab37361e7e6",
     "description": "Nuxt.js is a framework built on top of Vue.js that simplifies the development of server-rendered applications and static websites. It offers powerful features like SSR, static site generation, and improved SEO support.",
-    "image": "/1728541702569_nuxt.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/62b01c15-f526-47f9-811b-b8efd26b6b67.svg",
     "link": "https://nuxtjs.com/"
   },
   "9ab7dcca9d20": {
     "category": "cab37361e7e6",
     "description": "Next.js is a React framework that enables functionality such as server-side rendering and static website generation for building high-performance, SEO-friendly applications.",
-    "image": "/1728541725437_next.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/5db4375d-c169-41fc-ae8f-f3491be94070.svg",
     "link": "https://nextjs.org/"
   },
   "9ab7dcca9d21": {
     "category": "cab37361e7e6",
     "description": "Astro is a new frontend framework for building fast, content-focused websites. It uses an innovative approach to page rendering called partial hydration, which makes websites faster by reducing the JavaScript sent to the browser.",
-    "image": "/1728541750606_astro.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/ce5b7bed-d8cc-4485-91a4-f4d322d4ce2e.svg",
     "link": "https://astro.build/"
   },
   "9ab7dcca9d22": {
     "category": "cab37361e7e6",
     "description": "Svelte is a modern JavaScript framework that shifts much of the work to the compile step instead of the runtime. This results in smaller bundle sizes and faster load times, making it an excellent choice for building fast web applications.",
-    "image": "/1728541774910_svelte.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/9ef6b9d3-f10e-44d6-9034-8f053c6930bb.svg",
     "link": "https://svelte.dev/"
   },
   "9ab7dcca9d23": {
     "category": "cab37361e7e7",
     "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript on the server, enabling you to build scalable and high-performance applications.",
-    "image": "/1728542310638_nodejs.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/959d32d1-ca36-4351-b623-7dfb08175aaf.svg",
     "link": "https://nodejs.org/en"
   },
   "9ab7dcca9d24": {
     "category": "cab37361e7e7",
     "description": "Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications. It is designed to create APIs and web servers quickly and easily.",
-    "image": "/1728542335115_expressjs.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/75e8a18b-0b28-40d3-bfbe-cababcf7e593.svg",
     "link": "https://expressjs.com/"
   },
   "9ab7dcca9d25": {
     "category": "cab37361e7e7",
     "description": "Nest.js is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications. It uses TypeScript and is heavily inspired by Angular, providing a solid architectural design for your applications.",
-    "image": "/1728542360382_nestjs.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/2649bbf5-f7af-4e2f-88dc-1a38c181d813.svg",
     "link": "https://nestjs.com/"
   },
   "9ab7dcca9d26": {
     "category": "cab37361e7e7",
     "description": "Koa.js is a modern web framework for Node.js that aims to be smaller, more expressive, and more robust. It uses async functions to eliminate callbacks and increase error-handling capabilities.",
-    "image": "/1728542379255_koajs.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/80ad781c-31c7-4e37-9a5c-0b777ee517ba.svg",
     "link": "https://koajs.com/"
   },
   "9ab7dcca9d27": {
     "category": "cab37361e7e7",
     "description": "GraphQL is a query language for APIs and a runtime for executing those queries. It provides a more efficient and powerful alternative to REST by allowing clients to request only the data they need.",
-    "image": "/1728542406152_graphql.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/87a018d1-2550-43c9-82e5-71f986640ef7.svg",
     "link": "https://graphql.org/"
   },
   "9ab7dcca9d28": {
     "category": "cab37361e7e8",
     "description": "Figma is the leading collaborative design tool for building meaningful products. Seamlessly design, prototype, develop, and collect feedback in a single platform.",
-    "image": "/1728898720249_figma.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/7194c893-3bbb-4080-a352-8ac03c9bad6a.svg",
     "link": "https://www.figma.com/"
   },
   "9ab7dcca9d29": {
     "category": "cab37361e7e8",
     "description": "Sketch is a design software suite that helps you create beautiful products at scale, whether you’re working alone or collaboratively.",
-    "image": "/1728898732629_sketch.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/4b470a0e-484c-465b-bf11-f1f49fb77a98.svg",
     "link": "https://www.sketch.com/"
   },
   "a1b2c3d4e5f1": {
@@ -116,7 +116,7 @@
   "bc311eb63570": {
     "category": "cab37361e7e8",
     "description": "Adobe Illustrator is a vector-based graphic design software developed by Adobe, primarily used for creating scalable graphics such as logos, illustrations, icons, typography, and complex illustrations.",
-    "image": "/1728898754502_Illustrator.svg",
+    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/e6f1b27b-f5dc-49dc-a622-c947d45c8eac.svg",
     "link": "https://www.adobe.com/tr/products/illustrator.html"
   }
 }
