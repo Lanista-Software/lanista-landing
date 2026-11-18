@@ -76,11 +76,5 @@
     "status": "published",
     "updated_at": "2026-11-18T12:42:54.023Z",
     "updated_by": "contentrain-mcp"
-  },
-  "fd6bfcd2a08a": {
-    "source": "agent",
-    "status": "draft",
-    "updated_at": "2026-11-18T12:42:54.022Z",
-    "updated_by": "contentrain-mcp"
   }
 }

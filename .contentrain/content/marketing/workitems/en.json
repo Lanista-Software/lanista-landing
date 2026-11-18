@@ -154,18 +154,5 @@
     "solution": "We built an open-source Vue 3 component library with TypeScript and TailwindCSS, documented with Storybook: component-driven scalable design, easy npm installation, active use across multiple production projects, and open to community contributions.",
     "technologies": "Vue 3, TypeScript, TailwindCSS, Storybook",
     "title": "LUI Vue"
-  },
-  "fd6bfcd2a08a": {
-    "category": "bcc834108adc",
-    "challenge": "An editorial team publishing at news speed needed one fast, search-friendly site for frequently updated rankings, reports and member-only content.",
-    "description": "Collabers is Turkey's content and news platform for the creator economy and influencer marketing: campaign news, the Top 100(0) creator ranking, platform algorithm guides, reports and member-only Collabers+ content.\n\nWe built the product end to end: hybrid rendering with Nuxt 4, Git-based content management with Contentrain, membership on Supabase, deployed on Netlify.",
-    "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/21b9bd8d-8d41-45d1-adaa-1b382149a17b.webp",
-    "link": "https://collabers.com/",
-    "order": 2,
-    "outcome": "Every release runs lint, type checks and the build plus a Lighthouse performance budget: performance at least 90, JavaScript at most 150 KB. Each build is also scanned to make sure premium content never leaks into the public output.",
-    "slug": "collabers",
-    "solution": "We designed and built the product end to end. Public pages are cached (ISR/SWR) while member and session pages render on the server. Content is managed in Git with Contentrain and editors publish from Studio. Membership and premium content are protected with Supabase, and on-site search runs on Orama. Design tokens come from Figma (shadcn-vue + Tailwind 4); SEO, sitemaps and OG images are generated automatically. Google Analytics loads only after the reader consents.",
-    "technologies": "Nuxt 4, Vue 3, Contentrain, Supabase, shadcn-vue, Tailwind CSS 4, Orama, Netlify Functions",
-    "title": "Collabers"
   }
 }
