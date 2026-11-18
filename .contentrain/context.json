@@ -1,38 +1,20 @@
 {
   "lastOperation": {
     "entries": [
-      "2b592e751796",
-      "50d81f2a3baf",
-      "8cf57e3279a8",
-      "9450777bee2f",
-      "d00761480436",
-      "d00761480437",
-      "d00761480438",
-      "d00761480439",
-      "d00761480440",
-      "d48331b6ba10",
-      "f16b19c950c7",
-      "2b592e751796",
-      "50d81f2a3baf",
-      "8cf57e3279a8",
-      "9450777bee2f",
-      "d00761480436",
-      "d00761480437",
-      "d00761480438",
-      "d00761480439",
-      "d00761480440",
-      "d48331b6ba10",
-      "f16b19c950c7"
+      "06f604c81143",
+      "52f4e338a982",
+      "a26de14ac86e",
+      "be65fb7e0825"
     ],
     "locale": "tr",
-    "model": "services",
+    "model": "plans",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T13:11:03.202Z",
+    "timestamp": "2026-11-18T13:11:43.971Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
-    "entries": 205,
-    "lastSync": "2026-11-18T13:11:03.202Z",
+    "entries": 206,
+    "lastSync": "2026-11-18T13:11:43.971Z",
     "locales": [
       "en",
       "tr"
