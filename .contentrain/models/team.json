@@ -1,0 +1,38 @@
+{
+  "id": "team",
+  "name": "Team",
+  "kind": "collection",
+  "domain": "marketing",
+  "i18n": true,
+  "title_field": "name",
+  "description": "Founders/team for About page and Person JSON-LD.",
+  "fields": {
+    "bio": {
+      "order": 3,
+      "type": "text"
+    },
+    "job_title": {
+      "order": 2,
+      "required": true,
+      "type": "string"
+    },
+    "name": {
+      "order": 1,
+      "required": true,
+      "type": "string"
+    },
+    "order": {
+      "order": 6,
+      "type": "integer"
+    },
+    "photo": {
+      "order": 4,
+      "type": "image"
+    },
+    "same_as": {
+      "items": "url",
+      "order": 5,
+      "type": "array"
+    }
+  }
+}
