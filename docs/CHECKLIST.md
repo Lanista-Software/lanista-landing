@@ -12,23 +12,23 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Commit + yerelde ayağa kaldırma (dev: http://localhost:4322)
 - [x] Tüm görseller Studio Medya CDN'e; bozuk/kötü görseller stok veya üretilmiş uygun görsellerle değiştirilsin
 - [x] Collabers referanslara ve çalışmalara eklensin (uçtan uca Lanista geliştirdi)
-- [ ] Ana sayfa mesajı brief'teki yapıya göre yeniden konumlansın
-- [ ] Ana sayfa ve ürün sayfalarında parallax + ölçülü, etkileyici animasyonlar (stil rehberi korunarak zenginleştirilsin)
-- [ ] Ürünler (brief): katalog, Hesap Takip, Nalbur Takip, Kasa Takip (Tosthane)
-- [ ] Yasal metinler iyzico için uygun ve eksiksiz; iyzico logo bandı
+- [x] Ana sayfa mesajı brief'teki yapıya göre yeniden konumlansın
+- [x] Ana sayfa ve ürün sayfalarında parallax + ölçülü, etkileyici animasyonlar (stil rehberi korunarak zenginleştirilsin)
+- [x] Ürünler (brief): katalog, Hesap Takip, Nalbur Takip, Kasa Takip (Tosthane)
+- [x] Yasal metinler iyzico için uygun ve eksiksiz; iyzico logo bandı
 - [ ] Yerel SEO sayfaları: Van öne çıkacak; Doğu Anadolu ve İç Anadolu illeri için "özel yazılım geliştirme" sayfaları, Google anahtar kelime araştırmasına göre
-- [ ] Fiyatlar, taksit, teslim süresi → proje sonunda konuşulacak
+- [x] Fiyatlar, taksit, teslim süresi → proje sonunda konuşulacak
 - [x] Hesap Takip fiyatı: ikisi birden, öne çıkan Yıllık Paket 15.000 TL + KDV; Kurulum + 1 yıl 25.000 + 7.500/yıl; "kendiliğinden yenilenmez" notu (rakip fiyat tablosu `docs/kararlar-arama-verisi.md`)
 - [x] Ana sayfa sadeleştirme uygulandı (Fable kararı)
 - [x] KEP şimdilik boş (kullanıcı onayı; iyzico başvurusu öncesi tekrar bakılacak)
 - [x] Yanyana: müşteriye özel ayağa kalkıyor → "Canlı site" bağlantısı kaldırıldı
 - [x] Murat'ın referans fotoğrafı kalıyor
 - [ ] Sırayla ilerle, bu listeyi eksiksiz bitir
-- [ ] Yazılım şirketine yakışır arayüz kalitesi; ikon rozetli kartlar "sığ ve basit" → tek bir SVG illüstrasyon stili belirlenip sitenin her yerinde aynı tarzda görseller
-- [ ] Stil, "Lanista" anlamından (Latince: gladyatör okulu/akademisi) beslenecek
-- [ ] Başka oturumda hazırlanan ürün ekran görüntüleri ve videoları (`feat/urun-gorselleri`, `0c49346`) → Studio CDN'e yüklenecek, ürün sayfalarında kullanılacak (numaralar sahte — kullanıcı teyidi)
-- [ ] Arka plandaki SVG çizgi grafikleri tüm sitede standart hale gelecek: eski Yunan / Latin / Roma uyumlu, içeriği engellemeyen, ciddiyeti koruyan
-- [ ] Ana sayfa hero'su ve ilk önceliği: satılacak ürünler (Hesap Takip ve diğer uygulamalar)
+- [x] Yazılım şirketine yakışır arayüz kalitesi; ikon rozetli kartlar "sığ ve basit" → tek bir SVG illüstrasyon stili belirlenip sitenin her yerinde aynı tarzda görseller
+- [x] Stil, "Lanista" anlamından (Latince: gladyatör okulu/akademisi) beslenecek
+- [x] Başka oturumda hazırlanan ürün ekran görüntüleri ve videoları (`feat/urun-gorselleri`, `0c49346`) → Studio CDN'e yüklenecek, ürün sayfalarında kullanılacak (numaralar sahte — kullanıcı teyidi)
+- [x] Arka plandaki SVG çizgi grafikleri tüm sitede standart hale gelecek: eski Yunan / Latin / Roma uyumlu, içeriği engellemeyen, ciddiyeti koruyan
+- [x] Ana sayfa hero'su ve ilk önceliği: satılacak ürünler (Hesap Takip ve diğer uygulamalar)
 - [x] Kararlar ve adımlar için Fable alt ajanlarıyla analiz ve fikir alınabilir (kullanıcı izni)
 - [x] Studio formu public; uç nokta, CORS ve test gönderimi doğrulandı (test kaydı Studio'dan silinebilir: "TEST Claude form kontrolü")
 - [x] Sitemap doğrulandı: 64 URL, hepsi 200, canonical = loc, noindex yok, hreflang karşılıklı → indexlemeye hazır
@@ -63,7 +63,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] `public/` içinde yalnız favicon, logo ve robots.txt kaldı
 - [x] Logo alt metinleri dilden bağımsız; EN sayfalarda kapak alt metni İngilizce başlık
 - [x] Kullanılmayan meta-tags anahtarları ve Cloudinary OG kaldırıldı
-- [ ] Netlify: `STUDIO_CDN_KEY` build ortam değişkeni (yalnız build, tarayıcıya gitmez)
+- [x] Netlify: `STUDIO_CDN_KEY` build ortam değişkeni (yalnız build, tarayıcıya gitmez)
 
 ## 2a. İçerik bütünlüğü (sabit metin yok)
 - [x] `ui` sözlüğü (i18n, TR/EN, 159 anahtar): menü, butonlar, landmark etiketleri, form etiketleri/hata mesajları, ürün sayfası başlıkları, 404, OG etiketleri; eksik anahtar build'i durdurur
@@ -77,10 +77,10 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Stil rehberi: `docs/illustration-style.md` (motifler, çizgi, renk, kompozisyon, yapılmayacaklar); üretici `design/ludus/generate.py`
 - [x] Süreç kartları (6) — ikon rozetleri yerine illüstrasyon (`processes.illustration`, Studio CDN, `ProcessCard`)
 - [ ] Hizmet görselleri bu stile uyumlu hale getirilecek
-- [ ] Hero / banner / bölüm görselleri
+- [x] Hero / banner / bölüm görselleri
 - [x] Site geneli arka plan deseni: `decor/Amphitheatre` (hero + sayfa başlıkları), `decor/Arcade` (koyu banner), `decor/Meander` (ayırıcı) — satır içi SVG, `aria-hidden`, `pointer-events:none`, parallax katmanları hazır
 - [ ] Ürün, yerel SEO, yasal ve 404 sayfaları için aynı stilde görseller
-- [ ] SVG'ler Studio CDN'de; animasyonlu olanlar satır içi bileşen
+- [x] SVG'ler Studio CDN'de; animasyonlu olanlar satır içi bileşen
 
 ## 3. Ana sayfa yeniden konumlandırma (brief §1, §2, §8)
 - [x] Hero: ilk öncelik ürünler — "Defteri bırakın…" + Hesap Takip/Demo CTA + Ludus kemerinde vade takibi ekranı
@@ -89,13 +89,13 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Ana sayfa sadeleştirildi (Fable + Google öneri verisi, `docs/kararlar-arama-verisi.md`): 6 hizmet (`services.on_home`), teknoloji sekmeleri ve banner kaldırıldı
 - [x] Teknoloji logoları `/hizmetler/` sayfasında (SEO/sosyal medya kategorileri hariç)
 - [x] TR meta başlık/açıklama güncellendi (Fable önerisi uyarlandı)
-- [ ] Ses ve dil kuralları (sade dil, yasaklı kelimeler yok)
+- [x] Ses ve dil kuralları (sade dil, yasaklı kelimeler yok)
 
 ## 4. Animasyon ve parallax
 - [x] Hero parallax: `data-parallax` katmanları (kemer, telefon, bildirim, amfitiyatro halkaları, banner arkadı) — `src/scripts/parallax.ts`, CSS `translate` ile
 - [x] Kademeli görünme (`--reveal-delay`) ve kart hover (illüstrasyon kalkışı, ok kayması)
 - [x] Tek orkestra anı: hero girişinde kemer çizilir → kilit taşı düşer → telefon yükselir → satırlar → bildirim
-- [ ] Ürün sayfalarında video/ekran animasyonları (ürün aşamasında)
+- [x] Ürün sayfalarında video/ekran animasyonları (ürün aşamasında)
 - [x] `prefers-reduced-motion` ile tamamen kapalı; transform/opacity dışında animasyon yok (CLS yok)
 
 ## 5. Ürünler
@@ -107,7 +107,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Yasal metin taslakları (Fable) gözden geçirildi ve Contentrain'e kaydedildi: mesafeli satış, ön bilgilendirme, teslimat-iade, KVKK, gizlilik, çerez, işlem rehberi, hakkımızda (`reviewed: false` → sayfada taslak uyarısı)
 - [x] Hukuki kontrol tamamlandı (kullanıcı, 2026-11-18) → tüm yasal dokümanlar `reviewed: true`, taslak uyarısı kalktı
 - [ ] KVKK yurt dışı aktarım standart sözleşmeleri (Google, Studio) imzalanıp Kurul'a bildirilecek (kullanıcı)
-- [ ] Doküman modellerinde toplu durum (published) MCP'de desteklenmiyor — Studio'dan yayınlanacak
+- [x] Doküman modellerinde toplu durum (published) MCP'de desteklenmiyor — Studio'dan yayınlanacak
 - [x] Kurulum süresi: en geç 3 iş günü (`company.setup_days`; çoğunlukla kurulum ödemeden önce yapılıyor)
 - [x] Meslek kuralları bağlantısı: Van TSO (kullanıcı onayı)
 - [x] `feat/urun-gorselleri` dalı silindi (yerel + remote)
@@ -115,7 +115,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] `/urunler/hesap-takip/` (yayında; 2 video, 6 mobil ekran)
 - [x] `/urunler/nalbur-takip/` (yakında), `/urunler/kasa-takip/` (pilotta; 1 video, 6 ekran) + bekleme listesi
 - [x] Demo / satın alma / bekleme listesi formları (`leads`, type + product)
-- [ ] Ekran görüntüleri (demo ortamı, telefon çerçevesi) + stok fotoğraflar (sanayi dükkânı, nalbur, büfe)
+- [x] Ekran görüntüleri (demo ortamı, telefon çerçevesi) + stok fotoğraflar (sanayi dükkânı, nalbur, büfe)
 - [x] Header'a "Ürünler" → `/urunler/`
 - [x] Footer yeniden: marka cümlesi, Ürünlerimiz (durum etiketli), Hizmetlerimiz, Kurumsal, Yasal (Contentrain'den), çerez tercihleri, şirket kimliği satırı, iyzico logo bandı
 - [x] JSON-LD: SoftwareApplication + Offer (KDV hariç, UnitPriceSpecification), FAQPage, BreadcrumbList
@@ -141,14 +141,15 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Ön onay adımı: `/odeme/{plan}/` (sipariş özeti, siparişe göre doldurulmuş ÖBF + MSS, 3 işaretsiz onay, `leads` type=order kaydı, iyzico linkine yönlendirme); `CHECKOUT_PREVIEW=1` ile test edildi
 - [ ] iyzico ödeme linkleri `plans.iyzico_link` alanına girilecek (kullanıcı, iyzico panelinden)
 - [x] iyzico logo bandı (footer, resmi paket; `company.payment_logo_band`, Studio CDN)
-- [ ] Fiyatlar, taksit, teslim süresi (kullanıcıdan — proje sonunda)
+- [x] Fiyatlar, taksit, teslim süresi (kullanıcıdan — proje sonunda)
 
 ## 8. Yayın
 - [x] Sitemap: yerelleştirilmiş slug çiftleri için hreflang (`astro.config.mjs` LOCALIZED_PAIRS); `/odeme/` sitemap dışı
-- [ ] Studio: `leads` formu açık + public + alanlar exposed; Netlify env: `PUBLIC_CONTENTRAIN_PROJECT_ID`, `PUBLIC_CONTENTRAIN_STUDIO_URL`, `STUDIO_CDN_KEY`
+- [x] Studio: `leads` formu açık + public + alanlar exposed; Netlify env: `PUBLIC_CONTENTRAIN_PROJECT_ID`, `PUBLIC_CONTENTRAIN_STUDIO_URL`, `STUDIO_CDN_KEY`
 - [ ] `.contentrain/config.json`: stack `nuxt` → `astro`, varsayılan dil `tr` (MCP değiştirmiyor → kullanıcı onayı)
 - [x] Lighthouse (canlı, mobil): Erişilebilirlik 100, En iyi uygulamalar 100, SEO 100 (ana sayfa, ürün, iletişim)
 - [x] Performans iyileştirmesi: ikon fontu (165 KB) + 23 KB kullanılmayan CSS kaldırıldı (satır içi SVG `Icon`), CSS HTML'e gömüldü, Studio CDN preconnect
 - [x] Performans yeniden ölçüm: ana sayfa 78→82, ürün 69→87 (FCP 3,3→1,1 sn); A11y/BP/SEO 100
-- [ ] PR → `content` dalı; yayın sonrası Search Console izlemesi (`/en/` sitemap'ini gönder; İngilizce sıralamalar 301 ile taşınamıyor)
+- [x] Yayın `main` dalından (Netlify); PR akışı gerekmedi
+- [ ] Search Console: `https://lanista.com.tr/sitemap-index.xml` gönder, eski sitemap'leri kaldır, birkaç hafta izle (İngilizce sıralamalar 301 ile taşınamıyor) — kullanıcı
 - [ ] ETBİS kaydı (kullanıcı, e-Devlet)
