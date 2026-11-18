@@ -7,6 +7,12 @@
   "title_field": "name",
   "description": "Lanista's ready-made products for local businesses (Turkish market, Turkish only). Source: docs/urunler-ve-iyzico-brief.md §3. Voice rules §8: plain shopkeeper language; never mention user management, margins, costs or customer names; planned features are 'ekleniyor', never 'eksik'. Never store demo login credentials here.",
   "fields": {
+    "desktop_screenshots": {
+      "items": "image",
+      "max": 8,
+      "order": 14.7,
+      "type": "array"
+    },
     "faq": {
       "items": {
         "fields": {
@@ -45,6 +51,11 @@
       },
       "order": 10,
       "type": "array"
+    },
+    "hero_screenshot": {
+      "description": "Phone screenshot (390×844) shown in the hero phone frame.",
+      "order": 14.5,
+      "type": "image"
     },
     "hero_text": {
       "max": 220,
@@ -181,6 +192,33 @@
       },
       "max": 6,
       "order": 12,
+      "type": "array"
+    },
+    "videos": {
+      "items": {
+        "fields": {
+          "caption": {
+            "max": 200,
+            "type": "text"
+          },
+          "poster": {
+            "required": true,
+            "type": "image"
+          },
+          "src": {
+            "required": true,
+            "type": "video"
+          },
+          "title": {
+            "max": 80,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 4,
+      "order": 14.6,
       "type": "array"
     }
   }
