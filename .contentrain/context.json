@@ -1,17 +1,19 @@
 {
   "lastOperation": {
     "entries": [
-      "en"
+      "5a144f4f76e7",
+      "aa28b2b1e932",
+      "6655ecada081"
     ],
-    "locale": "en",
-    "model": "company",
+    "locale": "tr",
+    "model": "onboarding-steps",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T13:18:51.241Z",
+    "timestamp": "2026-11-18T13:18:58.013Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
-    "entries": 207,
-    "lastSync": "2026-11-18T13:18:51.241Z",
+    "entries": 210,
+    "lastSync": "2026-11-18T13:18:58.013Z",
     "locales": [
       "en",
       "tr"
