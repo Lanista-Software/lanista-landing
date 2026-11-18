@@ -2,7 +2,7 @@
   "2aa54f9e7eaf": {
     "buttonlink": "#works",
     "buttontext": "Son projelerimizi inceleyin",
-    "description": "Müşterilerimize, tasarımdan final ürüne kadar her adımda rehberlik ederek geniş kapsamlı yazılım geliştirme hizmetleri sunuyoruz.",
+    "description": "Kendi ürünlerimizi geliştiren ekip, şirketiniz için web, mobil ve SaaS yazılımı da geliştirir; teslim eder, bakımını üstlenir.",
     "name": "services",
     "title": "Yazılım geliştirme çözümlerimize göz atın"
   },
@@ -36,18 +36,18 @@
   },
   "2aa54f9e7x90": {
     "buttonlink": "#contact",
-    "buttontext": "Projenizi konuşalım",
-    "description": "Ürün geliştirme tecrübemizle şirketlerin ve girişimlerin fikirlerini hayata geçirmelerine yardımcı oluyoruz.",
+    "buttontext": "Yazılım projesi için teklif alın",
+    "description": "Kapsamı birlikte yazarız, yazılımı teslim eder, bakımını üstleniriz.",
     "name": "banner",
-    "title": "Fikrinizi birlikte geliştirelim!"
+    "title": "Yazılımınızı birlikte yapalım"
   },
   "2aa54f9e7xb3": {
-    "buttonlink": "#contact",
-    "buttontext": "Projenizi konuşalım",
-    "description": "Dijital dünyada başarılı iş modelleri geliştirebilmeniz için dış kaynaklı Frontend, Backend ve Mobil Uygulama geliştirme hizmetleri sunuyoruz.",
+    "buttonlink": "/urunler/hesap-takip",
+    "buttontext": "Hesap Takip'i inceleyin",
+    "description": "Veresiye, tahsilat, vade ve günlük kasa için hazır uygulamalar. Kurulumu biz yaparız; internet gitse de kayıt durmaz.",
     "name": "hero",
-    "subtitle": "Yazılım Geliştirme Şirketi",
-    "title": "Web ve Mobil Uygulama geliştirme hizmetleri partneriniz"
+    "subtitle": "Esnaf için hazır uygulamalar",
+    "title": "Defteri bırakın, dükkânın hesabı telefonunuzda olsun"
   },
   "2aa54f9e7xb4": {
     "buttonlink": "#contact",

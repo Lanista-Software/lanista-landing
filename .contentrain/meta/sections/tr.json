@@ -1,8 +1,9 @@
 {
   "2aa54f9e7eaf": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-11-18T12:58:41.634Z",
+    "updated_by": "contentrain-mcp"
   },
   "2aa54f9e7eb0": {
     "source": "import",
@@ -25,14 +26,16 @@
     "updated_by": "migration"
   },
   "2aa54f9e7x90": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-11-18T12:58:41.634Z",
+    "updated_by": "contentrain-mcp"
   },
   "2aa54f9e7xb3": {
-    "source": "import",
+    "source": "agent",
     "status": "published",
-    "updated_by": "migration"
+    "updated_at": "2026-11-18T12:58:41.634Z",
+    "updated_by": "contentrain-mcp"
   },
   "2aa54f9e7xb4": {
     "source": "import",
