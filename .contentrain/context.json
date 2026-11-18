@@ -1,17 +1,14 @@
 {
   "lastOperation": {
-    "entries": [
-      "e78cafc5a6e0"
-    ],
     "locale": "en",
-    "model": "references",
+    "model": "workitems",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T12:43:02.361Z",
-    "tool": "contentrain_content_save"
+    "timestamp": "2026-11-18T12:43:25.822Z",
+    "tool": "contentrain_content_delete"
   },
   "stats": {
-    "entries": 193,
-    "lastSync": "2026-11-18T12:43:02.361Z",
+    "entries": 192,
+    "lastSync": "2026-11-18T12:43:25.822Z",
     "locales": [
       "en",
       "tr"
