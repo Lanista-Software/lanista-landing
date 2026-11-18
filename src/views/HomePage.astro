@@ -5,6 +5,7 @@ import AppCard from '~/components/AppCard.astro'
 import Banner from '~/components/Banner.astro'
 import Hero from '~/components/Hero.astro'
 import LeadForm from '~/components/LeadForm.astro'
+import ProcessCard from '~/components/ProcessCard.astro'
 import Section from '~/components/Section.astro'
 import SectionLayout from '~/components/SectionLayout.astro'
 import TabSection from '~/components/TabSection.astro'
@@ -81,7 +82,7 @@ const jsonLd = [
       <ol class="grid w-full grid-cols-1 gap-8 lg:grid-cols-6">
         {home.processes.map((item, i) => (
           <li class={cardSpan('triple', i)} style={stagger(i)}>
-            <AppCard locale={locale} item={item} view="triple" />
+            <ProcessCard step={i + 1} item={item} />
           </li>
         ))}
       </ol>

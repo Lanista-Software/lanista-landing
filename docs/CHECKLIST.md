@@ -22,6 +22,9 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] Yazılım şirketine yakışır arayüz kalitesi; ikon rozetli kartlar "sığ ve basit" → tek bir SVG illüstrasyon stili belirlenip sitenin her yerinde aynı tarzda görseller
 - [ ] Stil, "Lanista" anlamından (Latince: gladyatör okulu/akademisi) beslenecek
 - [ ] Başka oturumda hazırlanan ürün ekran görüntüleri ve animasyonları ürün sayfalarında kullanılacak
+- [ ] Arka plandaki SVG çizgi grafikleri tüm sitede standart hale gelecek: eski Yunan / Latin / Roma uyumlu, içeriği engellemeyen, ciddiyeti koruyan
+- [ ] Ana sayfa hero'su ve ilk önceliği: satılacak ürünler (Hesap Takip ve diğer uygulamalar)
+- [x] Kararlar ve adımlar için Fable alt ajanlarıyla analiz ve fikir alınabilir (kullanıcı izni)
 
 ## 1. Astro'ya geçiş ✅ (`0d50ee0`)
 - [x] Nuxt → Astro 6 (statik), LUI kaldırıldı, Zag.js (sekmeler, akordeon, mobil menü)
@@ -47,15 +50,16 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] yanyana.games alan adı çözülmüyor (site kapalı) → kullanıcıya soruldu; "Canlı site" bağlantısı kaldırılsın mı?
 
 ## 2b. İllüstrasyon sistemi ("Ludus" stili)
-- [ ] Stil rehberi: `docs/illustration-style.md` (motifler, çizgi, renk, kompozisyon, yapılmayacaklar)
-- [ ] Süreç kartları (6) — ikon rozetleri yerine illüstrasyon (`processes` modeline `illustration` alanı)
+- [x] Stil rehberi: `docs/illustration-style.md` (motifler, çizgi, renk, kompozisyon, yapılmayacaklar); üretici `design/ludus/generate.py`
+- [x] Süreç kartları (6) — ikon rozetleri yerine illüstrasyon (`processes.illustration`, Studio CDN, `ProcessCard`)
 - [ ] Hizmet görselleri bu stile uyumlu hale getirilecek
 - [ ] Hero / banner / bölüm görselleri
+- [ ] Site geneli arka plan deseni (menderes bordür, sütun yivi, kemer konturu) — tek bileşen, `pointer-events:none`, düşük kontrast
 - [ ] Ürün, yerel SEO, yasal ve 404 sayfaları için aynı stilde görseller
 - [ ] SVG'ler Studio CDN'de; animasyonlu olanlar satır içi bileşen
 
 ## 3. Ana sayfa yeniden konumlandırma (brief §1, §2, §8)
-- [ ] Hero mesajı: ajans + hazır ürünler (iki ayak)
+- [ ] Hero: ilk öncelik ürünler (Hesap Takip öne, diğerleri yanında); ajans hizmetleri ikinci blok
 - [ ] Ürünler bloğu (ana sayfada)
 - [ ] Hizmetler bloğu korunacak, "danışmanlık" çağrışımı azaltılacak (iyzico riski)
 - [ ] Meta başlık/açıklama (≤60 / ≤155 karakter), OG kartı
