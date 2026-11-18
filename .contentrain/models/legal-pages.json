@@ -32,13 +32,21 @@
       "type": "integer"
     },
     "reviewed": {
-      "description": "Lawyer/accountant review done. While false the page shows a 'taslak' notice.",
+      "description": "Lawyer/accountant review done ('true'). While 'false' the page shows a draft notice. (select, not boolean: MCP quotes document frontmatter booleans.)",
+      "options": [
+        "true",
+        "false"
+      ],
       "order": 7,
-      "type": "boolean"
+      "type": "select"
     },
     "show_in_footer": {
+      "options": [
+        "true",
+        "false"
+      ],
       "order": 5,
-      "type": "boolean"
+      "type": "select"
     },
     "title": {
       "max": 80,
