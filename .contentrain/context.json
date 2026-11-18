@@ -1,19 +1,18 @@
 {
   "lastOperation": {
     "entries": [
-      "2aa54f9e7eb3",
-      "2aa54f9e7x90",
-      "2aa54f9e7xb5"
+      "cab37361e7e9",
+      "cab37361e7ea"
     ],
     "locale": "en",
-    "model": "sections",
+    "model": "work-categories",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T14:12:50.968Z",
+    "timestamp": "2026-11-18T14:13:01.466Z",
     "tool": "contentrain_bulk"
   },
   "stats": {
-    "entries": 209,
-    "lastSync": "2026-11-18T14:12:50.968Z",
+    "entries": 205,
+    "lastSync": "2026-11-18T14:13:01.466Z",
     "locales": [
       "en",
       "tr"
