@@ -1,19 +1,19 @@
 {
   "lastOperation": {
     "locale": "en",
-    "model": "company",
+    "model": "legal-pages",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T13:32:07.777Z",
+    "timestamp": "2026-11-18T13:32:15.341Z",
     "tool": "contentrain_model_save"
   },
   "stats": {
     "entries": 219,
-    "lastSync": "2026-11-18T13:32:07.777Z",
+    "lastSync": "2026-11-18T13:32:15.341Z",
     "locales": [
       "en",
       "tr"
     ],
-    "models": 19
+    "models": 20
   },
   "version": "1"
 }
