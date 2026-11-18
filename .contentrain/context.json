@@ -1,27 +1,17 @@
 {
   "lastOperation": {
     "entries": [
-      "2aa54f9e7eaf",
-      "2aa54f9e7eb0",
-      "2aa54f9e7eb1",
-      "2aa54f9e7eb2",
-      "2aa54f9e7xb3",
-      "2aa54f9e7xb4",
-      "6688128fdc13",
-      "6b931f1d3589",
-      "98874f167333",
-      "2aa54f9e7xb4",
-      "6b931f1d3589"
+      "en"
     ],
     "locale": "en",
-    "model": "sections",
+    "model": "meta-tags",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T21:48:12.684Z",
+    "timestamp": "2026-11-18T21:49:25.899Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 234,
-    "lastSync": "2026-11-18T21:48:12.684Z",
+    "lastSync": "2026-11-18T21:49:25.899Z",
     "locales": [
       "tr",
       "en"
