@@ -1,0 +1,124 @@
+{
+  "id": "local-pages",
+  "name": "Local Pages",
+  "kind": "collection",
+  "domain": "marketing",
+  "i18n": true,
+  "title_field": "title",
+  "description": "Local / regional SEO landing pages (/van-yazilim/ etc.). Publish a city page only with real local proof (doorway rule).",
+  "fields": {
+    "area_served": {
+      "items": "string",
+      "max": 20,
+      "order": 8,
+      "type": "array"
+    },
+    "facts": {
+      "items": {
+        "fields": {
+          "text": {
+            "max": 240,
+            "required": true,
+            "type": "text"
+          },
+          "title": {
+            "max": 60,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 6,
+      "order": 10,
+      "type": "array"
+    },
+    "faq": {
+      "items": {
+        "fields": {
+          "answer": {
+            "max": 600,
+            "required": true,
+            "type": "text"
+          },
+          "question": {
+            "max": 140,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 10,
+      "order": 13,
+      "type": "array"
+    },
+    "hero_text": {
+      "max": 400,
+      "order": 7,
+      "required": true,
+      "type": "text"
+    },
+    "hero_title": {
+      "max": 110,
+      "order": 6,
+      "required": true,
+      "type": "string"
+    },
+    "local_business": {
+      "description": "Emit LocalBusiness JSON-LD (only for the city with the real office: Van)",
+      "order": 9,
+      "type": "boolean"
+    },
+    "meta_description": {
+      "max": 170,
+      "order": 5,
+      "type": "text"
+    },
+    "meta_title": {
+      "max": 70,
+      "order": 4,
+      "type": "string"
+    },
+    "order": {
+      "order": 3,
+      "type": "integer"
+    },
+    "sections": {
+      "items": {
+        "fields": {
+          "body": {
+            "max": 1400,
+            "required": true,
+            "type": "text"
+          },
+          "title": {
+            "max": 90,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 8,
+      "order": 11,
+      "type": "array"
+    },
+    "services": {
+      "model": "service-pages",
+      "order": 12,
+      "type": "relations"
+    },
+    "slug": {
+      "order": 1,
+      "required": true,
+      "type": "slug"
+    },
+    "title": {
+      "max": 80,
+      "order": 2,
+      "required": true,
+      "type": "string"
+    }
+  }
+}
