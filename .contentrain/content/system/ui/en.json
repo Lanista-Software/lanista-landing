@@ -113,6 +113,8 @@
   "legal.token.paket": "the selected plan",
   "legal.token.tutar": "the order total",
   "legal.token.urun": "the purchased product",
+  "legal.translation_note": "This English version is provided for information. In case of any conflict, the Turkish text prevails.",
+  "legal.turkish_version": "Turkish version",
   "llms.company": "Company and contact",
   "llms.english": "Türkçe sürüm",
   "llms.faq": "Frequently asked questions",
