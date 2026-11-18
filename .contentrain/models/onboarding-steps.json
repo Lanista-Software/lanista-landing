@@ -1,0 +1,27 @@
+{
+  "id": "onboarding-steps",
+  "name": "Onboarding Steps",
+  "kind": "collection",
+  "domain": "marketing",
+  "i18n": true,
+  "title_field": "title",
+  "description": "'Nasıl başlarsınız' steps on the home page.",
+  "fields": {
+    "order": {
+      "order": 3,
+      "type": "integer"
+    },
+    "text": {
+      "max": 200,
+      "order": 2,
+      "required": true,
+      "type": "text"
+    },
+    "title": {
+      "max": 60,
+      "order": 1,
+      "required": true,
+      "type": "string"
+    }
+  }
+}
