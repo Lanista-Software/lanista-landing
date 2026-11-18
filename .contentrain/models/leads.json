@@ -7,6 +7,11 @@
   "title_field": "name",
   "description": "All website form submissions (contact, product demo request, quote request, product waitlist), received through the Contentrain Studio public forms endpoint. One model for every form because the Studio Starter plan allows a single form-enabled model; `type` and `product` tell the forms apart. Contains personal data (KVKK) — never publish entries, never reference from site content.",
   "fields": {
+    "amount_try": {
+      "description": "KDV dahil tutar (order).",
+      "order": 13,
+      "type": "decimal"
+    },
     "business": {
       "label": {
         "en": "Company",
@@ -14,6 +19,12 @@
       },
       "max": 100,
       "order": 4,
+      "type": "string"
+    },
+    "consents": {
+      "description": "Order: approved documents + versions, e.g. \"obf:2026-11-18;mss:2026-11-18;ifa_onayi:evet\".",
+      "max": 300,
+      "order": 14,
       "type": "string"
     },
     "email": {
@@ -86,6 +97,12 @@
       "order": 3,
       "type": "phone"
     },
+    "plan": {
+      "description": "Plan name for order leads.",
+      "max": 80,
+      "order": 12,
+      "type": "string"
+    },
     "product": {
       "description": "Product slug (e.g. hesap-takip) for demo/quote/waitlist requests; empty for general contact.",
       "label": {
@@ -106,7 +123,7 @@
       "type": "string"
     },
     "type": {
-      "description": "contact = genel iletişim, demo = demo isteği, quote = teklif isteği, waitlist = Yakında ürün bekleme listesi",
+      "description": "contact = genel iletişim, demo = demo isteği, quote = teklif isteği, waitlist = Yakında ürün bekleme listesi; order = ödeme öncesi onay (ÖBF + MSS + cayma istisnası onayları), ardından iyzico linkine yönlendirildi",
       "label": {
         "en": "Request type",
         "tr": "Talep türü"
@@ -115,7 +132,8 @@
         "contact",
         "demo",
         "quote",
-        "waitlist"
+        "waitlist",
+        "order"
       ],
       "order": 7,
       "required": true,
