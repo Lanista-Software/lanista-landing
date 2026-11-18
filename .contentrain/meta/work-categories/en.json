@@ -33,15 +33,5 @@
     "source": "import",
     "status": "published",
     "updated_by": "migration"
-  },
-  "cab37361e7e9": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
-  },
-  "cab37361e7ea": {
-    "source": "import",
-    "status": "published",
-    "updated_by": "migration"
   }
 }
