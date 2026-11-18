@@ -1,9 +1,10 @@
 {
   "lastOperation": {
     "entries": [
+      "22c9e6fcd8ce",
+      "fd6bfcd2a08a",
       "1a01328952b4",
       "51bf2dbbed29",
-      "8a8044e883e8",
       "8a8044e883e9",
       "8a8044e883ea",
       "8a8044e883eb",
@@ -16,7 +17,6 @@
       "f6a7b8c9d0e1",
       "1a01328952b4",
       "51bf2dbbed29",
-      "8a8044e883e8",
       "8a8044e883e9",
       "8a8044e883ea",
       "8a8044e883eb",
@@ -31,12 +31,12 @@
     "locale": "tr",
     "model": "workitems",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T12:42:02.347Z",
+    "timestamp": "2026-11-18T12:42:55.217Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
-    "entries": 190,
-    "lastSync": "2026-11-18T12:42:02.347Z",
+    "entries": 192,
+    "lastSync": "2026-11-18T12:42:55.217Z",
     "locales": [
       "en",
       "tr"
