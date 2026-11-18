@@ -5,7 +5,7 @@ group: legal
 order: 7
 show_in_footer: "true"
 last_updated: 2026-11-18
-reviewed: "false"
+reviewed: "true"
 slug: islem-rehberi
 ---
 
