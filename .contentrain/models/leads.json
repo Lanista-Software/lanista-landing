@@ -139,5 +139,28 @@
       "required": true,
       "type": "select"
     }
+  },
+  "form": {
+    "autoApprove": false,
+    "enabled": true,
+    "exposedFields": [
+      "amount_try",
+      "business",
+      "consents",
+      "email",
+      "kvkk_consent",
+      "language",
+      "message",
+      "name",
+      "page",
+      "phone",
+      "plan",
+      "product",
+      "subject",
+      "type"
+    ],
+    "honeypot": false,
+    "notifications": true,
+    "public": true
   }
 }
