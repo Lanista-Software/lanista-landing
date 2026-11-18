@@ -14,14 +14,14 @@ const stroke = tone === 'light' ? '#9ABFE5' : '#FFFFFF'
 const rings = [180, 260, 340, 420, 500, 580, 660]
 ---
 
-<div class:list={['decor pointer-events-none absolute inset-0 -z-10 overflow-hidden', className]} aria-hidden="true">
+<div class:list={['decor pointer-events-none absolute inset-0 -z-10 overflow-hidden', className]} style="mask-image:linear-gradient(to bottom,#000 55%,transparent 98%);-webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent 98%)" aria-hidden="true">
   <svg class="absolute left-1/2 top-0 h-full w-[1600px] max-w-none -translate-x-1/2" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" fill="none">
-    <g data-parallax="0.12" stroke={stroke} stroke-opacity={tone === 'light' ? 0.32 : 0.12} stroke-width="1">
+    <g data-parallax="0.08" stroke={stroke} stroke-opacity={tone === 'light' ? 0.32 : 0.12} stroke-width="1">
       {rings.map((r, i) => (
         <path d={`M${800 - r} 900 A${r} ${r} 0 0 1 ${800 + r} 900`} stroke-dasharray={i % 2 ? '2 10' : undefined} />
       ))}
     </g>
-    <g data-parallax="0.06" stroke={stroke} stroke-opacity={tone === 'light' ? 0.2 : 0.1} stroke-width="1">
+    <g data-parallax="0.04" stroke={stroke} stroke-opacity={tone === 'light' ? 0.2 : 0.1} stroke-width="1">
       {Array.from({ length: 13 }, (_, i) => {
         const a = Math.PI * (i + 1) / 14
         const x1 = 800 - Math.cos(a) * 180

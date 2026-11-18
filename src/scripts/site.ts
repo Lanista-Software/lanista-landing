@@ -1,6 +1,8 @@
 import { initClickTracking, track } from './analytics'
+import { initParallax } from './parallax'
 
 initClickTracking()
+initParallax()
 
 // Header shadow once the page scrolls.
 const header = document.getElementById('site-header')

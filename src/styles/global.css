@@ -199,7 +199,8 @@
 
   /* ---- Reveal-on-scroll (ex CardAnimation). Visible without JS. ---- */
   .js .reveal {
-    @apply opacity-0 transition-opacity duration-1000 ease-in-out;
+    @apply opacity-0 transition-opacity duration-700 ease-out;
+    transition-delay: var(--reveal-delay, 0ms);
   }
 
   .js .reveal.is-visible {

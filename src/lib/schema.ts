@@ -134,7 +134,6 @@ export function ownAppsSchema(locale: Locale) {
       '@type': 'SoftwareApplication',
       'name': 'Yanyana',
       'description': en ? 'Social game platform for weddings, corporate events, and social gatherings. Supports offline and online modes with 12+ game engines.' : 'Düğün, kurumsal etkinlik ve sosyal buluşmalar için sosyal oyun platformu. 12+ oyun motoru ile offline ve online modlar.',
-      'url': 'https://yanyana.games',
       'applicationCategory': 'GameApplication',
       'operatingSystem': 'iOS, Android, Web',
       'creator': { '@id': ORG_ID },

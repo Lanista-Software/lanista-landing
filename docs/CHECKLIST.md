@@ -18,10 +18,15 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] Yasal metinler iyzico için uygun ve eksiksiz; iyzico logo bandı
 - [ ] Yerel SEO sayfaları: Van öne çıkacak; Doğu Anadolu ve İç Anadolu illeri için "özel yazılım geliştirme" sayfaları, Google anahtar kelime araştırmasına göre
 - [ ] Fiyatlar, taksit, teslim süresi → proje sonunda konuşulacak
+- [ ] Hesap Takip fiyatı (2026-11-18): yıllık 15.000 TL + KDV ve/veya 25.000 TL + KDV kurulum+1 yıl, ardından 7.500 TL + KDV/yıl — Fable rakip verisiyle önerecek
+- [ ] Ana sayfa sadeleştirme onaylandı; karar Fable'ın Google arama verisine dayalı analiziyle uygulanacak
+- [x] KEP şimdilik boş (kullanıcı onayı; iyzico başvurusu öncesi tekrar bakılacak)
+- [x] Yanyana: müşteriye özel ayağa kalkıyor → "Canlı site" bağlantısı kaldırıldı
+- [x] Murat'ın referans fotoğrafı kalıyor
 - [ ] Sırayla ilerle, bu listeyi eksiksiz bitir
 - [ ] Yazılım şirketine yakışır arayüz kalitesi; ikon rozetli kartlar "sığ ve basit" → tek bir SVG illüstrasyon stili belirlenip sitenin her yerinde aynı tarzda görseller
 - [ ] Stil, "Lanista" anlamından (Latince: gladyatör okulu/akademisi) beslenecek
-- [ ] Başka oturumda hazırlanan ürün ekran görüntüleri ve animasyonları ürün sayfalarında kullanılacak
+- [ ] Başka oturumda hazırlanan ürün ekran görüntüleri ve videoları (`feat/urun-gorselleri`, `0c49346`) → telefon numaraları gizlenip Studio CDN'e yüklenecek, ürün sayfalarında kullanılacak
 - [ ] Arka plandaki SVG çizgi grafikleri tüm sitede standart hale gelecek: eski Yunan / Latin / Roma uyumlu, içeriği engellemeyen, ciddiyeti koruyan
 - [ ] Ana sayfa hero'su ve ilk önceliği: satılacak ürünler (Hesap Takip ve diğer uygulamalar)
 - [x] Kararlar ve adımlar için Fable alt ajanlarıyla analiz ve fikir alınabilir (kullanıcı izni)
@@ -46,8 +51,6 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Logo alt metinleri dilden bağımsız; EN sayfalarda kapak alt metni İngilizce başlık
 - [x] Kullanılmayan meta-tags anahtarları ve Cloudinary OG kaldırıldı
 - [ ] Netlify: `STUDIO_CDN_KEY` build ortam değişkeni (yalnız build, tarayıcıya gitmez)
-- [ ] Murat'ın referans fotoğrafı düşük çözünürlüklü → daha büyüğü kullanıcıdan istenecek
-- [ ] yanyana.games alan adı çözülmüyor (site kapalı) → kullanıcıya soruldu; "Canlı site" bağlantısı kaldırılsın mı?
 
 ## 2b. İllüstrasyon sistemi ("Ludus" stili)
 - [x] Stil rehberi: `docs/illustration-style.md` (motifler, çizgi, renk, kompozisyon, yapılmayacaklar); üretici `design/ludus/generate.py`
@@ -67,10 +70,11 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] Ses ve dil kuralları (sade dil, yasaklı kelimeler yok)
 
 ## 4. Animasyon ve parallax
-- [ ] Hero parallax (kaydırmaya bağlı CSS, JS yedekli)
-- [ ] Kademeli görünme ve kart hover mikro etkileşimleri
-- [ ] Bölüm geçişleri, sayaç ve vurgu animasyonları
-- [ ] `prefers-reduced-motion` ile tamamen kapanacak; CLS yok; 60 fps
+- [x] Hero parallax: `data-parallax` katmanları (kemer, telefon, bildirim, amfitiyatro halkaları, banner arkadı) — `src/scripts/parallax.ts`, CSS `translate` ile
+- [x] Kademeli görünme (`--reveal-delay`) ve kart hover (illüstrasyon kalkışı, ok kayması)
+- [x] Tek orkestra anı: hero girişinde kemer çizilir → kilit taşı düşer → telefon yükselir → satırlar → bildirim
+- [ ] Ürün sayfalarında video/ekran animasyonları (ürün aşamasında)
+- [x] `prefers-reduced-motion` ile tamamen kapalı; transform/opacity dışında animasyon yok (CLS yok)
 
 ## 5. Ürünler
 - [x] Contentrain modelleri: `products` (3 ürün, yayında), `plans` (Hesap Takip: 3 paket, fiyatsız)
@@ -92,7 +96,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] İç bağlantılar, sitemap, hreflang yok (yalnız TR)
 
 ## 7. iyzico ve yasal (bkz. `docs/iyzico-gereksinimleri.md`)
-- [ ] KEP adresi (iyzico şartı, (b) maddesi) → kullanıcıdan bekleniyor
+- [ ] KEP adresi (iyzico şartı, (b) maddesi) → şu an yok, boş kalacak; başvuru öncesi tekrar
 - [x] Meslek odası: Van Ticaret ve Sanayi Odası (kullanıcı teyit etti)
 - [ ] Van TSO adresi ve meslek kuralları bağlantısı doğrulanacak
 - [ ] İletişim sayfası (ana sayfadan doğrudan erişim)
