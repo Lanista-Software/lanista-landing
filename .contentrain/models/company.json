@@ -69,10 +69,20 @@
       "required": true,
       "type": "string"
     },
+    "payment_logo_band": {
+      "description": "Official iyzico \"iyzico ile Öde\" + card schemes logo band (iyzico logo pack, unmodified). Required by iyzico on the site.",
+      "order": 20,
+      "type": "image"
+    },
     "phone": {
       "order": 14,
       "required": true,
       "type": "phone"
+    },
+    "setup_days": {
+      "description": "Kurulum en geç kaç iş gününde tamamlanır — legal texts render {{kurulum_suresi}} from this. Empty = legal pages show a draft warning.",
+      "order": 21,
+      "type": "integer"
     },
     "short_name": {
       "order": 2,
