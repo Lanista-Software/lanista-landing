@@ -43,5 +43,23 @@
     "source": "import",
     "status": "published",
     "updated_by": "migration"
+  },
+  "6688128fdc13": {
+    "source": "agent",
+    "status": "draft",
+    "updated_at": "2026-11-18T12:59:04.974Z",
+    "updated_by": "contentrain-mcp"
+  },
+  "6b931f1d3589": {
+    "source": "agent",
+    "status": "draft",
+    "updated_at": "2026-11-18T12:59:04.974Z",
+    "updated_by": "contentrain-mcp"
+  },
+  "98874f167333": {
+    "source": "agent",
+    "status": "draft",
+    "updated_at": "2026-11-18T12:59:04.973Z",
+    "updated_by": "contentrain-mcp"
   }
 }

@@ -62,5 +62,26 @@
     "description": "Can’t find what you’re looking for in the FAQs? Feel free to reach out to us directly for more information.",
     "name": "contact",
     "title": "Reach out for more information"
+  },
+  "6688128fdc13": {
+    "buttonlink": "/urunler/hesap-takip#demo",
+    "buttontext": "Request a demo",
+    "description": "Up and running in your shop in three steps.",
+    "name": "start",
+    "title": "How to get started"
+  },
+  "6b931f1d3589": {
+    "buttonlink": "#contact",
+    "buttontext": "Get a quote for your project",
+    "description": "We build Hesap Takip and our other products in-house at Van Technopark. The same team builds web and mobile software for your company: we scope it with you, deliver it and maintain it.",
+    "name": "bridge",
+    "title": "The team that builds these apps can build yours"
+  },
+  "98874f167333": {
+    "buttonlink": "/urunler",
+    "buttontext": "All products",
+    "description": "Phone-first apps for local businesses in Turkey that still run on paper ledgers and spreadsheets.",
+    "name": "products",
+    "title": "Our ready-made apps"
   }
 }
