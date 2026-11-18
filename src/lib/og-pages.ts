@@ -30,7 +30,7 @@ export function getOgCards(): Record<string, OgCard> {
     }
     for (const w of getWorks(locale).filter(w => w.slug)) {
       cards[key(`/works/${w.slug}`, locale)] = {
-        label: w.categoryName || u('og.case_study'),
+        label: w.categoryName || u('work.title_suffix'),
         title: w.title,
         description: clampDescription(w.description, 130),
       }
@@ -44,12 +44,12 @@ export function getOgCards(): Record<string, OgCard> {
     }
     cards[key(ROUTES.services[locale], locale)] = { label: u('og.service'), title: u('services.page_title'), description: clampDescription(u('services.page_description'), 130) }
     cards[key(ROUTES.process[locale], locale)] = { label: SITE_NAME, title: u('process.page_title'), description: clampDescription(u('process.page_description'), 130) }
-    cards[key(ROUTES.contact[locale], locale)] = { label: SITE_NAME, title: u('contact.title'), description: clampDescription(u('contact.description'), 130) }
+    cards[key(ROUTES.contact[locale], locale)] = { label: SITE_NAME, title: u('nav.contact'), description: clampDescription(u('contact.description'), 130) }
   }
   const tr = t('tr')
   cards[key('/urunler', 'tr')] = { label: tr('products.og_label'), title: tr('products.title'), description: clampDescription(tr('products.description'), 130) }
   for (const p of getProducts()) {
-    cards[key(`/urunler/${p.slug}`, 'tr')] = { label: `${tr('og.product')} · ${tr(`product.status.${p.status}`)}`, title: p.hero_title, description: clampDescription(p.tagline, 130) }
+    cards[key(`/urunler/${p.slug}`, 'tr')] = { label: `${tr('common.product')} · ${tr(`product.status.${p.status}`)}`, title: p.hero_title, description: clampDescription(p.tagline, 130) }
   }
   return cards
 }

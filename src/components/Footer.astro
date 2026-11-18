@@ -57,7 +57,7 @@ const linkCls = 'text-sm text-body-text transition-colors hover:text-primary-600
       </div>
 
       <nav aria-labelledby="footer-products">
-        <h2 id="footer-products" class={heading}>{s('footer.products')}</h2>
+        <h2 id="footer-products" class={heading}>{s('products.title')}</h2>
         <ul class="space-y-2.5">
           {products.map(p => (
             <li><a href={p.href} hreflang={p.lang} class={linkCls}>{p.label}</a> <span class="text-xs text-label-text">· {p.status}</span></li>

@@ -49,10 +49,10 @@ const jsonLd = [
       <h2 id="tech-title" class="section-title">{s('services.technologies_title')}</h2>
       <p class="mt-3 max-w-2xl text-body-text">{s('services.technologies_text')}</p>
       <div class="mt-10 rounded-2xl border border-border-color bg-white p-6">
-        <TabSection locale={locale} items={home.tabItems} categories={home.workCategories.filter(c => !/seo|sosyal|social/i.test(c.category))} />
+        <TabSection locale={locale} items={home.tabItems} categories={home.workCategories} />
       </div>
     </div>
   </section>
 
-  <CtaBlock title={s('service.cta_title')} text={s('service.cta_text')} href={routePath('contact', locale)} label={s('common.contact_us')} />
+  <CtaBlock title={s('common.cta_title')} text={s('service.cta_text')} href={routePath('contact', locale)} label={s('common.contact_us')} />
 </BaseLayout>

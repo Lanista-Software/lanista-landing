@@ -13,7 +13,7 @@ interface Props { locale: Locale }
 const { locale } = Astro.props
 const s = t(locale)
 const path = ROUTES.contact[locale]
-const title = s('contact.title')
+const title = s('nav.contact')
 const description = clampDescription(s('contact.description'))
 const trail = [{ name: s('nav.home'), path: '/' }, { name: title, path }]
 // iyzico "İletişim" requirements (ETHS Yön. md.5): unvan, MERSİS, merkez adresi, KEP,
@@ -21,8 +21,8 @@ const trail = [{ name: s('nav.home'), path: '/' }, { name: title, path }]
 const rows = [
   { label: s('company.legal_name'), value: COMPANY.legalName },
   { label: s('company.address'), value: COMPANY.address.full },
-  { label: s('company.phone'), value: COMPANY.phone, href: COMPANY.phoneHref },
-  { label: s('company.email'), value: COMPANY.email, href: `mailto:${COMPANY.email}` },
+  { label: s('form.label.phone'), value: COMPANY.phone, href: COMPANY.phoneHref },
+  { label: s('form.label.email'), value: COMPANY.email, href: `mailto:${COMPANY.email}` },
   ...(COMPANY.kep ? [{ label: s('company.kep'), value: COMPANY.kep, href: `mailto:${COMPANY.kep}` }] : []),
   { label: s('company.mersis'), value: COMPANY.mersis },
   { label: s('company.tax_office'), value: `${COMPANY.taxOffice} · ${s('company.tax_number')} ${COMPANY.taxNumber}` },

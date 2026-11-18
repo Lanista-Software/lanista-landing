@@ -203,8 +203,8 @@ const jsonLd = [
             <h2 class="section-title" id="contact-title">{s('home.contact_cta_title')}</h2>
             <p class="mt-4 font-inter text-base text-body-text">{s('home.contact_cta_text')}</p>
             <dl class="mt-8 space-y-3">
-              <div class="flex gap-3"><dt class="w-24 shrink-0 text-sm text-label-text">{s('company.phone')}</dt><dd><a class="link" href={COMPANY.phoneHref}>{COMPANY.phone}</a></dd></div>
-              <div class="flex gap-3"><dt class="w-24 shrink-0 text-sm text-label-text">{s('company.email')}</dt><dd><a class="link" href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></dd></div>
+              <div class="flex gap-3"><dt class="w-24 shrink-0 text-sm text-label-text">{s('form.label.phone')}</dt><dd><a class="link" href={COMPANY.phoneHref}>{COMPANY.phone}</a></dd></div>
+              <div class="flex gap-3"><dt class="w-24 shrink-0 text-sm text-label-text">{s('form.label.email')}</dt><dd><a class="link" href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></dd></div>
               <div class="flex gap-3"><dt class="w-24 shrink-0 text-sm text-label-text">{s('company.address')}</dt><dd class="text-heading-text">{COMPANY.address.full}</dd></div>
             </dl>
             <a href={routePath('contact', locale)} class="btn btn-danger mt-8">{s('contact.form_title')}<i class="ri-arrow-right-line" aria-hidden="true"></i></a>

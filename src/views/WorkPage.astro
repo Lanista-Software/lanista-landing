@@ -24,7 +24,7 @@ const trail = [
   { name: work.title, path: `/works/${slug}` },
 ]
 const blocks = [
-  { key: 'challenge', title: s('work.challenge'), body: work.challenge, alt: false },
+  { key: 'challenge', title: s('common.challenge'), body: work.challenge, alt: false },
   { key: 'solution', title: s('work.solution'), body: work.solution, alt: true },
   { key: 'outcome', title: s('work.results'), body: work.outcome, alt: true },
 ]
@@ -112,5 +112,5 @@ const blocks = [
     </section>
   )}
 
-  <CtaBlock class="bg-secondary-50" title={s('work.cta_title')} text={s('work.cta_text')} href={routePath('contact', locale)} label={s('common.contact_us')} />
+  <CtaBlock class="bg-secondary-50" title={s('common.cta_title')} text={s('work.cta_text')} href={routePath('contact', locale)} label={s('common.contact_us')} />
 </BaseLayout>
