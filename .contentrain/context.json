@@ -1,14 +1,24 @@
 {
   "lastOperation": {
-    "locale": "en",
+    "entries": [
+      "06f604c81143",
+      "06f604c81143",
+      "52f4e338a982",
+      "52f4e338a982",
+      "a26de14ac86e",
+      "a26de14ac86e",
+      "be65fb7e0825",
+      "be65fb7e0825"
+    ],
+    "locale": "tr",
     "model": "plans",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T14:24:14.611Z",
-    "tool": "contentrain_model_save"
+    "timestamp": "2026-11-18T14:24:21.151Z",
+    "tool": "contentrain_content_save"
   },
   "stats": {
-    "entries": 206,
-    "lastSync": "2026-11-18T14:24:14.611Z",
+    "entries": 214,
+    "lastSync": "2026-11-18T14:24:21.151Z",
     "locales": [
       "en",
       "tr"
