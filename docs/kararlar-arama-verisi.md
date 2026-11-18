@@ -50,3 +50,10 @@ _Fable analizi. Kullanıcı ana sayfa sadeleştirmesini onayladı ve kararın Go
 
 ## Kaynaklar
 Google otomatik tamamlama (hl=tr, gl=tr). Rakip siteler: pratikveresiye.com, caritakip.tr, aysimapos.com, bizimhesap.com/fiyatlar, bilsoft.com, kolayveresiye.com, parasut.com. Google spam politikaları: https://developers.google.com/search/docs/essentials/spam-policies
+
+## D) Google Trends ölçümü (2026-11-19)
+"web tasarım", Türkiye, son 12 ay, il bazında göreli ilgi (**Ö**): Malatya 100, Eskişehir 23, Kayseri 14, Ankara 12, Kırıkkale 10, Yozgat 10, Konya 9, Niğde 8, Nevşehir 7, Aksaray 7, Erzurum 7, Sivas 6, Elazığ 5, Van 3.
+- Doğu Anadolu sayfasında il sırası Malatya, Erzurum, Elazığ yapıldı.
+- İç Anadolu sayfasında sıra Kayseri, Konya, Eskişehir yapıldı; Eskişehir bölüm başlığına girdi.
+- Malatya'nın tek başına 100 olması geçici bir artış olabilir (**Ç**); birkaç ay sonra yeniden ölçülmeli.
+- Van "web tasarım"da düşük; Van sayfası "van yazılım şirketleri / firmaları" sorgularını hedefliyor.
