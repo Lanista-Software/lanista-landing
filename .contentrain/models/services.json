@@ -5,18 +5,31 @@
   "domain": "marketing",
   "i18n": true,
   "title_field": "title",
-  "description": "Service offerings shown on the homepage services section",
+  "description": "Agency services. `on_home` picks the 6 shown on the home page (decision: docs/kararlar-arama-verisi.md, based on Turkish search demand); the rest stay on service pages.",
   "fields": {
     "description": {
+      "order": 2,
       "type": "text"
     },
     "image": {
+      "order": 3,
       "type": "image"
     },
     "link": {
+      "order": 4,
       "type": "string"
     },
+    "on_home": {
+      "description": "Show on the home page (max 6).",
+      "order": 5,
+      "type": "boolean"
+    },
+    "order": {
+      "order": 6,
+      "type": "integer"
+    },
     "title": {
+      "order": 1,
       "required": true,
       "type": "string"
     }
