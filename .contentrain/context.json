@@ -8,12 +8,12 @@
     "locale": "en",
     "model": "sections",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T12:59:06.327Z",
-    "tool": "contentrain_content_save"
+    "timestamp": "2026-11-18T12:59:15.766Z",
+    "tool": "contentrain_bulk"
   },
   "stats": {
     "entries": 205,
-    "lastSync": "2026-11-18T12:59:06.327Z",
+    "lastSync": "2026-11-18T12:59:15.766Z",
     "locales": [
       "en",
       "tr"
