@@ -1,1 +1,60 @@
-{}
+{
+  "06f604c81143": {
+    "billing": "yearly",
+    "featured": true,
+    "includes": [
+      "Kurulum ve müşteri listesinin aktarımı",
+      "Bir yıl kullanım, bakım ve güncellemeler",
+      "Dükkândaki tüm cihazlardan erişim",
+      "Telefon ve WhatsApp desteği"
+    ],
+    "name": "Yıllık Paket",
+    "note": "Kendiliğinden yenilenmez. Süre bitmeden hatırlatırız; devam etmek isterseniz yeniden ödersiniz. Her yıl TÜFE/ÜFE'ye göre güncellenebilir.",
+    "order": 1,
+    "price_try": 15000,
+    "product": "69576769b108",
+    "vat_rate": 20
+  },
+  "52f4e338a982": {
+    "billing": "one_time",
+    "featured": false,
+    "includes": [
+      "Kurulum ve müşteri listesinin aktarımı",
+      "İlk yıl kullanım, bakım ve güncellemeler",
+      "Dükkândaki tüm cihazlardan erişim",
+      "Telefon ve WhatsApp desteği"
+    ],
+    "name": "Kurulum + 1 yıl kullanım",
+    "note": "3 yıl ve üzeri kullanacaklar için daha ucuz: 3 yılda toplam 40.000 TL + KDV. Kendiliğinden yenilenmez. Süre bitmeden hatırlatırız; devam etmek isterseniz yeniden ödersiniz.",
+    "order": 2,
+    "price_try": 25000,
+    "product": "69576769b108",
+    "vat_rate": 20
+  },
+  "a26de14ac86e": {
+    "billing": "yearly",
+    "includes": [
+      "Bir yıl daha kullanım",
+      "Bakım ve güncellemeler",
+      "Destek"
+    ],
+    "name": "Yıllık yenileme (Kurulum + 1 yıl sonrası)",
+    "note": "İkinci yıldan itibaren. Her yıl TÜFE/ÜFE'ye göre güncellenir. Kendiliğinden yenilenmez. Süre bitmeden hatırlatırız; devam etmek isterseniz yeniden ödersiniz.",
+    "order": 3,
+    "price_try": 7500,
+    "product": "69576769b108",
+    "vat_rate": 20
+  },
+  "be65fb7e0825": {
+    "billing": "one_time",
+    "includes": [
+      "Vadesi geçen hatırlatma SMS'leri",
+      "Ürünün ortak gönderici adıyla gönderim"
+    ],
+    "name": "SMS paketi",
+    "note": "Fiyata dahil değildir, ayrıca satılır.",
+    "order": 4,
+    "product": "69576769b108",
+    "vat_rate": 20
+  }
+}

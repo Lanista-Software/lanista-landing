@@ -1,1 +1,60 @@
-{}
+{
+  "06f604c81143": {
+    "billing": "yearly",
+    "featured": true,
+    "includes": [
+      "Setup and customer list import",
+      "One year of use, maintenance and updates",
+      "Access from every device in your shop",
+      "Phone and WhatsApp support"
+    ],
+    "name": "Annual Plan",
+    "note": "Does not renew automatically. We remind you before your term ends; if you want to continue, you simply pay again. May be updated each year in line with TÜFE/ÜFE (Turkish inflation indices).",
+    "order": 1,
+    "price_try": 15000,
+    "product": "69576769b108",
+    "vat_rate": 20
+  },
+  "52f4e338a982": {
+    "billing": "one_time",
+    "featured": false,
+    "includes": [
+      "Setup and customer list import",
+      "First year of use, maintenance and updates",
+      "Access from every device in your shop",
+      "Phone and WhatsApp support"
+    ],
+    "name": "Setup + 1 year of use",
+    "note": "Cheaper if you use it for 3 years or more: TRY 40,000 + VAT in total over 3 years. Does not renew automatically. We remind you before your term ends; if you want to continue, you simply pay again.",
+    "order": 2,
+    "price_try": 25000,
+    "product": "69576769b108",
+    "vat_rate": 20
+  },
+  "a26de14ac86e": {
+    "billing": "yearly",
+    "includes": [
+      "One more year of use",
+      "Maintenance and updates",
+      "Support"
+    ],
+    "name": "Annual renewal (after Setup + 1 year)",
+    "note": "From the second year onwards. Updated each year in line with TÜFE/ÜFE (Turkish inflation indices). Does not renew automatically. We remind you before your term ends; if you want to continue, you simply pay again.",
+    "order": 3,
+    "price_try": 7500,
+    "product": "69576769b108",
+    "vat_rate": 20
+  },
+  "be65fb7e0825": {
+    "billing": "one_time",
+    "includes": [
+      "Reminder SMS messages for overdue payments",
+      "Sent under the product's shared sender name"
+    ],
+    "name": "SMS pack",
+    "note": "Not included in the price; sold separately.",
+    "order": 4,
+    "product": "69576769b108",
+    "vat_rate": 20
+  }
+}
