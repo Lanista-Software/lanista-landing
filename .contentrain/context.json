@@ -1,18 +1,19 @@
 {
   "lastOperation": {
     "entries": [
-      "b0a3886bc693",
-      "d908c6ec1e38"
+      "5a144f4f76e7",
+      "6655ecada081",
+      "aa28b2b1e932"
     ],
     "locale": "en",
-    "model": "team",
+    "model": "onboarding-steps",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T13:19:17.227Z",
-    "tool": "contentrain_content_save"
+    "timestamp": "2026-11-18T13:19:27.378Z",
+    "tool": "contentrain_bulk"
   },
   "stats": {
     "entries": 217,
-    "lastSync": "2026-11-18T13:19:17.228Z",
+    "lastSync": "2026-11-18T13:19:27.378Z",
     "locales": [
       "en",
       "tr"
