@@ -1,0 +1,187 @@
+{
+  "id": "products",
+  "name": "Products",
+  "kind": "collection",
+  "domain": "marketing",
+  "i18n": false,
+  "title_field": "name",
+  "description": "Lanista's ready-made products for local businesses (Turkish market, Turkish only). Source: docs/urunler-ve-iyzico-brief.md §3. Voice rules §8: plain shopkeeper language; never mention user management, margins, costs or customer names; planned features are 'ekleniyor', never 'eksik'. Never store demo login credentials here.",
+  "fields": {
+    "faq": {
+      "items": {
+        "fields": {
+          "answer": {
+            "max": 600,
+            "required": true,
+            "type": "text"
+          },
+          "question": {
+            "max": 140,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 12,
+      "order": 13,
+      "type": "array"
+    },
+    "feature_groups": {
+      "items": {
+        "fields": {
+          "items": {
+            "items": "string",
+            "max": 8,
+            "type": "array"
+          },
+          "title": {
+            "max": 60,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "order": 10,
+      "type": "array"
+    },
+    "hero_text": {
+      "max": 220,
+      "order": 8,
+      "required": true,
+      "type": "text"
+    },
+    "hero_title": {
+      "max": 70,
+      "order": 7,
+      "required": true,
+      "type": "string"
+    },
+    "illustration": {
+      "description": "Ludus-style SVG for cards (docs/illustration-style.md).",
+      "order": 15,
+      "type": "image"
+    },
+    "keywords": {
+      "description": "Target search terms (e.g. veresiye programı).",
+      "items": "string",
+      "max": 12,
+      "order": 18,
+      "type": "array"
+    },
+    "name": {
+      "label": {
+        "en": "Product name",
+        "tr": "Ürün adı"
+      },
+      "max": 40,
+      "order": 1,
+      "required": true,
+      "type": "string"
+    },
+    "order": {
+      "order": 4,
+      "type": "integer"
+    },
+    "pains": {
+      "description": "Bugünkü dert → ne yapıyor",
+      "items": {
+        "fields": {
+          "pain": {
+            "max": 120,
+            "required": true,
+            "type": "string"
+          },
+          "solution": {
+            "max": 220,
+            "required": true,
+            "type": "text"
+          }
+        },
+        "type": "object"
+      },
+      "max": 6,
+      "order": 9,
+      "type": "array"
+    },
+    "roadmap": {
+      "description": "Planned features ('ekleniyor').",
+      "items": "string",
+      "max": 8,
+      "order": 11,
+      "type": "array"
+    },
+    "screenshots": {
+      "items": "image",
+      "max": 8,
+      "order": 14,
+      "type": "array"
+    },
+    "sector": {
+      "label": {
+        "en": "Sector",
+        "tr": "Sektör"
+      },
+      "max": 80,
+      "order": 5,
+      "required": true,
+      "type": "string"
+    },
+    "seo_description": {
+      "max": 160,
+      "order": 17,
+      "type": "text"
+    },
+    "seo_title": {
+      "max": 60,
+      "order": 16,
+      "type": "string"
+    },
+    "slug": {
+      "description": "URL: /urunler/{slug}/ — if the product is renamed, keep the old slug as a 301 redirect.",
+      "order": 2,
+      "required": true,
+      "type": "slug",
+      "unique": true
+    },
+    "status": {
+      "description": "live = satışta; pilot = sahada pilot, satış yok; soon = yakında, yalnız bekleme listesi. Payment is only taken for live products.",
+      "options": [
+        "live",
+        "pilot",
+        "soon"
+      ],
+      "order": 3,
+      "required": true,
+      "type": "select"
+    },
+    "tagline": {
+      "description": "One-line promise used on cards.",
+      "max": 160,
+      "order": 6,
+      "required": true,
+      "type": "text"
+    },
+    "trust": {
+      "items": {
+        "fields": {
+          "text": {
+            "max": 220,
+            "required": true,
+            "type": "text"
+          },
+          "title": {
+            "max": 60,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 6,
+      "order": 12,
+      "type": "array"
+    }
+  }
+}
