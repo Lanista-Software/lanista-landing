@@ -10,7 +10,7 @@ const { id, class: className, spy = false, labelledby } = Astro.props
 ---
 
 <section id={id} data-spy-section={spy ? '' : undefined} aria-labelledby={labelledby} class={className}>
-  <div class="container-x flex items-center justify-center pb-40 pt-28">
+  <div class="container-x flex items-center justify-center py-20 lg:py-28">
     <slot />
   </div>
 </section>

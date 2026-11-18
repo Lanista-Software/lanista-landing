@@ -42,6 +42,8 @@ export function getOgCards(): Record<string, OgCard> {
         description: clampDescription(p.hero_description, 130),
       }
     }
+    cards[key(ROUTES.services[locale], locale)] = { label: u('og.service'), title: u('services.page_title'), description: clampDescription(u('services.page_description'), 130) }
+    cards[key(ROUTES.process[locale], locale)] = { label: SITE_NAME, title: u('process.page_title'), description: clampDescription(u('process.page_description'), 130) }
     cards[key(ROUTES.contact[locale], locale)] = { label: SITE_NAME, title: u('contact.title'), description: clampDescription(u('contact.description'), 130) }
   }
   const tr = t('tr')

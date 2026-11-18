@@ -1,6 +1,6 @@
 ---
 import type { Locale } from '~/lib/i18n'
-import { localePath, t } from '~/lib/i18n'
+import { localePath, ROUTES, t } from '~/lib/i18n'
 
 interface Props {
   locale: Locale
@@ -16,8 +16,8 @@ const isHome = path === '/'
 const items = [
   { key: 'home', href: localePath('/', locale), section: 'home' },
   ...(locale === 'tr' ? [{ key: 'products', href: localePath('/urunler', locale), route: '/urunler' } as const] : []),
-  { key: 'services', href: `${localePath('/', locale)}#services`, section: 'services' },
-  { key: 'process', href: `${localePath('/', locale)}#process`, section: 'process' },
+  { key: 'services', href: localePath(ROUTES.services[locale], locale), route: ROUTES.services[locale] },
+  { key: 'process', href: localePath(ROUTES.process[locale], locale), route: ROUTES.process[locale] },
   { key: 'works', href: localePath('/works', locale), route: '/works' },
 ] as const
 

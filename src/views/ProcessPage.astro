@@ -1,0 +1,49 @@
+---
+import type { Locale } from '~/lib/i18n'
+import Breadcrumbs from '~/components/Breadcrumbs.astro'
+import CtaBlock from '~/components/CtaBlock.astro'
+import PageHero from '~/components/PageHero.astro'
+import ProcessCard from '~/components/ProcessCard.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { getHome } from '~/lib/content'
+import { routePath, ROUTES, t } from '~/lib/i18n'
+import { webPageSchema } from '~/lib/schema'
+import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
+import { stagger } from '~/lib/ui'
+
+interface Props { locale: Locale }
+const { locale } = Astro.props
+const s = t(locale)
+const home = getHome(locale)
+const path = ROUTES.process[locale]
+const title = s('process.page_title')
+const description = clampDescription(s('process.page_description'))
+const trail = [{ name: s('nav.home'), path: '/' }, { name: s('nav.process'), path }]
+const jsonLd = [
+  {
+    ...webPageSchema(locale, path, title, description),
+    mainEntity: {
+      '@type': 'HowTo',
+      'name': title,
+      'step': home.processes.map((p, i) => ({ '@type': 'HowToStep', 'position': i + 1, 'name': p.title, 'text': p.description })),
+    },
+  },
+  breadcrumbSchema(locale, trail),
+]
+---
+
+<BaseLayout locale={locale} title={`${title} | ${SITE_NAME}`} description={description} path={path} paths={ROUTES.process} jsonLd={jsonLd}>
+  <PageHero>
+    <Breadcrumbs locale={locale} trail={trail} />
+    <h1 class="page-title">{title}</h1>
+    <p class="mt-5 max-w-2xl text-lg">{s('process.page_description')}</p>
+  </PageHero>
+  <section class="py-12 lg:py-20" aria-label={title}>
+    <div class="container-x">
+      <ol class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {home.processes.map((item, i) => <li style={stagger(i % 3)}><ProcessCard step={i + 1} item={item} /></li>)}
+      </ol>
+    </div>
+  </section>
+  <CtaBlock class="bg-secondary-50" title={s('service.cta_title')} text={s('service.cta_text')} href={routePath('contact', locale)} label={s('common.contact_us')} />
+</BaseLayout>

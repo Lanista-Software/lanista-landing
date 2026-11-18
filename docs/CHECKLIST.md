@@ -33,8 +33,8 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] **Projede sabit (hard-coded) metin olmayacak**: arayüz metinleri dahil her içerik eksiksiz Contentrain'de (2026-11-18) — tarama temiz
 - [x] Formlar ve iletişim ayrı sayfada: `/iletisim/`, `/en/contact/` (şirket bilgileri + talep türü seçmeli form); ana sayfada SSS + iletişim kartı
 - [ ] Stil kararlarına (Ludus, token'lar, erişilebilirlik) sadık kalınacak; kontrol listesi her adımda güncel tutulacak
-- [ ] Hizmetler ve Süreç ayrı sayfalara (`/hizmetler/`, `/surec/`; EN `/en/services/`, `/en/process/`); ana sayfada sınırlı gösterim, ana sayfa derli toplu
-- [ ] Ödeme altyapısını bağlayacak oturumlar için devir dokümanı (`docs/odeme-altyapisi.md`)
+- [x] Hizmetler ve Süreç ayrı sayfalarda (`/hizmetler/` + teknoloji sekmeleri, `/surec/` + HowTo şeması; EN `/en/services/`, `/en/process/`); ana sayfada 3 hizmet + 6 adımlık şerit; bölüm boşlukları daraltıldı
+- [x] Ödeme altyapısı devir dokümanı: `docs/odeme-altyapisi.md` (durum, modeller, Aşama A akışı, ödeme sonrası adımlar, Aşama B tasarımı, dosya haritası); CLAUDE.md'den bağlantılı
 
 ## 1. Astro'ya geçiş ✅ (`0d50ee0`)
 - [x] Nuxt → Astro 6 (statik), LUI kaldırıldı, Zag.js (sekmeler, akordeon, mobil menü)
@@ -79,7 +79,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Ürünler bloğu (3 kart, Ludus ürün illüstrasyonları) + "Nasıl başlarsınız" (3 adım + 4 güven maddesi) + köprü bloğu
 - [x] Hizmetler bloğu korundu; "rehberlik/dış kaynak" ifadeleri çıkarıldı; banner metni "Yazılımınızı birlikte yapalım"
 - [x] Ana sayfa sadeleştirildi (Fable + Google öneri verisi, `docs/kararlar-arama-verisi.md`): 6 hizmet (`services.on_home`), teknoloji sekmeleri ve banner kaldırıldı
-- [ ] Teknoloji logoları Hakkımızda / hizmet sayfalarına taşınacak
+- [x] Teknoloji logoları `/hizmetler/` sayfasında (SEO/sosyal medya kategorileri hariç)
 - [x] TR meta başlık/açıklama güncellendi (Fable önerisi uyarlandı)
 - [ ] Ses ve dil kuralları (sade dil, yasaklı kelimeler yok)
 
@@ -135,6 +135,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] Fiyatlar, taksit, teslim süresi (kullanıcıdan — proje sonunda)
 
 ## 8. Yayın
+- [x] Sitemap: yerelleştirilmiş slug çiftleri için hreflang (`astro.config.mjs` LOCALIZED_PAIRS); `/odeme/` sitemap dışı
 - [ ] Studio: `leads` formu açık + public + alanlar exposed; Netlify env: `PUBLIC_CONTENTRAIN_PROJECT_ID`, `PUBLIC_CONTENTRAIN_STUDIO_URL`, `STUDIO_CDN_KEY`
 - [ ] `.contentrain/config.json`: stack `nuxt` → `astro`, varsayılan dil `tr` (MCP değiştirmiyor → kullanıcı onayı)
 - [ ] Lighthouse (performans, erişilebilirlik, SEO) ve axe taraması

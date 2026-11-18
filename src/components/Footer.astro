@@ -69,7 +69,7 @@ const linkCls = 'text-sm text-body-text transition-colors hover:text-primary-600
         <h2 id="footer-services" class={heading}>{s('footer.services')}</h2>
         <ul class="space-y-2.5">
           {services.map(l => <li><a href={l.href} class={linkCls}>{l.label}</a></li>)}
-          <li><a href={`${home}#services`} class="text-sm font-medium text-primary-600 hover:underline">{s('footer.all_services')}</a></li>
+          <li><a href={routePath('services', locale)} class="text-sm font-medium text-primary-600 hover:underline">{s('footer.all_services')}</a></li>
         </ul>
       </nav>
 

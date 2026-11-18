@@ -36,6 +36,8 @@ export function localePath(path: string, locale: Locale = DEFAULT_LOCALE): strin
 /** Pages whose slug differs per language. */
 export const ROUTES = {
   contact: { tr: '/iletisim', en: '/contact' },
+  services: { tr: '/hizmetler', en: '/services' },
+  process: { tr: '/surec', en: '/process' },
 } as const satisfies Record<string, Record<Locale, string>>
 
 export function routePath(route: keyof typeof ROUTES, locale: Locale): string {

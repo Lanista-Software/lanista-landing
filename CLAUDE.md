@@ -34,6 +34,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `src/pages/og/[...path].png.ts` + `src/lib/og-{pages,render}.ts` — build-time 1200×630 share cards (satori + resvg). Register new pages in `og-pages.ts`.
 - `src/styles/global.css` — component classes (`.btn-*`, `.tag-*`, `.field`, `.reveal`) on top of the Tailwind tokens in `tailwind.config.cjs`.
 
+### Working docs
+- `docs/CHECKLIST.md` — every request and its status; keep it current.
+- `docs/odeme-altyapisi.md` — payment (iyzico) handoff: read before any payment work.
+- `docs/iyzico-gereksinimleri.md`, `docs/kararlar-arama-verisi.md`, `docs/illustration-style.md`.
+
 ### Accessibility rules (WCAG 2.2 AA)
 - Text contrast ≥ 4.5:1: CTA red is `danger-600`, never `danger-500` with white text; tags use `primary-700` on `primary-50`.
 - Never nest a button in a link; style the link with `.btn`.
