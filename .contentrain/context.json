@@ -5,15 +5,15 @@
       "6688128fdc13",
       "6b931f1d3589"
     ],
-    "locale": "tr",
+    "locale": "en",
     "model": "sections",
     "source": "mcp-local",
-    "timestamp": "2026-11-18T12:58:58.745Z",
+    "timestamp": "2026-11-18T12:59:06.327Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
-    "entries": 202,
-    "lastSync": "2026-11-18T12:58:58.745Z",
+    "entries": 205,
+    "lastSync": "2026-11-18T12:59:06.327Z",
     "locales": [
       "en",
       "tr"
