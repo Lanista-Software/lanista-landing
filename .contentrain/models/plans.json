@@ -45,7 +45,7 @@
     },
     "note": {
       "description": "e.g. 'Her yıl TÜFE/ÜFE ile güncellenir', taksit notu.",
-      "max": 200,
+      "max": 260,
       "order": 7,
       "type": "text"
     },
