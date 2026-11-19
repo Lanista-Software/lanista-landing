@@ -2,14 +2,15 @@
 import type { Plans } from '#contentrain'
 import type { Locale } from '~/lib/i18n'
 import Icon from '~/components/Icon.astro'
-import { localePath, t } from '~/lib/i18n'
+import { t } from '~/lib/i18n'
 import { tl, withVat } from '~/lib/money'
 
 interface Props { plan: Plans, ctaHref: string, locale?: Locale }
 const { plan, ctaHref, locale = 'tr' } = Astro.props
 const priced = typeof plan.price_try === 'number'
 const vat = plan.vat_rate ?? 20
-const buyHref = plan.iyzico_link ? localePath(`/odeme/${plan.id}`, 'tr') : ctaHref
+// Contracts and payment live in the product's own backend; the landing only links there.
+const buyHref = plan.checkout_url || ctaHref
 const s = t(locale)
 const billing = s(`plan.billing.${plan.billing}`)
 ---
@@ -41,6 +42,6 @@ const billing = s(`plan.billing.${plan.billing}`)
 : <div class="flex-1"></div>}
   {plan.note && <p class="mt-6 border-t border-border-color pt-4 text-sm text-label-text">{plan.note}</p>}
   <a href={buyHref} class:list={['btn btn-block mt-6', plan.featured ? 'btn-danger' : 'btn-outline']}>
-    {plan.iyzico_link ? s('plan.buy') : s('plan.buy_contact')}
+    {plan.checkout_url ? s('plan.buy') : s('plan.buy_contact')}
   </a>
 </article>

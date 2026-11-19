@@ -49,10 +49,8 @@ export interface RenderedLegal {
   incomplete: boolean
 }
 
-/** Order-specific values for {{urun}}, {{paket}}, {{tutar}} (checkout page). */
-export interface OrderTokens { urun: string, paket: string, tutar: string }
-
-export function renderLegal(page: LegalPage, order?: OrderTokens, locale: Locale = 'tr'): RenderedLegal {
+/** {{urun}}, {{paket}}, {{tutar}} show generic placeholders: order values are filled in by the product's own checkout. */
+export function renderLegal(page: LegalPage, locale: Locale = 'tr'): RenderedLegal {
   const s = t(locale)
   let incomplete = false
   let md = page.body
@@ -61,9 +59,9 @@ export function renderLegal(page: LegalPage, order?: OrderTokens, locale: Locale
     .filter(line => !(line.includes('{{kep}}') && !COMPANY.kep))
     .join('\n')
     .replaceAll('{{kep}}', COMPANY.kep ?? '')
-    .replaceAll('{{urun}}', order?.urun ?? s('legal.token.urun'))
-    .replaceAll('{{paket}}', order?.paket ?? s('legal.token.paket'))
-    .replaceAll('{{tutar}}', order?.tutar ?? s('legal.token.tutar'))
+    .replaceAll('{{urun}}', s('legal.token.urun'))
+    .replaceAll('{{paket}}', s('legal.token.paket'))
+    .replaceAll('{{tutar}}', s('legal.token.tutar'))
   md = md.replaceAll('{{kurulum_suresi}}', () => {
     if (COMPANY.setupDays)
       return String(COMPANY.setupDays)

@@ -14,7 +14,7 @@ const { page, locale } = Astro.props
 const s = t(locale)
 const path = legalPath(page, locale)
 const paths = { tr: legalPath(page, 'tr'), en: legalPath(page, 'en') }
-const { html, toc, incomplete } = renderLegal(page, undefined, locale)
+const { html, toc, incomplete } = renderLegal(page, locale)
 const draft = !page.reviewed || incomplete
 const updated = page.last_updated
   ? new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(page.last_updated))

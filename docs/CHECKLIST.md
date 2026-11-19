@@ -37,7 +37,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] SEO-GEO devam: Van sayfasında LocalBusiness, `llms.txt` İngilizce sayfalar bölümü (2026-11-19)
 - [x] **İngilizce eksiksiz**: `products`, `plans`, `legal-pages` iki dilli (Fable çevirisi); `/en/products/` (+3 ürün), `/en/legal/` (7 metin, "Türkçe metin geçerlidir" notu), `/en/about/`; dil değiştirici her sayfada karşılığa gidiyor; sitemap 76 URL, tüm çiftler karşılıklı; EN sayfalarda Türkçe alt metin yok
 - [x] Contentrain'e geri bildirim notu: `docs/contentrain-geri-bildirim.md` (6 madde; ekibe iletilmesi kullanıcıda)
-- [ ] Ödeme onay sayfası yalnız Türkçe (`/odeme/`) — İngilizce ürün sayfasında 'Satın al' Türkçe sözleşme akışına gider (bilinçli)
+- [x] ~~Ödeme onay sayfası yalnız Türkçe (`/odeme/`)~~ — sayfa kaldırıldı, onaylar ürün backend'inde
 - [x] **Projede sabit (hard-coded) metin olmayacak**: arayüz metinleri dahil her içerik eksiksiz Contentrain'de (2026-11-18) — tarama temiz
 - [x] Formlar ve iletişim ayrı sayfada: `/iletisim/`, `/en/contact/` (şirket bilgileri + talep türü seçmeli form); ana sayfada SSS + iletişim kartı
 - [ ] Stil kararlarına (Ludus, token'lar, erişilebilirlik) sadık kalınacak; kontrol listesi her adımda güncel tutulacak
@@ -141,8 +141,10 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Teslimat, iade ve cayma (taslak)
 - [x] KVKK aydınlatma metni, Gizlilik politikası, Çerez politikası (taslak)
 - [x] Çerez onay bandı: GA yalnız "Kabul et" sonrası yükleniyor (test edildi); Reddet eşit ağırlıkta; footer'dan tercih değişikliği
-- [x] Ön onay adımı: `/odeme/{plan}/` (sipariş özeti, siparişe göre doldurulmuş ÖBF + MSS, 3 işaretsiz onay, `leads` type=order kaydı, iyzico linkine yönlendirme); `CHECKOUT_PREVIEW=1` ile test edildi
-- [ ] iyzico ödeme linkleri `plans.iyzico_link` alanına girilecek (kullanıcı, iyzico panelinden)
+- [x] ~~Ön onay adımı: `/odeme/{plan}/`~~ (2026-11-19 kaldırıldı) (sipariş özeti, siparişe göre doldurulmuş ÖBF + MSS, 3 işaretsiz onay, `leads` type=order kaydı, iyzico linkine yönlendirme); `CHECKOUT_PREVIEW=1` ile test edildi
+- [x] Karar (2026-11-19): landing'de ödeme kodu yok; `/odeme/` akışı kaldırıldı, "Satın al" → `plans.checkout_url` (ürünün kendi backend'i). Ödeme/abonelik ürün backend'lerinde
+- [ ] `plans.checkout_url`: ürün backend'indeki satın alma sayfası hazır olunca girilecek
+- [ ] Yasal metinler yeni akışa göre güncellenecek (sitedeki onay sayfası / ödeme linki / "kendiliğinden yenilenmez" ifadeleri) — abonelik koşulları netleşince, hukukçu onayıyla
 - [x] iyzico logo bandı (footer, resmi paket; `company.payment_logo_band`, Studio CDN)
 - [x] Fiyatlar, taksit, teslim süresi (kullanıcıdan — proje sonunda)
 

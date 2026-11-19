@@ -55,8 +55,8 @@ export default defineConfig({
         defaultLocale: 'tr',
         locales: { tr: 'tr-TR', en: 'en-US' },
       },
-      // OG image endpoints and pre-payment pages are not for search.
-      filter: page => !page.includes('/og/') && !page.includes('/odeme/') && !page.includes('llms'),
+      // OG image endpoints and llms files are not for search.
+      filter: page => !page.includes('/og/') && !page.includes('llms'),
       serialize(item) {
         const path = item.url.slice(SITE.length)
         const other = counterpart(path)
