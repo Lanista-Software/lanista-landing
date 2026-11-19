@@ -5,32 +5,35 @@
   "domain": "marketing",
   "i18n": true,
   "title_field": "name",
-  "description": "Product plans and prices. Payment happens in each product's own backend; the landing only links to it.",
+  "description": "Sellable packages per product. Prices are KDV hariç, in TRY. Leave price_try empty until prices are set. Contracts, payment and subscriptions live in each product's own backend; the landing only links to checkout_url. Empty checkout_url → 'write to us to buy'. Only plans of live products are sold.",
   "fields": {
     "billing": {
       "options": [
         "one_time",
-        "monthly",
-        "yearly"
+        "yearly",
+        "monthly"
       ],
-      "order": 6,
+      "order": 3,
+      "required": true,
       "type": "select"
     },
     "checkout_url": {
-      "description": "The product's own purchase page (product backend handles contracts, payment and subscription). Empty = 'write to us to buy' button.",
-      "order": 10,
+      "description": "The product's own purchase page (its backend handles contracts, payment and subscription). Empty = 'write to us to buy' button.",
+      "order": 8,
       "type": "url"
     },
     "featured": {
-      "order": 7,
+      "order": 10,
       "type": "boolean"
     },
     "includes": {
       "items": "string",
-      "order": 8,
+      "max": 10,
+      "order": 6,
       "type": "array"
     },
     "name": {
+      "max": 60,
       "order": 1,
       "required": true,
       "type": "string"
@@ -38,11 +41,11 @@
     "note": {
       "description": "e.g. 'Her yıl TÜFE/ÜFE ile güncellenir', taksit notu.",
       "max": 260,
-      "order": 9,
+      "order": 7,
       "type": "text"
     },
     "order": {
-      "order": 3,
+      "order": 11,
       "type": "integer"
     },
     "price_try": {
@@ -53,9 +56,11 @@
     "product": {
       "model": "products",
       "order": 2,
+      "required": true,
       "type": "relation"
     },
     "vat_rate": {
+      "default": 20,
       "order": 5,
       "type": "percent"
     }
