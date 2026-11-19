@@ -47,7 +47,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Motion respects `prefers-reduced-motion`; `.reveal` content is visible without JS.
 
 ### Integrations
-- Google Analytics G-T48ZEC3WT9 (`BaseLayout`), events via `data-track` attributes (`src/scripts/analytics.ts`).
+- Google Analytics G-K7HYYT7SYM (`CookieConsent.astro`, loaded only after opt-in), events via `data-track` attributes (`src/scripts/analytics.ts`).
 - Fonts: self-hosted `@fontsource` Inter + Space Grotesk (latin + latin-ext only).
 - Icons: Remixicon SVGs inlined at build by `src/components/Icon.astro` (no icon font). Content may store `ri-*` names.
 - Hosting: Netlify (`netlify.toml`, Node 22).
