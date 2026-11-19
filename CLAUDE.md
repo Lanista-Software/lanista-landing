@@ -36,7 +36,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Working docs
 - `docs/CHECKLIST.md` — every request and its status; keep it current.
-- `docs/odeme-altyapisi.md` — payment (iyzico) handoff: read before any payment work.
+- `docs/odeme-altyapisi.md` — payments: the landing has no payment code; "Satın al" links to `plans.checkout_url` (each product backend handles contracts, iyzico payment and subscriptions). Read before any payment work.
 - `docs/iyzico-gereksinimleri.md`, `docs/kararlar-arama-verisi.md`, `docs/illustration-style.md`.
 
 ### Accessibility rules (WCAG 2.2 AA)
