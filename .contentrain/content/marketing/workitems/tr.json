@@ -27,7 +27,7 @@
   "51bf2dbbed29": {
     "category": "8ac7d8c79484",
     "challenge": "Influencer pazarlamasında veri ve yaratıcılığı buluşturan Popile; frontend iyileştirmeleri, ödeme entegrasyonları ve daha hızlı bir backend ihtiyacındaydı.",
-    "description": "Popile, influencer pazarlamasında veri ve yaratıcılığın buluşma noktasıdır. Frontend tarafında Vue.js ile iyileştirmeler yaptık, ödeme sistemi entegrasyonlarında destek sağladık ve backend tarafında performans optimizasyonları gerçekleştirdik.",
+    "description": "Popile, influencer pazarlamasında veri ve yaratıcılığı buluşturan bir platformdu (şirket daha sonra farklı bir iş alanına yöneldi). Frontend tarafında Vue.js ile iyileştirmeler yaptık, ödeme sistemi entegrasyonlarında destek sağladık ve backend tarafında performans optimizasyonları gerçekleştirdik.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/ad6fe200-eb12-4691-9b7c-eb035bd9a3b4.webp",
     "order": 10,
     "slug": "popile",
@@ -75,7 +75,7 @@
   "8a8044e883eb": {
     "category": "bcc834108adc",
     "challenge": "Bir İK platformu olan Visivi'nin tek bir ürün vizyonundan hem mobil uygulamaya hem de web portalına ihtiyacı vardı.",
-    "description": "Visivi, hem mobil hem de web portalları olan bir İK platformudur.\n\nMobil uygulamayı React Native ile geliştirdik ve hem iOS hem de Android için çapraz platform haline getirdik. Web portalı için Nuxt.js ve Vue.js kullandık.",
+    "description": "Visivi, hem mobil hem de web portalı olan bir İK platformuydu (proje bugün yayında değil).\n\nMobil uygulamayı React Native ile geliştirdik ve hem iOS hem de Android için çapraz platform haline getirdik. Web portalı için Nuxt.js ve Vue.js kullandık.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/4eaf9997-a8b0-4457-8473-1447f6324553.webp",
     "order": 11,
     "slug": "visivi",

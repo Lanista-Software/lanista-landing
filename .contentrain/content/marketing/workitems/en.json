@@ -27,7 +27,7 @@
   "51bf2dbbed29": {
     "category": "8ac7d8c79484",
     "challenge": "Popile, a data-and-creativity platform for influencer marketing, needed frontend improvements, payment integrations, and a faster backend.",
-    "description": "Popile is the meeting point of data and creativity in influencer marketing. We made improvements on the frontend using Vue.js, supported payment system integrations, and optimized the backend for better performance.",
+    "description": "Popile was a platform bringing data and creativity together in influencer marketing (the company later moved into a different business). We made improvements on the frontend using Vue.js, supported payment system integrations, and optimized the backend for better performance.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/ad6fe200-eb12-4691-9b7c-eb035bd9a3b4.webp",
     "order": 10,
     "slug": "popile",
@@ -75,7 +75,7 @@
   "8a8044e883eb": {
     "category": "bcc834108adc",
     "challenge": "Visivi, an HR platform, needed both a mobile app and a web portal from a single product vision.",
-    "description": "Visivi is an HR platform with both mobile and web portals. \n\nWe developed the mobile application with React Native, making it cross-platform for both iOS and Android. For the web portal, we used Nuxt.js and Vue.js.",
+    "description": "Visivi was an HR platform with both mobile and web portals (the project is no longer live).\n\nWe developed the mobile application with React Native, making it cross-platform for both iOS and Android. For the web portal, we used Nuxt.js and Vue.js.",
     "image": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/4eaf9997-a8b0-4457-8473-1447f6324553.webp",
     "order": 11,
     "slug": "visivi",
