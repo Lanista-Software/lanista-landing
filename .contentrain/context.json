@@ -1,14 +1,14 @@
 {
   "lastOperation": {
-    "locale": "tr",
+    "locale": "en",
     "model": "ui",
     "source": "mcp-local",
-    "timestamp": "2026-11-19T10:30:43.693Z",
+    "timestamp": "2026-11-19T10:30:50.033Z",
     "tool": "contentrain_content_delete"
   },
   "stats": {
     "entries": 234,
-    "lastSync": "2026-11-19T10:30:43.693Z",
+    "lastSync": "2026-11-19T10:30:50.033Z",
     "locales": [
       "tr",
       "en"
