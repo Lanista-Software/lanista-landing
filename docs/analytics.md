@@ -24,7 +24,19 @@ Her sayfa görüntülemede ayrıca:
 
 GA'nın kendi ölçtükleri (geliştirilmiş ölçüm): sayfa görüntüleme, kaydırma, giden tıklama, site içi arama, dosya indirme.
 
-## Panelde bir kez yapılacak ayarlar
+## Panel ayarları
+
+Durum (2026-11-21): 1–3 numaralı adımlar Admin API ile yapıldı (önemli etkinlikler, 11 özel boyut, 14 ay saklama). 4 ve 5 panelden elle yapılır.
+
+API erişimi: `ga-admin@lanista-parca-katalog.iam.gserviceaccount.com` servis hesabı mülkte Düzenleyici; anahtar dosyası yok, kimliğe bürünme ile token alınır:
+
+```
+gcloud auth print-access-token --impersonate-service-account=ga-admin@lanista-parca-katalog.iam.gserviceaccount.com --scopes=https://www.googleapis.com/auth/analytics.edit
+```
+
+(gcloud'un varsayılan giriş uygulaması `analytics.edit` iznini artık vermiyor; bu yüzden servis hesabı.)
+
+### Yapılacaklar listesi
 
 1. **Önemli etkinlikler** (Yönetici → Veri görünümü → Etkinlikler): `generate_lead` ve `plan_click` önemli etkinlik olarak işaretlenir. `generate_lead` henüz listede yoksa ilk form gönderiminden sonra çıkar ya da Yönetici → Önemli etkinlikler → "Yeni önemli etkinlik" ile adı yazılarak eklenir.
 2. **Özel boyutlar** (Yönetici → Veri görünümü → Özel tanımlar → Özel boyut oluştur). Kapsam: Etkinlik.
@@ -40,6 +52,8 @@ GA'nın kendi ölçtükleri (geliştirilmiş ölçüm): sayfa görüntüleme, ka
    | SSS sorusu | `faq_title` |
    | Bölüm | `section_id` |
    | Site dili | `site_language` |
+   | Ödeme tipi | `billing` |
+   | Seçilen dil | `language` |
 
    Boyutlar oluşturulduktan sonraki verilere uygulanır; geriye dönük çalışmaz.
 3. **Veri saklama** (Yönetici → Veri toplama ve değişiklik → Veri saklama): 14 ay.
