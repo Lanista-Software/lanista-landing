@@ -20,12 +20,12 @@ const { hero, buttonHref, secondary, visualLabel, screenshot, chip } = Astro.pro
       <h1 class="mt-6 font-space text-4xl font-semibold leading-[1.08] text-heading-text md:text-5xl xl:text-[3.5rem]">{hero.title}</h1>
       <p class="mt-6 text-lg font-normal text-body-text md:text-xl">{hero.description}</p>
       <div class="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
-        <a href={buttonHref} class="btn btn-danger btn-lg" data-track="button_clicked" data-track-button_name="hero_primary">
+        <a href={buttonHref} class="btn btn-danger btn-lg" data-track="cta_click" data-track-cta_name="hero_primary">
           {hero.buttontext}
           <Icon name="ri-arrow-right-line" />
         </a>
         {secondary && (
-          <a href={secondary.href} class="btn btn-outline btn-lg" data-track="button_clicked" data-track-button_name="hero_secondary">{secondary.label}</a>
+          <a href={secondary.href} class="btn btn-outline btn-lg" data-track="cta_click" data-track-cta_name="hero_secondary">{secondary.label}</a>
         )}
       </div>
     </div>

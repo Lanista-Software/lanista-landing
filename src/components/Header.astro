@@ -32,7 +32,7 @@ const contactHref = routePath('contact', locale)
         <div class="hidden sm:block">
           <LangSelect locale={locale} path={path} locales={locales} paths={paths} />
         </div>
-        <a href={contactHref} class="btn btn-danger hidden md:inline-flex" data-track="button_clicked" data-track-button_name="contact">
+        <a href={contactHref} class="btn btn-danger hidden md:inline-flex" data-track="cta_click" data-track-cta_name="header_contact">
           {s('nav.contact')}
         </a>
         <!-- Mobile menu: Zag.js dialog (focus trap, Escape, scroll lock, aria-modal). -->
@@ -60,7 +60,7 @@ const contactHref = routePath('contact', locale)
                 <LangSelect locale={locale} path={path} locales={locales} paths={paths} />
               </div>
               <div class="pt-8">
-                <a href={contactHref} class="btn btn-danger btn-block" data-track="button_clicked" data-track-button_name="contact">
+                <a href={contactHref} class="btn btn-danger btn-block" data-track="cta_click" data-track-cta_name="header_contact">
                   {s('nav.contact')}
                 </a>
               </div>

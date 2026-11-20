@@ -49,7 +49,8 @@ function loadAnalytics() {
     w.dataLayer.push(arguments)
   }
   w.gtag('js', new Date())
-  w.gtag('config', id, { anonymize_ip: true })
+  const contentGroup = document.querySelector<HTMLElement>('[data-content-group]')?.dataset.contentGroup
+  w.gtag('config', id, { anonymize_ip: true, content_group: contentGroup, site_language: document.documentElement.lang })
   const sc = document.createElement('script')
   sc.async = true
   sc.src = `https://www.googletagmanager.com/gtag/js?id=${id}`

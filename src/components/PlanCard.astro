@@ -5,8 +5,8 @@ import Icon from '~/components/Icon.astro'
 import { t } from '~/lib/i18n'
 import { tl, withVat } from '~/lib/money'
 
-interface Props { plan: Plans, ctaHref: string, locale?: Locale }
-const { plan, ctaHref, locale = 'tr' } = Astro.props
+interface Props { plan: Plans, ctaHref: string, product?: string, locale?: Locale }
+const { plan, ctaHref, product, locale = 'tr' } = Astro.props
 const priced = typeof plan.price_try === 'number'
 const vat = plan.vat_rate ?? 20
 // Contracts and payment live in the product's own backend; the landing only links there.
@@ -41,7 +41,15 @@ const billing = s(`plan.billing.${plan.billing}`)
   )
 : <div class="flex-1"></div>}
   {plan.note && <p class="mt-6 border-t border-border-color pt-4 text-sm text-label-text">{plan.note}</p>}
-  <a href={buyHref} class:list={['btn btn-block mt-6', plan.featured ? 'btn-danger' : 'btn-outline']}>
+  <a
+    href={buyHref}
+    class:list={['btn btn-block mt-6', plan.featured ? 'btn-danger' : 'btn-outline']}
+    data-track="plan_click"
+    data-track-product={product}
+    data-track-plan_name={plan.name}
+    data-track-billing={plan.billing}
+    data-track-destination={plan.checkout_url ? 'checkout' : 'contact'}
+  >
     {plan.checkout_url ? s('plan.buy') : s('plan.buy_contact')}
   </a>
 </article>

@@ -8,7 +8,7 @@ const { title, text, href, label, class: className } = Astro.props
     <div class="reveal mx-auto max-w-4xl text-center">
       <h2 id="cta-title" class="block-title mb-4">{title}</h2>
       {text && <p class="mb-8 font-inter">{text}</p>}
-      <a href={href} class="btn btn-danger btn-xl">{label}</a>
+      <a href={href} class="btn btn-danger btn-xl" data-track="cta_click" data-track-cta_name="cta_block">{label}</a>
     </div>
   </div>
 </section>

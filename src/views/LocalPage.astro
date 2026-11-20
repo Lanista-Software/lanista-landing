@@ -45,13 +45,13 @@ const jsonLd = [
 ]
 ---
 
-<BaseLayout locale={locale} title={title} description={description} path={path} paths={paths} ogTitle={page.title} jsonLd={jsonLd}>
+<BaseLayout locale={locale} title={title} description={description} path={path} paths={paths} ogTitle={page.title} jsonLd={jsonLd} contentGroup="local">
   <PageHero>
     <Breadcrumbs locale={locale} trail={trail} />
     <h1 class="page-title">{page.hero_title}</h1>
     <p class="mt-6 max-w-3xl font-inter text-lg leading-relaxed lg:text-xl">{page.hero_text}</p>
     <div class="mt-8 flex flex-wrap gap-4">
-      <a href={routePath('contact', locale)} class="btn btn-danger btn-lg" data-track="local_cta_clicked">{s('common.contact_us')}</a>
+      <a href={routePath('contact', locale)} class="btn btn-danger btn-lg" data-track="cta_click" data-track-cta_name="local_contact">{s('common.contact_us')}</a>
       <a href={localePath(ROUTES.products[locale], locale)} class="btn btn-outline btn-lg">{s('products.title')}</a>
     </div>
   </PageHero>
