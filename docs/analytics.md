@@ -34,6 +34,8 @@ API erişimi: `ga-admin@lanista-parca-katalog.iam.gserviceaccount.com` servis he
 gcloud auth print-access-token --impersonate-service-account=ga-admin@lanista-parca-katalog.iam.gserviceaccount.com --scopes=https://www.googleapis.com/auth/analytics.edit
 ```
 
+Aynı servis hesabı Search Console'da (`sc-domain:lanista.com.tr`) Kısıtlı kullanıcı: `--scopes=https://www.googleapis.com/auth/webmasters.readonly` ile site haritası, arama performansı ve URL denetimi okunur. GA verisi için `analytics.readonly` (Data API).
+
 (gcloud'un varsayılan giriş uygulaması `analytics.edit` iznini artık vermiyor; bu yüzden servis hesabı.)
 
 ### Yapılacaklar listesi
