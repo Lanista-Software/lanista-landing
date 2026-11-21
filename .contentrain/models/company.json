@@ -64,6 +64,11 @@
       "required": true,
       "type": "string"
     },
+    "maps_url": {
+      "description": "Google İşletme Profili / Haritalar linki (maps.google.com/?cid=…). JSON-LD hasMap + sameAs, iletişim ve Van sayfasında yol tarifi linki.",
+      "order": 22,
+      "type": "url"
+    },
     "mersis": {
       "order": 11,
       "required": true,
@@ -78,6 +83,12 @@
       "order": 14,
       "required": true,
       "type": "phone"
+    },
+    "postal_code": {
+      "description": "Posta kodu (Google İşletme Profili ile aynı).",
+      "max": 10,
+      "order": 23,
+      "type": "string"
     },
     "setup_days": {
       "description": "Kurulum en geç kaç iş gününde tamamlanır — legal texts render {{kurulum_suresi}} from this. Empty = legal pages show a draft warning.",
