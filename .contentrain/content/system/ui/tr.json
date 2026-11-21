@@ -81,7 +81,7 @@
   "form.v.max": "{label} en fazla {n} karakter olmalıdır.",
   "form.v.min": "{label} en az {n} karakter olmalıdır.",
   "form.v.required": "{label} alanı zorunludur.",
-  "form.v.tel": "Geçerli bir telefon numarası yazın (örnek: 0506 215 07 00).",
+  "form.v.tel": "Geçerli bir telefon numarası yazın (örnek: 0532 123 45 67).",
   "home.contact_cta_text": "Telefon, e-posta ya da form: size en uygun yoldan ulaşın.",
   "home.contact_cta_title": "Sorunuz mu var?",
   "home.hero_chip_text": "Bugün aranacak müşteriler hazır",
