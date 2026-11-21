@@ -2,6 +2,15 @@
 
 Hazırlanma: 2026-11-21. Kopyala-yapıştır için. Metinler `products/hesap-takip` içeriğindeki özelliklerden alındı. Ürün değişirse metinler de güncellenmeli.
 
+## Durum (2026-11-21)
+
+- Hesap: **748-331-4280** "Lanista Yazılım" (TRY, Türkiye saati). Ödeme profili: Lanista Yazılım San. Tic. Ltd. Şti. (kuruluş).
+- Bağlı: İşletme Profili, GA4 `p252432555`.
+- Kampanya "Hesap Takip - Arama" **taslak, yayınlanmadı**: tek reklam grubu, 18 anahtar kelime, 15 başlık / 4 açıklama, 6 açıklama metni, 4 site bağlantısı, ₺150/gün, Tıklamalar + TBM sınırı ₺15, yalnız Arama Ağı, Türkiye (varlık). Gelişmiş dönüşümler kapalı (KVKK).
+- Google tahmini: haftada ~20 tıklama, ort. TBM ~₺15, haftalık ~₺300. ₺8.000 harcama bu hızla ~6 ay sürer; 60 günlük harcama koşulu varsa tek kampanya yetmez.
+- Kredi: Promosyonlar sayfasında teklif **yok**. Profil kartındaki "Kredinizi alın" eski kapalı hesabı (614-864-9088) açtı; yeni hesap kurulunca kart profilden kalktı. Yayından önce Google Ads destek (0850 390 2930, hafta içi 10–18) ile teyit edilecek.
+- Yapılacak: dönüşüm içe aktarma (`generate_lead`, `plan_click` ikincil), reklam zaman planı, hariç tutulan kelimeler. Eski LineDiff hesabı 614-864-9088 kapalı, dokunulmadı.
+
 ## Kredi
 
 - Teklif: yeni Google Ads reklamvereni, ₺8.000 harcayınca ₺8.000 reklam kredisi.
