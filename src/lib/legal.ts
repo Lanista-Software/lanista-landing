@@ -59,6 +59,7 @@ export function renderLegal(page: LegalPage, locale: Locale = 'tr'): RenderedLeg
     .filter(line => !(line.includes('{{kep}}') && !COMPANY.kep))
     .join('\n')
     .replaceAll('{{kep}}', COMPANY.kep ?? '')
+    .replaceAll('{{telefon}}', COMPANY.phone)
     .replaceAll('{{urun}}', s('legal.token.urun'))
     .replaceAll('{{paket}}', s('legal.token.paket'))
     .replaceAll('{{tutar}}', s('legal.token.tutar'))
