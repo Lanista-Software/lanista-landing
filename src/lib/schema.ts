@@ -26,6 +26,7 @@ export function organizationSchema(sameAs: string[] = []) {
       'addressLocality': COMPANY.address.district,
       'addressRegion': COMPANY.address.city,
       'addressCountry': COMPANY.address.countryCode,
+      ...(COMPANY.address.postalCode ? { postalCode: COMPANY.address.postalCode } : {}),
     },
     'contactPoint': {
       '@type': 'ContactPoint',
@@ -35,7 +36,7 @@ export function organizationSchema(sameAs: string[] = []) {
       'areaServed': 'TR',
       'availableLanguage': ['Turkish', 'English'],
     },
-    'sameAs': sameAs,
+    'sameAs': COMPANY.mapsUrl ? [...sameAs, COMPANY.mapsUrl] : sameAs,
     'areaServed': { '@type': 'Country', 'name': 'Türkiye' },
     'knowsAbout': ['Veresiye ve cari takip yazılımı', 'Mobil uygulama geliştirme', 'Web sitesi ve e-ticaret', 'Özel yazılım geliştirme', 'Ödeme entegrasyonu', 'POS uygulamaları', 'SaaS', 'Yapay zekâ destekli yazılım'],
   }
@@ -94,8 +95,10 @@ export function localBusinessSchema(locale: Locale, p: { name: string, descripti
       'addressLocality': COMPANY.address.district,
       'addressRegion': COMPANY.address.city,
       'addressCountry': COMPANY.address.countryCode,
+      ...(COMPANY.address.postalCode ? { postalCode: COMPANY.address.postalCode } : {}),
     },
     ...(p.areaServed?.length ? { areaServed: p.areaServed.map(name => ({ '@type': 'City', name })) } : {}),
+    ...(COMPANY.mapsUrl ? { hasMap: COMPANY.mapsUrl, sameAs: [COMPANY.mapsUrl] } : {}),
     'parentOrganization': { '@id': ORG_ID },
   }
 }

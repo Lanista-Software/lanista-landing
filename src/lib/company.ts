@@ -18,6 +18,7 @@ export const COMPANY = {
     district: c.address_district,
     city: c.address_city,
     countryCode: c.country_code,
+    postalCode: c.postal_code,
     full: `${c.address_street} ${c.address_district} / ${c.address_city}`,
   },
   taxOffice: c.tax_office,
@@ -33,4 +34,6 @@ export const COMPANY = {
   chamber: { name: c.chamber_name, url: c.chamber_url, rulesUrl: c.chamber_rules_url },
   paymentLogoBand: c.payment_logo_band,
   setupDays: c.setup_days,
+  /** Google Business Profile (Maps) link. */
+  mapsUrl: c.maps_url,
 } as const
