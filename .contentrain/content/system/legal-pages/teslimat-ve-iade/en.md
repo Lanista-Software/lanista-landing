@@ -65,7 +65,7 @@ If you bought on behalf of your business for commercial purposes, you are genera
 - Send an email to info@lanista.com.tr, or
 - Send written notice to Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9 Tuşba / Van.
 
-It is sufficient to state your name or company name, the order date and the product name. We will confirm by email that your request has reached us. For questions, you can call +90 506 215 07 00.
+It is sufficient to state your name or company name, the order date and the product name. We will confirm by email that your request has reached us. For questions, you can call {{telefon}}.
 
 ## 5. How and when is money refunded?
 
@@ -97,4 +97,5 @@ If you see an error in the app, contact us by phone, WhatsApp or email. We fix e
 ## 9. Complaints and disputes
 
 You can send your complaints to info@lanista.com.tr. If you are a consumer, you can apply to the Tüketici Hakem Heyeti (Consumer Arbitration Committee) within the monetary limits set each year by the Ticaret Bakanlığı (Ministry of Trade), and to the Tüketici Mahkemesi (Consumer Court) above these limits.
+
 

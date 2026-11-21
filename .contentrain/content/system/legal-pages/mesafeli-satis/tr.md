@@ -19,7 +19,7 @@ Bu sözleşme, 6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli
 - Adres: Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9 Tuşba / Van
 - Vergi dairesi ve numarası: Van V.D. 6081185221
 - MERSİS no: 0608118522100001
-- Telefon: +90 506 215 07 00
+- Telefon: {{telefon}}
 - E-posta: info@lanista.com.tr
 - KEP: {{kep}}
 - Meslek odası: Van Ticaret ve Sanayi Odası (https://www.vantso.org.tr/)
@@ -148,4 +148,5 @@ Taraflar arasındaki yazışmalarda e-posta ve Lanista'nın sistem kayıtları (
 ## Madde 13 – Yürürlük
 
 Alıcı, onay sayfasında Ön Bilgilendirme Formu'nu ve bu sözleşmeyi okuduğunu ayrı onay kutularıyla onaylar ve "Onayla ve ödemeye geç" düğmesine basar. Sözleşme, ödemenin tamamlanmasıyla kurulur ve yürürlüğe girer. Sözleşmenin bir örneği Alıcı'nın e-posta adresine gönderilir. Bu sözleşme 13 maddeden oluşur.
+
 

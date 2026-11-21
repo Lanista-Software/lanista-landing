@@ -86,5 +86,6 @@ Yeni bir çerez eklersek veya mevcut bir çerezin amacı değişirse bu politika
 
 ## 9. İletişim
 
-Çerezlerle ilgili sorularınız için info@lanista.com.tr adresine yazabilir veya +90 506 215 07 00 numarasını arayabilirsiniz.
+Çerezlerle ilgili sorularınız için info@lanista.com.tr adresine yazabilir veya {{telefon}} numarasını arayabilirsiniz.
+
 

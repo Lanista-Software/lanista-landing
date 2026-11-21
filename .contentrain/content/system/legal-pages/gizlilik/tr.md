@@ -103,6 +103,7 @@ Hizmetlerimiz veya mevzuat değişirse bu politikayı güncelleyebiliriz. Günce
 
 LANİSTA YAZILIM SANAYİ VE TİCARET LİMİTED ŞİRKETİ
 Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9 Tuşba / Van
-Telefon: +90 506 215 07 00
+Telefon: {{telefon}}
 E-posta: info@lanista.com.tr
+
 

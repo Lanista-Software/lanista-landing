@@ -86,5 +86,6 @@ If we add a new cookie or the purpose of an existing cookie changes, we will upd
 
 ## 9. Contact
 
-For questions about cookies, you can write to info@lanista.com.tr or call +90 506 215 07 00.
+For questions about cookies, you can write to info@lanista.com.tr or call {{telefon}}.
+
 

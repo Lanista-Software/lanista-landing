@@ -16,7 +16,7 @@ This notice has been prepared in accordance with Article 10 of 6698 sayılı Ki�
 - Legal name: LANİSTA YAZILIM SANAYİ VE TİCARET LİMİTED ŞİRKETİ ("Lanista")
 - Address: Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9 Tuşba / Van
 - MERSİS no: 0608118522100001
-- Phone: +90 506 215 07 00
+- Phone: {{telefon}}
 - Email: info@lanista.com.tr
 - KEP (registered electronic mail): {{kep}}
 
@@ -134,4 +134,5 @@ You can submit your application, in accordance with the Veri Sorumlusuna Başvur
 In your application, clearly state your full name, T.C. identity number (or, if you are a foreign national, your nationality and passport number), your address for notifications, your email address and phone number if any, and your request.
 
 We will conclude your application free of charge within **30 days** at the latest. If the process involves an additional cost, the fee schedule set by the Board may apply. If your application is rejected or you find our response insufficient, you can file a complaint with the Kişisel Verileri Koruma Kurulu (Personal Data Protection Board).
+
 

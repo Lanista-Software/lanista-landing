@@ -17,7 +17,7 @@ This form has been prepared under Article 5 of the Mesafeli Sözleşmeler Yönet
 - Address: Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9 Tuşba / Van
 - Tax office and number: Van V.D. 6081185221
 - MERSİS no: 0608118522100001
-- Phone: +90 506 215 07 00
+- Phone: {{telefon}}
 - Email: info@lanista.com.tr
 - KEP (registered electronic mail): {{kep}}
 - Chamber: Van Ticaret ve Sanayi Odası (Van Chamber of Commerce and Industry) (https://www.vantso.org.tr/). You can find the professional rules at this address.
@@ -108,7 +108,7 @@ If you buy on behalf of your business for commercial or professional purposes, y
 
 ## 11. After-sales services
 
-Maintenance, updates and phone/WhatsApp support are provided throughout the term of use. For support, you can call +90 506 215 07 00 or write to info@lanista.com.tr.
+Maintenance, updates and phone/WhatsApp support are provided throughout the term of use. For support, you can call {{telefon}} or write to info@lanista.com.tr.
 
 ## 12. Complaints and disputes
 
@@ -119,4 +119,5 @@ You can send your complaints to info@lanista.com.tr. If you are a consumer, you 
 This form and the Mesafeli Satış Sözleşmesi (Distance Sales Contract) are sent to your email address as PDFs after payment. The current versions of the documents are also published on our website.
 
 You declare that you have read and approved this form by ticking the box on the confirmation page. Your approval record (date, time and document version) is kept by Lanista.
+
 

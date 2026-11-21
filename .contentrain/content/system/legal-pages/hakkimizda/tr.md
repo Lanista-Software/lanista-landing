@@ -88,6 +88,7 @@ Hesap Takip bugün Van'da oto yedek parça işletmelerinde kullanılıyor. Müş
 - MERSİS no: 0608118522100001
 - Ticaret sicil no: 442 / Tuşba (Van Ticaret Sicili Müdürlüğü)
 - Meslek odası: Van Ticaret ve Sanayi Odası (https://www.vantso.org.tr/)
-- Telefon: +90 506 215 07 00
+- Telefon: {{telefon}}
 - E-posta: info@lanista.com.tr
+
 

@@ -16,7 +16,7 @@ Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") md.10 ve A
 - Unvan: LANİSTA YAZILIM SANAYİ VE TİCARET LİMİTED ŞİRKETİ ("Lanista")
 - Adres: Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9 Tuşba / Van
 - MERSİS no: 0608118522100001
-- Telefon: +90 506 215 07 00
+- Telefon: {{telefon}}
 - E-posta: info@lanista.com.tr
 - KEP: {{kep}}
 
@@ -134,4 +134,5 @@ Başvurunuzu, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'e uy
 Başvurunuzda adınızı-soyadınızı, T.C. kimlik numaranızı (yabancıysanız uyruğunuzu ve pasaport numaranızı), tebligata esas adresinizi, varsa e-posta ve telefonunuzu ve talebinizi açıkça yazın.
 
 Başvurunuzu en geç **30 gün** içinde ücretsiz olarak sonuçlandırırız. İşlemin ayrıca bir maliyet gerektirmesi halinde Kurul'un belirlediği tarife uygulanabilir. Başvurunuz reddedilirse veya yanıtı yetersiz bulursanız, Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsiniz.
+
 

@@ -61,7 +61,7 @@ Ekibimiz sizi arar ve kurulum için gün belirler. Kurulum, ödemenin onaylanmas
 - Yanlış paketi seçtiyseniz tarayıcınızın "geri" düğmesiyle veya sayfadaki bağlantıyla ürün sayfasına dönüp başka paket seçebilirsiniz.
 - Zorunlu bir alan boş veya hatalıysa (örneğin geçersiz e-posta) sayfa sizi uyarır ve devam etmenize izin vermez.
 - iyzico ödeme sayfasında kart bilgilerinizi ödemeyi tamamlamadan önce düzeltebilir veya ödemeden vazgeçebilirsiniz. Ödemeyi tamamlamadan sayfayı kapatırsanız sipariş oluşmaz.
-- Ödemeden sonra fatura veya iletişim bilgilerinizde hata fark ederseniz info@lanista.com.tr adresine yazın ya da +90 506 215 07 00 numarasını arayın. Hatalı bilgileri düzeltir, gerekirse faturayı yeniden düzenleriz.
+- Ödemeden sonra fatura veya iletişim bilgilerinizde hata fark ederseniz info@lanista.com.tr adresine yazın ya da {{telefon}} numarasını arayın. Hatalı bilgileri düzeltir, gerekirse faturayı yeniden düzenleriz.
 
 ## 3. Sözleşme nasıl saklanır, nasıl erişirsiniz?
 
@@ -86,7 +86,7 @@ Siparişiniz sırasında verdiğiniz bilgiler KVKK Aydınlatma Metni ve Gizlilik
 
 ## 7. Şikâyet ve alternatif uyuşmazlık çözümü
 
-1. **Bize yazın:** Şikâyetinizi info@lanista.com.tr adresine iletin veya +90 506 215 07 00 numarasını arayın. Sorunu önce birlikte çözmeye çalışırız.
+1. **Bize yazın:** Şikâyetinizi info@lanista.com.tr adresine iletin veya {{telefon}} numarasını arayın. Sorunu önce birlikte çözmeye çalışırız.
 2. **Tüketici Hakem Heyeti:** Tüketiciyseniz, Ticaret Bakanlığınca her yıl belirlenen parasal sınırlar içinde, yerleşim yerinizdeki veya işlemi yaptığınız yerdeki Tüketici Hakem Heyeti'ne başvurabilirsiniz. Başvuru e-Devlet üzerinden de yapılabilir.
 3. **Arabuluculuk ve Tüketici Mahkemesi:** Parasal sınırın üzerindeki uyuşmazlıklarda, mevzuatın öngördüğü hallerde önce arabulucuya, ardından Tüketici Mahkemesi'ne başvurabilirsiniz.
 
@@ -94,7 +94,8 @@ Siparişiniz sırasında verdiğiniz bilgiler KVKK Aydınlatma Metni ve Gizlilik
 
 Unvan, adres, MERSİS numarası ve diğer iletişim bilgilerimiz İletişim sayfasında ve sitenin alt kısmında yer alır.
 
-- Telefon: +90 506 215 07 00
+- Telefon: {{telefon}}
 - E-posta: info@lanista.com.tr
 - Meslek odası: Van Ticaret ve Sanayi Odası (https://www.vantso.org.tr/)
+
 

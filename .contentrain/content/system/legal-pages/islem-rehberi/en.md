@@ -61,7 +61,7 @@ Our team calls you and schedules a day for setup. Setup is completed on site or 
 - If you selected the wrong plan, you can go back to the product page with your browser's "back" button or the link on the page and choose another plan.
 - If a required field is empty or invalid (for example, an invalid email address), the page warns you and does not let you continue.
 - On the iyzico payment page, you can correct your card details or cancel the payment before completing it. If you close the page without completing payment, no order is created.
-- If you notice an error in your billing or contact details after payment, write to info@lanista.com.tr or call +90 506 215 07 00. We will correct the information and reissue the invoice if necessary.
+- If you notice an error in your billing or contact details after payment, write to info@lanista.com.tr or call {{telefon}}. We will correct the information and reissue the invoice if necessary.
 
 ## 3. How the contract is stored and how you can access it
 
@@ -86,7 +86,7 @@ The information you provide when ordering is processed in accordance with the KV
 
 ## 7. Complaints and alternative dispute resolution
 
-1. **Write to us:** Send your complaint to info@lanista.com.tr or call +90 506 215 07 00. We will first try to resolve the issue together with you.
+1. **Write to us:** Send your complaint to info@lanista.com.tr or call {{telefon}}. We will first try to resolve the issue together with you.
 2. **Tüketici Hakem Heyeti (Consumer Arbitration Committee):** If you are a consumer, you can apply to the Consumer Arbitration Committee where you live or where the transaction took place, within the monetary limits set each year by the Ticaret Bakanlığı (Ministry of Trade). Applications can also be made via e-Devlet (Turkey's e-Government portal).
 3. **Mediation and the Tüketici Mahkemesi (Consumer Court):** For disputes above the monetary limit, you can apply first to a mediator, where required by law, and then to the Consumer Court.
 
@@ -94,7 +94,8 @@ The information you provide when ordering is processed in accordance with the KV
 
 Our legal name, address, MERSİS number and other contact details are listed on the Contact page and at the bottom of the site.
 
-- Phone: +90 506 215 07 00
+- Phone: {{telefon}}
 - Email: info@lanista.com.tr
 - Chamber: Van Ticaret ve Sanayi Odası (Van Chamber of Commerce and Industry) (https://www.vantso.org.tr/)
+
 

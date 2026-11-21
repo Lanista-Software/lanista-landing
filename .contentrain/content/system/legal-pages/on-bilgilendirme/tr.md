@@ -17,7 +17,7 @@ Bu form, Mesafeli Sözleşmeler Yönetmeliği'nin 5. maddesi uyarınca, sipariş
 - Adres: Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9 Tuşba / Van
 - Vergi dairesi ve numarası: Van V.D. 6081185221
 - MERSİS no: 0608118522100001
-- Telefon: +90 506 215 07 00
+- Telefon: {{telefon}}
 - E-posta: info@lanista.com.tr
 - KEP: {{kep}}
 - Meslek odası: Van Ticaret ve Sanayi Odası (https://www.vantso.org.tr/). Meslek kurallarına bu adresten ulaşabilirsiniz.
@@ -108,7 +108,7 @@ Kurulum, ekibimizin hesabınızı açması veya kurulum için sizinle yerinde ya
 
 ## 11. Satış sonrası hizmetler
 
-Kullanım süresi boyunca bakım, güncelleme ve telefon/WhatsApp desteği verilir. Destek için +90 506 215 07 00 numarasını arayabilir veya info@lanista.com.tr adresine yazabilirsiniz.
+Kullanım süresi boyunca bakım, güncelleme ve telefon/WhatsApp desteği verilir. Destek için {{telefon}} numarasını arayabilir veya info@lanista.com.tr adresine yazabilirsiniz.
 
 ## 12. Şikâyet ve uyuşmazlık
 
@@ -119,4 +119,5 @@ Kullanım süresi boyunca bakım, güncelleme ve telefon/WhatsApp desteği veril
 Bu form ve Mesafeli Satış Sözleşmesi, ödemeden sonra e-posta adresinize PDF olarak gönderilir. Metinlerin güncel hali sitemizde de yayımlanır.
 
 Bu formu okuduğunuzu ve onayladığınızı onay sayfasındaki kutuyu işaretleyerek beyan edersiniz. Onay kaydınız (tarih, saat ve metin sürümü) Lanista tarafından saklanır.
+
 

@@ -19,7 +19,7 @@ This contract has been prepared in accordance with 6502 sayılı Tüketicinin Ko
 - Address: Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9 Tuşba / Van
 - Tax office and number: Van V.D. 6081185221
 - MERSİS no: 0608118522100001
-- Phone: +90 506 215 07 00
+- Phone: {{telefon}}
 - Email: info@lanista.com.tr
 - KEP (registered electronic mail): {{kep}}
 - Chamber: Van Ticaret ve Sanayi Odası (Van Chamber of Commerce and Industry) (https://www.vantso.org.tr/)
@@ -146,4 +146,5 @@ In correspondence between the parties, email and Lanista's system records (appro
 ## Article 13 – Entry into force
 
 On the confirmation page, the Buyer confirms with separate checkboxes that they have read the Pre-Contractual Information Form and this contract, and clicks "Confirm and proceed to payment". The contract is formed and enters into force upon completion of payment. A copy of the contract is sent to the Buyer's email address. This contract consists of 13 articles.
+
 

@@ -65,7 +65,7 @@ Kurulum, ekibimizin hesabınızı açması veya kurulum için sizinle yerinde ya
 - info@lanista.com.tr adresine e-posta gönderin veya
 - Bardakçı Mah. Teknokent Sk. No: 1 İç Kapı No: 9 Tuşba / Van adresine yazılı bildirim yapın.
 
-Bildirimde adınızı veya unvanınızı, sipariş tarihini ve ürün adını yazmanız yeterlidir. Talebinizin bize ulaştığını e-posta ile teyit ederiz. Sorularınız için +90 506 215 07 00 numarasını arayabilirsiniz.
+Bildirimde adınızı veya unvanınızı, sipariş tarihini ve ürün adını yazmanız yeterlidir. Talebinizin bize ulaştığını e-posta ile teyit ederiz. Sorularınız için {{telefon}} numarasını arayabilirsiniz.
 
 ## 5. Para iadesi nasıl ve ne zaman yapılır?
 
@@ -97,4 +97,5 @@ Uygulamada bir hata görürseniz bize telefonla, WhatsApp'tan veya e-posta ile u
 ## 9. Şikâyet ve uyuşmazlık
 
 Şikâyetlerinizi info@lanista.com.tr adresine iletebilirsiniz. Tüketiciyseniz, Ticaret Bakanlığınca her yıl belirlenen parasal sınırlar içinde Tüketici Hakem Heyeti'ne, bu sınırların üzerinde Tüketici Mahkemesi'ne başvurabilirsiniz.
+
 

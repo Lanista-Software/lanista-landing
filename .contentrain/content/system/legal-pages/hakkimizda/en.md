@@ -88,6 +88,7 @@ We design, build and set up our products ourselves. When you call us, you don't 
 - MERSİS no: 0608118522100001
 - Trade registry no: 442 / Tuşba (Van Ticaret Sicili Müdürlüğü, Van Trade Registry Office)
 - Chamber: Van Ticaret ve Sanayi Odası (Van Chamber of Commerce and Industry) (https://www.vantso.org.tr/)
-- Phone: +90 506 215 07 00
+- Phone: {{telefon}}
 - Email: info@lanista.com.tr
+
 
