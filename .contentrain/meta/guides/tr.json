@@ -1,0 +1,26 @@
+{
+  "gd01gecis2026": {
+    "source": "agent",
+    "status": "draft",
+    "updated_at": "2026-11-23T18:42:24.640Z",
+    "updated_by": "contentrain-mcp"
+  },
+  "gd02kontor": {
+    "source": "agent",
+    "status": "draft",
+    "updated_at": "2026-11-23T18:42:24.641Z",
+    "updated_by": "contentrain-mcp"
+  },
+  "gd03entegrator": {
+    "source": "agent",
+    "status": "draft",
+    "updated_at": "2026-11-23T18:42:24.641Z",
+    "updated_by": "contentrain-mcp"
+  },
+  "gd04earsiv": {
+    "source": "agent",
+    "status": "draft",
+    "updated_at": "2026-11-23T18:42:24.641Z",
+    "updated_by": "contentrain-mcp"
+  }
+}

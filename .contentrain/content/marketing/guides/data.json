@@ -1,0 +1,162 @@
+{
+  "gd01gecis2026": {
+    "body": "## Genel sınır: 3 milyon TL\n\n509 Sıra No.lu Vergi Usul Kanunu Genel Tebliği'ne göre 2022 ve sonraki hesap dönemlerinde **brüt satış hasılatı (ya da gayrisafi iş hasılatı) 3 milyon TL ve üzeri** olan mükellefler e-Fatura uygulamasına geçmek zorundadır.\n\nGeçiş tarihi, sınırın aşıldığı yılı **izleyen yılın yedinci ayının başıdır**:\n\n| Sınırı aştığınız yıl | Geçmeniz gereken tarih |\n|---|---|\n| 2025 hasılatı 3 milyon TL ve üzeri | 1 Temmuz 2026 |\n| 2026 hasılatı 3 milyon TL ve üzeri | 1 Temmuz 2027 |\n\nHesaba katılan tutar **kâr değil, brüt satış hasılatıdır**. Yıl içinde 3,2 milyon TL'lik satış yapan ama zarar eden bir işletme de geçmek zorundadır.\n\n## Daha düşük sınırla geçenler: 500 bin TL\n\nAşağıdaki gruplarda sınır **500 bin TL**'dir; geçiş tarihi yine izleyen yılın 1 Temmuz'udur:\n\n- Kendi internet sitesinde, pazaryerinde ya da başka bir elektronik ortamda mal veya hizmet satanlar\n- Gayrimenkul ve motorlu taşıt imal, inşa, alım, satım ya da kiralaması yapanlar ve bu işlere aracılık edenler\n\n## Cirodan bağımsız olarak geçmesi gerekenler\n\nTebliğ, bazı faaliyetler için ciroya bakmadan zorunluluk getirir. Bunlardan bazıları:\n\n- EPDK'dan lisans alan akaryakıt ve LPG işletmeleri (bayilik lisansı dahil)\n- ÖTV (III) sayılı listedeki malları imal, inşa ya da ithal edenler\n- Halde komisyoncu ya da tüccar olarak sebze ve meyve ticareti yapanlar\n- SGK ile sözleşmeli sağlık hizmeti sunucuları, eczaneler ve medikal tedarikçiler\n- Konaklama belgesi olan oteller ve şarj ağı işletmecileri\n\n## e-Fatura'ya geçen e-Arşiv'e de geçer\n\ne-Fatura'ya geçen mükellef, e-Arşiv Fatura uygulamasına da geçmek zorundadır. Bundan sonra e-Fatura kullanan firmalara **e-Fatura**, kullanmayan firmalara ve son tüketiciye **e-Arşiv Fatura** kesersiniz. Hangisini ne zaman keseceğinizi [e-Arşiv mi e-Fatura mı?](/rehber/e-arsiv-mi-e-fatura-mi/) rehberinde anlattık.\n\n## Sınırın altındaysanız: kâğıt fatura dönemi bitti\n\ne-Fatura zorunluluğu olmayan işletmeler için de 2026'da önemli bir değişiklik var. 589 Sıra No.lu Tebliğ ile son hâlini alan kurala göre e-Fatura ve e-Arşiv'e kayıtlı olmayan mükellefler faturalarını **GİB'in e-Arşiv portalından** düzenlemek zorundadır:\n\n| Mükellef | 31.12.2026'ya kadar | 1.1.2027'den itibaren |\n|---|---|---|\n| Bilanço esasına göre defter tutanlar ve diğerleri | 1.1.2026'dan itibaren tutarına bakılmaksızın tüm faturalar e-Arşiv | Tüm faturalar e-Arşiv |\n| Basit usul ve işletme hesabı esasında olanlar | Vergiler dahil 3.000 TL'yi aşan faturalar e-Arşiv, altı kâğıt olabilir | Tutarına bakılmaksızın tüm faturalar e-Arşiv |\n\nPerakende satış fişi ya da ÖKC fişiyle belgelenebilen satışlar bu kuralın dışındadır.\n\n## Geçmezseniz ne olur?\n\nZorunlu olduğu hâlde süresinde geçmeyen ya da e-Fatura kesmesi gerekirken kâğıt fatura düzenleyen mükellefler hakkında Vergi Usul Kanunu'ndaki ceza hükümleri uygulanır. e-Arşiv yerine kâğıt fatura düzenlenmesi hâlinde ceza, düzenleyen ve vergi mükellefi alıcı için **her bir fatura için ayrı ayrı** kesilir (VUK m. 353).\n\n## Geçişe ne zaman başlamalı?\n\nGeçişin en uzun adımı çoğunlukla e-imza ya da mali mührün teslimidir. Sınırı aştığınızı yıl sonu kapanışında görüyorsanız ocak–şubat aylarında başlamak, haziran sonuna sıkışmamanızı sağlar. Geçiş adımlarını ve kurulumu [e-Dönüşüm](/e-donusum/) sayfasında anlattık.\n\n*Bu yazıdaki tutar ve tarihler 23 Kasım 2026'da 509 Sıra No.lu Tebliğ'in GİB'deki güncel hâline göre kontrol edildi. Sınırlar değişebilir; karar vermeden önce mali müşavirinizle teyit edin.*",
+    "checked_at": "2026-11-23",
+    "cover": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/e349b2a2-3df4-4509-8181-61e30f052131.svg",
+    "description": "2026 e-Fatura geçiş sınırı: 3 milyon TL genel had, e-ticaret ve gayrimenkulde 500 bin TL, geçiş tarihi ve henüz kayıtlı olmayanlar için e-Arşiv zorunluluğu.",
+    "faq": [
+      {
+        "answer": "Tebliğ ölçü olarak brüt satış hasılatını (ya da gayrisafi iş hasılatını) kullanır; bu tutar gelir tablonuzdaki satış hasılatıdır ve KDV içermez. Kendi tutarınızı mali müşavirinizle kontrol edin.",
+        "question": "e-Fatura sınırı hesaplanırken KDV dahil mi?"
+      },
+      {
+        "answer": "Evet. Tebliğ, belirlenen sınırların altında kalan mükelleflerin de isterlerse e-Fatura uygulamasından yararlanabileceğini söyler.",
+        "question": "Sınırın altındayım, isteğe bağlı geçebilir miyim?"
+      },
+      {
+        "answer": "Genel sınır için ölçü, bir hesap dönemindeki brüt satış hasılatıdır; sınırı aştığınız yılı izleyen yılın 1 Temmuz'unda geçersiniz. e-Ticaret, akaryakıt gibi bazı faaliyetlerde ise işe başlamadan ya da başladıktan kısa süre sonra geçiş gerekir.",
+        "question": "Yeni kurulan bir şirket ne zaman geçer?"
+      },
+      {
+        "answer": "e-Fatura ve e-Arşiv'e kayıtlı değilseniz 31 Aralık 2026'ya kadar vergiler dahil 3.000 TL'yi aşmayan faturaları kâğıt düzenleyebilirsiniz; aşanlar GİB e-Arşiv portalından kesilir. 1 Ocak 2027'den itibaren tüm faturalar e-Arşiv olmalıdır.",
+        "question": "Basit usul esnafı olarak 2026'da kâğıt fatura kesebilir miyim?"
+      }
+    ],
+    "meta_title": "e-Fatura Geçiş Sınırı 2026: Kimler Ne Zaman Geçer? | Lanista",
+    "order": 1,
+    "published_at": "2026-11-23",
+    "related_solution": "sl01edonusum",
+    "slug": "e-fatura-gecis-siniri-2026",
+    "sources": [
+      {
+        "title": "509 Sıra No.lu VUK Genel Tebliği, güncel hâli (Gelir İdaresi Başkanlığı)",
+        "url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=MEVZUAT_TEBLIGLER%2FUNIVERSAL%2F2026%2FMEVZUAT_TEBLIGLER_2026_VukTeb509_Guncel.pdf"
+      },
+      {
+        "title": "589 Sıra No.lu VUK Genel Tebliği, Resmî Gazete 31.12.2025, sayı 33124 (5. mükerrer)",
+        "url": "https://www.resmigazete.gov.tr/eskiler/2025/12/20251231M5-32.pdf"
+      },
+      {
+        "title": "GİB e-Belge: kayıtlı kullanıcı listesi ve özel entegratörler",
+        "url": "https://ebelge.gib.gov.tr/efaturakayitlikullanicilar.html"
+      }
+    ],
+    "summary": "Brüt satış hasılatı 3 milyon TL ve üzeri olan mükellefler, sınırı aştıkları yılı izleyen yılın 1 Temmuz'undan itibaren e-Fatura'ya geçmek zorundadır. 2025 hasılatı sınırı aşanlar 1 Temmuz 2026'da geçmiş olmalıydı; 2026 hasılatı aşanlar 1 Temmuz 2027'ye kadar geçmelidir. İnternetten satış yapanlar, gayrimenkul ve motorlu taşıt işiyle uğraşanlar için sınır 500 bin TL'dir.",
+    "title": "e-Fatura geçiş sınırı 2026: kimler, ne zaman geçmek zorunda?"
+  },
+  "gd02kontor": {
+    "body": "## Kontör neyin karşılığı?\n\ne-Fatura'yı iki yoldan kesebilirsiniz: GİB'in kendi portalı ya da GİB'den izin almış bir **özel entegratör**. Özel entegratörler faturanın düzenlenmesi, alıcıya iletilmesi ve saklanması hizmetini verir ve bunu çoğunlukla **kontör** denen birimlerle ücretlendirir.\n\nKontör yasal bir kavram değildir; her sağlayıcı neye kontör düşeceğini kendi sözleşmesinde belirler. Bu yüzden iki teklifi sadece \"kontör fiyatı\" ile karşılaştırmak yanıltıcı olabilir.\n\n## Neye kontör düşer?\n\nSağlayıcılar arasında en sık görülen uygulama:\n\n| İşlem | Genel uygulama |\n|---|---|\n| Giden e-Fatura | 1 kontör |\n| Giden e-Arşiv Fatura | 1 kontör |\n| e-İrsaliye | 1 kontör |\n| Gelen e-Fatura | Sağlayıcıya göre değişir; bazıları ücretsiz, bazıları kontör düşer |\n| e-Defter | Genellikle kontör değil, ayrı yıllık paket |\n| e-Arşiv faturanın SMS ile gönderimi | Çoğunlukla ek ücret |\n\n## Gelen fatura kontör düşer mi?\n\nBu sorunun tek bir cevabı yok. Gelen faturadan ücret almayan sağlayıcılar da var, gelen her faturadan kontör düşenler de. Çok tedarikçiden mal alan işletmelerde, örneğin oto yedek parçacılarda ve marketlerde, gelen fatura sayısı giden faturayı geçebilir. Bu durumda gelen faturadan kontör düşüp düşmemesi yıllık maliyeti ciddi biçimde değiştirir.\n\n## Yıllık kontör ihtiyacınızı hesaplayın\n\n1. Son birkaç ayın **giden** fatura sayısının aylık ortalamasını alın.\n2. Sağlayıcınız gelen faturadan da kontör düşüyorsa **gelen** fatura ortalamasını ekleyin.\n3. e-İrsaliye kullanıyorsanız irsaliye sayısını ekleyin.\n4. Toplamı 12 ile çarpın ve büyüme ile iptal/iade için %10–20 pay bırakın.\n\n**Örnek:** Ayda 250 giden fatura, 300 gelen fatura, 100 irsaliye kesen bir işletme:\n\n- Gelen fatura ücretsizse: (250 + 100) × 12 = 4.200, pay ile yaklaşık **5.000 kontör**\n- Gelen fatura da kontör düşüyorsa: (250 + 300 + 100) × 12 = 7.800, pay ile yaklaşık **9.000 kontör**\n\n## Teklif alırken sorulacak sorular\n\n- Gelen e-Fatura ve e-İrsaliyeden kontör düşüyor mu?\n- Yıl sonunda kullanılmayan kontör bir sonraki yıla devrediyor mu?\n- Reddedilen, iptal edilen ya da iade faturası kontör harcıyor mu?\n- Muhasebe programıyla bağlantı (entegrasyon) için ayrı ücret var mı?\n- Faturalar kaç yıl ve ne ücretle saklanıyor, sözleşme bitince dışa aktarılabiliyor mu?\n- Kurulum, eğitim ve destek pakete dahil mi?\n\n## GİB portalı ücretsiz değil mi?\n\nGİB'in portalını kullanmak için kontör ödemezsiniz. Ancak faturaları tek tek elle girersiniz; muhasebe ya da stok programınızla otomatik bağlantı kuramazsınız. Ayda birkaç fatura kesen işletmeler için yeterli olabilir; fatura sayısı arttıkça elle giriş hem zaman hem hata maliyeti doğurur.\n\nMevcut sağlayıcınızın faturasını ve aylık fatura sayınızı paylaşırsanız size uygun paketi yazılı olarak çıkarırız: [ücretsiz maliyet analizi](/e-donusum/#teklif).",
+    "checked_at": "2026-11-23",
+    "cover": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/9b6a945c-aea1-45f4-be15-3a348b384ffb.svg",
+    "description": "e-Fatura kontörü nedir, neye kontör düşer, gelen faturadan ücret alınır mı? Yıllık kontör ihtiyacını hesaplama ve teklif alırken sorulacak sorular.",
+    "faq": [
+      {
+        "answer": "Hayır. Kontör, özel entegratörlerin kendi ücretlendirme birimidir; fiyatı ve neye kontör düşeceğini her sağlayıcı kendi sözleşmesinde belirler.",
+        "question": "Kontör fiyatı GİB tarafından mı belirleniyor?"
+      },
+      {
+        "answer": "Çoğu sağlayıcıda kontör bittiğinde yeni belge gönderimi durur ya da ek kontör alınması gerekir. Yoğun dönemlerde sorun yaşamamak için kalan kontör uyarısını açık tutun.",
+        "question": "Kontörüm biterse fatura kesemez miyim?"
+      },
+      {
+        "answer": "Sağlayıcıya göre değişir. Bazı paketler bir yıllıktır ve süre sonunda kalan kontör yanar; bazıları devreder. Sözleşmeyi imzalamadan önce sorun.",
+        "question": "Kullanmadığım kontör yanar mı?"
+      }
+    ],
+    "meta_title": "e-Fatura Kontör Nedir? Gelen Fatura Kontör Düşer mi? | Lanista",
+    "order": 2,
+    "published_at": "2026-11-23",
+    "related_solution": "sl01edonusum",
+    "slug": "e-fatura-kontor-nedir",
+    "sources": [
+      {
+        "title": "509 Sıra No.lu VUK Genel Tebliği, güncel hâli (Gelir İdaresi Başkanlığı)",
+        "url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=MEVZUAT_TEBLIGLER%2FUNIVERSAL%2F2026%2FMEVZUAT_TEBLIGLER_2026_VukTeb509_Guncel.pdf"
+      },
+      {
+        "title": "GİB e-Belge: e-Fatura özel entegratör listesi",
+        "url": "https://ebelge.gib.gov.tr/efaturaozelentegratorlerlistesi.html"
+      }
+    ],
+    "summary": "Kontör, özel entegratörlerin e-Fatura, e-Arşiv ve e-İrsaliye gibi belgeler için kullandığı ücretlendirme birimidir; GİB'in bir ücreti değildir. Giden her belge genellikle bir kontör harcar. Gelen faturadan kontör düşüp düşmediği sağlayıcıdan sağlayıcıya değişir; teklif alırken mutlaka sorun.",
+    "title": "e-Fatura kontör nedir? Gelen fatura kontör düşer mi?"
+  },
+  "gd03entegrator": {
+    "body": "## Neden entegratör değiştirilir?\n\n- **Maliyet:** Yenileme döneminde kontör ya da paket fiyatı beklenenden yüksek gelir.\n- **Destek:** Sorun olduğunda ulaşılabilecek bir muhatap bulunamaz.\n- **Bağlantı:** Kullandığınız muhasebe, stok ya da satış programıyla sorunsuz çalışmaz.\n\nEntegratör değiştirmek faturalarınızı, muhasebe programınızı ya da e-Fatura kullanıcısı olmanızı değiştirmez; yalnızca faturalarınızı düzenleyen ve saklayan hizmet sağlayıcı değişir.\n\n## Adım adım geçiş\n\n### 1. Yeni sağlayıcıyla anlaşın\n\nGİB'den izinli özel entegratörlerin listesi [ebelge.gib.gov.tr](https://ebelge.gib.gov.tr/efaturaozelentegratorlerlistesi.html) adresinde yayımlanır. Teklif alırken [kontör ve paket sorularını](/rehber/e-fatura-kontor-nedir/) da sorun.\n\n### 2. Eski faturalarınızı dışa aktarın\n\nGeçişten önce mevcut sağlayıcınızdan **giden ve gelen tüm e-Fatura ve e-Arşiv faturalarınızı** XML ve PDF olarak alın. Faturaların yasal saklama süreleri boyunca erişilebilir olması mükellefin sorumluluğundadır; sözleşmeniz bittikten sonra eski sağlayıcının panelinin açık kalacağını varsaymayın. Türk Ticaret Kanunu'na göre ticari defter ve belgeler on yıl saklanır.\n\n### 3. Başvuruyu yeni sağlayıcı yapsın\n\nEntegratör değişikliği başvurusu elektronik ortamda, yeni sağlayıcınız üzerinden yapılır. Bu adımda şirketinizin mali mühürü ya da yetkilinin e-imzası gerekir. Belgeleriniz hazırsa başvuruyu genellikle sağlayıcının sizi yönlendirdiği birkaç adımda tamamlarsınız.\n\n### 4. Geçiş gününü planlayın\n\n- Ay başı, özellikle e-Defter kullanıyorsanız berat dönemleri açısından en temiz geçiş zamanıdır. Tarihi mali müşavirinizle birlikte belirleyin.\n- Geçiş onaylanana kadar eski sağlayıcıdaki hizmetinizi kapatmayın; arada fatura kesemeyeceğiniz bir boşluk oluşmasın.\n- Fatura seri ön ekinizi ve numaralandırmanın nasıl devam edeceğini yeni sağlayıcınızla önceden konuşun.\n\n### 5. Muhasebe programı bağlantısını çevirin\n\nLogo, Mikro, Akınsoft, Paraşüt ya da kullandığınız program e-Fatura'yı eski sağlayıcıya göndermek üzere ayarlıysa, bu bağlantının yeni sağlayıcıya göre yeniden kurulması gerekir. Programınız değişmez; değişen yalnızca faturanın gittiği adrestir.\n\n### 6. Test faturası kesin\n\nİlk gerçek faturadan önce bir test faturası kesip alıcıya ulaştığını, PDF görünümünün, logonuzun ve banka bilgilerinizin doğru olduğunu kontrol edin. Gelen faturaların yeni sağlayıcıya düştüğünü de doğrulayın.\n\n## Eski sağlayıcıda kalan kontör ne olur?\n\nBu tamamen eski sözleşmenize bağlıdır. Kullanılmayan kontör çoğu zaman iade edilmez. Geçiş tarihini, mevcut paketinizin bitişine yakın seçmek kaybı azaltır.\n\n## Geçişte bizim yaptıklarımız\n\nVan'daki işletmelerde yerinde, diğer illerde uzaktan: eski faturaların dışa aktarılması, başvuru, şablon, muhasebe programı bağlantısı ve test faturası. Ayrıntılar [e-Dönüşüm](/e-donusum/) sayfasında.\n\n*Bu yazı genel bilgilendirme amaçlıdır. Saklama süreleri ve geçiş zamanlaması için mali müşavirinizin görüşünü alın.*",
+    "checked_at": "2026-11-23",
+    "cover": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/fb6b5ef2-ded9-46eb-ab0c-7e06eb533106.svg",
+    "description": "e-Fatura özel entegratörünü değiştirmek: eski faturaların arşivlenmesi, yeni sağlayıcı başvurusu, muhasebe programı bağlantısı ve geçiş gününün planlanması.",
+    "faq": [
+      {
+        "answer": "Unvanınız ve vergi kimlik numaranız değişmez; tedarikçileriniz size yine aynı bilgilerle fatura keser. Teknik ayarları yeni sağlayıcınız yapar.",
+        "question": "Entegratör değiştirince e-Fatura adresim değişir mi?"
+      },
+      {
+        "answer": "İyi planlanmış bir geçişte gerekmez. Yeni hesap onaylanana kadar eski sağlayıcınızı kullanmaya devam edersiniz; onaydan sonra yeni sağlayıcıdan kesmeye başlarsınız.",
+        "question": "Geçiş sırasında fatura kesmeye ara vermem gerekir mi?"
+      },
+      {
+        "answer": "Dışa aktardığınız XML ve PDF dosyalarını yedekli bir ortamda saklayın. Bazı sağlayıcılar eski faturaları kendi arşivlerine almayı ayrı hizmet olarak sunar.",
+        "question": "Eski faturalarımı nerede saklamalıyım?"
+      }
+    ],
+    "meta_title": "e-Fatura Entegratör Değişikliği Nasıl Yapılır? | Lanista",
+    "order": 3,
+    "published_at": "2026-11-23",
+    "related_solution": "sl01edonusum",
+    "slug": "entegrator-degisikligi",
+    "sources": [
+      {
+        "title": "509 Sıra No.lu VUK Genel Tebliği, güncel hâli (Gelir İdaresi Başkanlığı)",
+        "url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=MEVZUAT_TEBLIGLER%2FUNIVERSAL%2F2026%2FMEVZUAT_TEBLIGLER_2026_VukTeb509_Guncel.pdf"
+      },
+      {
+        "title": "GİB e-Belge: e-Fatura özel entegratör listesi",
+        "url": "https://ebelge.gib.gov.tr/efaturaozelentegratorlerlistesi.html"
+      }
+    ],
+    "summary": "Entegratör değiştirmek için önce yeni sağlayıcıyla anlaşır, eski sağlayıcıdaki faturalarınızı dışa aktarırsınız. Başvuruyu yeni sağlayıcı elektronik ortamda yapar. Muhasebe programı bağlantısını yeni sağlayıcıya çevirip test faturası kestikten sonra geçiş tamamlanır. En kritik adım, eski faturaların saklama süresi boyunca erişilebilir kalmasıdır.",
+    "title": "e-Fatura entegratör değişikliği nasıl yapılır?"
+  },
+  "gd04earsiv": {
+    "body": "## Hangisini keseceğinize alıcı karar verir\n\nFaturayı kesmeden önce sorulacak tek soru: **alıcı e-Fatura uygulamasına kayıtlı mı?**\n\n- **Kayıtlıysa** faturanın e-Fatura olarak düzenlenmesi zorunludur. Satıcı ve alıcının ikisi de kayıtlı kullanıcıysa aralarındaki faturaların tamamı e-Fatura olmalıdır.\n- **Kayıtlı değilse** (e-Fatura kullanmayan bir firma ya da son tüketici) fatura e-Arşiv Fatura olarak düzenlenir.\n\nKayıtlı kullanıcıların güncel listesi GİB tarafından [ebelge.gib.gov.tr](https://ebelge.gib.gov.tr/efaturakayitlikullanicilar.html) adresinde yayımlanır. Muhasebe programları ve özel entegratörler bu kontrolü vergi kimlik numarasıyla otomatik yapar; elle bakmanız gerekmez.\n\n## Farklar tek tabloda\n\n| | e-Fatura | e-Arşiv Fatura |\n|---|---|---|\n| Alıcı | e-Fatura'ya kayıtlı firma | Kayıtlı olmayan firma ya da son tüketici |\n| İletim | GİB sistemi üzerinden alıcının e-Fatura adresine | Alıcıya e-posta ile ya da istenirse kâğıt çıktı olarak |\n| Alıcının görmesi | Fatura alıcının sistemine kendiliğinden düşer | Alıcı e-postasından ya da çıktıdan görür |\n| Kabul / red | Ticari faturada alıcı kabul ya da red yanıtı verebilir | Kabul–red adımı yoktur |\n| Kim kullanır | e-Fatura'ya geçen mükellefler | e-Fatura'ya geçenler ve 2026'dan itibaren kayıtlı olmayan mükellefler de (GİB portalından) |\n\n## e-Fatura'ya geçen ikisini birlikte kullanır\n\n509 Sıra No.lu Tebliğ'e göre e-Fatura'ya geçen mükellefler e-Arşiv Fatura uygulamasına da geçmek zorundadır. Pratikte kestiğiniz her fatura, alıcıya göre ya e-Fatura ya da e-Arşiv olur. Kâğıt fatura yalnızca tebliğdeki istisnai durumlarda kalır.\n\n## Kayıtlı değilseniz: 2026 kuralı\n\ne-Fatura ve e-Arşiv'e kayıtlı olmayan mükellefler de faturalarını GİB'in e-Arşiv portalından kesmek zorundadır:\n\n- **Bilanço esası ve diğerleri:** 1 Ocak 2026'dan itibaren tutarına bakılmaksızın tüm faturalar.\n- **Basit usul ve işletme hesabı esası:** 31 Aralık 2026'ya kadar vergiler dahil 3.000 TL'yi aşan faturalar; 1 Ocak 2027'den itibaren tüm faturalar.\n\nAyrıntılar ve geçiş sınırları için [e-Fatura geçiş sınırı 2026](/rehber/e-fatura-gecis-siniri-2026/) rehberine bakın.\n\n## Sık yapılan hatalar\n\n- **Kayıtlı firmaya e-Arşiv kesmek:** Alıcı e-Fatura kullanıcısıysa e-Arşiv yerine e-Fatura kesmeniz gerekir. Program bu kontrolü yapmıyorsa ayarlarını gözden geçirin.\n- **Son tüketiciden vergi numarası istememek:** Bireysel alıcıya e-Arşiv keserken TC kimlik numarası alanı için programınızın ve sağlayıcınızın kurallarına bakın.\n- **Kâğıt fatura alışkanlığı:** 2026'dan itibaren çoğu işletme için kâğıt fatura ancak istisnai durumlarda düzenlenebilir.\n\nHangi belgeleri kullanmanız gerektiğini ve kurulumu birlikte çıkaralım: [e-Dönüşüm](/e-donusum/).",
+    "checked_at": "2026-11-23",
+    "cover": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/e53462f1-cfa7-43a7-8d64-7a957b577c48.svg",
+    "description": "e-Fatura ile e-Arşiv Fatura arasındaki fark: alıcı kayıtlı kullanıcıysa e-Fatura, değilse e-Arşiv. Teslim, kabul-red ve 2026 kuralları tek tabloda.",
+    "faq": [
+      {
+        "answer": "Hayır. Son tüketici e-Fatura sistemine kayıtlı olmadığı için ona kestiğiniz fatura e-Arşiv Fatura olur.",
+        "question": "Son tüketiciye e-Fatura kesebilir miyim?"
+      },
+      {
+        "answer": "Evet. Alıcı isterse e-Arşiv faturanın kâğıt çıktısını verebilirsiniz; fatura yine elektronik olarak düzenlenmiş ve kayda alınmış olur.",
+        "question": "e-Arşiv faturayı kâğıda basıp verebilir miyim?"
+      },
+      {
+        "answer": "GİB'in kayıtlı kullanıcı listesinden ya da kullandığınız programdan vergi kimlik numarasıyla sorgularsınız. Çoğu program bunu fatura keserken otomatik yapar.",
+        "question": "Müşterimin e-Fatura kullanıp kullanmadığını nasıl öğrenirim?"
+      }
+    ],
+    "meta_title": "e-Arşiv mi e-Fatura mı? Farkları ve Kullanımı | Lanista",
+    "order": 4,
+    "published_at": "2026-11-23",
+    "related_solution": "sl01edonusum",
+    "slug": "e-arsiv-mi-e-fatura-mi",
+    "sources": [
+      {
+        "title": "509 Sıra No.lu VUK Genel Tebliği, güncel hâli (Gelir İdaresi Başkanlığı)",
+        "url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=MEVZUAT_TEBLIGLER%2FUNIVERSAL%2F2026%2FMEVZUAT_TEBLIGLER_2026_VukTeb509_Guncel.pdf"
+      },
+      {
+        "title": "589 Sıra No.lu VUK Genel Tebliği, Resmî Gazete 31.12.2025, sayı 33124 (5. mükerrer)",
+        "url": "https://www.resmigazete.gov.tr/eskiler/2025/12/20251231M5-32.pdf"
+      },
+      {
+        "title": "GİB e-Belge: kayıtlı kullanıcı listesi ve özel entegratörler",
+        "url": "https://ebelge.gib.gov.tr/efaturakayitlikullanicilar.html"
+      }
+    ],
+    "summary": "Kural basit: alıcı e-Fatura'ya kayıtlıysa e-Fatura, değilse (kayıtlı olmayan firma ya da son tüketici) e-Arşiv Fatura kesersiniz. e-Fatura'ya geçen her mükellef e-Arşiv'i de kullanmak zorundadır; ikisi birbirinin alternatifi değil, tamamlayıcısıdır.",
+    "title": "e-Arşiv mi e-Fatura mı? Farkları ve hangisini ne zaman kesersiniz"
+  }
+}
