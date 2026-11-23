@@ -44,7 +44,7 @@ const {
   paths = {},
   contentGroup,
 } = Astro.props
-const GROUPS: Record<string, string> = { '': 'home', 'urunler': 'product', 'products': 'product', 'hizmetler': 'service', 'services': 'service', 'works': 'works', 'surec': 'process', 'process': 'process', 'iletisim': 'contact', 'contact': 'contact', 'yasal': 'legal', 'legal': 'legal' }
+const GROUPS: Record<string, string> = { '': 'home', 'urunler': 'product', 'products': 'product', 'hizmetler': 'service', 'services': 'service', 'works': 'works', 'surec': 'process', 'process': 'process', 'iletisim': 'contact', 'contact': 'contact', 'yasal': 'legal', 'legal': 'legal', 'rehber': 'guide' }
 const group = contentGroup ?? GROUPS[path.replace(/^\/+/, '').split('/')[0]] ?? 'company'
 
 const canonical = absoluteUrl(path, locale)

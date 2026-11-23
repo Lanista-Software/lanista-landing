@@ -1,0 +1,41 @@
+---
+import Breadcrumbs from '~/components/Breadcrumbs.astro'
+import GuideCard from '~/components/GuideCard.astro'
+import PageHero from '~/components/PageHero.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { getGuides, guidePath, GUIDES_PATH } from '~/lib/guides'
+import { t } from '~/lib/i18n'
+import { webPageSchema } from '~/lib/schema'
+import { absoluteUrl, breadcrumbSchema } from '~/lib/seo'
+import { stagger } from '~/lib/ui'
+
+const locale = 'tr'
+const s = t(locale)
+const guides = getGuides()
+const title = s('guides.meta_title')
+const description = s('guides.description')
+const trail = [{ name: s('nav.home'), path: '/' }, { name: s('guides.title'), path: GUIDES_PATH }]
+const jsonLd = [
+  {
+    ...webPageSchema(locale, GUIDES_PATH, title, description, 'CollectionPage'),
+    mainEntity: { '@type': 'ItemList', 'itemListElement': guides.map((g, i) => ({ '@type': 'ListItem', 'position': i + 1, 'url': absoluteUrl(guidePath(g.slug)), 'name': g.title })) },
+  },
+  breadcrumbSchema(locale, trail),
+]
+---
+
+<BaseLayout locale={locale} locales={['tr']} title={title} description={description} path={GUIDES_PATH} ogTitle={s('guides.page_title')} jsonLd={jsonLd} contentGroup="guide">
+  <PageHero>
+    <Breadcrumbs locale={locale} trail={trail} />
+    <h1 class="page-title">{s('guides.page_title')}</h1>
+    <p class="mt-6 max-w-3xl font-inter text-lg leading-relaxed lg:text-xl">{s('guides.page_lead')}</p>
+  </PageHero>
+
+  <section class="pb-20 pt-4 lg:pb-28" aria-label={s('guides.title')}>
+    <div class="container-x">
+      <ul role="list" class="grid gap-6 md:grid-cols-2">
+        {guides.map((g, i) => <li class="reveal" style={stagger(i)}><GuideCard guide={g} /></li>)}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

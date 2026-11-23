@@ -135,7 +135,10 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] `/e-donusum/` sayfası: `solution-pages` modeli (TR), hizmetler, geçiş adımları, programınızı değiştirmeden, Van'da yerinde kurulum, mali müşavir iş ortaklığı, hizmet bölgeleri (13 ilçe + komşu iller), SSS, "maliyet analizi" formu (`quote`, `product=e-donusum`); Service + FAQPage JSON-LD, OG kartı, llms.txt, menü + footer
 - [x] Van sayfası: e-fatura bölümü, ilçelerde yerinde kurulum, 13 ilçe `areaServed`, 2 yeni SSS, e-Dönüşüm kartı
 - [x] Doğu Anadolu sayfası: Muş/Bitlis/Hakkari/Ağrı e-fatura bölümü + SSS, Siirt ve Batman
-- [ ] Rehber altyapısı (`/rehber/`, doküman modeli) + ilk yazılar: e-fatura geçiş sınırı 2026, kontör nedir / gelen fatura kontör düşer mi, entegratör değişikliği, e-arşiv mi e-fatura mı (eşikler GİB'den teyit)
+- [x] Görseller (2026-11-23): Ludus çizimleri `design/ludus/pages.py` — 4 sayfa kapağı (e-Dönüşüm, Van, Doğu/İç Anadolu), 3 e-Dönüşüm bölüm görseli, 4 rehber kapağı; SVG içi animasyon (reduced-motion güvenli); Studio media
+- [x] Rehber: `guides` modeli, `/rehber/` + `/rehber/{slug}/` (Article + FAQPage JSON-LD, içindekiler, kısa cevap, kaynaklar, okuma ilerleme çubuğu, CTA), footer + e-Dönüşüm sayfasında liste, OG, llms.txt
+- [x] İlk 4 rehber: e-fatura geçiş sınırı 2026, kontör nedir, entegratör değişikliği, e-arşiv mi e-fatura mı — tutarlar 509 güncel hâli + 589 (RG 31.12.2025) ile kontrol edildi (2026-11-23)
+- [ ] Rehberlerin yıllık kontrolü: her ocakta GİB'deki 509 güncel hâli; değişirse `checked_at` ve metin
 - [ ] Kontör paketleri sayfası + kontör hesaplayıcı: fiyatlar kesinleşince
 - [ ] Mali müşavir iş ortaklığı sayfası: program koşulları kesinleşince
 - [ ] Turkcell / sağlayıcı adı: sözleşme imzalanınca

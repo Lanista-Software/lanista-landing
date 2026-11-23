@@ -42,6 +42,28 @@ function slugify(text: string) {
     .replace(/^-|-$/g, '')
 }
 
+/** Markdown → HTML with stable ids on h2/h3; h2s form the table of contents. */
+export function renderMarkdown(md: string): { html: string, toc: { id: string, text: string }[] } {
+  const toc: { id: string, text: string }[] = []
+  const used = new Set<string>()
+  const html = (marked.parse(md, { async: false }) as string)
+    .replace(/<h([23])>(.*?)<\/h\1>/g, (_, depth: string, inner: string) => {
+      const text = inner.replace(/<[^>]+>/g, '')
+        .replace(/&#39;/g, '\'')
+        .replace(/&quot;/g, '"')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&amp;/g, '&')
+      let id = slugify(text) || 'bolum'
+      while (used.has(id)) id += '-2'
+      used.add(id)
+      if (depth === '2')
+        toc.push({ id, text })
+      return `<h${depth} id="${id}">${inner}</h${depth}>`
+    })
+  return { html, toc }
+}
+
 export interface RenderedLegal {
   html: string
   toc: { id: string, text: string }[]
@@ -70,23 +92,7 @@ export function renderLegal(page: LegalPage, locale: Locale = 'tr'): RenderedLeg
     return s('legal.token.kurulum_tbd')
   })
 
-  const toc: RenderedLegal['toc'] = []
-  const used = new Set<string>()
-  const html = (marked.parse(md, { async: false }) as string)
-    .replace(/<h([23])>(.*?)<\/h\1>/g, (_, depth: string, inner: string) => {
-      const text = inner.replace(/<[^>]+>/g, '')
-        .replace(/&#39;/g, '\'')
-        .replace(/&quot;/g, '"')
-        .replace(/&lt;/g, '<')
-        .replace(/&gt;/g, '>')
-        .replace(/&amp;/g, '&')
-      let id = slugify(text) || 'bolum'
-      while (used.has(id)) id += '-2'
-      used.add(id)
-      if (depth === '2')
-        toc.push({ id, text })
-      return `<h${depth} id="${id}">${inner}</h${depth}>`
-    })
+  const { html, toc } = renderMarkdown(md)
   return { html, toc, incomplete }
 }
 

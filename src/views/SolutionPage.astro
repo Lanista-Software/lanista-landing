@@ -7,6 +7,7 @@ import type { SolutionPages } from '#contentrain'
 import Accordion from '~/components/Accordion.astro'
 import Breadcrumbs from '~/components/Breadcrumbs.astro'
 import Meander from '~/components/decor/Meander.astro'
+import GuideCard from '~/components/GuideCard.astro'
 import Icon from '~/components/Icon.astro'
 import Img from '~/components/Img.astro'
 import LeadForm from '~/components/LeadForm.astro'
@@ -14,6 +15,7 @@ import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import { COMPANY } from '~/lib/company'
 import { getLocalPages, localPagePath } from '~/lib/content'
+import { getGuides, GUIDES_PATH } from '~/lib/guides'
 import { t } from '~/lib/i18n'
 import { faqSchema, serviceSchema, webPageSchema } from '~/lib/schema'
 import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
@@ -29,6 +31,7 @@ const description = clampDescription(page.meta_description || page.hero_text)
 const areas = page.area_served ?? []
 const faq = (page.faq ?? []).map((f, i) => ({ id: `faq-${i}`, ...f }))
 const localPages = getLocalPages(locale)
+const guides = getGuides().filter(g => (typeof g.related_solution === 'string' ? g.related_solution : (g.related_solution as { id?: string } | undefined)?.id) === page.id)
 // Bands after the (grey) steps alternate white / grey: sections, regions, FAQ, form.
 const sectionCount = page.sections?.length ?? 0
 const grey = (k: number) => k % 2 === 1
@@ -136,6 +139,20 @@ const jsonLd = [
           </ul>
         )}
       </div></div>
+    </section>
+  )}
+
+  {guides.length > 0 && (
+    <section class="border-y border-border-color py-14 lg:py-20" aria-labelledby="sol-guides">
+      <div class="container-x">
+        <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <h2 id="sol-guides" class="block-title">{s('guides.page_title')}</h2>
+          <a href={`${GUIDES_PATH}/`} class="font-medium text-primary-700 hover:underline">{s('guides.title')}</a>
+        </div>
+        <ul role="list" class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {guides.map(g => <li><GuideCard guide={g} headingLevel="h3" /></li>)}
+        </ul>
+      </div>
     </section>
   )}
 

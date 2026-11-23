@@ -16,10 +16,10 @@
 | `language_changed` | Dil seçici | `language` |
 | `section_viewed` | Ana sayfada bölüm göründü | `section_id` |
 
-`cta_name` değerleri: `hero_primary`, `hero_secondary`, `header_contact`, `home_services`, `home_process`, `local_contact`, `cta_block`, `product_demo`, `product_waitlist`, `product_prices`, `see_live_project`, `solution_form` (e-Dönüşüm sayfasındaki "maliyet analizi" butonu, `product=e-donusum`).
+`cta_name` değerleri: `hero_primary`, `hero_secondary`, `header_contact`, `home_services`, `home_process`, `local_contact`, `cta_block`, `product_demo`, `product_waitlist`, `product_prices`, `see_live_project`, `solution_form` (e-Dönüşüm sayfasındaki "maliyet analizi" butonu, `product=e-donusum`), `guide_card` (rehber kartı, `product`=rehber slug'ı), `guide_cta` (rehber sonundaki maliyet analizi butonu).
 
 Her sayfa görüntülemede ayrıca:
-- `content_group`: home, product, service, works, process, contact, legal, local, solution (/e-donusum/), company, not_found
+- `content_group`: home, product, service, works, process, contact, legal, local, solution (/e-donusum/), guide (/rehber/), company, not_found
 - `site_language`: tr / en
 
 GA'nın kendi ölçtükleri (geliştirilmiş ölçüm): sayfa görüntüleme, kaydırma, giden tıklama, site içi arama, dosya indirme.

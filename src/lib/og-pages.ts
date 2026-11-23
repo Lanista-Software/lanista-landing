@@ -4,6 +4,7 @@
  */
 import type { Locale } from './i18n'
 import { getHome, getLocalPages, getProducts, getServicePages, getSolutionPages, getWorks, productPath } from './content'
+import { getGuides, guidePath, GUIDES_PATH } from './guides'
 import { localePath, LOCALES, ROUTES, t } from './i18n'
 import { clampDescription, SITE_NAME } from './seo'
 
@@ -58,5 +59,9 @@ export function getOgCards(): Record<string, OgCard> {
   }
   for (const p of getSolutionPages())
     cards[key(`/${p.slug}`, 'tr')] = { label: t('tr')('og.service'), title: p.title, description: clampDescription(p.meta_description || p.hero_text, 130) }
+  const tr = t('tr')
+  cards[key(GUIDES_PATH, 'tr')] = { label: tr('og.guide'), title: tr('guides.page_title'), description: clampDescription(tr('guides.description'), 130) }
+  for (const g of getGuides())
+    cards[key(guidePath(g.slug), 'tr')] = { label: tr('og.guide'), title: g.title, description: clampDescription(g.description, 130) }
   return cards
 }

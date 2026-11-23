@@ -5,6 +5,7 @@
 import type { Locale } from './i18n'
 import { COMPANY } from './company'
 import { getHome, getLocalPages, getPlans, getProducts, getServicePages, getSolutionPages, getWorks, productPath } from './content'
+import { getGuides, guidePath } from './guides'
 import { ROUTES, t } from './i18n'
 import { getLegalPages, legalPath, renderLegal } from './legal'
 import { tl } from './money'
@@ -55,6 +56,7 @@ export function buildLlmsTxt(): string {
     line(s('nav.contact'), url(ROUTES.contact.tr)),
     ...getLocalPages('tr').map(p => line(p.title, url(`/${p.slug}`), p.meta_description)),
     ...getSolutionPages().map(p => line(p.title, url(`/${p.slug}`), p.meta_description)),
+    ...getGuides().map(g => line(g.title, url(guidePath(g.slug)), g.description)),
     ...legal.filter(p => p.group === 'corporate').map(p => line(p.title, url(legalPath(p)))),
     '',
     `## ${s('llms.legal')}`,

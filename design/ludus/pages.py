@@ -50,19 +50,21 @@ def flow(d):
 
 
 def invoice(x, y, w=110, h=140, seal=True):
-    """A white invoice sheet: folded corner, blue header, rows, total, round stamp."""
-    f = 16
-    out = f'<path d="M{x} {y} H{x + w - f} L{x + w} {y + f} V{y + h} H{x} Z" fill="#fff" {S}/>'
-    out += f'<path d="M{x + w - f} {y} V{y + f} H{x + w}" fill="{STONE}" {S1}/>'
-    out += L.bar(x + 12, y + 18, 40, BLUE, 1, 4)
-    out += L.text_lines(x + 12, y + 32, (30, 46), gap=9, sw=1.5)
-    for i in range(4):
-        yy = y + 58 + i * 14
-        out += f'<line x1="{x + 10}" y1="{yy + 7}" x2="{x + w - 10}" y2="{yy + 7}" stroke="{SHADE}" stroke-width="1"/>'
-        out += L.bar(x + 12, yy, (44, 36, 50, 30)[i], INK, .4, 2) + L.bar(x + w - 34, yy, 20, INK, .4, 2)
-    out += f'<rect x="{x + w - 52}" y="{y + h - 26}" width="42" height="14" rx="3" fill="{BLUE}"/>'
+    """A white invoice sheet: folded corner, blue header, rows, total, round stamp. Scales with w/h."""
+    k = w / 110
+    f = 16 * k
+    out = f'<path d="M{x} {y} H{x + w - f:.1f} L{x + w} {y + f:.1f} V{y + h} H{x} Z" fill="#fff" {S}/>'
+    out += f'<path d="M{x + w - f:.1f} {y} V{y + f:.1f} H{x + w}" fill="{STONE}" {S1}/>'
+    out += L.bar(x + 12 * k, y + 18 * k, 40 * k, BLUE, 1, 4 * k)
+    out += L.text_lines(x + 12 * k, y + 32 * k, (30 * k, 46 * k), gap=9 * k, sw=1.5)
+    rows = max(1, min(4, int((h - 92 * k) / (14 * k))))
+    for i in range(rows):
+        yy = y + 58 * k + i * 14 * k
+        out += f'<line x1="{x + 10 * k:.1f}" y1="{yy + 7 * k:.1f}" x2="{x + w - 10 * k:.1f}" y2="{yy + 7 * k:.1f}" stroke="{SHADE}" stroke-width="1"/>'
+        out += L.bar(x + 12 * k, yy, (44, 36, 50, 30)[i] * k, INK, .4, 2) + L.bar(x + w - 34 * k, yy, 20 * k, INK, .4, 2)
+    out += f'<rect x="{x + w - 52 * k:.1f}" y="{y + h - 26 * k:.1f}" width="{42 * k:.1f}" height="{14 * k:.1f}" rx="3" fill="{BLUE}"/>'
     if seal:
-        out += f'<g class="pulse"><circle cx="{x + 30}" cy="{y + h - 20}" r="12" fill="none" stroke="{BLUE}" stroke-width="2"/><circle cx="{x + 30}" cy="{y + h - 20}" r="7" fill="none" stroke="{BLUE}" stroke-width="1.25"/></g>'
+        out += f'<g class="pulse"><circle cx="{x + 30 * k:.1f}" cy="{y + h - 20 * k:.1f}" r="{12 * k:.1f}" fill="none" stroke="{BLUE}" stroke-width="2"/><circle cx="{x + 30 * k:.1f}" cy="{y + h - 20 * k:.1f}" r="{7 * k:.1f}" fill="none" stroke="{BLUE}" stroke-width="1.25"/></g>'
     return out
 
 
@@ -262,10 +264,73 @@ def sec_guide():
     return svg('Rehber: kemer altında grafikli parşömen, solda belgeler, sağda büyüteç', b)
 
 
+def guide_threshold():
+    """Threshold: rising bars on a plinth crossing a marked line; the bar over the line is red-capped."""
+    canvas(640, 320, 284)
+    b = L.ground() + L.mosaic() + L.plinth(150, 340)
+    b += L.column(170, 110, 284 - 26) + L.column(444, 110, 284 - 26)
+    b += f'<rect x="158" y="92" width="324" height="16" fill="{SHADE}" {S}/>'
+    vals = (54, 78, 98, 124, 146)
+    for i, hh in enumerate(vals):
+        x = 220 + i * 44
+        b += f'<rect x="{x}" y="{258 - hh}" width="28" height="{hh}" rx="3" fill="{BLUE if i < 4 else STONE}" opacity="{.45 + i * .12:.2f}" {S1}/>'
+    b += f'<rect x="{220 + 4 * 44}" y="{258 - 146}" width="28" height="12" rx="3" fill="{RED}" {S1}/>'
+    b += f'<line class="flow" x1="204" y1="140" x2="440" y2="140" stroke="{INK}" stroke-width="1.5" stroke-dasharray="6 6"/>'
+    b += invoice(512, 120, 86, 120, seal=False)
+    b += paper_stack(44, 170, 66, 80)
+    return svg('Geçiş sınırı: sütunlar arasında yükselen ciro çubukları ve kesik çizgiyle gösterilen eşik', b)
+
+
+def guide_kontor():
+    """Credits: a stack of stone tokens feeding invoices through an arch, a counter window."""
+    canvas(640, 320, 284)
+    b = L.ground() + L.mosaic() + L.plinth(200, 240)
+    b += L.arch(320, 284 - 26, 150, 70, 52)
+    for i in range(5):
+        b += f'<ellipse cx="110" cy="{250 - i * 16}" rx="40" ry="10" fill="{STONE if i % 2 else SHADE}" {S}/>'
+    b += f'<g class="pulse"><ellipse cx="110" cy="170" rx="40" ry="10" fill="{BLUE}" {S}/></g>'
+    b += flow('M152 200 C200 200 240 210 290 210')
+    b += invoice(282, 160, 76, 96, seal=False)
+    b += flow('M360 210 C400 210 430 190 470 190')
+    b += L.window(470, 140, 120, 90) + f'<rect x="486" y="170" width="88" height="30" rx="4" fill="{PALE}" stroke="{BLUE}" stroke-width="1.25"/>' + L.text_lines(494, 186, (56,), c=BLUE, op=1, sw=4) + L.text_lines(486, 214, (60, 40), gap=9, sw=1.5)
+    return svg('Kontör: taş jeton yığını kemerden geçen faturaya dönüşüyor, sağda kalan kontör sayacı', b)
+
+
+def guide_switch():
+    """Integrator change: two archive cabinets, invoices move from the old to the new through an arch."""
+    canvas(640, 320, 284)
+    b = L.ground() + L.mosaic() + L.plinth(200, 240)
+    b += L.arch(320, 284 - 26, 150, 70, 52)
+    b += archive(60, 150, 96, 3)
+    b += archive(484, 150, 96, 3)
+    b += f'<rect x="60" y="150" width="96" height="106" rx="4" fill="#fff" opacity=".45"/>'
+    b += flow('M160 200 C220 200 250 196 320 196 C390 196 420 200 480 200')
+    b += f'<g class="float">' + invoice(292, 150, 56, 76, seal=False) + '</g>'
+    return svg('Entegratör değişikliği: eski arşiv dolabından yeni dolaba kemerin içinden taşınan faturalar', b)
+
+
+def guide_compare():
+    """e-Arşiv vs e-Fatura: one invoice splits at a fork, to a company mailbox and to a phone/e-mail."""
+    canvas(640, 320, 284)
+    b = L.ground() + L.mosaic() + L.plinth(240, 160)
+    b += L.column(300, 150, 284 - 26, w=40, flutes=4)
+    b += f'<rect x="286" y="128" width="68" height="14" fill="{SHADE}" {S}/>'
+    b += f'<circle cx="320" cy="110" r="10" fill="{RED}" {S1}/>'
+    b += invoice(52, 108, 96, 132)
+    b += flow('M150 176 C220 176 250 150 300 150')
+    b += flow('M340 150 C390 150 420 120 470 120')
+    b += flow('M340 150 C390 150 420 210 470 210')
+    # company mailbox (e-Fatura) and a phone with mail (e-Arşiv)
+    b += f'<rect x="474" y="86" width="110" height="64" rx="6" fill="{STONE}" {S}/><path d="M474 92 l55 30 55 -30" fill="none" {S1}/>'
+    b += L.phone(500, 176, 56, 96) + f'<rect x="510" y="200" width="36" height="24" rx="3" fill="#fff" stroke="{BLUE}" stroke-width="1.25"/><path d="M510 202 l18 11 18 -11" fill="none" stroke="{BLUE}" stroke-width="1.25"/>'
+    return svg('e-Arşiv mi e-Fatura mı: tek fatura bir sütunda ikiye ayrılıyor; biri firma posta kutusuna, biri telefona gidiyor', b)
+
+
 if __name__ == '__main__':
     files = {
         'page-e-donusum': hero_edonusum, 'page-van': hero_van, 'page-dogu-anadolu': hero_dogu, 'page-ic-anadolu': hero_ic,
         'section-program': sec_program, 'section-onsite': sec_onsite, 'section-advisor': sec_advisor, 'section-guide': sec_guide,
+        'guide-threshold': guide_threshold, 'guide-kontor': guide_kontor, 'guide-switch': guide_switch, 'guide-compare': guide_compare,
     }
     for name, fn in files.items():
         with open(os.path.join(OUT, f'{name}.svg'), 'w') as fh:

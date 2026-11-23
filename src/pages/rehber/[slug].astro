@@ -1,0 +1,11 @@
+---
+import { getGuides } from '~/lib/guides'
+import GuidePage from '~/views/GuidePage.astro'
+
+export function getStaticPaths() {
+  return getGuides().map(guide => ({ params: { slug: guide.slug }, props: { guide } }))
+}
+const { guide } = Astro.props
+---
+
+<GuidePage guide={guide} />

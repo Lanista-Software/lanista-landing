@@ -1,0 +1,27 @@
+---
+import type { Guide } from '~/lib/guides'
+import Icon from '~/components/Icon.astro'
+import Img from '~/components/Img.astro'
+import { guidePath } from '~/lib/guides'
+import { t } from '~/lib/i18n'
+
+interface Props { guide: Guide, headingLevel?: 'h2' | 'h3' }
+const { guide, headingLevel = 'h2' } = Astro.props
+const s = t('tr')
+const Heading = headingLevel
+---
+
+<article class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border-color bg-white transition-colors hover:border-primary-500">
+  {guide.cover && (
+    <div class="border-b border-border-color bg-white">
+      <Img src={guide.cover} alt="" width={640} height={320} class="aspect-[2/1] w-full object-contain transition-transform duration-500 ease-out group-hover:-translate-y-1" />
+    </div>
+  )}
+  <div class="flex flex-1 flex-col gap-3 p-6">
+    <Heading class="font-space text-xl font-bold text-heading-text">
+      <a href={`${guidePath(guide.slug)}/`} class="after:absolute after:inset-0 group-hover:text-primary-700" data-track="cta_click" data-track-cta_name="guide_card" data-track-product={guide.slug}>{guide.title}</a>
+    </Heading>
+    <p class="font-inter text-sm leading-relaxed">{guide.description}</p>
+    <span class="mt-auto inline-flex items-center gap-2 pt-2 text-sm font-medium text-primary-700" aria-hidden="true">{s('guides.read')}<Icon name="ri-arrow-right-line" class="transition-transform group-hover:translate-x-1" /></span>
+  </div>
+</article>
