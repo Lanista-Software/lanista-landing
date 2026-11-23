@@ -1,0 +1,163 @@
+{
+  "sl01edonusum": {
+    "area_served": [
+      "Van",
+      "İpekyolu",
+      "Tuşba",
+      "Edremit",
+      "Erciş",
+      "Gevaş",
+      "Muradiye",
+      "Özalp",
+      "Başkale",
+      "Çaldıran",
+      "Saray",
+      "Gürpınar",
+      "Çatak",
+      "Bahçesaray",
+      "Muş",
+      "Bitlis",
+      "Hakkari",
+      "Ağrı",
+      "Erzurum",
+      "Siirt",
+      "Batman"
+    ],
+    "areas_text": "Van'ın 13 ilçesinde yerinde, diğer illerde uzaktan kurulum yapıyoruz.",
+    "faq": [
+      {
+        "answer": "Hayır. Lanista Yazılım özel entegratör değildir; GİB onaylı özel entegratör altyapısıyla hizmet veriyoruz. Başvuru, kurulum, eğitim, muhasebe programı bağlantısı ve destek bizden; faturalarınız onaylı altyapıda düzenlenir ve saklanır.",
+        "question": "Lanista özel entegratör mü?"
+      },
+      {
+        "answer": "Hayır. Logo, Mikro, Akınsoft, Paraşüt ya da kullandığınız başka bir programla bağlantı kurarız. Hazır bağlantısı olmayan programlar için bağlantıyı kendimiz yazarız.",
+        "question": "Muhasebe programımı değiştirmem gerekir mi?"
+      },
+      {
+        "answer": "Zorunluluk cironuza, sektörünüze ve bazı özel durumlara göre belirlenir; sınırlar düzenli olarak güncellenir. Son yılın brüt satış hasılatını bize iletin, durumunuzu Gelir İdaresi Başkanlığı'nın güncel düzenlemesine göre birlikte kontrol edelim. Zorunlu olmasanız da isteğe bağlı olarak geçebilirsiniz.",
+        "question": "e-Faturaya geçmek zorunda mıyım?"
+      },
+      {
+        "answer": "Eski faturalarınızın yasal saklama süresi boyunca erişilebilir kalması gerekir. Geçişten önce mevcut sağlayıcınızdaki faturaların dışa aktarılmasını ve arşivlenmesini planlarız.",
+        "question": "Entegratör değiştirirken eski faturalarım ne olur?"
+      },
+      {
+        "answer": "Süre çoğunlukla e-imza ya da mali mühürün teslimine ve GİB başvurusunun sonuçlanmasına bağlıdır. Belgeler hazır olduğunda hesabı açar, fatura şablonunu ve eğitimi aynı süreçte tamamlarız.",
+        "question": "Kurulum ne kadar sürer?"
+      },
+      {
+        "answer": "Fiyat; yıllık fatura sayınıza, ihtiyaç duyduğunuz belge türlerine ve kurulum hizmetine göre değişir. Formu doldurun, fatura sayınıza göre yazılı teklif verelim.",
+        "question": "Fiyatlarınız nedir?"
+      },
+      {
+        "answer": "Evet. Van'da yerinde kurulum yapıyoruz. Muş, Bitlis, Hakkari, Ağrı ve Türkiye'nin diğer illerinde kurulumu ve eğitimi uzaktan, ekran paylaşımıyla yapıyoruz.",
+        "question": "Van dışındaki işletmelere hizmet veriyor musunuz?"
+      },
+      {
+        "answer": "Evet. Ofisimiz Van Teknokent'te, Tuşba'da. Telefonla randevu alıp gelebilirsiniz; isterseniz biz de işletmenize geliriz.",
+        "question": "Ofisinize gelip yüz yüze görüşebilir miyim?"
+      }
+    ],
+    "form_subject": "e-Dönüşüm maliyet analizi",
+    "form_text": "Kullandığınız e-fatura sağlayıcısını (varsa), muhasebe programınızı ve aylık yaklaşık fatura sayınızı yazın. Size uygun paketi ve kurulum hizmetini yazılı olarak iletelim.",
+    "form_title": "Ücretsiz maliyet analizi isteyin",
+    "hero_note": "GİB onaylı özel entegratör altyapısıyla hizmet veriyoruz. Van'da yerinde, Türkiye genelinde uzaktan kurulum.",
+    "hero_text": "e-Faturaya yeni geçecek ya da sağlayıcısını değiştirmek isteyen işletmelere başvurudan ilk faturaya kadar eşlik ediyoruz. e-İmza ve mali mühür temini, hesap açılışı, fatura şablonu ve eğitim bizden. Kullandığınız muhasebe programını değiştirmeniz gerekmez.",
+    "hero_title": "e-Fatura, e-Arşiv ve e-Defter'e geçişi Van'da, yanınızda kuruyoruz",
+    "meta_description": "e-Fatura, e-Arşiv, e-İrsaliye ve e-Defter'e geçiş, entegratör değişikliği, muhasebe programı bağlantısı. Van'da yerinde, Türkiye geneli uzaktan kurulum.",
+    "meta_title": "e-Fatura, e-Arşiv, e-Defter Geçişi | Van'da Kurulum | Lanista",
+    "offerings": [
+      {
+        "icon": "ri-file-text-line",
+        "text": "e-Fatura kullanan firmalarla faturalaşmanız elektronik olur. Gelen faturalar sistemde hazır bekler; kâğıt, baskı ve kargo masrafı kalkar.",
+        "title": "e-Fatura"
+      },
+      {
+        "icon": "ri-archive-line",
+        "text": "e-Fatura kullanmayan firmalara ve son tüketiciye kestiğiniz faturalar elektronik düzenlenir, alıcıya e-postayla iletilir.",
+        "title": "e-Arşiv Fatura"
+      },
+      {
+        "icon": "ri-truck-line",
+        "text": "Sevk irsaliyesini elektronik düzenlersiniz. Malın çıkışı ve teslimi kayıt altında olur.",
+        "title": "e-İrsaliye"
+      },
+      {
+        "icon": "ri-book-2-line",
+        "text": "Yevmiye ve büyük defter elektronik oluşturulur, beratı alınır ve saklanır. Kurulumu mali müşavirinizle birlikte yaparız.",
+        "title": "e-Defter"
+      },
+      {
+        "icon": "ri-user-star-line",
+        "text": "Avukat, doktor, mühendis gibi serbest meslek sahipleri serbest meslek makbuzunu elektronik düzenler.",
+        "title": "e-SMM"
+      },
+      {
+        "icon": "ri-plant-line",
+        "text": "Çiftçiden ürün alan işletmeler müstahsil makbuzunu elektronik düzenler.",
+        "title": "e-Müstahsil Makbuzu"
+      },
+      {
+        "icon": "ri-exchange-line",
+        "text": "Mevcut sağlayıcınızdan çıkışı, yeni hesabın açılmasını ve eski faturalarınızın arşivlenmesini biz planlarız. Geçiş gününü işinizi en az etkileyecek şekilde seçeriz.",
+        "title": "Entegratör değişikliği"
+      },
+      {
+        "icon": "ri-links-line",
+        "text": "Logo, Mikro, Akınsoft, Paraşüt ya da kullandığınız başka bir programı e-faturaya bağlarız. Hazır bağlantısı olmayan programlar için bağlantıyı kendimiz yazarız.",
+        "title": "Muhasebe programı bağlantısı"
+      },
+      {
+        "icon": "ri-quill-pen-line",
+        "text": "Başvuru belgelerini hazırlar, e-imza ve mali mühür teminini üstleniriz. Kurulumunu bilgisayarınızda yaparız.",
+        "title": "e-İmza ve mali mühür"
+      },
+      {
+        "icon": "ri-customer-service-2-line",
+        "text": "Faturayı kesecek kişiye işletmenizde ya da uzaktan eğitim veririz. Sorun olduğunda arayacağınız yer Van'daki ekibimizdir.",
+        "title": "Eğitim ve destek"
+      }
+    ],
+    "offerings_title": "e-Dönüşümde neler yapıyoruz?",
+    "order": 1,
+    "sections": [
+      {
+        "body": "Birçok işletme e-fatura için muhasebe programının kendi çözümünü kullanır; fiyatı da program sağlayıcısı belirler. Logo, Mikro, Akınsoft, Paraşüt ya da başka bir program kullanıyorsanız programınızı bırakmanız gerekmez. e-Fatura tarafını ayrı bir altyapıya taşıyıp programınızla bağlantısını kurarız.\n\nKendi yazılımını geliştiren bir firmayız, bayi değiliz. Hazır bağlantısı olmayan programlar için bağlantıyı biz yazarız. Mevcut maliyetinizle karşılaştırmak için sağlayıcınızı ve aylık fatura sayınızı yazmanız yeterli.",
+        "title": "Programınızı değiştirmeden e-dönüşüm"
+      },
+      {
+        "body": "Ofisimiz 2019'dan beri Van Teknokent'te (Tuşba). Van merkez ve ilçelerindeki işletmelere kurulum ve eğitim için yerinde geliyoruz; isterseniz ofisimizde de görüşebiliriz.\n\nMuş, Bitlis, Hakkari, Ağrı ve Türkiye'nin diğer illerindeki işletmeler için kurulumu ve eğitimi uzaktan, ekran paylaşımıyla yapıyoruz. Destek için yine aynı ekibe ulaşırsınız.",
+        "title": "Van'da yerinde kurulum ve eğitim"
+      },
+      {
+        "body": "Mükelleflerinin e-dönüşümü için yerel ve ulaşılabilir bir çözüm arayan mali müşavirlerle iş ortaklığı yapıyoruz. Kurulumu ve eğitimi biz üstleniriz; mükellefiniz takıldığında bizi arar. Ayrıntıları konuşmak için formu doldurun ya da bizi arayın.",
+        "title": "Mali müşavirler için iş ortaklığı"
+      }
+    ],
+    "slug": "e-donusum",
+    "steps": [
+      {
+        "text": "Aylık kaç fatura kestiğinizi, hangi programı kullandığınızı ve hangi belgelere ihtiyacınız olduğunu birlikte çıkarırız.",
+        "title": "Tanışma"
+      },
+      {
+        "text": "Fatura sayınıza uygun paketi ve kurulum hizmetini yazılı teklif olarak iletiriz.",
+        "title": "Yazılı teklif"
+      },
+      {
+        "text": "Gerekli belgeleri hazırlar, e-imza ya da mali mühür temini ve GİB başvurusunu birlikte tamamlarız.",
+        "title": "e-İmza, mali mühür ve başvuru"
+      },
+      {
+        "text": "Hesabınızı açar, faturanızı logonuz ve banka bilgilerinizle hazırlarız. Muhasebe programınız varsa bağlantıyı kurarız.",
+        "title": "Hesap, şablon ve bağlantı"
+      },
+      {
+        "text": "İlk faturayı faturayı kesecek kişiyle birlikte keseriz. Sonrasında destek için bize telefonla ulaşırsınız.",
+        "title": "Eğitim ve ilk fatura"
+      }
+    ],
+    "steps_title": "e-Faturaya geçiş nasıl ilerler?",
+    "title": "e-Dönüşüm"
+  }
+}
