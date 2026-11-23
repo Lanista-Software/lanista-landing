@@ -1,4 +1,15 @@
 {
+  "45a33c7f90db37be330a6731": {
+    "business": "kesiflig",
+    "email": "businesserengurturk@gmail.com",
+    "kvkk_consent": true,
+    "language": "tr",
+    "message": "Merhabalar, \nAI üzerinden bir proje yaptırmak istiyorum sizlere, randevu alabilir miyim? İstanbuldayım vana geleceğim.",
+    "name": "Eren Gürtürk",
+    "page": "/iletisim/",
+    "subject": "İletişim",
+    "type": "quote"
+  },
   "7d2375179303cc7a46255014": {
     "email": "info@lanista.com.tr",
     "kvkk_consent": true,
