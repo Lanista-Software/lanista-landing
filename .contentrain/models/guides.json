@@ -1,0 +1,108 @@
+{
+  "id": "guides",
+  "name": "Guides",
+  "kind": "collection",
+  "domain": "marketing",
+  "i18n": false,
+  "title_field": "title",
+  "description": "Turkish guide articles at /rehber/{slug}/ (e-dönüşüm and esnaf topics). Every legal figure (threshold, date, penalty) must come from GİB / Resmî Gazete text listed in `sources`; set `checked_at` when re-verified. Never claim Lanista is a GİB özel entegratör; no provider prices.",
+  "fields": {
+    "body": {
+      "order": 10,
+      "required": true,
+      "type": "markdown"
+    },
+    "checked_at": {
+      "description": "Date the legal figures were last verified against the sources",
+      "order": 9,
+      "type": "date"
+    },
+    "cover": {
+      "description": "Ludus illustration (640x320 SVG)",
+      "order": 7,
+      "type": "image"
+    },
+    "description": {
+      "description": "Meta description and card text",
+      "max": 170,
+      "order": 5,
+      "required": true,
+      "type": "text"
+    },
+    "faq": {
+      "items": {
+        "fields": {
+          "answer": {
+            "max": 600,
+            "required": true,
+            "type": "text"
+          },
+          "question": {
+            "max": 140,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 8,
+      "order": 11,
+      "type": "array"
+    },
+    "meta_title": {
+      "max": 70,
+      "order": 4,
+      "type": "string"
+    },
+    "order": {
+      "order": 3,
+      "type": "integer"
+    },
+    "published_at": {
+      "order": 8,
+      "required": true,
+      "type": "date"
+    },
+    "related_solution": {
+      "model": "solution-pages",
+      "order": 13,
+      "type": "relation"
+    },
+    "slug": {
+      "order": 1,
+      "required": true,
+      "type": "slug"
+    },
+    "sources": {
+      "items": {
+        "fields": {
+          "title": {
+            "max": 160,
+            "required": true,
+            "type": "string"
+          },
+          "url": {
+            "required": true,
+            "type": "url"
+          }
+        },
+        "type": "object"
+      },
+      "max": 8,
+      "order": 12,
+      "type": "array"
+    },
+    "summary": {
+      "description": "Short answer box at the top of the article",
+      "max": 500,
+      "order": 6,
+      "type": "text"
+    },
+    "title": {
+      "max": 110,
+      "order": 2,
+      "required": true,
+      "type": "string"
+    }
+  }
+}
