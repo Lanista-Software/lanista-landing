@@ -42,7 +42,7 @@
         "question": "Entegratör değiştirirken eski faturalarım ne olur?"
       },
       {
-        "answer": "Süre çoğunlukla e-imza ya da mali mühürün teslimine ve GİB başvurusunun sonuçlanmasına bağlıdır. Belgeler hazır olduğunda hesabı açar, fatura şablonunu ve eğitimi aynı süreçte tamamlarız.",
+        "answer": "Süre çoğunlukla e-imza ya da mali mührün teslimine ve GİB başvurusunun sonuçlanmasına bağlıdır. Belgeler hazır olduğunda hesabı açar, fatura şablonunu ve eğitimi aynı süreçte tamamlarız.",
         "question": "Kurulum ne kadar sürer?"
       },
       {
@@ -153,7 +153,7 @@
         "title": "Hesap, şablon ve bağlantı"
       },
       {
-        "text": "İlk faturayı faturayı kesecek kişiyle birlikte keseriz. Sonrasında destek için bize telefonla ulaşırsınız.",
+        "text": "İlk faturanızı, faturayı kesecek çalışanınızla birlikte keseriz. Sonrasında destek için bize telefonla ulaşırsınız.",
         "title": "Eğitim ve ilk fatura"
       }
     ],
