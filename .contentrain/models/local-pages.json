@@ -53,6 +53,11 @@
       "order": 13,
       "type": "array"
     },
+    "hero_illustration": {
+      "description": "Ludus illustration (480x360 SVG, Studio media) shown beside the hero",
+      "order": 7.5,
+      "type": "image"
+    },
     "hero_text": {
       "max": 400,
       "order": 7,
