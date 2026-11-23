@@ -2,10 +2,19 @@
   "a1c0de5f7a01": {
     "area_served": [
       "Van",
-      "Tuşba",
       "İpekyolu",
+      "Tuşba",
       "Edremit",
-      "Erciş"
+      "Erciş",
+      "Gevaş",
+      "Muradiye",
+      "Özalp",
+      "Başkale",
+      "Çaldıran",
+      "Saray",
+      "Gürpınar",
+      "Çatak",
+      "Bahçesaray"
     ],
     "facts": [
       {
@@ -31,6 +40,14 @@
         "question": "Ofisinize gelip yüz yüze görüşebilir miyiz?"
       },
       {
+        "answer": "Biz yapıyoruz. e-İmza ya da mali mühür temini, GİB başvurusu, hesap açılışı, fatura şablonu ve eğitimi Van'daki ekibimiz üstlenir. Kurulumu işletmenizde ya da ofisimizde yapabiliriz.",
+        "question": "Van'da e-faturaya geçişte kurulumu kim yapıyor?"
+      },
+      {
+        "answer": "Evet. Van'ın bütün ilçelerine kurulum ve eğitim için geliyoruz. Ziyaret gününü telefonla birlikte planlıyoruz.",
+        "question": "Erciş, Gevaş ya da Başkale'deyiz, gelebiliyor musunuz?"
+      },
+      {
         "answer": "Evet. Türkiye'nin her yerinden müşterilerle çevrimiçi toplantılarla çalışıyoruz. Doğu Anadolu ve İç Anadolu'daki işletmeler için ayrı sayfalarımıza da bakabilirsiniz.",
         "question": "Van dışındaki işletmelerle de çalışıyor musunuz?"
       },
@@ -39,10 +56,10 @@
         "question": "Yazılım bittikten sonra destek veriyor musunuz?"
       }
     ],
-    "hero_text": "2019'dan beri Van Teknokent'teyiz. Van'daki işletmelerle yüz yüze çalışıyor; web sitesi, e-ticaret, mobil uygulama ve işletmeye özel yazılımı tasarımdan yayına kadar kendi ekibimizle geliştiriyoruz.",
+    "hero_text": "2019'dan beri Van Teknokent'teyiz. Van'daki işletmelerle yüz yüze çalışıyor; e-fatura ve e-arşiv geçişi, web sitesi, e-ticaret, mobil uygulama ve işletmeye özel yazılımı kendi ekibimizle kuruyoruz.",
     "hero_title": "Van'da yazılım şirketi: web, mobil ve işletmenize özel yazılım",
     "local_business": true,
-    "meta_description": "Van Teknokent'teki ofisimizden web sitesi, e-ticaret, mobil uygulama ve işletmeye özel yazılım geliştiriyoruz. Yüz yüze görüşme, yerinde kurulum.",
+    "meta_description": "Van Teknokent'ten e-fatura ve e-arşiv geçişi, web sitesi, e-ticaret, mobil uygulama ve özel yazılım. Van merkez ve ilçelerde yerinde kurulum ve eğitim.",
     "meta_title": "Van Yazılım Şirketi | Web, Mobil ve Özel Yazılım | Lanista",
     "order": 1,
     "sections": [
@@ -51,8 +68,16 @@
         "title": "Van'daki işletmeler için ne yapıyoruz?"
       },
       {
+        "body": "e-Faturaya yeni geçecek ya da sağlayıcısını değiştirmek isteyen Van'daki işletmelere başvurudan ilk faturaya kadar yerinde eşlik ediyoruz. e-İmza ve mali mühür temini, GİB başvurusu, hesap açılışı, fatura şablonu ve eğitim bizden. Logo, Mikro, Akınsoft ya da Paraşüt kullanıyorsanız programınızı değiştirmeden bağlantıyı kurarız. GİB onaylı özel entegratör altyapısıyla hizmet veriyoruz.",
+        "title": "Van'da e-fatura, e-arşiv ve e-defter geçişi"
+      },
+      {
         "body": "Veresiye defterini, kasayı ya da usta hesabını telefona taşımak isteyen esnaf için sektöre özel hazır uygulamalarımız var. Hesap Takip oto yedek parça ve sanayi esnafı için, Kasa Takip büfe ve kafeler için, Nalbur Takip nalbur ve hırdavatçılar için. Van içindeki işletmelerde kurulumu ve eğitimi dükkânda yapıyoruz.",
         "title": "Defterle yürüyen işletmeler için hazır ürünler"
+      },
+      {
+        "body": "İpekyolu, Tuşba ve Edremit'teki işletmelerin yanı sıra Erciş, Gevaş, Muradiye, Özalp, Başkale, Çaldıran, Saray, Gürpınar, Çatak ve Bahçesaray'daki işletmelere de kurulum ve eğitim için geliyoruz. Ziyaret gününü telefonla birlikte planlıyoruz; acil olmayan destek işlerini uzaktan, ekran paylaşımıyla çözüyoruz.",
+        "title": "Van'ın ilçelerinde yerinde kurulum"
       },
       {
         "body": "Önce tanışıyoruz: ofisimizde ya da işletmenizde ihtiyacı birlikte çıkarıyoruz. Ardından yazılı bir kapsam ve fiyat veriyoruz. Geliştirme sırasında her hafta çalışan bir sürüm görürsünüz. Yayından sonra bakım ve destek için aynı ekiple çalışmaya devam edersiniz.",
@@ -88,7 +113,9 @@
       "Ardahan",
       "Erzincan",
       "Bingöl",
-      "Tunceli"
+      "Tunceli",
+      "Siirt",
+      "Batman"
     ],
     "facts": [
       {
@@ -116,6 +143,10 @@
       {
         "answer": "Türkiye'nin her yerine hizmet veriyoruz. Doğu Anadolu'da Van, Erzurum, Malatya, Elazığ, Ağrı, Bitlis, Muş, Hakkari, Kars, Iğdır, Ardahan, Erzincan, Bingöl ve Tunceli'deki işletmelerle çalışabiliriz.",
         "question": "Hangi illerde hizmet veriyorsunuz?"
+      },
+      {
+        "answer": "Evet. Başvuru, kurulum ve eğitimi uzaktan yapıyoruz. Muhasebe programınızı değiştirmeniz gerekmez; kullandığınız programla bağlantıyı biz kurarız.",
+        "question": "Muş, Bitlis, Hakkari ya da Ağrı'da e-faturaya geçişte yardımcı oluyor musunuz?"
       }
     ],
     "hero_text": "Van Teknokent'teki ekibimizle Malatya, Erzurum, Elazığ, Ağrı, Bitlis, Muş ve bölgedeki diğer illerde işletmelere yazılım geliştiriyoruz. Aynı bölgedeyiz; işletmenizin koşullarını biliyoruz.",
@@ -136,6 +167,10 @@
       {
         "body": "iyzico ve PayTR gibi ödeme kuruluşlarıyla kartlı ödeme, taksit ve abonelik akışlarını kuruyoruz. Mesafeli satış sözleşmesi, ön bilgilendirme formu ve iade koşulları gibi yasal sayfaların akışa doğru yerleşmesine de dikkat ediyoruz.",
         "title": "Sanal POS ve ödeme entegrasyonu"
+      },
+      {
+        "body": "e-Fatura, e-arşiv, e-irsaliye ve e-defter geçişini Muş, Bitlis, Hakkari, Ağrı ve bölgedeki diğer illerde uzaktan kuruyoruz. e-İmza ve mali mühür temini, GİB başvurusu, fatura şablonu ve eğitim ekran paylaşımıyla yapılır; destek için Van'daki aynı ekibe ulaşırsınız. Sağlayıcınızı değiştirmek istiyorsanız eski faturalarınızın arşivlenmesini de biz planlarız.",
+        "title": "Muş, Bitlis, Hakkari ve Ağrı'da e-fatura geçişi"
       },
       {
         "body": "Veresiye ve cari takibi için Hesap Takip, kasa ve kâr takibi için Kasa Takip, nalbur ve hırdavatçılar için Nalbur Takip. Kurulum ve eğitim çevrimiçi yapılır, telefona program kurmak gerekmez.",
