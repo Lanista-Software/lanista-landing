@@ -1,22 +1,19 @@
 {
   "lastOperation": {
-    "entries": [
-      "sl01edonusum"
-    ],
     "locale": "tr",
-    "model": "solution-pages",
+    "model": "guides",
     "source": "mcp-local",
-    "timestamp": "2026-11-23T18:31:40.921Z",
-    "tool": "contentrain_content_save"
+    "timestamp": "2026-11-23T18:40:30.393Z",
+    "tool": "contentrain_model_save"
   },
   "stats": {
     "entries": 236,
-    "lastSync": "2026-11-23T18:31:40.921Z",
+    "lastSync": "2026-11-23T18:40:30.393Z",
     "locales": [
       "tr",
       "en"
     ],
-    "models": 22
+    "models": 23
   },
   "version": "1"
 }
