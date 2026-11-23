@@ -1,0 +1,175 @@
+{
+  "id": "solution-pages",
+  "name": "Solution Pages",
+  "kind": "collection",
+  "domain": "marketing",
+  "i18n": false,
+  "title_field": "title",
+  "description": "Turkish-only solution hub pages at the site root (/e-donusum/). Each page: hero, offerings, steps, text sections, regions, FAQ and a lead form. Never claim Lanista is a GİB özel entegratör; no provider names or prices until contracts are signed.",
+  "fields": {
+    "area_served": {
+      "items": "string",
+      "max": 30,
+      "order": 14,
+      "type": "array"
+    },
+    "areas_text": {
+      "max": 400,
+      "order": 15,
+      "type": "text"
+    },
+    "faq": {
+      "items": {
+        "fields": {
+          "answer": {
+            "max": 600,
+            "required": true,
+            "type": "text"
+          },
+          "question": {
+            "max": 140,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 12,
+      "order": 16,
+      "type": "array"
+    },
+    "form_subject": {
+      "description": "Hidden subject stored on the lead",
+      "max": 100,
+      "order": 19,
+      "type": "string"
+    },
+    "form_text": {
+      "max": 400,
+      "order": 18,
+      "type": "text"
+    },
+    "form_title": {
+      "max": 90,
+      "order": 17,
+      "type": "string"
+    },
+    "hero_note": {
+      "description": "Short trust line under the hero buttons",
+      "max": 160,
+      "order": 8,
+      "type": "string"
+    },
+    "hero_text": {
+      "max": 400,
+      "order": 7,
+      "required": true,
+      "type": "text"
+    },
+    "hero_title": {
+      "max": 110,
+      "order": 6,
+      "required": true,
+      "type": "string"
+    },
+    "meta_description": {
+      "max": 170,
+      "order": 5,
+      "type": "text"
+    },
+    "meta_title": {
+      "max": 70,
+      "order": 4,
+      "type": "string"
+    },
+    "offerings": {
+      "items": {
+        "fields": {
+          "icon": {
+            "required": true,
+            "type": "icon"
+          },
+          "text": {
+            "max": 300,
+            "required": true,
+            "type": "text"
+          },
+          "title": {
+            "max": 60,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 12,
+      "order": 10,
+      "type": "array"
+    },
+    "offerings_title": {
+      "max": 90,
+      "order": 9,
+      "type": "string"
+    },
+    "order": {
+      "order": 3,
+      "type": "integer"
+    },
+    "sections": {
+      "items": {
+        "fields": {
+          "body": {
+            "max": 1400,
+            "required": true,
+            "type": "text"
+          },
+          "title": {
+            "max": 90,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 6,
+      "order": 13,
+      "type": "array"
+    },
+    "slug": {
+      "order": 1,
+      "required": true,
+      "type": "slug"
+    },
+    "steps": {
+      "items": {
+        "fields": {
+          "text": {
+            "max": 300,
+            "required": true,
+            "type": "text"
+          },
+          "title": {
+            "max": 60,
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "max": 8,
+      "order": 12,
+      "type": "array"
+    },
+    "steps_title": {
+      "max": 90,
+      "order": 11,
+      "type": "string"
+    },
+    "title": {
+      "max": 80,
+      "order": 2,
+      "required": true,
+      "type": "string"
+    }
+  }
+}
