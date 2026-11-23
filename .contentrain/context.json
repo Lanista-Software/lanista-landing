@@ -1,20 +1,17 @@
 {
   "lastOperation": {
     "entries": [
-      "gd01gecis2026",
-      "gd02kontor",
-      "gd03entegrator",
-      "gd04earsiv"
+      "tr"
     ],
     "locale": "tr",
-    "model": "guides",
+    "model": "ui",
     "source": "mcp-local",
-    "timestamp": "2026-11-23T18:42:26.807Z",
+    "timestamp": "2026-11-23T18:43:04.758Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 240,
-    "lastSync": "2026-11-23T18:42:26.807Z",
+    "lastSync": "2026-11-23T18:43:04.758Z",
     "locales": [
       "tr",
       "en"
