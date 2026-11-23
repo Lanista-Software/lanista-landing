@@ -142,7 +142,8 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] Kontör paketleri sayfası + kontör hesaplayıcı: fiyatlar kesinleşince
 - [ ] Mali müşavir iş ortaklığı sayfası: program koşulları kesinleşince
 - [ ] Turkcell / sağlayıcı adı: sözleşme imzalanınca
-- [ ] Search Console: `/e-donusum/` için dizine ekleme isteği (kullanıcı), 2–3 hafta sonra sorgu kontrolü
+- [x] Search Console dizine ekleme isteği (2026-11-23, Claude/Chrome): /e-donusum/, /rehber/ + 4 rehber, /van-yazilim/, /dogu-anadolu-yazilim/, /ic-anadolu-yazilim/
+- [ ] 2–3 hafta sonra (≈2026-12-10) dizin durumu ve sorgu kontrolü
 
 ## 7. iyzico ve yasal (bkz. `docs/iyzico-gereksinimleri.md`)
 - [ ] KEP adresi (iyzico şartı, (b) maddesi) → şu an yok, boş kalacak; başvuru öncesi tekrar
