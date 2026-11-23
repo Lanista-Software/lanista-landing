@@ -9,7 +9,7 @@ import Icon from '~/components/Icon.astro'
 import PageHero from '~/components/PageHero.astro'
 import ProductCard from '~/components/ProductCard.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
-import { getLocalPages, getProducts, getServicePages, localPagePath, localPagePaths } from '~/lib/content'
+import { getLocalPages, getProducts, getServicePages, getSolutionPages, localPagePath, localPagePaths } from '~/lib/content'
 import { localePath, routePath, ROUTES, t } from '~/lib/i18n'
 import { faqSchema, localBusinessSchema, serviceSchema, webPageSchema } from '~/lib/schema'
 import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
@@ -28,6 +28,7 @@ const refId = (r: unknown) => (typeof r === 'string' ? r : (r as { id: string })
 const allServices = getServicePages(locale)
 const services = (page.services ?? []).map(r => allServices.find(sp => sp.id === refId(r))).filter(Boolean) as typeof allServices
 const products = getProducts(locale)
+const solutions = locale === 'tr' ? getSolutionPages() : []
 const others = getLocalPages(locale).filter(p => p.id !== page.id)
 const faq = (page.faq ?? []).map((f, i) => ({ id: `faq-${i}`, ...f }))
 
@@ -79,6 +80,20 @@ const jsonLd = [
         <h2 id={`sec-${i}`} class="block-title mb-6">{sec.title}</h2>
         <p class="whitespace-pre-line font-inter leading-relaxed">{sec.body}</p>
       </div></div>
+    </section>
+  ))}
+
+  {solutions.map(sol => (
+    <section class="py-10" aria-labelledby={`local-sol-${sol.slug}`}>
+      <div class="container-x">
+        <a href={`/${sol.slug}/`} class="group flex flex-col gap-4 rounded-2xl border border-primary-200 bg-primary-50 p-6 transition-colors hover:border-primary-500 md:flex-row md:items-center md:justify-between lg:p-8">
+          <span>
+            <span id={`local-sol-${sol.slug}`} class="block font-space text-xl font-bold text-heading-text group-hover:text-primary-700">{sol.title}</span>
+            <span class="mt-2 block max-w-3xl font-inter text-sm leading-relaxed">{sol.meta_description}</span>
+          </span>
+          <span class="inline-flex shrink-0 items-center gap-2 font-medium text-primary-700">{s('common.learn_more')}<Icon name="ri-arrow-right-line" /></span>
+        </a>
+      </div>
     </section>
   ))}
 

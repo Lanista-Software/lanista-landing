@@ -130,6 +130,17 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] İl sayfaları (Konya, Kayseri, Erzurum): yalnız gerçek yerel müşteri/senaryo olunca açılacak (doorway kuralı) — şu an bölge sayfasında bölüm
 - [x] İç bağlantılar (footer Kurumsal, sayfalar arası "Diğer bölgeler"), sitemap + hreflang (TR↔EN), OG kartları, llms.txt
 
+### 6b. e-Dönüşüm ve yerel SEO genişletme (2026-11-23, brief: e-dönüşüm ana büyüme alanı)
+- [x] Arama verisi: il/ilçe + e-fatura aranmıyor → ilçe sayfası yok, tek hub (`docs/kararlar-arama-verisi.md` §E)
+- [x] `/e-donusum/` sayfası: `solution-pages` modeli (TR), hizmetler, geçiş adımları, programınızı değiştirmeden, Van'da yerinde kurulum, mali müşavir iş ortaklığı, hizmet bölgeleri (13 ilçe + komşu iller), SSS, "maliyet analizi" formu (`quote`, `product=e-donusum`); Service + FAQPage JSON-LD, OG kartı, llms.txt, menü + footer
+- [x] Van sayfası: e-fatura bölümü, ilçelerde yerinde kurulum, 13 ilçe `areaServed`, 2 yeni SSS, e-Dönüşüm kartı
+- [x] Doğu Anadolu sayfası: Muş/Bitlis/Hakkari/Ağrı e-fatura bölümü + SSS, Siirt ve Batman
+- [ ] Rehber altyapısı (`/rehber/`, doküman modeli) + ilk yazılar: e-fatura geçiş sınırı 2026, kontör nedir / gelen fatura kontör düşer mi, entegratör değişikliği, e-arşiv mi e-fatura mı (eşikler GİB'den teyit)
+- [ ] Kontör paketleri sayfası + kontör hesaplayıcı: fiyatlar kesinleşince
+- [ ] Mali müşavir iş ortaklığı sayfası: program koşulları kesinleşince
+- [ ] Turkcell / sağlayıcı adı: sözleşme imzalanınca
+- [ ] Search Console: `/e-donusum/` için dizine ekleme isteği (kullanıcı), 2–3 hafta sonra sorgu kontrolü
+
 ## 7. iyzico ve yasal (bkz. `docs/iyzico-gereksinimleri.md`)
 - [ ] KEP adresi (iyzico şartı, (b) maddesi) → şu an yok, boş kalacak; başvuru öncesi tekrar
 - [x] Meslek odası: Van Ticaret ve Sanayi Odası (kullanıcı teyit etti)

@@ -111,6 +111,11 @@ export function getLocalPages(locale: Locale = 'tr') {
   return query('local-pages').locale(locale).sort('order', 'asc').all()
 }
 
+/** Turkish-only solution hubs at the site root (/e-donusum/). */
+export function getSolutionPages() {
+  return query('solution-pages').sort('order', 'asc').all()
+}
+
 export function localPagePath(slug: string) {
   return `/${slug}`
 }

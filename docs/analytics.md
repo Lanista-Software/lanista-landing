@@ -8,7 +8,7 @@
 
 | Olay | Ne zaman | Parametreler |
 |------|----------|--------------|
-| `generate_lead` | Form başarıyla gönderildi | `form_type` (contact / demo / waitlist…), `product` |
+| `generate_lead` | Form başarıyla gönderildi | `form_type` (contact / demo / quote / waitlist), `product` (e-Dönüşüm formu: `e-donusum`) |
 | `plan_click` | Paket kartındaki "Satın al" / "Satın almak için yazın" | `product`, `plan_name`, `billing`, `destination` (checkout / contact) |
 | `cta_click` | Ana butonlar | `cta_name`, ürün sayfasında `product` |
 | `contact_click` | Telefon, e-posta, WhatsApp linki | `method` (phone / email / whatsapp) |
@@ -16,10 +16,10 @@
 | `language_changed` | Dil seçici | `language` |
 | `section_viewed` | Ana sayfada bölüm göründü | `section_id` |
 
-`cta_name` değerleri: `hero_primary`, `hero_secondary`, `header_contact`, `home_services`, `home_process`, `local_contact`, `cta_block`, `product_demo`, `product_waitlist`, `product_prices`, `see_live_project`.
+`cta_name` değerleri: `hero_primary`, `hero_secondary`, `header_contact`, `home_services`, `home_process`, `local_contact`, `cta_block`, `product_demo`, `product_waitlist`, `product_prices`, `see_live_project`, `solution_form` (e-Dönüşüm sayfasındaki "maliyet analizi" butonu, `product=e-donusum`).
 
 Her sayfa görüntülemede ayrıca:
-- `content_group`: home, product, service, works, process, contact, legal, local, company, not_found
+- `content_group`: home, product, service, works, process, contact, legal, local, solution (/e-donusum/), company, not_found
 - `site_language`: tr / en
 
 GA'nın kendi ölçtükleri (geliştirilmiş ölçüm): sayfa görüntüleme, kaydırma, giden tıklama, site içi arama, dosya indirme.

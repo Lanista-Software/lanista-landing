@@ -1,0 +1,157 @@
+---
+/**
+ * Turkish-only solution hub (/e-donusum/): offerings, steps, text sections,
+ * served regions, FAQ and a quote form. Content: `solution-pages` model.
+ */
+import type { SolutionPages } from '#contentrain'
+import Accordion from '~/components/Accordion.astro'
+import Breadcrumbs from '~/components/Breadcrumbs.astro'
+import Meander from '~/components/decor/Meander.astro'
+import Icon from '~/components/Icon.astro'
+import LeadForm from '~/components/LeadForm.astro'
+import PageHero from '~/components/PageHero.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { COMPANY } from '~/lib/company'
+import { getLocalPages, localPagePath } from '~/lib/content'
+import { t } from '~/lib/i18n'
+import { faqSchema, serviceSchema, webPageSchema } from '~/lib/schema'
+import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
+import { stagger } from '~/lib/ui'
+
+interface Props { page: SolutionPages }
+const { page } = Astro.props
+const locale = 'tr'
+const s = t(locale)
+const path = `/${page.slug}`
+const title = page.meta_title || `${page.title} | ${SITE_NAME}`
+const description = clampDescription(page.meta_description || page.hero_text)
+const areas = page.area_served ?? []
+const faq = (page.faq ?? []).map((f, i) => ({ id: `faq-${i}`, ...f }))
+const localPages = getLocalPages(locale)
+// Bands after the (grey) steps alternate white / grey: sections, regions, FAQ, form.
+const sectionCount = page.sections?.length ?? 0
+const grey = (k: number) => k % 2 === 1
+const areasGrey = grey(sectionCount)
+const faqGrey = grey(sectionCount + (areas.length ? 1 : 0))
+const formGrey = grey(sectionCount + (areas.length ? 1 : 0) + (faq.length ? 1 : 0))
+
+const trail = [
+  { name: s('nav.home'), path: '/' },
+  { name: page.title, path },
+]
+const jsonLd = [
+  webPageSchema(locale, path, title, description),
+  serviceSchema(locale, { title: page.title, description, path, areaServed: areas }),
+  ...(faq.length ? [faqSchema(faq)] : []),
+  breadcrumbSchema(locale, trail),
+]
+---
+
+<BaseLayout locale={locale} locales={['tr']} title={title} description={description} path={path} ogTitle={page.title} jsonLd={jsonLd} contentGroup="solution">
+  <PageHero>
+    <Breadcrumbs locale={locale} trail={trail} />
+    <h1 class="page-title">{page.hero_title}</h1>
+    <p class="mt-6 max-w-3xl font-inter text-lg leading-relaxed lg:text-xl">{page.hero_text}</p>
+    <div class="mt-8 flex flex-wrap gap-4">
+      {page.form_title && <a href="#teklif" class="btn btn-danger btn-lg" data-track="cta_click" data-track-cta_name="solution_form" data-track-product={page.slug}>{page.form_title}</a>}
+      <a href={COMPANY.phoneHref} class="btn btn-outline btn-lg"><Icon name="ri-phone-line" class="mr-2" />{COMPANY.phone}</a>
+    </div>
+    {page.hero_note && <p class="mt-6 flex max-w-3xl items-start gap-2 font-inter text-sm text-body-text"><Icon name="ri-shield-check-line" class="mt-0.5 text-lg text-primary-600" />{page.hero_note}</p>}
+  </PageHero>
+
+  {page.offerings?.length
+? (
+    <section class="py-14 lg:py-20" aria-labelledby="sol-offerings">
+      <div class="container-x">
+        {page.offerings_title && <h2 id="sol-offerings" class="block-title mb-8">{page.offerings_title}</h2>}
+        <ul role="list" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {page.offerings.map((o, i) => (
+            <li class="reveal rounded-2xl border border-border-color bg-white p-6" style={stagger(i, 50)}>
+              <Icon name={o.icon} class="mb-4 text-3xl text-primary-600" />
+              <h3 class="mb-2 font-space text-lg font-bold text-heading-text">{o.title}</h3>
+              <p class="font-inter text-sm leading-relaxed">{o.text}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+: null}
+
+  {page.steps?.length
+? (
+    <section class="relative isolate bg-secondary-50 py-14 lg:py-20" aria-labelledby="sol-steps">
+      <Meander class="absolute inset-x-0 top-0" />
+      <div class="container-x">
+        {page.steps_title && <h2 id="sol-steps" class="block-title mb-8">{page.steps_title}</h2>}
+        <ol role="list" class="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+          {page.steps.map((st, i) => (
+            <li class="reveal flex flex-col gap-3" style={stagger(i)}>
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-primary-700 font-space font-bold text-white" aria-hidden="true">{i + 1}</span>
+              <h3 class="font-space text-lg font-bold text-heading-text">{st.title}</h3>
+              <p class="font-inter text-sm leading-relaxed">{st.text}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )
+: null}
+
+  {(page.sections ?? []).map((sec, i) => (
+    <section class:list={['py-14 lg:py-20', grey(i) && 'bg-secondary-50']} aria-labelledby={`sol-sec-${i}`}>
+      <div class="container-x"><div class="reveal max-w-4xl">
+        <h2 id={`sol-sec-${i}`} class="block-title mb-6">{sec.title}</h2>
+        <p class="whitespace-pre-line font-inter leading-relaxed">{sec.body}</p>
+      </div></div>
+    </section>
+  ))}
+
+  {areas.length > 0 && (
+    <section class:list={['py-14 lg:py-20', areasGrey && 'bg-secondary-50']} aria-labelledby="sol-areas">
+      <div class="container-x"><div class="max-w-4xl">
+        <h2 id="sol-areas" class="block-title mb-4">{s('local.areas_title')}</h2>
+        {page.areas_text && <p class="mb-6 font-inter">{page.areas_text}</p>}
+        <ul role="list" class="flex flex-wrap gap-3">
+          {areas.map(a => <li><span class="tag tag-primary">{a}</span></li>)}
+        </ul>
+        {localPages.length > 0 && (
+          <ul role="list" class="mt-8 flex flex-wrap gap-x-8 gap-y-3">
+            {localPages.map(o => <li><a href={localPagePath(o.slug)} class="font-medium text-primary-600 hover:underline">{o.title}</a></li>)}
+          </ul>
+        )}
+      </div></div>
+    </section>
+  )}
+
+  {faq.length > 0 && (
+    <section class:list={['py-14 lg:py-20', faqGrey && 'bg-secondary-50']} aria-labelledby="sol-faq">
+      <div class="container-x"><div class="max-w-4xl">
+        <h2 id="sol-faq" class="block-title mb-8">{s('product.faq.title')}</h2>
+        <Accordion items={faq} />
+      </div></div>
+    </section>
+  )}
+
+  <section id="teklif" class:list={[formGrey && 'bg-secondary-50']} aria-labelledby="sol-form-title" tabindex="-1">
+    <div class="container-x py-20 lg:py-28">
+      <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <h2 id="sol-form-title" class="section-title">{page.form_title || s('common.contact_us')}</h2>
+          {page.form_text && <p class="mt-4 text-lg text-body-text">{page.form_text}</p>}
+          <p class="mt-6 text-body-text">{s('common.call_us')} <a class="link" href={COMPANY.phoneHref}>{COMPANY.phone}</a></p>
+        </div>
+        <LeadForm
+          locale={locale}
+          idPrefix="solution"
+          product={page.slug}
+          type="quote"
+          fields={['name', 'phone', 'business', 'email', 'message']}
+          required={['name', 'phone']}
+          subject={page.form_subject || page.title}
+          submitLabel={s('form.send')}
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -57,3 +57,15 @@ Google otomatik tamamlama (hl=tr, gl=tr). Rakip siteler: pratikveresiye.com, car
 - İç Anadolu sayfasında sıra Kayseri, Konya, Eskişehir yapıldı; Eskişehir bölüm başlığına girdi.
 - Malatya'nın tek başına 100 olması geçici bir artış olabilir (**Ç**); birkaç ay sonra yeniden ölçülmeli.
 - Van "web tasarım"da düşük; Van sayfası "van yazılım şirketleri / firmaları" sorgularını hedefliyor.
+
+## E) e-Dönüşüm ve yerel sayfalar (2026-11-23)
+Google otomatik tamamlama (hl=tr, gl=tr):
+- "van e-fatura", "muş e fatura", "van muhasebe programı": ticari öneri yok (yalnız "best van", "van gölü turizm"). İl/ilçe + e-fatura aranmıyor.
+- Ulusal hacim: "e fatura geçiş hadleri 2026", "e fatura geçiş sınırı 2026", "e fatura geçiş zorunluluğu", "e fatura kontör fiyatları (2026)", "e fatura kontör nedir", "logo e fatura kontör fiyatları".
+- Van ticari: "van yazılım şirketleri", "van web tasarım".
+
+Kararlar:
+- **İlçe / il e-fatura sayfası açılmaz** (`/tusba-e-fatura/`, `/mus-e-fatura/` …): arama hacmi yok, yalnız yer adı değişen sayfalar doorway sayılır. İlçeler ve komşu iller `/e-donusum/` ile `/van-yazilim/` içinde metin + `areaServed` olarak geçer.
+- Tek hub: `/e-donusum/` (`solution-pages` modeli, yalnız TR). Alt sayfalar (`/e-fatura/`, `/entegrator-degisikligi/` …) ancak her biri hub'dan ayrışacak kadar içerik çıkınca açılır.
+- Ulusal hacim rehber yazılarıyla alınır (geçiş sınırı, kontör, entegratör değişikliği, e-arşiv/e-fatura farkı). Eşik tutarları GİB'den teyit edilip tarih yazılır.
+- Yazım kuralları (brief §9): "GİB onaylı özel entegratör altyapısıyla hizmet veriyoruz"; Lanista entegratör değildir; sağlayıcı adı/logosu, kontör fiyatı ve "sınırsız" ifadesi sözleşme olmadan yazılmaz. Program entegrasyonları talebe göre yazılır, sitede liste/garanti verilmez.

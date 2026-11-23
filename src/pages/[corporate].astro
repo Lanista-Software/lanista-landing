@@ -1,20 +1,23 @@
 ---
 /**
- * Root-level pages from Contentrain: corporate pages (/hakkimizda/, /en/about/)
- * and local SEO pages (/van-yazilim/, /en/software-company-van/).
+ * Root-level pages from Contentrain: corporate pages (/hakkimizda/, /en/about/),
+ * local SEO pages (/van-yazilim/, /en/software-company-van/) and Turkish-only
+ * solution hubs (/e-donusum/).
  * Static routes take precedence.
  */
-import { getLocalPages, localPagePath } from '~/lib/content'
+import { getLocalPages, getSolutionPages, localPagePath } from '~/lib/content'
 import { getLegalPages, legalPath } from '~/lib/legal'
 import LegalPage from '~/views/LegalPage.astro'
 import LocalPage from '~/views/LocalPage.astro'
+import SolutionPage from '~/views/SolutionPage.astro'
 
 export function getStaticPaths() {
-  const corporate = getLegalPages('tr').filter(p => p.group === 'corporate').map(page => ({ params: { corporate: legalPath(page, 'tr').slice(1) }, props: { page, local: undefined } }))
-  const local = getLocalPages('tr').map(page => ({ params: { corporate: localPagePath(page.slug).slice(1) }, props: { page: undefined, local: page } }))
-  return [...corporate, ...local]
+  const corporate = getLegalPages('tr').filter(p => p.group === 'corporate').map(page => ({ params: { corporate: legalPath(page, 'tr').slice(1) }, props: { page, local: undefined, solution: undefined } }))
+  const local = getLocalPages('tr').map(local => ({ params: { corporate: localPagePath(local.slug).slice(1) }, props: { page: undefined, local, solution: undefined } }))
+  const solution = getSolutionPages().map(solution => ({ params: { corporate: solution.slug }, props: { page: undefined, local: undefined, solution } }))
+  return [...corporate, ...local, ...solution]
 }
-const { page, local } = Astro.props
+const { page, local, solution } = Astro.props
 ---
 
-{local ? <LocalPage page={local} locale="tr" /> : <LegalPage page={page!} locale="tr" />}
+{solution ? <SolutionPage page={solution} /> : local ? <LocalPage page={local} locale="tr" /> : <LegalPage page={page!} locale="tr" />}
