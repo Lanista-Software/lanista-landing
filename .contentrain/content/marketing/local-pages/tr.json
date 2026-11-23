@@ -56,6 +56,7 @@
         "question": "Yazılım bittikten sonra destek veriyor musunuz?"
       }
     ],
+    "hero_illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/63fbb95d-5714-4593-ab00-62cbd7f31047.svg",
     "hero_text": "2019'dan beri Van Teknokent'teyiz. Van'daki işletmelerle yüz yüze çalışıyor; e-fatura ve e-arşiv geçişi, web sitesi, e-ticaret, mobil uygulama ve işletmeye özel yazılımı kendi ekibimizle kuruyoruz.",
     "hero_title": "Van'da yazılım şirketi: web, mobil ve işletmenize özel yazılım",
     "local_business": true,
@@ -149,6 +150,7 @@
         "question": "Muş, Bitlis, Hakkari ya da Ağrı'da e-faturaya geçişte yardımcı oluyor musunuz?"
       }
     ],
+    "hero_illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/8becd117-833e-48e3-be8b-0090d88ffd98.svg",
     "hero_text": "Van Teknokent'teki ekibimizle Malatya, Erzurum, Elazığ, Ağrı, Bitlis, Muş ve bölgedeki diğer illerde işletmelere yazılım geliştiriyoruz. Aynı bölgedeyiz; işletmenizin koşullarını biliyoruz.",
     "hero_title": "Doğu Anadolu'daki işletmeler için web sitesi, mobil uygulama ve özel yazılım",
     "local_business": false,
@@ -230,6 +232,7 @@
         "question": "Hangi illerde hizmet veriyorsunuz?"
       }
     ],
+    "hero_illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/9cf23fb4-eabd-460a-82d0-ca60edabb081.svg",
     "hero_text": "Kayseri, Konya, Eskişehir, Ankara, Sivas, Yozgat, Aksaray ve bölgedeki diğer illerde işletmelere çevrimiçi çalışarak web sitesi, mobil uygulama ve işletmeye özel yazılım geliştiriyoruz.",
     "hero_title": "İç Anadolu'daki işletmeler için web sitesi, e-ticaret ve özel yazılım",
     "local_business": false,

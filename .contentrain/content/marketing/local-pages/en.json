@@ -39,6 +39,7 @@
         "question": "Do you provide support after the software is finished?"
       }
     ],
+    "hero_illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/63fbb95d-5714-4593-ab00-62cbd7f31047.svg",
     "hero_text": "We have been at Van Teknokent since 2019. We work face to face with businesses in Van and build websites, e-commerce, mobile apps and custom software with our own team, from design to launch.",
     "hero_title": "Software company in Van: web, mobile and custom software for your business",
     "local_business": true,
@@ -118,6 +119,7 @@
         "question": "Which provinces do you serve?"
       }
     ],
+    "hero_illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/8becd117-833e-48e3-be8b-0090d88ffd98.svg",
     "hero_text": "From our team at Van Teknokent we build software for businesses in Malatya, Erzurum, Elazığ, Ağrı, Bitlis, Muş and the other provinces of the region. We are in the same region and know how your business works.",
     "hero_title": "Websites, mobile apps and custom software for businesses in Eastern Anatolia",
     "local_business": false,
@@ -195,6 +197,7 @@
         "question": "Which provinces do you serve?"
       }
     ],
+    "hero_illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/9cf23fb4-eabd-460a-82d0-ca60edabb081.svg",
     "hero_text": "Working online, we build websites, mobile apps and custom software for businesses in Kayseri, Konya, Eskişehir, Ankara, Sivas, Yozgat, Aksaray and the other provinces of the region.",
     "hero_title": "Websites, e-commerce and custom software for businesses in Central Anatolia",
     "local_business": false,
