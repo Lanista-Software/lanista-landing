@@ -54,6 +54,11 @@
       "order": 17,
       "type": "string"
     },
+    "hero_illustration": {
+      "description": "Ludus illustration (480x360 SVG, Studio media) shown beside the hero",
+      "order": 7.5,
+      "type": "image"
+    },
     "hero_note": {
       "description": "Short trust line under the hero buttons",
       "max": 160,
@@ -122,6 +127,9 @@
             "max": 1400,
             "required": true,
             "type": "text"
+          },
+          "illustration": {
+            "type": "image"
           },
           "title": {
             "max": 90,
