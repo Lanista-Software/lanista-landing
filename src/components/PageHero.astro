@@ -1,15 +1,25 @@
 ---
 import Amphitheatre from '~/components/decor/Amphitheatre.astro'
+import Img from '~/components/Img.astro'
 
-interface Props { class?: string }
-const { class: className } = Astro.props
+interface Props {
+  class?: string
+  /** Ludus illustration (480×360 SVG) shown beside the text on large screens. */
+  illustration?: string
+}
+const { class: className, illustration } = Astro.props
 ---
 
 <section class:list={['page-hero relative isolate overflow-hidden bg-gradient-to-b from-primary-50 to-white', className]}>
   <Amphitheatre class="opacity-60" />
   <div class="container-x pb-16 pt-16 lg:pb-24 lg:pt-24">
-    <div class="max-w-4xl">
-      <slot />
-    </div>
+    {illustration
+      ? (
+        <div class="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-12">
+          <div class="max-w-3xl"><slot /></div>
+          <Img src={illustration} alt="" width={480} height={360} priority class="page-hero__art mx-auto aspect-[4/3] w-full max-w-[420px] rounded-2xl border border-border-color bg-white object-contain" />
+        </div>
+      )
+      : <div class="max-w-4xl"><slot /></div>}
   </div>
 </section>

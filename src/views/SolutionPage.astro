@@ -8,6 +8,7 @@ import Accordion from '~/components/Accordion.astro'
 import Breadcrumbs from '~/components/Breadcrumbs.astro'
 import Meander from '~/components/decor/Meander.astro'
 import Icon from '~/components/Icon.astro'
+import Img from '~/components/Img.astro'
 import LeadForm from '~/components/LeadForm.astro'
 import PageHero from '~/components/PageHero.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
@@ -48,7 +49,7 @@ const jsonLd = [
 ---
 
 <BaseLayout locale={locale} locales={['tr']} title={title} description={description} path={path} ogTitle={page.title} jsonLd={jsonLd} contentGroup="solution">
-  <PageHero>
+  <PageHero illustration={page.hero_illustration}>
     <Breadcrumbs locale={locale} trail={trail} />
     <h1 class="page-title">{page.hero_title}</h1>
     <p class="mt-6 max-w-3xl font-inter text-lg leading-relaxed lg:text-xl">{page.hero_text}</p>
@@ -100,10 +101,24 @@ const jsonLd = [
 
   {(page.sections ?? []).map((sec, i) => (
     <section class:list={['py-14 lg:py-20', grey(i) && 'bg-secondary-50']} aria-labelledby={`sol-sec-${i}`}>
-      <div class="container-x"><div class="reveal max-w-4xl">
-        <h2 id={`sol-sec-${i}`} class="block-title mb-6">{sec.title}</h2>
-        <p class="whitespace-pre-line font-inter leading-relaxed">{sec.body}</p>
-      </div></div>
+      <div class="container-x">
+        {sec.illustration
+          ? (
+            <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+              <div class:list={['reveal', i % 2 === 1 && 'lg:order-2']}>
+                <h2 id={`sol-sec-${i}`} class="block-title mb-6">{sec.title}</h2>
+                <p class="whitespace-pre-line font-inter leading-relaxed">{sec.body}</p>
+              </div>
+              <Img src={sec.illustration} alt="" width={640} height={320} class="reveal mx-auto aspect-[2/1] w-full max-w-[560px] rounded-2xl border border-border-color bg-white object-contain" />
+            </div>
+          )
+          : (
+            <div class="reveal max-w-4xl">
+              <h2 id={`sol-sec-${i}`} class="block-title mb-6">{sec.title}</h2>
+              <p class="whitespace-pre-line font-inter leading-relaxed">{sec.body}</p>
+            </div>
+          )}
+      </div>
     </section>
   ))}
 

@@ -47,7 +47,7 @@ const jsonLd = [
 ---
 
 <BaseLayout locale={locale} title={title} description={description} path={path} paths={paths} ogTitle={page.title} jsonLd={jsonLd} contentGroup="local">
-  <PageHero>
+  <PageHero illustration={page.hero_illustration}>
     <Breadcrumbs locale={locale} trail={trail} />
     <h1 class="page-title">{page.hero_title}</h1>
     <p class="mt-6 max-w-3xl font-inter text-lg leading-relaxed lg:text-xl">{page.hero_text}</p>

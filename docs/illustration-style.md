@@ -54,6 +54,11 @@ Every illustration is an **orthographic elevation**: a flat front view, like a p
 - Testimonials keep real portraits; product pages keep real app screenshots and videos (demo data).
 - Technology logos stay as brand logos.
 
+## Page illustrations (2026-11-23)
+`design/ludus/pages.py` → `page-*.svg` (480×360 page heroes: e-Dönüşüm, Van, Doğu Anadolu, İç Anadolu) and `section-*.svg` (640×320: program bağlantısı, yerinde kurulum, mali müşavir, rehber). Fields: `local-pages.hero_illustration`, `solution-pages.hero_illustration`, `solution-pages.sections[].illustration`; `PageHero` shows the hero image beside the text when given.
+- Local motifs stay architectural: Erek Dağı + Van Gölü + Van Kalesi silhouette (Van), aqueduct across mountains (Doğu Anadolu), fairy chimneys (İç Anadolu).
+- **Motion inside the SVG:** a `<style>` block animates `.flow` (dashed data lines), `.pulse` (seals), `.float` (pins) and `.wave`, only under `prefers-reduced-motion: no-preference`. Works when served as `<img>` from the CDN.
+
 ## Delivery
 - Static illustrations are **SVG files on the Studio media CDN**, referenced from content fields (e.g. `processes.illustration`).
 - Animated ones (hero, product pages) are inline Astro components with the same drawing, so their parts can move. All motion stops under `prefers-reduced-motion`.
