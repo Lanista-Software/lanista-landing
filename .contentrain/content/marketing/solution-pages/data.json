@@ -61,6 +61,7 @@
     "form_subject": "e-Dönüşüm maliyet analizi",
     "form_text": "Kullandığınız e-fatura sağlayıcısını (varsa), muhasebe programınızı ve aylık yaklaşık fatura sayınızı yazın. Size uygun paketi ve kurulum hizmetini yazılı olarak iletelim.",
     "form_title": "Ücretsiz maliyet analizi isteyin",
+    "hero_illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/6d667bbb-5fcb-46f8-ae68-643085ef53d7.svg",
     "hero_note": "GİB onaylı özel entegratör altyapısıyla hizmet veriyoruz. Van'da yerinde, Türkiye genelinde uzaktan kurulum.",
     "hero_text": "e-Faturaya yeni geçecek ya da sağlayıcısını değiştirmek isteyen işletmelere başvurudan ilk faturaya kadar eşlik ediyoruz. e-İmza ve mali mühür temini, hesap açılışı, fatura şablonu ve eğitim bizden. Kullandığınız muhasebe programını değiştirmeniz gerekmez.",
     "hero_title": "e-Fatura, e-Arşiv ve e-Defter'e geçişi Van'da, yanınızda kuruyoruz",
@@ -123,14 +124,17 @@
     "sections": [
       {
         "body": "Birçok işletme e-fatura için muhasebe programının kendi çözümünü kullanır; fiyatı da program sağlayıcısı belirler. Logo, Mikro, Akınsoft, Paraşüt ya da başka bir program kullanıyorsanız programınızı bırakmanız gerekmez. e-Fatura tarafını ayrı bir altyapıya taşıyıp programınızla bağlantısını kurarız.\n\nKendi yazılımını geliştiren bir firmayız, bayi değiliz. Hazır bağlantısı olmayan programlar için bağlantıyı biz yazarız. Mevcut maliyetinizle karşılaştırmak için sağlayıcınızı ve aylık fatura sayınızı yazmanız yeterli.",
+        "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/50a6b568-145e-4f98-9f27-5d26593c0ab7.svg",
         "title": "Programınızı değiştirmeden e-dönüşüm"
       },
       {
         "body": "Ofisimiz 2019'dan beri Van Teknokent'te (Tuşba). Van merkez ve ilçelerindeki işletmelere kurulum ve eğitim için yerinde geliyoruz; isterseniz ofisimizde de görüşebiliriz.\n\nMuş, Bitlis, Hakkari, Ağrı ve Türkiye'nin diğer illerindeki işletmeler için kurulumu ve eğitimi uzaktan, ekran paylaşımıyla yapıyoruz. Destek için yine aynı ekibe ulaşırsınız.",
+        "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/6e5955c3-f2b2-47b9-b718-47d19484995e.svg",
         "title": "Van'da yerinde kurulum ve eğitim"
       },
       {
         "body": "Mükelleflerinin e-dönüşümü için yerel ve ulaşılabilir bir çözüm arayan mali müşavirlerle iş ortaklığı yapıyoruz. Kurulumu ve eğitimi biz üstleniriz; mükellefiniz takıldığında bizi arar. Ayrıntıları konuşmak için formu doldurun ya da bizi arayın.",
+        "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a77ed458-eee8-4892-a1c2-e04f17f74ed3.svg",
         "title": "Mali müşavirler için iş ortaklığı"
       }
     ],
