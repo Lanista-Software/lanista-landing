@@ -68,10 +68,10 @@
     "tagline": "Credit (kontör) packages for e-Fatura, e-Arşiv and other e-documents. Keep your software and buy only what you need."
   },
   "57a440641db8": {
-    "einvoice_note": "e-Invoice included",
+    "einvoice_note": "e-Invoice module available",
     "faq": [
       {
-        "answer": "Yes. In apps like Lanista Auto Parts, Auto Service or Hardware Store, Pre-Accounting opens as an add-on using the same accounts and invoices.",
+        "answer": "Yes. In apps like Lanista Auto Parts, Auto Service or Hardware Store, Pre-Accounting opens as a module using the same accounts and invoices.",
         "question": "Can I use it with my sector app?"
       },
       {
@@ -79,8 +79,12 @@
         "question": "Does my accountant's work change?"
       },
       {
-        "answer": "e-Invoicing is built in; each document uses one credit. We set the price together based on your invoice volume.",
+        "answer": "e-Invoicing is a module you add when you buy; each document uses credits. We set the price together based on your invoice volume.",
         "question": "Is e-invoicing charged separately?"
+      },
+      {
+        "answer": "At the start of December 2026. Join the waiting list to hear first when it opens.",
+        "question": "When does it launch?"
       }
     ],
     "feature_groups": [
@@ -102,7 +106,7 @@
       },
       {
         "items": [
-          "e-Fatura and e-Arşiv included",
+          "e-Invoice module: add it when you buy",
           "Invoices post to accounts automatically"
         ],
         "title": "Invoicing"
@@ -110,13 +114,13 @@
       {
         "items": [
           "Works on its own",
-          "Opens as an add-on in Lanista sector apps"
+          "Opens as a module in Lanista sector apps"
         ],
-        "title": "Add-on"
+        "title": "Module"
       }
     ],
     "group": "isletme",
-    "hero_text": "Who you owe, who owes you, how much is in the till and the bank: all on one screen. Issue your invoices from the same place as e-invoices.",
+    "hero_text": "Who you owe, who owes you, how much is in the till and the bank: all on one screen. With the e-Invoice module, issue your invoices from the same place too.",
     "hero_title": "See where your business's money is, on one screen",
     "icon": "ri-calculator-line",
     "keywords": [
@@ -124,6 +128,7 @@
       "small business bookkeeping app",
       "income expense tracking app"
     ],
+    "launch_date": "2026-12-01",
     "link_to": "product",
     "menu_text": "Accounts, cash, bank, income and expenses in one place",
     "name": "Lanista Pre-Accounting",
@@ -143,11 +148,12 @@
       }
     ],
     "sector": "Small businesses and service businesses",
-    "seo_description": "Pre-accounting for small businesses in Turkey: accounts, cash and bank, income and expenses, salaries and advances, e-invoicing included.",
+    "seo_description": "Pre-accounting for small businesses in Turkey: accounts, cash and bank, income and expenses, salaries and advances. e-Invoice module available.",
     "seo_title": "Pre-Accounting Software | Lanista Pre-Accounting",
     "slug": "on-muhasebe",
-    "status": "live",
-    "tagline": "Accounts, cash and bank, income and expenses, salaries and advances. Use it on its own or as an add-on to your sector app."
+    "status": "soon",
+    "status_note": "December 2026",
+    "tagline": "Accounts, cash and bank, income and expenses, salaries and advances. Use it on its own or as a module in your sector app."
   },
   "66d93b136c0d": {
     "group": "hizmet",
@@ -171,7 +177,7 @@
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a08f83bf-a859-4340-9ed9-f1db4324a73d.webp",
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/2fb61526-8840-46b6-9e7f-c3ee71349b05.webp"
     ],
-    "einvoice_note": "Works with Lanista e-Invoice",
+    "einvoice_note": "e-Invoice module available",
     "faq": [
       {
         "answer": "No. Lanista Auto Parts opens in your phone's browser and can be added to the home screen like an app. You can also sign in with the same account from the computer or tablet in your shop.",
@@ -276,7 +282,6 @@
       }
     ],
     "roadmap": [
-      "e-Fatura and e-Arşiv (Turkish e-invoice) integration",
       "SMS balance and quota tracking",
       "Parts dictionary with OEM numbers",
       "Distributor price list import"
@@ -392,7 +397,7 @@
     "tagline": "Invoices you issue in your accounting software go out as e-invoices directly; incoming invoices land in your software as purchases."
   },
   "8031ca13766d": {
-    "einvoice_note": "Rent and commission invoices included",
+    "einvoice_note": "e-Invoice module available",
     "faq": [
       {
         "answer": "The e-invoice threshold for businesses buying, selling, renting or brokering real estate is lower than the general one. We check your case together with your accountant.",
@@ -424,7 +429,7 @@
         "items": [
           "Commission invoices",
           "Rent invoices",
-          "e-Fatura and e-Arşiv"
+          "e-Invoice module: add it when you buy"
         ],
         "title": "Invoicing"
       }
@@ -464,7 +469,7 @@
     "tagline": "Properties, tenants and rent due dates in one place. Reminder SMS before rent is due; commission and rent invoices from the same place."
   },
   "82c0e7529204": {
-    "einvoice_note": "e-Invoice included, bulk invoicing",
+    "einvoice_note": "e-Invoice module available",
     "faq": [
       {
         "answer": "The app is being developed with selected wholesalers. Apply and we'll call you for setup when your turn comes.",
@@ -494,7 +499,7 @@
       {
         "items": [
           "Customer accounts and terms",
-          "e-Invoice included",
+          "e-Invoice module: add it when you buy",
           "Bulk invoicing"
         ],
         "title": "Sales and invoicing"
@@ -550,14 +555,14 @@
     "tagline": "We run your switch to e-invoicing or change of integrator end to end: application, series and labels, moving your old archive, training."
   },
   "ca6b13ece1fd": {
-    "einvoice_note": "With Lanista Auto Parts or e-Invoice",
+    "einvoice_note": "e-Invoice module available",
     "faq": [
       {
         "answer": "A label printer is fastest, but you can also print on label sheets from a regular printer. We choose what suits you during setup.",
         "question": "Do I need a special label printer?"
       },
       {
-        "answer": "Tyre Hotel is for storage tracking. Use it with Lanista Auto Parts for sales and accounts, and with Lanista e-Invoice for invoices.",
+        "answer": "Tyre Hotel is for storage tracking. Use it with Lanista Auto Parts for sales and accounts; for invoices, add the e-Invoice module.",
         "question": "Does it handle sales and invoices?"
       }
     ],
@@ -581,7 +586,7 @@
       {
         "items": [
           "Lanista Auto Parts for sales and accounts",
-          "Lanista e-Invoice for invoicing"
+          "Invoicing with the e-Invoice module"
         ],
         "title": "Use together with"
       }
@@ -621,7 +626,7 @@
     "tagline": "Which rack a stored set of tyres is on, who it belongs to and when it's due to be fitted, always in front of you."
   },
   "d27d01aaf36b": {
-    "einvoice_note": "Vehicle sale invoices included",
+    "einvoice_note": "e-Invoice module available",
     "faq": [
       {
         "answer": "The e-invoice threshold for businesses buying, selling or renting motor vehicles is lower than the general one. We check your case together with your accountant.",
@@ -651,7 +656,7 @@
       },
       {
         "items": [
-          "e-Fatura and e-Arşiv",
+          "e-Invoice module: add it when you buy",
           "Used car (special base) invoices"
         ],
         "title": "Invoicing"
@@ -692,7 +697,7 @@
     "tagline": "Purchase, costs, sale and profit of every car on one card. Contracts and payment tracking for rentals."
   },
   "d64d9430d051": {
-    "einvoice_note": "e-Fatura and e-Arşiv",
+    "einvoice_note": "Standalone or as a module",
     "faq": [
       {
         "answer": "As a general rule, businesses with annual gross sales of 3 million TL or more must switch from 1 July of the following year. Some sectors have a lower threshold. Send us last year's turnover and we'll check your case together.",
@@ -709,6 +714,10 @@
       {
         "answer": "Yes, the GİB application requires one. We complete it with you during setup.",
         "question": "Do I need an e-signature or financial seal?"
+      },
+      {
+        "answer": "Yes. e-Invoicing is a module you add when buying a Lanista sector app such as Auto Parts, Auto Service or Hardware Store. You issue the invoice from the same screen where you enter the sale.",
+        "question": "Can I add it to my sector app?"
       }
     ],
     "feature_groups": [
@@ -744,6 +753,14 @@
           "Access for your accountant"
         ],
         "title": "Accountant"
+      },
+      {
+        "items": [
+          "Added to any Lanista sector app when you buy",
+          "Issue invoices from the sales screen",
+          "Also works on its own"
+        ],
+        "title": "As a module"
       }
     ],
     "featured": true,
@@ -787,7 +804,7 @@
     "tagline": "Crossed the 3 million TL threshold? You don't need full accounting software. Issue e-invoices from your phone or computer."
   },
   "f0aca951b8a9": {
-    "einvoice_note": "e-Invoice included",
+    "einvoice_note": "e-Invoice module available",
     "faq": [
       {
         "answer": "The app is being developed with selected hardware stores. Apply and we'll call you for setup when your turn comes.",
@@ -821,7 +838,7 @@
         "items": [
           "Cheque and promissory note tracking, due date reminders",
           "Debt reminders by SMS",
-          "e-Invoice included"
+          "e-Invoice module: add it when you buy"
         ],
         "title": "Due dates and invoicing"
       }
@@ -866,7 +883,7 @@
     "tagline": "Sell by the metre, kilo or piece, with stock and price lists. Tradesperson and contractor accounts site by site, with signed deliveries."
   },
   "f8e9fe4817b0": {
-    "einvoice_note": "e-Invoice included, withholding invoices",
+    "einvoice_note": "e-Invoice module available",
     "faq": [
       {
         "answer": "The app is being developed in the field with selected workshops. Apply and we'll call you to set it up for your business when your turn comes.",
@@ -893,7 +910,7 @@
       },
       {
         "items": [
-          "e-Invoice included",
+          "e-Invoice module: add it when you buy",
           "Period invoices for corporate and fleet customers",
           "Invoices with withholding (tevkifat)"
         ],
