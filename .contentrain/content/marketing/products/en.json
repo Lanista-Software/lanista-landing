@@ -166,9 +166,10 @@
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a08f83bf-a859-4340-9ed9-f1db4324a73d.webp",
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/2fb61526-8840-46b6-9e7f-c3ee71349b05.webp"
     ],
+    "einvoice_note": "Works with Lanista e-Invoice",
     "faq": [
       {
-        "answer": "No. Hesap Takip opens in your phone's browser and can be added to the home screen like an app. You can also sign in with the same account from the computer or tablet in your shop.",
+        "answer": "No. Lanista Auto Parts opens in your phone's browser and can be added to the home screen like an app. You can also sign in with the same account from the computer or tablet in your shop.",
         "question": "Do I need a computer or to install any software?"
       },
       {
@@ -230,20 +231,23 @@
         "title": "Everyday use"
       }
     ],
+    "group": "isletme",
     "hero_screenshot": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/f6920ce7-7e16-4542-8cdc-1dc08e4db6fb.webp",
     "hero_text": "Enter a sale in 20 seconds and track payments and due dates. When you open the shop in the morning, your phone already shows who you need to call today.",
     "hero_title": "Move your credit ledger to your phone",
+    "icon": "ri-settings-3-line",
     "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/86aa76d8-c09c-4235-b076-414e0693b7a8.svg",
     "keywords": [
+      "auto parts shop software",
       "credit sales tracking app",
       "customer account tracking app",
       "digital credit ledger app",
-      "accounts receivable app for auto parts shops",
-      "payment due date tracking app",
-      "small business debt tracking app"
+      "payment due date tracking app"
     ],
-    "name": "Hesap Takip",
-    "order": 1,
+    "link_to": "product",
+    "menu_text": "Sales by plate, credit and due dates, SMS reminders",
+    "name": "Lanista Auto Parts",
+    "order": 10,
     "pains": [
       {
         "pain": "The paper ledger gets messy: who owes how much?",
@@ -281,9 +285,9 @@
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/97474a15-cbaa-4caa-bcb7-2855bc0c9b65.webp"
     ],
     "sector": "Auto parts shops and repair-district businesses",
-    "seo_description": "Credit sales app for auto parts shops in Turkey: fast sales, payments, due dates, SMS reminders and WhatsApp statements. Runs on your phone; we set it up.",
-    "seo_title": "Hesap Takip | Credit Sales & Customer Account App",
-    "slug": "hesap-takip",
+    "seo_description": "Software for auto parts shops in Turkey: sales by plate, credit and due dates, SMS reminders and WhatsApp statements. Runs on your phone; we set it up.",
+    "seo_title": "Auto Parts Shop Software | Lanista Auto Parts",
+    "slug": "yedek-parca",
     "status": "live",
     "tagline": "Your credit ledger on your phone. Overdue payments in front of you every morning, and the system sends the reminder SMS.",
     "trust": [
