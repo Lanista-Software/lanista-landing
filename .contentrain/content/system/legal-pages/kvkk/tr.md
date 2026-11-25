@@ -31,7 +31,7 @@ Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") md.10 ve A
 ### 2.2. Bekleme listesi
 
 - **Veriler:** Ad-soyad, işletme adı, telefon, e-posta, ilgilendiğiniz ürün.
-- **Amaç:** Henüz satışta olmayan ürünler (Nalbur Takip, Kasa Takip) satışa açıldığında size haber vermek ve talebi ölçmek.
+- **Amaç:** Henüz satışta olmayan ürünler (erken erişimde, yakında ya da planlı olarak gösterilen Lanista ürünleri) satışa açıldığında size haber vermek ve talebi ölçmek.
 - **Hukuki sebep:** Sözleşmenin kurulmasıyla doğrudan ilgili olması (md.5/2-c) ve meşru menfaatimiz (md.5/2-f). Bekleme listesinden dilediğiniz an çıkabilirsiniz.
 
 Ticari elektronik ileti (kampanya, tanıtım) göndermek için ayrıca, isteğe bağlı onayınızı alırız. Bu onay satın almanın şartı değildir.

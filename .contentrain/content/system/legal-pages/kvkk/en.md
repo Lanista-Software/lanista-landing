@@ -31,7 +31,7 @@ This notice has been prepared in accordance with Article 10 of 6698 sayılı Ki�
 ### 2.2. Waiting list
 
 - **Data:** Full name, business name, phone number, email address, the product you are interested in.
-- **Purpose:** Letting you know when products not yet on sale (Nalbur Takip, Kasa Takip) become available, and gauging demand.
+- **Purpose:** Letting you know when products not yet on sale (Lanista products shown as early access, coming soon or planned) become available, and gauging demand.
 - **Legal basis:** Processing is directly related to the formation of a contract (Art. 5/2-c) and our legitimate interest (Art. 5/2-f). You can leave the waiting list at any time.
 
 We obtain your separate, optional consent before sending commercial electronic messages (promotions, marketing). This consent is not a condition of purchase.
