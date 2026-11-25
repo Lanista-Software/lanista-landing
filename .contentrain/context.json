@@ -1,19 +1,20 @@
 {
   "lastOperation": {
     "entries": [
-      "a1c0de5f7a01",
-      "a1c0de5f7a02",
-      "a1c0de5f7a03"
+      "2aa54f9e7xb3",
+      "6b931f1d3589",
+      "2aa54f9e7xb3",
+      "6b931f1d3589"
     ],
-    "locale": "en",
-    "model": "local-pages",
+    "locale": "tr",
+    "model": "sections",
     "source": "mcp-local",
-    "timestamp": "2026-11-25T16:57:09.531Z",
+    "timestamp": "2026-11-25T16:57:39.832Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 268,
-    "lastSync": "2026-11-25T16:57:09.531Z",
+    "lastSync": "2026-11-25T16:57:39.832Z",
     "locales": [
       "tr",
       "en"
