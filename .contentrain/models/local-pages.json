@@ -54,7 +54,7 @@
       "type": "array"
     },
     "hero_illustration": {
-      "description": "Ludus illustration (480x360 SVG, Studio media) shown beside the hero",
+      "description": "Illustration in Lanista illustration style (480x360 SVG, Studio media) shown beside the hero",
       "order": 7.5,
       "type": "image"
     },
