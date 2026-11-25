@@ -170,9 +170,10 @@
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a08f83bf-a859-4340-9ed9-f1db4324a73d.webp",
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/2fb61526-8840-46b6-9e7f-c3ee71349b05.webp"
     ],
+    "einvoice_note": "Lanista e-Fatura ile birlikte",
     "faq": [
       {
-        "answer": "Hayır. Hesap Takip telefonun tarayıcısından açılır ve ana ekrana uygulama gibi eklenir. Dükkândaki bilgisayar ya da tabletten de aynı hesapla girebilirsiniz.",
+        "answer": "Hayır. Lanista Yedek Parça telefonun tarayıcısından açılır ve ana ekrana uygulama gibi eklenir. Dükkândaki bilgisayar ya da tabletten de aynı hesapla girebilirsiniz.",
         "question": "Bilgisayar ya da program kurmam gerekiyor mu?"
       },
       {
@@ -234,20 +235,24 @@
         "title": "Kullanım"
       }
     ],
+    "group": "isletme",
     "hero_screenshot": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/f6920ce7-7e16-4542-8cdc-1dc08e4db6fb.webp",
     "hero_text": "Satışı 20 saniyede girin, tahsilatı ve vadeyi takip edin. Sabah dükkânı açınca bugün kimi aramanız gerektiği telefonunuzda hazır olur.",
     "hero_title": "Veresiye defterini telefona taşıyın",
+    "icon": "ri-settings-3-line",
     "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/86aa76d8-c09c-4235-b076-414e0693b7a8.svg",
     "keywords": [
+      "oto yedek parça programı",
       "veresiye programı",
       "cari takip programı",
       "veresiye defteri uygulaması",
-      "oto yedek parça programı",
       "vade takip programı",
       "esnaf hesap takip"
     ],
-    "name": "Hesap Takip",
-    "order": 1,
+    "link_to": "product",
+    "menu_text": "Plakaya göre satış, veresiye ve vade, SMS hatırlatma",
+    "name": "Lanista Yedek Parça",
+    "order": 10,
     "pains": [
       {
         "pain": "Defterde kimin ne kadar borcu olduğu karışıyor",
@@ -284,10 +289,10 @@
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/615eaca3-ce54-47a0-a027-a868698f0961.webp",
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/97474a15-cbaa-4caa-bcb7-2855bc0c9b65.webp"
     ],
-    "sector": "Oto yedek parça ve sanayi esnafı",
-    "seo_description": "Oto yedek parça esnafı için veresiye programı: hızlı satış, tahsilat, vade takibi, SMS hatırlatma ve WhatsApp ekstre. Telefondan çalışır, kurulum bizden.",
-    "seo_title": "Hesap Takip | Veresiye ve Cari Takip Programı",
-    "slug": "hesap-takip",
+    "sector": "Oto yedek parçacılar ve sanayi esnafı",
+    "seo_description": "Oto yedek parçacılar için program: plakaya göre satış, veresiye ve vade takibi, SMS hatırlatma, WhatsApp ekstre. Telefondan çalışır, kurulum bizden.",
+    "seo_title": "Oto Yedek Parça Programı | Lanista Yedek Parça",
+    "slug": "yedek-parca",
     "status": "live",
     "tagline": "Veresiye defteri telefonunuzda. Vadesi geçen alacak her sabah önünüzde, hatırlatma SMS'ini sistem atar.",
     "trust": [
@@ -872,59 +877,85 @@
     "tagline": "3 milyon TL sınırını geçtiyseniz koca bir muhasebe programına gerek yok. e-Faturayı telefondan ya da bilgisayardan kesin."
   },
   "f0aca951b8a9": {
-    "faq": [],
+    "einvoice_note": "e-Fatura dahil",
+    "faq": [
+      {
+        "answer": "Uygulama seçili nalbur ve hırdavatçılarla birlikte geliştiriliyor. Başvurun; sıra size geldiğinde arayıp kurulumu yapalım.",
+        "question": "Erken erişim ne demek?"
+      },
+      {
+        "answer": "Evet. Excel'deki ürün, fiyat ve müşteri listenizi kurulumda birlikte aktarırız.",
+        "question": "Ürün ve müşteri listemi aktarabilir miyim?"
+      }
+    ],
     "feature_groups": [
       {
         "items": [
-          "İş / şantiye bazında satış ve ekstre",
-          "Teslim alanın adı ve telefonda imza",
-          "Çek ve senet takibi, vade hatırlatması",
-          "Müşteri kredi limiti uyarısı",
-          "Online mutabakat bağlantısı",
-          "Teklif → satış, toplu fiyat güncelleme, teslimat durumu",
-          "Excel'den toplu müşteri aktarımı"
+          "Metre, kilo ve adetle satış",
+          "Stok takibi",
+          "Fiyat listesi ve toplu fiyat güncelleme",
+          "Teklif → satış"
         ],
-        "title": "Planlanan özellikler"
+        "title": "Satış ve stok"
+      },
+      {
+        "items": [
+          "Usta ve şantiye carisi",
+          "Şantiye bazında ekstre",
+          "Teslim alanın adı ve telefonda imza",
+          "Müşteri kredi limiti uyarısı"
+        ],
+        "title": "Usta ve şantiye"
+      },
+      {
+        "items": [
+          "Çek ve senet takibi, vade hatırlatması",
+          "SMS ile borç hatırlatma",
+          "e-Fatura dahil"
+        ],
+        "title": "Vade ve fatura"
       }
     ],
-    "hero_text": "Veresiye satışı, teslimatı ve vadeyi tek yerde tutun. Vadesi gelen alacağı ve çeki size, müşteriye de SMS'le hatırlatır.",
+    "group": "isletme",
+    "hero_text": "Metreyle, kiloyla, adetle satışı tek ekrandan girin; stok kendiliğinden düşsün. Ustanın ve şantiyenin hesabı, teslim imzası ve vadesi tek yerde.",
     "hero_title": "Usta ve müteahhit hesabı, şantiye şantiye",
+    "icon": "ri-hammer-line",
     "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/76480d5b-2357-4dff-9760-87481b46dddc.svg",
     "keywords": [
       "nalbur programı",
       "hırdavat programı",
-      "inşaat malzemesi cari takip",
+      "yapı market programı",
       "nalbur veresiye programı",
       "çek senet takip programı"
     ],
-    "name": "Nalbur Takip",
-    "order": 2,
+    "link_to": "product",
+    "menu_text": "Metre, kilo, adetle satış; usta ve şantiye carisi",
+    "name": "Lanista Nalbur",
+    "order": 15,
     "pains": [
       {
         "pain": "Ay sonu hangi şantiyeye ne gittiği karışıyor",
-        "solution": "Satışlar iş ve şantiye bazında tutulur; ekstre şantiye şantiye çıkar."
+        "solution": "Satışlar usta ve şantiye bazında tutulur; ekstre şantiye şantiye çıkar."
       },
       {
         "pain": "\"Biz bunu teslim almadık\" tartışması",
         "solution": "Teslim alanın adı ve telefonda imzası satışla birlikte kaydedilir."
       },
       {
-        "pain": "Çek ve senetlerin vadesi kaçıyor",
-        "solution": "Çek ve senet takibi; vadesi yaklaşan çek için hatırlatma."
+        "pain": "Torba, kilo, metre… birimler karışıyor",
+        "solution": "Adet, torba, kg, ton, m, m², m³ birimleri ve ondalıklı miktarla satış."
       },
       {
-        "pain": "Torba, ton, metre küp… birimler karışıyor",
-        "solution": "Torba, kg, ton, m, m², m³ birimleri ve ondalıklı miktar."
+        "pain": "Raftaki fiyat ile kasadaki fiyat tutmuyor",
+        "solution": "Fiyat listesi tek yerde; toplu fiyat güncellemesi satışa hemen yansır."
       }
     ],
-    "roadmap": [],
-    "sector": "Nalbur, hırdavat ve inşaat malzemecileri",
-    "seo_description": "Nalbur, hırdavat ve inşaat malzemecileri için veresiye, şantiye ekstresi, teslim imzası ve çek takibi. Yakında; bekleme listesine katılın.",
-    "seo_title": "Nalbur Takip | Nalbur ve Hırdavat Programı (Yakında)",
-    "slug": "nalbur-takip",
-    "status": "soon",
-    "tagline": "Usta ve müteahhit hesabı şantiye şantiye; kim neyi teslim aldı imzasıyla kayıtlı.",
-    "trust": []
+    "sector": "Nalbur, hırdavat ve yapı marketler",
+    "seo_description": "Nalbur, hırdavat ve yapı marketler için metre, kilo, adetle satış, stok, fiyat listesi, usta ve şantiye carisi, teslim imzası ve e-Fatura.",
+    "seo_title": "Nalbur ve Hırdavat Programı | Lanista Nalbur",
+    "slug": "nalbur",
+    "status": "pilot",
+    "tagline": "Metre, kilo ya da adetle satış, stok, fiyat listesi. Usta ve müteahhit hesabı şantiye şantiye; kim neyi teslim aldı imzasıyla kayıtlı."
   },
   "f8e9fe4817b0": {
     "einvoice_note": "e-Fatura dahil, tevkifatlı fatura",
