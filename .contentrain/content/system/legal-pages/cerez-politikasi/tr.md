@@ -78,7 +78,7 @@ Google Analytics ile toplanan veriler Google'ın yurt dışındaki sunucularına
 
 ## 7. Uygulamalarımız
 
-Hesap Takip gibi uygulamalarımız, oturumunuzu açık tutmak ve çevrimdışı çalışabilmek için cihazınızda zorunlu teknik veriler (oturum bilgisi, çevrimdışı kayıt kuyruğu) saklar. Bu veriler uygulamanın çalışması için gereklidir. Uygulamalarda reklam veya takip çerezi kullanılmaz.
+Lanista Yedek Parça gibi uygulamalarımız, oturumunuzu açık tutmak ve çevrimdışı çalışabilmek için cihazınızda zorunlu teknik veriler (oturum bilgisi, çevrimdışı kayıt kuyruğu) saklar. Bu veriler uygulamanın çalışması için gereklidir. Uygulamalarda reklam veya takip çerezi kullanılmaz.
 
 ## 8. Değişiklikler
 
@@ -87,5 +87,6 @@ Yeni bir çerez eklersek veya mevcut bir çerezin amacı değişirse bu politika
 ## 9. İletişim
 
 Çerezlerle ilgili sorularınız için info@lanista.com.tr adresine yazabilir veya {{telefon}} numarasını arayabilirsiniz.
+
 
 

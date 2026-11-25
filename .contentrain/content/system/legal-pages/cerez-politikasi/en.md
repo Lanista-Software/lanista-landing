@@ -78,7 +78,7 @@ Data collected through Google Analytics may be transferred to Google's servers a
 
 ## 7. Our apps
 
-Our apps, such as Hesap Takip, store strictly necessary technical data on your device (session information, offline entry queue) to keep you signed in and to work offline. This data is required for the app to function. No advertising or tracking cookies are used in our apps.
+Our apps, such as Lanista Auto Parts, store strictly necessary technical data on your device (session information, offline entry queue) to keep you signed in and to work offline. This data is required for the app to function. No advertising or tracking cookies are used in our apps.
 
 ## 8. Changes
 
@@ -87,5 +87,6 @@ If we add a new cookie or the purpose of an existing cookie changes, we will upd
 ## 9. Contact
 
 For questions about cookies, you can write to info@lanista.com.tr or call {{telefon}}.
+
 
 
