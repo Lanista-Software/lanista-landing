@@ -1,14 +1,28 @@
 {
   "lastOperation": {
+    "entries": [
+      "d64d9430d051",
+      "0ef633950872",
+      "6dd68e517724",
+      "97e82b9e0206",
+      "57a440641db8",
+      "f8e9fe4817b0",
+      "ca6b13ece1fd",
+      "d27d01aaf36b",
+      "8031ca13766d",
+      "82c0e7529204",
+      "66d93b136c0d",
+      "f0aca951b8a9"
+    ],
     "locale": "en",
     "model": "products",
     "source": "mcp-local",
-    "timestamp": "2026-11-25T16:45:09.550Z",
-    "tool": "contentrain_content_delete"
+    "timestamp": "2026-11-25T16:47:40.577Z",
+    "tool": "contentrain_content_save"
   },
   "stats": {
-    "entries": 249,
-    "lastSync": "2026-11-25T16:45:09.550Z",
+    "entries": 260,
+    "lastSync": "2026-11-25T16:47:40.577Z",
     "locales": [
       "tr",
       "en"
