@@ -28,9 +28,9 @@
     "title": "Müşterilerimiz için geliştirdiğimiz bazı projeler"
   },
   "2aa54f9e7xb3": {
-    "buttonlink": "/urunler/hesap-takip",
-    "buttontext": "Hesap Takip'i inceleyin",
-    "description": "Veresiye, tahsilat, vade ve günlük kasa için hazır uygulamalar. Kurulumu biz yaparız; internet gitse de kayıt durmaz.",
+    "buttonlink": "/urunler/yedek-parca",
+    "buttontext": "Yedek Parça uygulamasını inceleyin",
+    "description": "Veresiye, tahsilat, vade ve e-Fatura için hazır uygulamalar. Kurulumu biz yaparız; internet gitse de kayıt durmaz.",
     "name": "hero",
     "subtitle": "Esnaf için hazır uygulamalar",
     "title": "Defteri bırakın, dükkânın hesabı telefonunuzda olsun"
@@ -52,7 +52,7 @@
   "6b931f1d3589": {
     "buttonlink": "/iletisim",
     "buttontext": "Yazılım projesi için teklif alın",
-    "description": "Hesap Takip'i ve diğer ürünlerimizi Van Teknokent'te kendi ekibimizle geliştiriyoruz. Aynı ekip, şirketiniz için web ve mobil uygulama da geliştirir: kapsamı birlikte yazarız, yazılımı teslim eder, bakımını üstleniriz.",
+    "description": "Lanista ürünlerini Van Teknokent'te kendi ekibimizle geliştiriyoruz. Aynı ekip, şirketiniz için web ve mobil uygulama da geliştirir: kapsamı birlikte yazarız, yazılımı teslim eder, bakımını üstleniriz.",
     "name": "bridge",
     "title": "Bu uygulamaları yapan ekip, sizin yazılımınızı da yapar"
   },

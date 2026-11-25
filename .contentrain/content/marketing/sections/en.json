@@ -28,9 +28,9 @@
     "title": "Some of the projects we built for our clients"
   },
   "2aa54f9e7xb3": {
-    "buttonlink": "/urunler/hesap-takip",
-    "buttontext": "See Hesap Takip",
-    "description": "Ready-made apps for credit sales, collections, due dates and the daily till. We do the setup, and records keep saving even when the internet drops.",
+    "buttonlink": "/urunler/yedek-parca",
+    "buttontext": "See Lanista Auto Parts",
+    "description": "Ready-made apps for credit sales, collections, due dates and e-invoicing. We do the setup, and records keep saving even when the internet drops.",
     "name": "hero",
     "subtitle": "Ready-made apps for local shops",
     "title": "Put the paper ledger away: your shop's accounts on your phone"
@@ -52,7 +52,7 @@
   "6b931f1d3589": {
     "buttonlink": "/iletisim",
     "buttontext": "Get a quote for your project",
-    "description": "We build Hesap Takip and our other products in-house at Van Technopark. The same team builds web and mobile software for your company: we scope it with you, deliver it and maintain it.",
+    "description": "We build Lanista products in-house at Van Technopark. The same team builds web and mobile software for your company: we scope it with you, deliver it and maintain it.",
     "name": "bridge",
     "title": "The team that builds these apps can build yours"
   },
