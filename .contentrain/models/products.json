@@ -97,7 +97,7 @@
       "type": "icon"
     },
     "illustration": {
-      "description": "Ludus-style SVG for cards and the menu feature card (docs/illustration-style.md).",
+      "description": "SVG in Lanista illustration style for cards and the menu feature card (docs/illustration-style.md).",
       "order": 15,
       "type": "image"
     },
