@@ -1,14 +1,14 @@
 {
   "lastOperation": {
     "locale": "tr",
-    "model": "plans",
+    "model": "company",
     "source": "mcp-local",
-    "timestamp": "2026-11-25T16:40:59.510Z",
+    "timestamp": "2026-11-25T16:41:20.154Z",
     "tool": "contentrain_model_save"
   },
   "stats": {
     "entries": 240,
-    "lastSync": "2026-11-25T16:40:59.510Z",
+    "lastSync": "2026-11-25T16:41:20.154Z",
     "locales": [
       "tr",
       "en"
