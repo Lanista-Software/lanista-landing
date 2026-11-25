@@ -11,15 +11,15 @@
       "82c0e7529204",
       "57a440641db8"
     ],
-    "locale": "tr",
+    "locale": "en",
     "model": "products",
     "source": "mcp-local",
-    "timestamp": "2026-11-25T17:40:46.143Z",
+    "timestamp": "2026-11-25T17:42:17.231Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 268,
-    "lastSync": "2026-11-25T17:40:46.143Z",
+    "lastSync": "2026-11-25T17:42:17.231Z",
     "locales": [
       "tr",
       "en"
