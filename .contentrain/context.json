@@ -5,14 +5,14 @@
       "en"
     ],
     "locale": "tr",
-    "model": "ui",
+    "model": "meta-tags",
     "source": "mcp-local",
-    "timestamp": "2026-11-25T16:54:46.808Z",
+    "timestamp": "2026-11-25T16:54:55.811Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 268,
-    "lastSync": "2026-11-25T16:54:46.808Z",
+    "lastSync": "2026-11-25T16:54:55.811Z",
     "locales": [
       "tr",
       "en"
