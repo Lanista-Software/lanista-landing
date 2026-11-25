@@ -1,18 +1,25 @@
 {
   "lastOperation": {
     "entries": [
-      "tr",
-      "en"
+      "d64d9430d051",
+      "69576769b108",
+      "f8e9fe4817b0",
+      "ca6b13ece1fd",
+      "d27d01aaf36b",
+      "8031ca13766d",
+      "f0aca951b8a9",
+      "82c0e7529204",
+      "57a440641db8"
     ],
     "locale": "tr",
-    "model": "ui",
+    "model": "products",
     "source": "mcp-local",
-    "timestamp": "2026-11-25T16:57:47.050Z",
+    "timestamp": "2026-11-25T17:40:46.143Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 268,
-    "lastSync": "2026-11-25T16:57:47.050Z",
+    "lastSync": "2026-11-25T17:40:46.143Z",
     "locales": [
       "tr",
       "en"
