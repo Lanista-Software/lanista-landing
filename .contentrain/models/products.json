@@ -223,6 +223,13 @@
       "order": 3.5,
       "type": "string"
     },
+    "tagline": {
+      "description": "One-line promise used on cards.",
+      "max": 160,
+      "order": 6,
+      "required": true,
+      "type": "text"
+    },
     "trust": {
       "items": {
         "fields": {
