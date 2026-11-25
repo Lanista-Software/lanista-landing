@@ -45,6 +45,22 @@
       "required": true,
       "type": "string"
     },
+    "einvoice_provider": {
+      "description": "e-Fatura altyapı sağlayıcısının adı (ör. 'Turkcell e-Şirket'). Sözleşme imzalanınca girilir; boşken sitede sağlayıcı adı geçmez. Girilince e-Dönüşüm ürün sayfalarında çözüm ortaklığı bandı görünür.",
+      "max": 40,
+      "order": 24,
+      "type": "string"
+    },
+    "einvoice_provider_logo": {
+      "description": "Sağlayıcının çözüm ortağı logosu (sağlayıcının verdiği resmi dosya, değiştirilmeden).",
+      "order": 25,
+      "type": "image"
+    },
+    "einvoice_provider_url": {
+      "description": "Sağlayıcının resmi sayfası (çözüm ortağı listesi varsa o).",
+      "order": 26,
+      "type": "url"
+    },
     "email": {
       "order": 15,
       "required": true,
