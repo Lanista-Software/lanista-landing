@@ -108,6 +108,11 @@
       "order": 18,
       "type": "array"
     },
+    "launch_date": {
+      "description": "Planned sales start. Informational on the live site; with LAUNCH_PREVIEW=1 the product is shown as live (plans and prices visible). Going live is still manual: set status to live.",
+      "order": 3.6,
+      "type": "date"
+    },
     "link_to": {
       "default": "product",
       "description": "Where the entry's page lives. product = /urunler/{slug}/ (generated). e-donusum = the /e-donusum/ hub (Turkish only; hidden in English). services = /hizmetler/. Non-product entries get no /urunler/ page.",
