@@ -1,18 +1,18 @@
 {
   "lastOperation": {
     "entries": [
-      "teslimat-ve-iade",
-      "teslimat-ve-iade"
+      "hakkimizda",
+      "hakkimizda"
     ],
     "locale": "tr",
     "model": "legal-pages",
     "source": "mcp-local",
-    "timestamp": "2026-11-25T17:45:56.326Z",
+    "timestamp": "2026-11-25T17:47:00.535Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 268,
-    "lastSync": "2026-11-25T17:45:56.326Z",
+    "lastSync": "2026-11-25T17:47:00.535Z",
     "locales": [
       "tr",
       "en"
