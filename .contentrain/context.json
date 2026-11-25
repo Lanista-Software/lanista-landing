@@ -1,18 +1,14 @@
 {
   "lastOperation": {
-    "entries": [
-      "kvkk",
-      "kvkk"
-    ],
     "locale": "tr",
-    "model": "legal-pages",
+    "model": "processes",
     "source": "mcp-local",
-    "timestamp": "2026-11-25T17:48:27.644Z",
-    "tool": "contentrain_content_save"
+    "timestamp": "2026-11-25T17:48:56.305Z",
+    "tool": "contentrain_model_save"
   },
   "stats": {
     "entries": 268,
-    "lastSync": "2026-11-25T17:48:27.644Z",
+    "lastSync": "2026-11-25T17:48:56.305Z",
     "locales": [
       "tr",
       "en"
