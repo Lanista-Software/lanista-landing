@@ -3,8 +3,12 @@
     "einvoice_note": "1 kontör = 1 e-belge",
     "faq": [
       {
-        "answer": "e-Fatura, e-Arşiv ve diğer e-belgelerin düzenlenmesi ve alınması için kullanılan birimdir. Her gelen ya da giden belge bir kontör kullanır.",
+        "answer": "e-Fatura, e-Arşiv ve diğer e-belgelerin düzenlenmesi ve alınması için kullanılan birimdir. Kontörler tek havuzda durur; aynı paketi farklı belge türlerinde kullanırsınız.",
         "question": "Kontör nedir?"
+      },
+      {
+        "answer": "e-Faturada kestiğiniz ve size gelen her fatura bir kontör kullanır. e-Arşivde yalnız kestiğiniz fatura sayılır. Diğer belge türlerinin kurallarını paket seçerken birlikte hesaplarız.",
+        "question": "Kontör nasıl düşer?"
       },
       {
         "answer": "Evet. Kontör programdan bağımsızdır; mevcut programınızla çalışmaya devam edersiniz. Programınızın e-Fatura bağlantısını da birlikte kontrol ederiz.",
@@ -18,17 +22,17 @@
     "feature_groups": [
       {
         "items": [
-          "Belge sayısına göre kontör paketleri",
-          "1 kontör = 1 gelen ya da giden e-belge",
+          "Belge sayısına göre paketler",
+          "Tek kontör havuzu: e-Fatura, e-Arşiv, e-İrsaliye ve diğer e-belgelerde ortak",
           "Kontör azalınca uyarı",
           "Telefonla ya da çevrim içi yükleme",
           "Fatura sayınıza göre paket önerisi"
         ],
-        "title": "Planlanan özellikler"
+        "title": "Kontör paketleri"
       }
     ],
     "group": "e-donusum",
-    "hero_text": "Her gelen ya da giden e-belge bir kontör kullanır. Fatura sayınıza uygun paketi seçin; kontörünüz azalınca haber verelim, yenisini tek telefonla yükleyelim.",
+    "hero_text": "Her e-belge kontör kullanır. Fatura sayınıza uygun paketi seçin; kontörünüz azalınca haber verelim, yenisini tek telefonla yükleyelim.",
     "hero_title": "e-Fatura kontörünüz bitmeden yenisi hazır",
     "icon": "ri-coins-line",
     "keywords": [
@@ -38,6 +42,7 @@
       "e-arşiv kontör",
       "kontör satın al"
     ],
+    "launch_date": "2026-12-01",
     "link_to": "product",
     "menu_text": "Hangi programı kullanırsanız kullanın e-belge kontörü",
     "name": "Lanista Kontör",

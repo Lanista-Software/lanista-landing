@@ -3,8 +3,12 @@
     "einvoice_note": "1 credit = 1 e-document",
     "faq": [
       {
-        "answer": "The unit used to issue and receive e-Fatura, e-Arşiv and other e-documents. Each incoming or outgoing document uses one credit.",
+        "answer": "The unit used to issue and receive e-Fatura, e-Arşiv and other e-documents. Credits sit in one pool; the same package works across document types.",
         "question": "What is a credit (kontör)?"
+      },
+      {
+        "answer": "With e-Fatura, every invoice you issue or receive uses one credit. With e-Arşiv, only invoices you issue count. We work out the rules for other document types with you when choosing a package.",
+        "question": "How are credits used?"
       },
       {
         "answer": "Yes. Credits don't depend on your software; you keep using it. We'll check its e-invoice connection with you too.",
@@ -18,17 +22,17 @@
     "feature_groups": [
       {
         "items": [
-          "Credit packages by document volume",
-          "1 credit = 1 incoming or outgoing e-document",
+          "Packages by document volume",
+          "One credit pool shared by e-Fatura, e-Arşiv, e-İrsaliye and other e-documents",
           "Low balance alerts",
           "Top-up by phone or online",
           "Package suggestion based on your invoice volume"
         ],
-        "title": "Planned features"
+        "title": "Credit packages"
       }
     ],
     "group": "e-donusum",
-    "hero_text": "Each incoming or outgoing e-document uses one credit. Pick a package that fits your invoice volume; we'll let you know when you're running low and top you up with one call.",
+    "hero_text": "Every e-document uses credits. Pick a package that fits your invoice volume; we'll let you know when you're running low and top you up with one call.",
     "hero_title": "New e-invoice credits before you run out",
     "icon": "ri-coins-line",
     "keywords": [
@@ -36,6 +40,7 @@
       "e-invoice credits Turkey",
       "kontör package"
     ],
+    "launch_date": "2026-12-01",
     "link_to": "product",
     "menu_text": "e-document credits, whatever software you use",
     "name": "Lanista Credits",
