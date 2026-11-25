@@ -31,6 +31,71 @@
     "product": "69576769b108",
     "vat_rate": 20
   },
+  "a1c0f7e20001": {
+    "billing": "one_time",
+    "credits": 1000,
+    "includes": [
+      "Ayda yaklaşık 40 belgeye kadar",
+      "e-Fatura, e-Arşiv ve diğer e-belgelerde ortak",
+      "Kontör azalınca uyarı"
+    ],
+    "name": "1.000 kontör",
+    "note": "ÖNİZLEME: yer tutucu fiyat, iç fiyat listesiyle değiştirilecek.",
+    "order": 1,
+    "price_try": 5250,
+    "product": "0ef633950872",
+    "validity_months": 24,
+    "vat_rate": 20
+  },
+  "a1c0f7e20002": {
+    "billing": "one_time",
+    "credits": 2500,
+    "featured": true,
+    "includes": [
+      "Ayda yaklaşık 100 belgeye kadar",
+      "e-Fatura, e-Arşiv ve diğer e-belgelerde ortak",
+      "Kontör azalınca uyarı"
+    ],
+    "name": "2.500 kontör",
+    "note": "ÖNİZLEME: yer tutucu fiyat, iç fiyat listesiyle değiştirilecek.",
+    "order": 2,
+    "price_try": 12000,
+    "product": "0ef633950872",
+    "validity_months": 24,
+    "vat_rate": 20
+  },
+  "a1c0f7e20003": {
+    "billing": "one_time",
+    "credits": 5000,
+    "includes": [
+      "Ayda yaklaşık 200 belgeye kadar",
+      "e-Fatura, e-Arşiv ve diğer e-belgelerde ortak",
+      "Kontör azalınca uyarı"
+    ],
+    "name": "5.000 kontör",
+    "note": "ÖNİZLEME: yer tutucu fiyat, iç fiyat listesiyle değiştirilecek.",
+    "order": 3,
+    "price_try": 21000,
+    "product": "0ef633950872",
+    "validity_months": 24,
+    "vat_rate": 20
+  },
+  "a1c0f7e20004": {
+    "billing": "one_time",
+    "credits": 10000,
+    "includes": [
+      "Ayda yaklaşık 400 belgeye kadar",
+      "e-Fatura, e-Arşiv ve diğer e-belgelerde ortak",
+      "Daha yüksek adet için özel teklif"
+    ],
+    "name": "10.000 kontör",
+    "note": "ÖNİZLEME: yer tutucu fiyat, iç fiyat listesiyle değiştirilecek.",
+    "order": 4,
+    "price_try": 33600,
+    "product": "0ef633950872",
+    "validity_months": 24,
+    "vat_rate": 20
+  },
   "a26de14ac86e": {
     "billing": "yearly",
     "includes": [
