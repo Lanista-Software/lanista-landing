@@ -13,9 +13,7 @@ Bu sayfa, LANİSTA YAZILIM SANAYİ VE TİCARET LİMİTED ŞİRKETİ ("Lanista") 
 
 ## 1. Ne satıyoruz?
 
-Lanista, küçük ve yerel işletmeler için bulut tabanlı iş uygulamaları satar. Bugün satışta olan ürün **Hesap Takip**'tir.
-
-**Nalbur Takip** ve **Kasa Takip** henüz satışta değildir. Bu ürünler için ödeme alınmaz; yalnız bekleme listesine kayıt yapılır. Ürün satışa açıldığında bekleme listesindekilere haber verilir.
+Lanista, küçük ve yerel işletmeler için bulut tabanlı iş uygulamaları satar. Ürünlerimiz ve satış durumları ürün sayfalarında (lanista.com.tr/urunler/) gösterilir. "Erken erişim", "Yakında" ya da "Planlı" olarak gösterilen ürünler henüz satışta değildir. Bu ürünler için ödeme alınmaz; yalnız başvuru ya da bekleme listesi kaydı yapılır. Ürün satışa açıldığında bekleme listesindekilere haber verilir.
 
 Satıştaki paketler (KDV hariç, %20 KDV eklenir):
 
@@ -77,7 +75,7 @@ Bildirimde adınızı veya unvanınızı, sipariş tarihini ve ürün adını ya
 
 ## 6. SMS paketi
 
-- SMS paketi Hesap Takip paketlerine dahil değildir, ayrıca satılır.
+- SMS paketi ürün paketlerine dahil değildir, ayrıca satılır.
 - SMS kredisi satın alındıktan sonra hesabınıza tanımlanır. Tanımlanan SMS kredisi anında teslim edilen bir hizmettir ve MSY md.15/1-(ğ) uyarınca cayma hakkı kapsamında değildir.
 - Kredi hesabınıza tanımlanmadan önce iptal ederseniz ödediğiniz tutar iade edilir.
 - Hatırlatma SMS'leri yalnız alacak hatırlatması içindir; mesajlara reklam eklenmez.

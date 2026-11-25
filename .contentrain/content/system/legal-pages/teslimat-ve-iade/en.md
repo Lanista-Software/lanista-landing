@@ -13,9 +13,7 @@ This page explains how the software plans sold by LANİSTA YAZILIM SANAYİ VE T�
 
 ## 1. What do we sell?
 
-Lanista sells cloud-based business apps for small and local businesses. The product currently on sale is **Hesap Takip**.
-
-**Nalbur Takip** and **Kasa Takip** are not on sale yet. No payment is taken for these products; only waiting list registration is available. People on the waiting list are notified when a product goes on sale.
+Lanista sells cloud-based business apps for small and local businesses. Our products and their sales status are shown on the product pages (lanista.com.tr/en/products/). Products shown as "Early access", "Coming soon" or "Planned" are not on sale yet. No payment is taken for these products; only an application or waiting list registration is made. People on the waiting list are notified when a product goes on sale.
 
 Plans on sale (excluding VAT; 20% VAT is added):
 
@@ -77,7 +75,7 @@ It is sufficient to state your name or company name, the order date and the prod
 
 ## 6. SMS pack
 
-- The SMS pack is not included in Hesap Takip plans and is sold separately.
+- The SMS pack is not included in product plans and is sold separately.
 - SMS credit is loaded to your account after purchase. Loaded SMS credit is a service delivered instantly and, under MSY (Distance Contracts Regulation) Art. 15/1-(ğ), is not covered by the right of withdrawal.
 - If you cancel before the credit is loaded to your account, the amount you paid is refunded.
 - Reminder SMS messages are only for payment reminders; no advertising is added to the messages.
