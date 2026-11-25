@@ -47,12 +47,6 @@
     "updated_at": "2026-11-25T16:43:42.278Z",
     "updated_by": "contentrain-mcp"
   },
-  "c835feb1c15c": {
-    "source": "agent",
-    "status": "published",
-    "updated_at": "2026-11-18T14:25:18.713Z",
-    "updated_by": "contentrain-mcp"
-  },
   "ca6b13ece1fd": {
     "source": "agent",
     "status": "draft",
