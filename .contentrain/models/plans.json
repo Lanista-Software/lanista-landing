@@ -5,7 +5,7 @@
   "domain": "marketing",
   "i18n": true,
   "title_field": "name",
-  "description": "Sellable packages per product. Prices are KDV hariç, in TRY. Leave price_try empty until prices are set. Contracts, payment and subscriptions live in each product's own backend; the landing only links to checkout_url. Empty checkout_url → 'write to us to buy'. Only plans of live products are sold.",
+  "description": "Sellable packages per product (subscriptions, setup, kontör packages). Prices are KDV hariç, in TRY. Leave price_try empty until prices are set; unpriced plans are not shown as cards. Contracts, payment and subscriptions live in each product's own backend; the landing only links to checkout_url. Empty checkout_url → 'write to us to buy'. Only plans of live products are sold. Kontör packages: set credits (1 kontör = 1 belge); the card shows the per-kontör price.",
   "fields": {
     "billing": {
       "options": [
@@ -21,6 +21,11 @@
       "description": "The product's own purchase page (its backend handles contracts, payment and subscription). Empty = 'write to us to buy' button.",
       "order": 8,
       "type": "url"
+    },
+    "credits": {
+      "description": "Kontör adedi in the package (1 kontör = 1 gelen ya da giden belge). Empty for non-kontör plans.",
+      "order": 4.5,
+      "type": "integer"
     },
     "featured": {
       "order": 10,
@@ -58,6 +63,11 @@
       "order": 2,
       "required": true,
       "type": "relation"
+    },
+    "validity_months": {
+      "description": "How long the kontör stay usable, in months. Empty = not shown.",
+      "order": 4.6,
+      "type": "integer"
     },
     "vat_rate": {
       "default": 20,
