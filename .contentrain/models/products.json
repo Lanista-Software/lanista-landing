@@ -5,13 +5,19 @@
   "domain": "marketing",
   "i18n": true,
   "title_field": "name",
-  "description": "Lanista's ready-made products for local businesses (Turkish market, Turkish only). Source: docs/urunler-ve-iyzico-brief.md §3. Voice rules §8: plain shopkeeper language; never mention user management, margins, costs or customer names; planned features are 'ekleniyor', never 'eksik'. Never store demo login credentials here.",
+  "description": "Lanista's product portfolio (Turkish market): e-Dönüşüm products, sector apps for businesses and the software service. Source: docs/urun-portfoyu.md (internal table) + docs/urunler-ve-iyzico-brief.md. Voice rules §8: plain shopkeeper language; never mention user management, margins, costs or customer names; planned features are 'ekleniyor', never 'eksik'. Do not name the e-invoice provider in copy until company.einvoice_provider is set. Never store demo login credentials here.",
   "fields": {
     "desktop_screenshots": {
       "items": "image",
       "max": 8,
       "order": 14.7,
       "type": "array"
+    },
+    "einvoice_note": {
+      "description": "How the product relates to e-Fatura, shown on cards, e.g. 'e-Fatura dahil'.",
+      "max": 60,
+      "order": 6.7,
+      "type": "string"
     },
     "faq": {
       "items": {
@@ -52,6 +58,22 @@
       "order": 10,
       "type": "array"
     },
+    "featured": {
+      "description": "Shown as the large picture card in the header menu (one entry).",
+      "order": 4.5,
+      "type": "boolean"
+    },
+    "group": {
+      "description": "Menu and catalogue group.",
+      "options": [
+        "e-donusum",
+        "isletme",
+        "hizmet"
+      ],
+      "order": 2.5,
+      "required": true,
+      "type": "select"
+    },
     "hero_screenshot": {
       "description": "Phone screenshot (390×844) shown in the hero phone frame.",
       "order": 14.5,
@@ -69,8 +91,13 @@
       "required": true,
       "type": "string"
     },
+    "icon": {
+      "description": "Remixicon name for the menu, e.g. ri-file-text-line.",
+      "order": 15.5,
+      "type": "icon"
+    },
     "illustration": {
-      "description": "Ludus-style SVG for cards (docs/illustration-style.md).",
+      "description": "Ludus-style SVG for cards and the menu feature card (docs/illustration-style.md).",
       "order": 15,
       "type": "image"
     },
@@ -80,6 +107,23 @@
       "max": 12,
       "order": 18,
       "type": "array"
+    },
+    "link_to": {
+      "default": "product",
+      "description": "Where the entry's page lives. product = /urunler/{slug}/ (generated). e-donusum = the /e-donusum/ hub (Turkish only; hidden in English). services = /hizmetler/. Non-product entries get no /urunler/ page.",
+      "options": [
+        "product",
+        "e-donusum",
+        "services"
+      ],
+      "order": 2.6,
+      "type": "select"
+    },
+    "menu_text": {
+      "description": "Short line under the name in the header menu.",
+      "max": 60,
+      "order": 6.5,
+      "type": "string"
     },
     "name": {
       "label": {
@@ -92,6 +136,7 @@
       "type": "string"
     },
     "order": {
+      "description": "Sort order inside its group.",
       "order": 4,
       "type": "integer"
     },
@@ -131,8 +176,8 @@
     },
     "sector": {
       "label": {
-        "en": "Sector",
-        "tr": "Sektör"
+        "en": "Audience",
+        "tr": "Kimin için"
       },
       "max": 80,
       "order": 5,
@@ -150,14 +195,14 @@
       "type": "string"
     },
     "slug": {
-      "description": "URL: /urunler/{slug}/ — if the product is renamed, keep the old slug as a 301 redirect.",
+      "description": "URL: /urunler/{slug}/ — if the product is renamed, keep the old slug as a 301 redirect in netlify.toml.",
       "order": 2,
       "required": true,
       "type": "slug",
       "unique": true
     },
     "status": {
-      "description": "live = satışta; pilot = sahada pilot, satış yok; soon = yakında, yalnız bekleme listesi. Payment is only taken for live products.",
+      "description": "live = Yayında (satışta, demo formu); pilot = Erken erişim (seçili işletmelerle, başvuru formu, ödeme yok); soon = Yakında / Planlı (bekleme listesi, ödeme yok). Payment is only taken for live products.",
       "options": [
         "live",
         "pilot",
@@ -167,12 +212,11 @@
       "required": true,
       "type": "select"
     },
-    "tagline": {
-      "description": "One-line promise used on cards.",
-      "max": 160,
-      "order": 6,
-      "required": true,
-      "type": "text"
+    "status_note": {
+      "description": "Optional badge text that replaces the status label, e.g. 'Aralık 2026' or 'Planlı'.",
+      "max": 24,
+      "order": 3.5,
+      "type": "string"
     },
     "trust": {
       "items": {
