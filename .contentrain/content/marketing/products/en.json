@@ -1,4 +1,163 @@
 {
+  "0ef633950872": {
+    "einvoice_note": "1 credit = 1 e-document",
+    "faq": [
+      {
+        "answer": "The unit used to issue and receive e-Fatura, e-Arşiv and other e-documents. Each incoming or outgoing document uses one credit.",
+        "question": "What is a credit (kontör)?"
+      },
+      {
+        "answer": "Yes. Credits don't depend on your software; you keep using it. We'll check its e-invoice connection with you too.",
+        "question": "Does it work with my accounting software?"
+      },
+      {
+        "answer": "In December 2026. Join the waiting list to hear first when packages and prices are announced.",
+        "question": "When does it launch?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Credit packages by document volume",
+          "1 credit = 1 incoming or outgoing e-document",
+          "Low balance alerts",
+          "Top-up by phone or online",
+          "Package suggestion based on your invoice volume"
+        ],
+        "title": "Planned features"
+      }
+    ],
+    "group": "e-donusum",
+    "hero_text": "Each incoming or outgoing e-document uses one credit. Pick a package that fits your invoice volume; we'll let you know when you're running low and top you up with one call.",
+    "hero_title": "New e-invoice credits before you run out",
+    "icon": "ri-coins-line",
+    "keywords": [
+      "e-fatura kontör",
+      "e-invoice credits Turkey",
+      "kontör package"
+    ],
+    "link_to": "product",
+    "menu_text": "e-document credits, whatever software you use",
+    "name": "Lanista Credits",
+    "order": 2,
+    "pains": [
+      {
+        "pain": "When credits run out, invoicing stops",
+        "solution": "We warn you before your balance runs low, and the next package is loaded before it's empty."
+      },
+      {
+        "pain": "I don't know how many credits to buy",
+        "solution": "We look at how many documents you issue and receive each month and suggest what you need, not more."
+      },
+      {
+        "pain": "I don't want to change my accounting software",
+        "solution": "Keep working with Logo, Mikro, Zirve, DİA, Akınsoft or any other software; just buy your credits from us."
+      }
+    ],
+    "sector": "Every e-invoice user, including Logo, Mikro, Zirve, DİA and Akınsoft users",
+    "seo_description": "Credit (kontör) packages for e-Fatura and e-Arşiv in Turkey: 1 credit = 1 e-document. For Logo, Mikro, Zirve, DİA, Akınsoft users. From December 2026.",
+    "seo_title": "e-Invoice Credit Packages | Lanista Credits",
+    "slug": "kontor",
+    "status": "soon",
+    "status_note": "December 2026",
+    "tagline": "Credit (kontör) packages for e-Fatura, e-Arşiv and other e-documents. Keep your software and buy only what you need."
+  },
+  "57a440641db8": {
+    "einvoice_note": "e-Invoice included",
+    "faq": [
+      {
+        "answer": "Yes. In apps like Lanista Auto Parts, Auto Service or Hardware Store, Pre-Accounting opens as an add-on using the same accounts and invoices.",
+        "question": "Can I use it with my sector app?"
+      },
+      {
+        "answer": "No. Pre-accounting is for your day-to-day tracking; the official books stay with your accountant. You can send them the period's records as one file.",
+        "question": "Does my accountant's work change?"
+      },
+      {
+        "answer": "e-Invoicing is built in; each document uses one credit. We set the price together based on your invoice volume.",
+        "question": "Is e-invoicing charged separately?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Customer and supplier accounts",
+          "Cash and bank accounts",
+          "Collections and payments",
+          "Income and expense categories"
+        ],
+        "title": "Accounts and money"
+      },
+      {
+        "items": [
+          "Salary and advance tracking",
+          "Movements per employee"
+        ],
+        "title": "Staff"
+      },
+      {
+        "items": [
+          "e-Fatura and e-Arşiv included",
+          "Invoices post to accounts automatically"
+        ],
+        "title": "Invoicing"
+      },
+      {
+        "items": [
+          "Works on its own",
+          "Opens as an add-on in Lanista sector apps"
+        ],
+        "title": "Add-on"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Who you owe, who owes you, how much is in the till and the bank: all on one screen. Issue your invoices from the same place as e-invoices.",
+    "hero_title": "See where your business's money is, on one screen",
+    "icon": "ri-calculator-line",
+    "keywords": [
+      "pre-accounting software Turkey",
+      "small business bookkeeping app",
+      "income expense tracking app"
+    ],
+    "link_to": "product",
+    "menu_text": "Accounts, cash, bank, income and expenses in one place",
+    "name": "Lanista Pre-Accounting",
+    "order": 17,
+    "pains": [
+      {
+        "pain": "Cash, bank and receivables are in different ledgers",
+        "solution": "Accounts, cash and bank movements in one place, balances always up to date."
+      },
+      {
+        "pain": "I don't know what I earned at month end",
+        "solution": "Enter income and expenses by category and get a summary at month end."
+      },
+      {
+        "pain": "Staff advances and salaries get mixed up",
+        "solution": "Each employee's salary and advances are kept on their own card."
+      }
+    ],
+    "sector": "Small businesses and service businesses",
+    "seo_description": "Pre-accounting for small businesses in Turkey: accounts, cash and bank, income and expenses, salaries and advances, e-invoicing included.",
+    "seo_title": "Pre-Accounting Software | Lanista Pre-Accounting",
+    "slug": "on-muhasebe",
+    "status": "live",
+    "tagline": "Accounts, cash and bank, income and expenses, salaries and advances. Use it on its own or as an add-on to your sector app."
+  },
+  "66d93b136c0d": {
+    "group": "hizmet",
+    "hero_text": "Custom software, data migration from Akınsoft, Mikro or Excel, integrations, hosting in Turkey and maintenance.",
+    "hero_title": "Software and integrations built for your business",
+    "icon": "ri-code-s-slash-line",
+    "link_to": "services",
+    "menu_text": "Custom software, integration, data migration, maintenance",
+    "name": "Lanista Software services",
+    "order": 30,
+    "sector": "Businesses and institutions with specific needs",
+    "slug": "yazilim-hizmetleri",
+    "status": "live",
+    "tagline": "Where ready-made apps aren't enough: custom software, integrations between systems, data migration and hosting in Turkey."
+  },
   "69576769b108": {
     "desktop_screenshots": [
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/b5ccc5d0-e29e-46de-b958-45227a4c43f6.webp",
@@ -160,59 +319,621 @@
       }
     ]
   },
-  "f0aca951b8a9": {
-    "faq": [],
+  "6dd68e517724": {
+    "einvoice_note": "Your software's invoices go out directly",
+    "faq": [
+      {
+        "answer": "The first version is being built for Logo, followed by Mikro and DİA. If you use other software, tell us in the form; we prioritise by demand.",
+        "question": "Which software will it support?"
+      },
+      {
+        "answer": "No. Bridge runs alongside your software; your routine stays the same.",
+        "question": "Do I have to change my software?"
+      },
+      {
+        "answer": "It's in planning. Join the waiting list and we'll call you for the first installations.",
+        "question": "When will it be ready?"
+      }
+    ],
     "feature_groups": [
       {
         "items": [
-          "Sales and statements per job / job site",
-          "Recipient's name and on-phone signature",
-          "Cheque and promissory note tracking, due date reminders",
-          "Customer credit limit alerts",
-          "Online account reconciliation link",
-          "Quote → sale, bulk price updates, delivery status",
-          "Bulk customer import from Excel"
+          "Invoices from your software sent as e-invoices",
+          "Incoming invoices imported as purchases",
+          "Customer and stock card matching",
+          "Logo first, then Mikro and DİA",
+          "Setup and monitoring by us"
         ],
         "title": "Planned features"
       }
     ],
-    "hero_text": "Keep credit sales, deliveries and due dates in one place. It reminds you of receivables and cheques coming due, and reminds your customers by SMS.",
+    "group": "e-donusum",
+    "hero_text": "Issue invoices in your accounting software as usual and let them go out as e-invoices automatically. Incoming invoices land in your software as purchase records, with no manual entry.",
+    "hero_title": "e-Invoicing without leaving your software",
+    "icon": "ri-links-line",
+    "keywords": [
+      "logo e-invoice integration",
+      "mikro e-fatura integration",
+      "ERP e-invoice connector Turkey"
+    ],
+    "link_to": "product",
+    "menu_text": "Connects your accounting software to e-invoicing",
+    "name": "Lanista Bridge",
+    "order": 3,
+    "pains": [
+      {
+        "pain": "We enter invoices twice: in our software and on the e-invoice portal",
+        "solution": "Invoices from your software are sent as e-invoices automatically; no double entry."
+      },
+      {
+        "pain": "We key in incoming invoices one by one",
+        "solution": "Incoming invoices are imported as purchase records; you only check and approve."
+      },
+      {
+        "pain": "My software's e-invoice connector is expensive or missing",
+        "solution": "We set up the connection: Logo first, then Mikro and DİA."
+      }
+    ],
+    "sector": "Businesses that run everything in their accounting software (ERP)",
+    "seo_description": "Let invoices from your accounting software go out as e-invoices and incoming invoices land as purchases. Logo first, then Mikro and DİA.",
+    "seo_title": "Logo, Mikro, DİA e-Invoice Connector | Lanista Bridge",
+    "slug": "kopru",
+    "status": "soon",
+    "status_note": "Planned",
+    "tagline": "Invoices you issue in your accounting software go out as e-invoices directly; incoming invoices land in your software as purchases."
+  },
+  "8031ca13766d": {
+    "einvoice_note": "Rent and commission invoices included",
+    "faq": [
+      {
+        "answer": "The e-invoice threshold for businesses buying, selling, renting or brokering real estate is lower than the general one. We check your case together with your accountant.",
+        "question": "Do estate agents have to use e-invoicing?"
+      },
+      {
+        "answer": "The app is being developed with selected estate agents. Apply and we'll call you for setup when your turn comes.",
+        "question": "What does early access mean?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Property cards",
+          "Tenant and owner accounts",
+          "Contract dates"
+        ],
+        "title": "Properties and tenants"
+      },
+      {
+        "items": [
+          "Rent due date tracking",
+          "Rent reminders by SMS",
+          "Payment entry"
+        ],
+        "title": "Rent"
+      },
+      {
+        "items": [
+          "Commission invoices",
+          "Rent invoices",
+          "e-Fatura and e-Arşiv"
+        ],
+        "title": "Invoicing"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Record the property and tenant once; a reminder goes out when rent is due, and payments post to the account. Issue commission and rent invoices from the same place.",
+    "hero_title": "Let rent tracking run itself",
+    "icon": "ri-building-2-line",
+    "keywords": [
+      "rent tracking app",
+      "estate agent software Turkey",
+      "tenant management app"
+    ],
+    "link_to": "product",
+    "menu_text": "Property and tenant accounts, rent reminders",
+    "name": "Lanista Real Estate",
+    "order": 14,
+    "pains": [
+      {
+        "pain": "Hard to track which tenant is late",
+        "solution": "Rent due dates in one list; late in red, upcoming in yellow."
+      },
+      {
+        "pain": "I call tenants one by one to remind them",
+        "solution": "A reminder SMS goes out before rent day, on your behalf."
+      },
+      {
+        "pain": "Commission and rent invoices are issued in different places",
+        "solution": "Commission and rent invoices are issued from the property and tenant record in one tap."
+      }
+    ],
+    "sector": "Estate agents and businesses with rental income",
+    "seo_description": "For estate agents and landlords in Turkey: property and tenant accounts, rent due dates, SMS reminders, commission and rent invoices.",
+    "seo_title": "Rent Tracking Software | Lanista Real Estate",
+    "slug": "emlak",
+    "status": "pilot",
+    "tagline": "Properties, tenants and rent due dates in one place. Reminder SMS before rent is due; commission and rent invoices from the same place."
+  },
+  "82c0e7529204": {
+    "einvoice_note": "e-Invoice included, bulk invoicing",
+    "faq": [
+      {
+        "answer": "The app is being developed with selected wholesalers. Apply and we'll call you for setup when your turn comes.",
+        "question": "What does early access mean?"
+      },
+      {
+        "answer": "Yes. We import your product and price list from Excel together during setup.",
+        "question": "Can I import my product list?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Dealer and retail price lists",
+          "Bulk price updates"
+        ],
+        "title": "Pricing"
+      },
+      {
+        "items": [
+          "Foreign-currency purchases",
+          "Warehouse stock",
+          "Low stock alerts"
+        ],
+        "title": "Purchasing and stock"
+      },
+      {
+        "items": [
+          "Customer accounts and terms",
+          "e-Invoice included",
+          "Bulk invoicing"
+        ],
+        "title": "Sales and invoicing"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Its own price list for each customer group, current cost on foreign-currency purchases, and what's left in the warehouse always in view. Issue month-end invoices in bulk.",
+    "hero_title": "Dealer prices, stock and invoices in one place",
+    "icon": "ri-truck-line",
+    "keywords": [
+      "wholesale software Turkey",
+      "distributor management app",
+      "dealer price list software"
+    ],
+    "link_to": "product",
+    "menu_text": "Dealer price lists, foreign-currency purchases, stock",
+    "name": "Lanista Wholesale",
+    "order": 16,
+    "pains": [
+      {
+        "pain": "Different prices for dealers and retail get mixed up",
+        "solution": "Price lists by customer group; the right price fills in at sale."
+      },
+      {
+        "pain": "I can't track cost on foreign-currency purchases",
+        "solution": "Record purchases in their currency and see cost at the current rate."
+      },
+      {
+        "pain": "We find out what's in stock by counting",
+        "solution": "Stock updates with every purchase and sale; low stock alerts come in."
+      }
+    ],
+    "sector": "Wholesalers and distributors",
+    "seo_description": "For wholesalers and distributors in Turkey: dealer and retail price lists, foreign-currency purchases, warehouse stock, accounts and bulk e-invoicing.",
+    "seo_title": "Wholesale Software | Lanista Wholesale",
+    "slug": "toptan-satis",
+    "status": "pilot",
+    "tagline": "One price for dealers, another for retail. Foreign-currency purchases, warehouse stock and month-end bulk invoicing in one place."
+  },
+  "97e82b9e0206": {
+    "einvoice_note": "The migration itself",
+    "group": "e-donusum",
+    "hero_text": "From the application to your first invoice, we guide your switch to e-Fatura, e-Arşiv and e-Defter.",
+    "hero_title": "We set up your e-invoicing switch alongside you",
+    "icon": "ri-arrow-left-right-line",
+    "link_to": "e-donusum",
+    "menu_text": "From application to first invoice, on site in Van",
+    "name": "e-Transformation migration service",
+    "order": 4,
+    "sector": "Businesses new to e-invoicing or changing integrator",
+    "slug": "e-donusum-gecis",
+    "status": "live",
+    "tagline": "We run your switch to e-invoicing or change of integrator end to end: application, series and labels, moving your old archive, training."
+  },
+  "ca6b13ece1fd": {
+    "einvoice_note": "With Lanista Auto Parts or e-Invoice",
+    "faq": [
+      {
+        "answer": "A label printer is fastest, but you can also print on label sheets from a regular printer. We choose what suits you during setup.",
+        "question": "Do I need a special label printer?"
+      },
+      {
+        "answer": "Tyre Hotel is for storage tracking. Use it with Lanista Auto Parts for sales and accounts, and with Lanista e-Invoice for invoices.",
+        "question": "Does it handle sales and invoices?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Storage record by plate",
+          "Tyre size, brand and tread condition",
+          "Drop-off and pick-up"
+        ],
+        "title": "Storage"
+      },
+      {
+        "items": [
+          "QR label printing",
+          "Storeroom and rack setup",
+          "Rack occupancy"
+        ],
+        "title": "Labels and storeroom"
+      },
+      {
+        "items": [
+          "Lanista Auto Parts for sales and accounts",
+          "Lanista e-Invoice for invoicing"
+        ],
+        "title": "Use together with"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Record tyres by plate when you take them in, print and stick the QR label, choose the rack. When the season changes, find whose tyres are where with one scan.",
+    "hero_title": "No more hunting for stored tyres",
+    "icon": "ri-steering-2-line",
+    "keywords": [
+      "tyre hotel software",
+      "tyre storage tracking app",
+      "tyre shop software"
+    ],
+    "link_to": "product",
+    "menu_text": "Stored tyres, labels and QR, rack tracking",
+    "name": "Lanista Tyre Hotel",
+    "order": 12,
+    "pains": [
+      {
+        "pain": "We search the storeroom at every season change",
+        "solution": "Every set's rack is recorded; scan the QR label or type the plate to see where it is."
+      },
+      {
+        "pain": "It's unclear whose tyres are whose",
+        "solution": "Plate, customer and tyre details are recorded at drop-off; every set carries a label."
+      },
+      {
+        "pain": "I don't know how much space is left",
+        "solution": "Storeroom and rack occupancy in one list; the app shows you an empty rack."
+      }
+    ],
+    "sector": "Tyre shops",
+    "seo_description": "Tyre hotel software for tyre shops: storage by plate, QR labels, storeroom and rack tracking. Find any set of tyres with one scan at season change.",
+    "seo_title": "Tyre Hotel Software | Lanista Tyre Hotel",
+    "slug": "lastik-oteli",
+    "status": "live",
+    "tagline": "Which rack a stored set of tyres is on, who it belongs to and when it's due to be fitted, always in front of you."
+  },
+  "d27d01aaf36b": {
+    "einvoice_note": "Vehicle sale invoices included",
+    "faq": [
+      {
+        "answer": "The e-invoice threshold for businesses buying, selling or renting motor vehicles is lower than the general one. We check your case together with your accountant.",
+        "question": "Do car dealers have to use e-invoicing?"
+      },
+      {
+        "answer": "The app is being developed with selected dealers. Apply and we'll call you for setup when your turn comes.",
+        "question": "What does early access mean?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Vehicle card: plate, chassis, model, mileage",
+          "Purchase and cost records",
+          "Profit per vehicle"
+        ],
+        "title": "Vehicles"
+      },
+      {
+        "items": [
+          "Sales and payments",
+          "Rentals and payment plans",
+          "Customer accounts"
+        ],
+        "title": "Sales and rentals"
+      },
+      {
+        "items": [
+          "e-Fatura and e-Arşiv",
+          "Used car (special base) invoices"
+        ],
+        "title": "Invoicing"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Record each car by plate and chassis number, add its purchase and costs, and issue the invoice when you sell. Payments for rented cars are in the same place.",
+    "hero_title": "Every car's numbers on one card",
+    "icon": "ri-car-line",
+    "keywords": [
+      "car dealer software Turkey",
+      "used car dealer app",
+      "car rental software"
+    ],
+    "link_to": "product",
+    "menu_text": "Vehicle cards, buying and selling, rentals and payments",
+    "name": "Lanista Car Dealer",
+    "order": 13,
+    "pains": [
+      {
+        "pain": "I don't know what I made on a car",
+        "solution": "Purchase, inspection, repairs and other costs are collected on the vehicle card; profit shows at sale."
+      },
+      {
+        "pain": "Used car invoices are complicated",
+        "solution": "The special-base invoice for used car sales is built in."
+      },
+      {
+        "pain": "Rental payments are hard to track",
+        "solution": "A payment plan per rental; late payments show in red."
+      }
+    ],
+    "sector": "Used car dealers and car rental businesses",
+    "seo_description": "For used car dealers and rentals in Turkey: vehicle cards, buying and selling, costs and profit, rental payments and special-base vehicle invoices.",
+    "seo_title": "Car Dealer Software | Lanista Car Dealer",
+    "slug": "oto-galeri",
+    "status": "pilot",
+    "tagline": "Purchase, costs, sale and profit of every car on one card. Contracts and payment tracking for rentals."
+  },
+  "d64d9430d051": {
+    "einvoice_note": "e-Fatura and e-Arşiv",
+    "faq": [
+      {
+        "answer": "As a general rule, businesses with annual gross sales of 3 million TL or more must switch from 1 July of the following year. Some sectors have a lower threshold. Send us last year's turnover and we'll check your case together.",
+        "question": "Do I have to switch to e-invoicing?"
+      },
+      {
+        "answer": "No. Your invoices are issued and stored on a GİB-approved private integrator's infrastructure. The app, setup, application, training and support come from us.",
+        "question": "Is Lanista a private integrator?"
+      },
+      {
+        "answer": "Each incoming or outgoing e-document uses one credit. We pick the right package together based on how many invoices you issue and receive each month.",
+        "question": "What is a credit (kontör) and how many do I need?"
+      },
+      {
+        "answer": "Yes, the GİB application requires one. We complete it with you during setup.",
+        "question": "Do I need an e-signature or financial seal?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "e-Fatura and e-Arşiv invoices",
+          "Bulk invoicing",
+          "Cancellation and return invoices",
+          "Invoices with withholding (tevkifat)",
+          "Invoice template with your logo"
+        ],
+        "title": "Invoicing"
+      },
+      {
+        "items": [
+          "All incoming invoices in one list",
+          "Accept and reject, deadline alerts",
+          "Download and share as PDF"
+        ],
+        "title": "Incoming invoices"
+      },
+      {
+        "items": [
+          "Customer accounts and balances",
+          "Payment entry",
+          "Invoice and balance notifications by SMS"
+        ],
+        "title": "Accounts and payments"
+      },
+      {
+        "items": [
+          "Period invoices exported as one file",
+          "Access for your accountant"
+        ],
+        "title": "Accountant"
+      }
+    ],
+    "featured": true,
+    "group": "e-donusum",
+    "hero_text": "Issue e-Fatura and e-Arşiv invoices in a few taps, accept or reject incoming invoices and track payments. We handle setup, the application and training.",
+    "hero_title": "Issue e-invoices from your phone, no software needed",
+    "icon": "ri-file-text-line",
+    "keywords": [
+      "e-invoice app Turkey",
+      "e-fatura software",
+      "e-arşiv invoice app",
+      "small business e-invoicing Turkey"
+    ],
+    "link_to": "product",
+    "menu_text": "e-Fatura and e-Arşiv without accounting software",
+    "name": "Lanista e-Invoice",
+    "order": 1,
+    "pains": [
+      {
+        "pain": "I have to switch to e-invoicing but I don't use accounting software",
+        "solution": "Lanista e-Invoice works on its own. No accounting package to buy, nothing to install."
+      },
+      {
+        "pain": "Issuing invoices one by one at month end takes hours",
+        "solution": "Issue invoices to recurring customers in bulk; saved customers and items come up as suggestions."
+      },
+      {
+        "pain": "I miss the deadline to accept or reject incoming invoices",
+        "solution": "Incoming invoices in one list, with the time left to respond and a notification before it runs out."
+      },
+      {
+        "pain": "I carry paperwork to my accountant every month",
+        "solution": "Send the period's invoices to your accountant as one file, or give them direct access."
+      }
+    ],
+    "sector": "Small businesses that must switch to e-invoicing and only need to issue invoices",
+    "seo_description": "e-Fatura and e-Arşiv for small businesses in Turkey without accounting software: bulk invoices, incoming invoice approval, withholding, accounts and payments.",
+    "seo_title": "Lanista e-Invoice | e-Fatura without accounting software",
+    "slug": "e-fatura",
+    "status": "live",
+    "tagline": "Crossed the 3 million TL threshold? You don't need full accounting software. Issue e-invoices from your phone or computer."
+  },
+  "f0aca951b8a9": {
+    "einvoice_note": "e-Invoice included",
+    "faq": [
+      {
+        "answer": "The app is being developed with selected hardware stores. Apply and we'll call you for setup when your turn comes.",
+        "question": "What does early access mean?"
+      },
+      {
+        "answer": "Yes. We import your product, price and customer lists from Excel together during setup.",
+        "question": "Can I import my product and customer lists?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Sell by metre, kilo and piece",
+          "Stock tracking",
+          "Price list and bulk price updates",
+          "Quote → sale"
+        ],
+        "title": "Sales and stock"
+      },
+      {
+        "items": [
+          "Tradesperson and job site accounts",
+          "Statements per job site",
+          "Recipient's name and on-phone signature",
+          "Customer credit limit alerts"
+        ],
+        "title": "Tradespeople and job sites"
+      },
+      {
+        "items": [
+          "Cheque and promissory note tracking, due date reminders",
+          "Debt reminders by SMS",
+          "e-Invoice included"
+        ],
+        "title": "Due dates and invoicing"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Enter sales by the metre, kilo or piece on one screen and stock updates itself. Tradesperson and job site accounts, delivery signatures and due dates in one place.",
     "hero_title": "Contractor accounts, job site by job site",
+    "icon": "ri-hammer-line",
     "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/76480d5b-2357-4dff-9760-87481b46dddc.svg",
     "keywords": [
-      "hardware store management app",
-      "building supplies credit sales app",
-      "contractor account tracking app",
-      "job site statement software",
-      "cheque and promissory note tracking app"
+      "hardware store software Turkey",
+      "building supplies app",
+      "contractor account tracking app"
     ],
-    "name": "Nalbur Takip",
-    "order": 2,
+    "link_to": "product",
+    "menu_text": "Sell by metre, kilo or piece; contractor accounts",
+    "name": "Lanista Hardware Store",
+    "order": 15,
     "pains": [
       {
         "pain": "At month end, it's unclear what went to which job site",
-        "solution": "Sales are kept per job and job site; statements come out site by site."
+        "solution": "Sales are kept per tradesperson and job site; statements come out site by site."
       },
       {
         "pain": "\"We never received that\" arguments",
         "solution": "The recipient's name and on-phone signature are recorded with the sale."
       },
       {
-        "pain": "Cheque and promissory note due dates slip by",
-        "solution": "Cheque and promissory note tracking; reminders for cheques coming due."
+        "pain": "Bags, kilos, metres… units get mixed up",
+        "solution": "Sell by piece, bag, kg, tonne, m, m², m³ with decimal quantities."
       },
       {
-        "pain": "Bags, tonnes, cubic metres… units get mixed up",
-        "solution": "Bag, kg, tonne, m, m², m³ units and decimal quantities."
+        "pain": "Shelf prices and till prices don't match",
+        "solution": "One price list; bulk price updates apply to sales immediately."
       }
     ],
-    "roadmap": [],
-    "sector": "Hardware stores, tool shops and building material suppliers",
-    "seo_description": "Credit sales, job site statements, delivery signatures and cheque tracking for hardware and building supply stores. Coming soon; join the waiting list.",
-    "seo_title": "Nalbur Takip | Hardware Store App (Coming Soon)",
-    "slug": "nalbur-takip",
-    "status": "soon",
-    "tagline": "Tradesperson and contractor accounts, job site by job site; who received what is recorded with a signature.",
-    "trust": []
+    "sector": "Hardware stores, tool shops and building supply stores",
+    "seo_description": "For hardware and building supply stores in Turkey: sell by metre, kilo or piece, stock, price lists, contractor accounts, delivery signatures and e-invoicing.",
+    "seo_title": "Hardware Store Software | Lanista Hardware Store",
+    "slug": "nalbur",
+    "status": "pilot",
+    "tagline": "Sell by the metre, kilo or piece, with stock and price lists. Tradesperson and contractor accounts site by site, with signed deliveries."
+  },
+  "f8e9fe4817b0": {
+    "einvoice_note": "e-Invoice included, withholding invoices",
+    "faq": [
+      {
+        "answer": "The app is being developed in the field with selected workshops. Apply and we'll call you to set it up for your business when your turn comes.",
+        "question": "What does early access mean?"
+      },
+      {
+        "answer": "Yes. Parts on the work order become sales; if you also sell spare parts, you can work from the same accounts as Lanista Auto Parts.",
+        "question": "I also sell parts. Does that work?"
+      },
+      {
+        "answer": "Jobs subject to withholding are invoiced with withholding. We set up the rates with your accountant during setup.",
+        "question": "How is withholding handled for corporate jobs?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Check-in by licence plate",
+          "Work orders: parts and labour",
+          "Sale and payment on delivery",
+          "Service history by plate"
+        ],
+        "title": "Workshop"
+      },
+      {
+        "items": [
+          "e-Invoice included",
+          "Period invoices for corporate and fleet customers",
+          "Invoices with withholding (tevkifat)"
+        ],
+        "title": "Invoicing and corporate work"
+      },
+      {
+        "items": [
+          "Service reminder SMS",
+          "Customer and vehicle accounts"
+        ],
+        "title": "Customers"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Type the plate and the car's history appears. Add parts and labour to the work order and invoice on delivery. Period invoices and withholding are ready for corporate and fleet work.",
+    "hero_title": "From check-in to delivery, the workshop on one screen",
+    "icon": "ri-tools-line",
+    "keywords": [
+      "car repair shop software Turkey",
+      "workshop management app",
+      "work order software"
+    ],
+    "link_to": "product",
+    "menu_text": "Check-in by plate, work orders, service reminders",
+    "name": "Lanista Auto Service",
+    "order": 11,
+    "pains": [
+      {
+        "pain": "What was done to which car gets lost on paper",
+        "solution": "History by plate: which part was fitted and which labour was done, on which date."
+      },
+      {
+        "pain": "Work orders and invoices don't match",
+        "solution": "Parts and labour on the work order turn into the sale on delivery; the invoice comes from the same record."
+      },
+      {
+        "pain": "Corporate and fleet invoices pile up at month end",
+        "solution": "Collect the period's jobs on one period invoice; withholding invoices are ready."
+      },
+      {
+        "pain": "Customers forget when their service is due",
+        "solution": "Service reminders go out by SMS based on mileage or date."
+      }
+    ],
+    "sector": "Car repair shops, including fleet and corporate work",
+    "seo_description": "For car repair shops in Turkey: check-in by plate, work orders, sale on delivery, service reminders and e-invoicing. Period invoices and withholding for fleets.",
+    "seo_title": "Car Repair Shop Software | Lanista Auto Service",
+    "slug": "oto-servis",
+    "status": "pilot",
+    "tagline": "Check cars in by plate, open a work order, close the sale on delivery. Customers due for a service get a reminder."
   }
 }
