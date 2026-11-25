@@ -1,24 +1,18 @@
 {
   "lastOperation": {
     "entries": [
-      "a1c0f7e20001",
-      "a1c0f7e20002",
-      "a1c0f7e20003",
-      "a1c0f7e20004",
-      "a1c0f7e20001",
-      "a1c0f7e20002",
-      "a1c0f7e20003",
-      "a1c0f7e20004"
+      "tr",
+      "en"
     ],
     "locale": "tr",
-    "model": "plans",
+    "model": "ui",
     "source": "mcp-local",
-    "timestamp": "2026-11-25T16:53:06.570Z",
+    "timestamp": "2026-11-25T16:54:46.808Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 268,
-    "lastSync": "2026-11-25T16:53:06.570Z",
+    "lastSync": "2026-11-25T16:54:46.808Z",
     "locales": [
       "tr",
       "en"
