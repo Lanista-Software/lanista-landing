@@ -19,7 +19,19 @@ Resmi unvanımız LANİSTA YAZILIM SANAYİ VE TİCARET LİMİTED ŞİRKETİ'dir.
 
 Pek çok esnaf işini hâlâ defterle ya da Excel'le yürütüyor. Kimin ne kadar borcu olduğu karışıyor, vadesi geçen alacak unutuluyor, hatırlatma telefonu açmak tatsız geliyor. Biz bu işletmeler için, telefondan çalışan, sade ve sektöre özel uygulamalar yapıyoruz.
 
-**Hesap Takip** (satışta) — Oto yedek parça ve sanayi esnafı için veresiye ve cari takip uygulaması. Satış 20–30 saniyede girilir. Tahsilat, iade ve vade takip edilir. Vadesi geçen alacak her sabah telefonunuza gelir. İsterseniz müşterinize hatırlatma SMS'ini sistem gönderir. Ekstre WhatsApp'tan gönderilir. Plakaya göre geçmiş tek dokunuşla açılır.
+#### e-Dönüşüm
+
+**Lanista e-Fatura** (satışta) — Muhasebe programı olmadan e-Fatura ve e-Arşiv. Sektör uygulamalarına modül olarak da eklenir.
+
+**Lanista Kontör** (Aralık 2026) — e-Belge kontör paketleri.
+
+**Lanista Köprü** (planlı) — Muhasebe programı ile e-Fatura arasında bağlantı.
+
+**e-Dönüşüm geçiş hizmeti** — Başvurudan ilk faturaya kurulum.
+
+#### İşletme uygulamaları
+
+**Lanista Yedek Parça** (satışta) — Oto yedek parça ve sanayi esnafı için veresiye ve cari takip uygulaması. Satış 20–30 saniyede girilir. Tahsilat, iade ve vade takip edilir. Vadesi geçen alacak her sabah telefonunuza gelir. İsterseniz müşterinize hatırlatma SMS'ini sistem gönderir. Ekstre WhatsApp'tan gönderilir. Plakaya göre geçmiş tek dokunuşla açılır.
 
 - Yıllık Paket: 15.000 TL + KDV / yıl
 - Kurulum + 1 yıl kullanım: 25.000 TL + KDV; ikinci yıldan itibaren 7.500 TL + KDV / yıl
@@ -27,11 +39,13 @@ Pek çok esnaf işini hâlâ defterle ya da Excel'le yürütüyor. Kimin ne kada
 
 Paketler kendiliğinden yenilenmez. Süre bitmeden hatırlatırız; devam etmek isterseniz yeniden ödersiniz.
 
-**Nalbur Takip** (yakında) — Nalbur, hırdavat ve inşaat malzemecileri için. Şantiye bazında satış ve ekstre, teslim alanın imzası, çek ve senet takibi.
+**Lanista Lastik Oteli** (satışta) — Emanet lastik, QR etiket, raf takibi.
 
-**Kasa Takip** (pilotta) — Büfe, kafe ve küçük restoranlar için günlük kasa defteri. Kanal kanal ciro, platform kesintisi, giderler ve gerçek kâr.
+**Lanista Ön Muhasebe** (Aralık 2026) — Cari, kasa ve banka, gelir-gider.
 
-Yakında ve pilotta olan ürünler için ödeme almıyoruz. Bu ürünlerin bekleme listesine katılabilir, satışa açıldığında ilk siz haberdar olabilirsiniz.
+**Lanista Oto Servis, Oto Galeri, Emlak, Nalbur ve Toptan Satış** (erken erişim) — Seçili işletmelerle birlikte geliştiriliyor.
+
+Erken erişimdeki ve yakında açılacak ürünler için ödeme alınmaz; başvuru ya da bekleme listesi kaydı yapılır.
 
 Tüm uygulamalarımız aynı temele dayanır:
 
@@ -57,7 +71,7 @@ Hazır ürünlerimizi yapan ekip, yıllardır şirketler ve girişimler için we
 - **Popile**, **Wordify** ve **DXP 360** — Performans iyileştirmesi, site yenileme ve teklif portalı projeleri.
 - **LUI Vue** — Tüm projelerimizde kullandığımız açık kaynak arayüz bileşen kütüphanesi.
 
-Hesap Takip bugün Van'da oto yedek parça işletmelerinde kullanılıyor. Müşterilerimizin izni olmadan adlarını paylaşmıyoruz.
+Lanista Yedek Parça bugün Van'da oto yedek parça işletmelerinde kullanılıyor. Müşterilerimizin izni olmadan adlarını paylaşmıyoruz.
 
 ## Ekibimiz
 

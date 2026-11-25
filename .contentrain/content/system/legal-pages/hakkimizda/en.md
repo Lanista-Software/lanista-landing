@@ -19,7 +19,19 @@ Our registered legal name is LANİSTA YAZILIM SANAYİ VE TİCARET LİMİTED Şİ
 
 Many small businesses still run on a paper ledger or an Excel sheet. It gets hard to keep track of who owes what, overdue payments are forgotten, and calling customers to remind them is awkward. For these businesses we build simple, sector-specific apps that run on a phone.
 
-**Hesap Takip** (on sale) — A credit sales and customer account app for auto parts shops and repair-district businesses. A sale is entered in 20–30 seconds. Payments, returns and due dates are tracked. Overdue receivables show up on your phone every morning. If you wish, the system sends reminder SMS messages to your customers. Statements are sent over WhatsApp. A vehicle's history opens with one tap by licence plate.
+#### e-Transformation
+
+**Lanista e-Invoice** (on sale) — e-Fatura and e-Arşiv without accounting software. It can also be added to our sector apps as a module.
+
+**Lanista Credits** (December 2026) — Credit packs for e-documents.
+
+**Lanista Bridge** (planned) — A link between your accounting software and e-invoicing.
+
+**e-Transformation migration service** — Setup from the application to your first invoice.
+
+#### Business apps
+
+**Lanista Auto Parts** (on sale) — A credit sales and customer account app for auto parts shops and repair-district businesses. A sale is entered in 20–30 seconds. Payments, returns and due dates are tracked. Overdue receivables show up on your phone every morning. If you wish, the system sends reminder SMS messages to your customers. Statements are sent over WhatsApp. A vehicle's history opens with one tap by licence plate.
 
 - Annual Plan: TRY 15,000 + VAT / year
 - Setup + 1 year of use: TRY 25,000 + VAT; from the second year, TRY 7,500 + VAT / year
@@ -27,11 +39,13 @@ Many small businesses still run on a paper ledger or an Excel sheet. It gets har
 
 Plans do not renew automatically. We remind you before your term ends; if you want to continue, you simply pay again.
 
-**Nalbur Takip** (coming soon) — For hardware stores, tool shops and building material suppliers. Sales and statements per job site, recipient signatures on delivery, and cheque and promissory note tracking.
+**Lanista Tyre Hotel** (on sale) — Stored tyres, QR labels and rack tracking.
 
-**Kasa Takip** (in pilot) — A daily cash book for kiosks, cafés and small restaurants. Revenue by sales channel, platform commissions, expenses and real profit.
+**Lanista Pre-Accounting** (December 2026) — Customer accounts, cash and bank, income and expenses.
 
-We do not take payment for products that are coming soon or in pilot. You can join the waiting list for these products and be the first to hear when they go on sale.
+**Lanista Auto Service, Car Dealer, Real Estate, Hardware Store and Wholesale** (early access) — Being developed together with selected businesses.
+
+No payment is taken for products in early access or coming soon; you can apply or join the waiting list instead.
 
 All our apps are built on the same foundation:
 
@@ -57,7 +71,7 @@ The team behind our ready-made products has spent years building web and mobile 
 - **Popile**, **Wordify** and **DXP 360** — Performance optimisation, website redesign and quotation portal projects.
 - **LUI Vue** — The open-source UI component library we use across all our projects.
 
-Hesap Takip is in use today at auto parts businesses in Van. We do not share our customers' names without their permission.
+Lanista Auto Parts is in use today at auto parts businesses in Van. We do not share our customers' names without their permission.
 
 ## Our team
 
