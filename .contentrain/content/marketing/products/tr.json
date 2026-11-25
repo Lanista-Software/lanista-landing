@@ -70,10 +70,10 @@
     "tagline": "e-Fatura, e-Arşiv ve diğer e-belgeler için kontör paketleri. Kullandığınız programı değiştirmeden, ihtiyacınız kadar alın."
   },
   "57a440641db8": {
-    "einvoice_note": "e-Fatura dahil",
+    "einvoice_note": "e-Fatura modülü eklenebilir",
     "faq": [
       {
-        "answer": "Evet. Lanista Yedek Parça, Oto Servis, Nalbur gibi uygulamalarda Ön Muhasebe eklenti olarak açılır; aynı cariler ve aynı faturalar üzerinden çalışırsınız.",
+        "answer": "Evet. Lanista Yedek Parça, Oto Servis, Nalbur gibi uygulamalarda Ön Muhasebe modül olarak açılır; aynı cariler ve aynı faturalar üzerinden çalışırsınız.",
         "question": "Sektör uygulamamla birlikte kullanabilir miyim?"
       },
       {
@@ -81,8 +81,12 @@
         "question": "Mali müşavirimin işi değişir mi?"
       },
       {
-        "answer": "e-Fatura uygulamanın içindedir; her belge bir kontör kullanır. Fiyatı fatura sayınıza göre birlikte belirleriz.",
+        "answer": "e-Fatura satın alırken eklenen bir modüldür; her belge kontör kullanır. Fiyatını fatura sayınıza göre birlikte belirleriz.",
         "question": "e-Fatura için ayrı ücret var mı?"
+      },
+      {
+        "answer": "Aralık 2026 başında. Bekleme listesine yazılın, açıldığında ilk siz öğrenin.",
+        "question": "Ne zaman kullanıma açılıyor?"
       }
     ],
     "feature_groups": [
@@ -104,7 +108,7 @@
       },
       {
         "items": [
-          "e-Fatura ve e-Arşiv dahil",
+          "e-Fatura modülü: satın alırken eklenir",
           "Faturadan cariye otomatik kayıt"
         ],
         "title": "Fatura"
@@ -112,13 +116,13 @@
       {
         "items": [
           "Tek başına kullanılır",
-          "Lanista sektör uygulamalarına eklenti olarak açılır"
+          "Lanista sektör uygulamalarına modül olarak açılır"
         ],
-        "title": "Eklenti"
+        "title": "Modül"
       }
     ],
     "group": "isletme",
-    "hero_text": "Kime ne borcunuz var, kimden ne alacağınız var, kasada ve bankada ne kadar para duruyor: hepsi tek ekranda. Faturanızı da aynı yerden e-Fatura olarak kesin.",
+    "hero_text": "Kime ne borcunuz var, kimden ne alacağınız var, kasada ve bankada ne kadar para duruyor: hepsi tek ekranda. e-Fatura modülüyle faturanızı da aynı yerden kesin.",
     "hero_title": "İşletmenizin parası nerede, tek ekranda görün",
     "icon": "ri-calculator-line",
     "keywords": [
@@ -128,6 +132,7 @@
       "kasa takip programı",
       "küçük işletme muhasebe"
     ],
+    "launch_date": "2026-12-01",
     "link_to": "product",
     "menu_text": "Cari, kasa, banka, gelir-gider tek yerde",
     "name": "Lanista Ön Muhasebe",
@@ -147,11 +152,12 @@
       }
     ],
     "sector": "Küçük işletmeler ve hizmet işletmeleri",
-    "seo_description": "Küçük işletmeler için ön muhasebe: cari, kasa ve banka, gelir-gider, maaş ve avans takibi, e-Fatura dahil. Tek başına ya da sektör uygulamanıza eklenti.",
+    "seo_description": "Küçük işletmeler için ön muhasebe: cari, kasa ve banka, gelir-gider, maaş ve avans takibi. e-Fatura modülü eklenebilir. Tek başına ya da modül olarak.",
     "seo_title": "Ön Muhasebe Programı | Lanista Ön Muhasebe",
     "slug": "on-muhasebe",
-    "status": "live",
-    "tagline": "Cari, kasa ve banka, gelir ve gider, maaş ve avans. Tek başına ya da sektör uygulamanıza eklenti olarak açılır."
+    "status": "soon",
+    "status_note": "Aralık 2026",
+    "tagline": "Cari, kasa ve banka, gelir ve gider, maaş ve avans. Tek başına ya da sektör uygulamanıza modül olarak açılır."
   },
   "66d93b136c0d": {
     "group": "hizmet",
@@ -175,7 +181,7 @@
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a08f83bf-a859-4340-9ed9-f1db4324a73d.webp",
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/2fb61526-8840-46b6-9e7f-c3ee71349b05.webp"
     ],
-    "einvoice_note": "Lanista e-Fatura ile birlikte",
+    "einvoice_note": "e-Fatura modülü eklenebilir",
     "faq": [
       {
         "answer": "Hayır. Lanista Yedek Parça telefonun tarayıcısından açılır ve ana ekrana uygulama gibi eklenir. Dükkândaki bilgisayar ya da tabletten de aynı hesapla girebilirsiniz.",
@@ -281,7 +287,6 @@
       }
     ],
     "roadmap": [
-      "e-Fatura ve e-Arşiv bağlantısı",
       "SMS bakiye ve kota takibi",
       "OEM numaralı parça sözlüğü",
       "Distribütör fiyat listesi içe aktarma"
@@ -399,7 +404,7 @@
     "tagline": "Muhasebe programınızdan kestiğiniz fatura doğrudan e-Fatura olarak gider; gelen fatura programınıza alış olarak düşer."
   },
   "8031ca13766d": {
-    "einvoice_note": "Kira ve komisyon faturası dahil",
+    "einvoice_note": "e-Fatura modülü eklenebilir",
     "faq": [
       {
         "answer": "Gayrimenkul alım, satım ya da kiralaması yapanlar ve aracılık edenler için e-Fatura sınırı genel sınırdan düşüktür. Güncel sınırlar rehberimizde; durumunuzu mali müşavirinizle birlikte kontrol ederiz.",
@@ -431,7 +436,7 @@
         "items": [
           "Komisyon faturası",
           "Kira faturası",
-          "e-Fatura ve e-Arşiv"
+          "e-Fatura modülü: satın alırken eklenir"
         ],
         "title": "Fatura"
       }
@@ -473,7 +478,7 @@
     "tagline": "Mülkler, kiracılar ve kira vadeleri tek yerde. Kira günü gelen kiracıya hatırlatma SMS'i, komisyon ve kira faturası aynı yerden."
   },
   "82c0e7529204": {
-    "einvoice_note": "e-Fatura dahil, toplu fatura",
+    "einvoice_note": "e-Fatura modülü eklenebilir",
     "faq": [
       {
         "answer": "Uygulama seçili toptancılarla birlikte geliştiriliyor. Başvurun; sıra size geldiğinde arayıp kurulumu yapalım.",
@@ -503,7 +508,7 @@
       {
         "items": [
           "Müşteri carisi ve vade",
-          "e-Fatura dahil",
+          "e-Fatura modülü: satın alırken eklenir",
           "Toplu fatura"
         ],
         "title": "Satış ve fatura"
@@ -561,14 +566,14 @@
     "tagline": "e-Faturaya geçişi ya da entegratör değişikliğini baştan sona biz yürütürüz: başvuru, seri ve etiket tanımı, eski arşivin aktarımı, eğitim."
   },
   "ca6b13ece1fd": {
-    "einvoice_note": "Yedek Parça ya da e-Fatura ile birlikte",
+    "einvoice_note": "e-Fatura modülü eklenebilir",
     "faq": [
       {
         "answer": "Etiket yazıcısıyla en hızlısı olur; normal yazıcıdan etiket kâğıdına da basabilirsiniz. Kurulumda size uygun olanı birlikte seçeriz.",
         "question": "Etiket için özel yazıcı gerekir mi?"
       },
       {
-        "answer": "Lastik Oteli emanet takibi içindir. Satış ve cari için Lanista Yedek Parça, fatura için Lanista e-Fatura ile birlikte kullanılır.",
+        "answer": "Lastik Oteli emanet takibi içindir. Satış ve cari için Lanista Yedek Parça ile birlikte kullanılır; fatura için e-Fatura modülü eklenir.",
         "question": "Satış ve fatura da yapıyor mu?"
       }
     ],
@@ -592,7 +597,7 @@
       {
         "items": [
           "Lanista Yedek Parça ile satış ve cari",
-          "Lanista e-Fatura ile fatura"
+          "e-Fatura modülü ile fatura"
         ],
         "title": "Birlikte kullanım"
       }
@@ -633,7 +638,7 @@
     "tagline": "Emanet aldığınız lastiğin hangi rafta olduğu, kime ait olduğu, ne zaman takılacağı her an önünüzde."
   },
   "d27d01aaf36b": {
-    "einvoice_note": "Araç satış faturası dahil",
+    "einvoice_note": "e-Fatura modülü eklenebilir",
     "faq": [
       {
         "answer": "Motorlu taşıt alım, satım ya da kiralaması yapanlar için e-Fatura sınırı genel sınırdan düşüktür. Güncel sınırlar rehberimizde; durumunuzu mali müşavirinizle birlikte kontrol ederiz.",
@@ -663,7 +668,7 @@
       },
       {
         "items": [
-          "e-Fatura ve e-Arşiv",
+          "e-Fatura modülü: satın alırken eklenir",
           "İkinci el araç (özel matrah) faturası"
         ],
         "title": "Fatura"
@@ -706,7 +711,7 @@
     "tagline": "Galerideki her aracın alışı, masrafı, satışı ve kârı tek kartta. Kiralamada sözleşme ve tahsilat takibi."
   },
   "d64d9430d051": {
-    "einvoice_note": "e-Fatura ve e-Arşiv",
+    "einvoice_note": "Tek başına ya da modül olarak",
     "faq": [
       {
         "answer": "Genel kural olarak bir yıllık brüt satış hasılatı 3 milyon TL ve üzeri olan işletmeler, izleyen yılın 1 Temmuz'undan itibaren e-Faturaya geçer. Bazı sektörlerde sınır daha düşüktür. Ayrıntılar e-Fatura geçiş sınırı rehberimizde; son yılın cirosunu iletirseniz durumunuzu birlikte kontrol ederiz.",
@@ -723,6 +728,10 @@
       {
         "answer": "Evet, GİB başvurusu için gerekir. Temini ve başvuruyu kurulum sırasında birlikte tamamlarız.",
         "question": "e-İmza ya da mali mühür gerekir mi?"
+      },
+      {
+        "answer": "Evet. e-Fatura, Lanista Yedek Parça, Oto Servis, Nalbur gibi sektör uygulamalarına satın alırken eklenen bir modüldür. Faturayı satışı girdiğiniz ekrandan kesersiniz.",
+        "question": "Sektör uygulamama ekleyebilir miyim?"
       }
     ],
     "feature_groups": [
@@ -758,6 +767,14 @@
           "Mali müşavire erişim açma"
         ],
         "title": "Mali müşavir"
+      },
+      {
+        "items": [
+          "Lanista sektör uygulamalarına satın alırken eklenir",
+          "Faturayı satış ekranından kesersiniz",
+          "Tek başına da kullanılır"
+        ],
+        "title": "Modül olarak"
       }
     ],
     "featured": true,
@@ -803,7 +820,7 @@
     "tagline": "3 milyon TL sınırını geçtiyseniz koca bir muhasebe programına gerek yok. e-Faturayı telefondan ya da bilgisayardan kesin."
   },
   "f0aca951b8a9": {
-    "einvoice_note": "e-Fatura dahil",
+    "einvoice_note": "e-Fatura modülü eklenebilir",
     "faq": [
       {
         "answer": "Uygulama seçili nalbur ve hırdavatçılarla birlikte geliştiriliyor. Başvurun; sıra size geldiğinde arayıp kurulumu yapalım.",
@@ -837,7 +854,7 @@
         "items": [
           "Çek ve senet takibi, vade hatırlatması",
           "SMS ile borç hatırlatma",
-          "e-Fatura dahil"
+          "e-Fatura modülü: satın alırken eklenir"
         ],
         "title": "Vade ve fatura"
       }
@@ -884,7 +901,7 @@
     "tagline": "Metre, kilo ya da adetle satış, stok, fiyat listesi. Usta ve müteahhit hesabı şantiye şantiye; kim neyi teslim aldı imzasıyla kayıtlı."
   },
   "f8e9fe4817b0": {
-    "einvoice_note": "e-Fatura dahil, tevkifatlı fatura",
+    "einvoice_note": "e-Fatura modülü eklenebilir",
     "faq": [
       {
         "answer": "Uygulama seçili servislerle birlikte sahada geliştiriliyor. Başvurun; kurulum sırası size geldiğinde arayıp işinize göre ayarlarız.",
@@ -911,7 +928,7 @@
       },
       {
         "items": [
-          "e-Fatura dahil",
+          "e-Fatura modülü: satın alırken eklenir",
           "Kurum ve filo için dönem faturası",
           "Tevkifatlı fatura"
         ],
