@@ -1,4 +1,167 @@
 {
+  "0ef633950872": {
+    "einvoice_note": "1 kontör = 1 e-belge",
+    "faq": [
+      {
+        "answer": "e-Fatura, e-Arşiv ve diğer e-belgelerin düzenlenmesi ve alınması için kullanılan birimdir. Her gelen ya da giden belge bir kontör kullanır.",
+        "question": "Kontör nedir?"
+      },
+      {
+        "answer": "Evet. Kontör programdan bağımsızdır; mevcut programınızla çalışmaya devam edersiniz. Programınızın e-Fatura bağlantısını da birlikte kontrol ederiz.",
+        "question": "Kullandığım muhasebe programıyla olur mu?"
+      },
+      {
+        "answer": "Aralık 2026'da. Bekleme listesine yazılın, paketler ve fiyatlar açıklanınca ilk siz öğrenin.",
+        "question": "Ne zaman satışa açılıyor?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Belge sayısına göre kontör paketleri",
+          "1 kontör = 1 gelen ya da giden e-belge",
+          "Kontör azalınca uyarı",
+          "Telefonla ya da çevrim içi yükleme",
+          "Fatura sayınıza göre paket önerisi"
+        ],
+        "title": "Planlanan özellikler"
+      }
+    ],
+    "group": "e-donusum",
+    "hero_text": "Her gelen ya da giden e-belge bir kontör kullanır. Fatura sayınıza uygun paketi seçin; kontörünüz azalınca haber verelim, yenisini tek telefonla yükleyelim.",
+    "hero_title": "e-Fatura kontörünüz bitmeden yenisi hazır",
+    "icon": "ri-coins-line",
+    "keywords": [
+      "e-fatura kontör",
+      "kontör paketi",
+      "e-fatura kontör fiyatları",
+      "e-arşiv kontör",
+      "kontör satın al"
+    ],
+    "link_to": "product",
+    "menu_text": "Hangi programı kullanırsanız kullanın e-belge kontörü",
+    "name": "Lanista Kontör",
+    "order": 2,
+    "pains": [
+      {
+        "pain": "Kontör bitince fatura kesilemiyor",
+        "solution": "Kontörünüz azaldığında önceden haber veririz; paket bitmeden yenisi yüklenir."
+      },
+      {
+        "pain": "Ne kadar kontör alacağımı bilmiyorum",
+        "solution": "Aylık kestiğiniz ve aldığınız belge sayısına bakar, fazlasını değil ihtiyacınız kadarını öneririz."
+      },
+      {
+        "pain": "Programımı değiştirmek istemiyorum",
+        "solution": "Logo, Mikro, Zirve, DİA, Akınsoft ya da başka bir programla çalışmaya devam edersiniz; yalnız kontörü bizden alırsınız."
+      }
+    ],
+    "sector": "e-Fatura kullanan herkes; Logo, Mikro, Zirve, DİA, Akınsoft kullananlar dahil",
+    "seo_description": "e-Fatura ve e-Arşiv kontör paketleri: 1 kontör = 1 e-belge. Logo, Mikro, Zirve, DİA, Akınsoft kullananlar dahil herkes için. Aralık 2026'da satışta.",
+    "seo_title": "e-Fatura Kontör Paketleri | Lanista Kontör",
+    "slug": "kontor",
+    "status": "soon",
+    "status_note": "Aralık 2026",
+    "tagline": "e-Fatura, e-Arşiv ve diğer e-belgeler için kontör paketleri. Kullandığınız programı değiştirmeden, ihtiyacınız kadar alın."
+  },
+  "57a440641db8": {
+    "einvoice_note": "e-Fatura dahil",
+    "faq": [
+      {
+        "answer": "Evet. Lanista Yedek Parça, Oto Servis, Nalbur gibi uygulamalarda Ön Muhasebe eklenti olarak açılır; aynı cariler ve aynı faturalar üzerinden çalışırsınız.",
+        "question": "Sektör uygulamamla birlikte kullanabilir miyim?"
+      },
+      {
+        "answer": "Hayır. Ön muhasebe sizin günlük takibiniz içindir; resmî defterler mali müşavirinizde kalır. Dönem kayıtlarını ona tek dosya olarak iletebilirsiniz.",
+        "question": "Mali müşavirimin işi değişir mi?"
+      },
+      {
+        "answer": "e-Fatura uygulamanın içindedir; her belge bir kontör kullanır. Fiyatı fatura sayınıza göre birlikte belirleriz.",
+        "question": "e-Fatura için ayrı ücret var mı?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Müşteri ve tedarikçi carisi",
+          "Kasa ve banka hesapları",
+          "Tahsilat ve ödeme",
+          "Gelir ve gider kategorileri"
+        ],
+        "title": "Cari ve para"
+      },
+      {
+        "items": [
+          "Maaş ve avans takibi",
+          "Çalışan bazında hareket listesi"
+        ],
+        "title": "Çalışanlar"
+      },
+      {
+        "items": [
+          "e-Fatura ve e-Arşiv dahil",
+          "Faturadan cariye otomatik kayıt"
+        ],
+        "title": "Fatura"
+      },
+      {
+        "items": [
+          "Tek başına kullanılır",
+          "Lanista sektör uygulamalarına eklenti olarak açılır"
+        ],
+        "title": "Eklenti"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Kime ne borcunuz var, kimden ne alacağınız var, kasada ve bankada ne kadar para duruyor: hepsi tek ekranda. Faturanızı da aynı yerden e-Fatura olarak kesin.",
+    "hero_title": "İşletmenizin parası nerede, tek ekranda görün",
+    "icon": "ri-calculator-line",
+    "keywords": [
+      "ön muhasebe programı",
+      "cari hesap programı",
+      "gelir gider takibi",
+      "kasa takip programı",
+      "küçük işletme muhasebe"
+    ],
+    "link_to": "product",
+    "menu_text": "Cari, kasa, banka, gelir-gider tek yerde",
+    "name": "Lanista Ön Muhasebe",
+    "order": 17,
+    "pains": [
+      {
+        "pain": "Kasa, banka ve alacaklar farklı defterlerde",
+        "solution": "Cari, kasa ve banka hareketleri tek yerde; bakiyeler her an güncel."
+      },
+      {
+        "pain": "Ay sonunda ne kazandığımı bilmiyorum",
+        "solution": "Gelir ve giderleri kategoriye göre girin, ay sonunda özet hazır olsun."
+      },
+      {
+        "pain": "Çalışan avansları ve maaşlar karışıyor",
+        "solution": "Her çalışanın maaş ve avans hareketleri ayrı kartta tutulur."
+      }
+    ],
+    "sector": "Küçük işletmeler ve hizmet işletmeleri",
+    "seo_description": "Küçük işletmeler için ön muhasebe: cari, kasa ve banka, gelir-gider, maaş ve avans takibi, e-Fatura dahil. Tek başına ya da sektör uygulamanıza eklenti.",
+    "seo_title": "Ön Muhasebe Programı | Lanista Ön Muhasebe",
+    "slug": "on-muhasebe",
+    "status": "live",
+    "tagline": "Cari, kasa ve banka, gelir ve gider, maaş ve avans. Tek başına ya da sektör uygulamanıza eklenti olarak açılır."
+  },
+  "66d93b136c0d": {
+    "group": "hizmet",
+    "hero_text": "Özel yazılım, Akınsoft, Mikro ya da Excel'den veri aktarımı, entegrasyon, yurt içi barındırma ve bakım.",
+    "hero_title": "İşinize özel yazılım ve entegrasyon",
+    "icon": "ri-code-s-slash-line",
+    "link_to": "services",
+    "menu_text": "Özel yazılım, entegrasyon, veri aktarımı, bakım",
+    "name": "Lanista Yazılım hizmetleri",
+    "order": 30,
+    "sector": "Özel ihtiyacı olan işletmeler ve kurumlar",
+    "slug": "yazilim-hizmetleri",
+    "status": "live",
+    "tagline": "Hazır uygulamanın yetmediği yerde işinize özel yazılım, programlar arası entegrasyon, veri aktarımı ve yurt içinde barındırma."
+  },
   "69576769b108": {
     "desktop_screenshots": [
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/b5ccc5d0-e29e-46de-b958-45227a4c43f6.webp",
@@ -160,6 +323,233 @@
       }
     ]
   },
+  "6dd68e517724": {
+    "einvoice_note": "Programınızın faturası doğrudan gider",
+    "faq": [
+      {
+        "answer": "İlk sürüm Logo için hazırlanıyor; ardından Mikro ve DİA gelecek. Başka bir program kullanıyorsanız formda yazın, öncelik sırasını taleplere göre belirliyoruz.",
+        "question": "Hangi programlarla çalışacak?"
+      },
+      {
+        "answer": "Hayır. Köprü programınızın yanında çalışır; alışkanlıklarınız değişmez.",
+        "question": "Programımı değiştirmem gerekir mi?"
+      },
+      {
+        "answer": "Planlama aşamasında. Bekleme listesine yazılın, ilk kurulumlar için sizi arayalım.",
+        "question": "Ne zaman hazır olacak?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Programdan kesilen faturanın e-Fatura olarak gönderimi",
+          "Gelen faturanın alış kaydı olarak aktarımı",
+          "Cari ve stok kartı eşleştirme",
+          "Önce Logo, sonra Mikro ve DİA",
+          "Kurulumu ve takibi bizden"
+        ],
+        "title": "Planlanan özellikler"
+      }
+    ],
+    "group": "e-donusum",
+    "hero_text": "Faturayı her zamanki gibi muhasebe programınızda kesin, e-Fatura olarak kendiliğinden gitsin. Size gelen faturalar da elle girilmeden alış kaydı olarak programınıza düşsün.",
+    "hero_title": "Programınızdan çıkmadan e-Fatura",
+    "icon": "ri-links-line",
+    "keywords": [
+      "logo e-fatura entegrasyonu",
+      "mikro e-fatura entegrasyonu",
+      "dia e-fatura",
+      "erp e-fatura entegrasyonu",
+      "gelen fatura aktarımı"
+    ],
+    "link_to": "product",
+    "menu_text": "Muhasebe programınız ile e-Fatura arasında bağlantı",
+    "name": "Lanista Köprü",
+    "order": 3,
+    "pains": [
+      {
+        "pain": "Faturayı iki kez giriyoruz: programa ve e-Fatura portalına",
+        "solution": "Programınızda kestiğiniz fatura e-Fatura olarak kendiliğinden gönderilir; ikinci kez girilmez."
+      },
+      {
+        "pain": "Gelen faturaları programa tek tek işliyoruz",
+        "solution": "Gelen faturalar alış kaydı olarak programınıza aktarılır; siz yalnız kontrol edip onaylarsınız."
+      },
+      {
+        "pain": "Programımın e-Fatura bağlantısı pahalı ya da yok",
+        "solution": "Bağlantıyı biz kurarız: önce Logo, sonra Mikro ve DİA."
+      }
+    ],
+    "sector": "İşini baştan sona muhasebe programında yürüten işletmeler",
+    "seo_description": "Muhasebe programınızdan kestiğiniz fatura doğrudan e-Fatura olarak gitsin, gelen fatura alış olarak işlensin. Önce Logo, sonra Mikro ve DİA.",
+    "seo_title": "Logo, Mikro, DİA e-Fatura Bağlantısı | Lanista Köprü",
+    "slug": "kopru",
+    "status": "soon",
+    "status_note": "Planlı",
+    "tagline": "Muhasebe programınızdan kestiğiniz fatura doğrudan e-Fatura olarak gider; gelen fatura programınıza alış olarak düşer."
+  },
+  "8031ca13766d": {
+    "einvoice_note": "Kira ve komisyon faturası dahil",
+    "faq": [
+      {
+        "answer": "Gayrimenkul alım, satım ya da kiralaması yapanlar ve aracılık edenler için e-Fatura sınırı genel sınırdan düşüktür. Güncel sınırlar rehberimizde; durumunuzu mali müşavirinizle birlikte kontrol ederiz.",
+        "question": "Emlakçılar e-Faturaya geçmek zorunda mı?"
+      },
+      {
+        "answer": "Uygulama seçili emlak ofisleriyle birlikte geliştiriliyor. Başvurun; sıra size geldiğinde arayıp kurulumu yapalım.",
+        "question": "Erken erişim ne demek?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Mülk kartı",
+          "Kiracı ve mal sahibi carisi",
+          "Sözleşme tarihleri"
+        ],
+        "title": "Mülk ve kiracı"
+      },
+      {
+        "items": [
+          "Kira vadesi takibi",
+          "SMS ile kira hatırlatma",
+          "Tahsilat girişi"
+        ],
+        "title": "Kira"
+      },
+      {
+        "items": [
+          "Komisyon faturası",
+          "Kira faturası",
+          "e-Fatura ve e-Arşiv"
+        ],
+        "title": "Fatura"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Mülkü ve kiracıyı bir kez kaydedin; kira günü gelince hatırlatma gitsin, ödeme gelince carisine işlensin. Komisyon ve kira faturasını aynı yerden kesin.",
+    "hero_title": "Kira takibi kendiliğinden yürüsün",
+    "icon": "ri-building-2-line",
+    "keywords": [
+      "emlak programı",
+      "kira takip programı",
+      "emlakçı programı",
+      "kiracı takip",
+      "kira hatırlatma"
+    ],
+    "link_to": "product",
+    "menu_text": "Mülk ve kiracı carisi, kira hatırlatma",
+    "name": "Lanista Emlak",
+    "order": 14,
+    "pains": [
+      {
+        "pain": "Hangi kiracının kirası gecikti, takip zor",
+        "solution": "Kira vadeleri tek listede; geciken kırmızı, yaklaşan sarı görünür."
+      },
+      {
+        "pain": "Kira hatırlatmak için tek tek arıyorum",
+        "solution": "Kira gününden önce hatırlatma SMS'i sizin yerinize gider."
+      },
+      {
+        "pain": "Komisyon ve kira faturalarını ayrı yerde kesiyorum",
+        "solution": "Komisyon ve kira faturası mülk ve kiracı kaydından tek dokunuşla kesilir."
+      }
+    ],
+    "sector": "Emlak ofisleri ve kira geliri olan işletmeler",
+    "seo_description": "Emlak ofisleri ve kira geliri olanlar için mülk ve kiracı carisi, kira vadesi, SMS hatırlatma, komisyon ve kira faturası.",
+    "seo_title": "Emlak ve Kira Takip Programı | Lanista Emlak",
+    "slug": "emlak",
+    "status": "pilot",
+    "tagline": "Mülkler, kiracılar ve kira vadeleri tek yerde. Kira günü gelen kiracıya hatırlatma SMS'i, komisyon ve kira faturası aynı yerden."
+  },
+  "82c0e7529204": {
+    "einvoice_note": "e-Fatura dahil, toplu fatura",
+    "faq": [
+      {
+        "answer": "Uygulama seçili toptancılarla birlikte geliştiriliyor. Başvurun; sıra size geldiğinde arayıp kurulumu yapalım.",
+        "question": "Erken erişim ne demek?"
+      },
+      {
+        "answer": "Evet. Excel'deki ürün ve fiyat listenizi kurulumda birlikte aktarırız.",
+        "question": "Mevcut ürün listemi aktarabilir miyim?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Bayi ve perakende fiyat listeleri",
+          "Toplu fiyat güncelleme"
+        ],
+        "title": "Fiyat"
+      },
+      {
+        "items": [
+          "Dövizli alış",
+          "Depo stoğu",
+          "Azalan stok uyarısı"
+        ],
+        "title": "Alış ve stok"
+      },
+      {
+        "items": [
+          "Müşteri carisi ve vade",
+          "e-Fatura dahil",
+          "Toplu fatura"
+        ],
+        "title": "Satış ve fatura"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Her müşteri grubuna kendi fiyat listesi, dövizli alışta güncel maliyet, depoda ne kaldığı her an önünüzde. Ay sonu faturalarını toplu kesin.",
+    "hero_title": "Bayi fiyatı, stok ve fatura tek yerde",
+    "icon": "ri-truck-line",
+    "keywords": [
+      "toptan satış programı",
+      "toptancı programı",
+      "bayi fiyat listesi",
+      "distribütör programı",
+      "stok takip programı"
+    ],
+    "link_to": "product",
+    "menu_text": "Bayi fiyat listesi, dövizli alış, depo stoğu",
+    "name": "Lanista Toptan Satış",
+    "order": 16,
+    "pains": [
+      {
+        "pain": "Bayiye ve perakendeye farklı fiyat vermek karışıyor",
+        "solution": "Müşteri grubuna göre fiyat listesi; satışta doğru fiyat kendiliğinden gelir."
+      },
+      {
+        "pain": "Dövizli alışta maliyeti takip edemiyorum",
+        "solution": "Alışı döviziyle kaydedin, maliyet güncel kurla görünsün."
+      },
+      {
+        "pain": "Depoda ne kaldığını sayarak öğreniyoruz",
+        "solution": "Alış ve satışla stok kendiliğinden güncellenir; azalan ürün uyarısı gelir."
+      }
+    ],
+    "sector": "Toptancılar ve distribütörler",
+    "seo_description": "Toptancı ve distribütörler için bayi ve perakende fiyat listeleri, dövizli alış, depo stoğu, cari ve toplu e-Fatura.",
+    "seo_title": "Toptan Satış Programı | Lanista Toptan Satış",
+    "slug": "toptan-satis",
+    "status": "pilot",
+    "tagline": "Bayiye ayrı, perakendeye ayrı fiyat. Dövizli alış, depo stoğu ve ay sonu toplu fatura tek yerde."
+  },
+  "97e82b9e0206": {
+    "einvoice_note": "Geçişin kendisi",
+    "group": "e-donusum",
+    "hero_text": "e-Fatura, e-Arşiv ve e-Defter'e geçişte başvurudan ilk faturaya kadar eşlik ediyoruz.",
+    "hero_title": "e-Dönüşüme geçişi yanınızda kuruyoruz",
+    "icon": "ri-arrow-left-right-line",
+    "link_to": "e-donusum",
+    "menu_text": "Başvurudan ilk faturaya, Van'da yerinde kurulum",
+    "name": "e-Dönüşüm geçiş hizmeti",
+    "order": 4,
+    "sector": "e-Faturaya yeni geçenler ve entegratör değiştirenler",
+    "slug": "e-donusum-gecis",
+    "status": "live",
+    "tagline": "e-Faturaya geçişi ya da entegratör değişikliğini baştan sona biz yürütürüz: başvuru, seri ve etiket tanımı, eski arşivin aktarımı, eğitim."
+  },
   "c835feb1c15c": {
     "desktop_screenshots": [
       "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/a88e61a6-b413-4416-b6eb-19bb84039b38.webp",
@@ -239,6 +629,248 @@
       }
     ]
   },
+  "ca6b13ece1fd": {
+    "einvoice_note": "Yedek Parça ya da e-Fatura ile birlikte",
+    "faq": [
+      {
+        "answer": "Etiket yazıcısıyla en hızlısı olur; normal yazıcıdan etiket kâğıdına da basabilirsiniz. Kurulumda size uygun olanı birlikte seçeriz.",
+        "question": "Etiket için özel yazıcı gerekir mi?"
+      },
+      {
+        "answer": "Lastik Oteli emanet takibi içindir. Satış ve cari için Lanista Yedek Parça, fatura için Lanista e-Fatura ile birlikte kullanılır.",
+        "question": "Satış ve fatura da yapıyor mu?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Plakayla emanet kaydı",
+          "Lastik ebadı, marka ve diş durumu",
+          "Teslim alma ve teslim etme"
+        ],
+        "title": "Emanet"
+      },
+      {
+        "items": [
+          "QR etiket basma",
+          "Depo ve raf tanımı",
+          "Raf doluluğu"
+        ],
+        "title": "Etiket ve depo"
+      },
+      {
+        "items": [
+          "Lanista Yedek Parça ile satış ve cari",
+          "Lanista e-Fatura ile fatura"
+        ],
+        "title": "Birlikte kullanım"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Lastiği teslim alırken plakayla kaydedin, QR etiketini basıp yapıştırın, rafını seçin. Sezon gelince kimin lastiği nerede, tek okutmayla bulun.",
+    "hero_title": "Emanet lastiği arama derdi bitsin",
+    "icon": "ri-steering-2-line",
+    "keywords": [
+      "lastik oteli programı",
+      "lastik emanet takibi",
+      "lastik depolama programı",
+      "lastikçi programı"
+    ],
+    "link_to": "product",
+    "menu_text": "Emanet lastik, etiket ve QR, raf takibi",
+    "name": "Lanista Lastik Oteli",
+    "order": 12,
+    "pains": [
+      {
+        "pain": "Sezon değişiminde depoda lastik arıyoruz",
+        "solution": "Her takım lastiğin rafı kayıtlı; QR etiketini okutun ya da plakayı yazın, yeri görünsün."
+      },
+      {
+        "pain": "Lastik kime ait, karışıyor",
+        "solution": "Teslim alırken plaka, müşteri ve lastik bilgisi kaydedilir; etiket her takımın üstünde."
+      },
+      {
+        "pain": "Depoda ne kadar yer kaldığını bilmiyorum",
+        "solution": "Depo ve raf doluluğu tek listede; boş rafı uygulama gösterir."
+      }
+    ],
+    "sector": "Lastikçiler",
+    "seo_description": "Lastikçiler için lastik oteli programı: plakayla emanet kaydı, QR etiket, depo ve raf takibi. Sezon değişiminde lastiği tek okutmayla bulun.",
+    "seo_title": "Lastik Oteli Programı | Lanista Lastik Oteli",
+    "slug": "lastik-oteli",
+    "status": "live",
+    "tagline": "Emanet aldığınız lastiğin hangi rafta olduğu, kime ait olduğu, ne zaman takılacağı her an önünüzde."
+  },
+  "d27d01aaf36b": {
+    "einvoice_note": "Araç satış faturası dahil",
+    "faq": [
+      {
+        "answer": "Motorlu taşıt alım, satım ya da kiralaması yapanlar için e-Fatura sınırı genel sınırdan düşüktür. Güncel sınırlar rehberimizde; durumunuzu mali müşavirinizle birlikte kontrol ederiz.",
+        "question": "Galeriler e-Faturaya geçmek zorunda mı?"
+      },
+      {
+        "answer": "Uygulama seçili galerilerle birlikte geliştiriliyor. Başvurun; sıra size geldiğinde arayıp kurulumu yapalım.",
+        "question": "Erken erişim ne demek?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Araç kartı: plaka, şasi, model, kilometre",
+          "Alış ve masraf kaydı",
+          "Araç başına kâr"
+        ],
+        "title": "Araç"
+      },
+      {
+        "items": [
+          "Satış ve tahsilat",
+          "Kiralama ve ödeme planı",
+          "Müşteri carisi"
+        ],
+        "title": "Satış ve kiralama"
+      },
+      {
+        "items": [
+          "e-Fatura ve e-Arşiv",
+          "İkinci el araç (özel matrah) faturası"
+        ],
+        "title": "Fatura"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Aracı plaka ve şasi numarasıyla kaydedin, alışını ve masraflarını ekleyin, satışta faturasını kesin. Kiraladığınız araçların tahsilatı da aynı yerde.",
+    "hero_title": "Galerinizdeki her aracın hesabı tek kartta",
+    "icon": "ri-car-line",
+    "keywords": [
+      "oto galeri programı",
+      "galeri takip programı",
+      "ikinci el araç faturası",
+      "araç kiralama programı",
+      "özel matrah fatura"
+    ],
+    "link_to": "product",
+    "menu_text": "Araç kartı, alış-satış, kiralama ve tahsilat",
+    "name": "Lanista Oto Galeri",
+    "order": 13,
+    "pains": [
+      {
+        "pain": "Bir araçtan ne kazandığımı bilmiyorum",
+        "solution": "Alış, ekspertiz, bakım ve diğer masraflar araç kartında toplanır; satışta kâr görünür."
+      },
+      {
+        "pain": "İkinci el araç faturası karışık",
+        "solution": "İkinci el araç satışı için özel matrahlı fatura uygulamada hazır."
+      },
+      {
+        "pain": "Kiralık araçların ödemeleri takip edilemiyor",
+        "solution": "Kiralama başına tahsilat planı; geciken ödeme listede kırmızı görünür."
+      }
+    ],
+    "sector": "İkinci el araç alım-satımı ve araç kiralama yapanlar",
+    "seo_description": "İkinci el araç galerileri ve kiralama için araç kartı, alış-satış, masraf ve kâr takibi, kiralama tahsilatı ve özel matrahlı araç faturası.",
+    "seo_title": "Oto Galeri Programı | Lanista Oto Galeri",
+    "slug": "oto-galeri",
+    "status": "pilot",
+    "tagline": "Galerideki her aracın alışı, masrafı, satışı ve kârı tek kartta. Kiralamada sözleşme ve tahsilat takibi."
+  },
+  "d64d9430d051": {
+    "einvoice_note": "e-Fatura ve e-Arşiv",
+    "faq": [
+      {
+        "answer": "Genel kural olarak bir yıllık brüt satış hasılatı 3 milyon TL ve üzeri olan işletmeler, izleyen yılın 1 Temmuz'undan itibaren e-Faturaya geçer. Bazı sektörlerde sınır daha düşüktür. Ayrıntılar e-Fatura geçiş sınırı rehberimizde; son yılın cirosunu iletirseniz durumunuzu birlikte kontrol ederiz.",
+        "question": "e-Faturaya geçmek zorunda mıyım?"
+      },
+      {
+        "answer": "Hayır. Faturalarınız GİB onaylı özel entegratör altyapısında düzenlenir ve saklanır. Uygulama, kurulum, başvuru, eğitim ve destek bizden.",
+        "question": "Lanista özel entegratör mü?"
+      },
+      {
+        "answer": "Her gelen ya da giden e-belge bir kontör kullanır. Aylık kestiğiniz ve aldığınız fatura sayısına göre size uygun paketi birlikte seçeriz.",
+        "question": "Kontör nedir, ne kadar gerekir?"
+      },
+      {
+        "answer": "Evet, GİB başvurusu için gerekir. Temini ve başvuruyu kurulum sırasında birlikte tamamlarız.",
+        "question": "e-İmza ya da mali mühür gerekir mi?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "e-Fatura ve e-Arşiv fatura",
+          "Toplu fatura",
+          "İptal ve iade faturası",
+          "Tevkifatlı fatura",
+          "Logolu fatura şablonu"
+        ],
+        "title": "Fatura"
+      },
+      {
+        "items": [
+          "Gelen faturaları tek listede görme",
+          "Kabul ve red, kalan süre uyarısı",
+          "Faturayı PDF olarak indirme ve paylaşma"
+        ],
+        "title": "Gelen faturalar"
+      },
+      {
+        "items": [
+          "Müşteri carisi ve bakiye",
+          "Tahsilat girişi",
+          "SMS ile fatura ve borç bilgilendirmesi"
+        ],
+        "title": "Cari ve tahsilat"
+      },
+      {
+        "items": [
+          "Dönem faturalarını tek dosyada aktarma",
+          "Mali müşavire erişim açma"
+        ],
+        "title": "Mali müşavir"
+      }
+    ],
+    "featured": true,
+    "group": "e-donusum",
+    "hero_text": "e-Fatura ve e-Arşiv faturanızı birkaç dokunuşla kesin, gelen faturayı kabul ya da reddedin, tahsilatı takip edin. Kurulumu, başvuruyu ve eğitimi biz yaparız.",
+    "hero_title": "e-Faturayı programsız, telefondan kesin",
+    "icon": "ri-file-text-line",
+    "keywords": [
+      "e-fatura programı",
+      "e-fatura kesme",
+      "e-arşiv fatura programı",
+      "esnaf e-fatura",
+      "e-faturaya geçiş",
+      "telefondan e-fatura"
+    ],
+    "link_to": "product",
+    "menu_text": "Muhasebe programı olmadan e-Fatura ve e-Arşiv",
+    "name": "Lanista e-Fatura",
+    "order": 1,
+    "pains": [
+      {
+        "pain": "e-Faturaya geçmem gerekiyor ama muhasebe programı kullanmıyorum",
+        "solution": "Lanista e-Fatura tek başına çalışır. Ayrı bir muhasebe programı almanız ya da bilgisayara program kurmanız gerekmez."
+      },
+      {
+        "pain": "Ay sonunda faturaları tek tek kesmek saatler sürüyor",
+        "solution": "Aynı müşterilere giden faturaları toplu kesin; kayıtlı müşteri ve ürünler öneri olarak gelir."
+      },
+      {
+        "pain": "Gelen faturayı kabul ya da red süresini kaçırıyorum",
+        "solution": "Gelen faturalar tek listede; kabul ya da red için kalan süre görünür, süre dolmadan bildirim gelir."
+      },
+      {
+        "pain": "Mali müşavire her ay belge taşıyorum",
+        "solution": "Dönemin faturalarını mali müşavirinize tek dosya olarak gönderin ya da ona doğrudan erişim açın."
+      }
+    ],
+    "sector": "e-Faturaya geçmek zorunda kalan ve yalnız fatura kesen esnaf",
+    "seo_description": "Muhasebe programı kullanmayan esnaf için e-Fatura ve e-Arşiv: toplu fatura, gelen fatura kabul/red, tevkifat, cari ve tahsilat. Kurulum ve eğitim Van'dan.",
+    "seo_title": "Lanista e-Fatura | Programsız e-Fatura ve e-Arşiv",
+    "slug": "e-fatura",
+    "status": "live",
+    "tagline": "3 milyon TL sınırını geçtiyseniz koca bir muhasebe programına gerek yok. e-Faturayı telefondan ya da bilgisayardan kesin."
+  },
   "f0aca951b8a9": {
     "faq": [],
     "feature_groups": [
@@ -293,5 +925,87 @@
     "status": "soon",
     "tagline": "Usta ve müteahhit hesabı şantiye şantiye; kim neyi teslim aldı imzasıyla kayıtlı.",
     "trust": []
+  },
+  "f8e9fe4817b0": {
+    "einvoice_note": "e-Fatura dahil, tevkifatlı fatura",
+    "faq": [
+      {
+        "answer": "Uygulama seçili servislerle birlikte sahada geliştiriliyor. Başvurun; kurulum sırası size geldiğinde arayıp işinize göre ayarlarız.",
+        "question": "Erken erişim ne demek?"
+      },
+      {
+        "answer": "Evet. İş emrindeki parçalar satışa döner; yedek parça satışı da yapıyorsanız Lanista Yedek Parça ile aynı cariler üzerinden çalışırsınız.",
+        "question": "Parça satışı da yapıyorum, olur mu?"
+      },
+      {
+        "answer": "Tevkifata tabi işler için fatura tevkifatlı kesilir. Oranları kurulumda mali müşavirinizle birlikte tanımlarız.",
+        "question": "Kurum işlerinde tevkifat nasıl olacak?"
+      }
+    ],
+    "feature_groups": [
+      {
+        "items": [
+          "Plakayla araç kabulü",
+          "İş emri: parça ve işçilik",
+          "Teslimde satış ve tahsilat",
+          "Plakaya göre servis geçmişi"
+        ],
+        "title": "Servis"
+      },
+      {
+        "items": [
+          "e-Fatura dahil",
+          "Kurum ve filo için dönem faturası",
+          "Tevkifatlı fatura"
+        ],
+        "title": "Fatura ve kurum işleri"
+      },
+      {
+        "items": [
+          "Bakım hatırlatma SMS'i",
+          "Müşteri ve araç carisi"
+        ],
+        "title": "Müşteri"
+      }
+    ],
+    "group": "isletme",
+    "hero_text": "Plakayı yazın, aracın geçmişi gelsin. İş emrine parça ve işçiliği ekleyin, teslimde faturayı kesin. Kurum ve filo işlerinde dönem faturası ve tevkifat hazır.",
+    "hero_title": "Araç kabulünden teslime, servis tek ekranda",
+    "icon": "ri-tools-line",
+    "keywords": [
+      "oto servis programı",
+      "servis takip programı",
+      "iş emri programı",
+      "araç bakım takip",
+      "oto tamirci programı"
+    ],
+    "link_to": "product",
+    "menu_text": "Plakayla araç kabulü, iş emri, bakım hatırlatma",
+    "name": "Lanista Oto Servis",
+    "order": 11,
+    "pains": [
+      {
+        "pain": "Hangi araca ne yapıldığı kâğıtta kayboluyor",
+        "solution": "Plakaya göre geçmiş: hangi tarihte hangi parça takıldı, hangi işçilik yapıldı."
+      },
+      {
+        "pain": "İş emri ile fatura birbirini tutmuyor",
+        "solution": "İş emrindeki parça ve işçilik teslimde satışa döner; fatura aynı kayıttan kesilir."
+      },
+      {
+        "pain": "Kurum ve filo faturaları ay sonunda yük oluyor",
+        "solution": "Dönem içindeki işleri tek dönem faturasında toplayın; tevkifatlı fatura hazır."
+      },
+      {
+        "pain": "Müşteri bakım zamanını unutuyor",
+        "solution": "Kilometre ya da tarihe göre bakım hatırlatması SMS ile gider."
+      }
+    ],
+    "sector": "Oto servisleri; kurum ve filo işi yapan servisler",
+    "seo_description": "Oto servisler için plakayla araç kabulü, iş emri, teslimde satış, bakım hatırlatma ve e-Fatura. Kurum ve filo işinde dönem faturası ve tevkifat.",
+    "seo_title": "Oto Servis Programı | Lanista Oto Servis",
+    "slug": "oto-servis",
+    "status": "pilot",
+    "tagline": "Aracı plakayla kabul edin, iş emrini açın, teslimde satışı kapatın. Bakım zamanı gelen müşteriye hatırlatma gider."
   }
 }
