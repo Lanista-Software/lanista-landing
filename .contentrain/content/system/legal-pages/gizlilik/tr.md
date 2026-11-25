@@ -43,7 +43,7 @@ Size reklam ve kampanya mesajı göndermek için ayrıca onayınızı isteriz. B
 
 ## 3. Uygulamadaki müşteri bilgileriniz
 
-Hesap Takip gibi ürünlerimize kendi müşterilerinizin adını, telefonunu, plakasını ve borç bilgisini girersiniz. Bu bilgiler sizindir:
+Lanista Yedek Parça gibi ürünlerimize kendi müşterilerinizin adını, telefonunu, plakasını ve borç bilgisini girersiniz. Bu bilgiler sizindir:
 
 - Bu verilerin veri sorumlusu sizsiniz. Biz veri işleyen olarak yalnız sizin adınıza saklar ve işleriz.
 - Bu bilgileri kendi amacımız için kullanmayız, başka işletmelerle paylaşmayız.

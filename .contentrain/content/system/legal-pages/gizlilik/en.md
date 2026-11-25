@@ -43,7 +43,7 @@ We ask for your separate consent before sending you advertising and promotional 
 
 ## 3. Your customers' information in the app
 
-In products such as Hesap Takip, you enter your own customers' names, phone numbers, licence plates and debt details. This information is yours:
+In products such as Lanista Auto Parts, you enter your own customers' names, phone numbers, licence plates and debt details. This information is yours:
 
 - You are the data controller for this data. As data processor, we only store and process it on your behalf.
 - We do not use this information for our own purposes and do not share it with other businesses.
