@@ -190,6 +190,6 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 ## 10. Panel yayını: üst menü giriş/kayıt (2026-11-27)
 - [x] Mega menü canlıda (508d760); hesap-takip → yedek-parca 301 doğrulandı
 - [x] Header: "Giriş yap" → `app.lanista.com.tr/panel/giris`, "Ücretsiz dene" → `/panel/kayit` (`src/lib/app.ts`; ürün önseçimi `appSignup('yedek_parca')`); lg–xl arası dil seçici gizli, İletişim butonu 2xl+
-- [ ] Yayın: app.lanista.com.tr açılınca push (v2026.12.2)
+- [ ] app.lanista.com.tr açılınca `src/lib/app.ts` APP_URL'i yeni adrese çevir (şu an hesap-takip.lanista.com.tr)
 - [ ] Ürün durumları ve metinleri platformla eşitle (gerçek durum: hafıza / `docs/urun-portfoyu.md`); planlı modüller "talep üzerine 1–2 iş günü"
 - [ ] Fiyatlar: modül bazlı yeni ürün/fiyat matrisi gelince (Yedek Parça landing 15.000/25.000 ≠ SaaS 7.500 TL/yıl)
