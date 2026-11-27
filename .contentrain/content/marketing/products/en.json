@@ -351,7 +351,7 @@
         "question": "Do I have to change my software?"
       },
       {
-        "answer": "It's in planning. Join the waiting list and we'll call you for the first installations.",
+        "answer": "We set it up on request. Tell us which software you use in the form and we'll plan the first installation with you.",
         "question": "When will it be ready?"
       }
     ],
@@ -399,7 +399,7 @@
     "seo_title": "Logo, Mikro, DİA e-Invoice Connector | Lanista Bridge",
     "slug": "kopru",
     "status": "soon",
-    "status_note": "Planned",
+    "status_note": "On request",
     "tagline": "Invoices you issue in your accounting software go out as e-invoices directly; incoming invoices land in your software as purchases."
   },
   "8031ca13766d": {
@@ -410,7 +410,7 @@
         "question": "Do estate agents have to use e-invoicing?"
       },
       {
-        "answer": "The app is being developed with selected estate agents. Apply and we'll call you for setup when your turn comes.",
+        "answer": "The groundwork is ready: accounts, due-date tracking, SMS reminders and e-invoicing are used every day. When you apply, we set it up for your office and usually open your account within 1–2 business days.",
         "question": "What does early access mean?"
       }
     ],
@@ -472,6 +472,7 @@
     "seo_title": "Rent Tracking Software | Lanista Real Estate",
     "slug": "emlak",
     "status": "pilot",
+    "status_note": "Ready in 1–2 days",
     "tagline": "Properties, tenants and rent due dates in one place. Reminder SMS before rent is due; commission and rent invoices from the same place."
   },
   "82c0e7529204": {
@@ -639,7 +640,7 @@
         "question": "Do car dealers have to use e-invoicing?"
       },
       {
-        "answer": "The app is being developed with selected dealers. Apply and we'll call you for setup when your turn comes.",
+        "answer": "The groundwork is ready: accounts, sales, payments and e-invoicing are used every day, and the vehicle card view is ready. When you apply, we set it up for your dealership and usually open your account within 1–2 business days.",
         "question": "What does early access mean?"
       }
     ],
@@ -700,6 +701,7 @@
     "seo_title": "Car Dealer Software | Lanista Car Dealer",
     "slug": "oto-galeri",
     "status": "pilot",
+    "status_note": "Ready in 1–2 days",
     "tagline": "Purchase, costs, sale and profit of every car on one card. Contracts and payment tracking for rentals."
   },
   "d64d9430d051": {
@@ -911,7 +913,7 @@
     "einvoice_note": "e-Invoice module available",
     "faq": [
       {
-        "answer": "The app is being developed in the field with selected workshops. Apply and we'll call you to set it up for your business when your turn comes.",
+        "answer": "The groundwork is ready: accounts, sales, plates and e-invoicing are used every day in Lanista Auto Parts. When you apply, we set up the workshop screens for your business and usually open your account within 1–2 business days.",
         "question": "What does early access mean?"
       },
       {
@@ -985,6 +987,7 @@
     "seo_title": "Car Repair Shop Software | Lanista Auto Service",
     "slug": "oto-servis",
     "status": "pilot",
+    "status_note": "Ready in 1–2 days",
     "tagline": "Check cars in by plate, open a work order, close the sale on delivery. Customers due for a service get a reminder."
   }
 }
