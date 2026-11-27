@@ -6,6 +6,7 @@ import Header from '~/components/Header.astro'
 import { getLayout } from '~/lib/content'
 import { HTML_LANG, LOCALES, OG_LOCALE, t } from '~/lib/i18n'
 import { LAUNCH_PREVIEW } from '~/lib/launch'
+import { getOgCards } from '~/lib/og-pages'
 import { ORG_ID, organizationSchema, WEBSITE_ID, websiteSchema } from '~/lib/schema'
 import { absoluteUrl, ogImagePath, serializeJsonLd, SITE_NAME, TWITTER_SITE } from '~/lib/seo'
 import '~/styles/global.css'
@@ -49,7 +50,9 @@ const GROUPS: Record<string, string> = { '': 'home', 'urunler': 'product', 'prod
 const group = contentGroup ?? GROUPS[path.replace(/^\/+/, '').split('/')[0]] ?? 'company'
 
 const canonical = absoluteUrl(path, locale)
-const ogImage = ogImagePath(path, locale)
+// Pages without a registered card (404, new routes) share the home card instead of a 404 image.
+const ogKey = ogImagePath(path, locale).split('/og/')[1].replace(/\.png$/, '')
+const ogImage = ogKey in getOgCards() ? ogImagePath(path, locale) : ogImagePath('/', locale)
 const alternates = locales.length > 1
   ? [
       ...locales.map(code => ({ hreflang: code, href: absoluteUrl(paths[code] ?? path, code) })),

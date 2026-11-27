@@ -6,6 +6,7 @@ import type { Locale } from './i18n'
 import { getHome, getLocalPages, getProductPages, getServicePages, getSolutionPages, getWorks, productPath, productStatus } from './content'
 import { getGuides, guidePath, GUIDES_PATH } from './guides'
 import { localePath, LOCALES, ROUTES, t } from './i18n'
+import { getLegalPages, legalPath } from './legal'
 import { clampDescription, SITE_NAME } from './seo'
 
 export interface OgCard { title: string, description: string, label: string }
@@ -14,7 +15,11 @@ function key(path: string, locale: Locale) {
   return localePath(path, locale).replace(/^\/|\/$/g, '') || 'index'
 }
 
+let cache: Record<string, OgCard> | undefined
+
 export function getOgCards(): Record<string, OgCard> {
+  if (cache)
+    return cache
   const cards: Record<string, OgCard> = {}
   for (const locale of LOCALES) {
     const u = t(locale)
@@ -50,6 +55,17 @@ export function getOgCards(): Record<string, OgCard> {
     cards[key(ROUTES.process[locale], locale)] = { label: SITE_NAME, title: u('process.page_title'), description: clampDescription(u('process.page_description'), 130) }
     cards[key(ROUTES.contact[locale], locale)] = { label: SITE_NAME, title: u('nav.contact'), description: clampDescription(u('contact.description'), 130) }
   }
+  // Legal and corporate pages (Hakkımızda, KVKK, …): one card each, labelled by group.
+  for (const locale of LOCALES) {
+    const u = t(locale)
+    for (const p of getLegalPages(locale)) {
+      cards[key(legalPath(p, locale), locale)] = {
+        label: u(p.group === 'legal' ? 'footer.legal' : 'footer.corporate'),
+        title: p.title,
+        description: clampDescription(p.description || u('og.home'), 130),
+      }
+    }
+  }
   for (const locale of LOCALES) {
     const u = t(locale)
     cards[key(ROUTES.products[locale], locale)] = { label: u('products.og_label'), title: u('products.title'), description: clampDescription(u('products.description'), 130) }
@@ -63,5 +79,6 @@ export function getOgCards(): Record<string, OgCard> {
   cards[key(GUIDES_PATH, 'tr')] = { label: tr('og.guide'), title: tr('guides.page_title'), description: clampDescription(tr('guides.description'), 130) }
   for (const g of getGuides())
     cards[key(guidePath(g.slug), 'tr')] = { label: tr('og.guide'), title: g.title, description: clampDescription(g.description, 130) }
+  cache = cards
   return cards
 }
