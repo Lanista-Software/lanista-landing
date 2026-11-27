@@ -85,23 +85,26 @@
         "question": "e-Fatura için ayrı ücret var mı?"
       },
       {
-        "answer": "Aralık 2026 başında. Bekleme listesine yazılın, açıldığında ilk siz öğrenin.",
-        "question": "Ne zaman kullanıma açılıyor?"
+        "answer": "Kasa, banka ve personel ekranları hazır; erken erişimle işletmelere açıyoruz. Başvurun, hesabınızı birlikte kuralım.",
+        "question": "Ne zaman kullanabilirim?"
       }
     ],
     "feature_groups": [
       {
         "items": [
           "Müşteri ve tedarikçi carisi",
-          "Kasa ve banka hesapları",
+          "Kasa, banka, POS ve kredi kartı hesapları",
+          "Hesap ekstresi ve güncel bakiye",
           "Tahsilat ve ödeme",
-          "Gelir ve gider kategorileri"
+          "Gelir ve gider kategorileri",
+          "Hesaplar arası virman"
         ],
         "title": "Cari ve para"
       },
       {
         "items": [
-          "Maaş ve avans takibi",
+          "Personel kartı",
+          "Maaş tahakkuku, ödeme ve avans",
           "Çalışan bazında hareket listesi"
         ],
         "title": "Çalışanlar"
@@ -151,12 +154,15 @@
         "solution": "Her çalışanın maaş ve avans hareketleri ayrı kartta tutulur."
       }
     ],
+    "roadmap": [
+      "Çek ve senet portföyü",
+      "Banka ekstresini içe aktarma"
+    ],
     "sector": "Küçük işletmeler ve hizmet işletmeleri",
     "seo_description": "Küçük işletmeler için ön muhasebe: cari, kasa ve banka, gelir-gider, maaş ve avans takibi. e-Fatura modülü eklenebilir. Tek başına ya da modül olarak.",
     "seo_title": "Ön Muhasebe Programı | Lanista Ön Muhasebe",
     "slug": "on-muhasebe",
-    "status": "soon",
-    "status_note": "Aralık 2026",
+    "status": "pilot",
     "tagline": "Cari, kasa ve banka, gelir ve gider, maaş ve avans. Tek başına ya da sektör uygulamanıza modül olarak açılır."
   },
   "66d93b136c0d": {
@@ -732,6 +738,10 @@
       {
         "answer": "Evet. e-Fatura, Lanista Yedek Parça, Oto Servis, Nalbur gibi sektör uygulamalarına satın alırken eklenen bir modüldür. Faturayı satışı girdiğiniz ekrandan kesersiniz.",
         "question": "Sektör uygulamama ekleyebilir miyim?"
+      },
+      {
+        "answer": "Evet. Önceki entegratörünüzden aldığınız fatura arşivini (UBL dosyaları) içe alırız; eski faturalarınız da aynı listede görünür.",
+        "question": "Eski faturalarım ne olacak?"
       }
     ],
     "feature_groups": [
@@ -741,6 +751,7 @@
           "Toplu fatura",
           "İptal ve iade faturası",
           "Tevkifatlı fatura",
+          "İstisnalı fatura",
           "Logolu fatura şablonu"
         ],
         "title": "Fatura"
@@ -749,7 +760,8 @@
         "items": [
           "Gelen faturaları tek listede görme",
           "Kabul ve red, kalan süre uyarısı",
-          "Faturayı PDF olarak indirme ve paylaşma"
+          "Faturayı PDF olarak indirme ve paylaşma",
+          "Gelen faturaya yanıt, alış kaydına aktarma"
         ],
         "title": "Gelen faturalar"
       },
@@ -767,6 +779,14 @@
           "Mali müşavire erişim açma"
         ],
         "title": "Mali müşavir"
+      },
+      {
+        "items": [
+          "Eski entegratörünüzdeki fatura arşivini içe alma",
+          "Cari eklerken unvan ve e-Fatura durumu GİB'den gelir",
+          "Excel ile cari ve ürün aktarma"
+        ],
+        "title": "Geçiş"
       },
       {
         "items": [
@@ -811,6 +831,11 @@
         "pain": "Mali müşavire her ay belge taşıyorum",
         "solution": "Dönemin faturalarını mali müşavirinize tek dosya olarak gönderin ya da ona doğrudan erişim açın."
       }
+    ],
+    "roadmap": [
+      "e-İrsaliye",
+      "e-SMM (serbest meslek makbuzu)",
+      "e-Müstahsil makbuzu"
     ],
     "sector": "e-Faturaya geçmek zorunda kalan ve yalnız fatura kesen esnaf",
     "seo_description": "Muhasebe programı kullanmayan esnaf için e-Fatura ve e-Arşiv: toplu fatura, gelen fatura kabul/red, tevkifat, cari ve tahsilat. Kurulum ve eğitim Van'dan.",
