@@ -1,6 +1,7 @@
 ---
 import type { Locale } from '~/lib/i18n'
 import Icon from '~/components/Icon.astro'
+import { APP_LOGIN, appSignup } from '~/lib/app'
 import { localePath, routePath, t } from '~/lib/i18n'
 import LangSelect from './LangSelect.astro'
 import Logo from './Logo.astro'
@@ -29,11 +30,18 @@ const contactHref = routePath('contact', locale)
         <Nav locale={locale} path={path} direction="horizontal" />
       </div>
       <div class="flex items-center gap-4">
-        <div class="hidden sm:block">
+        <!-- Between lg and xl the full nav needs the room; the language switch stays in the mobile menu and footer there. -->
+        <div class="hidden sm:block lg:hidden xl:block">
           <LangSelect locale={locale} path={path} locales={locales} paths={paths} />
         </div>
-        <a href={contactHref} class="btn btn-danger hidden md:inline-flex" data-track="cta_click" data-track-cta_name="header_contact">
+        <a href={APP_LOGIN} class="hidden whitespace-nowrap font-inter font-medium text-heading-text transition-colors hover:text-danger-600 md:inline" data-track="cta_click" data-track-cta_name="header_login">
+          {s('nav.login')}
+        </a>
+        <a href={contactHref} class="btn btn-outline hidden 2xl:inline-flex" data-track="cta_click" data-track-cta_name="header_contact">
           {s('nav.contact')}
+        </a>
+        <a href={appSignup()} class="btn btn-danger hidden whitespace-nowrap md:inline-flex" data-track="cta_click" data-track-cta_name="header_signup">
+          {s('nav.signup')}
         </a>
         <!-- Mobile menu: Zag.js dialog (focus trap, Escape, scroll lock, aria-modal). -->
         <div data-mobile-menu class="lg:hidden">
@@ -59,8 +67,14 @@ const contactHref = routePath('contact', locale)
               <div class="pt-8">
                 <LangSelect locale={locale} path={path} locales={locales} paths={paths} />
               </div>
-              <div class="pt-8">
-                <a href={contactHref} class="btn btn-danger btn-block" data-track="cta_click" data-track-cta_name="header_contact">
+              <div class="space-y-3 pt-8">
+                <a href={appSignup()} class="btn btn-danger btn-block" data-track="cta_click" data-track-cta_name="header_signup">
+                  {s('nav.signup')}
+                </a>
+                <a href={APP_LOGIN} class="btn btn-outline btn-block" data-track="cta_click" data-track-cta_name="header_login">
+                  {s('nav.login')}
+                </a>
+                <a href={contactHref} class="btn btn-ghost btn-block" data-track="cta_click" data-track-cta_name="header_contact">
                   {s('nav.contact')}
                 </a>
               </div>

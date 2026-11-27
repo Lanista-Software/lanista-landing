@@ -46,7 +46,7 @@ function isCurrentRoute(route?: string) {
     return false
   return path === route || path.startsWith(`${route}/`)
 }
-const linkCls = 'font-inter font-medium text-heading-text transition-colors hover:text-danger-600 aria-[current]:font-bold aria-[current]:text-danger-600'
+const linkCls = 'whitespace-nowrap font-inter font-medium text-heading-text transition-colors hover:text-danger-600 aria-[current]:font-bold aria-[current]:text-danger-600'
 const menuId = `${id ?? direction}-products`
 ---
 

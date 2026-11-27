@@ -186,3 +186,10 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] Ekran görüntüleri hazır oldukça ürün sayfalarına eklenecek; ürün sayfaları yayın öncesi zamanla tamamlanacak (şimdilik ikonlu kart)
 - [x] e-Fatura modül olarak anlatılıyor (satın alırken eklenir); Ön Muhasebe "Aralık 2026"
 
+
+## 10. Panel yayını: üst menü giriş/kayıt (2026-11-27)
+- [x] Mega menü canlıda (508d760); hesap-takip → yedek-parca 301 doğrulandı
+- [x] Header: "Giriş yap" → `app.lanista.com.tr/panel/giris`, "Ücretsiz dene" → `/panel/kayit` (`src/lib/app.ts`; ürün önseçimi `appSignup('yedek_parca')`); lg–xl arası dil seçici gizli, İletişim butonu 2xl+
+- [ ] Yayın: app.lanista.com.tr açılınca push (v2026.12.2)
+- [ ] Ürün durumları ve metinleri platformla eşitle (gerçek durum: hafıza / `docs/urun-portfoyu.md`); planlı modüller "talep üzerine 1–2 iş günü"
+- [ ] Fiyatlar: modül bazlı yeni ürün/fiyat matrisi gelince (Yedek Parça landing 15.000/25.000 ≠ SaaS 7.500 TL/yıl)
