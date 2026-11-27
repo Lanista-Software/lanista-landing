@@ -35,6 +35,7 @@
     "hero_text": "Her e-belge kontör kullanır. Fatura sayınıza uygun paketi seçin; kontörünüz azalınca haber verelim, yenisini tek telefonla yükleyelim.",
     "hero_title": "e-Fatura kontörünüz bitmeden yenisi hazır",
     "icon": "ri-coins-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/cceb8ee0-c4aa-490c-8b2c-e95f7e810924.svg",
     "keywords": [
       "e-fatura kontör",
       "kontör paketi",
@@ -128,6 +129,7 @@
     "hero_text": "Kime ne borcunuz var, kimden ne alacağınız var, kasada ve bankada ne kadar para duruyor: hepsi tek ekranda. e-Fatura modülüyle faturanızı da aynı yerden kesin.",
     "hero_title": "İşletmenizin parası nerede, tek ekranda görün",
     "icon": "ri-calculator-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/90e48b46-be61-4fd8-aaad-356770d082dd.svg",
     "keywords": [
       "ön muhasebe programı",
       "cari hesap programı",
@@ -170,6 +172,7 @@
     "hero_text": "Özel yazılım, Akınsoft, Mikro ya da Excel'den veri aktarımı, entegrasyon, yurt içi barındırma ve bakım.",
     "hero_title": "İşinize özel yazılım ve entegrasyon",
     "icon": "ri-code-s-slash-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/304662e5-0f3f-45e8-beac-73b5a16a3057.svg",
     "link_to": "services",
     "menu_text": "Özel yazılım, entegrasyon, veri aktarımı, bakım",
     "name": "Lanista Yazılım hizmetleri",
@@ -376,6 +379,7 @@
     "hero_text": "Faturayı her zamanki gibi muhasebe programınızda kesin, e-Fatura olarak kendiliğinden gitsin. Size gelen faturalar da elle girilmeden alış kaydı olarak programınıza düşsün.",
     "hero_title": "Programınızdan çıkmadan e-Fatura",
     "icon": "ri-links-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/2bfa9fa8-798a-4767-af5a-a7069380b46e.svg",
     "keywords": [
       "logo e-fatura entegrasyonu",
       "mikro e-fatura entegrasyonu",
@@ -451,6 +455,7 @@
     "hero_text": "Mülkü ve kiracıyı bir kez kaydedin; kira günü gelince hatırlatma gitsin, ödeme gelince carisine işlensin. Komisyon ve kira faturasını aynı yerden kesin.",
     "hero_title": "Kira takibi kendiliğinden yürüsün",
     "icon": "ri-building-2-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/9d78d211-8c25-415e-ad2f-98c5438ec3bc.svg",
     "keywords": [
       "emlak programı",
       "kira takip programı",
@@ -488,7 +493,7 @@
     "einvoice_note": "e-Fatura modülü eklenebilir",
     "faq": [
       {
-        "answer": "Uygulama seçili toptancılarla birlikte geliştiriliyor. Başvurun; sıra size geldiğinde arayıp kurulumu yapalım.",
+        "answer": "Ürün kartı ve stok ekranları hazır. Başvurduğunuzda fiyat listelerinizi ve depo yapınızı birlikte ayarlayıp kullanıma açarız.",
         "question": "Erken erişim ne demek?"
       },
       {
@@ -525,6 +530,7 @@
     "hero_text": "Her müşteri grubuna kendi fiyat listesi, dövizli alışta güncel maliyet, depoda ne kaldığı her an önünüzde. Ay sonu faturalarını toplu kesin.",
     "hero_title": "Bayi fiyatı, stok ve fatura tek yerde",
     "icon": "ri-truck-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/d7392cc1-571d-4d5b-887e-fa575b059cb8.svg",
     "keywords": [
       "toptan satış programı",
       "toptancı programı",
