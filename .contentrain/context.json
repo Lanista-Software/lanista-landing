@@ -1,22 +1,36 @@
 {
   "lastOperation": {
     "entries": [
+      "69576769b108",
+      "97e82b9e0206",
+      "ca6b13ece1fd",
+      "d27d01aaf36b",
+      "d64d9430d051",
+      "f0aca951b8a9",
+      "f8e9fe4817b0",
       "0ef633950872",
       "57a440641db8",
       "66d93b136c0d",
+      "69576769b108",
       "6dd68e517724",
       "8031ca13766d",
-      "82c0e7529204"
+      "82c0e7529204",
+      "97e82b9e0206",
+      "ca6b13ece1fd",
+      "d27d01aaf36b",
+      "d64d9430d051",
+      "f0aca951b8a9",
+      "f8e9fe4817b0"
     ],
     "locale": "tr",
     "model": "products",
     "source": "mcp-local",
-    "timestamp": "2026-11-27T17:48:25.863Z",
+    "timestamp": "2026-11-27T17:48:59.784Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 268,
-    "lastSync": "2026-11-27T17:48:25.863Z",
+    "lastSync": "2026-11-27T17:48:59.784Z",
     "locales": [
       "tr",
       "en"
