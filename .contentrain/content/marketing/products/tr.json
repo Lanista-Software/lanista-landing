@@ -356,7 +356,7 @@
         "question": "Programımı değiştirmem gerekir mi?"
       },
       {
-        "answer": "Planlama aşamasında. Bekleme listesine yazılın, ilk kurulumlar için sizi arayalım.",
+        "answer": "Talep üzerine kuruyoruz. Formda kullandığınız programı yazın; sizinle birlikte planlayıp ilk kurulumları başlatalım.",
         "question": "Ne zaman hazır olacak?"
       }
     ],
@@ -406,7 +406,7 @@
     "seo_title": "Logo, Mikro, DİA e-Fatura Bağlantısı | Lanista Köprü",
     "slug": "kopru",
     "status": "soon",
-    "status_note": "Planlı",
+    "status_note": "Talep üzerine",
     "tagline": "Muhasebe programınızdan kestiğiniz fatura doğrudan e-Fatura olarak gider; gelen fatura programınıza alış olarak düşer."
   },
   "8031ca13766d": {
@@ -417,7 +417,7 @@
         "question": "Emlakçılar e-Faturaya geçmek zorunda mı?"
       },
       {
-        "answer": "Uygulama seçili emlak ofisleriyle birlikte geliştiriliyor. Başvurun; sıra size geldiğinde arayıp kurulumu yapalım.",
+        "answer": "Altyapı hazır: cari, vade takibi, SMS hatırlatma ve e-Fatura her gün kullanılıyor. Başvurduğunuzda ofisinize göre ayarlayıp genellikle 1–2 iş gününde kullanıma açarız.",
         "question": "Erken erişim ne demek?"
       }
     ],
@@ -481,6 +481,7 @@
     "seo_title": "Emlak ve Kira Takip Programı | Lanista Emlak",
     "slug": "emlak",
     "status": "pilot",
+    "status_note": "1–2 iş gününde hazır",
     "tagline": "Mülkler, kiracılar ve kira vadeleri tek yerde. Kira günü gelen kiracıya hatırlatma SMS'i, komisyon ve kira faturası aynı yerden."
   },
   "82c0e7529204": {
@@ -651,7 +652,7 @@
         "question": "Galeriler e-Faturaya geçmek zorunda mı?"
       },
       {
-        "answer": "Uygulama seçili galerilerle birlikte geliştiriliyor. Başvurun; sıra size geldiğinde arayıp kurulumu yapalım.",
+        "answer": "Altyapı hazır: cari, satış, tahsilat ve e-Fatura her gün kullanılıyor, araç kartı görünümü de hazır. Başvurduğunuzda galerinize göre ayarlayıp genellikle 1–2 iş gününde kullanıma açarız.",
         "question": "Erken erişim ne demek?"
       }
     ],
@@ -714,6 +715,7 @@
     "seo_title": "Oto Galeri Programı | Lanista Oto Galeri",
     "slug": "oto-galeri",
     "status": "pilot",
+    "status_note": "1–2 iş gününde hazır",
     "tagline": "Galerideki her aracın alışı, masrafı, satışı ve kârı tek kartta. Kiralamada sözleşme ve tahsilat takibi."
   },
   "d64d9430d051": {
@@ -929,7 +931,7 @@
     "einvoice_note": "e-Fatura modülü eklenebilir",
     "faq": [
       {
-        "answer": "Uygulama seçili servislerle birlikte sahada geliştiriliyor. Başvurun; kurulum sırası size geldiğinde arayıp işinize göre ayarlarız.",
+        "answer": "Altyapı hazır: cari, satış, plaka ve e-Fatura Lanista Yedek Parça'da her gün kullanılıyor. Başvurduğunuzda servis ekranlarını işinize göre ayarlayıp genellikle 1–2 iş gününde kullanıma açarız.",
         "question": "Erken erişim ne demek?"
       },
       {
@@ -1005,6 +1007,7 @@
     "seo_title": "Oto Servis Programı | Lanista Oto Servis",
     "slug": "oto-servis",
     "status": "pilot",
+    "status_note": "1–2 iş gününde hazır",
     "tagline": "Aracı plakayla kabul edin, iş emrini açın, teslimde satışı kapatın. Bakım zamanı gelen müşteriye hatırlatma gider."
   }
 }
