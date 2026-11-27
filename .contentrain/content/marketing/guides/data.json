@@ -22,7 +22,7 @@
         "question": "Basit usul esnafı olarak 2026'da kâğıt fatura kesebilir miyim?"
       }
     ],
-    "meta_title": "e-Fatura Geçiş Sınırı 2026: Kimler Ne Zaman Geçer? | Lanista",
+    "meta_title": "e-Fatura Geçiş Sınırı (Limiti) 2026: Kimler Geçmek Zorunda?",
     "order": 1,
     "published_at": "2026-11-23",
     "related_solution": "sl01edonusum",
@@ -63,7 +63,7 @@
         "question": "Kullanmadığım kontör yanar mı?"
       }
     ],
-    "meta_title": "e-Fatura Kontör Nedir? Gelen Fatura Kontör Düşer mi? | Lanista",
+    "meta_title": "e-Fatura Kontör Nedir, Ne Kadar Gerekir? | Lanista",
     "order": 2,
     "published_at": "2026-11-23",
     "related_solution": "sl01edonusum",
@@ -100,7 +100,7 @@
         "question": "Eski faturalarımı nerede saklamalıyım?"
       }
     ],
-    "meta_title": "e-Fatura Entegratör Değişikliği Nasıl Yapılır? | Lanista",
+    "meta_title": "e-Fatura Entegratör Değiştirme: Adım Adım Geçiş | Lanista",
     "order": 3,
     "published_at": "2026-11-23",
     "related_solution": "sl01edonusum",
@@ -122,8 +122,12 @@
     "body": "## Hangisini keseceğinize alıcı karar verir\n\nFaturayı kesmeden önce sorulacak tek soru: **alıcı e-Fatura uygulamasına kayıtlı mı?**\n\n- **Kayıtlıysa** faturanın e-Fatura olarak düzenlenmesi zorunludur. Satıcı ve alıcının ikisi de kayıtlı kullanıcıysa aralarındaki faturaların tamamı e-Fatura olmalıdır.\n- **Kayıtlı değilse** (e-Fatura kullanmayan bir firma ya da son tüketici) fatura e-Arşiv Fatura olarak düzenlenir.\n\nKayıtlı kullanıcıların güncel listesi GİB tarafından [ebelge.gib.gov.tr](https://ebelge.gib.gov.tr/efaturakayitlikullanicilar.html) adresinde yayımlanır. Muhasebe programları ve özel entegratörler bu kontrolü vergi kimlik numarasıyla otomatik yapar; elle bakmanız gerekmez.\n\n## Farklar tek tabloda\n\n| | e-Fatura | e-Arşiv Fatura |\n|---|---|---|\n| Alıcı | e-Fatura'ya kayıtlı firma | Kayıtlı olmayan firma ya da son tüketici |\n| İletim | GİB sistemi üzerinden alıcının e-Fatura adresine | Alıcıya e-posta ile ya da istenirse kâğıt çıktı olarak |\n| Alıcının görmesi | Fatura alıcının sistemine kendiliğinden düşer | Alıcı e-postasından ya da çıktıdan görür |\n| Kabul / red | Ticari faturada alıcı kabul ya da red yanıtı verebilir | Kabul–red adımı yoktur |\n| Kim kullanır | e-Fatura'ya geçen mükellefler | e-Fatura'ya geçenler ve 2026'dan itibaren kayıtlı olmayan mükellefler de (GİB portalından) |\n\n## e-Fatura'ya geçen ikisini birlikte kullanır\n\n509 Sıra No.lu Tebliğ'e göre e-Fatura'ya geçen mükellefler e-Arşiv Fatura uygulamasına da geçmek zorundadır. Pratikte kestiğiniz her fatura, alıcıya göre ya e-Fatura ya da e-Arşiv olur. Kâğıt fatura yalnızca tebliğdeki istisnai durumlarda kalır.\n\n## Kayıtlı değilseniz: 2026 kuralı\n\ne-Fatura ve e-Arşiv'e kayıtlı olmayan mükellefler de faturalarını GİB'in e-Arşiv portalından kesmek zorundadır:\n\n- **Bilanço esası ve diğerleri:** 1 Ocak 2026'dan itibaren tutarına bakılmaksızın tüm faturalar.\n- **Basit usul ve işletme hesabı esası:** 31 Aralık 2026'ya kadar vergiler dahil 3.000 TL'yi aşan faturalar; 1 Ocak 2027'den itibaren tüm faturalar.\n\nAyrıntılar ve geçiş sınırları için [e-Fatura geçiş sınırı 2026](/rehber/e-fatura-gecis-siniri-2026/) rehberine bakın.\n\n## Sık yapılan hatalar\n\n- **Kayıtlı firmaya e-Arşiv kesmek:** Alıcı e-Fatura kullanıcısıysa e-Arşiv yerine e-Fatura kesmeniz gerekir. Program bu kontrolü yapmıyorsa ayarlarını gözden geçirin.\n- **Son tüketiciden vergi numarası istememek:** Bireysel alıcıya e-Arşiv keserken TC kimlik numarası alanı için programınızın ve sağlayıcınızın kurallarına bakın.\n- **Kâğıt fatura alışkanlığı:** 2026'dan itibaren çoğu işletme için kâğıt fatura ancak istisnai durumlarda düzenlenebilir.\n\nHangi belgeleri kullanmanız gerektiğini ve kurulumu birlikte çıkaralım: [e-Dönüşüm](/e-donusum/).",
     "checked_at": "2026-11-23",
     "cover": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/e53462f1-cfa7-43a7-8d64-7a957b577c48.svg",
-    "description": "e-Fatura ile e-Arşiv Fatura arasındaki fark: alıcı kayıtlı kullanıcıysa e-Fatura, değilse e-Arşiv. Teslim, kabul-red ve 2026 kuralları tek tabloda.",
+    "description": "e-Fatura mı e-Arşiv mi, nasıl anlaşılır? Tek soru: alıcı e-Fatura'ya kayıtlı mı? Kayıtlıysa e-Fatura, değilse e-Arşiv. Sorgulama, kabul-red ve 2026 kuralları.",
     "faq": [
+      {
+        "answer": "Alıcının vergi kimlik numarasını GİB'in e-Fatura kayıtlı kullanıcı listesinde sorgulayın. Listedeyse e-Fatura, değilse e-Arşiv Fatura kesersiniz. e-Fatura programları bu sorguyu fatura keserken kendisi yapar.",
+        "question": "Kesmem gereken fatura e-Fatura mı e-Arşiv mi, nasıl anlaşılır?"
+      },
       {
         "answer": "Hayır. Son tüketici e-Fatura sistemine kayıtlı olmadığı için ona kestiğiniz fatura e-Arşiv Fatura olur.",
         "question": "Son tüketiciye e-Fatura kesebilir miyim?"
@@ -137,7 +141,7 @@
         "question": "Müşterimin e-Fatura kullanıp kullanmadığını nasıl öğrenirim?"
       }
     ],
-    "meta_title": "e-Arşiv mi e-Fatura mı? Farkları ve Kullanımı | Lanista",
+    "meta_title": "e-Fatura ve e-Arşiv Farkı: Hangisi Ne Zaman Kesilir? | Lanista",
     "order": 4,
     "published_at": "2026-11-23",
     "related_solution": "sl01edonusum",
