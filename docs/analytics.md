@@ -16,6 +16,8 @@
 | `language_changed` | Dil seçici | `language` |
 | `section_viewed` | Ana sayfada bölüm göründü | `section_id` |
 
+Ürün slug'ları 2026-11-25'te değişti: `hesap-takip` → `yedek-parca`, `nalbur-takip` → `nalbur` (raporlarda eski değerler eski tarihlerde kalır). Yeni `cta_name` değerleri: `menu_product`, `menu_featured` (header menüsü), `product_early_access` (erken erişim butonu).
+
 `cta_name` değerleri: `hero_primary`, `hero_secondary`, `header_contact`, `home_services`, `home_process`, `local_contact`, `cta_block`, `product_demo`, `product_waitlist`, `product_prices`, `see_live_project`, `solution_form` (e-Dönüşüm sayfasındaki "maliyet analizi" butonu, `product=e-donusum`), `guide_card` (rehber kartı, `product`=rehber slug'ı), `guide_cta` (rehber sonundaki maliyet analizi butonu).
 
 Her sayfa görüntülemede ayrıca:

@@ -1,6 +1,8 @@
 ---
 import type { Locale } from '~/lib/i18n'
-import { getSolutionPages } from '~/lib/content'
+import Icon from '~/components/Icon.astro'
+import Img from '~/components/Img.astro'
+import { getProducts, getSolutionPages, PRODUCT_GROUPS, productHref, productStatus } from '~/lib/content'
 import { localePath, ROUTES, t } from '~/lib/i18n'
 
 interface Props {
@@ -12,43 +14,173 @@ interface Props {
 const { locale, path, direction, id } = Astro.props
 const s = t(locale)
 const isHome = path === '/'
+const vertical = direction === 'vertical'
 
 // Hash items scroll within the home page; route items are real pages.
 // Solution hubs (/e-donusum/) are Turkish-only; their label is the page title.
 type Item = { key: string, label?: string, href: string, route?: string, section?: string }
-const solutions: Item[] = locale === 'tr' ? getSolutionPages().map(p => ({ key: p.slug, label: p.title, href: `/${p.slug}/`, route: `/${p.slug}` })) : []
+const solutionPages = locale === 'tr' ? getSolutionPages() : []
+const solutions: Item[] = solutionPages.map(p => ({ key: p.slug, label: p.title, href: `/${p.slug}/`, route: `/${p.slug}` }))
+const productsItem: Item = { key: 'products', href: localePath(ROUTES.products[locale], locale), route: ROUTES.products[locale] }
 const items: Item[] = [
   { key: 'home', href: localePath('/', locale), section: 'home' },
-  { key: 'products', href: localePath(ROUTES.products[locale], locale), route: ROUTES.products[locale] },
+  productsItem,
   ...solutions,
   { key: 'services', href: localePath(ROUTES.services[locale], locale), route: ROUTES.services[locale] },
   { key: 'process', href: localePath(ROUTES.process[locale], locale), route: ROUTES.process[locale] },
   { key: 'works', href: localePath('/works', locale), route: '/works' },
 ]
 
+// Product menu: one column per group + a large picture card for the featured entry.
+const catalog = getProducts(locale)
+const groups = PRODUCT_GROUPS.map(g => ({ key: g, entries: catalog.filter(p => (p.group ?? 'isletme') === g) })).filter(g => g.entries.length)
+// Desktop columns: e-Dönüşüm with the software service below it, then the business apps (two columns).
+const byKey = (k: string) => groups.filter(g => g.key === k)
+const menuColumns = [[...byKey('e-donusum'), ...byKey('hizmet')], byKey('isletme')].filter(c => c.length)
+const featured = catalog.find(p => p.featured)
+const featuredImage = featured?.illustration || solutionPages[0]?.hero_illustration
+const STATUS_CLASS = { live: 'text-success-700', pilot: 'text-warning-800', soon: 'text-label-text' } as const
+
 function isCurrentRoute(route?: string) {
   if (!route)
     return false
   return path === route || path.startsWith(`${route}/`)
 }
+const linkCls = 'font-inter font-medium text-heading-text transition-colors hover:text-danger-600 aria-[current]:font-bold aria-[current]:text-danger-600'
+const menuId = `${id ?? direction}-products`
 ---
 
 <nav aria-label={s('a11y.main_nav')} id={id}>
-  <ul class:list={[direction === 'vertical' ? 'flex flex-col gap-6' : 'flex items-center gap-4 xl:gap-6']}>
+  <ul class:list={[vertical ? 'flex flex-col gap-6' : 'flex items-center gap-4 xl:gap-6']}>
     {items.map((item) => {
       const current = item.route ? isCurrentRoute(item.route) : isHome && item.section === 'home'
+      const label = item.label ?? s(`nav.${item.key}`)
+      if (item.key === 'products' && !vertical) {
+        return (
+          <li data-mega-menu>
+            <button
+              type="button"
+              data-part="trigger"
+              class:list={[linkCls, 'inline-flex items-center gap-1 data-[current]:font-bold data-[current]:text-danger-600']}
+              data-current={current ? '' : undefined}
+            >
+              {label}<Icon name="ri-arrow-down-s-line" class="text-lg leading-none transition-transform duration-200 [[aria-expanded=true]>&]:rotate-180" />
+            </button>
+            <div data-part="positioner" class="z-40">
+              <div data-part="content" hidden class="mega-panel mt-3 overflow-hidden rounded-2xl border border-border-color bg-white shadow-[0_30px_60px_-30px_rgba(16,39,62,.45)] focus:outline-none">
+                <h2 data-part="title" class="sr-only">{s('nav.products')}</h2>
+                <div class="grid grid-cols-[1fr_2fr_minmax(240px,0.9fr)] items-start gap-x-8 p-8">
+                  {menuColumns.map(col => (
+                    <div class="space-y-6">
+                  {col.map(g => (
+                    <section aria-labelledby={`${menuId}-${g.key}`}>
+                      <h3 id={`${menuId}-${g.key}`} class="mb-3 font-space text-xs font-bold uppercase tracking-[.14em] text-label-text">{s(`products.group.${g.key}.title`)}</h3>
+                      <ul role="list" class:list={['grid gap-1', g.key === 'isletme' && 'grid-cols-2 gap-x-4']}>
+                        {g.entries.map((p) => {
+                          const isProduct = !p.link_to || p.link_to === 'product'
+                          return (
+                            <li>
+                              <a href={productHref(p, locale)} class="group/item -mx-3 flex gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-secondary-50 focus-visible:bg-secondary-50" data-track="cta_click" data-track-cta_name="menu_product" data-track-product={p.slug}>
+                                <span class="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-lg bg-primary-50 text-lg text-primary-700 transition-colors group-hover/item:bg-primary-700 group-hover/item:text-white">
+                                  <Icon name={p.icon || 'ri-apps-2-line'} />
+                                </span>
+                                <span class="min-w-0">
+                                  <span class="flex flex-wrap items-baseline gap-x-2 font-inter text-[15px] font-semibold text-heading-text">
+                                    {p.name.replace(/^Lanista /, '')}
+                                    {isProduct && p.status !== 'live' && <span class:list={['text-xs font-medium', STATUS_CLASS[p.status as keyof typeof STATUS_CLASS]]}>{productStatus(p, s)}</span>}
+                                  </span>
+                                  {p.menu_text && <span class="block text-[13px] leading-snug text-body-text">{p.menu_text}</span>}
+                                </span>
+                              </a>
+                            </li>
+                          )
+                        })}
+                      </ul>
+                    </section>
+                  ))}
+                    </div>
+                  ))}
+                  {featured && (
+                    <a href={productHref(featured, locale)} class="group/feat relative flex flex-col self-stretch overflow-hidden rounded-2xl bg-primary-800 text-white" data-track="cta_click" data-track-cta_name="menu_featured" data-track-product={featured.slug}>
+                      {featuredImage && (
+                        <span class="block bg-primary-50">
+                          <Img src={featuredImage} alt="" width={480} height={300} class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover/feat:scale-[1.03]" />
+                        </span>
+                      )}
+                      <span class="flex flex-1 flex-col p-5">
+                        <span class="text-xs font-bold uppercase tracking-[.14em] text-primary-200">{s('nav.menu_featured')}</span>
+                        <span class="mt-2 font-space text-lg font-bold leading-snug">{featured.hero_title}</span>
+                        <span class="mt-2 text-sm text-primary-100">{featured.tagline}</span>
+                        <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold">{featured.name}<Icon name="ri-arrow-right-line" class="transition-transform group-hover/feat:translate-x-1" /></span>
+                      </span>
+                    </a>
+                  )}
+                </div>
+                <div class="flex items-center justify-between gap-4 border-t border-border-color bg-secondary-50 px-8 py-4">
+                  <p class="text-sm text-body-text">{s('nav.menu_note')}</p>
+                  <a href={productsItem.href} class="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 hover:underline">
+                    {s('nav.all_products')}<Icon name="ri-arrow-right-line" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        )
+      }
+      if (item.key === 'products' && vertical) {
+        return (
+          <li data-accordion>
+            <div data-part="item" data-value="products">
+              <button
+                type="button"
+                data-part="trigger"
+                data-value="products"
+                aria-expanded="false"
+                class:list={[linkCls, 'flex w-full items-center justify-between gap-4 text-left data-[current]:font-bold data-[current]:text-danger-600']}
+                data-current={current ? '' : undefined}
+              >
+                {label}<Icon name="ri-arrow-down-s-line" class="text-xl leading-none transition-transform duration-200 [[aria-expanded=true]>&]:rotate-180" />
+              </button>
+              <div data-part="content" data-value="products" class="accordion-panel">
+                <div class="space-y-5 pt-4">
+                  {groups.map(g => (
+                    <div>
+                      <p class="mb-2 font-space text-xs font-bold uppercase tracking-[.14em] text-label-text">{s(`products.group.${g.key}.title`)}</p>
+                      <ul role="list" class="space-y-1">
+                        {g.entries.map(p => (
+                          <li>
+                            <a href={productHref(p, locale)} class="flex items-center gap-3 rounded-lg py-1.5 text-heading-text hover:text-danger-600">
+                              <Icon name={p.icon || 'ri-apps-2-line'} class="text-lg leading-none text-primary-700" />
+                              <span class="font-medium">{p.name.replace(/^Lanista /, '')}</span>
+                              {(!p.link_to || p.link_to === 'product') && p.status !== 'live' && <span class="text-xs text-label-text">{productStatus(p, s)}</span>}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                  <a href={productsItem.href} class="inline-flex items-center gap-1 font-semibold text-primary-600">{s('nav.all_products')}<Icon name="ri-arrow-right-line" /></a>
+                </div>
+              </div>
+            </div>
+          </li>
+        )
+      }
       return (
         <li>
-          <a
-            href={item.href}
-            data-nav-section={item.section && isHome ? item.section : undefined}
-            aria-current={current ? 'page' : undefined}
-            class="font-inter font-medium text-heading-text transition-colors hover:text-danger-600 aria-[current]:font-bold aria-[current]:text-danger-600"
-          >
-            {item.label ?? s(`nav.${item.key}`)}
+          <a href={item.href} data-nav-section={item.section && isHome ? item.section : undefined} aria-current={current ? 'page' : undefined} class={linkCls}>
+            {label}
           </a>
         </li>
       )
     })}
   </ul>
 </nav>
+
+<script>
+  import { initAccordions } from '~/scripts/accordion'
+  import { initMegaMenus } from '~/scripts/mega-menu'
+
+  initMegaMenus()
+  initAccordions()
+</script>

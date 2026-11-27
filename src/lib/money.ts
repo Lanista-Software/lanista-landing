@@ -8,3 +8,10 @@ export function tl(amount: number): string {
 export function withVat(amount: number, rate = 20): number {
   return Math.round(amount * (1 + rate / 100))
 }
+
+const fmtUnit = new Intl.NumberFormat('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+
+/** Unit price with kuruş: "5,25 TL". */
+export function tlUnit(amount: number): string {
+  return `${fmtUnit.format(amount)} TL`
+}

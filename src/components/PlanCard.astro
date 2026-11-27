@@ -3,7 +3,7 @@ import type { Plans } from '#contentrain'
 import type { Locale } from '~/lib/i18n'
 import Icon from '~/components/Icon.astro'
 import { t } from '~/lib/i18n'
-import { tl, withVat } from '~/lib/money'
+import { tl, tlUnit, withVat } from '~/lib/money'
 
 interface Props { plan: Plans, ctaHref: string, product?: string, locale?: Locale }
 const { plan, ctaHref, product, locale = 'tr' } = Astro.props
@@ -13,6 +13,9 @@ const vat = plan.vat_rate ?? 20
 const buyHref = plan.checkout_url || ctaHref
 const s = t(locale)
 const billing = s(`plan.billing.${plan.billing}`)
+// Kontör packages: price per credit and validity, as small tags under the price.
+const perCredit = priced && plan.credits ? s('plan.per_credit', { amount: tlUnit(Number(plan.price_try) / plan.credits) }) : ''
+const validity = plan.credits && plan.validity_months ? s('plan.validity', { months: plan.validity_months }) : ''
 ---
 
 <article class:list={[
@@ -25,12 +28,18 @@ const billing = s(`plan.billing.${plan.billing}`)
   {priced
     ? (
         <p class="mt-4">
-          <span class="font-space text-4xl font-bold text-heading-text">{tl(plan.price_try!)}</span>
+          <span class:list={['font-space font-bold text-heading-text', plan.credits ? 'text-3xl' : 'text-4xl']}>{tl(plan.price_try!)}</span>
           <span class="ml-1 font-medium text-body-text">{s('plan.plus_vat')} {plan.billing !== 'one_time' && billing}</span>
           <span class="mt-1 block text-sm text-label-text">{s('plan.incl_vat', { amount: tl(withVat(plan.price_try!, vat)) })} {billing}</span>
         </p>
       )
     : <p class="mt-4 font-medium text-body-text">{s('plan.price_on_request')}</p>}
+  {(perCredit || validity) && (
+    <p class="mt-3 flex flex-wrap gap-2 text-sm">
+      {perCredit && <span class="tag tag-sm tag-primary">{perCredit}</span>}
+      {validity && <span class="tag tag-sm tag-secondary">{validity}</span>}
+    </p>
+  )}
   {plan.includes?.length
 ? (
     <ul class="mt-6 flex-1 space-y-2.5">

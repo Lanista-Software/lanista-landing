@@ -6,6 +6,79 @@ publish = "dist"
 NODE_VERSION = "22"
 
 # Turkish moved from /tr/ to the root. Old Turkish URLs keep their ranking via 301.
+# Product renames (2026-11-25): Hesap Takip → Lanista Yedek Parça, Nalbur Takip → Lanista Nalbur; Kasa Takip retired.
+[[redirects]]
+from = "/urunler/hesap-takip"
+to = "/urunler/yedek-parca/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/urunler/hesap-takip/"
+to = "/urunler/yedek-parca/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/en/products/hesap-takip"
+to = "/en/products/yedek-parca/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/en/products/hesap-takip/"
+to = "/en/products/yedek-parca/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/urunler/nalbur-takip"
+to = "/urunler/nalbur/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/urunler/nalbur-takip/"
+to = "/urunler/nalbur/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/en/products/nalbur-takip"
+to = "/en/products/nalbur/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/en/products/nalbur-takip/"
+to = "/en/products/nalbur/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/urunler/kasa-takip"
+to = "/urunler/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/urunler/kasa-takip/"
+to = "/urunler/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/en/products/kasa-takip"
+to = "/en/products/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/en/products/kasa-takip/"
+to = "/en/products/"
+status = 301
+force = true
+
 [[redirects]]
 from = "/tr/*"
 to = "/:splat"

@@ -2,7 +2,8 @@ import * as accordion from '@zag-js/accordion'
 import { normalizeProps, spreadProps, uid, VanillaMachine } from './zag'
 
 export function initAccordions() {
-  document.querySelectorAll<HTMLElement>('[data-accordion]').forEach((root) => {
+  // Several components call this (FAQ, mobile menu); start each root once.
+  document.querySelectorAll<HTMLElement>('[data-accordion]:not([data-ready])').forEach((root) => {
     const service = new VanillaMachine(accordion.machine, { id: uid('acc'), collapsible: true, multiple: true })
     // Resolve parts once: Zag rewrites `data-part` (e.g. "item-trigger") on render.
     const items = [...root.querySelectorAll<HTMLElement>('[data-part="item"]')].map(item => ({

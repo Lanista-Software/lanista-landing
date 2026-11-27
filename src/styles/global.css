@@ -196,6 +196,30 @@
     @apply font-space text-2xl font-bold text-heading-text lg:text-3xl;
   }
 
+  /* ---- Product cards without an illustration: soft grid + large icon. ---- */
+  .product-card-art {
+    background-color: theme('colors.primary.50');
+    background-image:
+      linear-gradient(theme('colors.primary.100') 1px, transparent 1px),
+      linear-gradient(90deg, theme('colors.primary.100') 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: center;
+  }
+
+  /* ---- Header product menu (Zag popover). Opens with a short fade/slide. ---- */
+  .mega-panel[data-state='open'] {
+    animation: mega-in 160ms ease-out;
+  }
+
+  @keyframes mega-in {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mega-panel[data-state='open'] { animation: none; }
+  }
+
   /* ---- Reveal-on-scroll (ex CardAnimation). Visible without JS. ---- */
   .js .reveal {
     @apply opacity-0 transition-opacity duration-700 ease-out;

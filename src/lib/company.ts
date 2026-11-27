@@ -36,4 +36,8 @@ export const COMPANY = {
   setupDays: c.setup_days,
   /** Google Business Profile (Maps) link. */
   mapsUrl: c.maps_url,
+  /** e-Fatura infrastructure provider (e.g. Turkcell e-Şirket); empty until the contract is live. */
+  einvoiceProvider: c.einvoice_provider,
+  einvoiceProviderLogo: c.einvoice_provider_logo,
+  einvoiceProviderUrl: c.einvoice_provider_url,
 } as const

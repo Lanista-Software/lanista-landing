@@ -772,6 +772,26 @@
     "@eslint/core" "^0.17.0"
     levn "^0.4.1"
 
+"@floating-ui/core@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.8.0.tgz#d01c0bbea02e4a57f6fd7d5de6fc2c5c7dca40e1"
+  integrity sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==
+  dependencies:
+    "@floating-ui/utils" "^0.2.12"
+
+"@floating-ui/dom@^1.7.6":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.8.0.tgz#8a20e6facbe2456afdbeb6c8b968a72df689cf63"
+  integrity sha512-yXSrzeHZBTZadLOlfyhCkJHNeLJnHRnRInwdZ40L7ZiaAtrBwoYlsDrX3v5zB1Utk7CLfzcOVnVVWoXEky7Ceg==
+  dependencies:
+    "@floating-ui/core" "^1.8.0"
+    "@floating-ui/utils" "^0.2.12"
+
+"@floating-ui/utils@^0.2.12":
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.12.tgz#afefe785949f16ac4cdd1e695935a321572dd56a"
+  integrity sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==
+
 "@fontsource/inter@5.3.0":
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.3.0.tgz#866278dc2357659f8be1755c8b67f29d3697b440"
@@ -1789,6 +1809,31 @@
   resolved "https://registry.yarnpkg.com/@zag-js/interact-outside/-/interact-outside-1.47.0.tgz#09ba4ea2714887441327cdf94728138cd2280289"
   integrity sha512-Vy2JKw9o4VZ7mYy654V/611kst5p0/vHfqMvXI2tVdiqhI/TSs7iCkV9z2DjOObeSr6c+aLxU+sJ6Fc+sBJVeg==
   dependencies:
+    "@zag-js/dom-query" "1.47.0"
+    "@zag-js/utils" "1.47.0"
+
+"@zag-js/popover@1.47.0":
+  version "1.47.0"
+  resolved "https://registry.yarnpkg.com/@zag-js/popover/-/popover-1.47.0.tgz#c14a95662a7b7b4dd2327febb4fa82c6a69ab1ae"
+  integrity sha512-NHLuKLKf1FkDuAmyNAizFsg5Yv21bY85Mq4S+fWHygSBW3e7Perf2GeJD7ot3fltzC8TkWxgeZ1vW0e+TDMxdw==
+  dependencies:
+    "@zag-js/anatomy" "1.47.0"
+    "@zag-js/aria-hidden" "1.47.0"
+    "@zag-js/core" "1.47.0"
+    "@zag-js/dismissable" "1.47.0"
+    "@zag-js/dom-query" "1.47.0"
+    "@zag-js/focus-trap" "1.47.0"
+    "@zag-js/popper" "1.47.0"
+    "@zag-js/remove-scroll" "1.47.0"
+    "@zag-js/types" "1.47.0"
+    "@zag-js/utils" "1.47.0"
+
+"@zag-js/popper@1.47.0":
+  version "1.47.0"
+  resolved "https://registry.yarnpkg.com/@zag-js/popper/-/popper-1.47.0.tgz#cb7c85ef35d33aceaefadb3b243d8c79f800e34e"
+  integrity sha512-WghqqpfO/gMVMkvgxg4fWmKpvEXnZkKckQL3orW2e2FZDt/YfcOwLvxnM/mFLXNzWshLFtydZGw6Rz3iaAL40A==
+  dependencies:
+    "@floating-ui/dom" "^1.7.6"
     "@zag-js/dom-query" "1.47.0"
     "@zag-js/utils" "1.47.0"
 

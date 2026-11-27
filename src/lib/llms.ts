@@ -4,7 +4,7 @@
  */
 import type { Locale } from './i18n'
 import { COMPANY } from './company'
-import { getHome, getLocalPages, getPlans, getProducts, getServicePages, getSolutionPages, getWorks, productPath } from './content'
+import { getHome, getLocalPages, getPlans, getProductPages, getServicePages, getSolutionPages, getWorks, productPath, productStatus } from './content'
 import { getGuides, guidePath } from './guides'
 import { ROUTES, t } from './i18n'
 import { getLegalPages, legalPath, renderLegal } from './legal'
@@ -29,7 +29,7 @@ function companyBlock(locale: Locale): string {
 export function buildLlmsTxt(): string {
   const s = t('tr')
   const en = t('en')
-  const products = getProducts()
+  const products = getProductPages()
   const services = getServicePages('tr')
   const works = getWorks('tr').filter(w => w.slug)
   const legal = getLegalPages()
@@ -41,7 +41,7 @@ export function buildLlmsTxt(): string {
     `> ${en('llms.summary')}`,
     '',
     `## ${s('llms.products')}`,
-    ...products.map(p => line(`${p.name} (${s(`product.status.${p.status}`)})`, url(`/urunler/${p.slug}`), `${p.sector} — ${p.tagline}`)),
+    ...products.map(p => line(`${p.name} (${productStatus(p, s)})`, url(`/urunler/${p.slug}`), `${p.sector} — ${p.tagline}`)),
     '',
     `## ${s('llms.services')}`,
     line(s('services.page_title'), url(ROUTES.services.tr)),
@@ -66,7 +66,7 @@ export function buildLlmsTxt(): string {
     `> ${en('llms.summary')}`,
     '',
     line(en('nav.home'), url('/', 'en')),
-    ...getProducts('en').map(p => line(`${p.name} (${en(`product.status.${p.status}`)})`, url(productPath(p.slug, 'en'), 'en'), p.tagline)),
+    ...getProductPages('en').map(p => line(`${p.name} (${productStatus(p, en)})`, url(productPath(p.slug, 'en'), 'en'), p.tagline)),
     line(en('services.page_title'), url(ROUTES.services.en, 'en')),
     ...getServicePages('en').map(p => line(p.title, url(`/services/${p.slug}`, 'en'))),
     ...getLocalPages('en').map(p => line(p.title, url(`/${p.slug}`, 'en'), p.meta_description)),
@@ -87,8 +87,8 @@ export function buildLlmsFullTxt(): string {
   const out: string[] = [`# ${COMPANY.siteName}`, '', `> ${s('llms.summary')}`, '', companyBlock('tr'), '']
 
   out.push(`## ${s('llms.products')}`, '')
-  for (const p of getProducts()) {
-    out.push(`### ${p.name} — ${s(`product.status.${p.status}`)}`, `${url(`/urunler/${p.slug}`)}`, '', `${p.hero_title}. ${p.hero_text}`, '', `${p.sector}. ${p.tagline}`, '')
+  for (const p of getProductPages()) {
+    out.push(`### ${p.name} — ${productStatus(p, s)}`, `${url(`/urunler/${p.slug}`)}`, '', `${p.hero_title}. ${p.hero_text}`, '', `${p.sector}. ${p.tagline}`, '')
     if (p.feature_groups?.length) {
       out.push(`#### ${s('llms.features')}`)
       for (const g of p.feature_groups) out.push(`- **${g.title}:** ${(g.items ?? []).join('; ')}`)

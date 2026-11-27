@@ -3,33 +3,47 @@ import type { Products } from '#contentrain'
 import type { Locale } from '~/lib/i18n'
 import Icon from '~/components/Icon.astro'
 import Img from '~/components/Img.astro'
-import { productPath } from '~/lib/content'
-import { localePath, t } from '~/lib/i18n'
+import { productHref, productStatus } from '~/lib/content'
+import { t } from '~/lib/i18n'
 
-interface Props { product: Products, locale?: Locale }
-const { product, locale = 'tr' } = Astro.props
+interface Props { product: Products, locale?: Locale, headingLevel?: 2 | 3 }
+const { product, locale = 'tr', headingLevel = 3 } = Astro.props
+const H = `h${headingLevel}` as 'h2' | 'h3'
 const s = t(locale)
 const BADGE_CLASS = { live: 'tag-success', pilot: 'tag-warning', soon: 'tag-secondary' } as const
-const badge = { label: s(`product.status.${product.status}`), cls: BADGE_CLASS[product.status as keyof typeof BADGE_CLASS] }
-const href = localePath(productPath(product.slug, locale), locale)
-const live = product.status === 'live'
+// Service entries (migration, software) link to their own pages and carry no status badge.
+const isProduct = !product.link_to || product.link_to === 'product'
+const badge = { label: productStatus(product, s), cls: BADGE_CLASS[product.status as keyof typeof BADGE_CLASS] }
+const href = productHref(product, locale)
+const cta = !isProduct || product.status === 'live' ? s('product.card.view') : product.status === 'pilot' ? s('product.card.early') : s('product.card.notify')
 ---
 
 <article class="reveal product-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border-color bg-white transition-shadow hover:shadow-md">
-  {product.illustration && (
-    <div class="border-b border-border-color"><Img src={product.illustration} alt="" width={480} height={360} class="mx-auto aspect-[4/3] w-full max-w-[320px]" /></div>
-  )}
+  {product.illustration
+    ? <div class="border-b border-border-color"><Img src={product.illustration} alt="" width={480} height={360} class="mx-auto aspect-[4/3] w-full max-w-[320px]" /></div>
+    : (
+        <div class="product-card-art flex aspect-[16/7] items-center justify-center border-b border-border-color" aria-hidden="true">
+          <span class="flex size-20 items-center justify-center rounded-2xl bg-white text-4xl text-primary-700 shadow-sm ring-1 ring-primary-100 transition-transform duration-300 group-hover:-translate-y-1">
+            <Icon name={product.icon || 'ri-apps-2-line'} />
+          </span>
+        </div>
+      )}
   <div class="flex flex-1 flex-col p-6">
-    <div class="flex items-center justify-between gap-3">
-      <h3 class="font-space text-2xl font-bold text-heading-text">
+    <div class="flex items-start justify-between gap-3">
+      <H class="font-space text-xl font-bold text-heading-text lg:text-2xl">
         <a href={href} class="after:absolute after:inset-0 focus-visible:outline-none">{product.name}</a>
-      </h3>
-      <span class:list={['tag tag-sm shrink-0', badge.cls]}>{badge.label}</span>
+      </H>
+      {isProduct && <span class:list={['tag tag-sm mt-1 shrink-0', badge.cls]}>{badge.label}</span>}
     </div>
     <p class="mt-1 text-sm font-medium text-label-text">{product.sector}</p>
     <p class="mt-4 flex-1 text-body-text">{product.tagline}</p>
+    {product.einvoice_note && (
+      <p class="mt-4 flex items-center gap-2 text-sm font-medium text-primary-700">
+        <Icon name="ri-file-text-line" class="text-base leading-none" aria-hidden="true" />{product.einvoice_note}
+      </p>
+    )}
     <p class="mt-6 inline-flex items-center gap-1 font-medium text-primary-600 group-hover:underline" aria-hidden="true">
-      {live ? s('product.card.view') : s('product.card.notify')}
+      {cta}
       <Icon name="ri-arrow-right-line" class="transition-transform group-hover:translate-x-1" />
     </p>
   </div>

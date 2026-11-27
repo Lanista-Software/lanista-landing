@@ -3,7 +3,7 @@ import type { Locale } from '~/lib/i18n'
 import Icon from '~/components/Icon.astro'
 import Img from '~/components/Img.astro'
 import { COMPANY } from '~/lib/company'
-import { getLayout, getLocalPages, getProducts, getServicePages, getSolutionPages, localPagePath, productPath } from '~/lib/content'
+import { getLayout, getLocalPages, getProducts, getServicePages, getSolutionPages, localPagePath, productHref, productStatus } from '~/lib/content'
 import { GUIDES_PATH } from '~/lib/guides'
 import { localePath, routePath, t } from '~/lib/i18n'
 import { getLegalPages, legalPath } from '~/lib/legal'
@@ -17,7 +17,8 @@ const home = localePath('/', locale)
 const year = new Date().getFullYear()
 
 // Products first (positioning), then the services with search demand, then company & legal.
-const products = getProducts(locale).map(p => ({ label: p.name, href: localePath(productPath(p.slug, locale), locale), status: s(`product.status.${p.status}`) }))
+// Product pages only (services have their own column); the badge shows only when not yet on sale.
+const products = getProducts(locale).filter(p => !p.link_to || p.link_to === 'product').map(p => ({ label: p.name.replace(/^Lanista /, ''), href: productHref(p, locale), status: p.status === 'live' ? '' : productStatus(p, s) }))
 const services = [
   ...(locale === 'tr' ? getSolutionPages().map(p => ({ label: p.title, href: `/${p.slug}/` })) : []),
   ...getServicePages(locale).slice(0, 6).map(p => ({ label: p.title, href: localePath(`/services/${p.slug}`, locale) })),
@@ -67,7 +68,7 @@ const linkCls = 'text-sm text-body-text transition-colors hover:text-primary-600
         <h2 id="footer-products" class={heading}>{s('products.title')}</h2>
         <ul class="space-y-2.5">
           {products.map(p => (
-            <li><a href={p.href} class={linkCls}>{p.label}</a> <span class="text-xs text-label-text">· {p.status}</span></li>
+            <li><a href={p.href} class={linkCls}>{p.label}</a>{p.status && <span class="text-xs text-label-text"> · {p.status}</span>}</li>
           ))}
         </ul>
       </nav>

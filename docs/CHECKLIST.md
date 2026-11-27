@@ -40,7 +40,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] ~~Ödeme onay sayfası yalnız Türkçe (`/odeme/`)~~ — sayfa kaldırıldı, onaylar ürün backend'inde
 - [x] **Projede sabit (hard-coded) metin olmayacak**: arayüz metinleri dahil her içerik eksiksiz Contentrain'de (2026-11-18) — tarama temiz
 - [x] Formlar ve iletişim ayrı sayfada: `/iletisim/`, `/en/contact/` (şirket bilgileri + talep türü seçmeli form); ana sayfada SSS + iletişim kartı
-- [ ] Stil kararlarına (Ludus, token'lar, erişilebilirlik) sadık kalınacak; kontrol listesi her adımda güncel tutulacak
+- [ ] Stil kararlarına (Lanista çizim stili, token'lar, erişilebilirlik) sadık kalınacak; kontrol listesi her adımda güncel tutulacak
 - [x] Hizmetler ve Süreç ayrı sayfalarda (`/hizmetler/` + teknoloji sekmeleri, `/surec/` + HowTo şeması; EN `/en/services/`, `/en/process/`); ana sayfada 3 hizmet + 6 adımlık şerit; bölüm boşlukları daraltıldı
 - [x] Ödeme altyapısı devir dokümanı: `docs/odeme-altyapisi.md` (durum, modeller, Aşama A akışı, ödeme sonrası adımlar, Aşama B tasarımı, dosya haritası); CLAUDE.md'den bağlantılı
 
@@ -73,19 +73,19 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Şema/OG sabit metinleri içerikte; kodda duran "kendi ürünlerimiz" şeması kaldırıldı (bilgiler zaten çalışma kayıtlarında); hero'daki sahte vade satırları yerine gerçek ekran görüntüsü
 - [x] Doğrulama: `src/` taraması temiz (yalnız geliştirici log mesajları ve font adları kaldı)
 
-## 2b. İllüstrasyon sistemi ("Ludus" stili)
-- [x] Stil rehberi: `docs/illustration-style.md` (motifler, çizgi, renk, kompozisyon, yapılmayacaklar); üretici `design/ludus/generate.py`
+## 2b. İllüstrasyon sistemi (Lanista çizim stili)
+- [x] Stil rehberi: `docs/illustration-style.md` (motifler, çizgi, renk, kompozisyon, yapılmayacaklar); üretici `design/illustrations/generate.py`
 - [x] Süreç kartları (6) — ikon rozetleri yerine illüstrasyon (`processes.illustration`, Studio CDN, `ProcessCard`)
 - [x] Hizmet görselleri bu stile uyumlu hale getirildi (11 adet, 2:1)
 - [x] Hero / banner / bölüm görselleri
 - [x] Site geneli arka plan deseni: `decor/Amphitheatre` (hero + sayfa başlıkları), `decor/Arcade` (koyu banner), `decor/Meander` (ayırıcı) — satır içi SVG, `aria-hidden`, `pointer-events:none`, parallax katmanları hazır
 - [x] 404 illüstrasyonu: kilit taşı düşmüş kemer (`decor/FallenKeystone.astro`, tek seferlik düşme animasyonu, reduced-motion'da sabit)
-- [x] Hizmet kartı görselleri: 11 hizmet Ludus stilinde 2:1 illüstrasyonla yeniden çizildi (`design/ludus/services.py`), Studio CDN'e yüklendi; proje ekran görüntüleri, müşteri portreleri ve ürün ekranları gerçek kaldı (kullanıcı kararı bana bıraktı)
+- [x] Hizmet kartı görselleri: 11 hizmet Lanista çizim stilinde 2:1 illüstrasyonla yeniden çizildi (`design/illustrations/services.py`), Studio CDN'e yüklendi; proje ekran görüntüleri, müşteri portreleri ve ürün ekranları gerçek kaldı (kullanıcı kararı bana bıraktı)
 - [x] SVG'ler Studio CDN'de; animasyonlu olanlar satır içi bileşen
 
 ## 3. Ana sayfa yeniden konumlandırma (brief §1, §2, §8)
-- [x] Hero: ilk öncelik ürünler — "Defteri bırakın…" + Hesap Takip/Demo CTA + Ludus kemerinde vade takibi ekranı
-- [x] Ürünler bloğu (3 kart, Ludus ürün illüstrasyonları) + "Nasıl başlarsınız" (3 adım + 4 güven maddesi) + köprü bloğu
+- [x] Hero: ilk öncelik ürünler — "Defteri bırakın…" + Hesap Takip/Demo CTA + kemer çiziminde vade takibi ekranı
+- [x] Ürünler bloğu (3 kart, ürün illüstrasyonları) + "Nasıl başlarsınız" (3 adım + 4 güven maddesi) + köprü bloğu
 - [x] Hizmetler bloğu korundu; "rehberlik/dış kaynak" ifadeleri çıkarıldı; banner metni "Yazılımınızı birlikte yapalım"
 - [x] Ana sayfa sadeleştirildi (Fable + Google öneri verisi, `docs/kararlar-arama-verisi.md`): 6 hizmet (`services.on_home`), teknoloji sekmeleri ve banner kaldırıldı
 - [x] Teknoloji logoları `/hizmetler/` sayfasında (SEO/sosyal medya kategorileri hariç)
@@ -135,7 +135,7 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] `/e-donusum/` sayfası: `solution-pages` modeli (TR), hizmetler, geçiş adımları, programınızı değiştirmeden, Van'da yerinde kurulum, mali müşavir iş ortaklığı, hizmet bölgeleri (13 ilçe + komşu iller), SSS, "maliyet analizi" formu (`quote`, `product=e-donusum`); Service + FAQPage JSON-LD, OG kartı, llms.txt, menü + footer
 - [x] Van sayfası: e-fatura bölümü, ilçelerde yerinde kurulum, 13 ilçe `areaServed`, 2 yeni SSS, e-Dönüşüm kartı
 - [x] Doğu Anadolu sayfası: Muş/Bitlis/Hakkari/Ağrı e-fatura bölümü + SSS, Siirt ve Batman
-- [x] Görseller (2026-11-23): Ludus çizimleri `design/ludus/pages.py` — 4 sayfa kapağı (e-Dönüşüm, Van, Doğu/İç Anadolu), 3 e-Dönüşüm bölüm görseli, 4 rehber kapağı; SVG içi animasyon (reduced-motion güvenli); Studio media
+- [x] Görseller (2026-11-23): Lanista çizimleri `design/illustrations/pages.py` — 4 sayfa kapağı (e-Dönüşüm, Van, Doğu/İç Anadolu), 3 e-Dönüşüm bölüm görseli, 4 rehber kapağı; SVG içi animasyon (reduced-motion güvenli); Studio media
 - [x] Rehber: `guides` modeli, `/rehber/` + `/rehber/{slug}/` (Article + FAQPage JSON-LD, içindekiler, kısa cevap, kaynaklar, okuma ilerleme çubuğu, CTA), footer + e-Dönüşüm sayfasında liste, OG, llms.txt
 - [x] İlk 4 rehber: e-fatura geçiş sınırı 2026, kontör nedir, entegratör değişikliği, e-arşiv mi e-fatura mı — tutarlar 509 güncel hâli + 589 (RG 31.12.2025) ile kontrol edildi (2026-11-23)
 - [ ] Rehberlerin yıllık kontrolü: her ocakta GİB'deki 509 güncel hâli; değişirse `checked_at` ve metin
@@ -173,3 +173,16 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [x] Yayın `main` dalından (Netlify); PR akışı gerekmedi
 - [~] Search Console: sitemap gönderildi, durum "Başarılı" (2026-11-18); `https://lanista.com.tr/sitemap-index.xml` gönder, eski sitemap'leri kaldır, birkaç hafta izle (İngilizce sıralamalar 301 ile taşınamıyor) — kullanıcı
 - [ ] ETBİS kaydı (kullanıcı, e-Devlet)
+
+## 9. Ürün portföyü ve mega menü (2026-11-25, bkz. `docs/urun-portfoyu.md`)
+- [x] `products` modeli: `group`, `link_to`, `status_note`, `launch_date`, `icon`, `menu_text`, `einvoice_note`, `featured`; `plans`: `credits`, `validity_months`; `company`: `einvoice_provider(_logo|_url)`
+- [x] 13 giriş (11 ürün sayfası + geçiş hizmeti + yazılım hizmetleri), TR + EN; Hesap Takip → Lanista Yedek Parça, Nalbur Takip → Lanista Nalbur, Kasa Takip kaldırıldı; 301'ler
+- [x] Header: Zag popover mega menü (3 grup + öne çıkan e-Fatura kartı), mobilde akordeon; `/urunler/` gruplu; ana sayfa ve bölge sayfalarında yalnız yayındaki ürünler
+- [x] Durumlar: Yayında / Erken erişim (başvuru formu) / Aralık 2026 / Planlı (bekleme listesi)
+- [x] Turkcell hazırlığı: `LAUNCH_PREVIEW=1` önizlemesi; kontör paketleri (yer tutucu fiyat)
+- [ ] Kontör iç fiyat listesi → `plans` (kullanıcı)
+- [ ] 2026-12-01: sağlayıcı adı + Kontör live (adımlar `docs/urun-portfoyu.md`)
+- [x] Yasal metinler ve Hakkımızda: eski ürün adları Lanista ürünleriyle değiştirildi (2026-11-25, kullanıcı talebi)
+- [ ] Ekran görüntüleri hazır oldukça ürün sayfalarına eklenecek; ürün sayfaları yayın öncesi zamanla tamamlanacak (şimdilik ikonlu kart)
+- [x] e-Fatura modül olarak anlatılıyor (satın alırken eklenir); Ön Muhasebe "Aralık 2026"
+

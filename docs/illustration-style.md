@@ -1,6 +1,6 @@
-# "Ludus" illustration style
+# Lanista illustration style
 
-_Lanista is the Latin name for the master of a ludus, a gladiator school: an academy where craft is learned through discipline. The site's illustrations draw on that world without being literal. Software is built inside classical architecture, stone by stone._
+_Lanista is the Latin name for the master of an academy where craft is learned through discipline. The site's illustrations draw on that world without being literal. Software is built inside classical architecture, stone by stone._
 
 ## Concept
 Every illustration is an **orthographic elevation**: a flat front view, like a plate from an architecture book. A classical structure (arch, column, plinth, amphitheatre, mosaic floor) frames or carries a software object (window, code, phone, node graph, chart).
@@ -19,7 +19,7 @@ Every illustration is an **orthographic elevation**: a flat front view, like a p
 | Paper | white | `#FFFFFF` |
 
 ## Drawing rules
-- **Service cards use 640 × 320 (2:1)** with the ground line at y = 284 (`design/ludus/services.py`); the software object is large and leads, the architecture frames it.
+- **Service cards use 640 × 320 (2:1)** with the ground line at y = 284 (`design/illustrations/services.py`); the software object is large and leads, the architecture frames it.
 - **viewBox 480 × 360** (4:3) for process, product and other square-ish slots. The ground line is at y = 312, and every illustration stands on it. A plinth (two steps) sits on the ground line.
 - **Stroke:** 2 px, `stroke-linecap="round"`, `stroke-linejoin="round"`. Secondary details 1.25 px. One weight family; no "sketchy" lines.
 - **Shadow = hatching**: 45° parallel lines 6 px apart in `#9ABFE5`, clipped to the shaded face. No gradients, no drop shadows, no blur.
@@ -40,10 +40,10 @@ Every illustration is an **orthographic elevation**: a flat front view, like a p
 | Security | Shield, gate |
 | Success | Laurel wreath |
 | Community, users | Amphitheatre tiers |
-| Academy / Lanista brand | Ludus courtyard, columns, training yard |
+| Academy / Lanista brand | Academy courtyard, columns, training yard |
 
 ## Don'ts
-- No weapons, blood or fighting figures. The ludus is a school, not an arena.
+- No weapons, blood or fighting figures. The academy is a school, not an arena.
 - No people illustrations, mascots or emoji.
 - No isometric 3D, glassmorphism or gradient blobs.
 - Never more than one red element.
@@ -55,7 +55,7 @@ Every illustration is an **orthographic elevation**: a flat front view, like a p
 - Technology logos stay as brand logos.
 
 ## Page illustrations (2026-11-23)
-`design/ludus/pages.py` → `page-*.svg` (480×360 page heroes: e-Dönüşüm, Van, Doğu Anadolu, İç Anadolu) and `section-*.svg` (640×320: program bağlantısı, yerinde kurulum, mali müşavir, rehber). Fields: `local-pages.hero_illustration`, `solution-pages.hero_illustration`, `solution-pages.sections[].illustration`; `PageHero` shows the hero image beside the text when given.
+`design/illustrations/pages.py` → `page-*.svg` (480×360 page heroes: e-Dönüşüm, Van, Doğu Anadolu, İç Anadolu) and `section-*.svg` (640×320: program bağlantısı, yerinde kurulum, mali müşavir, rehber). Fields: `local-pages.hero_illustration`, `solution-pages.hero_illustration`, `solution-pages.sections[].illustration`; `PageHero` shows the hero image beside the text when given.
 - Local motifs stay architectural: Erek Dağı + Van Gölü + Van Kalesi silhouette (Van), aqueduct across mountains (Doğu Anadolu), fairy chimneys (İç Anadolu).
 - **Motion inside the SVG:** a `<style>` block animates `.flow` (dashed data lines), `.pulse` (seals), `.float` (pins) and `.wave`, only under `prefers-reduced-motion: no-preference`. Works when served as `<img>` from the CDN.
 

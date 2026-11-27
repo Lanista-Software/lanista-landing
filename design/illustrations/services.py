@@ -1,7 +1,7 @@
-"""Ludus service-card illustrations, 2:1 (640 x 320) — see docs/illustration-style.md.
+"""Lanista service-card illustrations, 2:1 (640 x 320) — see docs/illustration-style.md.
 
 Service cards are wide, so the software object is large and leads; the classical
-structure frames it. One red element per image. Run: python3 design/ludus/services.py
+structure frames it. One red element per image. Run: python3 design/illustrations/services.py
 """
 import math, os
 

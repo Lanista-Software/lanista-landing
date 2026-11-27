@@ -1,4 +1,4 @@
-"""Ludus illustration set generator — see docs/illustration-style.md."""
+"""Lanista illustration set generator — see docs/illustration-style.md."""
 import math, os, sys
 
 OUT = os.path.join(os.path.dirname(__file__), 'out')  # upload the files to Studio media; not served from the repo

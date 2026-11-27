@@ -1,9 +1,9 @@
-"""Ludus illustrations for the e-Dönüşüm hub, local pages and guides — see docs/illustration-style.md.
+"""Lanista illustrations for the e-Dönüşüm hub, local pages and guides — see docs/illustration-style.md.
 
 Heroes are 480 x 360 (ground y = 312); section images are 640 x 320 (ground y = 284).
 One red element per image. Dashed "data" lines and seals move with a CSS animation
 that only runs under prefers-reduced-motion: no-preference (works inside <img>).
-Run: python3 design/ludus/pages.py  → design/ludus/out/page-*.svg, section-*.svg
+Run: python3 design/illustrations/pages.py  → design/illustrations/out/page-*.svg, section-*.svg
 """
 import math
 import os

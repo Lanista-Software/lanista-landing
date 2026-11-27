@@ -3,7 +3,7 @@
  * path segment ('' = TR home, 'en/works/x' …), matching ogImagePath() in seo.ts.
  */
 import type { Locale } from './i18n'
-import { getHome, getLocalPages, getProducts, getServicePages, getSolutionPages, getWorks, productPath } from './content'
+import { getHome, getLocalPages, getProductPages, getServicePages, getSolutionPages, getWorks, productPath, productStatus } from './content'
 import { getGuides, guidePath, GUIDES_PATH } from './guides'
 import { localePath, LOCALES, ROUTES, t } from './i18n'
 import { clampDescription, SITE_NAME } from './seo'
@@ -53,8 +53,8 @@ export function getOgCards(): Record<string, OgCard> {
   for (const locale of LOCALES) {
     const u = t(locale)
     cards[key(ROUTES.products[locale], locale)] = { label: u('products.og_label'), title: u('products.title'), description: clampDescription(u('products.description'), 130) }
-    for (const p of getProducts(locale)) {
-      cards[key(productPath(p.slug, locale), locale)] = { label: `${u('common.product')} · ${u(`product.status.${p.status}`)}`, title: p.hero_title, description: clampDescription(p.tagline, 130) }
+    for (const p of getProductPages(locale)) {
+      cards[key(productPath(p.slug, locale), locale)] = { label: `${u('common.product')} · ${productStatus(p, u)}`, title: p.hero_title, description: clampDescription(p.tagline, 130) }
     }
   }
   for (const p of getSolutionPages())

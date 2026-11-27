@@ -5,6 +5,7 @@ import Footer from '~/components/Footer.astro'
 import Header from '~/components/Header.astro'
 import { getLayout } from '~/lib/content'
 import { HTML_LANG, LOCALES, OG_LOCALE, t } from '~/lib/i18n'
+import { LAUNCH_PREVIEW } from '~/lib/launch'
 import { ORG_ID, organizationSchema, WEBSITE_ID, websiteSchema } from '~/lib/schema'
 import { absoluteUrl, ogImagePath, serializeJsonLd, SITE_NAME, TWITTER_SITE } from '~/lib/seo'
 import '~/styles/global.css'
@@ -109,6 +110,7 @@ const graph = [
   </head>
   <body>
     <a href="#main" class="skip-link">{s('a11y.skip_to_content')}</a>
+    {LAUNCH_PREVIEW && <p class="bg-warning-100 px-4 py-2 text-center text-sm font-medium text-warning-900">{s('preview.launch_banner')}</p>}
     <Header locale={locale} path={path} locales={locales} paths={paths} />
     <main id="main" tabindex="-1" data-content-group={group} class="min-h-screen focus:outline-none">
       <slot />

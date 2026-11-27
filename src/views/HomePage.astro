@@ -13,7 +13,7 @@ import TestimonialCard from '~/components/TestimonialCard.astro'
 import WorksCard from '~/components/WorksCard.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import { COMPANY } from '~/lib/company'
-import { getHome, getLayout, getOnboardingSteps, getProduct, getProducts, getTeam, productPath } from '~/lib/content'
+import { getHome, getLayout, getOnboardingSteps, getProduct, getProductPages, getTeam, productPath } from '~/lib/content'
 import { contentLink, localePath, routePath, t } from '~/lib/i18n'
 import { creativeWorkSchema, faqSchema, organizationSchema, serviceSchema, teamSchema, webPageSchema, websiteSchema } from '~/lib/schema'
 import { clampDescription, SITE_NAME } from '~/lib/seo'
@@ -31,8 +31,9 @@ const link = (name: string) => contentLink(section(name).buttonlink, locale)
 const services = home.services.filter(sv => sv.on_home).map(sv => ({ ...sv, link: sv.link ? contentLink(sv.link, locale) : undefined }))
 const previewWorks = home.works.slice(0, 3)
 // Turkish home leads with the products; English stays agency-first (products are Turkey-only).
-const products = getProducts(locale)
-const hesapTakip = getProduct('hesap-takip', locale)
+// Home shows the products on sale now; the full catalogue is one click away.
+const products = getProductPages(locale).filter(p => p.status === 'live')
+const flagship = getProduct('yedek-parca', locale)
 const steps = getOnboardingSteps(locale)
 
 const meta = home.metaTags
@@ -64,9 +65,9 @@ const jsonLd = [
       <Hero
         hero={section('hero')}
         buttonHref={link('hero')}
-        secondary={{ label: s('home.hero_secondary_cta'), href: `${localePath(productPath('hesap-takip', locale), locale)}#demo` }}
+        secondary={{ label: s('home.hero_secondary_cta'), href: `${localePath(productPath('yedek-parca', locale), locale)}#demo` }}
         visualLabel={s('home.hero_visual_label')}
-        screenshot={hesapTakip?.hero_screenshot}
+        screenshot={flagship?.hero_screenshot}
         chip={{ title: s('home.hero_chip_title'), text: s('home.hero_chip_text') }}
       />
     </div>
@@ -76,7 +77,7 @@ const jsonLd = [
   {products.length > 0 && (
     <Section id="urunler" spy labelledby="products-title">
       <SectionLayout id="products-title" title={section('products').title} description={section('products').description}>
-        <ul role="list" class="grid w-full grid-cols-1 gap-8 md:grid-cols-3">
+        <ul role="list" class="grid w-full grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
           {products.map((product, i) => <li style={stagger(i)}><ProductCard product={product} locale={locale} /></li>)}
         </ul>
         <a slot="button" href={contentLink(section('products').buttonlink, locale)} class="link inline-flex items-center gap-1 text-lg">
@@ -106,10 +107,10 @@ const jsonLd = [
             </ol>
             <a href={contentLink(section('start').buttonlink, locale)} class="btn btn-danger btn-lg mt-10">{section('start').buttontext}</a>
           </div>
-          {hesapTakip?.trust?.length
+          {flagship?.trust?.length
 ? (
             <ul role="list" class="grid content-start gap-4 sm:grid-cols-2">
-              {hesapTakip.trust.map((item, i) => (
+              {flagship.trust.map((item, i) => (
                 <li class="reveal rounded-2xl border border-border-color bg-white p-6" style={stagger(i)}>
                   <h3 class="font-space text-lg font-bold text-heading-text">{item.title}</h3>
                   <p class="mt-2 text-sm text-body-text">{item.text}</p>
@@ -135,7 +136,7 @@ const jsonLd = [
 
   <Section id="services" spy labelledby="services-title">
     <SectionLayout id="services-title" title={section('services').title} description={section('services').description}>
-      <ul role="list" class="grid w-full grid-cols-1 gap-8 md:grid-cols-3">
+      <ul role="list" class="grid w-full grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
         {services.slice(0, 3).map((item, i) => (
           <li style={stagger(i)}>
             <AppCard locale={locale} item={item} view="triple" closePadding />

@@ -5,6 +5,7 @@
 import type { Workitems } from '#contentrain'
 import type { Locale } from './i18n'
 import { dictionary, query } from '#contentrain'
+import { localePath, ROUTES } from './i18n'
 
 /** Content image fields hold Studio CDN URLs; tolerate legacy site paths with a "public/" prefix. */
 export function imagePath(path?: string): string {
@@ -81,12 +82,36 @@ export function splitList(value?: string): string[] {
   return value ? value.split(',').map(t => t.trim()).filter(Boolean) : []
 }
 
+/** Catalogue groups, in menu and page order. */
+export const PRODUCT_GROUPS = ['e-donusum', 'isletme', 'hizmet'] as const
+export type ProductGroup = typeof PRODUCT_GROUPS[number]
+
+/**
+ * Every catalogue entry (products + the migration and software services), grouped then ordered.
+ * The /e-donusum/ hub is Turkish-only, so its entry is dropped in English.
+ */
 export function getProducts(locale: Locale = 'tr') {
-  return query('products').locale(locale).sort('order', 'asc').all()
+  const rank = (g?: string) => PRODUCT_GROUPS.indexOf((g ?? 'isletme') as ProductGroup)
+  return query('products').locale(locale).sort('order', 'asc').all().filter(p => !(locale === 'en' && p.link_to === 'e-donusum')).sort((a, b) => rank(a.group) - rank(b.group) || (a.order ?? 0) - (b.order ?? 0))
+}
+
+/** Entries that get their own /urunler/{slug}/ page. */
+export function getProductPages(locale: Locale = 'tr') {
+  return getProducts(locale).filter(p => !p.link_to || p.link_to === 'product')
 }
 
 export function getProduct(slug: string, locale: Locale = 'tr') {
-  return getProducts(locale).find(p => p.slug === slug)
+  return getProductPages(locale).find(p => p.slug === slug)
+}
+
+type CatalogEntry = { slug: string, link_to?: string }
+/** Final href of a catalogue entry: its product page, the e-Dönüşüm hub or the services page. */
+export function productHref(p: CatalogEntry, locale: Locale): string {
+  if (p.link_to === 'e-donusum')
+    return '/e-donusum/'
+  if (p.link_to === 'services')
+    return localePath(ROUTES.services[locale], locale)
+  return localePath(productPath(p.slug, locale), locale)
 }
 
 export function getPlans(productId: string, locale: Locale = 'tr') {
@@ -124,4 +149,9 @@ export function localPagePath(slug: string) {
 export function localPagePaths(id: string): Record<Locale, string> {
   const find = (l: Locale) => getLocalPages(l).find(p => p.id === id)
   return { tr: localPagePath(find('tr')!.slug), en: localPagePath(find('en')!.slug) }
+}
+
+/** Badge text: the entry's own note ("Aralık 2026", "Planlı") or the status label. */
+export function productStatus(p: { status: string, status_note?: string }, s: (key: string) => string): string {
+  return p.status_note || s(`product.status.${p.status}`)
 }

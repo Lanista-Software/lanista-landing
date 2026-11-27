@@ -9,7 +9,7 @@ import Icon from '~/components/Icon.astro'
 import PageHero from '~/components/PageHero.astro'
 import ProductCard from '~/components/ProductCard.astro'
 import BaseLayout from '~/layouts/BaseLayout.astro'
-import { getLocalPages, getProducts, getServicePages, getSolutionPages, localPagePath, localPagePaths } from '~/lib/content'
+import { getLocalPages, getProductPages, getServicePages, getSolutionPages, localPagePath, localPagePaths } from '~/lib/content'
 import { localePath, routePath, ROUTES, t } from '~/lib/i18n'
 import { faqSchema, localBusinessSchema, serviceSchema, webPageSchema } from '~/lib/schema'
 import { breadcrumbSchema, clampDescription, SITE_NAME } from '~/lib/seo'
@@ -27,7 +27,7 @@ const areas = page.area_served ?? []
 const refId = (r: unknown) => (typeof r === 'string' ? r : (r as { id: string }).id)
 const allServices = getServicePages(locale)
 const services = (page.services ?? []).map(r => allServices.find(sp => sp.id === refId(r))).filter(Boolean) as typeof allServices
-const products = getProducts(locale)
+const products = getProductPages(locale).filter(p => p.status === 'live')
 const solutions = locale === 'tr' ? getSolutionPages() : []
 const others = getLocalPages(locale).filter(p => p.id !== page.id)
 const faq = (page.faq ?? []).map((f, i) => ({ id: `faq-${i}`, ...f }))
@@ -120,7 +120,7 @@ const jsonLd = [
     <div class="container-x">
       <h2 id="local-products" class="block-title mb-3">{s('products.title')}</h2>
       <p class="mb-8 max-w-2xl font-inter">{s('local.products_text')}</p>
-      <ul role="list" class="grid gap-6 md:grid-cols-3">
+      <ul role="list" class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         {products.map((product, i) => <li style={stagger(i)}><ProductCard product={product} locale={locale} /></li>)}
       </ul>
     </div>
