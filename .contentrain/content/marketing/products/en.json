@@ -83,23 +83,26 @@
         "question": "Is e-invoicing charged separately?"
       },
       {
-        "answer": "At the start of December 2026. Join the waiting list to hear first when it opens.",
-        "question": "When does it launch?"
+        "answer": "The cash, bank and staff screens are ready, and we are opening them to businesses through early access. Apply and we'll set up your account with you.",
+        "question": "When can I start using it?"
       }
     ],
     "feature_groups": [
       {
         "items": [
           "Customer and supplier accounts",
-          "Cash and bank accounts",
+          "Cash, bank, POS and credit card accounts",
+          "Account statements and current balances",
           "Collections and payments",
-          "Income and expense categories"
+          "Income and expense categories",
+          "Transfers between accounts"
         ],
         "title": "Accounts and money"
       },
       {
         "items": [
-          "Salary and advance tracking",
+          "Staff records",
+          "Salary accrual, payments and advances",
           "Movements per employee"
         ],
         "title": "Staff"
@@ -147,12 +150,15 @@
         "solution": "Each employee's salary and advances are kept on their own card."
       }
     ],
+    "roadmap": [
+      "Cheque and promissory note portfolio",
+      "Bank statement import"
+    ],
     "sector": "Small businesses and service businesses",
     "seo_description": "Pre-accounting for small businesses in Turkey: accounts, cash and bank, income and expenses, salaries and advances. e-Invoice module available.",
     "seo_title": "Pre-Accounting Software | Lanista Pre-Accounting",
     "slug": "on-muhasebe",
-    "status": "soon",
-    "status_note": "December 2026",
+    "status": "pilot",
     "tagline": "Accounts, cash and bank, income and expenses, salaries and advances. Use it on its own or as a module in your sector app."
   },
   "66d93b136c0d": {
@@ -718,6 +724,10 @@
       {
         "answer": "Yes. e-Invoicing is a module you add when buying a Lanista sector app such as Auto Parts, Auto Service or Hardware Store. You issue the invoice from the same screen where you enter the sale.",
         "question": "Can I add it to my sector app?"
+      },
+      {
+        "answer": "Yes. We import the invoice archive (UBL files) from your previous provider, so your old invoices appear in the same list.",
+        "question": "What happens to my old invoices?"
       }
     ],
     "feature_groups": [
@@ -727,6 +737,7 @@
           "Bulk invoicing",
           "Cancellation and return invoices",
           "Invoices with withholding (tevkifat)",
+          "Tax-exempt invoices",
           "Invoice template with your logo"
         ],
         "title": "Invoicing"
@@ -735,7 +746,8 @@
         "items": [
           "All incoming invoices in one list",
           "Accept and reject, deadline alerts",
-          "Download and share as PDF"
+          "Download and share as PDF",
+          "Reply to incoming invoices, record them as purchases"
         ],
         "title": "Incoming invoices"
       },
@@ -753,6 +765,14 @@
           "Access for your accountant"
         ],
         "title": "Accountant"
+      },
+      {
+        "items": [
+          "Import your invoice archive from your previous provider",
+          "Company name and e-invoice status filled in from GİB when you add a customer",
+          "Import customers and products from Excel"
+        ],
+        "title": "Switching over"
       },
       {
         "items": [
@@ -795,6 +815,11 @@
         "pain": "I carry paperwork to my accountant every month",
         "solution": "Send the period's invoices to your accountant as one file, or give them direct access."
       }
+    ],
+    "roadmap": [
+      "e-Waybill (e-İrsaliye)",
+      "e-Receipt for self-employed (e-SMM)",
+      "e-Producer receipt (e-Müstahsil)"
     ],
     "sector": "Small businesses that must switch to e-invoicing and only need to issue invoices",
     "seo_description": "e-Fatura and e-Arşiv for small businesses in Turkey without accounting software: bulk invoices, incoming invoice approval, withholding, accounts and payments.",
