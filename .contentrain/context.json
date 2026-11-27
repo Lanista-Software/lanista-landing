@@ -6,15 +6,15 @@
       "8031ca13766d",
       "6dd68e517724"
     ],
-    "locale": "tr",
+    "locale": "en",
     "model": "products",
     "source": "mcp-local",
-    "timestamp": "2026-11-27T17:35:31.040Z",
+    "timestamp": "2026-11-27T17:36:14.168Z",
     "tool": "contentrain_content_save"
   },
   "stats": {
     "entries": 268,
-    "lastSync": "2026-11-27T17:35:31.040Z",
+    "lastSync": "2026-11-27T17:36:14.168Z",
     "locales": [
       "tr",
       "en"
