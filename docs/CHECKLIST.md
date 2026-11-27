@@ -193,3 +193,14 @@ _Sırayla ilerlenir. Her madde bittiğinde işaretlenir. Kullanıcı talepleri t
 - [ ] app.lanista.com.tr açılınca `src/lib/app.ts` APP_URL'i yeni adrese çevir (şu an hesap-takip.lanista.com.tr)
 - [ ] Ürün durumları ve metinleri platformla eşitle (gerçek durum: hafıza / `docs/urun-portfoyu.md`); planlı modüller "talep üzerine 1–2 iş günü"
 - [ ] Fiyatlar: modül bazlı yeni ürün/fiyat matrisi gelince (Yedek Parça landing 15.000/25.000 ≠ SaaS 7.500 TL/yıl)
+
+## 11. Görseller ve SEO turu (2026-11-27)
+- [x] 13 ürün illüstrasyonu (11 yeni + Yedek Parça/Nalbur başlık düzeltmesi), Studio'ya yüklendi, `products.illustration` TR+EN
+- [x] OG: Hakkımızda + 7 yasal sayfa kartı; kartı olmayan sayfa ana sayfa kartını kullanır (404 dahil)
+- [x] Yedek Parça ekran görüntüsü alt metinleri ve etiketleri (hesap-takip → yedek-parca); ana sayfa "Demo isteyin" linki
+- [x] Rehber meta başlık/açıklamaları arama sorgularına göre (e-Fatura ve e-Arşiv farkı, geçiş sınırı/limiti, kontör, entegratör değiştirme) + "nasıl anlaşılır" SSS
+- [x] Türkçe ürün sayfalarında "e-Fatura rehberleri" iç link bloğu (`product_guide`)
+- [ ] Search Console'da dizine ekleme isteği: /urunler/yedek-parca/, /urunler/on-muhasebe/, /urunler/oto-servis/ … (kullanıcı; Chrome eklentisi bağlı değildi)
+- [ ] GA4 ↔ Search Console bağlantısı (kullanıcı, panel)
+- [ ] e-Fatura ve Lastik Oteli için gerçek ekran görüntüleri (demo veri)
+- [ ] Eski `products/data.json` (Hesap/Nalbur/Kasa Takip) ve Kasa Takip Studio görsellerini silme onayı
