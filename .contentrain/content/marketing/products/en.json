@@ -35,6 +35,7 @@
     "hero_text": "Every e-document uses credits. Pick a package that fits your invoice volume; we'll let you know when you're running low and top you up with one call.",
     "hero_title": "New e-invoice credits before you run out",
     "icon": "ri-coins-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/cceb8ee0-c4aa-490c-8b2c-e95f7e810924.svg",
     "keywords": [
       "e-fatura kontör",
       "e-invoice credits Turkey",
@@ -126,6 +127,7 @@
     "hero_text": "Who you owe, who owes you, how much is in the till and the bank: all on one screen. With the e-Invoice module, issue your invoices from the same place too.",
     "hero_title": "See where your business's money is, on one screen",
     "icon": "ri-calculator-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/90e48b46-be61-4fd8-aaad-356770d082dd.svg",
     "keywords": [
       "pre-accounting software Turkey",
       "small business bookkeeping app",
@@ -166,6 +168,7 @@
     "hero_text": "Custom software, data migration from Akınsoft, Mikro or Excel, integrations, hosting in Turkey and maintenance.",
     "hero_title": "Software and integrations built for your business",
     "icon": "ri-code-s-slash-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/304662e5-0f3f-45e8-beac-73b5a16a3057.svg",
     "link_to": "services",
     "menu_text": "Custom software, integration, data migration, maintenance",
     "name": "Lanista Software services",
@@ -253,7 +256,7 @@
     "hero_text": "Enter a sale in 20 seconds and track payments and due dates. When you open the shop in the morning, your phone already shows who you need to call today.",
     "hero_title": "Move your credit ledger to your phone",
     "icon": "ri-settings-3-line",
-    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/86aa76d8-c09c-4235-b076-414e0693b7a8.svg",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/f7460304-4ed2-4dde-aab1-b14bf7c6c5c5.svg",
     "keywords": [
       "auto parts shop software",
       "credit sales tracking app",
@@ -371,6 +374,7 @@
     "hero_text": "Issue invoices in your accounting software as usual and let them go out as e-invoices automatically. Incoming invoices land in your software as purchase records, with no manual entry.",
     "hero_title": "e-Invoicing without leaving your software",
     "icon": "ri-links-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/2bfa9fa8-798a-4767-af5a-a7069380b46e.svg",
     "keywords": [
       "logo e-invoice integration",
       "mikro e-fatura integration",
@@ -444,6 +448,7 @@
     "hero_text": "Record the property and tenant once; a reminder goes out when rent is due, and payments post to the account. Issue commission and rent invoices from the same place.",
     "hero_title": "Let rent tracking run itself",
     "icon": "ri-building-2-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/9d78d211-8c25-415e-ad2f-98c5438ec3bc.svg",
     "keywords": [
       "rent tracking app",
       "estate agent software Turkey",
@@ -479,7 +484,7 @@
     "einvoice_note": "e-Invoice module available",
     "faq": [
       {
-        "answer": "The app is being developed with selected wholesalers. Apply and we'll call you for setup when your turn comes.",
+        "answer": "The product card and stock screens are ready. When you apply, we set up your price lists and warehouse with you and open your account.",
         "question": "What does early access mean?"
       },
       {
@@ -516,6 +521,7 @@
     "hero_text": "Its own price list for each customer group, current cost on foreign-currency purchases, and what's left in the warehouse always in view. Issue month-end invoices in bulk.",
     "hero_title": "Dealer prices, stock and invoices in one place",
     "icon": "ri-truck-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/d7392cc1-571d-4d5b-887e-fa575b059cb8.svg",
     "keywords": [
       "wholesale software Turkey",
       "distributor management app",
@@ -552,6 +558,7 @@
     "hero_text": "From the application to your first invoice, we guide your switch to e-Fatura, e-Arşiv and e-Defter.",
     "hero_title": "We set up your e-invoicing switch alongside you",
     "icon": "ri-arrow-left-right-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/7d22bdb2-8e4a-4a22-b3b5-0bf744abf8f8.svg",
     "link_to": "e-donusum",
     "menu_text": "From application to first invoice, on site in Van",
     "name": "e-Transformation migration service",
@@ -602,6 +609,7 @@
     "hero_text": "Record tyres by plate when you take them in, print and stick the QR label, choose the rack. When the season changes, find whose tyres are where with one scan.",
     "hero_title": "No more hunting for stored tyres",
     "icon": "ri-steering-2-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/7b691b21-a60c-450c-8be6-1c3361669cec.svg",
     "keywords": [
       "tyre hotel software",
       "tyre storage tracking app",
@@ -673,6 +681,7 @@
     "hero_text": "Record each car by plate and chassis number, add its purchase and costs, and issue the invoice when you sell. Payments for rented cars are in the same place.",
     "hero_title": "Every car's numbers on one card",
     "icon": "ri-car-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/d59c93d8-a418-4b71-a378-36824fe5f0e9.svg",
     "keywords": [
       "car dealer software Turkey",
       "used car dealer app",
@@ -790,6 +799,7 @@
     "hero_text": "Issue e-Fatura and e-Arşiv invoices in a few taps, accept or reject incoming invoices and track payments. We handle setup, the application and training.",
     "hero_title": "Issue e-invoices from your phone, no software needed",
     "icon": "ri-file-text-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/f5473588-7390-4697-8124-b7895f38c5fe.svg",
     "keywords": [
       "e-invoice app Turkey",
       "e-fatura software",
@@ -874,7 +884,7 @@
     "hero_text": "Enter sales by the metre, kilo or piece on one screen and stock updates itself. Tradesperson and job site accounts, delivery signatures and due dates in one place.",
     "hero_title": "Contractor accounts, job site by job site",
     "icon": "ri-hammer-line",
-    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/76480d5b-2357-4dff-9760-87481b46dddc.svg",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/4c68cd95-7985-4967-abb5-6188f25185bd.svg",
     "keywords": [
       "hardware store software Turkey",
       "building supplies app",
@@ -955,6 +965,7 @@
     "hero_text": "Type the plate and the car's history appears. Add parts and labour to the work order and invoice on delivery. Period invoices and withholding are ready for corporate and fleet work.",
     "hero_title": "From check-in to delivery, the workshop on one screen",
     "icon": "ri-tools-line",
+    "illustration": "https://studio.contentrain.io/api/cdn/v1/a73a9374-609c-459d-8a1b-b3478a3b0982/media/original/7f437e08-4d57-4e81-ba88-40c87ba8a8d5.svg",
     "keywords": [
       "car repair shop software Turkey",
       "workshop management app",

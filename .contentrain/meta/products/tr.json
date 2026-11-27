@@ -20,7 +20,7 @@
   "69576769b108": {
     "source": "agent",
     "status": "published",
-    "updated_at": "2026-11-25T17:40:44.630Z",
+    "updated_at": "2026-11-27T17:48:58.464Z",
     "updated_by": "contentrain-mcp"
   },
   "6dd68e517724": {
@@ -44,37 +44,37 @@
   "97e82b9e0206": {
     "source": "agent",
     "status": "draft",
-    "updated_at": "2026-11-25T16:43:42.278Z",
+    "updated_at": "2026-11-27T17:48:58.465Z",
     "updated_by": "contentrain-mcp"
   },
   "ca6b13ece1fd": {
     "source": "agent",
     "status": "draft",
-    "updated_at": "2026-11-25T17:40:44.630Z",
+    "updated_at": "2026-11-27T17:48:58.465Z",
     "updated_by": "contentrain-mcp"
   },
   "d27d01aaf36b": {
     "source": "agent",
     "status": "draft",
-    "updated_at": "2026-11-27T17:35:29.761Z",
+    "updated_at": "2026-11-27T17:48:58.465Z",
     "updated_by": "contentrain-mcp"
   },
   "d64d9430d051": {
     "source": "agent",
     "status": "draft",
-    "updated_at": "2026-11-27T17:33:44.978Z",
+    "updated_at": "2026-11-27T17:48:58.465Z",
     "updated_by": "contentrain-mcp"
   },
   "f0aca951b8a9": {
     "source": "agent",
     "status": "published",
-    "updated_at": "2026-11-25T17:40:44.631Z",
+    "updated_at": "2026-11-27T17:48:58.465Z",
     "updated_by": "contentrain-mcp"
   },
   "f8e9fe4817b0": {
     "source": "agent",
     "status": "draft",
-    "updated_at": "2026-11-27T17:35:29.761Z",
+    "updated_at": "2026-11-27T17:48:58.465Z",
     "updated_by": "contentrain-mcp"
   }
 }
